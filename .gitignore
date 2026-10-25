@@ -1,0 +1,8 @@
+node_modules/
+out/
+.remotion/
+.env
+__pycache__/
+# Rebuilt by the audio scripts from the committed voice takes.
+public/audio/
+public/voice-*-trimmed/
