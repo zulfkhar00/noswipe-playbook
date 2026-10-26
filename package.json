@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "studio": "remotion studio src/index.ts",
+    "render:receipt": "f() { remotion render src/index.ts $1 out/$1-raw.mp4 --concurrency=4 && python3 audio_kit.py out/$1-raw.mp4 out/$1.mp4; }; f",
     "render:thumb": "remotion render src/index.ts Thumb out/thumb-raw.mp4 --concurrency=4 && python3 audio_kit.py out/thumb-raw.mp4 out/thumb.mp4"
   },
   "dependencies": {

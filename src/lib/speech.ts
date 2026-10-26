@@ -38,7 +38,7 @@ const estimateWords = (l: Line): Word[] => {
 export const speechOf = (lines: Line[]) => (t: number) =>
   Math.max(0, ...lines.map((l) => hold(t, l.start - 0.12, l.start, l.start + l.duration, l.start + l.duration + 0.2)));
 
-type Chunk = {words: Word[]; start: number; end: number};
+export type Chunk = {words: Word[]; start: number; end: number};
 export const chunksOf = (lines: Line[], words: Word[][]): Chunk[] => words.flatMap((ws, li) => {
   const out: Chunk[] = [];
   let cur: Word[] = [];

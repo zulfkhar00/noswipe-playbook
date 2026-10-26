@@ -1,0 +1,269 @@
+{
+ "id": "between-sets",
+ "format": "receipt",
+ "set": "gym",
+ "context": "His dating app receipt, between sets.",
+ "music": "gym",
+ "lines": [
+  {
+   "n": 1,
+   "gapBefore": 0.2,
+   "text": "Sir, let's go over your rest time this year.",
+   "delivery": "dry"
+  },
+  {
+   "n": 2,
+   "gapBefore": 0.3,
+   "text": "Six hundred rests. You spent every one swiping.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 3,
+   "gapBefore": 0.4,
+   "text": "Three thousand swipes. Sixty-one matches.",
+   "delivery": "dry"
+  },
+  {
+   "n": 4,
+   "gapBefore": 0.5,
+   "text": "You messaged none of them.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 5,
+   "gapBefore": 0.9,
+   "text": "Three minutes. Every rest. Every set.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 6,
+   "gapBefore": 1.2,
+   "text": "Sir. This is just your rest time.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 7,
+   "gapBefore": 0.8,
+   "text": "Fine. Total: thirty hours.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 8,
+   "gapBefore": 0.4,
+   "text": "That's thirty one-hour workouts.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 9,
+   "gapBefore": 0.8,
+   "text": "Or... let NoSwipe do it.",
+   "delivery": "warm"
+  },
+  {
+   "n": 10,
+   "gapBefore": 0.3,
+   "text": "Tell us your type. Two minutes.",
+   "delivery": "warm"
+  },
+  {
+   "n": 11,
+   "gapBefore": 0.2,
+   "text": "We build the profiles, swipe, and chat.",
+   "delivery": "warm"
+  },
+  {
+   "n": 12,
+   "gapBefore": 0.3,
+   "text": "Date booked: Priya, Sunday, four PM, climbing gym, then dinner.",
+   "delivery": "warm"
+  },
+  {
+   "n": 13,
+   "gapBefore": 0.5,
+   "text": "Stop swiping. Just show up.",
+   "delivery": "warm"
+  }
+ ],
+ "beats": [
+  {
+   "name": "resttime",
+   "line": 1,
+   "word": "rest"
+  },
+  {
+   "name": "rests",
+   "line": 2,
+   "word": "rests"
+  },
+  {
+   "name": "every",
+   "line": 2,
+   "word": "every"
+  },
+  {
+   "name": "swipes",
+   "line": 3,
+   "word": "swipes"
+  },
+  {
+   "name": "matches",
+   "line": 3,
+   "word": "matches"
+  },
+  {
+   "name": "none",
+   "line": 4,
+   "word": "none"
+  },
+  {
+   "name": "minutes",
+   "line": 5,
+   "word": "minutes"
+  },
+  {
+   "name": "stop",
+   "line": 6,
+   "word": "sir"
+  },
+  {
+   "name": "fine",
+   "line": 7,
+   "word": "fine"
+  },
+  {
+   "name": "total",
+   "line": 7,
+   "word": "thirty"
+  },
+  {
+   "name": "workouts",
+   "line": 8,
+   "word": "workouts"
+  },
+  {
+   "name": "or",
+   "line": 9,
+   "word": "or"
+  },
+  {
+   "name": "noswipe",
+   "line": 9,
+   "word": "noswipe"
+  },
+  {
+   "name": "form",
+   "line": 10,
+   "word": "type"
+  },
+  {
+   "name": "build",
+   "line": 11,
+   "word": "build"
+  },
+  {
+   "name": "booked",
+   "line": 12,
+   "word": "booked"
+  },
+  {
+   "name": "card",
+   "line": 12,
+   "word": "priya"
+  },
+  {
+   "name": "endcard",
+   "line": 13,
+   "word": "stop"
+  }
+ ],
+ "receipt": {
+  "header": "HIS DATING APP RECEIPT · 2026",
+  "items": [
+   {
+    "label": "Rests spent swiping",
+    "value": "600",
+    "atBeat": "resttime",
+    "bad": true
+   },
+   {
+    "label": "Swipes",
+    "value": "3,000",
+    "atBeat": "swipes",
+    "bad": true
+   },
+   {
+    "label": "Matches",
+    "value": "61",
+    "atBeat": "matches"
+   },
+   {
+    "label": "Matches never messaged",
+    "value": "61",
+    "atBeat": "none",
+    "bad": true
+   },
+   {
+    "label": "Minutes per rest",
+    "value": "3",
+    "atBeat": "minutes",
+    "bad": true
+   }
+  ],
+  "total": {
+   "label": "TIME SPENT",
+   "value": "30 HOURS",
+   "atBeat": "total"
+  },
+  "equivalent": {
+   "text": "= 30 one-hour workouts",
+   "math": "600 x 3 min = 30 h",
+   "atBeat": "workouts",
+   "visual": "workouts",
+   "count": 30
+  }
+ },
+ "cutaways": [
+  {
+   "type": "sets",
+   "from": "every",
+   "to": "swipes",
+   "counter": "600"
+  },
+  {
+   "type": "swipes",
+   "from": "swipes",
+   "to": "none",
+   "counter": "3,000"
+  }
+ ],
+ "stall": {
+  "item": "minutes",
+  "from": "stop",
+  "to": "fine"
+ },
+ "noswipeReceipt": {
+  "items": [
+   {
+    "label": "Tell us your type",
+    "value": "2 min",
+    "atBeat": "form"
+   },
+   {
+    "label": "Profiles, swiping, chatting",
+    "value": "NoSwipe",
+    "atBeat": "build"
+   },
+   {
+    "label": "Date booked",
+    "value": "Sun 4 PM",
+    "atBeat": "booked"
+   },
+   {
+    "label": "Your time",
+    "value": "2 minutes",
+    "atBeat": "booked"
+   }
+  ],
+  "date": "Priya"
+ }
+}

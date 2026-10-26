@@ -2,9 +2,16 @@
 
 Short vertical (1080×1920, 60 fps) 2.5D motion-graphics ads for NoSwipe, drawn as SVG in Remotion. See `AGENTS.md` for the rules every video follows.
 
-| Ad | Composition | Audio project | Length |
-|---|---|---|---|
-| "I'm his thumb" | `Thumb` | `thumb` | ≈32 s |
+<!-- The scenario-writer agent (.claude/agents/scenario-writer.md) reads this table to avoid repeating personas and hooks. Keep it current. -->
+
+| Ad | Format | Composition | Audio project | Persona / topic | Frame-1 hook |
+|---|---|---|---|---|---|
+| "I'm his thumb" | one-off (The Thumb) | `Thumb` | `thumb` | his swiping thumb quits | bandaged thumb slaps a resignation letter on the phone |
+| "After Midnight" | receipt | `AfterMidnight` | `receipt --episode after-midnight` | the 1 AM swiper, bedroom; example date Maya | phone prints his dating app receipt at 1 AM |
+| "Next Stop: Nothing" | receipt | `NextStop` | `receipt --episode next-stop` | the commute swiper, train; example date Jess | phone prints his receipt on the train |
+| "Between Sets" | receipt (with a printer-stall twist) | `BetweenSets` | `receipt --episode between-sets` | the gym guy who swipes on every rest; example date Priya | phone prints his receipt on a gym bench, rest timer on the wall |
+
+Formats and their rules are in `FORMATS.md`; results go in `FORMAT_LAB.md`. New ads start with the **scenario-writer** agent.
 
 ## Make or re-render an ad
 

@@ -1,0 +1,66 @@
+{
+  "id": "after-midnight",
+  "format": "receipt",
+  "set": "bedroom",
+  "context": "His dating app receipt for this year.",
+  "music": "night",
+  "lines": [
+    {"n": 1, "gapBefore": 0.2, "text": "Sir, here's your receipt for the year.", "delivery": "dry"},
+    {"n": 2, "gapBefore": 0.3, "text": "Two hundred nights on the app. Every one after midnight.", "delivery": "deadpan"},
+    {"n": 3, "gapBefore": 0.2, "text": "Four thousand swipes. Sixty matches.", "delivery": "dry"},
+    {"n": 4, "gapBefore": 0.2, "text": "Fifty-six chats died at hey. Four survived.", "delivery": "deadpan"},
+    {"n": 5, "gapBefore": 0.2, "text": "Thirty minutes a night. That's your bedtime, sir.", "delivery": "dry"},
+    {"n": 6, "gapBefore": 0.4, "text": "Total: one hundred hours.", "delivery": "punchy"},
+    {"n": 7, "gapBefore": 0.2, "text": "That's twelve and a half nights of sleep.", "delivery": "slow reveal"},
+    {"n": 8, "gapBefore": 0.5, "text": "Or... let NoSwipe do it.", "delivery": "warm"},
+    {"n": 9, "gapBefore": 0.2, "text": "Tell us your type. Two minutes.", "delivery": "warm"},
+    {"n": 10, "gapBefore": 0.2, "text": "We build the profiles, swipe, and chat.", "delivery": "warm"},
+    {"n": 11, "gapBefore": 0.3, "text": "Date booked: Maya, Saturday, eleven AM, coffee and a walk.", "delivery": "warm"},
+    {"n": 12, "gapBefore": 0.4, "text": "Stop swiping. Just show up.", "delivery": "warm"}
+  ],
+  "beats": [
+    {"name": "nights", "line": 2, "word": "nights"},
+    {"name": "midnight", "line": 2, "word": "midnight"},
+    {"name": "swipes", "line": 3, "word": "swipes"},
+    {"name": "matches", "line": 3, "word": "matches"},
+    {"name": "hey", "line": 4, "word": "hey"},
+    {"name": "survived", "line": 4, "word": "survived"},
+    {"name": "minutes", "line": 5, "word": "minutes"},
+    {"name": "bedtime", "line": 5, "word": "bedtime"},
+    {"name": "total", "line": 6, "word": "hundred"},
+    {"name": "sleep", "line": 7, "word": "sleep"},
+    {"name": "or", "line": 8, "word": "or"},
+    {"name": "noswipe", "line": 8, "word": "noswipe"},
+    {"name": "form", "line": 9, "word": "type"},
+    {"name": "build", "line": 10, "word": "build"},
+    {"name": "booked", "line": 11, "word": "booked"},
+    {"name": "card", "line": 11, "word": "maya"},
+    {"name": "endcard", "line": 12, "word": "stop"}
+  ],
+  "receipt": {
+    "header": "HIS DATING APP RECEIPT · 2026",
+    "items": [
+      {"label": "Nights on the app, after 12 AM", "value": "200", "atBeat": "start", "bad": true},
+      {"label": "Swipes", "value": "4,000", "atBeat": "swipes", "bad": true},
+      {"label": "Matches", "value": "60", "atBeat": "matches", "bad": false},
+      {"label": "Chats that died at \"hey\"", "value": "56", "atBeat": "hey", "bad": true},
+      {"label": "Replies past \"hey\"", "value": "4", "atBeat": "survived", "bad": false},
+      {"label": "Minutes per night", "value": "30", "atBeat": "minutes", "bad": true}
+    ],
+    "total": {"label": "TIME SPENT", "value": "100 HOURS", "atBeat": "total"},
+    "equivalent": {"text": "= 12.5 nights of sleep", "math": "100 h / 8 h = 12.5", "atBeat": "sleep", "visual": "pillows", "count": 12.5}
+  },
+  "cutaways": [
+    {"type": "swipes", "from": "swipes", "to": "hey", "counter": "4,000"},
+    {"type": "hey", "from": "hey", "to": "minutes", "total": 6, "alive": 1}
+  ],
+  "noswipeReceipt": {
+    "items": [
+      {"label": "Tell us your type", "value": "2 min", "atBeat": "form"},
+      {"label": "Profiles, swiping, chatting", "value": "NoSwipe", "atBeat": "build"},
+      {"label": "Date booked", "value": "Sat 11 AM", "atBeat": "booked"},
+      {"label": "Your time", "value": "2 minutes", "atBeat": "booked"}
+    ],
+    "date": "Maya"
+  }
+}

@@ -4,7 +4,8 @@ NoSwipe (https://noswipe.app) is a done-for-you dating service concept: a 2-minu
 
 ## Rules for every video
 - **Clarity first.** A cold viewer must get the situation from the first 3 seconds in plain words, before any gag. Pass the one-sentence test: a stranger can retell it after one watch.
-- **Honest claims.** Never mention the $1 reservation. Never promise a number of dates (the site says it can't). No fake testimonials and no implied existing users: narrators are obvious comedy characters (e.g. the thumb).
+- **Honest claims.** Never mention the $1 reservation. Never state or imply a specific number of dates. No "not guaranteed" disclaimer line is needed (the user's call); just don't promise. No fake testimonials and no implied existing users: narrators are obvious comedy characters (e.g. the thumb, the cashier).
+- **Name the brand at the turn.** The voiceover says "NoSwipe" when the solution appears (e.g. "Or… let NoSwipe do it."), so viewers know who "we" is.
 - **No Tinder, Bumble or Hinge logos or UI.** Their names may appear only as plain text in the brand font, as on the site.
 - **CTA:** a soft "noswipe.app" while the product is on screen, plus the end card "Stop swiping. Just show up." with noswipe.app.
 - **Look:** the website animated in 2.5D. Brand tokens are in `src/brand/brand.tsx`. Flat planes in depth, soft ink-tinted shadows between planes, hard offset shadows on UI cards, subtle camera. One signature transition (`SwipeCuts`), motion blur only on fast moves, 60 fps masters.

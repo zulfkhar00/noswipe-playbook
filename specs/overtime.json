@@ -1,0 +1,237 @@
+{
+ "id": "overtime",
+ "format": "receipt-v2-scene-led",
+ "set": "gym",
+ "music": "gym",
+ "context": "Rest between sets: 90 seconds",
+ "lines": [
+  {
+   "n": 1,
+   "gapBefore": 0.2,
+   "text": "Set one done. Ninety seconds of rest.",
+   "delivery": "dry"
+  },
+  {
+   "n": 2,
+   "gapBefore": 0.3,
+   "text": "He's spending them swiping.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 3,
+   "gapBefore": 0.9,
+   "text": "The timer ran out a while ago.",
+   "delivery": "dry"
+  },
+  {
+   "n": 4,
+   "gapBefore": 0.4,
+   "text": "His buddy is waiting. Patiently.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 5,
+   "gapBefore": 1.0,
+   "text": "Set two, shorter. Swiping, longer.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 6,
+   "gapBefore": 0.9,
+   "text": "Everyone went home.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 7,
+   "gapBefore": 0.7,
+   "text": "The cleaner mops around him.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 8,
+   "gapBefore": 0.8,
+   "text": "Sir. Your receipt.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 9,
+   "gapBefore": 0.5,
+   "text": "Total: forty hours.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 10,
+   "gapBefore": 0.4,
+   "text": "That's forty workouts you skipped.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 11,
+   "gapBefore": 0.6,
+   "text": "Or... let NoSwipe do it.",
+   "delivery": "warm"
+  },
+  {
+   "n": 12,
+   "gapBefore": 0.3,
+   "text": "It swipes, chats, and books the date.",
+   "delivery": "warm"
+  },
+  {
+   "n": 13,
+   "gapBefore": 0.3,
+   "text": "Priya. Sunday, four PM, climbing gym.",
+   "delivery": "warm"
+  },
+  {
+   "n": 14,
+   "gapBefore": 0.7,
+   "text": "Now rest is just rest.",
+   "delivery": "warm"
+  },
+  {
+   "n": 15,
+   "gapBefore": 0.5,
+   "text": "Stop swiping. Just show up.",
+   "delivery": "warm"
+  }
+ ],
+ "beats": [
+  {
+   "name": "setone",
+   "line": 1,
+   "word": "set"
+  },
+  {
+   "name": "rest",
+   "line": 1,
+   "word": "rest"
+  },
+  {
+   "name": "swiping",
+   "line": 2,
+   "word": "swiping"
+  },
+  {
+   "name": "timerout",
+   "line": 3,
+   "word": "timer"
+  },
+  {
+   "name": "ago",
+   "line": 3,
+   "word": "ago"
+  },
+  {
+   "name": "buddy",
+   "line": 4,
+   "word": "buddy"
+  },
+  {
+   "name": "patiently",
+   "line": 4,
+   "word": "patiently"
+  },
+  {
+   "name": "settwo",
+   "line": 5,
+   "word": "two"
+  },
+  {
+   "name": "longer",
+   "line": 5,
+   "word": "longer"
+  },
+  {
+   "name": "home",
+   "line": 6,
+   "word": "home"
+  },
+  {
+   "name": "mop",
+   "line": 7,
+   "word": "mops"
+  },
+  {
+   "name": "receipt",
+   "line": 8,
+   "word": "receipt"
+  },
+  {
+   "name": "total",
+   "line": 9,
+   "word": "forty"
+  },
+  {
+   "name": "workouts",
+   "line": 10,
+   "word": "workouts"
+  },
+  {
+   "name": "or",
+   "line": 11,
+   "word": "or"
+  },
+  {
+   "name": "noswipe",
+   "line": 11,
+   "word": "noswipe"
+  },
+  {
+   "name": "swipesself",
+   "line": 12,
+   "word": "swipes"
+  },
+  {
+   "name": "booked",
+   "line": 12,
+   "word": "books"
+  },
+  {
+   "name": "card",
+   "line": 13,
+   "word": "priya"
+  },
+  {
+   "name": "payoff",
+   "line": 14,
+   "word": "now"
+  },
+  {
+   "name": "endcard",
+   "line": 15,
+   "word": "stop"
+  }
+ ],
+ "receipt": {
+  "header": "HIS DATING APP RECEIPT",
+  "items": [
+   {
+    "label": "Rests spent swiping",
+    "value": "480",
+    "bad": true
+   },
+   {
+    "label": "Minutes per rest",
+    "value": "5",
+    "bad": true
+   },
+   {
+    "label": "Matches messaged",
+    "value": "0",
+    "bad": true
+   }
+  ],
+  "total": {
+   "label": "TIME SPENT",
+   "value": "40 HOURS",
+   "atBeat": "total"
+  },
+  "equivalent": {
+   "text": "= 40 workouts skipped",
+   "math": "480 x 5 min = 40 h",
+   "atBeat": "workouts"
+  }
+ },
+ "date": "priya"
+}

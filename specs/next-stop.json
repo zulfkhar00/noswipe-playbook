@@ -1,0 +1,68 @@
+{
+  "id": "next-stop",
+  "format": "receipt",
+  "set": "train",
+  "context": "His dating app receipt, printed on the train.",
+  "music": "commute",
+  "lines": [
+    {"n": 1, "gapBefore": 0.2, "text": "Sir, your receipt. Let's see what the train cost you.", "delivery": "dry"},
+    {"n": 2, "gapBefore": 0.3, "text": "Four hundred eighty train rides this year.", "delivery": "deadpan"},
+    {"n": 3, "gapBefore": 0.2, "text": "Four thousand eight hundred swipes.", "delivery": "dry"},
+    {"n": 4, "gapBefore": 0.2, "text": "Seventy-two matches. Sixty-six died at hey.", "delivery": "deadpan"},
+    {"n": 5, "gapBefore": 0.2, "text": "Stops missed while swiping: thirty-eight.", "delivery": "dry"},
+    {"n": 6, "gapBefore": 0.2, "text": "Scenery seen: none.", "delivery": "deadpan"},
+    {"n": 7, "gapBefore": 0.4, "text": "Total: two hundred hours on the train.", "delivery": "punchy"},
+    {"n": 8, "gapBefore": 0.2, "text": "That's five full work weeks, sir.", "delivery": "slow reveal"},
+    {"n": 9, "gapBefore": 0.5, "text": "Or... let NoSwipe do it.", "delivery": "warm"},
+    {"n": 10, "gapBefore": 0.2, "text": "Tell us your type. Two minutes.", "delivery": "warm"},
+    {"n": 11, "gapBefore": 0.2, "text": "We handle the swiping and chatting.", "delivery": "warm"},
+    {"n": 12, "gapBefore": 0.3, "text": "Date booked: Jess, Thursday, eight PM, wine bar, Hayes Valley.", "delivery": "warm"},
+    {"n": 13, "gapBefore": 0.3, "text": "Your commute is yours again.", "delivery": "warm"},
+    {"n": 14, "gapBefore": 0.4, "text": "Stop swiping. Just show up.", "delivery": "warm"}
+  ],
+  "beats": [
+    {"name": "rides", "line": 2, "word": "rides"},
+    {"name": "swipes", "line": 3, "word": "swipes"},
+    {"name": "matches", "line": 4, "word": "matches"},
+    {"name": "hey", "line": 4, "word": "hey"},
+    {"name": "missed", "line": 5, "word": "missed"},
+    {"name": "none", "line": 6, "word": "none"},
+    {"name": "total", "line": 7, "word": "hundred"},
+    {"name": "weeks", "line": 8, "word": "weeks"},
+    {"name": "or", "line": 9, "word": "or"},
+    {"name": "noswipe", "line": 9, "word": "noswipe"},
+    {"name": "form", "line": 10, "word": "type"},
+    {"name": "build", "line": 11, "word": "handle"},
+    {"name": "booked", "line": 12, "word": "booked"},
+    {"name": "card", "line": 12, "word": "jess"},
+    {"name": "commute", "line": 13, "word": "commute"},
+    {"name": "endcard", "line": 14, "word": "stop"}
+  ],
+  "receipt": {
+    "header": "HIS DATING APP RECEIPT · 2026",
+    "items": [
+      {"label": "Train rides", "value": "480", "atBeat": "start", "bad": false},
+      {"label": "Swipes", "value": "4,800", "atBeat": "swipes", "bad": true},
+      {"label": "Matches", "value": "72", "atBeat": "matches", "bad": false},
+      {"label": "Chats that died at \"hey\"", "value": "66", "atBeat": "hey", "bad": true},
+      {"label": "Stops missed while swiping", "value": "38", "atBeat": "missed", "bad": true},
+      {"label": "Scenery seen", "value": "0", "atBeat": "none", "bad": true}
+    ],
+    "total": {"label": "TIME SPENT", "value": "200 HOURS", "atBeat": "total"},
+    "equivalent": {"text": "= 5 full work weeks", "math": "200 h / 40 h = 5", "atBeat": "weeks", "visual": "weeks", "count": 5}
+  },
+  "cutaways": [
+    {"type": "swipes", "from": "swipes", "to": "hey", "counter": "4,800"},
+    {"type": "hey", "from": "hey", "to": "missed", "total": 6, "alive": 1},
+    {"type": "stops", "from": "missed", "to": "none", "count": 38}
+  ],
+  "noswipeReceipt": {
+    "items": [
+      {"label": "Tell us your type", "value": "2 min", "atBeat": "form"},
+      {"label": "Profiles, swiping, chatting", "value": "NoSwipe", "atBeat": "build"},
+      {"label": "Date booked", "value": "Thu 8 PM", "atBeat": "booked"},
+      {"label": "Your commute", "value": "yours again", "atBeat": "commute"}
+    ],
+    "date": "Jess"
+  }
+}

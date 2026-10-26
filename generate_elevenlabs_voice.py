@@ -25,7 +25,7 @@ from pathlib import Path
 import importlib
 
 ROOT = Path(__file__).parent
-PROJECTS = {"thumb": "generate_thumb_audio"}
+PROJECTS = {"thumb": "generate_thumb_audio", "receipt": "generate_receipt_audio"}
 
 API = "https://api.elevenlabs.io/v1"
 DEFAULT_VOICE = "R9RZPy40Zzy1wNxrgQpj"  # "Witty McGee": the NoSwipe narrator.
@@ -71,6 +71,7 @@ def main() -> None:
     ap.add_argument("--force", action="store_true", help="overwrite existing takes")
     ap.add_argument("--voice", default=None)
     ap.add_argument("--project", choices=sorted(PROJECTS), required=True)
+    ap.add_argument("--episode", default=None, help="episode id, for projects driven by specs/<id>.json")
     args = ap.parse_args()
     load_env()
     key = os.environ.get("ELEVENLABS_API_KEY")
@@ -82,6 +83,10 @@ def main() -> None:
             print(f"{v['voice_id']}  {v['name']:<22} {labels}")
         return
     project = importlib.import_module(PROJECTS[args.project])
+    if hasattr(project, "configure"):
+        if not args.episode:
+            sys.exit(f"--project {args.project} needs --episode")
+        project.configure(args.episode)
     LINES, RECORDED = project.LINES, project.RECORDED
     overrides = getattr(project, "VOICE_OVERRIDES", {})
     # A project can pin its own narrator (e.g. a different brand); otherwise the .env default applies.
