@@ -1,0 +1,299 @@
+{
+ "id": "friday-night-live",
+ "format": "pregame",
+ "context": "Live: his Friday night",
+ "estimatedDurationSec": 41.4,
+ "lines": [
+  {
+   "n": 1,
+   "gapBefore": 0.2,
+   "text": "It's Friday at seven, and he wants a date.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 2,
+   "gapBefore": 0.3,
+   "text": "Phone out, thumb warmed up.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 3,
+   "gapBefore": 0.4,
+   "text": "Replay. Left swipe. Left again. And again.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 4,
+   "gapBefore": 0.4,
+   "text": "He opens a chat. Types... hey.",
+   "delivery": "dry"
+  },
+  {
+   "n": 5,
+   "gapBefore": 0.4,
+   "text": "Bold, risky, and... nothing.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 6,
+   "gapBefore": 0.4,
+   "text": "Nine PM, same couch, same phone, cold pizza.",
+   "delivery": "dry"
+  },
+  {
+   "n": 7,
+   "gapBefore": 0.5,
+   "text": "Midnight. Final score, zero date plans.",
+   "delivery": "dry"
+  },
+  {
+   "n": 8,
+   "gapBefore": 0.4,
+   "text": "Even the pizza has given up.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 9,
+   "gapBefore": 0.5,
+   "text": "Substitution: NoSwipe.",
+   "delivery": "warm"
+  },
+  {
+   "n": 10,
+   "gapBefore": 0.3,
+   "text": "It builds the profiles, swipes, chats, and books the date.",
+   "delivery": "warm"
+  },
+  {
+   "n": 11,
+   "gapBefore": 0.3,
+   "text": "Maya, Saturday, eleven AM, coffee and a walk.",
+   "delivery": "warm"
+  },
+  {
+   "n": 12,
+   "gapBefore": 0.6,
+   "text": "Same couch, better score.",
+   "delivery": "warm"
+  },
+  {
+   "n": 13,
+   "gapBefore": 0.4,
+   "text": "Stop swiping, just show up.",
+   "delivery": "warm"
+  }
+ ],
+ "beats": [
+  {
+   "name": "kickoff",
+   "line": 1,
+   "word": "Friday"
+  },
+  {
+   "name": "plan",
+   "line": 1,
+   "word": "wants"
+  },
+  {
+   "name": "date0",
+   "line": 1,
+   "word": "date"
+  },
+  {
+   "name": "phone",
+   "line": 2,
+   "word": "Phone"
+  },
+  {
+   "name": "thumb",
+   "line": 2,
+   "word": "thumb"
+  },
+  {
+   "name": "replay1",
+   "line": 3,
+   "word": "Replay"
+  },
+  {
+   "name": "left1",
+   "line": 3,
+   "word": "Left"
+  },
+  {
+   "name": "again",
+   "line": 3,
+   "word": "again"
+  },
+  {
+   "name": "opens",
+   "line": 4,
+   "word": "opens"
+  },
+  {
+   "name": "types",
+   "line": 4,
+   "word": "Types"
+  },
+  {
+   "name": "hey",
+   "line": 4,
+   "word": "hey"
+  },
+  {
+   "name": "bold",
+   "line": 5,
+   "word": "Bold"
+  },
+  {
+   "name": "nothing",
+   "line": 5,
+   "word": "nothing"
+  },
+  {
+   "name": "nine",
+   "line": 6,
+   "word": "Nine"
+  },
+  {
+   "name": "couch",
+   "line": 6,
+   "word": "couch"
+  },
+  {
+   "name": "pizza",
+   "line": 6,
+   "word": "pizza"
+  },
+  {
+   "name": "midnight",
+   "line": 7,
+   "word": "Midnight"
+  },
+  {
+   "name": "final",
+   "line": 7,
+   "word": "Final"
+  },
+  {
+   "name": "zero",
+   "line": 7,
+   "word": "zero"
+  },
+  {
+   "name": "even",
+   "line": 8,
+   "word": "Even"
+  },
+  {
+   "name": "given",
+   "line": 8,
+   "word": "given"
+  },
+  {
+   "name": "sub",
+   "line": 9,
+   "word": "Substitution"
+  },
+  {
+   "name": "noswipe",
+   "line": 9,
+   "word": "NoSwipe"
+  },
+  {
+   "name": "builds",
+   "line": 10,
+   "word": "builds"
+  },
+  {
+   "name": "swipes",
+   "line": 10,
+   "word": "swipes"
+  },
+  {
+   "name": "chats",
+   "line": 10,
+   "word": "chats"
+  },
+  {
+   "name": "books",
+   "line": 10,
+   "word": "books"
+  },
+  {
+   "name": "maya",
+   "line": 11,
+   "word": "Maya"
+  },
+  {
+   "name": "same",
+   "line": 12,
+   "word": "Same"
+  },
+  {
+   "name": "better",
+   "line": 12,
+   "word": "Better"
+  },
+  {
+   "name": "endcard",
+   "line": 13,
+   "word": "Stop"
+  }
+ ],
+ "scoreboard": {
+  "labels": [
+   "Date plans",
+   "Pizza"
+  ],
+  "states": [
+   {
+    "atBeat": "kickoff",
+    "clock": "7:00 PM",
+    "values": [
+     "0",
+     "3"
+    ]
+   },
+   {
+    "atBeat": "nine",
+    "clock": "9:00 PM",
+    "values": [
+     "0",
+     "1"
+    ]
+   },
+   {
+    "atBeat": "midnight",
+    "clock": "12:00 AM",
+    "values": [
+     "0",
+     "0"
+    ]
+   },
+   {
+    "atBeat": "zero",
+    "clock": "FINAL",
+    "values": [
+     "0",
+     "0"
+    ],
+    "bad": true
+   },
+   {
+    "atBeat": "better",
+    "clock": "SAT 11 AM",
+    "values": [
+     "Maya",
+     "for later"
+    ],
+    "good": true
+   }
+  ],
+  "note": "Values are jokes about one fictional evening, not statistics. No date count is shown or said."
+ },
+ "date": "maya",
+ "music": {
+  "mood": "light stadium-warmup groove that thins out into a lonely hum",
+  "notes": "Bright again at the substitution; crowd murmur fades after nine PM and returns with a cheer on the date card."
+ }
+}

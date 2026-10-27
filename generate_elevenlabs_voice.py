@@ -25,7 +25,7 @@ from pathlib import Path
 import importlib
 
 ROOT = Path(__file__).parent
-PROJECTS = {"thumb": "generate_thumb_audio", "receipt": "generate_receipt_audio"}
+PROJECTS = {"thumb": "generate_thumb_audio", "receipt": "generate_receipt_audio", "pregame": "generate_pregame_audio", "story": "generate_story_audio"}
 
 API = "https://api.elevenlabs.io/v1"
 DEFAULT_VOICE = "R9RZPy40Zzy1wNxrgQpj"  # "Witty McGee": the NoSwipe narrator.
@@ -89,6 +89,8 @@ def main() -> None:
         project.configure(args.episode)
     LINES, RECORDED = project.LINES, project.RECORDED
     overrides = getattr(project, "VOICE_OVERRIDES", {})
+    # Multi-voice stories cast a voice per line (LINE_VOICES: line number -> voice id).
+    line_voices = getattr(project, "LINE_VOICES", {})
     # A project can pin its own narrator (e.g. a different brand); otherwise the .env default applies.
     voice = args.voice or getattr(project, "VOICE_ID", None) or os.environ.get("ELEVENLABS_VOICE_ID") or DEFAULT_VOICE
     model = os.environ.get("ELEVENLABS_MODEL") or DEFAULT_MODEL
@@ -107,12 +109,13 @@ def main() -> None:
             "model_id": model,
             "voice_settings": {**DEFAULT, **overrides.get(n, {})},
             # Neighbouring lines keep the intonation continuous across separate takes.
-            "previous_text": " ".join(texts[max(0, n - 3):n - 1]) or None,
-            "next_text": texts[n] if n < len(texts) else None,
+            # (Skipped when lines have different speakers, so one voice's intonation doesn't bleed into another's.)
+            "previous_text": None if line_voices else " ".join(texts[max(0, n - 3):n - 1]) or None,
+            "next_text": None if line_voices else (texts[n] if n < len(texts) else None),
         }
         # The with-timestamps endpoint returns the audio plus per-character timing, which drives exact
         # caption timing and lip-sync downstream (saved as line-NN.align.json beside the take).
-        res = json.loads(request(f"/text-to-speech/{voice}/with-timestamps?output_format=mp3_44100_128", key, body))
+        res = json.loads(request(f"/text-to-speech/{line_voices.get(n, voice)}/with-timestamps?output_format=mp3_44100_128", key, body))
         audio = base64.b64decode(res["audio_base64"])
         target.write_bytes(audio)
         al = res.get("normalized_alignment") or res.get("alignment") or {}

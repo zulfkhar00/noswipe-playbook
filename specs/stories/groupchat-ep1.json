@@ -1,0 +1,276 @@
+{
+ "id": "groupchat-ep1",
+ "season": "The Group Chat Is Cooking",
+ "episode": 1,
+ "title": "The Draft",
+ "context": "Dev texts Sana tonight. His roommates are \"helping.\"",
+ "cast": {
+  "NARRATOR": "sfJopaWaOtauCD3HKX6Q",
+  "DEV": "uPdPVJPZIryn3WAH8mKG",
+  "BO": "TX3LPaxmHKxFdv7VOQHJ",
+  "NINA": "EXAVITQu4vr4xnSDxMaL",
+  "SANA": "cgSgspJ2msm6clMCkdW9"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NARRATOR",
+   "gapBefore": 1.7,
+   "text": "Dev likes Sana. Tonight he's finally asking her out.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 2,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Okay, I'm asking Sana out. Help.",
+   "delivery": "nervous"
+  },
+  {
+   "n": 3,
+   "speaker": "BO",
+   "gapBefore": 0.3,
+   "text": "Say, hey gorgeous, ready to meet your future husband?",
+   "delivery": "smug"
+  },
+  {
+   "n": 4,
+   "speaker": "NINA",
+   "gapBefore": 0.3,
+   "text": "Absolutely not. Delete that. Just ask her for coffee.",
+   "delivery": "dry"
+  },
+  {
+   "n": 5,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "I'll combine them.",
+   "delivery": "nervous"
+  },
+  {
+   "n": 6,
+   "speaker": "SANA",
+   "gapBefore": 0.4,
+   "text": "Hey Dev! How was your day?",
+   "delivery": "warm"
+  },
+  {
+   "n": 7,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Hi Sana, ready to meet your future husband? Coffee Saturday?",
+   "delivery": "nervous"
+  },
+  {
+   "n": 8,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.3,
+   "text": "He thinks he's still in the group chat.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 9,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Everyone vote. Sending.",
+   "delivery": "nervous"
+  },
+  {
+   "n": 10,
+   "speaker": "NINA",
+   "gapBefore": 0.5,
+   "text": "Dev. Where is the draft?",
+   "delivery": "dry"
+  },
+  {
+   "n": 11,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Oh no. Oh no, no, no.",
+   "delivery": "panicked"
+  },
+  {
+   "n": 12,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.4,
+   "text": "Sana is typing.",
+   "delivery": "deadpan"
+  }
+ ],
+ "chat": [
+  {
+   "from": "DEV",
+   "thread": "roommates",
+   "text": "okay i'm asking sana out. help",
+   "line": 2,
+   "word": "Help"
+  },
+  {
+   "from": "BO",
+   "thread": "roommates",
+   "text": "say: hey gorgeous, ready to meet your future husband?",
+   "line": 3,
+   "word": "husband"
+  },
+  {
+   "from": "BO",
+   "thread": "roommates",
+   "text": "trust me 😎🔥",
+   "line": 3,
+   "word": "husband",
+   "offset": 0.5
+  },
+  {
+   "from": "NINA",
+   "thread": "roommates",
+   "text": "Absolutely not. Delete that. Just ask her for coffee.",
+   "line": 4,
+   "word": "coffee"
+  },
+  {
+   "from": "DEV",
+   "thread": "roommates",
+   "text": "i'll combine them",
+   "line": 5,
+   "word": "combine"
+  },
+  {
+   "from": "SANA",
+   "thread": "sana",
+   "text": "hey dev! how was your day?",
+   "line": 6,
+   "word": "Hey"
+  },
+  {
+   "from": "DEV",
+   "thread": "sana",
+   "text": "hi sana, ready to meet your future husband? coffee saturday?",
+   "line": 9,
+   "word": "Sending"
+  },
+  {
+   "from": "NINA",
+   "thread": "roommates",
+   "text": "Dev. Where is the draft?",
+   "line": 10,
+   "word": "Dev"
+  }
+ ],
+ "beats": [
+  {
+   "name": "context",
+   "line": 1,
+   "word": "Sana"
+  },
+  {
+   "name": "tonight",
+   "line": 1,
+   "word": "Tonight"
+  },
+  {
+   "name": "help",
+   "line": 2,
+   "word": "Help"
+  },
+  {
+   "name": "say",
+   "line": 3,
+   "word": "Say"
+  },
+  {
+   "name": "husband",
+   "line": 3,
+   "word": "husband"
+  },
+  {
+   "name": "absolutely",
+   "line": 4,
+   "word": "Absolutely"
+  },
+  {
+   "name": "delete",
+   "line": 4,
+   "word": "Delete"
+  },
+  {
+   "name": "coffee",
+   "line": 4,
+   "word": "coffee"
+  },
+  {
+   "name": "combine",
+   "line": 5,
+   "word": "combine"
+  },
+  {
+   "name": "banner",
+   "line": 6,
+   "word": "Hey"
+  },
+  {
+   "name": "flip",
+   "line": 6,
+   "word": "Dev"
+  },
+  {
+   "name": "draftHi",
+   "line": 7,
+   "word": "Hi"
+  },
+  {
+   "name": "saturday",
+   "line": 7,
+   "word": "Saturday"
+  },
+  {
+   "name": "thinks",
+   "line": 8,
+   "word": "thinks"
+  },
+  {
+   "name": "groupchat",
+   "line": 8,
+   "word": "group"
+  },
+  {
+   "name": "vote",
+   "line": 9,
+   "word": "vote"
+  },
+  {
+   "name": "send",
+   "line": 9,
+   "word": "Sending"
+  },
+  {
+   "name": "where",
+   "line": 10,
+   "word": "Where"
+  },
+  {
+   "name": "draft",
+   "line": 10,
+   "word": "draft"
+  },
+  {
+   "name": "ohno",
+   "line": 11,
+   "word": "Oh"
+  },
+  {
+   "name": "dots",
+   "line": 12,
+   "word": "typing"
+  }
+ ],
+ "cliffhanger": "Dev's draft, written by Bo and Nina, was sent to Sana by mistake. Seen. Sana is typing.",
+ "posting": {
+  "titles": [
+   "He asked her out. His roommates wrote the text.",
+   "When your roommates write your first text to your crush",
+   "Dev's group chat sent the wrong text to Sana. Part 1"
+  ],
+  "caption": "Whose advice would you take, Bo's or Nina's? #groupchat #storytime #roommates #relationshiphumor #part1",
+  "pinned": "Part 2 tomorrow. Do you trust Bo or Nina?"
+ }
+}

@@ -10,6 +10,7 @@ Short vertical (1080×1920, 60 fps) 2.5D motion-graphics ads for NoSwipe, drawn 
 | "After Midnight" | receipt | `AfterMidnight` | `receipt --episode after-midnight` | the 1 AM swiper, bedroom; example date Maya | phone prints his dating app receipt at 1 AM |
 | "Next Stop: Nothing" | receipt | `NextStop` | `receipt --episode next-stop` | the commute swiper, train; example date Jess | phone prints his receipt on the train |
 | "Between Sets" | receipt (with a printer-stall twist) | `BetweenSets` | `receipt --episode between-sets` | the gym guy who swipes on every rest; example date Priya | phone prints his receipt on a gym bench, rest timer on the wall |
+| "Friday Night, Live" | Pre-Game | `FridayNightLive` | `pregame --episode friday-night-live` | the couch swiper, Friday night; example date Maya | LIVE couch shot, scoreboard "Date plans 0 · Pizza 3" |
 
 Formats and their rules are in `FORMATS.md`; results go in `FORMAT_LAB.md`. New ads start with the **scenario-writer** agent.
 
