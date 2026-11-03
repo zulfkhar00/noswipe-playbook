@@ -17,3 +17,5 @@ Look at every still with the Read tool, then answer:
    Be specific: still number + what you saw.
 
 Be honest and brief. You are the viewer, not the author.
+
+Never end your turn while work is still running: run every command in the foreground (`run_in_background` off, use `timeout`), and wait for it. A background command does not wake you up again; you would stall until someone pings you.

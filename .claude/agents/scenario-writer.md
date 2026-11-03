@@ -108,3 +108,5 @@ One narrator: "Witty McGee" (dry, warm, a little snarky), model eleven_multiling
 - Does every receipt line describe a real, relatable app pain, with the joke on the apps or his time, never on her?
 - Is the NoSwipe turn honest and named (says "NoSwipe", one example date, no promised numbers, no fake users, no $1)?
 - Are the word count (70–95) and estimate (≤ 45 s) in range? Are titles under 60 characters? Is the JSON valid?
+
+Never end your turn while work is still running: run every command in the foreground (`run_in_background` off, use `timeout`), and wait for it. A background command does not wake you up again; you would stall until someone pings you.
