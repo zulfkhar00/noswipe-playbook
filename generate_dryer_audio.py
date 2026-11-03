@@ -327,6 +327,20 @@ def from_spec(r: Stem, m: Stem, s: Stem, spec: dict) -> None:
     if "pump" in a:
         s.add(a["pump"], whoosh(0.25), 0.25)
         s.add(a["pump"] + 0.2, glock(91), 0.12)
+    # Optional cues added for the finale (part 6); earlier specs don't use them.
+    for at in a.get("buzzer", []):   # a dryer finishing its cycle for nobody
+        s.add(at, buzzer(), 0.22)
+    for at in a.get("thuds", []):   # the door flying open
+        s.add(at, thud(60, 0.45), 0.45)
+        s.add(at + 0.02, rustle(0.2), 0.15)
+    for lo, hi in a.get("runs", []):   # running steps on tile
+        t = lo
+        while t < hi:
+            s.add(t, step(), 0.3)
+            t += 0.2
+    if "finale" in a:   # a rising glockenspiel line over the last chord: the season ends
+        for k, n in enumerate((72, 76, 79, 83, 84, 88)):
+            m.add(a["finale"] + k * 0.22, glock(n), 0.055)
     d = dur - b["endcard"]
     tr = tt(d)
     drum = lowpass(rng.uniform(-1, 1, len(tr)), 0.03) * (0.6 + 0.4 * np.sin(2 * np.pi * 1.4 * tr)) * np.minimum(1, tr / 0.5) * np.minimum(1, (d - tr) / 0.6)

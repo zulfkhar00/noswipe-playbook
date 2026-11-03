@@ -13,6 +13,7 @@ import {RING3_FPS, RING3_FRAMES, Ring3} from './stories/ring/ep3';
 import {GC2_FPS, GC2_FRAMES, GroupChat2} from './stories/groupchat/ep2';
 import {SEAT14B_FPS, SEAT14B_FRAMES, Seat14B} from './safety/seat14b';
 import {GC3_FPS, GC3_FRAMES, GroupChat3} from './stories/groupchat/ep3';
+import {DRYER6_FPS, DRYER6_FRAMES, Dryer6} from './stories/dryer/ep6';
 import {DRYER5_FPS, DRYER5_FRAMES, Dryer5} from './stories/dryer/ep5';
 import {DRYER4_FPS, DRYER4_FRAMES, Dryer4} from './stories/dryer/ep4';
 import {DRYER3_FPS, DRYER3_FRAMES, Dryer3} from './stories/dryer/ep3';
@@ -27,6 +28,7 @@ import {ALLEY6_FPS, ALLEY6_FRAMES, Alley6} from './stories/alley/ep6';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Dryer6" component={Dryer6} durationInFrames={DRYER6_FRAMES} fps={DRYER6_FPS} width={1080} height={1920} />
     <Composition id="Dryer5" component={Dryer5} durationInFrames={DRYER5_FRAMES} fps={DRYER5_FPS} width={1080} height={1920} />
     <Composition id="Dryer4" component={Dryer4} durationInFrames={DRYER4_FRAMES} fps={DRYER4_FPS} width={1080} height={1920} />
     <Composition id="Dryer3" component={Dryer3} durationInFrames={DRYER3_FRAMES} fps={DRYER3_FPS} width={1080} height={1920} />
