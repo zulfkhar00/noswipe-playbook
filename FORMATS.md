@@ -97,3 +97,53 @@ Soft crowd murmur that thins out as the night drags, a whistle on kickoff, a "bw
 
 ### What to measure
 In priority order: link clicks or profile visits (this is a demand test), % watched, shares and saves per 1,000 views, comments (look for "that's me").
+
+---
+
+## Format 3 · Safety Card
+
+**What it tests:** relief. "Let the autopilot fly it." It also tests shareability, because everyone knows the in-flight safety briefing.
+**One-line premise:** a flight attendant gives the dating-app safety briefing to the one passenger who is still swiping. His night escalates like a rough flight, until NoSwipe takes over as the autopilot.
+
+### Why it works
+- **Scene-led, not a list:** most of the episode is one passenger in one cabin acting out his night: typing, waiting, the cabin falling asleep around him. The hazard panels punctuate his story; they don't replace it.
+- **Instantly clear, even on mute:** the cabin, the seat-belt sign, the numbered pictogram panels and the attendant explain themselves.
+- **Built-in jokes:** the "NO REPLY EXPECTED" stamp, a pictogram ghost leaving his phone, the phone that is "not a flotation device", the attendant's arms crossing.
+- **A natural turn:** "We're switching to autopilot" is exactly what the product does.
+
+### The narrator: the flight attendant
+Witty McGee as a chirpy, over-rehearsed attendant who slowly runs out of patience ("Sir. The only thing landing tonight is this plane."). An obvious comedy character, not a customer, so nobody claims to be a NoSwipe user. No second voice.
+
+### Episode structure (target 30–40 s, hard max 45)
+1. **Context + hook (0–3 s):** a safety-card cover reading **"Safety briefing / for dating apps"** over the cabin, passenger 14B (the only figure in safety orange) already on his phone, the seat-belt sign lit.
+2. **The setup (≈3–10 s):** "In the event of a match, remain calm." He jolts; the attendant gestures calm. Phone close-up: he types "hey"; the stamp "NO REPLY EXPECTED".
+3. **The hazards (≈10–21 s):** two full-frame numbered panels (e.g. Ghosting, Not a flotation device), then back in the cabin at night: lights down, neighbours asleep in eye masks, his face lit by the phone, the attendant holding up panel 3. He puts the phone down on "Phone down, please", then picks it straight back up.
+4. **The turn (≈21–34 s):** "Good news. We're switching to autopilot." Lights come up, the status strip reads AUTOPILOT. A card flip into the noswipe.app look: "Welcome aboard NoSwipe. It builds your profiles, swipes, chats, and books the date." Maya's date card slides in with a boarding-pass stub; the soft "noswipe.app" pill appears.
+5. **Payoff + end card (≈34–42 s):** the same seat in the morning, phone stowed, hands behind his head, seat-belt sign off with a ding ("Phone stowed. Seat upright. Date booked."). End card "Stop swiping. Just show up."
+
+### What changes between episodes
+- **The passenger and the flight:** the red-eye swiper, the commuter on a short hop, the gym guy in an exit row, the first-class guy with the "premium" bio.
+- **The in-flight event:** turbulence for "just one more swipe", a delayed departure for a match that never replies, the drinks cart as a dating-app queue.
+- **The hazard panels and the status-strip joke values.**
+- **The example date:** Maya, Jess or Priya from the site, with a generic place.
+
+### Honesty rules for this format
+- Status-strip values are jokes about one fictional flight, not statistics. Never call them average or typical.
+- Never state or imply a number of dates. The NoSwipe moment shows one example date, as on the site.
+- No $1, no app logos or UI. Tinder, Bumble and Hinge appear only as plain text, if at all.
+- The attendant is a comedy character. No fake users, reviews or results.
+- No real airlines, routes or places. The joke is never on her.
+
+### Visual direction (the format's own look, not the site's)
+- **Airline safety-card art** (`src/safety/look.tsx`): flat two-tone pictogram people with no outlines, no faces and thick rounded limbs (`Pax`), numbered panels on card stock with a navy title bar and an orange number disc (`Panel`), red prohibition marks (`NoSign`) and orange arrows (`Arrow`). Palette: navy #0B3D91, safety orange #FF7A1A (the hero only), card stock #F4EFE6, sign yellow #FFD400, hazard red #D7263D, greys for everyone else. Type: Helvetica Neue heavy; Arial Rounded for panel numbers.
+- **The scene:** a cabin seen down the aisle, built from row planes in depth (seats, bins, windows, the galley EXIT at the back), so the camera gets real parallax. The window goes from sunset to night to morning; cabin lights dim at one AM.
+- **Wrapper:** a seatback flight-status strip (clock plus two joke values) at y ≈ 292, the seat-belt / no-phone sign over row 14.
+- **Transition:** a card flip on a vertical hinge (`flipStyle`) with a paper whoosh, like a card pulled from the seat pocket.
+- **The brand moment:** only the NoSwipe turn (phone at work, the site's date card with a boarding-pass stub), the noswipe.app pill and the end card switch to the noswipe.app look.
+- **Camera:** slow pushes down the aisle onto 14B, a push into his phone-lit face for the attendant's punchline. Captions: Helvetica in card stock, the spoken word on a safety-orange tab, at y = 1150.
+
+### Sound
+Engine hum (low drone plus low-passed noise) that dulls after one AM and smooths out on autopilot, PA ding-dong chimes before the attendant's key lines, seat-belt dings, a paper whoosh on each flip, a ghostly "oooo", a splash, a cricket in row 14. The boarding loop is a bland electric piano that droops and stops at one AM, then returns brighter on autopilot. Sparkle ping on the date card.
+
+### What to measure
+In priority order: link clicks or profile visits, % watched, shares and saves per 1,000 views, comments (look for "that's me").

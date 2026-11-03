@@ -1,0 +1,247 @@
+{
+ "id": "groupchat-ep2",
+ "season": "The Group Chat Is Cooking",
+ "episode": 2,
+ "title": "Seen",
+ "context": "Dev's text went to Sana. She just answered.",
+ "cast": {
+  "NARRATOR": "sfJopaWaOtauCD3HKX6Q",
+  "DEV": "uPdPVJPZIryn3WAH8mKG",
+  "BO": "TX3LPaxmHKxFdv7VOQHJ",
+  "NINA": "EXAVITQu4vr4xnSDxMaL",
+  "SANA": "cgSgspJ2msm6clMCkdW9"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.1,
+   "text": "Previously: Dev sent his roommates' draft to Sana by mistake.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 2,
+   "speaker": "SANA",
+   "gapBefore": 0.3,
+   "text": "Haha, who wrote this? Also, yes to coffee.",
+   "delivery": "warm"
+  },
+  {
+   "n": 3,
+   "speaker": "DEV",
+   "gapBefore": 0.4,
+   "text": "She said yes. To that. Why?",
+   "delivery": "panicked"
+  },
+  {
+   "n": 4,
+   "speaker": "NINA",
+   "gapBefore": 0.3,
+   "text": "Nobody touch the phone. I will write a reply.",
+   "delivery": "dry"
+  },
+  {
+   "n": 5,
+   "speaker": "BO",
+   "gapBefore": 0.2,
+   "text": "No. Too slow. Give me the phone.",
+   "delivery": "smug"
+  },
+  {
+   "n": 6,
+   "speaker": "DEV",
+   "gapBefore": 0.2,
+   "text": "Bo, no! Bo, give it back!",
+   "delivery": "panicked"
+  },
+  {
+   "n": 7,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.3,
+   "text": "Bo is typing as Dev.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 8,
+   "speaker": "BO",
+   "gapBefore": 0.3,
+   "text": "Forgive the chaos. Saturday, seven. I'm planning a surprise.",
+   "delivery": "smug"
+  },
+  {
+   "n": 9,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Seven?! Bo, seven what?",
+   "delivery": "panicked"
+  },
+  {
+   "n": 10,
+   "speaker": "BO",
+   "gapBefore": 0.2,
+   "text": "Relax. I'll think of something.",
+   "delivery": "smug"
+  },
+  {
+   "n": 11,
+   "speaker": "SANA",
+   "gapBefore": 0.4,
+   "text": "Ooh, a surprise! I'll be there.",
+   "delivery": "warm"
+  },
+  {
+   "n": 12,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "Bo. What surprise?",
+   "delivery": "panicked"
+  },
+  {
+   "n": 13,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.4,
+   "text": "Saturday at seven. And nobody has a plan.",
+   "delivery": "deadpan"
+  }
+ ],
+ "chat": [
+  {
+   "from": "SANA",
+   "thread": "sana",
+   "text": "haha, who wrote this? also, yes to coffee.",
+   "line": 2,
+   "word": "Haha"
+  },
+  {
+   "from": "NINA",
+   "thread": "roommates",
+   "text": "Nobody touch the phone. I will write a reply.",
+   "line": 4,
+   "word": "Nobody"
+  },
+  {
+   "from": "BO",
+   "thread": "roommates",
+   "text": "no. too slow. give me the phone.",
+   "line": 5,
+   "word": "No"
+  },
+  {
+   "from": "DEV",
+   "thread": "sana",
+   "text": "forgive the chaos. saturday, seven. i'm planning a surprise.",
+   "line": 8,
+   "word": "surprise",
+   "offset": 0.55
+  },
+  {
+   "from": "SANA",
+   "thread": "sana",
+   "text": "ooh, a surprise! i'll be there.",
+   "line": 11,
+   "word": "Ooh"
+  }
+ ],
+ "beats": [
+  {
+   "name": "recap",
+   "line": 1,
+   "word": "Previously"
+  },
+  {
+   "name": "mistake",
+   "line": 1,
+   "word": "mistake"
+  },
+  {
+   "name": "haha",
+   "line": 2,
+   "word": "Haha"
+  },
+  {
+   "name": "yes",
+   "line": 2,
+   "word": "yes"
+  },
+  {
+   "name": "said",
+   "line": 3,
+   "word": "said"
+  },
+  {
+   "name": "nobody",
+   "line": 4,
+   "word": "Nobody"
+  },
+  {
+   "name": "tooslow",
+   "line": 5,
+   "word": "Too"
+  },
+  {
+   "name": "grab",
+   "line": 5,
+   "word": "phone"
+  },
+  {
+   "name": "bono",
+   "line": 6,
+   "word": "Bo"
+  },
+  {
+   "name": "botypes",
+   "line": 7,
+   "word": "typing"
+  },
+  {
+   "name": "forgive",
+   "line": 8,
+   "word": "Forgive"
+  },
+  {
+   "name": "surprise",
+   "line": 8,
+   "word": "surprise"
+  },
+  {
+   "name": "sevenwhat",
+   "line": 9,
+   "word": "Seven"
+  },
+  {
+   "name": "relax",
+   "line": 10,
+   "word": "Relax"
+  },
+  {
+   "name": "ooh",
+   "line": 11,
+   "word": "Ooh"
+  },
+  {
+   "name": "whatsurprise",
+   "line": 12,
+   "word": "What"
+  },
+  {
+   "name": "sat7",
+   "line": 13,
+   "word": "Saturday"
+  },
+  {
+   "name": "plan",
+   "line": 13,
+   "word": "plan"
+  }
+ ],
+ "cliffhanger": "Bo, replying as Dev, booked a 'surprise' Saturday at seven. Sana said yes, and nobody has a plan.",
+ "posting": {
+  "titles": [
+   "His roommate texted his crush as him. Part 2",
+   "She said yes to the husband text. Part 2",
+   "Bo took his phone and booked a surprise date. Part 2"
+  ],
+  "caption": "Is Bo a menace or secretly a hero? #groupchat #storytime #roommates #relationshiphumor #part2",
+  "pinned": "Part 3 tomorrow. What would YOU plan for Saturday at seven?"
+ }
+}

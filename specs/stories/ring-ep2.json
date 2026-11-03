@@ -1,0 +1,247 @@
+{
+ "id": "ring-ep2",
+ "season": "The Ring in the Drawer",
+ "episode": 2,
+ "title": "Act Normal",
+ "format": "ai-drama",
+ "context": "Previously: Nora found a ring box. Then she heard Sam say, \"Don't tell her yet.\"",
+ "cast": {
+  "NORA": "hpp4J3VqNfWAUOO0d1Us",
+  "SAM": "bIHbv24MWmeRgasZH58o"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.2,
+   "text": "Three a.m. And I can't stop looking at that drawer.",
+   "delivery": "tense"
+  },
+  {
+   "n": 2,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.4,
+   "text": "Fine. Yes. My answer is yes. It was always yes.",
+   "delivery": "hopeful"
+  },
+  {
+   "n": 3,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "The green dress. The one he said made him forget his words.",
+   "delivery": "warm"
+  },
+  {
+   "n": 4,
+   "speaker": "SAM",
+   "kind": "offscreen",
+   "gapBefore": 0.4,
+   "text": "Nora... there's something I've been wanting to tell you.",
+   "delivery": "soft"
+  },
+  {
+   "n": 5,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.2,
+   "text": "Here it is. This is it. Say it, Sam.",
+   "delivery": "breathless"
+  },
+  {
+   "n": 6,
+   "speaker": "SAM",
+   "kind": "offscreen",
+   "gapBefore": 0.5,
+   "text": "Never mind. It can wait. Let's eat.",
+   "delivery": "tense"
+  },
+  {
+   "n": 7,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.4,
+   "text": "Three missed calls. Then he takes his phone into the bedroom.",
+   "delivery": "tense"
+  },
+  {
+   "n": 8,
+   "speaker": "SAM",
+   "kind": "phone",
+   "gapBefore": 0.3,
+   "text": "Saturday's off. Something came up. I'm so sorry, babe.",
+   "delivery": "warm"
+  },
+  {
+   "n": 9,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.4,
+   "text": "Something always comes up now.",
+   "delivery": "hurt"
+  },
+  {
+   "n": 10,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.5,
+   "text": "The box. It's gone.",
+   "delivery": "hurt"
+  },
+  {
+   "n": 11,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 1.3,
+   "text": "Need what by Friday?",
+   "delivery": "tense"
+  }
+ ],
+ "chat": [],
+ "beats": [
+  {
+   "name": "drawer",
+   "line": 1,
+   "word": "drawer"
+  },
+  {
+   "name": "yes",
+   "line": 2,
+   "word": "yes"
+  },
+  {
+   "name": "dress",
+   "line": 3,
+   "word": "dress"
+  },
+  {
+   "name": "tell",
+   "line": 4,
+   "word": "tell"
+  },
+  {
+   "name": "sayit",
+   "line": 5,
+   "word": "Say"
+  },
+  {
+   "name": "never",
+   "line": 6,
+   "word": "Never"
+  },
+  {
+   "name": "missed",
+   "line": 7,
+   "word": "missed"
+  },
+  {
+   "name": "off",
+   "line": 8,
+   "word": "off"
+  },
+  {
+   "name": "always",
+   "line": 9,
+   "word": "always"
+  },
+  {
+   "name": "gone",
+   "line": 10,
+   "word": "gone"
+  },
+  {
+   "name": "friday",
+   "line": 11,
+   "word": "Friday"
+  }
+ ],
+ "shots": [
+  {
+   "id": "s1",
+   "fromLine": 1,
+   "keyframe": "Medium close-up: Nora lying awake in bed at night, head on the pillow, eyes wide open and fixed on the round oak nightstand drawer in the foreground (drawer slightly ajar), Sam asleep with his back to her, blurred. Cold teal moonlight through the window, a faint amber streetlamp rim on her cheek, her yellow hair clip on the nightstand.",
+   "motion": "Very slow push-in toward her eyes; she blinks once and swallows; her gaze stays on the drawer; the curtain moves almost imperceptibly.",
+   "refs": "nora sam set"
+  },
+  {
+   "id": "s2",
+   "fromLine": 2,
+   "keyframe": "Medium shot, morning: Nora at a standing wardrobe mirror in the bedroom, a quiet determined smile, one hand pressed flat on her chest, golden honey sunlight through sage curtains, dust motes in the air, wearing her cream tee.",
+   "motion": "She exhales, her shoulders drop, then she nods at her reflection; the light swells warm; slow dolly-in.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s3",
+   "fromLine": 3,
+   "keyframe": "Medium-wide: Nora holding a forest-green dress against herself in front of the mirror, mid-spin, skirt flaring, laughing, the bedroom full of warm sun and trailing plants.",
+   "motion": "She twirls once, the skirt flaring, then hugs the dress to her chest with a shy smile; the camera orbits slightly.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s4",
+   "fromLine": 4,
+   "keyframe": "Over Sam's shoulder at night (his back, curly hair and glasses arm toward camera, no face visible): candlelit kitchen table with dumpling boxes; Nora across from him wearing a forest-green dress, glowing and hopeful, eyes shining. Warm honey candlelight.",
+   "motion": "Sam's hand reaches across and gently takes Nora's; her breath catches; the candle flame steadies; slow push-in on her face.",
+   "refs": "nora sam set"
+  },
+  {
+   "id": "s5",
+   "fromLine": 5,
+   "keyframe": "Extreme close-up of two clasped hands on a wooden table: Nora's fingers curling around Sam's, his worn leather watch visible, warm candlelight, shallow depth of field.",
+   "motion": "His thumb trembles, hers squeezes back; a small flicker of candlelight; very slow push-in.",
+   "refs": "nora sam"
+  },
+  {
+   "id": "s6",
+   "fromLine": 6,
+   "keyframe": "Medium shot of the kitchen table at night: a phone lights up and buzzes beside the dumpling boxes, Sam's hand with the leather watch pulling back from Nora's open palm, her hand left empty on the table, her green dress sleeve visible. The light is turning from warm honey to cool teal.",
+   "motion": "The phone vibrates; his hand withdraws and Nora's fingers stay open, then slowly curl closed; the candle gutters; the lighting cools across the frame.",
+   "refs": "nora sam set"
+  },
+  {
+   "id": "s7",
+   "fromLine": 7,
+   "keyframe": "Wide shot in cold teal light: Sam from behind carrying his phone into the dark bedroom doorway, the door almost closed; Nora alone at the kitchen table in the forest-green dress beside a single melting candle, composed but hollow.",
+   "motion": "The bedroom door clicks shut; Nora's gaze lowers; the candle flame dies; slow pull-back widens the empty kitchen around her.",
+   "refs": "nora sam set"
+  },
+  {
+   "id": "s8",
+   "fromLine": 8,
+   "keyframe": "Medium close-up, the next day in grey-teal daylight: Nora sitting on the mustard velvet sofa in her mustard cardigan, phone glowing in both hands, the green dress folded on the sofa arm, tenderness and hurt on her face.",
+   "motion": "The phone light pulses; her thumb pauses over the screen; a long exhale; she looks toward the bedroom door and back.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s9",
+   "fromLine": 10,
+   "keyframe": "Point-of-view close-up looking down into the open round oak nightstand drawer: empty, a clean rectangular patch in the dust where the ring box used to sit, cold teal lamplight, Nora's hand hovering above the empty space, fingers trembling.",
+   "motion": "Her hand lowers slowly and touches the empty spot; her fingertips come away with a faint trace of dust; the camera pushes in, then holds.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s10",
+   "fromLine": 11,
+   "keyframe": "Close-up of a smartphone lying screen-up on a kitchen counter, its screen softly lit and blank, Nora's face reflected faintly in the dark glass of the cabinet beside it, eyes widening, cold teal light.",
+   "motion": "The phone screen lights up brighter and the phone vibrates once; her reflection leans in; she freezes, eyes wide.",
+   "refs": "nora set"
+  }
+ ],
+ "overlays": {
+  "s7": "3 missed calls",
+  "s8": "Sam · voice note",
+  "s10": "Did you bring it? We need it by Friday."
+ },
+ "cliffhanger": "The ring box is gone. Then Sam's phone lights up from an unknown number: \"Did you bring it? We need it by Friday.\"",
+ "posting": {
+  "titles": [
+   "He almost proposed. Then his phone buzzed. Part 2",
+   "The ring box was empty and he said nothing. Part 2",
+   "She said yes in her head. Then the box vanished. Part 2"
+  ],
+  "caption": "She was ready to say yes. He took her hand and almost said it. Then his phone buzzed, and the ring was gone. Was Sam about to propose, or about to confess? Tell me what you think 'it' is and who 'we' are. Part 3 soon. #lovestory #animatedstory #storytime #relationshipdrama #ringinthedrawer",
+  "pinned": "Team Sam or Team Nora so far? Be honest. And what does 'we need it by Friday' mean to you?"
+ }
+}

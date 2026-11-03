@@ -1,0 +1,94 @@
+{
+ "id": "dryer-ep1",
+ "season": "The Dryer Notes",
+ "episode": 1,
+ "title": "My sock turned a stranger's laundry pink. Part 1",
+ "note": "Silent season: no voices. Notes are the dialogue; stamped strips set the scene. Vote-and-rewind: each part ends on 'What should he write back?' and the next part plays the wrong choice, rewinds (the drum spins backwards) and continues with the right one. All times in seconds.",
+ "duration": 40.0,
+ "beats": {
+  "arrive": 3.3,
+  "set": 3.7,
+  "pick": 4.6,
+  "closeIn": 5.2,
+  "closeOut": 11.2,
+  "unfold": 11.6,
+  "shirtNote": 12.5,
+  "facepalm": 15.0,
+  "facepalmEnd": 16.6,
+  "basket": 16.9,
+  "grin": 18.3,
+  "pen": 19.4,
+  "choice": 22.4,
+  "cardA": 23.2,
+  "cardB": 24.6,
+  "comment": 30.4,
+  "endcard": 34.6
+ },
+ "note1": {
+  "lines": [
+   {
+    "text": "you left a red sock",
+    "at": 5.7
+   },
+   {
+    "text": "in the washer.",
+    "at": 6.5
+   },
+   {
+    "text": "now everything I own",
+    "at": 7.6
+   },
+   {
+    "text": "is pink.",
+    "at": 8.3
+   },
+   {
+    "text": "— dryer 5",
+    "at": 9.4,
+    "sign": true
+   }
+  ]
+ },
+ "shirtNote": "this was white.",
+ "choices": {
+  "question": "what should he write back?",
+  "A": {
+   "note": "so sorry! the bleach is on me.",
+   "draw": "bleach"
+  },
+  "B": {
+   "note": "I owe you a new shirt. also... we match now.",
+   "draw": "tee"
+  }
+ },
+ "strips": [
+  {
+   "text": "11 PM. the laundromat.",
+   "from": -0.4,
+   "to": 3.6,
+   "y": 330
+  },
+  {
+   "text": "my sock turned a stranger's wash pink.",
+   "from": -0.4,
+   "to": 3.6,
+   "y": 430
+  },
+  {
+   "text": "his sock. her whole wash.",
+   "from": 16.9,
+   "to": 19.2,
+   "y": 330
+  },
+  {
+   "text": "he has to write back.",
+   "from": 19.6,
+   "to": 22.3,
+   "y": 330
+  }
+ ],
+ "cast": {
+  "Him": "29, uses dryer 4. Messy hair, blue hoodie, a basket of white tees. Writes in small caps on receipts.",
+  "Her": "Unseen in part 1. Uses dryer 5, signs her notes '— dryer 5', writes in loose script, doodles in pink."
+ }
+}

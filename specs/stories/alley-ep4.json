@@ -1,0 +1,132 @@
+{
+ "id": "alley-ep4",
+ "season": "Across the Alley",
+ "episode": 4,
+ "title": "Her roommate doesn't swipe. At all. Part 4",
+ "note": "Silent. Recap: she's moving in 3 weeks. The next night Mira is swiping and Jo is judging her phone; Theo gets a new match and turns his phone face down. Signs: Jo doesn't swipe, she uses NoSwipe (\"they swipe. I show up.\"), and Mira undercuts it with \"she's unbearable.\" (mention 1: the friend's thing, never the fix for Theo and Mira). A week later: Theo asks her for coffee downstairs at 10am; she picks up her pen and writes nothing. Times in seconds.",
+ "duration": 41.5,
+ "beats": {
+  "next": 3.6,
+  "swipeFrom": 3.9,
+  "buzz": 5.4,
+  "lookUp": 6.6,
+  "faceDown": 7.4,
+  "herSees": 9.2,
+  "rollEyes": 24.0,
+  "joOut": 26.4,
+  "buzz2": 28.2,
+  "buzz3": 29.0,
+  "coffee": 30.8,
+  "herLooks": 31.2,
+  "pen": 31.8,
+  "stall": 32.4,
+  "sting": 33.4,
+  "endcard": 37.6,
+  "lonelyFrom": 3.9,
+  "lonelyTo": 8.2,
+  "warmFrom": 8.4,
+  "warmTo": 26.8
+ },
+ "dips": [
+  27.2
+ ],
+ "signs": [
+  {
+   "who": "her",
+   "text": "I move away|in 3 weeks.",
+   "write": -9,
+   "up": -8,
+   "down": 3.2
+  },
+  {
+   "who": "him",
+   "text": "you're still|swiping?",
+   "write": 8.4,
+   "up": 9.1,
+   "down": 11.0
+  },
+  {
+   "who": "her",
+   "text": "my roommate|says I'm|hopeless.",
+   "write": 11.0,
+   "up": 11.8,
+   "down": 13.6
+  },
+  {
+   "who": "jo",
+   "text": "I don't|swipe.",
+   "write": 13.6,
+   "up": 14.3,
+   "down": 16.0
+  },
+  {
+   "who": "him",
+   "text": "how??",
+   "write": 16.0,
+   "up": 16.5,
+   "down": 17.4
+  },
+  {
+   "who": "jo",
+   "text": "I use|NoSwipe.",
+   "write": 17.4,
+   "up": 18.2,
+   "down": 20.6
+  },
+  {
+   "who": "jo",
+   "text": "they swipe.|I show up.",
+   "write": 20.8,
+   "up": 21.6,
+   "down": 23.6
+  },
+  {
+   "who": "her",
+   "text": "she's|unbearable.",
+   "write": 23.6,
+   "up": 24.3,
+   "down": 26.2
+  },
+  {
+   "who": "him",
+   "text": "coffee?|downstairs.|10am",
+   "write": 29.6,
+   "up": 30.8,
+   "down": 99
+  },
+  {
+   "who": "her",
+   "text": "",
+   "write": 31.8,
+   "up": 99,
+   "down": 34.2,
+   "stop": 32.4
+  }
+ ],
+ "strips": [
+  {
+   "text": "last night, she told him:",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "the next night.",
+   "from": 3.8,
+   "to": 5.4,
+   "y": 330
+  },
+  {
+   "text": "a week later.",
+   "from": 27.3,
+   "to": 28.9,
+   "y": 330
+  },
+  {
+   "text": "no answer.",
+   "from": 34.4,
+   "to": 37.4,
+   "y": 330
+  }
+ ]
+}

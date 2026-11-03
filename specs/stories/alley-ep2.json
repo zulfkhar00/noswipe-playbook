@@ -1,0 +1,120 @@
+{
+ "id": "alley-ep2",
+ "season": "Across the Alley",
+ "episode": 2,
+ "title": "I said sorry with a pizza box. Part 2",
+ "note": "Silent. Recap, then the next night: an apology taped to the glass, hours of waiting, names at last, rule #1, and someone opens her door. Times in seconds.",
+ "duration": 42.5,
+ "beats": {
+  "next": 3.6,
+  "buzz": 7.0,
+  "faceDown": 7.8,
+  "tape": 12.4,
+  "doze": 14.0,
+  "herOn": 17.6,
+  "herIn": 17.8,
+  "herSees": 18.6,
+  "tug": 19.2,
+  "wake": 19.6,
+  "untape": 23.0,
+  "door": 32.6,
+  "visitor": 32.9,
+  "herTurn": 33.2,
+  "wave": 33.9,
+  "shut": 35.2,
+  "sinks": 37.0,
+  "endcard": 38.8,
+  "lonelyFrom": 3.8,
+  "lonelyTo": 17.4,
+  "warmFrom": 19.8,
+  "warmTo": 32.4
+ },
+ "signs": [
+  {
+   "who": "him",
+   "text": "sorry.|it was just|an app.",
+   "write": 8.6,
+   "up": 11.6,
+   "down": 23.0,
+   "taped": 12.4
+  },
+  {
+   "who": "her",
+   "text": "I'm Mira.",
+   "write": 19.8,
+   "up": 20.6,
+   "down": 23.2
+  },
+  {
+   "who": "him",
+   "text": "Theo.",
+   "write": 23.4,
+   "up": 24.4,
+   "down": 26.6
+  },
+  {
+   "who": "her",
+   "text": "rule #1:|no phones|at the window.",
+   "write": 26.8,
+   "up": 27.8,
+   "down": 30.2
+  },
+  {
+   "who": "him",
+   "text": "deal.",
+   "write": 30.4,
+   "up": 31.2,
+   "down": 37.0
+  }
+ ],
+ "strips": [
+  {
+   "text": "last night she asked his name.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "he checked a match instead.",
+   "from": 0.5,
+   "to": 3.3,
+   "y": 420
+  },
+  {
+   "text": "the next night.",
+   "from": 3.8,
+   "to": 6.4,
+   "y": 330
+  },
+  {
+   "text": "11:48 PM",
+   "from": 4.2,
+   "to": 6.4,
+   "y": 420
+  },
+  {
+   "text": "not tonight.",
+   "from": 7.7,
+   "to": 9.6,
+   "y": 330
+  },
+  {
+   "text": "12:30 AM",
+   "from": 13.6,
+   "to": 14.6,
+   "y": 330
+  },
+  {
+   "text": "1:15 AM",
+   "from": 14.8,
+   "to": 15.9,
+   "y": 330
+  },
+  {
+   "text": "1:58 AM",
+   "from": 16.1,
+   "to": 17.3,
+   "y": 330
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "id": "dryer-ep5",
+ "season": "The Dryer Notes",
+ "episode": 5,
+ "title": "She said yes to Thursday. Then she didn't show. Part 5",
+ "note": "Vote-and-rewind: A (leave his number) plays: she likes the notes better, he is left staring at a silent phone; rewind; B (thursday, 9pm?) gets 'it's a date. bring the sock.' Thursday: he is early, the wall clock runs 9:00 to 9:40, dryer 5 stays empty. Ends on 'what should he do?'. All times in seconds.",
+ "duration": 47.5,
+ "beats": {
+  "recapA": 1.7,
+  "aIn": 3.4,
+  "aPlace": 4.4,
+  "aNight": 5.9,
+  "aNote": 6.5,
+  "aSad": 9.9,
+  "phone": 10.2,
+  "rewind": 12.0,
+  "drum": 13.4,
+  "bIn": 14.6,
+  "bPlace": 15.5,
+  "bShow": 16.2,
+  "bNight": 16.8,
+  "bNote": 17.4,
+  "bGrin": 22.4,
+  "pump": 23.2,
+  "thursday": 24.6,
+  "clock": 26.3,
+  "empty": 31.0,
+  "choice": 34.0,
+  "cardA": 34.8,
+  "cardB": 36.2,
+  "comment": 40.0,
+  "endcard": 43.0
+ },
+ "aReply": [
+  {
+   "text": "oh. I like the notes",
+   "at": 7.0
+  },
+  {
+   "text": "better, honestly.",
+   "at": 7.8
+  },
+  {
+   "text": "phones feel loud.",
+   "at": 8.6
+  },
+  {
+   "text": "— Nora, dryer 5",
+   "at": 9.3,
+   "sign": true
+  }
+ ],
+ "bReply": [
+  {
+   "text": "it's a date.",
+   "at": 18.1
+  },
+  {
+   "text": "bring the sock.",
+   "at": 19.2
+  },
+  {
+   "text": "I'll wear the pink.",
+   "at": 20.3
+  },
+  {
+   "text": "— Nora, dryer 5",
+   "at": 21.4,
+   "sign": true
+  }
+ ],
+ "choices": {
+  "question": "what should he do?",
+  "A": {
+   "l1": "come back again",
+   "l2": "next thursday.",
+   "draw": "clock"
+  },
+  "B": {
+   "l1": "leave one",
+   "l2": "last note.",
+   "draw": "penNote"
+  }
+ },
+ "strips": [
+  {
+   "text": "Leo & Nora trade notes. never met.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "his number, or a real plan?",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 1330,
+   "spec": "p"
+  },
+  {
+   "text": "A: here's my number.",
+   "from": 3.5,
+   "to": 5.8,
+   "y": 330
+  },
+  {
+   "text": "next night.",
+   "from": 5.9,
+   "to": 6.6,
+   "y": 960,
+   "big": true
+  },
+  {
+   "text": "he waited. the phone stayed dark.",
+   "from": 10.2,
+   "to": 12.0,
+   "y": 330
+  },
+  {
+   "text": "rewind. here's what really happened.",
+   "from": 13.5,
+   "to": 14.6,
+   "y": 1290,
+   "spec": "p",
+   "size": 50
+  },
+  {
+   "text": "B: thursday, 9pm?",
+   "from": 14.7,
+   "to": 16.7,
+   "y": 330
+  },
+  {
+   "text": "I'll be at dryer 4.",
+   "from": 15.3,
+   "to": 16.7,
+   "y": 430,
+   "spec": "p"
+  },
+  {
+   "text": "the night after.",
+   "from": 16.8,
+   "to": 17.5,
+   "y": 960,
+   "big": true
+  },
+  {
+   "text": "she said yes.",
+   "from": 22.5,
+   "to": 24.4,
+   "y": 330
+  },
+  {
+   "text": "thursday. 9pm.",
+   "from": 24.6,
+   "to": 26.2,
+   "y": 960,
+   "big": true
+  },
+  {
+   "text": "he got there early.",
+   "from": 26.4,
+   "to": 28.6,
+   "y": 330
+  },
+  {
+   "text": "9:20. nobody yet.",
+   "from": 28.6,
+   "to": 30.8,
+   "y": 330
+  },
+  {
+   "text": "9:40. dryer 5 is empty.",
+   "from": 31.2,
+   "to": 33.9,
+   "y": 330
+  },
+  {
+   "text": "she never came.",
+   "from": 31.6,
+   "to": 33.9,
+   "y": 430,
+   "spec": "p"
+  }
+ ],
+ "audio": {
+  "groove": [
+   [
+    0,
+    3.3
+   ],
+   [
+    14.6,
+    17.5
+   ],
+   [
+    22.4,
+    24.5
+   ]
+  ],
+  "sadFrom": 9.9,
+  "glock": [
+   7.0,
+   7.8,
+   8.6,
+   9.3,
+   18.1,
+   19.2,
+   20.3,
+   21.4
+  ],
+  "steps": [
+   [
+    3.4,
+    4.3
+   ],
+   [
+    14.6,
+    15.4
+   ]
+  ],
+  "stamps": [
+   0.1,
+   1.7,
+   3.6,
+   10.3,
+   13.6,
+   14.8,
+   15.4,
+   22.6,
+   26.5,
+   28.7,
+   31.3,
+   31.7,
+   34.3,
+   34.85,
+   36.25,
+   40.05,
+   43.25,
+   43.55,
+   43.85,
+   44.25
+  ],
+  "whooshes": [
+   5.8,
+   6.4,
+   9.8,
+   16.7,
+   17.3,
+   22.3,
+   24.5,
+   26.2,
+   30.8,
+   33.9,
+   42.8
+  ],
+  "rustles": [
+   4.4,
+   15.5
+  ],
+  "rewind": [
+   12.0,
+   14.6
+  ],
+  "pump": 23.2,
+  "clockTicks": [
+   26.3,
+   31.0
+  ],
+  "tumbleweed": 31.4
+ }
+}

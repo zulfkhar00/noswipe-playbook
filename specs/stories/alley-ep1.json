@@ -1,0 +1,98 @@
+{
+ "id": "alley-ep1",
+ "season": "Across the Alley",
+ "episode": 1,
+ "title": "My neighbour swipes at 2 AM too. Part 1",
+ "note": "Silent season: no voices. Signs are the dialogue; paper strips set the scene. All times in seconds.",
+ "duration": 45.0,
+ "beats": {
+  "title": 0.2,
+  "so": 3.7,
+  "wide": 6.6,
+  "sync": 7.4,
+  "drop": 9.2,
+  "herLook": 9.6,
+  "hisLook": 10.2,
+  "hide": 11.0,
+  "laugh": 26.8,
+  "laughEnd": 28.6,
+  "buzz": 34.6,
+  "lookDown": 34.9,
+  "dark": 38.7,
+  "lookUp": 39.3,
+  "lift": 39.7,
+  "endcard": 41.3,
+  "herSees": 37.5,
+  "shut": 38.0
+ },
+ "signs": [
+  {
+   "who": "her",
+   "text": "you too?",
+   "write": 12.4,
+   "up": 13.2,
+   "down": 15.6
+  },
+  {
+   "who": "him",
+   "text": "every night.",
+   "write": 15.8,
+   "up": 16.8,
+   "down": 19.2
+  },
+  {
+   "who": "her",
+   "text": "any luck?",
+   "write": 19.4,
+   "up": 20.1,
+   "down": 22.3
+  },
+  {
+   "who": "him",
+   "text": "nope. you?",
+   "write": 22.5,
+   "up": 23.2,
+   "down": 25.4
+  },
+  {
+   "who": "her",
+   "text": "same.",
+   "write": 25.6,
+   "up": 26.1,
+   "down": 29.3
+  },
+  {
+   "who": "her",
+   "text": "what's your name?",
+   "write": 29.6,
+   "up": 30.6,
+   "down": 37.7
+  },
+  {
+   "who": "him",
+   "text": "TH",
+   "write": 33.6,
+   "up": 39.7,
+   "down": 99,
+   "stop": 34.6
+  }
+ ],
+ "strips": [
+  {
+   "text": "2:07 AM.",
+   "from": -0.4,
+   "to": 3.4,
+   "y": 330
+  },
+  {
+   "text": "two neighbours. both swiping.",
+   "from": -0.4,
+   "to": 3.4,
+   "y": 420
+  }
+ ],
+ "cast": {
+  "Theo": "28, window 4B (left). Can't sleep, swipes in bed, writes on pizza-box lids. Messy hair tuft.",
+  "Mira": "27, the window across (right). Desk, mug, string lights, a plant; writes in a sketchbook. Hair in a bun."
+ }
+}

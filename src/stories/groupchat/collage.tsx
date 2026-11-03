@@ -10,8 +10,8 @@ export const S = {
   wall: '#8E9BE8', wallLo: '#7A88DB', cork: '#C99A6B', corkLo: '#B5865A', paper: '#FFFDF6', ink: '#1F2550', inkSoft: '#5A6190',
   butter: '#FFE58A', coral: '#FF8A7A', teal: '#4FC1B5', peach: '#FFC9A8', mint: '#BDEBD6', red: '#E2483B', tape: '#FFF3C4',
 };
-export const ROUND = "'Avenir Next Rounded', 'Arial Rounded MT Bold', 'Avenir Next', 'Helvetica Neue', sans-serif";
-export const HAND = "'Noteworthy', 'Chalkboard SE', 'Marker Felt', cursive";
+export const ROUND = "'Avenir Next Rounded', 'Arial Rounded MT Bold', 'Nunito', 'Avenir Next', 'Nunito Sans', 'Helvetica Neue', 'Inter', sans-serif";
+export const HAND = "'Noteworthy', 'Patrick Hand', 'Chalkboard SE', 'Marker Felt', 'Permanent Marker', cursive";
 
 export type Who = 'DEV' | 'BO' | 'NINA' | 'SANA';
 export const BUBBLE: Record<Who, string> = {DEV: S.butter, BO: S.coral, NINA: S.teal, SANA: S.peach};
@@ -121,8 +121,8 @@ const bubbleSize = (text: string) => {
   return {lines, w: Math.min(330, 40 + Math.max(...lines.map((l) => l.length)) * 15.5), h: 26 + lines.length * 34};
 };
 
-export const ChatPhone: React.FC<{t: number; thread: 'roommates' | 'sana'; msgs: Msg[]; typed?: string; dots?: boolean; status?: string; banner?: {from: Who; text: string; k: number}; headerMark?: number}> =
-  ({t, thread, msgs, typed = '', dots = false, status, banner, headerMark = 0}) => {
+export const ChatPhone: React.FC<{t: number; thread: 'roommates' | 'sana'; msgs: Msg[]; typed?: string; dots?: boolean; status?: string; banner?: {from: Who; text: string; k: number}; headerMark?: number; mark?: {fromEnd: number; k: number}; typer?: Who}> =
+  ({t, thread, msgs, typed = '', dots = false, status, banner, headerMark = 0, mark, typer}) => {
     const shown = msgs.filter((m) => t >= m.at);
     const items: {m: Msg; y: number; w: number; h: number; lines: string[]}[] = [];
     let y = PH - 120 - (dots ? 70 : 0) - (status ? 30 : 0);
@@ -158,6 +158,8 @@ export const ChatPhone: React.FC<{t: number; thread: 'roommates' | 'sana'; msgs:
             {thread === 'roommates' && !mine && <text x={10} y={-8} fontFamily={ROUND} fontWeight={700} fontSize={20} fill={S.inkSoft}>{NAME[m.from]}</text>}
             <rect width={w} height={h} rx={24} fill={BUBBLE[m.from]} />
             {lines.map((l, j) => <text key={j} x={20} y={40 + j * 34} fontFamily={ROUND} fontWeight={600} fontSize={26} fill={S.ink}>{l}</text>)}
+            {mark && mark.k > 0 && i === items.length - 1 - mark.fromEnd && <ellipse cx={w / 2} cy={h / 2} rx={w / 2 + 26} ry={h / 2 + 22} fill="none" stroke={S.red} strokeWidth={7}
+              strokeLinecap="round" strokeDasharray={1400} strokeDashoffset={1400 * (1 - mark.k)} transform={`rotate(-3 ${w / 2} ${h / 2})`} />}
           </g>;
         })}
         {status && mineLast && <text x={PW - 40} y={PH - 120 - (dots ? 70 : 0) - 6} textAnchor="end" fontFamily={ROUND} fontWeight={700} fontSize={20} fill={S.inkSoft}>{status}</text>}
@@ -165,7 +167,7 @@ export const ChatPhone: React.FC<{t: number; thread: 'roommates' | 'sana'; msgs:
           {[0, 1, 2].map((j) => <circle key={j} cx={28 + j * 20} cy={27} r={7} fill={S.ink} opacity={0.35 + 0.65 * Math.max(0, Math.sin(t * 6 - j * 0.9))} />)}</g>}
         {/* Compose box. */}
         {(() => { const tl = typed ? wrap(typed, 22).slice(-4) : ['message']; const h = 64 + (tl.length - 1) * 32;
-          return <g><rect x={30} y={PH - 36 - h} width={PW - 130} height={h} rx={32} fill="#fff" stroke="#DDE0F2" strokeWidth={3} />
+          return <g><rect x={30} y={PH - 36 - h} width={PW - 130} height={h} rx={32} fill={typer && typed ? BUBBLE[typer] : '#fff'} stroke="#DDE0F2" strokeWidth={3} />
             {tl.map((l, i) => <text key={i} x={56} y={PH - 36 - h + 42 + i * 32} fontFamily={ROUND} fontWeight={600} fontSize={24} fill={typed ? S.ink : '#A8ADC8'}>{l}</text>)}</g>; })()}
         <circle cx={PW - 62} cy={PH - 68} r={30} fill={typed ? S.ink : '#DDE0F2'} />
         <path d={`M ${PW - 62} ${PH - 54} L ${PW - 62} ${PH - 82} M ${PW - 74} ${PH - 70} L ${PW - 62} ${PH - 82} L ${PW - 50} ${PH - 70}`} stroke="#fff" strokeWidth={5} fill="none" strokeLinecap="round" />
@@ -200,12 +202,12 @@ export const Note: React.FC<{x: number; y: number; text: string; size?: number; 
   };
 
 /** The cork board on the periwinkle wall, with a few pinned scraps for texture. */
-export const Board: React.FC<{t: number}> = ({t}) => <g>
+export const Board: React.FC<{t: number; wide?: boolean}> = ({t, wide = false}) => <g>
   <rect x={-2400} y={-2400} width={6000} height={7000} fill={S.wall} />
   {Array.from({length: 14}, (_, i) => <rect key={i} x={-1200} y={-600 + i * 260} width={3600} height={110} fill={S.wallLo} opacity={0.35} />)}
-  <rect x={-40} y={170} width={1160} height={1320} rx={20} fill={S.corkLo} />
-  <rect x={-30} y={180} width={1140} height={1300} rx={16} fill={S.cork} />
-  {Array.from({length: 160}, (_, i) => <circle key={i} cx={-20 + ((i * 97) % 1120)} cy={200 + ((i * 53) % 1260)} r={2 + (i % 3)} fill={S.corkLo} opacity={0.6} />)}
+  <rect x={-40} y={170} width={wide ? 2000 : 1160} height={1320} rx={20} fill={S.corkLo} />
+  <rect x={-30} y={180} width={wide ? 1980 : 1140} height={1300} rx={16} fill={S.cork} />
+  {Array.from({length: wide ? 280 : 160}, (_, i) => <circle key={i} cx={-20 + ((i * 97) % (wide ? 1960 : 1120))} cy={200 + ((i * 53) % 1260)} r={2 + (i % 3)} fill={S.corkLo} opacity={0.6} />)}
   {/* Scraps: a polaroid, a sticky note, a takeout menu. */}
   <g transform="translate(120 330) rotate(-9)"><rect x={-90} y={-100} width={180} height={210} fill="#fff" /><rect x={-76} y={-86} width={152} height={140} fill={S.mint} />
     <circle cx={-20} cy={-20} r={30} fill={S.peach} /><circle cx={30} cy={-10} r={26} fill={S.butter} /></g>

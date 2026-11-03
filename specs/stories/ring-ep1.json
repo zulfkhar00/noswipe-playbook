@@ -1,0 +1,227 @@
+{
+ "id": "ring-ep1",
+ "season": "The Ring in the Drawer",
+ "episode": 1,
+ "title": "The Box",
+ "format": "ai-drama",
+ "context": "Nora just found a ring box in her boyfriend's drawer.",
+ "cast": {
+  "NORA": "hpp4J3VqNfWAUOO0d1Us",
+  "SAM": "bIHbv24MWmeRgasZH58o"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.2,
+   "text": "I was just looking for a phone charger.",
+   "delivery": "soft"
+  },
+  {
+   "n": 2,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "That's a ring box. That is absolutely a ring box.",
+   "delivery": "breathless"
+  },
+  {
+   "n": 3,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "Three years together, and he's finally going to ask me.",
+   "delivery": "hopeful"
+  },
+  {
+   "n": 4,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "Okay. Breathe. Don't open it. Let him have his moment.",
+   "delivery": "warm"
+  },
+  {
+   "n": 5,
+   "speaker": "SAM",
+   "kind": "offscreen",
+   "gapBefore": 0.3,
+   "text": "Babe, I'm home! I got your favorite dumplings!",
+   "delivery": "warm"
+  },
+  {
+   "n": 6,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "Act normal. Smile. Be a person who found nothing.",
+   "delivery": "breathless"
+  },
+  {
+   "n": 7,
+   "speaker": "SAM",
+   "kind": "offscreen",
+   "gapBefore": 0.3,
+   "text": "You're smiling a lot tonight.",
+   "delivery": "warm"
+  },
+  {
+   "n": 8,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.2,
+   "text": "Because I think I know what's coming.",
+   "delivery": "hopeful"
+  },
+  {
+   "n": 9,
+   "speaker": "SAM",
+   "kind": "phone",
+   "gapBefore": 0.6,
+   "text": "I know. I know. Don't tell her yet.",
+   "delivery": "tense"
+  },
+  {
+   "n": 10,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.5,
+   "text": "Tell me what?",
+   "delivery": "hurt"
+  }
+ ],
+ "chat": [],
+ "beats": [
+  {
+   "name": "charger",
+   "line": 1,
+   "word": "charger"
+  },
+  {
+   "name": "ring",
+   "line": 2,
+   "word": "ring"
+  },
+  {
+   "name": "ask",
+   "line": 3,
+   "word": "ask"
+  },
+  {
+   "name": "breathe",
+   "line": 4,
+   "word": "Breathe"
+  },
+  {
+   "name": "home",
+   "line": 5,
+   "word": "home"
+  },
+  {
+   "name": "actnormal",
+   "line": 6,
+   "word": "Act"
+  },
+  {
+   "name": "smiling",
+   "line": 7,
+   "word": "smiling"
+  },
+  {
+   "name": "coming",
+   "line": 8,
+   "word": "coming"
+  },
+  {
+   "name": "iknow",
+   "line": 9,
+   "word": "know"
+  },
+  {
+   "name": "yet",
+   "line": 9,
+   "word": "yet"
+  },
+  {
+   "name": "tellme",
+   "line": 10,
+   "word": "Tell"
+  }
+ ],
+ "shots": [
+  {
+   "id": "s1",
+   "fromLine": 1,
+   "durationSec": 4,
+   "keyframe": "Extreme close-up over Nora's shoulder: a round oak nightstand drawer pulled open, a small dark green velvet ring box glowing under a warm bedside lamp, Nora's fingertips (mustard cardigan sleeve) frozen an inch above it, a phone charger cable in her other hand. Honey light.",
+   "motion": "Slow push-in on the box; her fingers tremble slightly; the lamp glow pulses once."
+  },
+  {
+   "id": "s2",
+   "fromLine": 2,
+   "durationSec": 5,
+   "keyframe": "Close-up of Nora's face, eyes wide and shining, hand over her mouth, warm lamp light on her cheek, small yellow hair clip in her hair.",
+   "motion": "She gasps; her eyes flick down to the box and back; a tiny joyful bounce of her shoulders; slow dolly-in."
+  },
+  {
+   "id": "s3",
+   "fromLine": 3,
+   "durationSec": 5,
+   "keyframe": "Dreamy imagined scene: a rooftop at golden hour with string lights, Sam kneeling as a soft-focus silhouette holding up a small ring box, warm glowing dreamy haze and vignette.",
+   "motion": "Gentle crane up; dust motes drift like confetti; the frame softly breathes."
+  },
+  {
+   "id": "s4",
+   "fromLine": 4,
+   "durationSec": 4,
+   "keyframe": "Medium shot of Nora closing the nightstand drawer slowly with two fingers, biting her lip to hold back a grin, amber bedroom with sage-green walls.",
+   "motion": "The drawer slides shut slowly; she pats it twice and tiptoes backward; the camera tracks with her."
+  },
+  {
+   "id": "s5",
+   "fromLine": 5,
+   "durationSec": 4,
+   "keyframe": "Wide shot down the cozy apartment hallway toward the front door: Sam (green flannel, round glasses, curly black hair) shouldering through the door with a paper takeout bag, warm lamps; Nora in the near foreground, back to camera, mid-flinch.",
+   "motion": "Sam pushes the door shut with his foot and lifts the bag; Nora jumps and spins away, smoothing her cardigan."
+  },
+  {
+   "id": "s6",
+   "fromLine": 6,
+   "durationSec": 4,
+   "keyframe": "Medium shot of Nora sitting at a small kitchen table, hands folded like a student, an exaggerated calm smile, eyes darting sideways; sage-green cabinets behind her, a tomato plant on the fire-escape window.",
+   "motion": "She straightens her cardigan and blinks too many times; tiny camera drift."
+  },
+  {
+   "id": "s7",
+   "fromLine": 7,
+   "durationSec": 6,
+   "keyframe": "Over-the-shoulder from Sam's side of the table (his hand with a worn leather watch setting down a dumpling takeout box), Nora across the table in candlelight, glowing, hopeful eyes.",
+   "motion": "Sam's hand slides the box toward her; Nora's smile widens and wobbles with nerves; slow push-in on her eyes; steam rises from the dumplings."
+  },
+  {
+   "id": "s8",
+   "fromLine": 9,
+   "durationSec": 5,
+   "keyframe": "Nora's point of view through a half-open bedroom door: Sam's back, shoulders tense, phone at his ear, lit by a cold teal window at the end of the hallway; the warm kitchen glow at the foreground edge.",
+   "motion": "Slow creeping push toward the gap in the door; Sam rubs the back of his neck and turns further away; the light shifts from amber to teal."
+  },
+  {
+   "id": "s9",
+   "fromLine": 10,
+   "durationSec": 4,
+   "keyframe": "Close-up of Nora's face at the door gap, the warmth gone from her cheeks, her smile fading into confusion, cool teal side light.",
+   "motion": "Her smile slowly falls; her eyes lift toward the camera; a quick small push-in, then stillness."
+  }
+ ],
+ "cliffhanger": "Through the door Nora hears Sam on the phone say \"Don't tell her yet.\"",
+ "posting": {
+  "titles": [
+   "She found a ring box in his drawer. Part 1",
+   "She wasn't snooping. Then she saw the ring box. Part 1",
+   "Her boyfriend hid a ring. Then she heard the call. Part 1"
+  ],
+  "caption": "She wasn't snooping. She just needed a charger. Then she heard that phone call. Would you have asked him right away, or waited? Part 2 tomorrow. #lovestory #animatedstory #storytime #relationshipdrama #ringinthedrawer",
+  "pinned": "Who do you think Sam was talking to? Drop your theory below. Part 2 answers it, but not the way you'd expect."
+ }
+}

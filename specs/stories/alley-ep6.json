@@ -1,0 +1,108 @@
+{
+ "id": "alley-ep6",
+ "season": "Across the Alley",
+ "episode": 6,
+ "title": "She moved out. Then she showed up at 10am. Part 6",
+ "note": "Silent finale. Recap: her empty window. The camera tilts down to the street for the first time: 10:00 am. Jo on her stoop; her phone lights with a NoSwipe notification (mention 2, Jo's thing only). Theo comes out with two coffees; Jo: she moved out last night. Then Mira walks up with her sketchbook: you said 10am. Hi/Theo, 2 hours by train / worth it, same time next week? / same. The camera rises to the bulbs: the end. Times in seconds.",
+ "duration": 41.0,
+ "beats": {
+  "next": 3.6,
+  "buzz": 4.4,
+  "door": 6.9,
+  "out": 7.1,
+  "sinks": 11.8,
+  "joSees": 12.6,
+  "miraIn": 12.8,
+  "hisTurn": 14.6,
+  "give": 18.2,
+  "same": 33.2,
+  "rise": 34.4,
+  "flash": 35.4,
+  "endcard": 36.8,
+  "resolve": 1,
+  "herSees": 15.0,
+  "lonelyFrom": 3.9,
+  "lonelyTo": 12.4,
+  "warmFrom": 13.0,
+  "warmTo": 34.4
+ },
+ "dips": [],
+ "signs": [
+  {
+   "who": "jo",
+   "text": "she moved|out last|night.",
+   "write": 8.8,
+   "up": 9.5,
+   "down": 11.6
+  },
+  {
+   "who": "her",
+   "text": "you said|10am.",
+   "write": 15.2,
+   "up": 16.0,
+   "down": 18.0
+  },
+  {
+   "who": "her",
+   "text": "hi. I'm|Mira.",
+   "write": 19.0,
+   "up": 19.8,
+   "down": 21.8
+  },
+  {
+   "who": "him",
+   "text": "Theo.",
+   "write": 21.8,
+   "up": 22.4,
+   "down": 24.0
+  },
+  {
+   "who": "her",
+   "text": "it's 2 hours|by train.",
+   "write": 24.2,
+   "up": 25.0,
+   "down": 27.0
+  },
+  {
+   "who": "him",
+   "text": "worth it.",
+   "write": 27.0,
+   "up": 27.6,
+   "down": 29.2
+  },
+  {
+   "who": "her",
+   "text": "same time|next week?",
+   "write": 29.4,
+   "up": 30.2,
+   "down": 34.4
+  },
+  {
+   "who": "him",
+   "text": "same.",
+   "write": 32.6,
+   "up": 33.2,
+   "down": 34.4
+  }
+ ],
+ "strips": [
+  {
+   "text": "her window was empty.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "he'd asked her: coffee, 10am.",
+   "from": 0.6,
+   "to": 3.3,
+   "y": 450
+  },
+  {
+   "text": "10:00 am.",
+   "from": 3.8,
+   "to": 5.6,
+   "y": 330
+  }
+ ]
+}

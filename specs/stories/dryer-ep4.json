@@ -1,0 +1,269 @@
+{
+ "id": "dryer-ep4",
+ "season": "The Dryer Notes",
+ "episode": 4,
+ "title": "I told her she'd find someone. Wrong move. Part 4",
+ "note": "Vote-and-rewind: A (you'll find someone great) plays and dies, she hears him friend-zoning himself; a lone sock drops out of dryer 5 as the sad beat; rewind; B (honestly, same) plays and the notes turn warm: songs and doodles. They work different hours and have never met. Ends on the next vote. All times in seconds.",
+ "duration": 47.0,
+ "beats": {
+  "recapA": 1.7,
+  "aIn": 3.4,
+  "aPlace": 4.5,
+  "aNight": 6.2,
+  "aNote": 6.8,
+  "aSad": 10.4,
+  "rewind": 12.6,
+  "drum": 14.0,
+  "bIn": 15.2,
+  "bPlace": 16.1,
+  "bShow": 17.0,
+  "bNight": 18.4,
+  "bNote": 19.0,
+  "bGrin": 24.6,
+  "pump": 25.5,
+  "montage": 27.4,
+  "choice": 33.6,
+  "cardA": 34.4,
+  "cardB": 35.8,
+  "comment": 39.6,
+  "endcard": 42.6,
+  "sock": 10.8
+ },
+ "aReply": [
+  {
+   "text": "aw. thanks, friend.",
+   "at": 7.3
+  },
+  {
+   "text": "I'll be okay.",
+   "at": 8.1
+  },
+  {
+   "text": "night, Leo.",
+   "at": 9.0
+  },
+  {
+   "text": "— Nora, dryer 5",
+   "at": 9.7,
+   "sign": true
+  }
+ ],
+ "bReply": [
+  {
+   "text": "huh. you get it.",
+   "at": 19.5
+  },
+  {
+   "text": "no pep talk. thank you.",
+   "at": 20.9
+  },
+  {
+   "text": "what song helps you?",
+   "at": 22.1
+  },
+  {
+   "text": "— Nora, dryer 5",
+   "at": 23.3,
+   "sign": true
+  }
+ ],
+ "montage": [
+  {
+   "who": "him",
+   "text": "my bad-day song: Dreams.",
+   "at": 27.7
+  },
+  {
+   "who": "her",
+   "text": "ok. mine's anything ABBA.",
+   "at": 28.7
+  },
+  {
+   "who": "him",
+   "text": "drew your tee a hat.",
+   "at": 29.7,
+   "doodle": "tee"
+  },
+  {
+   "who": "her",
+   "text": "your sock got a scarf.",
+   "at": 30.6,
+   "doodle": "sock"
+  }
+ ],
+ "choices": {
+  "question": "what should he write back?",
+  "A": {
+   "l1": "here's my number,",
+   "l2": "text me sometime.",
+   "draw": "receipt"
+  },
+  "B": {
+   "l1": "thursday, 9pm?",
+   "l2": "I'll be at dryer 4.",
+   "draw": "clock"
+  }
+ },
+ "strips": [
+  {
+   "text": "laundromat pen pals. Leo & Nora.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "she wrote: dating wears me out.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 1330,
+   "spec": "p"
+  },
+  {
+   "text": "A: you'll find someone great!",
+   "from": 3.5,
+   "to": 6.1,
+   "y": 330
+  },
+  {
+   "text": "next night.",
+   "from": 6.2,
+   "to": 6.9,
+   "y": 960,
+   "big": true
+  },
+  {
+   "text": "she heard: we're just friends.",
+   "from": 10.6,
+   "to": 12.6,
+   "y": 330
+  },
+  {
+   "text": "rewind. here's what really happened.",
+   "from": 14.1,
+   "to": 15.2,
+   "y": 1290,
+   "spec": "p",
+   "size": 50
+  },
+  {
+   "text": "B: honestly, same.",
+   "from": 15.3,
+   "to": 18.3,
+   "y": 330
+  },
+  {
+   "text": "it wears me out too.",
+   "from": 16.0,
+   "to": 18.3,
+   "y": 430,
+   "spec": "p"
+  },
+  {
+   "text": "the night after.",
+   "from": 18.4,
+   "to": 19.1,
+   "y": 960,
+   "big": true
+  },
+  {
+   "text": "songs and doodles, every night.",
+   "from": 31.5,
+   "to": 33.5,
+   "y": 330
+  },
+  {
+   "text": "they've never seen each other.",
+   "from": 31.9,
+   "to": 33.5,
+   "y": 1330,
+   "spec": "p"
+  }
+ ],
+ "audio": {
+  "groove": [
+   [
+    0,
+    3.3
+   ],
+   [
+    15.2,
+    18.3
+   ],
+   [
+    24.6,
+    42.6
+   ]
+  ],
+  "sadFrom": 10.4,
+  "glock": [
+   7.3,
+   8.1,
+   9.0,
+   9.7,
+   19.5,
+   20.9,
+   22.1,
+   23.3
+  ],
+  "steps": [
+   [
+    3.4,
+    4.4
+   ],
+   [
+    15.2,
+    16.0
+   ]
+  ],
+  "stamps": [
+   0.1,
+   1.7,
+   3.6,
+   10.7,
+   14.2,
+   15.4,
+   16.1,
+   31.6,
+   32.0,
+   33.9,
+   34.45,
+   35.85,
+   39.65,
+   42.95,
+   43.25,
+   43.55,
+   43.95
+  ],
+  "whooshes": [
+   6.1,
+   6.7,
+   10.3,
+   18.3,
+   18.9,
+   24.5,
+   27.3,
+   33.4,
+   42.3
+  ],
+  "rustles": [
+   4.5,
+   16.1,
+   27.7,
+   28.7,
+   29.7,
+   30.6
+  ],
+  "slapsOn": [
+   27.7,
+   28.7,
+   29.7,
+   30.6
+  ],
+  "rewind": [
+   12.6,
+   15.2
+  ],
+  "pump": 25.5,
+  "plonk": 11.5
+ }
+}

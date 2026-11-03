@@ -1,0 +1,50 @@
+{
+ "id": "alley-ep5",
+ "season": "Across the Alley",
+ "episode": 5,
+ "title": "Her window filled up with boxes. Part 5",
+ "note": "Silent. Recap: his coffee sign, her blank page. The next night: moving boxes, Jo taping one; Mira's hiding. She explains (didn't want to start anything she can't finish); he answers \"3 weeks is something.\" Night 18: \"what will you miss?\" \"this window.\" The last night: her window is bare and dark. No NoSwipe mention (eps 4 and 6 only). Times in seconds.",
+ "duration": 43.5,
+ "beats": {
+  "next": 3.6,
+  "boxes": 4.2,
+  "tape": 4.6,
+  "hisSees": 7.2,
+  "sinks": 7.4,
+  "joPoint": 11.6,
+  "joOut": 12.6,
+  "herIn": 12.9,
+  "heart": 24.8,
+  "flash": 24.8,
+  "last": 34.0,
+  "dark": 35.0,
+  "sting": 36.6,
+  "endcard": 39.8,
+  "herSees": 4.2,
+  "lonelyFrom": 3.9,
+  "lonelyTo": 8.0,
+  "warmFrom": 13.4,
+  "warmTo": 33.6
+ },
+ "dips": [27.0, 34.0],
+ "signs": [
+  {"who": "him", "text": "coffee?|downstairs.|10am", "write": -9, "up": -8, "down": 3.2},
+  {"who": "her", "text": "", "write": -9, "up": -8, "down": 3.2},
+  {"who": "him", "text": "need help|packing?", "write": 8.4, "up": 9.1, "down": 10.8},
+  {"who": "jo", "text": "Jo here.|she's|hiding.", "write": 10.8, "up": 11.4, "down": 12.6},
+  {"who": "her", "text": "sorry about|coffee.", "write": 13.6, "up": 14.4, "down": 16.4},
+  {"who": "her", "text": "didn't want|to start|anything.", "write": 16.6, "up": 17.6, "down": 19.8},
+  {"who": "her", "text": "I can't|finish.", "write": 20.0, "up": 20.7, "down": 22.6},
+  {"who": "him", "text": "3 weeks|is something.", "write": 22.8, "up": 23.8, "down": 26.4},
+  {"who": "him", "text": "what will|you miss?", "write": 28.6, "up": 29.3, "down": 31.0},
+  {"who": "her", "text": "this|window.", "write": 31.0, "up": 31.7, "down": 33.6}
+ ],
+ "strips": [
+  {"text": "last night he asked.", "from": -0.4, "to": 3.3, "y": 330},
+  {"text": "she didn't answer.", "from": 0.6, "to": 3.3, "y": 420},
+  {"text": "the next night.", "from": 3.8, "to": 5.4, "y": 330},
+  {"text": "night 18.", "from": 27.1, "to": 28.6, "y": 330},
+  {"text": "the last night.", "from": 34.1, "to": 35.8, "y": 330},
+  {"text": "her window was empty.", "from": 36.2, "to": 39.6, "y": 330}
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "id": "alley-ep3",
+ "season": "Across the Alley",
+ "episode": 3,
+ "title": "We made rules for talking through windows. Part 3",
+ "note": "Silent. The hooded figure is Jo, her roommate. Then a montage of nights and rules, her sketch of his window, and the cliff: she's moving in 3 weeks. Times in seconds.",
+ "duration": 44.5,
+ "beats": {
+  "next": 3.6,
+  "open": 4.0,
+  "hood": 5.6,
+  "relief": 9.0,
+  "snatch": 12.6,
+  "joOut": 13.0,
+  "laugh": 23.4,
+  "laughEnd": 24.4,
+  "sting": 37.2,
+  "sinks": 39.6,
+  "endcard": 41.0,
+  "herSees": 5.6,
+  "warmFrom": 6.0,
+  "warmTo": 35.4
+ },
+ "dips": [
+  21.6,
+  25.0,
+  34.2
+ ],
+ "signs": [
+  {
+   "who": "jo",
+   "text": "hi Theo.|I'm Jo.|roommate.",
+   "write": 6.0,
+   "up": 6.6,
+   "down": 8.8
+  },
+  {
+   "who": "jo",
+   "text": "he's cute.",
+   "write": 10.8,
+   "up": 11.4,
+   "down": 12.6
+  },
+  {
+   "who": "her",
+   "text": "rule #2:|one question|a night.",
+   "write": 13.6,
+   "up": 14.4,
+   "down": 16.6
+  },
+  {
+   "who": "him",
+   "text": "favourite|food?",
+   "write": 16.6,
+   "up": 17.3,
+   "down": 19.2
+  },
+  {
+   "who": "her",
+   "text": "dumplings.",
+   "write": 19.2,
+   "up": 19.8,
+   "down": 21.6
+  },
+  {
+   "who": "him",
+   "text": "rule #3:|no sad songs.",
+   "write": 22.4,
+   "up": 23.0,
+   "down": 25.0
+  },
+  {
+   "who": "her",
+   "text": "what do|you do?",
+   "write": 25.8,
+   "up": 26.4,
+   "down": 28.2
+  },
+  {
+   "who": "him",
+   "text": "I fix bikes.",
+   "write": 28.2,
+   "up": 28.8,
+   "down": 30.6
+  },
+  {
+   "who": "her",
+   "text": "@sketch",
+   "write": 30.6,
+   "up": 31.4,
+   "down": 34.0
+  },
+  {
+   "who": "him",
+   "text": "same time|tomorrow?",
+   "write": 34.4,
+   "up": 35.2,
+   "down": 39.6
+  },
+  {
+   "who": "her",
+   "text": "I move away|in 3 weeks.",
+   "write": 35.6,
+   "up": 37.2,
+   "down": 99
+  }
+ ],
+ "strips": [
+  {
+   "text": "last night: names, and rule #1.",
+   "from": -0.4,
+   "to": 3.3,
+   "y": 330
+  },
+  {
+   "text": "then someone opened her door.",
+   "from": 0.5,
+   "to": 3.3,
+   "y": 420
+  },
+  {
+   "text": "the next night.",
+   "from": 3.8,
+   "to": 5.6,
+   "y": 330
+  },
+  {
+   "text": "night 3.",
+   "from": 21.7,
+   "to": 23.2,
+   "y": 330
+  },
+  {
+   "text": "night 6.",
+   "from": 25.1,
+   "to": 26.6,
+   "y": 330
+  },
+  {
+   "text": "night 9.",
+   "from": 34.3,
+   "to": 35.8,
+   "y": 330
+  }
+ ]
+}

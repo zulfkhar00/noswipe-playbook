@@ -1,0 +1,240 @@
+{
+ "id": "groupchat-ep3",
+ "season": "The Group Chat Is Cooking",
+ "episode": 3,
+ "title": "The Surprise",
+ "context": "Saturday at seven. Bo's surprise keeps growing.",
+ "cast": {
+  "NARRATOR": "sfJopaWaOtauCD3HKX6Q",
+  "DEV": "uPdPVJPZIryn3WAH8mKG",
+  "BO": "TX3LPaxmHKxFdv7VOQHJ",
+  "NINA": "EXAVITQu4vr4xnSDxMaL",
+  "SANA": "cgSgspJ2msm6clMCkdW9"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NARRATOR",
+   "gapBefore": 1.7,
+   "text": "Previously: Dev's roommates write his texts. Bo just booked him a surprise dinner with Sana.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 2,
+   "speaker": "BO",
+   "gapBefore": 0.3,
+   "text": "Step one: entrance music. Dev walks in to violins.",
+   "delivery": "smug"
+  },
+  {
+   "n": 3,
+   "speaker": "NINA",
+   "gapBefore": 0.3,
+   "text": "No. Nobody walks into a restaurant to music.",
+   "delivery": "dry"
+  },
+  {
+   "n": 4,
+   "speaker": "BO",
+   "gapBefore": 0.3,
+   "text": "Step two: a speech. Four pages.",
+   "delivery": "smug"
+  },
+  {
+   "n": 5,
+   "speaker": "NINA",
+   "gapBefore": 0.2,
+   "text": "Four pages is a hostage situation.",
+   "delivery": "dry"
+  },
+  {
+   "n": 6,
+   "speaker": "BO",
+   "gapBefore": 0.3,
+   "text": "Step three: Dev wears a cape.",
+   "delivery": "smug"
+  },
+  {
+   "n": 7,
+   "speaker": "NINA",
+   "gapBefore": 0.2,
+   "text": "Absolutely not. No cape.",
+   "delivery": "dry"
+  },
+  {
+   "n": 8,
+   "speaker": "DEV",
+   "gapBefore": 0.4,
+   "text": "Good evening, Sana. I have prepared remarks.",
+   "delivery": "nervous"
+  },
+  {
+   "n": 9,
+   "speaker": "NINA",
+   "gapBefore": 0.3,
+   "text": "Dev. You sound like a voicemail.",
+   "delivery": "dry"
+  },
+  {
+   "n": 10,
+   "speaker": "DEV",
+   "gapBefore": 0.3,
+   "text": "I don't even sound like me.",
+   "delivery": "nervous"
+  },
+  {
+   "n": 11,
+   "speaker": "SANA",
+   "gapBefore": 0.5,
+   "text": "Can I ask you something? Are you the one writing these?",
+   "delivery": "warm"
+  },
+  {
+   "n": 12,
+   "speaker": "NARRATOR",
+   "gapBefore": 0.4,
+   "text": "Dev starts to type. Then stops.",
+   "delivery": "deadpan"
+  }
+ ],
+ "chat": [
+  {
+   "from": "DEV",
+   "thread": "roommates",
+   "text": "good evening, sana. i have prepared remarks.",
+   "line": 8,
+   "word": "remarks"
+  },
+  {
+   "from": "NINA",
+   "thread": "roommates",
+   "text": "Dev. You sound like a voicemail.",
+   "line": 9,
+   "word": "voicemail"
+  },
+  {
+   "from": "SANA",
+   "thread": "sana",
+   "text": "can i ask you something? are you the one writing these?",
+   "line": 11,
+   "word": "Can"
+  }
+ ],
+ "beats": [
+  {
+   "name": "recap",
+   "line": 1,
+   "word": "Previously"
+  },
+  {
+   "name": "surprise",
+   "line": 1,
+   "word": "surprise"
+  },
+  {
+   "name": "step1",
+   "line": 2,
+   "word": "Step"
+  },
+  {
+   "name": "violins",
+   "line": 2,
+   "word": "violins"
+  },
+  {
+   "name": "no1",
+   "line": 3,
+   "word": "No"
+  },
+  {
+   "name": "veto_music",
+   "line": 3,
+   "word": "music"
+  },
+  {
+   "name": "step2",
+   "line": 4,
+   "word": "Step"
+  },
+  {
+   "name": "pages",
+   "line": 4,
+   "word": "pages"
+  },
+  {
+   "name": "veto_speech",
+   "line": 5,
+   "word": "hostage"
+  },
+  {
+   "name": "step3",
+   "line": 6,
+   "word": "Step"
+  },
+  {
+   "name": "cape_on",
+   "line": 6,
+   "word": "cape"
+  },
+  {
+   "name": "absolutely",
+   "line": 7,
+   "word": "Absolutely"
+  },
+  {
+   "name": "veto_cape",
+   "line": 7,
+   "word": "cape"
+  },
+  {
+   "name": "evening",
+   "line": 8,
+   "word": "evening"
+  },
+  {
+   "name": "remarks",
+   "line": 8,
+   "word": "remarks"
+  },
+  {
+   "name": "voicemail",
+   "line": 9,
+   "word": "voicemail"
+  },
+  {
+   "name": "evenme",
+   "line": 10,
+   "word": "even"
+  },
+  {
+   "name": "banner",
+   "line": 11,
+   "word": "Can"
+  },
+  {
+   "name": "writing",
+   "line": 11,
+   "word": "writing"
+  },
+  {
+   "name": "type",
+   "line": 12,
+   "word": "type"
+  },
+  {
+   "name": "stops",
+   "line": 12,
+   "word": "stops"
+  }
+ ],
+ "cliffhanger": "Sana asks if he's the one writing these. Dev starts to type, then stops.",
+ "posting": {
+  "titles": [
+   "Bo's surprise date plan includes a cape. Part 3",
+   "Dev is rehearsing a speech he didn't write. Part 3",
+   "She asked: are you the one writing these texts? Part 3"
+  ],
+  "caption": "Which of Bo's ideas was the worst: the music, the speech or the cape? #groupchat #storytime #roommates #relationshiphumor #part3",
+  "pinned": "Part 4 tomorrow. Should Dev tell her the truth?"
+ }
+}

@@ -25,7 +25,7 @@ from pathlib import Path
 import importlib
 
 ROOT = Path(__file__).parent
-PROJECTS = {"thumb": "generate_thumb_audio", "receipt": "generate_receipt_audio", "pregame": "generate_pregame_audio", "story": "generate_story_audio"}
+PROJECTS = {"thumb": "generate_thumb_audio", "receipt": "generate_receipt_audio", "pregame": "generate_pregame_audio", "story": "generate_story_audio", "safety": "generate_safety_audio"}
 
 API = "https://api.elevenlabs.io/v1"
 DEFAULT_VOICE = "R9RZPy40Zzy1wNxrgQpj"  # "Witty McGee": the NoSwipe narrator.

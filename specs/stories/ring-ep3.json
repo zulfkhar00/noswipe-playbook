@@ -1,0 +1,242 @@
+{
+ "id": "ring-ep3",
+ "season": "The Ring in the Drawer",
+ "episode": 3,
+ "title": "The Ticket",
+ "format": "ai-drama",
+ "context": "Previously: The ring is gone. Then a message: \"We need it by Friday.\"",
+ "cast": {
+  "NORA": "hpp4J3VqNfWAUOO0d1Us",
+  "SAM": "bIHbv24MWmeRgasZH58o",
+  "DANI": "FGY2WhTYpPnrIDTdsKH5",
+  "WOMAN": "XrExE9yKIg1WjnnlVkGX"
+ },
+ "lines": [
+  {
+   "n": 1,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.2,
+   "text": "I've read that message forty times. It never changes.",
+   "delivery": "tense"
+  },
+  {
+   "n": 2,
+   "speaker": "DANI",
+   "kind": "offscreen",
+   "gapBefore": 0.4,
+   "text": "Nobody hides a ring for a bad reason. Trust me.",
+   "delivery": "warm"
+  },
+  {
+   "n": 3,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "Maybe she's right. Maybe it's a surprise.",
+   "delivery": "hopeful"
+  },
+  {
+   "n": 4,
+   "speaker": "DANI",
+   "kind": "voicenote",
+   "gapBefore": 0.4,
+   "text": "Also, I'm letting NoSwipe book my Thursday. I'm done swiping!",
+   "delivery": "warm"
+  },
+  {
+   "n": 5,
+   "speaker": "SAM",
+   "kind": "offscreen",
+   "gapBefore": 0.4,
+   "text": "Love you! Back by six. Eat the pancakes!",
+   "delivery": "warm"
+  },
+  {
+   "n": 6,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.3,
+   "text": "Pancakes. A note. He is trying so hard.",
+   "delivery": "hopeful"
+  },
+  {
+   "n": 7,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.6,
+   "text": "His jacket fell. Something slid out of the pocket.",
+   "delivery": "soft"
+  },
+  {
+   "n": 8,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.7,
+   "text": "He didn't just hide it. He sold it.",
+   "delivery": "hurt"
+  },
+  {
+   "n": 9,
+   "speaker": "WOMAN",
+   "kind": "phone",
+   "gapBefore": 2.2,
+   "text": "Sam? Sweetheart, is that you? Did you bring it?",
+   "delivery": "tense"
+  },
+  {
+   "n": 10,
+   "speaker": "NORA",
+   "kind": "inner",
+   "gapBefore": 0.5,
+   "text": "Who is that?",
+   "delivery": "hurt"
+  }
+ ],
+ "chat": [],
+ "beats": [
+  {
+   "name": "forty",
+   "line": 1,
+   "word": "forty"
+  },
+  {
+   "name": "reason",
+   "line": 2,
+   "word": "reason"
+  },
+  {
+   "name": "surprise",
+   "line": 3,
+   "word": "surprise"
+  },
+  {
+   "name": "noswipe",
+   "line": 4,
+   "word": "NoSwipe"
+  },
+  {
+   "name": "love",
+   "line": 5,
+   "word": "Love"
+  },
+  {
+   "name": "trying",
+   "line": 6,
+   "word": "trying"
+  },
+  {
+   "name": "jacket",
+   "line": 7,
+   "word": "jacket"
+  },
+  {
+   "name": "sold",
+   "line": 8,
+   "word": "sold"
+  },
+  {
+   "name": "sweetheart",
+   "line": 9,
+   "word": "Sweetheart"
+  },
+  {
+   "name": "bring",
+   "line": 9,
+   "word": "bring"
+  },
+  {
+   "name": "who",
+   "line": 10,
+   "word": "Who"
+  }
+ ],
+ "shots": [
+  {
+   "id": "s1",
+   "fromLine": 1,
+   "keyframe": "Dawn, cold teal light in Dani's cozy cluttered apartment (not Nora's): Nora sits cross-legged on a lived-in sofa wrapped in a blanket, staring at the phone in her hands with a dignified, hollow stare. Beside her, seen from behind, Dani, 28 (pale freckled skin, copper curly bob, big gold hoop earrings, light denim jacket covered in colourful enamel pins) has an arm around Nora's shoulder.",
+   "motion": "Slow push-in on Nora's face; the phone glow flickers across her cheek; she blinks slowly; Dani squeezes her shoulder.",
+   "refs": "nora dani"
+  },
+  {
+   "id": "s2",
+   "fromLine": 2,
+   "keyframe": "Medium two-shot on the same sofa as first sunlight strikes: Dani, 28 (pale freckled skin, copper curly bob, big gold hoop earrings, light denim jacket covered in colourful enamel pins) in three-quarter view from behind with both hands on Nora's shoulders; Nora's face lifting from teal shadow into warm honey light, a first small hopeful smile forming.",
+   "motion": "The light sweeps from teal to honey across Nora's face; Dani gives her shoulders a reassuring shake; Nora lets out a shaky breath and almost laughs; slow dolly-in.",
+   "refs": "nora dani"
+  },
+  {
+   "id": "s3",
+   "fromLine": 4,
+   "keyframe": "Medium tracking shot: Nora walking down a quiet tree-lined street on a golden morning, phone held close, mustard cardigan, yellow hair clip, a small private smile, long soft shadows, blossoms drifting in warm honey light.",
+   "motion": "The camera tracks alongside her at walking pace; she tucks her hair behind her ear, glances at the phone, and her smile grows.",
+   "refs": "nora"
+  },
+  {
+   "id": "s4",
+   "fromLine": 5,
+   "keyframe": "The sage-green kitchen in warm morning sun: Sam seen from behind at the open apartment door (green flannel, curly hair, glasses arm visible) raising one hand in a wave, a dark jacket left hanging on a kitchen chair, a stack of pancakes on the table; Nora in the foreground smiling.",
+   "motion": "Sam steps out and the door swings shut; the jacket on the chair slips slightly; Nora lifts her hand in a small wave.",
+   "refs": "nora sam set"
+  },
+  {
+   "id": "s5",
+   "fromLine": 6,
+   "keyframe": "Close-up of the kitchen table: a plate of golden pancakes with a strawberry on top, a mug of steaming tea, a small folded paper note propped against the mug (no readable writing), Nora's hand picking it up, her glowing face at the edge of the frame.",
+   "motion": "Steam rises; Nora's fingertips trace the note; her eyes well up with relief; slow push-in; golden dust motes.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s6",
+   "fromLine": 7,
+   "keyframe": "Medium shot in the sage kitchen: Nora bending to pick up a dark jacket that has fallen from a chair onto the floor, a small folded paper slipping out of its inner pocket; her expression curious, warm light still on her but a cooler shadow creeping in from the frame edge.",
+   "motion": "She lifts the jacket; the paper flutters to the floorboards; she freezes, crouches and picks it up slowly; the light begins to cool.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s7",
+   "fromLine": 8,
+   "keyframe": "Extreme close-up of a small plain paper ticket held in Nora's trembling fingers (no readable writing), her face behind it in soft focus, cold teal light, one tear at the edge of her eye but not yet falling; quiet, dignified pain.",
+   "motion": "Her fingers tighten on the paper; the camera racks focus from the ticket to her eyes; a single slow blink; hold.",
+   "refs": "nora"
+  },
+  {
+   "id": "s8",
+   "fromLine": 9,
+   "keyframe": "Medium close-up: Nora at the kitchen counter holding her phone to her ear, a small paper ticket on the counter beside a half-eaten pancake, cold teal light, her expression shifting from steady to stunned; a rim of warm light on the plate behind her.",
+   "motion": "Her eyes widen; her free hand rises to her lips; push-in, then stillness on a long breath.",
+   "refs": "nora set"
+  },
+  {
+   "id": "s9",
+   "fromLine": 10,
+   "keyframe": "Two-shot from inside the kitchen toward the front door: Sam standing in the open doorway with a grocery bag (green flannel, round glasses), stricken, eyes locked on Nora; Nora in the foreground holding the small paper ticket and her phone, turned toward him, wet-eyed and composed. Cold teal between them, warm honey hallway light behind him.",
+   "motion": "Sam freezes mid-step and the grocery bag sags in his hand; both stare in silence; slow push-in on the gap between them, then hold.",
+   "refs": "nora sam set"
+  }
+ ],
+ "overlays": {
+  "note": [
+   "Sorry about Saturday.",
+   "Tonight is all yours.",
+   "— S"
+  ],
+  "ticket": [
+   "PAWN TICKET",
+   "1 ring · gold, one stone",
+   "Type: loan",
+   "No. 0417"
+  ]
+ },
+ "cliffhanger": "Nora calls the unknown number and an older woman answers: \"Sam? Sweetheart, is that you? Did you bring it?\" Then Sam walks in and sees her holding the ticket.",
+ "posting": {
+  "titles": [
+   "She found a pawn ticket in his jacket. Part 3",
+   "The ring wasn't a proposal. It was a loan. Part 3",
+   "She called the unknown number. Who answered? Part 3"
+  ],
+  "caption": "She woke up to pancakes and a sweet note. Then she found a pawn ticket in his jacket. Was Sam wrong to keep it from her, or was he trying to protect her? Who do you think answered that phone? Part 4 soon. #lovestory #animatedstory #storytime #relationshipdrama #ringinthedrawer",
+  "pinned": "Who was on that phone? Is Sam hiding something, or is he in trouble? Say it in one sentence."
+ }
+}

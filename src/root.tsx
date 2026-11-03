@@ -6,15 +6,51 @@ import {RECEIPT_FPS} from './receipt/receipt';
 import {OVERTIME_FPS, OVERTIME_FRAMES, Overtime} from './receipt/overtime';
 import {FRIDAY_FPS, FRIDAY_FRAMES, FridayNightLive} from './pregame/friday';
 import {GC1_FPS, GC1_FRAMES, GroupChat1} from './stories/groupchat/ep1';
+import {Avatar} from './account/avatar';
+import {RING1_FPS, RING1_FRAMES, Ring1} from './stories/ring/ep1';
+import {RING2_FPS, RING2_FRAMES, Ring2} from './stories/ring/ep2';
+import {RING3_FPS, RING3_FRAMES, Ring3} from './stories/ring/ep3';
+import {GC2_FPS, GC2_FRAMES, GroupChat2} from './stories/groupchat/ep2';
+import {SEAT14B_FPS, SEAT14B_FRAMES, Seat14B} from './safety/seat14b';
+import {GC3_FPS, GC3_FRAMES, GroupChat3} from './stories/groupchat/ep3';
+import {DRYER5_FPS, DRYER5_FRAMES, Dryer5} from './stories/dryer/ep5';
+import {DRYER4_FPS, DRYER4_FRAMES, Dryer4} from './stories/dryer/ep4';
+import {DRYER3_FPS, DRYER3_FRAMES, Dryer3} from './stories/dryer/ep3';
+import {DRYER2_FPS, DRYER2_FRAMES, Dryer2} from './stories/dryer/ep2';
+import {DRYER1_FPS, DRYER1_FRAMES, Dryer1} from './stories/dryer/ep1';
+import {ALLEY1_FPS, ALLEY1_FRAMES, Alley1} from './stories/alley/ep1';
+import {ALLEY2_FPS, ALLEY2_FRAMES, Alley2} from './stories/alley/ep2';
+import {ALLEY3_FPS, ALLEY3_FRAMES, Alley3} from './stories/alley/ep3';
+import {ALLEY4_FPS, ALLEY4_FRAMES, Alley4} from './stories/alley/ep4';
+import {ALLEY5_FPS, ALLEY5_FRAMES, Alley5} from './stories/alley/ep5';
+import {ALLEY6_FPS, ALLEY6_FRAMES, Alley6} from './stories/alley/ep6';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Dryer5" component={Dryer5} durationInFrames={DRYER5_FRAMES} fps={DRYER5_FPS} width={1080} height={1920} />
+    <Composition id="Dryer4" component={Dryer4} durationInFrames={DRYER4_FRAMES} fps={DRYER4_FPS} width={1080} height={1920} />
+    <Composition id="Dryer3" component={Dryer3} durationInFrames={DRYER3_FRAMES} fps={DRYER3_FPS} width={1080} height={1920} />
+    <Composition id="Dryer2" component={Dryer2} durationInFrames={DRYER2_FRAMES} fps={DRYER2_FPS} width={1080} height={1920} />
+    <Composition id="Dryer1" component={Dryer1} durationInFrames={DRYER1_FRAMES} fps={DRYER1_FPS} width={1080} height={1920} />
+    <Composition id="Alley6" component={Alley6} durationInFrames={ALLEY6_FRAMES} fps={ALLEY6_FPS} width={1080} height={1920} />
+    <Composition id="Alley5" component={Alley5} durationInFrames={ALLEY5_FRAMES} fps={ALLEY5_FPS} width={1080} height={1920} />
+    <Composition id="Alley4" component={Alley4} durationInFrames={ALLEY4_FRAMES} fps={ALLEY4_FPS} width={1080} height={1920} />
+    <Composition id="Alley3" component={Alley3} durationInFrames={ALLEY3_FRAMES} fps={ALLEY3_FPS} width={1080} height={1920} />
+    <Composition id="Alley2" component={Alley2} durationInFrames={ALLEY2_FRAMES} fps={ALLEY2_FPS} width={1080} height={1920} />
+    <Composition id="Alley1" component={Alley1} durationInFrames={ALLEY1_FRAMES} fps={ALLEY1_FPS} width={1080} height={1920} />
     <Composition id="Thumb" component={NoSwipeThumb} durationInFrames={NOSWIPE_FRAMES} fps={NOSWIPE_FPS} width={1080} height={1920} />
     <Composition id="AfterMidnight" component={AfterMidnight.Episode} durationInFrames={AfterMidnight.frames} fps={RECEIPT_FPS} width={1080} height={1920} />
     <Composition id="NextStop" component={NextStop.Episode} durationInFrames={NextStop.frames} fps={RECEIPT_FPS} width={1080} height={1920} />
     <Composition id="BetweenSets" component={BetweenSets.Episode} durationInFrames={BetweenSets.frames} fps={RECEIPT_FPS} width={1080} height={1920} />
     <Composition id="Overtime" component={Overtime} durationInFrames={OVERTIME_FRAMES} fps={OVERTIME_FPS} width={1080} height={1920} />
+    <Composition id="Ring3" component={Ring3} durationInFrames={RING3_FRAMES} fps={RING3_FPS} width={1080} height={1920} />
+    <Composition id="Ring2" component={Ring2} durationInFrames={RING2_FRAMES} fps={RING2_FPS} width={1080} height={1920} />
+    <Composition id="Ring1" component={Ring1} durationInFrames={RING1_FRAMES} fps={RING1_FPS} width={1080} height={1920} />
+    <Composition id="TLSAvatar" component={Avatar} durationInFrames={1} fps={30} width={1080} height={1080} defaultProps={{v: 'bubble' as const}} />
+    <Composition id="GroupChat3" component={GroupChat3} durationInFrames={GC3_FRAMES} fps={GC3_FPS} width={1080} height={1920} />
+    <Composition id="GroupChat2" component={GroupChat2} durationInFrames={GC2_FRAMES} fps={GC2_FPS} width={1080} height={1920} />
     <Composition id="GroupChat1" component={GroupChat1} durationInFrames={GC1_FRAMES} fps={GC1_FPS} width={1080} height={1920} />
+    <Composition id="Seat14B" component={Seat14B} durationInFrames={SEAT14B_FRAMES} fps={SEAT14B_FPS} width={1080} height={1920} />
     <Composition id="FridayNightLive" component={FridayNightLive} durationInFrames={FRIDAY_FRAMES} fps={FRIDAY_FPS} width={1080} height={1920} />
   </>
 );

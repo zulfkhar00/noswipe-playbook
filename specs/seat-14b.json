@@ -1,0 +1,75 @@
+{
+ "id": "seat-14b",
+ "format": "safetycard",
+ "context": "Safety briefing: dating apps",
+ "estimatedDurationSec": 38.0,
+ "lines": [
+  {"n": 1, "gapBefore": 0.2, "text": "Welcome aboard. Please review your dating app safety card.", "delivery": "punchy"},
+  {"n": 2, "gapBefore": 0.3, "text": "In the event of a match, remain calm.", "delivery": "dry"},
+  {"n": 3, "gapBefore": 0.4, "text": "He types... hey. No reply expected.", "delivery": "deadpan"},
+  {"n": 4, "gapBefore": 0.4, "text": "Ghosting may occur without notice.", "delivery": "dry"},
+  {"n": 5, "gapBefore": 0.3, "text": "Your phone is not a flotation device.", "delivery": "deadpan"},
+  {"n": 6, "gapBefore": 0.5, "text": "Sir, it's one AM. Phone down, please.", "delivery": "dry"},
+  {"n": 7, "gapBefore": 0.4, "text": "Sir. The only thing landing tonight is this plane.", "delivery": "slow reveal"},
+  {"n": 8, "gapBefore": 0.5, "text": "Good news. We're switching to autopilot.", "delivery": "warm"},
+  {"n": 9, "gapBefore": 0.3, "text": "Welcome aboard NoSwipe.", "delivery": "warm"},
+  {"n": 10, "gapBefore": 0.3, "text": "It builds your profiles, swipes, chats, and books the date.", "delivery": "warm"},
+  {"n": 11, "gapBefore": 0.3, "text": "Maya. Saturday, eleven AM, coffee and a walk.", "delivery": "warm"},
+  {"n": 12, "gapBefore": 0.5, "text": "Phone stowed. Seat upright. Date booked.", "delivery": "warm"},
+  {"n": 13, "gapBefore": 0.4, "text": "Stop swiping. Just show up.", "delivery": "warm"}
+ ],
+ "beats": [
+  {"name": "boarding", "line": 1, "word": "Welcome"},
+  {"name": "review", "line": 1, "word": "review"},
+  {"name": "card", "line": 1, "word": "card"},
+  {"name": "match", "line": 2, "word": "match"},
+  {"name": "calm", "line": 2, "word": "calm"},
+  {"name": "types", "line": 3, "word": "types"},
+  {"name": "hey", "line": 3, "word": "hey"},
+  {"name": "noreply", "line": 3, "word": "reply"},
+  {"name": "panel1", "line": 4, "word": "Ghosting"},
+  {"name": "notice", "line": 4, "word": "notice"},
+  {"name": "panel2", "line": 5, "word": "phone"},
+  {"name": "float", "line": 5, "word": "flotation"},
+  {"name": "sir1", "line": 6, "word": "Sir"},
+  {"name": "oneam", "line": 6, "word": "one"},
+  {"name": "down", "line": 6, "word": "down"},
+  {"name": "sir2", "line": 7, "word": "Sir"},
+  {"name": "landing", "line": 7, "word": "landing"},
+  {"name": "plane", "line": 7, "word": "plane"},
+  {"name": "goodnews", "line": 8, "word": "Good"},
+  {"name": "autopilot", "line": 8, "word": "autopilot"},
+  {"name": "sub", "line": 9, "word": "Welcome"},
+  {"name": "noswipe", "line": 9, "word": "NoSwipe"},
+  {"name": "builds", "line": 10, "word": "builds"},
+  {"name": "swipes", "line": 10, "word": "swipes"},
+  {"name": "chats", "line": 10, "word": "chats"},
+  {"name": "books", "line": 10, "word": "books"},
+  {"name": "maya", "line": 11, "word": "Maya"},
+  {"name": "stowed", "line": 12, "word": "Phone"},
+  {"name": "upright", "line": 12, "word": "upright"},
+  {"name": "booked", "line": 12, "word": "booked"},
+  {"name": "endcard", "line": 13, "word": "Stop"}
+ ],
+ "panels": [
+  {"n": 1, "atBeat": "panel1", "title": "GHOSTING"},
+  {"n": 2, "atBeat": "panel2", "title": "NOT A FLOTATION DEVICE"},
+  {"n": 3, "atBeat": "oneam", "title": "AFTER 1 AM"}
+ ],
+ "status": {
+  "labels": ["Replies", "Pretzels"],
+  "states": [
+   {"atBeat": "boarding", "clock": "7:40 PM", "values": ["0", "3"]},
+   {"atBeat": "noreply", "clock": "8:30 PM", "values": ["0", "2"]},
+   {"atBeat": "sir1", "clock": "1:00 AM", "values": ["0", "0"], "bad": true},
+   {"atBeat": "autopilot", "clock": "AUTOPILOT", "values": ["ON", "refilled"], "good": true},
+   {"atBeat": "stowed", "clock": "SAT 11 AM", "values": ["Maya", "3"], "good": true}
+  ],
+  "note": "Values are jokes about one fictional flight, not statistics. No date count is shown or said."
+ },
+ "date": "maya",
+ "music": {
+  "mood": "bland airline boarding loop (soft electric piano) that droops into a tired cabin hum",
+  "notes": "PA chime before lines 1, 6 and 8. Cabin lights and hum dim at one AM. On 'autopilot' the engines smooth out and the loop comes back brighter. Sparkle ping on the date card."
+ }
+}
