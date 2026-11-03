@@ -10,8 +10,9 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
 ## 0. Usage discipline (your Claude plan has limits)
 - You are on **Opus**: use yourself only to read the data, decide the night, design a new format/season, and fix a
   problem a helper could not fix in two tries.
-- Hand all routine work to the **Sonnet** subagents: `episode-maker` (spec, code, audio, stills, fixes) and
-  `blind-checker` (the comprehension check). Give them complete, specific briefs; don't redo their work.
+- Hand all routine work to the **Sonnet** subagents: `scenario-writer` (pitch 5 ideas for a new season/format or
+  episode, then write the chosen one's script + spec), `episode-maker` (spec, code, audio, stills, fixes) and
+  `blind-checker` (the comprehension check). You pick among the pitches. Give them complete, specific briefs; don't redo their work.
 - Hook variants of one episode share the body: a variant changes only the opening (first ~3 s) and the caption.
   Never make a second full episode to test a hook.
 
