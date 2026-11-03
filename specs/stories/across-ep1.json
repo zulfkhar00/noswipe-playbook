@@ -1,0 +1,369 @@
+{
+ "id": "across-ep1",
+ "season": "Seven Across",
+ "episode": 1,
+ "title": "A stranger on my train leaves me crossword clues. Part 1",
+ "note": "Silent quiet-carriage story. The QUIET CARRIAGE sign (3.6-7.0 s) explains why nobody talks. She writes clues, he answers in the drawn boxes. He is the one embarrassed (ear blush); she is warm and an equal. Ends on a vote: RELAXED (cool lie) vs NERVOUS (honest; B wins in part 2). All times in seconds.",
+ "duration": 43.0,
+ "cast": {
+  "him": "orange beanie, ear blush, phone in left hand",
+  "her": "mustard scarf, pen, warm and playful"
+ },
+ "hooks": {
+  "a": "A stranger on my train leaves me crossword clues.",
+  "b": "I swipe every morning on my train. She noticed.",
+  "c": "Her clue for me: 'You, every morning' (7)"
+ },
+ "beats": {
+  "hook": 0.0,
+  "penClick": 0.4,
+  "train1": 3.0,
+  "wide": 3.6,
+  "quietSign": 3.6,
+  "panToThem": 4.8,
+  "buzz": 5.5,
+  "slideIn": 6.4,
+  "fillStart": 7.2,
+  "fillEnd": 9.8,
+  "blush": 9.9,
+  "hidePhone": 10.0,
+  "clue2": 10.4,
+  "viewFill": 11.8,
+  "lookUp": 12.8,
+  "window": 13.0,
+  "buzz2": 14.0,
+  "train2": 15.6,
+  "draftHey": 16.4,
+  "scribble1": 17.4,
+  "draftDay": 18.2,
+  "scribble2": 19.0,
+  "clue3": 19.8,
+  "slide": 21.0,
+  "cluesFill": 22.0,
+  "underline": 23.4,
+  "smile": 24.0,
+  "train3": 25.4,
+  "chime": 26.0,
+  "doorsOpen": 26.6,
+  "lastClue": 27.4,
+  "stepOff": 29.0,
+  "doorsClose": 29.6,
+  "stare": 29.8,
+  "train4": 31.4,
+  "choice": 31.8,
+  "cardA": 32.8,
+  "cardB": 34.2,
+  "tap": 36.0,
+  "comment": 37.4,
+  "endcard": 40.0
+ },
+ "clues": [
+  {
+   "id": "c1",
+   "by": "her",
+   "text": "You, every morning (7)",
+   "len": 7,
+   "answer": "SWIPING",
+   "visibleFrom": 0.0,
+   "fillFrom": 7.2,
+   "fillTo": 9.8
+  },
+  {
+   "id": "c2",
+   "by": "her",
+   "text": "What the window has (4)",
+   "len": 4,
+   "answer": "VIEW",
+   "visibleFrom": 10.4,
+   "fillFrom": 11.8,
+   "fillTo": 12.6
+  },
+  {
+   "id": "d1",
+   "by": "him",
+   "text": "Hey (3)",
+   "len": 3,
+   "answer": null,
+   "visibleFrom": 16.4,
+   "scribbleFrom": 17.4,
+   "scribbleTo": 17.9
+  },
+  {
+   "id": "d2",
+   "by": "him",
+   "text": "Nice day (4,3)",
+   "len": 7,
+   "answer": null,
+   "visibleFrom": 18.2,
+   "scribbleFrom": 19.0,
+   "scribbleTo": 19.5
+  },
+  {
+   "id": "c3",
+   "by": "him",
+   "text": "What you're reading (5)",
+   "len": 5,
+   "answer": "CLUES",
+   "visibleFrom": 19.8,
+   "fillFrom": 22.0,
+   "fillTo": 23.2,
+   "underlineFrom": 23.4,
+   "underlineTo": 23.8
+  },
+  {
+   "id": "c4",
+   "by": "her",
+   "text": "How you feel right now (7)",
+   "len": 7,
+   "answer": null,
+   "visibleFrom": 27.4
+  }
+ ],
+ "choices": {
+  "question": "what should he write?",
+  "A": {
+   "l1": "RELAXED",
+   "l2": "(7)",
+   "draw": "boxes"
+  },
+  "B": {
+   "l1": "NERVOUS",
+   "l2": "(7)",
+   "draw": "boxes"
+  }
+ },
+ "strips": [
+  {
+   "text": "7:42. quiet carriage.",
+   "from": 3.4,
+   "to": 6.8,
+   "y": 330
+  },
+  {
+   "text": "nobody talks. she writes.",
+   "from": 4.6,
+   "to": 6.8,
+   "y": 1150
+  },
+  {
+   "text": "he knows the answer.",
+   "from": 7.2,
+   "to": 9.8,
+   "y": 330
+  },
+  {
+   "text": "her next clue.",
+   "from": 10.4,
+   "to": 12.6,
+   "y": 330
+  },
+  {
+   "text": "first time he looks up.",
+   "from": 13.0,
+   "to": 15.5,
+   "y": 1150
+  },
+  {
+   "text": "his turn.",
+   "from": 16.0,
+   "to": 19.4,
+   "y": 330
+  },
+  {
+   "text": "draft three.",
+   "from": 19.6,
+   "to": 20.9,
+   "y": 330
+  },
+  {
+   "text": "she's smiling.",
+   "from": 23.4,
+   "to": 25.3,
+   "y": 330
+  },
+  {
+   "text": "her stop.",
+   "from": 26.0,
+   "to": 29.0,
+   "y": 330
+  },
+  {
+   "text": "last clue. no time to think.",
+   "from": 29.8,
+   "to": 31.3,
+   "y": 330
+  },
+  {
+   "text": "what should he write?",
+   "from": 31.8,
+   "to": 40.0,
+   "y": 380
+  },
+  {
+   "text": "comment A or B",
+   "from": 37.4,
+   "to": 40.0,
+   "y": 450
+  },
+  {
+   "text": "seven across · part 2 · A or B",
+   "from": 40.0,
+   "to": 43.0,
+   "y": 380,
+   "big": true
+  }
+ ],
+ "audio": {
+  "bpm": 112,
+  "clack": {
+   "meter": "6/8",
+   "bpm": 112,
+   "from": 0.0,
+   "to": 43.0,
+   "accentEvery": 6,
+   "muteFrom": 28.8,
+   "muteTo": 29.8
+  },
+  "groove": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    13.0,
+    15.6
+   ],
+   [
+    31.8,
+    40.0
+   ]
+  ],
+  "musicDropFrom": 28.8,
+  "musicBackAt": 31.8,
+  "musicDuck": [
+   [
+    7.2,
+    9.8
+   ],
+   [
+    22.0,
+    23.8
+   ]
+  ],
+  "penClick": [
+   0.4,
+   27.2
+  ],
+  "penScratch": [
+   [
+    7.0,
+    9.8
+   ],
+   [
+    10.4,
+    10.9
+   ],
+   [
+    11.8,
+    12.6
+   ],
+   [
+    16.4,
+    17.3
+   ],
+   [
+    17.4,
+    17.9
+   ],
+   [
+    18.2,
+    18.9
+   ],
+   [
+    19.0,
+    19.5
+   ],
+   [
+    19.8,
+    20.8
+   ],
+   [
+    22.0,
+    23.2
+   ],
+   [
+    23.4,
+    23.8
+   ],
+   [
+    27.4,
+    28.7
+   ]
+  ],
+  "letterTicks": [
+   7.2,
+   7.6,
+   8.0,
+   8.4,
+   8.8,
+   9.2,
+   9.6,
+   11.8,
+   12.0,
+   12.2,
+   12.4,
+   22.0,
+   22.25,
+   22.5,
+   22.75,
+   23.0
+  ],
+  "chime": [
+   26.0
+  ],
+  "doorHiss": [
+   26.6,
+   29.6
+  ],
+  "pageRustle": [
+   6.4,
+   10.4,
+   21.0,
+   27.2,
+   29.8
+  ],
+  "passingTrain": [
+   3.0,
+   15.6,
+   25.4,
+   31.4
+  ],
+  "phoneBuzz": [
+   5.5,
+   14.0
+  ],
+  "stamps": [
+   3.6,
+   7.2,
+   10.4,
+   13.0,
+   16.0,
+   19.6,
+   23.4,
+   26.0,
+   29.8,
+   31.8,
+   32.8,
+   34.2,
+   40.0
+  ],
+  "whooshes": [
+   6.4,
+   21.0,
+   29.0
+  ],
+  "blushPing": [
+   9.9
+  ]
+ }
+}

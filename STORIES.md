@@ -142,3 +142,36 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 | 4 | I told her she'd find someone. Wrong move. Part 4 (49) | `specs/stories/dryer-ep4.json` | `Dryer4` |
 | 5 | She said yes to Thursday. Then she didn't show. Part 5 (54) | `specs/stories/dryer-ep5.json` | `Dryer5` |
 | 6 | She didn't show. I left one last note. Part 6 (45) | `specs/stories/dryer-ep6.json` | `Dryer6` |
+
+## Season 5 · Seven Across (silent quiet-carriage romance, clue-and-box vote)
+
+**Logline:** Two strangers share a table on the 7:42 quiet carriage. She leaves crossword clues about his morning; he answers in the boxes she draws. Nobody says a word.
+
+**Why this season:** The Dryer Notes ended. Keep what worked (silent, two strangers, a written device, a plain first-person hook, the A/B vote) and fix Dryer part 5's weak opening (61% skip, 9 s average watch): the hook text and a fully composed gag are on frame 1, the first exchange lands by 8 s, and the vote is up by about 32 s. Picked from 5 scenario-writer pitches on 2026-11-03 (nightly run for 2026-11-04).
+
+| | Look | How they write |
+|---|---|---|
+| Him | orange beanie, ear blushes, phone in hand | answers in the boxes; his own clues get scribbled out |
+| Her | mustard scarf, crossword booklet, pen | printed-looking clues with an enumeration, e.g. "(7)" |
+
+**Device:** her clue plus a row of empty boxes; the answer length is the constraint. Votes offer two answers that both fit the boxes. The wrong one embarrasses him, never her.
+
+**Arc (6 parts):**
+1. **Seven across.** "You, every morning (7)" = SWIPING; "What the window has (4)" = VIEW, so he looks up for the first time; his clue "What you're reading (5)" = CLUES makes her smile; at her stop she leaves "How you feel right now (7)". *Vote:* A RELAXED · B NERVOUS (B wins).
+2. **Nervous.** A: RELAXED, then a shaking pen and spilled coffee; the passing train runs backwards (rewind); B: NERVOUS, she writes "same (4)". Then a vote.
+3. **Clues back.** His clues get braver; her stop is the last one. Then a vote.
+4. **The delay.** The train stops mid-track. NoSwipe mention 1: a bystander's phone notification, never the leads. Then a vote.
+5. **Her stop.** She isn't on the train.
+6. **Last stop.** They finish the crossword together. NoSwipe mention 2 (bystander) is optional.
+
+**Look and sound:** a mid-century travel poster in flat 2.5D planes. Palette: bottle green #2F4A3E (seats), signal orange #FF8A3D (beanie, sunrise), pale sky #CFE6EE, rust #B5452B, ink #1B1E1C, mustard #E3A82B (her scarf only), on warm cream. Fonts (bundled): Jost (clues, the QUIET CARRIAGE sign), Caveat (handwriting), Barlow Condensed (strips, vote board). The window is a parallax stack (sky gradient, hills 0.3x, pylons 0.7x, fence and cows 1.2x). **Signature transition:** the passing train, an opposite train's lit windows sweeping across with motion blur. Sound: a 6/8 rail clack throughout, vibraphone and brushes swing at 112 bpm that drops out for the last clue, pen scratches with a tick per letter, station chime, door hiss, phone buzz. Code: `src/stories/across/{world,ep1}.tsx`; audio: `python3 generate_across_audio.py across-ep1`.
+
+**Hook test (part 1, 3 variants, only the strip in the first 3 s changes):** a "A stranger on my train leaves me crossword clues." (blind hook 7) · b "I swipe every morning on my train. She noticed." (rewritten after the original b scored 4) · c "Her clue for me: 'You, every morning' (7)" (blind hook 6).
+
+**Posting:** noswipe.app stays in the bio only; there is no mention in part 1. The end card says "seven across · part 2 · A or B" (never "tomorrow").
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | A stranger on my train leaves me crossword clues. Part 1 (56) | `specs/stories/across-ep1.json` | `Across1` hook a |
+| 1b | I swipe every morning on my train. She noticed. Part 1 (54) | same | `Across1` hook b |
+| 1c | Her crossword clue for me: You, every morning. Part 1 (53) | same | `Across1` hook c |

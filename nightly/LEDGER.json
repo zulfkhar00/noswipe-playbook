@@ -1,5 +1,5 @@
 {
- "note": "Every planned post. Seeded 2026-11-03 with the parts posted by hand (captions = posting titles; day unknown). Dryer part 6 is made but not planned yet.",
+ "note": "Every planned post. Seeded 2026-11-03 with the parts posted by hand (captions = posting titles; day unknown).",
  "posts": [
   {
    "id": "groupchat-1",
@@ -204,6 +204,58 @@
    "caption": "She said yes to Thursday. Then she didn't show. Part 5",
    "video": "Dryer5",
    "posted_by": "hand"
+  },
+  {
+   "id": "dryer-6-a",
+   "day": "2026-11-04",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "The Dryer Notes",
+   "episode": 6,
+   "hook": "a",
+   "caption": "She didn't show. I left one last note. Part 6. 9:40 and dryer 5 was still empty. So I stayed and wrote her one last note. The finale. Thanks for every A and B. #shortstory #romance #animation #tinyloveshows #finale",
+   "video": "videos/dryer-6-a.mp4",
+   "composition": "Dryer6",
+   "posted_by": "engine (planned)"
+  },
+  {
+   "id": "across-1-a",
+   "day": "2026-11-04",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 1,
+   "hook": "a",
+   "caption": "A stranger on my train leaves me crossword clues. Part 1. Quiet carriage, 7:42. Nobody talks. She writes clues. Her last one: How you feel right now (7). What should he write, A RELAXED or B NERVOUS? #shortstory #romance #animation #tinyloveshows #commute",
+   "video": "videos/across-1-a.mp4",
+   "composition": "Across1",
+   "posted_by": "engine (planned)"
+  },
+  {
+   "id": "across-1-b",
+   "day": "2026-11-04",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 1,
+   "hook": "b",
+   "caption": "I swipe every morning on my train. She noticed. Part 1. Quiet carriage, 7:42. Nobody talks. She writes clues. Her last one: How you feel right now (7). What should he write, A RELAXED or B NERVOUS? #shortstory #romance #animation #tinyloveshows #commute",
+   "video": "videos/across-1-b.mp4",
+   "composition": "Across1",
+   "posted_by": "engine (planned)"
+  },
+  {
+   "id": "across-1-c",
+   "day": "2026-11-04",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 1,
+   "hook": "c",
+   "caption": "Her crossword clue for me: You, every morning. Part 1. Quiet carriage, 7:42. Nobody talks. She writes clues. Her last one: How you feel right now (7). What should he write, A RELAXED or B NERVOUS? #shortstory #romance #animation #tinyloveshows #commute",
+   "video": "videos/across-1-c.mp4",
+   "composition": "Across1",
+   "posted_by": "engine (planned)"
   }
  ]
 }
