@@ -63,10 +63,19 @@ Write `RUN_DIR/out/plan.json`:
 {"day": "<DAY>",
  "posts": [{"id": "<season>-<ep>-<hook>", "round": 12, "video": "videos/<id>.mp4",
             "caption": "<title>. <description> #tag #tag",
-            "targets": [{"app": "instagram", "account": "<handle>", "audience": "everyone"}]}]}
+            "targets": [{"app": "instagram", "account": "<handle>", "audience": "everyone"}]}],
+ "research": [ ... see below ... ]}
 ```
 - Rounds 12, 16, 20 (a random minute of that hour is chosen by the engine). More than 3 posts for one account:
   use `"at": "HH:MM"` between 12:00 and 21:30, at least 90 minutes apart. Parts of a season in order.
+- **Research sessions** (the engine fits them into the gaps between posts and stats reads): for every noswipe account,
+  1-2 per day in `"research"`:
+  `{"app": "instagram", "account": "<handle>", "keyword": "<search>", "minutes": 12, "max_likes": 5,
+  "max_comments": 1, "not_before": "10:00", "not_after": "22:00"}`.
+  Keywords: what our audience searches and what our best posts are about (e.g. "swipe fatigue", "dating apps tired",
+  "situationship", "first date nerves", "cute love story"); rotate them, and say why in `decision.md`. Stay within
+  the account's `likes_per_day` / `comments_per_day` / `research_minutes_per_day` from `accounts.json`.
+  The engine writes each comment itself (short, genuine, never mentions any app or product).
 - **Captions: plain ASCII, one line** (the phone types them with `adb input text`: no emoji, no curly quotes, no
   line breaks). Title first (< 60 characters, counted), then the description, then 4-6 hashtags.
 - **The first 30 characters of every caption must be unique** across all posts ever (stats find posts by them).

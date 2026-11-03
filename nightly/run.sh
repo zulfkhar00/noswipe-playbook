@@ -1,15 +1,18 @@
 #!/bin/bash
 # Start one nightly run on the render server.
 #   nightly/run.sh [DAY] [--live]
-# DAY defaults to tomorrow. Without --live it is a dry run: the plan stays in ~/nightly/runs/<DAY>/out/
+# DAY defaults to tomorrow in Pacific time (the phone and its posting rounds live there; this server runs on UTC).
+# Without --live it is a dry run: the plan stays in ~/nightly/runs/<DAY>/out/
 # and is NOT handed to the phone engine. Only one run at a time.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+export POST_TZ="America/Los_Angeles"
+tomorrow() { TZ="$POST_TZ" date -d tomorrow +%F; }
 
-DAY="${1:-$(date -d tomorrow +%F)}"
+DAY="${1:-$(tomorrow)}"
 DRY_RUN=1
 [[ "${2:-}" == "--live" || "${1:-}" == "--live" ]] && DRY_RUN=0
-[[ "$DAY" == "--live" ]] && DAY="$(date -d tomorrow +%F)"
+[[ "$DAY" == "--live" ]] && DAY="$(tomorrow)"
 
 RUN_DIR="$HOME/nightly/runs/$DAY"
 mkdir -p "$RUN_DIR/out/videos"
