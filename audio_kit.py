@@ -11,10 +11,15 @@ import subprocess
 import wave
 from pathlib import Path
 
-COMPOSITOR = Path(__file__).parent / "node_modules/@remotion/compositor-darwin-x64"
+import platform, shutil
+COMPOSITOR = Path(__file__).parent / ("node_modules/@remotion/compositor-darwin-x64" if platform.system() == "Darwin"
+                                      else "node_modules/@remotion/compositor-linux-x64-gnu")
 
 
 def probe(path: Path) -> float:
+    if shutil.which("ffprobe") and not shutil.which("afinfo"):  # Linux: ffprobe
+        return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                                    capture_output=True, text=True, check=True).stdout.strip())
     # macOS afinfo reads wav, m4a and mp3 without extra dependencies.
     out = subprocess.run(["afinfo", str(path)], capture_output=True, text=True, check=True).stdout
     line = next(l for l in out.splitlines() if "estimated duration" in l)
@@ -22,7 +27,7 @@ def probe(path: Path) -> float:
 
 
 def ffmpeg(*args: str) -> str:
-    env = {"DYLD_LIBRARY_PATH": str(COMPOSITOR)}
+    env = {"DYLD_LIBRARY_PATH": str(COMPOSITOR), "LD_LIBRARY_PATH": str(COMPOSITOR)}
     return subprocess.run([str(COMPOSITOR / "ffmpeg"), "-hide_banner", "-nostats", *args],
                           capture_output=True, text=True, env=env, check=True).stderr
 
