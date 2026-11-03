@@ -15,6 +15,7 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
   `blind-checker` (the comprehension check). You pick among the pitches. Give them complete, specific briefs; don't redo their work.
 - Hook variants of one episode share the body: a variant changes only the opening (first ~3 s) and the caption.
   Never make a second full episode to test a hook.
+- Watching helpers: while a subagent works, check on it at least every 10 minutes (files changed on disk, its output). If nothing changed for 10 minutes, it has stalled: message it right away (SendMessage) to continue, and if it stays silent, finish the work yourself. Never sleep longer than 15 minutes during a run.
 
 ## 1. Read
 - `~/nightly/content-handoff.md` (products, formats, rules: the source of truth), `AGENTS.md`, `STORIES.md`,
