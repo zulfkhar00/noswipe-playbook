@@ -13,3 +13,12 @@ NoSwipe (https://noswipe.app) is a done-for-you dating service concept: a 2-minu
 - **Voice:** ElevenLabs "Witty McGee" (`R9RZPy40Zzy1wNxrgQpj`), with takes fetched with character timestamps for exact captions and lip-sync. Music and SFX are composed in code.
 - **Posting titles** are under 60 characters (count them), conversational, and kept separate from the caption.
 - **Before delivery:** frame-by-frame review of the exported file, plus a blind comprehension check (a no-context reviewer retells the story from frames and transcript).
+
+## Fonts (portable renders) — added 2026-11-03
+Videos are also rendered on a Linux server, which has no macOS fonts (and Apple's licence forbids copying them there).
+- New episodes and formats use ONLY the bundled fonts in `public/fonts`, via `OPEN.*` / `DISPLAY` / `SANS` from
+  `src/lib/fonts.ts` (Caveat, Patrick Hand, Permanent Marker, Barlow Condensed, Jost, Nunito Sans, Nunito, Inter,
+  Gelasio, Courier Prime, Anton, plus brand Bagel Fat One + Figtree). Add new ones there (woff2, open licence).
+- Older episodes keep their macOS font first with the open look-alike listed right after it: identical on the Mac,
+  close on Linux. Don't remove those look-alikes.
+- Fonts load for every composition through `import './lib/fonts'` in `src/index.ts`.

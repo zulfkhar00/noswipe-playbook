@@ -178,7 +178,7 @@ export const GroupChat1: React.FC = () => {
       {cold && <Note x={540} y={400} text="How did THIS get sent to Sana?" size={60} max={18} k={1 - smooth(t, B.l1 - 0.6, B.l1 - 0.3)} rot={-2} fill={S.butter} />}
       {rewind && <g opacity={0.9}><rect width={1080} height={1920} fill={S.ink} opacity={0.25} />
         {Array.from({length: 12}, (_, i) => <rect key={i} x={0} y={((i * 170 + t * 4000) % 1920)} width={1080} height={10} fill="#fff" opacity={0.25} />)}
-        <text x={540} y={980} textAnchor="middle" fontFamily="'Avenir Next', sans-serif" fontWeight={900} fontSize={120} fill="#fff">◀◀ REWIND</text></g>}
+        <text x={540} y={980} textAnchor="middle" fontFamily="'Avenir Next', 'Nunito Sans', sans-serif" fontWeight={900} fontSize={120} fill="#fff">◀◀ REWIND</text></g>}
     </svg></AbsoluteFill>
     <Captions t={t} />
   </AbsoluteFill>;

@@ -58,7 +58,7 @@ export const PTGuy: React.FC<{p: PTPose; t: number}> = ({p, t}) => {
           : <path d={`M -40 ${98 - 8 * p.smile} Q 0 ${98 + 26 * p.smile - 10 * (1 - p.smile)} 40 ${98 - 8 * p.smile}`} stroke={C.lip} strokeWidth={9} fill="none" strokeLinecap="round" />}
       {/* Zzz when asleep. */}
       {p.asleep > 0.6 && [0, 1, 2].map((i) => { const k = (t * 0.6 + i / 3) % 1;
-        return <text key={i} x={150 + 60 * k} y={-160 - 140 * k} fontFamily="'Avenir Next Condensed', Impact, sans-serif" fontWeight={900} fontSize={50 + 30 * k} fill={C.glow} opacity={(1 - k) * p.asleep}>z</text>; })}
+        return <text key={i} x={150 + 60 * k} y={-160 - 140 * k} fontFamily="'Avenir Next Condensed', 'Barlow Condensed', Impact, 'Anton', sans-serif" fontWeight={900} fontSize={50 + 30 * k} fill={C.glow} opacity={(1 - k) * p.asleep}>z</text>; })}
     </g>
     {/* Arms: holding the phone at the chest, or resting on his knees. */}
     {[-1, 1].map((s) => {

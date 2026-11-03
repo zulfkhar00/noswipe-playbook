@@ -11,7 +11,7 @@ export const PT = {
   navy: '#060F26', deep: '#0B1D45', blue: '#1E6BFF', cyan: '#3FD0FF', yellow: '#FFD21F', red: '#E8233A', green: '#2BD67B',
   white: '#F4F7FF', steel: '#9FB0D6', ink: '#03081A',
 };
-export const COND = "'Avenir Next Condensed', 'Futura Condensed ExtraBold', 'Helvetica Neue', Impact, sans-serif";
+export const COND = "'Avenir Next Condensed', 'Barlow Condensed', 'Futura Condensed ExtraBold', 'Helvetica Neue', 'Inter', Impact, 'Anton', sans-serif";
 
 const SK = -14;   // the house slant, in degrees
 
