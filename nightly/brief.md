@@ -106,5 +106,6 @@ Write `RUN_DIR/out/plan.json`:
 Never post or message anything anywhere (the phone engine posts), never push, never edit `.env`, never edit the
 harness (`nightly/brief.md`, `nightly/run.sh`, `nightly/*.py`, `.claude/`, `.github/`: a person changes those;
 CI refuses to merge a night that touches them), write any ideas for them in `summary.md` instead, never call paid
-APIs except ElevenLabs, never run two renders/stills at once, never
+APIs except ElevenLabs, never make a video longer than 60 s (render cost; the format's own max applies when lower), never run two
+renders/stills at once, never
 use macOS-only fonts in new work (bundled fonts only, `src/lib/fonts.ts`), follow every content rule in the handoff.

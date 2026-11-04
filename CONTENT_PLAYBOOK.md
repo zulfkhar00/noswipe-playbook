@@ -23,7 +23,8 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
 (2-3 a day), 171k followers. Views: part 1 14.9M, part 2 6.8M, part 3 4M, part 13 424k. Part 1: 647k likes,
 7k comments. Recordings, frame strips: `~/feedback/outliers/play.malo/` (part1-strip.jpg, part2-strip.jpg: one frame
 per second). This is one example of what works, not a template to copy: take the mechanics, not the genre.
-- Long is fine when the story pulls: parts run 99-138 s. `ref`
+- Their parts run 99-138 s. We do NOT copy that length: our hard max is 60 s (render cost); the format's
+  existing max (45 s) still applies. Take the mechanics, fit them in our length. `ref`
 - Second person: "Imagine you miss the last train home..." The viewer is the character, not watching one. `ref`
 - Narrated start to finish (one calm voice), with 2-3 word captions big in the centre. `ref`
 - Concrete details as quick inserts that make it real: phone at 3% with no signal, "Next train 05:30" board,
