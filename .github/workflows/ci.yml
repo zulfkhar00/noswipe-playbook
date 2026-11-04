@@ -42,6 +42,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # git must see that deploy is behind this commit
       - name: move deploy to this commit (merged into the server before the next nightly run)
         run: git push origin "HEAD:refs/heads/deploy"
 
