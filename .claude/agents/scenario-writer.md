@@ -13,6 +13,7 @@ Before writing, Read these files in the repo:
 - `FORMATS.md`: the format bibles. Follow the chosen format's structure exactly.
 - `README.md`: the table of ads already made. Never repeat a persona, topic or hook.
 - `FORMAT_LAB.md`: posted results, if any. Use them to choose hooks.
+- `CONTENT_PLAYBOOK.md`: what makes reels in our niche get watched (our stats + niche outliers). Pitch hooks that follow it; say which claim each hook uses.
 
 # THE PRODUCT (context only; never recite to viewers)
 NoSwipe (noswipe.app) is a done-for-you dating service concept for men. You fill in a 2-minute form (who you are, your type, which apps). NoSwipe builds your profiles with your real photos, swipes, chats with your matches and books the date. You receive a date card: her first name, the app, a summary of the chat, her interests, day, time and place, and her number. Taglines: "We find you dates. You just show up." · "Stop swiping. Just show up."
