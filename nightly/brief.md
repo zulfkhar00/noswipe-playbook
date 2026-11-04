@@ -41,8 +41,9 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
 - Little or no data yet is normal: say so and lean on the handoff's conclusions (silent stories with a plain,
   relatable first-person hook worked: "Across the Alley" part 1 got 12.5k).
 - Voice is available: `ELEVENLABS_API_KEY` is in `.env` (voice "Witty McGee", `generate_elevenlabs_voice.py`,
-  word-timed captions via `src/lib/speech.ts`). Voiceover is a creative choice per episode, neither required nor
-  banned: use it when the format is better with it, leave it out when it is not, and let the stats decide.
+  word-timed captions via `src/lib/speech.ts`). Music and sound effects can be composed in code. Voice, music and
+  sound are creative choices per episode, none required or banned: use them when the episode is better with them,
+  leave them out when it is not, and let the stats decide.
 
 ## 3. Decide (write `RUN_DIR/decision.md`)
 - Capacity = sum of `posts_per_day` over noswipe accounts, at most 12.
@@ -53,6 +54,10 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
   which hook patterns win in `FORMAT_LAB.md`.
 - Ready but unposted episodes count (check `LEDGER.json`/`engine.db`: e.g. a finished part that was never planned).
 - Story continuity: parts of a season go out in order; never post part N+1 before part N is out.
+- Every part stands on its own: most viewers never saw the earlier parts. A cold viewer gets the situation from
+  the first frame, and the part has its own payoff (a teaser for the next part is fine on top, never instead).
+- Keep learning: when capacity allows, consider giving one slot a day to a different format or idea rather than
+  only more of the current season. Your call, based on the stats.
 
 ## 4. Make (delegate)
 For each episode, start an `episode-maker` subagent with: the season/format, the exact beats, the hook variants
