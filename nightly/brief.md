@@ -44,6 +44,9 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
   treat that score as a quality bar; lean on the stats instead.
 - Little or no data yet is normal: say so and lean on the handoff's conclusions (silent stories with a plain,
   relatable first-person hook worked: "Across the Alley" part 1 got 12.5k).
+- Voice is available: `ELEVENLABS_API_KEY` is in `.env` (voice "Witty McGee", `generate_elevenlabs_voice.py`,
+  word-timed captions via `src/lib/speech.ts`). Voiceover is a creative choice per episode, neither required nor
+  banned: use it when the format is better with it, leave it out when it is not, and let the stats decide.
 
 ## 3. Decide (write `RUN_DIR/decision.md`)
 - Capacity = sum of `posts_per_day` over noswipe accounts, at most 12.
@@ -107,5 +110,5 @@ Write `RUN_DIR/out/plan.json`:
 Never post or message anything anywhere (the phone engine posts), never push, never edit `.env`, never edit the
 harness (`nightly/brief.md`, `nightly/run.sh`, `nightly/*.py`, `.claude/`, `.github/`: a person changes those;
 CI refuses to merge a night that touches them), write any ideas for them in `summary.md` instead, never call paid
-APIs except ElevenLabs for a voiced format (silent seasons need none), never run two renders/stills at once, never
+APIs except ElevenLabs, never run two renders/stills at once, never
 use macOS-only fonts in new work (bundled fonts only, `src/lib/fonts.ts`), follow every content rule in the handoff.
