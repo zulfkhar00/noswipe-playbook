@@ -65,6 +65,21 @@ jobs:
           git config user.name "nightly-merge"
           git config user.email "actions@users.noreply.github.com"
           git checkout -q main
+          # The harness (the brief, the run script, helper scripts, agent definitions, CI) is changed by people, not
+          # by the nightly agent: a night that touches it goes to a pull request for review instead.
+          base=$(git merge-base main origin/nightly)
+          touched=$(git diff --name-only "$base" origin/nightly | grep -E '^(nightly/brief\.md|nightly/run\.sh|nightly/[^/]*\.py|\.claude/|\.github/)' || true)
+          if [ -n "$touched" ]; then
+            echo "nightly changed harness files:"; echo "$touched"
+            gh pr view nightly --json state -q .state 2>/dev/null | grep -q OPEN || \
+              gh pr create --base main --head nightly --title "Nightly work (touches the harness: review)" \
+                --body "The nightly run changed harness files, so it was not merged automatically:
+
+          $touched
+
+          Review the changes; merge if they are fine, otherwise revert them on nightly."
+            exit 1
+          fi
           if git merge --no-edit origin/nightly; then
             git push origin main "main:refs/heads/deploy"
           else

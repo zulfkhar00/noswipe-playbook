@@ -39,9 +39,14 @@ The engine files in `src/lib/` and `audio_kit.py` started as a copy of the flagd
 
 ## CI/CD
 - **CI** (`.github/workflows/ci.yml`): every push and pull request runs `tsc`, compiles the Python scripts,
-  checks `nightly/LEDGER.json` (unique ids and caption keys, typeable captions) and lists every composition.
+  checks `nightly/LEDGER.json` (unique ids and caption keys, typeable captions, blind-checker scores on engine posts
+  from 2026-11-05) and lists every composition.
 - **Code to the server**: green `main` moves the `deploy` branch. `nightly/run.sh` merges `origin/deploy` into
   the server's `nightly` branch before each run (on a conflict it runs on the current code and logs a warning).
 - **Night's work back**: after each run the server pushes `nightly`; when CI is green it is merged into `main`
-  (a conflict opens a pull request instead).
+  (a conflict opens a pull request instead). A night that changed the harness (`nightly/brief.md`, `nightly/run.sh`,
+  `nightly/*.py`, `.claude/`, `.github/`) is never merged automatically: it opens a pull request for you to review,
+  and later nights stay unmerged until that is resolved.
+- **Judge vs reality**: `nightly/judge_vs_stats.py` compares the blind-checker's scores (saved per post in the ledger)
+  with real stats; the nightly run pastes it into `learn.md`.
 - Work here on `main` (or a pull request into it); the server's checkout lives on `nightly`.

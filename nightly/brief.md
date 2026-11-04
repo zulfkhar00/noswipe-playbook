@@ -32,6 +32,9 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
   shares/saves/follows per 1k views, comments (votes).
 - Apply the decision rule in `FORMAT_LAB.md` (double down / iterate the hook / kill) and update its table.
 - Note what research says (recurring pains, phrasings, what big videos in the niche open with).
+- Run `python3 nightly/judge_vs_stats.py` and paste its output: it tests whether the blind-checker's scores
+  predict real views and retention. If a score shows no relation (near 0 or negative, n >= 6), say so and do not
+  treat that score as a quality bar; lean on the stats instead.
 - Little or no data yet is normal: say so and lean on the handoff's conclusions (silent stories with a plain,
   relatable first-person hook worked: "Across the Alley" part 1 got 12.5k).
 
@@ -49,8 +52,10 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
 For each episode, start an `episode-maker` subagent with: the season/format, the exact beats, the hook variants
 (as an input prop `hook` with values like "a", "b", "c" that change only the opening), file names, and the rules.
 It must return: composition id, variant ids, stills it checked, open issues.
-Then start a `blind-checker` subagent per episode with ONLY the stills (in order) and on-screen text. Clarity must be
->= 7: otherwise send the specific flags back to the maker (max 2 rounds), then fix it yourself.
+Then start a `blind-checker` subagent per episode with ONLY the stills (in order) and on-screen text, including each
+hook variant's opening stills, and ask for a hook score per variant. Clarity must be >= 7: otherwise send the
+specific flags back to the maker (max 2 rounds), then fix it yourself. Keep the FINAL scores (after fixes) for the
+ledger.
 
 ## 5. Render (one at a time, never in parallel; 4 GB RAM)
 For each variant:
@@ -85,11 +90,15 @@ Write `RUN_DIR/out/plan.json`:
 
 ## 7. Record
 - Append every planned post to `nightly/LEDGER.json` (`id, day, account, format, season, episode, hook, caption,
-  video`), update `STORIES.md` / `FORMAT_LAB.md`, and commit on the current branch (`git add` only what you changed;
+  video, checker`), where `checker` is the blind-checker's final scores for that post as integers:
+  `{"clarity": 8, "hook": 7, "satisfaction": 7, "want_next": 8, "rounds": 1}` (hook = that variant's hook score;
+  rounds = how many checker rounds it took). CI rejects engine posts without them, update `STORIES.md` / `FORMAT_LAB.md`, and commit on the current branch (`git add` only what you changed;
   never push; never commit `out/`, `.env`, audio stems).
 - Write `RUN_DIR/summary.md`: 10 lines max (what you made, why, anything that went wrong).
 
 ## Hard limits
-Never post or message anything anywhere (the phone engine posts), never push, never edit `.env`, never call paid
+Never post or message anything anywhere (the phone engine posts), never push, never edit `.env`, never edit the
+harness (`nightly/brief.md`, `nightly/run.sh`, `nightly/*.py`, `.claude/`, `.github/`: a person changes those;
+CI refuses to merge a night that touches them), write any ideas for them in `summary.md` instead, never call paid
 APIs except ElevenLabs for a voiced format (silent seasons need none), never run two renders/stills at once, never
 use macOS-only fonts in new work (bundled fonts only, `src/lib/fonts.ts`), follow every content rule in the handoff.
