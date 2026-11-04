@@ -1,0 +1,74 @@
+# CI: check every push and pull request (types, scripts, the post ledger, that every composition registers).
+# CD: green main moves `deploy`; the render server merges origin/deploy before each nightly run (nightly/run.sh).
+# The server pushes its `nightly` branch after each run; when that is green it is merged into main here.
+name: ci
+on:
+  push:
+    branches: [main, nightly]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: types
+        run: npx tsc --noEmit
+      - name: python scripts compile
+        run: python3 -m py_compile *.py nightly/*.py
+      - name: post ledger
+        run: python3 nightly/check_ledger.py
+      - name: nightly script syntax
+        run: bash -n nightly/run.sh
+      - name: every composition registers
+        run: npx remotion compositions src/index.ts
+
+  deploy:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: move deploy to this commit (merged into the server before the next nightly run)
+        run: git push origin "HEAD:refs/heads/deploy"
+
+  merge-nightly:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/nightly'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: merge the night's work into main (or open a pull request on conflict)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "nightly-merge"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -q main
+          if git merge --no-edit origin/nightly; then
+            git push origin main "main:refs/heads/deploy"
+          else
+            git merge --abort
+            gh pr view nightly --json state -q .state 2>/dev/null | grep -q OPEN || \
+              gh pr create --base main --head nightly --title "Nightly work (merge conflict)" \
+                --body "The render server's nightly branch could not be merged automatically. Resolve and merge."
+            exit 1
+          fi

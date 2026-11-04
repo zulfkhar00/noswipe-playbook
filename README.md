@@ -36,3 +36,12 @@ npm run render:thumb                                   # → out/thumb.mp4, two-
 - `audio_kit.py`, `generate_*_audio.py`, `generate_elevenlabs_voice.py`: the audio pipeline.
 
 The engine files in `src/lib/` and `audio_kit.py` started as a copy of the flagd project's engine. Port improvements across by hand.
+
+## CI/CD
+- **CI** (`.github/workflows/ci.yml`): every push and pull request runs `tsc`, compiles the Python scripts,
+  checks `nightly/LEDGER.json` (unique ids and caption keys, typeable captions) and lists every composition.
+- **Code to the server**: green `main` moves the `deploy` branch. `nightly/run.sh` merges `origin/deploy` into
+  the server's `nightly` branch before each run (on a conflict it runs on the current code and logs a warning).
+- **Night's work back**: after each run the server pushes `nightly`; when CI is green it is merged into `main`
+  (a conflict opens a pull request instead).
+- Work here on `main` (or a pull request into it); the server's checkout lives on `nightly`.
