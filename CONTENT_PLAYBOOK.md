@@ -42,3 +42,19 @@ per second). This is one example of what works, not a template to copy: take the
   branches in the next part. A dating version could be "Imagine the girl across from you on the train smiles
   at you..." ending on "Say hi, or put your headphones back in?". An option, not an order: voice and silent
   formats are both allowed.
+
+## Reference: @dontopenit.stories (picked by the user, studied 2026-11-04)
+"Daily stories. Comment to decide what happens next." 12 posts, 106k followers; reel views 50k-3.5M (most 600k+).
+Same mechanics as play.malo, in flat 2D close to our look. Top reel (3.5M views, 155k likes, 14.7k sends, 2.6k
+comments): "Imagine you're watching TV on the 23rd floor when the sirens start." Frame strips (1 frame/s):
+`~/feedback/outliers/dontopenit.stories/`.
+- Second person "you" again, narrated with 2-3 word captions centre screen; muted, dark night palette. `ref`
+- A rules device on screen: an emergency alert "Rule 1 stay inside, Rule 2 do not use the stairs, Rule 3 trucks
+  at Harbor Plaza dawn day 5". Breaking a rule is the tension. `ref`
+- A HUD that drives time: "DAY 1/5 · 8:41 PM · TRUCKS IN 4 DAYS" in a corner, so several nights fit in one part. `ref`
+- Cheap repeatable shots: a flat faceless figure, one apartment, a peephole circle onto the corridor, the lift
+  door. Few locations reused. `ref`
+- Every grid cover is the question ("DO YOU LET HER IN?", "DO YOU GET IN THE ELEVATOR?"); the series ends with
+  a "FINALE" part. Comments are votes ("Stayyy", "Go"). `ref`
+- Their parts run past 60 s; ours stay within our limit. `ref`
+
