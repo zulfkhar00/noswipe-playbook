@@ -20,6 +20,10 @@ exec 9>"$HOME/nightly/.lock"
 flock -n 9 || { echo "another nightly run is in progress"; exit 1; }
 LOG="$RUN_DIR/run.log"
 : > "$LOG"
+# dead-man's switch: ~/nightly/health.url holds a healthchecks.io ping URL (one line). It gets /start now and
+# /<exit code> at the end; a night that never starts or never ends reaches the user as an email from healthchecks.io.
+HC="$(head -1 "$HOME/nightly/health.url" 2>/dev/null || true)"
+hc() { [ -n "$HC" ] && curl -fsS -m 10 --retry 3 "$HC$1" >/dev/null 2>&1 || true; }
 
 # CD: bring in reviewed code first (CI moves origin/deploy after green checks). Tonight's run goes on with the
 # current code if anything here fails.
@@ -47,6 +51,7 @@ DRY_RUN=$DRY_RUN"
 
 echo "nightly run DAY=$DAY DRY_RUN=$DRY_RUN started $(date -Is)" | tee -a "$LOG"
 START=$(date +%s)
+hc /start
 set +e
 timeout 7h "$HOME/.local/bin/claude" -p "$PROMPT" --model opus --dangerously-skip-permissions \
   --output-format stream-json --verbose > "$RUN_DIR/session.jsonl" 2> "$RUN_DIR/session.err"
@@ -61,4 +66,5 @@ import json, sys
 try:
     r = json.loads(sys.stdin.read()); print('usage (API-equivalent \$):', round(r.get('total_cost_usd', 0), 2))
 except Exception as e: print('no result line:', e)" | tee -a "$LOG"
+hc "/$CODE"
 exit $CODE
