@@ -150,11 +150,11 @@ export const Wall: React.FC = () => <g>
   <rect x={-700} y={1080} width={2500} height={12} fill={C.rust} opacity={0.0} />
 </g>;
 
-export const Sign: React.FC = () => <g transform="translate(580 772)">
-  <rect x={-232} y={-42} width={464} height={84} rx={12} fill={C.ink} opacity={0.18} transform="translate(8 10)" />
-  <rect x={-232} y={-42} width={464} height={84} rx={12} fill={C.green} />
-  <rect x={-224} y={-34} width={448} height={68} rx={8} fill="none" stroke={C.cream} strokeWidth={3} />
-  <text y={14} textAnchor="middle" fontFamily={JOST} fontWeight={600} fontSize={40} letterSpacing={4} fill={C.cream}>QUIET CARRIAGE</text>
+export const Sign: React.FC<{x?: number; y?: number; w?: number; h?: number; text?: string; fill?: string; size?: number}> = ({x = 580, y = 772, w = 464, h = 84, text = 'QUIET CARRIAGE', fill = C.green, size = 40}) => <g transform={`translate(${x} ${y})`}>
+  <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={12} fill={C.ink} opacity={0.18} transform="translate(8 10)" />
+  <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={12} fill={fill} />
+  <rect x={-w / 2 + 8} y={-h / 2 + 8} width={w - 16} height={h - 16} rx={8} fill="none" stroke={C.cream} strokeWidth={3} />
+  <text y={size * 0.35} textAnchor="middle" fontFamily={JOST} fontWeight={600} fontSize={size} letterSpacing={4} fill={C.cream}>{text}</text>
 </g>;
 
 export const SeatBack: React.FC<{x: number}> = ({x}) => <g>
@@ -243,17 +243,18 @@ export const Her: React.FC<{t: number; face: Face; x?: number; y?: number; flutt
 </g>;
 
 /** Two-segment arm to a hand; the elbow bends downward. */
-const armPts = (s: [number, number], h: [number, number], l1 = 215, l2 = 215): [number, number][] => {
+const armPts = (s: [number, number], h: [number, number], l1 = 215, l2 = 215, flip = false): [number, number][] => {
   const dx = h[0] - s[0], dy = h[1] - s[1];
   const d = Math.min(Math.hypot(dx, dy), l1 + l2 - 2) || 1;
   const a = (l1 * l1 - l2 * l2 + d * d) / (2 * d), hh = Math.sqrt(Math.max(0, l1 * l1 - a * a));
   const ux = dx / Math.hypot(dx, dy || 1e-6), uy = dy / Math.hypot(dx, dy || 1e-6);
   let nx = -uy, ny = ux; if (ny < 0) { nx = -nx; ny = -ny; }
+  if (flip) { nx = -nx; ny = -ny; }
   return [s, [s[0] + ux * a + nx * hh, s[1] + uy * a + ny * hh], [s[0] + ux * d, s[1] + uy * d]];
 };
 
-export const Arm: React.FC<{shoulder: [number, number]; hand: [number, number]; coat: string; skin: string}> = ({shoulder, hand, coat, skin}) => {
-  const [s, e, h] = armPts(shoulder, hand);
+export const Arm: React.FC<{shoulder: [number, number]; hand: [number, number]; coat: string; skin: string; lens?: number; flip?: boolean}> = ({shoulder, hand, coat, skin, lens = 215, flip = false}) => {
+  const [s, e, h] = armPts(shoulder, hand, lens, lens, flip);
   return <g>
     <path d={`M ${s[0]} ${s[1]} L ${e[0]} ${e[1]} L ${h[0]} ${h[1]}`} stroke={coat} strokeWidth={52} strokeLinecap="round" strokeLinejoin="round" fill="none" />
     <circle cx={h[0]} cy={h[1]} r={27} fill={skin} />
@@ -305,6 +306,10 @@ export type SheetSpec = {
   letters?: {s: string; from: number; step: number; ink: string};
   scribble?: [number, number]; underline?: [number, number];
   highlight?: number;
+  size?: number;                            // clue font size (default 42); text may hold "|" for a line break
+  wobble?: boolean;                         // his letters get shakier and more uneven, letter by letter
+  stain?: {at: number; x: number; y: number};   // a coffee puddle that spreads from `at` (driven by t, so it can run backwards)
+  row2?: {n: number; s: string; boxesFrom: number; from: number; step: number; ink: string};  // a second row of boxes, right-aligned
 };
 const BOX = 50, GAP = 6;
 export const boxX = (n: number, i: number, groups?: number[]) => {
@@ -328,7 +333,9 @@ export const scribblePos = (u: number): [number, number] => {
 
 export const Paper: React.FC<{t: number; s: SheetSpec; id: string}> = ({t, s, id}) => {
   const rv = s.reveal ? clamp((t - s.reveal[0]) / (s.reveal[1] - s.reveal[0])) : 1;
-  const tw = textW(s.text);
+  const fs = s.size ?? 42;
+  const tLines = s.text.split('|');
+  const tw = Math.max(...tLines.map(textW)) * fs / 42 * (s.size ? 1.1 : 1);
   const scr = s.scribble ? clamp((t - s.scribble[0]) / (s.scribble[1] - s.scribble[0])) : 0;
   const und = s.underline ? clamp((t - s.underline[0]) / (s.underline[1] - s.underline[0])) : 0;
   const pts = SCRIB(0);
@@ -338,8 +345,10 @@ export const Paper: React.FC<{t: number; s: SheetSpec; id: string}> = ({t, s, id
     <rect x={-PW / 2} y={-PH / 2} width={PW} height={PH} rx={10} fill={C.paper} stroke={C.paperEdge} strokeWidth={4} />
     <rect x={-PW / 2 + 16} y={-PH / 2 + 14} width={70} height={8} rx={4} fill={C.rust} opacity={0.8} />
     <rect x={-PW / 2 + 94} y={-PH / 2 + 14} width={30} height={8} rx={4} fill={C.green} opacity={0.8} />
-    <clipPath id={`rv${id}`}><rect x={-tw / 2 - 4} y={-110} width={(tw + 8) * rv} height={80} /></clipPath>
-    <text y={-50} textAnchor="middle" fontFamily={JOST} fontWeight={500} fontSize={42} fill={textInk} clipPath={`url(#rv${id})`}>{s.text}</text>
+    <clipPath id={`rv${id}`}><rect x={-tw / 2 - 4} y={tLines.length > 1 ? -122 : -110} width={(tw + 8) * rv} height={tLines.length > 1 ? 100 : 80} /></clipPath>
+    {tLines.length === 1
+      ? <text y={-50} textAnchor="middle" fontFamily={JOST} fontWeight={s.size ? 600 : 500} fontSize={fs} fill={textInk} clipPath={`url(#rv${id})`}>{s.text}</text>
+      : tLines.map((l, i) => <text key={i} y={-84 + i * 50} textAnchor="middle" fontFamily={JOST} fontWeight={600} fontSize={fs} fill={textInk} clipPath={`url(#rv${id})`}>{l}</text>)}
     <g opacity={s.reveal ? clamp((t - s.reveal[1]) / 0.2) : 1}>{Array.from({length: s.n}, (_, i) => {
       const x = boxX(s.n, i, s.groups);
       const active = s.highlight === i;
@@ -349,9 +358,39 @@ export const Paper: React.FC<{t: number; s: SheetSpec; id: string}> = ({t, s, id
       const a = (t - (s.letters!.from + i * s.letters!.step)) / 0.18;
       if (a <= 0) return null;
       const k = clamp(a);
+      if (s.wobble) {
+        const w = 0.7 + i * 0.5, j = ((i * 7) % 5) - 2, j2 = ((i * 3) % 4) - 1.5;
+        const cl = (v: number, m: number) => Math.max(-m, Math.min(m, v));
+        return <text key={i} x={boxX(s.n, i, s.groups) + cl(j2 * w * 0.8, 3)} y={46 + cl(j * w * 0.8, 3)} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={54 + cl(j2 * w * 1.6, 6)} fill={s.letters!.ink}
+          transform={`translate(0 ${(1 - k) * -4}) rotate(${cl(j * w * 1.3, 8)} ${boxX(s.n, i, s.groups)} 30)`} opacity={k}>{ch}</text>;
+      }
       return <text key={i} x={boxX(s.n, i, s.groups)} y={46} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={56} fill={s.letters!.ink}
         transform={`translate(0 ${(1 - k) * -10}) rotate(${(i % 3 - 1) * 2.5} ${boxX(s.n, i, s.groups)} 30)`} opacity={k}>{ch}</text>;
     })}
+    {s.row2 && (() => {
+      const r = s.row2, bw = 42, left = 197 - (r.n * bw + (r.n - 1) * 6);
+      const cx = (i: number) => left + bw / 2 + i * (bw + 6);
+      return <g>
+        <text x={left - 14} y={112} textAnchor="end" fontFamily={JOST} fontWeight={500} fontSize={32} fill={C.ink} opacity={clamp((t - r.boxesFrom) / 0.2) * 0.8}>({r.n})</text>
+        {Array.from({length: r.n}, (_, i) => <rect key={i} x={cx(i) - bw / 2} y={76} width={bw} height={bw} rx={4} fill={C.paper} stroke={C.ink} strokeWidth={3.2} opacity={clamp((t - r.boxesFrom - i * 0.06) / 0.1)} />)}
+        {r.s.split('').map((ch, i) => {
+          const k = clamp((t - (r.from + i * r.step)) / 0.18);
+          return k > 0 ? <text key={i} x={cx(i)} y={110} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={50} fill={r.ink} transform={`translate(0 ${(1 - k) * -8})`} opacity={k}>{ch}</text> : null;
+        })}
+      </g>;
+    })()}
+    {s.stain && (() => {
+      const k = clamp((t - s.stain.at) / 0.9);
+      if (k <= 0) return null;
+      const r = Math.pow(k, 0.55), tail = clamp((k - 0.5) * 2);
+      return <g transform={`translate(${s.stain.x} ${s.stain.y})`}>
+        <g transform={`scale(${r} ${r * 0.72})`} opacity={0.93}>
+          <path d="M -112 -8 C -122 -62 -40 -84 10 -64 C 62 -84 122 -42 100 0 C 128 42 70 80 20 68 C -20 92 -100 72 -96 32 C -122 20 -120 6 -112 -8 Z" fill="#4A2A18" />
+          <path d="M -80 -6 C -78 -40 -20 -52 14 -38 C 50 -50 84 -24 72 4 C 86 30 40 52 8 42 C -26 58 -76 44 -70 22 C -88 14 -86 4 -80 -6 Z" fill="#6E4329" />
+        </g>
+        <path d={`M -34 30 C -32 ${42 + tail * 6} -28 ${50 + tail * 8} -28 ${54 + tail * 10} L -10 ${54 + tail * 10} C -8 ${48 + tail * 6} -6 44 0 36 Z`} fill="#4A2A18" opacity={0.93 * tail} />
+      </g>;
+    })()}
     {und > 0 && <path d={`M ${boxX(s.n, 0, s.groups) - 28} 70 Q -100 84 0 70 T ${boxX(s.n, s.n - 1, s.groups) + 28} 70`} stroke={C.rust} strokeWidth={7} strokeLinecap="round" fill="none"
       strokeDasharray={1} pathLength={1} strokeDashoffset={1 - und} />}
     {scr > 0 && <path d={sd} stroke={C.ink} strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" fill="none" strokeDasharray={1} pathLength={1} strokeDashoffset={1 - scr} />}
@@ -423,10 +462,10 @@ const TrainCar: React.FC<{x: number; seed: number}> = ({x, seed}) => <g transfor
 </g>;
 
 /** The opposite train sweeping through: its lit, warm windows are the cut. Cuts happen at t0 + 0.37. */
-export const PassingTrain: React.FC<{t: number; t0: number}> = ({t, t0}) => {
+export const PassingTrain: React.FC<{t: number; t0: number; dir?: 1 | -1}> = ({t, t0, dir = 1}) => {
   const L = 2800, v = 5000, a = t - t0;
   if (a < 0 || a > 0.8) return null;
-  const fx = 1080 - v * a;
+  const fx = dir === 1 ? 1080 - v * a : -L + v * a;
   const cars = Math.ceil(L / 560);
   return <g>
     <rect x={fx} y={-50} width={L} height={2100} fill="#2B473B" />
@@ -437,7 +476,7 @@ export const TRAIN_CUT = 0.37;
 
 // ---------------------------------------------------------------------------------------- vote
 
-export const VoteCard: React.FC<{k: 'A' | 'B'; word: string; len: string; y: number; age: number; tint: string; pulse?: number}> = ({k, word, len, y, age, tint, pulse = 0}) => {
+export const VoteCard: React.FC<{k: 'A' | 'B'; word: string; len: string; y: number; age: number; tint: string; pulse?: number; sub?: string}> = ({k, word, len, y, age, tint, pulse = 0, sub}) => {
   if (age <= 0) return null;
   const pop = age < 0.25 ? 1 + 0.16 * (1 - age / 0.25) : 1;
   const slide = (1 - clamp(age / 0.3)) * 120;
@@ -448,7 +487,10 @@ export const VoteCard: React.FC<{k: 'A' | 'B'; word: string; len: string; y: num
     <circle cx={140} cy={y + 80} r={56} fill={tint} stroke={C.ink} strokeWidth={5} />
     <text x={140} y={y + 106} textAnchor="middle" fontFamily={STRIPF} fontWeight={800} fontSize={84} fill={C.cream}>{k}</text>
     <text x={230} y={y + 90} fontFamily={STRIPF} fontWeight={800} fontSize={100} letterSpacing={3} fill={C.ink}>{word}</text>
-    <text x={920} y={y + 90} textAnchor="end" fontFamily={JOST} fontWeight={500} fontSize={56} fill={C.ink}>{len}</text>
+    {sub
+      ? (() => { const w = sub.split(' '), h = Math.ceil(w.length / 2), ls = w.length > 3 ? [w.slice(0, h).join(' '), w.slice(h).join(' ')] : [sub];
+        return <g>{ls.map((l, i) => <text key={i} x={530} y={y + (ls.length > 1 ? 52 : 86) + i * 58} fontFamily={JOST} fontWeight={600} fontSize={56} fill={tint}>{l}</text>)}</g>; })()
+      : <text x={920} y={y + 90} textAnchor="end" fontFamily={JOST} fontWeight={500} fontSize={56} fill={C.ink}>{len}</text>}
     {word.split('').map((ch, i) => {
       const bx = 230 + i * 100;
       return <g key={i}>
@@ -478,4 +520,16 @@ export const Booklet: React.FC<{x: number; y: number}> = ({x, y}) => <g transfor
   <rect x={-46} y={-58} width={92} height={116} rx={5} fill={C.paper} stroke={C.ink} strokeWidth={3} />
   <rect x={-46} y={-58} width={12} height={116} rx={4} fill={C.orange} />
   {[0, 1, 2, 3].map((r) => [0, 1, 2].map((c) => <rect key={`${r}${c}`} x={-24 + c * 22} y={-40 + r * 22} width={20} height={20} fill={(r + c) % 2 ? C.ink : C.paper} stroke={C.ink} strokeWidth={2} />))}
+</g>;
+
+/** A paper takeaway coffee cup, base centre at (0,0), upright; a lid, a sleeve and steam so it reads as coffee. */
+export const Cup: React.FC<{x: number; y: number; rot?: number; steam?: number; t?: number}> = ({x, y, rot = 0, steam = 1, t = 0}) => <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+  <path d="M -30 -100 L 30 -100 L 25 0 L -25 0 Z" fill={C.paper} stroke={C.ink} strokeWidth={4} strokeLinejoin="round" />
+  <path d="M -27.5 -78 L 27.5 -78 L 25.6 -28 L -25.6 -28 Z" fill={C.rust} stroke={C.ink} strokeWidth={3} />
+  <rect x={-18} y={-62} width={36} height={6} rx={3} fill={C.cream} /><rect x={-17} y={-48} width={34} height={6} rx={3} fill={C.cream} />
+  <rect x={-35} y={-116} width={70} height={18} rx={7} fill="#3A2A22" stroke={C.ink} strokeWidth={3} />
+  <path d="M -22 -116 L -18 -128 L 18 -128 L 22 -116 Z" fill="#4B372D" stroke={C.ink} strokeWidth={3} strokeLinejoin="round" />
+  <rect x={-8} y={-124} width={16} height={4} rx={2} fill={C.ink} />
+  {steam > 0.01 && [-12, 10].map((dx, i) => <path key={i} d={`M ${dx} -136 C ${dx - 14} -156 ${dx + 14} -170 ${dx} -192`} stroke={C.ink} strokeWidth={5} strokeLinecap="round" fill="none" opacity={0.45 * steam}
+    transform={`translate(${Math.sin(t * 3 + i * 2) * 4} ${-((t * 30 + i * 14) % 18)})`} />)}
 </g>;

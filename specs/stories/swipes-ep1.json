@@ -1,0 +1,548 @@
+{
+ "id": "swipes-ep1",
+ "season": "Ten Swipes Left",
+ "episode": 1,
+ "composition": "Swipes1",
+ "title": "The apps only gave me ten swipes today. Part 1",
+ "note": "Narrated second-person story. Rule in line 1: ten swipes a day. Counter HUD tells it muted. Own payoff: the person in the coffee queue turns and shows her own screen, also at one. She is a warm equal who chooses to show it. The loser of the vote embarrasses the viewer, never her. No NoSwipe mention. No app logos or UI: cards are our own design. Times are estimates; real takes set the timeline. Real takes set the timeline (src/stories/swipes-ep1.timeline.json): all beats, counter, strips and captions in code follow the word anchors; times in this file are the original estimates. Queue shot starts on 'coffee' (line 5) and the card close-up on 'Same' (line 6) so the queue is on screen about 1.9 s. Vote cards fill in while line 8 names them (cardA on 'Use', cardB on 'say'); lines 9/10 stamp-highlight them (hlA, hlB).",
+ "duration": 38.0,
+ "estimatedNarrationSec": 33.1,
+ "cast": {
+  "you": "POV only: a thumb, a cuff and the phone. Never drawn as a person.",
+  "ana": "card figure: round head, bean body, carabiner on the hip",
+  "queuePerson": "bean figure seen from behind, then turns; a single smile arc is the only facial feature; holds a phone",
+  "voice": "Witty McGee, calm, second person, eleven_multilingual_v2"
+ },
+ "context": "The apps give you 10 swipes a day",
+ "hooks": {
+  "a": {
+   "line1": "Imagine the apps only gave you ten swipes today.",
+   "caption": "TEN SWIPES TODAY",
+   "gapBeforeLine2": 0.2
+  },
+  "b": {
+   "line1": "Ten swipes today. That's it. Choose carefully.",
+   "caption": "ONLY TEN. CHOOSE.",
+   "gapBeforeLine2": 0.6
+  }
+ },
+ "lines": [
+  {
+   "n": 1,
+   "gapBefore": 0.1,
+   "text": "Imagine the apps only gave you ten swipes today.",
+   "delivery": "warm"
+  },
+  {
+   "n": 2,
+   "gapBefore": 0.2,
+   "text": "Left or right, every swipe costs one.",
+   "delivery": "dry"
+  },
+  {
+   "n": 3,
+   "gapBefore": 0.2,
+   "text": "Kind eyes, loves climbing. Right. Nine.",
+   "delivery": "dry"
+  },
+  {
+   "n": 4,
+   "gapBefore": 0.2,
+   "text": "Lovely. Lovely. Lovely. Your thumb starts sweating.",
+   "delivery": "punchy"
+  },
+  {
+   "n": 5,
+   "gapBefore": 0.3,
+   "text": "Down to one swipe, in a coffee queue.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 6,
+   "gapBefore": 0.3,
+   "text": "The card says, Same. Coffee?",
+   "delivery": "warm"
+  },
+  {
+   "n": 7,
+   "gapBefore": 0.4,
+   "text": "Then the person ahead turns. Her screen says one too.",
+   "delivery": "slow reveal"
+  },
+  {
+   "n": 8,
+   "gapBefore": 0.4,
+   "text": "So. Use your last swipe, or say hello?",
+   "delivery": "warm"
+  },
+  {
+   "n": 9,
+   "gapBefore": 0.2,
+   "text": "A, use the last swipe.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 10,
+   "gapBefore": 0.2,
+   "text": "B, put the phone away and say hi.",
+   "delivery": "deadpan"
+  },
+  {
+   "n": 11,
+   "gapBefore": 0.2,
+   "text": "Comment A or B.",
+   "delivery": "warm"
+  }
+ ],
+ "beats": [
+  {
+   "name": "hook",
+   "t": 0.0
+  },
+  {
+   "name": "rule",
+   "line": 2,
+   "word": "Left",
+   "offset": 0.0,
+   "t": 3.9
+  },
+  {
+   "name": "cost",
+   "line": 2,
+   "word": "costs",
+   "offset": 0.0,
+   "t": 5.5
+  },
+  {
+   "name": "card1",
+   "line": 3,
+   "word": "Kind",
+   "offset": 0.0,
+   "t": 6.5
+  },
+  {
+   "name": "swipe1",
+   "line": 3,
+   "word": "Right",
+   "offset": 0.0,
+   "t": 8.0
+  },
+  {
+   "name": "swipe2",
+   "line": 4,
+   "word": "Lovely",
+   "offset": 0.0,
+   "t": 9.3
+  },
+  {
+   "name": "swipe3",
+   "line": 4,
+   "word": "Lovely",
+   "offset": 0.5,
+   "t": 9.8
+  },
+  {
+   "name": "swipe4",
+   "line": 4,
+   "word": "Lovely",
+   "offset": 1.0,
+   "t": 10.3
+  },
+  {
+   "name": "sweat",
+   "line": 4,
+   "word": "sweating",
+   "offset": 0.0,
+   "t": 11.0
+  },
+  {
+   "name": "race",
+   "line": 4,
+   "word": "sweating",
+   "offset": 0.3,
+   "t": 11.3
+  },
+  {
+   "name": "one",
+   "line": 5,
+   "word": "one",
+   "offset": 0.0,
+   "t": 12.9
+  },
+  {
+   "name": "pullBack",
+   "line": 5,
+   "word": "coffee",
+   "offset": 0.0,
+   "t": 14.4
+  },
+  {
+   "name": "lastCard",
+   "line": 6,
+   "word": "Same",
+   "offset": 0.0,
+   "t": 16.0
+  },
+  {
+   "name": "hover",
+   "line": 6,
+   "word": "Coffee",
+   "offset": 0.0,
+   "t": 17.2
+  },
+  {
+   "name": "turn",
+   "line": 7,
+   "word": "turns",
+   "offset": 0.0,
+   "t": 19.4
+  },
+  {
+   "name": "herScreen",
+   "line": 7,
+   "word": "screen",
+   "offset": 0.0,
+   "t": 20.5
+  },
+  {
+   "name": "smile",
+   "line": 7,
+   "word": "too",
+   "offset": 0.0,
+   "t": 21.5
+  },
+  {
+   "name": "voteBoard",
+   "line": 8,
+   "word": "So",
+   "offset": 0.0,
+   "t": 22.5
+  },
+  {
+   "name": "cardA",
+   "line": 8,
+   "word": "Use",
+   "offset": 0.0,
+   "t": 25.9
+  },
+  {
+   "name": "hlA",
+   "line": 9,
+   "word": "A",
+   "offset": 0.0,
+   "t": 28.9
+  },
+  {
+   "name": "cardB",
+   "line": 8,
+   "word": "say",
+   "offset": 0.0,
+   "t": 28.1
+  },
+  {
+   "name": "hlB",
+   "line": 10,
+   "word": "B",
+   "offset": 0.0,
+   "t": 30.4
+  },
+  {
+   "name": "comment",
+   "line": 11,
+   "word": "Comment",
+   "offset": 0.0,
+   "t": 31.5
+  },
+  {
+   "name": "endcard",
+   "t": 34.0
+  }
+ ],
+ "counter": [
+  {
+   "beat": "hook",
+   "value": 10
+  },
+  {
+   "beat": "swipe1",
+   "value": 9
+  },
+  {
+   "beat": "swipe2",
+   "value": 8
+  },
+  {
+   "beat": "swipe3",
+   "value": 7
+  },
+  {
+   "beat": "swipe4",
+   "value": 6
+  },
+  {
+   "t": 11.0,
+   "value": 5
+  },
+  {
+   "t": 11.3,
+   "value": 4
+  },
+  {
+   "t": 11.6,
+   "value": 3
+  },
+  {
+   "t": 11.9,
+   "value": 2
+  },
+  {
+   "t": 12.3,
+   "value": 1,
+   "red": true
+  }
+ ],
+ "cards": [
+  {
+   "id": "c1",
+   "name": "Ana",
+   "bio": "climbs, bad puns",
+   "accessory": "carabiner",
+   "from": 0.0,
+   "swipe": "right"
+  },
+  {
+   "id": "c2",
+   "bio": "dog person",
+   "accessory": "leash",
+   "swipe": "left"
+  },
+  {
+   "id": "c3",
+   "bio": "cooks badly, tries anyway",
+   "accessory": "pan",
+   "swipe": "right"
+  },
+  {
+   "id": "c4",
+   "bio": "reads on trains",
+   "accessory": "book",
+   "swipe": "left"
+  },
+  {
+   "id": "last",
+   "bio": "Also on my last one. Same. Coffee?",
+   "accessory": "cup",
+   "from": 16.0,
+   "swipe": null
+  }
+ ],
+ "strips": [
+  {
+   "text": "The apps give you 10 swipes a day",
+   "from": 0.0,
+   "to": 3.4,
+   "y": 520
+  },
+  {
+   "text": "RULE 1 · NO GOING BACK",
+   "from": 3.9,
+   "to": 6.4,
+   "y": 520
+  },
+  {
+   "text": "coffee queue",
+   "from": 14.4,
+   "to": 18.0,
+   "y": 520
+  },
+  {
+   "text": "what do you do?",
+   "from": 22.5,
+   "to": 34.0,
+   "y": 340
+  },
+  {
+   "text": "comment A or B",
+   "from": 31.5,
+   "to": 34.0,
+   "y": 420
+  }
+ ],
+ "captions": [
+  {
+   "text": "TEN SWIPES TODAY",
+   "from": 0.1,
+   "to": 3.3,
+   "y": 1150,
+   "variant": "a"
+  },
+  {
+   "text": "ONLY TEN. CHOOSE.",
+   "from": 0.1,
+   "to": 2.9,
+   "y": 1150,
+   "variant": "b"
+  },
+  {
+   "text": "LEFT OR RIGHT",
+   "from": 3.5,
+   "to": 4.9,
+   "y": 1150
+  },
+  {
+   "text": "COSTS ONE",
+   "from": 5.0,
+   "to": 6.3,
+   "y": 1150
+  },
+  {
+   "text": "KIND EYES. CLIMBING.",
+   "from": 6.5,
+   "to": 7.9,
+   "y": 1150
+  },
+  {
+   "text": "RIGHT. NINE.",
+   "from": 8.0,
+   "to": 8.9,
+   "y": 1150
+  },
+  {
+   "text": "LOVELY. LOVELY. LOVELY.",
+   "from": 9.1,
+   "to": 10.9,
+   "y": 1150
+  },
+  {
+   "text": "THUMB SWEATING",
+   "from": 11.0,
+   "to": 11.9,
+   "y": 1150
+  },
+  {
+   "text": "ONE SWIPE LEFT",
+   "from": 12.2,
+   "to": 14.2,
+   "y": 1150
+  },
+  {
+   "text": "COFFEE QUEUE",
+   "from": 14.3,
+   "to": 15.4,
+   "y": 1150
+  },
+  {
+   "text": "SAME. COFFEE?",
+   "from": 15.7,
+   "to": 17.7,
+   "y": 1150
+  },
+  {
+   "text": "SHE TURNS",
+   "from": 18.1,
+   "to": 20.0,
+   "y": 1150
+  },
+  {
+   "text": "HER SCREEN: ONE",
+   "from": 20.1,
+   "to": 22.1,
+   "y": 1150
+  },
+  {
+   "text": "SWIPE, OR HELLO?",
+   "from": 22.5,
+   "to": 25.7,
+   "y": 1150
+  },
+  {
+   "text": "A OR B",
+   "from": 31.5,
+   "to": 33.1,
+   "y": 1150
+  }
+ ],
+ "vote": {
+  "question": "what do you do?",
+  "A": {
+   "l1": "A",
+   "l2": "use the last swipe",
+   "draw": "thumb over gold coin"
+  },
+  "B": {
+   "l1": "B",
+   "l2": "phone away, say hi",
+   "draw": "phone into pocket, small wave"
+  }
+ },
+ "endCard": {
+  "text": "ten swipes left · part 2 · A or B",
+  "from": 34.0,
+  "to": 38.0
+ },
+ "audio": {
+  "music": {
+   "bpm": 100,
+   "style": "chiptune: square bass, triangle arpeggio in A minor",
+   "level": "-24 dB under voice",
+   "thinAt": 12.2,
+   "dropOutFrom": 20.3,
+   "warmChordAt": 21.5,
+   "backAt": 22.5
+  },
+  "swipe": [
+   8.0,
+   9.3,
+   9.8,
+   10.3,
+   11.0,
+   11.3,
+   11.6,
+   11.9
+  ],
+  "coinClink": [
+   8.0,
+   9.3,
+   9.8,
+   10.3,
+   11.0,
+   11.3,
+   11.6,
+   11.9,
+   12.3,
+   14.4
+  ],
+  "counterTick": [
+   8.0,
+   9.3,
+   9.8,
+   10.3,
+   11.0,
+   11.3,
+   11.6,
+   11.9,
+   12.3
+  ],
+  "stamp": [
+   3.9,
+   22.5,
+   25.9,
+   28.1,
+   34.0
+  ],
+  "sweatBlip": [
+   11.0
+  ],
+  "roomTone": {
+   "from": 14.4,
+   "to": 34.0,
+   "level": "-35 dB"
+  },
+  "herPhoneBip": [
+   20.5
+  ],
+  "voteDing": [
+   22.5
+  ]
+ }
+}

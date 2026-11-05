@@ -175,3 +175,29 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 | 1a | A stranger on my train leaves me crossword clues. Part 1 (56) | `specs/stories/across-ep1.json` | `Across1` hook a |
 | 1b | I swipe every morning on my train. She noticed. Part 1 (54) | same | `Across1` hook b |
 | 1c | Her crossword clue for me: You, every morning. Part 1 (53) | same | `Across1` hook c |
+| 2a | A stranger on my train asks how I feel. Part 2 (46) | `specs/stories/across-ep2.json` | `Across2` hook a |
+| 2b | I told my train stranger I was RELAXED. I lied. Part 2 (54) | same | `Across2` hook b |
+
+**What happened (part 2, nightly for 2026-11-06):** part 1 hook a won, and 0 comments with 20 s average watch said the vote comes too late, so part 2 runs 36.5 s with the vote up at 23.6 s. It stands alone with no recap card. It plays both branches, tagged "take 1: RELAXED" (the cup shakes, "he was not relaxed.", coffee over the sheet, she offers a napkin; the opposite train runs backwards) and "take 2: NERVOUS" (she writes SAME). Blind check round 1 was clarity 6: A/B meant two things (so the tags became takes; only the vote says A and B), the spill had no cause, and her gasp read as judging. Round 2: clarity 7, hook a 7, hook b 8.
+**Part 3 is decided:** vote A DAVE (his real name) vs B DUKE (the name he wishes he had). A wins: the wrong B plays first (mid-DUKE his phone lights up "Mum: Dave, call me back"), rewind, then A carries on. Note the honest answer is A this time so voters can't guess by habit.
+
+## Season 6 · Ten Swipes Left (narrated second-person choice story)
+
+**Logline:** Imagine the apps only gave you ten swipes a day. You burn nine and reach the last one in a coffee queue, where the card says "Also on my last one. Same. Coffee?" and the person ahead turns round, her screen on 1 too.
+
+**Why this format:** a one-slot test of the mechanics in the two reference accounts (CONTENT_PLAYBOOK.md) we'd never tried: second person, one narrator, 2-3 word centre captions, a HUD counter, a two-way choice that the next part plays both ways. It stays on the apps, where our best hook came from. Picked from 5 pitches on 2026-11-05. Takes the mechanics only: no horror, and she's a warm equal who shows her own screen by her own choice.
+
+**Cast:** you are only a POV thumb and cuff. She has a bun and a coral top; the last card shows the same bun, top and cup. Card people are bean figures with one prop and a kind bio. Voice: Witty McGee, calm.
+
+**Look and sound:** arcade tokens. Ink #101218, token gold #FFC21A, cyan #2FD9F5, signal red #FF3B3B (the counter at 1 only), off-white #F2F2EC. Anton (counter, captions), Barlow Condensed (strips), Inter (bios), Courier Prime (the RULE 1 stamp). HUD chip with 10 pips top-left, y >= 290. **Signature transition:** a gold coin falling through a slot, then a gold iris. Chiptune at 100 bpm, swipe whoosh, coin clink, counter tick. Code: `src/stories/swipes/`; audio: `python3 generate_swipes_audio.py swipes-ep1`.
+
+**Arc:**
+1. **Last swipe.** Vote: A use the last swipe · B put the phone away and say hi.
+2. B wins. A first: you swipe, a generic match burst, counter 0, you draft "hey" and delete it while she takes her coffee and the barista says "Next"; coins fly back up (rewind). B: you pocket the phone, "Hi. Also on my last one." She says "I'm getting coffee first. Then maybe." She nods at the empty chair; vote: sit there, or give her space. This pays off RULE 1 "no going back" (the swipe branch can't be undone).
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "ten swipes left · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The apps only gave me ten swipes today. Part 1 (46) | `specs/stories/swipes-ep1.json` | `Swipes1` hook a |
+| 1b | One swipe left and a stranger in my coffee queue. Part 1 (56) | same | `Swipes1` hook b |

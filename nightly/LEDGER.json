@@ -256,6 +256,86 @@
    "video": "videos/across-1-c.mp4",
    "composition": "Across1",
    "posted_by": "engine (planned)"
+  },
+  {
+   "id": "across-2-a",
+   "day": "2026-11-06",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 2,
+   "hook": "a",
+   "caption": "A stranger on my train asks how I feel. Part 2. She writes the clues, I fill the boxes. I got it wrong, so we rewound. Now it's the last stop and her clue is Who you are (4). A DAVE or B DUKE? #shortstory #romance #animation #tinyloveshows #commute",
+   "video": "videos/across-2-a.mp4",
+   "composition": "Across2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "swipes-1-a",
+   "day": "2026-11-06",
+   "account": "tinyloveshows",
+   "format": "voiced story",
+   "season": "Ten Swipes Left",
+   "episode": 1,
+   "hook": "a",
+   "caption": "The apps only gave me ten swipes today. Part 1. Last swipe, coffee queue, and the card says Same, coffee? Then the person ahead turns around. Comment A to use the last swipe or B to put the phone away and say hi. #datingapps #swipefatigue #firstdate #shortstory #tinyloveshows",
+   "video": "videos/swipes-1-a.mp4",
+   "composition": "Swipes1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "across-2-b",
+   "day": "2026-11-06",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 2,
+   "hook": "b",
+   "caption": "I told my train stranger I was RELAXED. I lied. Part 2. The coffee agreed. So we rewound and I told the truth. Now it's the last stop and she wants my name in four boxes. A DAVE or B DUKE? #shortstory #romance #animation #tinyloveshows #commute",
+   "video": "videos/across-2-b.mp4",
+   "composition": "Across2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 8,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "swipes-1-b",
+   "day": "2026-11-06",
+   "account": "tinyloveshows",
+   "format": "voiced story",
+   "season": "Ten Swipes Left",
+   "episode": 1,
+   "hook": "b",
+   "caption": "One swipe left and a stranger in my coffee queue. Part 1. Ten swipes a day, no going back. The last card says Same, coffee? and she just showed me her screen. Comment A to use it or B to put the phone away and say hi. #datingapps #swipefatigue #firstdate #shortstory #tinyloveshows",
+   "video": "videos/swipes-1-b.mp4",
+   "composition": "Swipes1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
   }
  ]
 }

@@ -175,6 +175,50 @@ def ping() -> np.ndarray:
     return np.sin(2 * np.pi * 1568 * t) * np.exp(-t * 6) * 0.6
 
 
+def cup_rattle(d: float) -> np.ndarray:
+    """A paper-cup lid chattering on a shaky hand."""
+    t = tt(d)
+    gate = (np.sin(2 * np.pi * 23 * t) > -0.1).astype(float)
+    return fft_lowpass(noise(d), 3500) * gate * (0.3 + 0.7 * t / d) * np.minimum(1, t / 0.05) * np.minimum(1, (d - t) / 0.05)
+
+
+def splat() -> np.ndarray:
+    t = tt(0.5)
+    wet = (noise(0.5) - fft_lowpass(noise(0.5), 900)) * np.exp(-t * 14)
+    thud = np.sin(2 * np.pi * (110 - 40 * t) * t) * np.exp(-t * 18)
+    return fft_lowpass(wet, 4000) * 0.8 + 0.6 * thud
+
+
+def drip() -> np.ndarray:
+    t = tt(0.25)
+    return np.sin(2 * np.pi * (900 + 500 * np.exp(-t * 30)) * t) * np.exp(-t * 28) * 0.6
+
+
+def rewind_sweep(d: float) -> np.ndarray:
+    """Reverse-tape swell: filtered noise whose cutoff and level rise, then a sharp stop."""
+    t = tt(d)
+    base = noise(d)
+    out = np.zeros_like(t)
+    for k in range(8):
+        lo, hi = k / 8, (k + 1) / 8
+        band = fft_lowpass(base, 400 + 5200 * (hi ** 2))
+        seg = (t / d >= lo) & (t / d < hi)
+        out += band * seg
+    wob = 0.7 + 0.3 * np.sin(2 * np.pi * (6 + 20 * t / d) * t)
+    tone = np.sin(2 * np.pi * (300 + 1400 * (t / d) ** 2) * t) * 0.25
+    return (out * 0.8 + tone) * wob * (t / d) ** 1.5 * np.minimum(1, (d - t) / 0.03)
+
+
+def beep(f: float = 2100.0) -> np.ndarray:
+    t = tt(0.09)
+    return np.sin(2 * np.pi * f * t) * np.minimum(1, t / 0.004) * np.minimum(1, (0.09 - t) / 0.01) * 0.6
+
+
+def pen_tap() -> np.ndarray:
+    t = tt(0.1)
+    return (np.sin(2 * np.pi * 900 * t) * 0.6 + fft_lowpass(noise(0.1), 2500) * 0.6) * np.exp(-t * 70)
+
+
 # --- stems ------------------------------------------------------------------------------------
 
 def room(st: Stem, a: dict, dur: float) -> None:
@@ -186,9 +230,11 @@ def room(st: Stem, a: dict, dur: float) -> None:
     lo, hi = c.get("muteFrom", -1), c.get("muteTo", -1)
     i, t = 0, c.get("from", 0.0)
     while t < min(dur, c.get("to", dur)):
-        if not (lo <= t < hi):
-            pos = i % 6
-            vol = 1.0 if pos == 0 else 0.75 if pos == 3 else 0.4
+        pos = i % 6
+        vol = 1.0 if pos == 0 else 0.75 if pos == 3 else 0.4
+        if c.get("reverseFrom", -1) <= t < c.get("reverseTo", -1):
+            st.add(t - 0.14, clack(vol)[::-1], 0.55)       # rewind: each clack plays backwards
+        elif not (lo <= t < hi):
             st.add(t, clack(vol), 0.55)
         i += 1
         t += eighth
@@ -256,9 +302,27 @@ def sfx(st: Stem, a: dict) -> None:
         st.add(t, hiss(1.0), 0.7)
     for t in a["pageRustle"]:
         st.add(t, rustle(0.45), 0.8)
+    rev = set(a.get("passingTrainReversed", []))
     for t in a["passingTrain"]:
-        st.add(t - 0.05, train_pass(1.0), 0.9)
-    for t in a["phoneBuzz"]:
+        if t not in rev:
+            st.add(t - 0.05, train_pass(1.0), 0.9)
+    for t in a.get("penTap", []):
+        st.add(t, pen_tap(), 0.9)
+    for lo, hi in a.get("cupRattle", []):
+        st.add(lo, cup_rattle(hi - lo), 0.6)
+    for t in a.get("splat", []):
+        st.add(t, splat(), 0.9)
+    for t in a.get("drips", []):
+        st.add(t, drip(), 0.7)
+    for lo, hi in a.get("rewindSweep", []):
+        st.add(lo, rewind_sweep(hi - lo), 0.7)
+    for t in a.get("doorBeeps", []):
+        st.add(t, beep(), 0.6)
+    for t in a.get("passingTrainReversed", []):
+        st.add(t - 0.05, train_pass(1.0)[::-1], 0.3)
+    for t in a.get("warmNote", []):
+        st.add(t, vibes(72, 2.0), 0.35)
+    for t in a.get("phoneBuzz", []):
         st.add(t, buzz(0.55), 0.8)
     for t in a["stamps"]:
         st.add(t, stamp(), 0.8)

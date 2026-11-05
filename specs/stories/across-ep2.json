@@ -1,0 +1,377 @@
+{
+ "id": "across-ep2",
+ "season": "Seven Across",
+ "episode": 2,
+ "title": "A stranger on my train asks how I feel. Part 2",
+ "note": "Silent, stands alone. Frame 1 = clue sheet (7 boxes) + QUIET CARRIAGE sign + both strangers; she just slid the sheet. Take 1 (RELAXED): he writes RELAXED, pen shakes, coffee spills on the sheet (he is embarrassed, she gasps kindly, never laughs); passing train runs BACKWARDS as the rewind. Take 2 (NERVOUS): NERVOUS, she writes SAME (4 boxes), both blush. Escalation: LAST STOP lights, doors open and beep, she writes 'Who you are (4)' and stands at the door. Vote A DAVE (his real name) vs B DUKE (the name he wishes he had). A wins in part 3 (honest), the wrong B plays first there: mid-DUKE his phone lights up 'Mum: Dave, call me back'. No NoSwipe, no noswipe.app. All times in seconds. Round 2: napkin instead of gasp; cup strip 'he was not relaxed.'; close-up on SAME then cut to both blushing; only the vote uses A/B.",
+ "duration": 36.5,
+ "cast": {
+  "him": "orange beanie, ear blush, paper coffee cup at his elbow",
+  "her": "mustard scarf, pen, warm and playful; blushes only in B"
+ },
+ "hooks": {
+  "a": "A stranger on my train asks how I feel. By crossword.",
+  "b": "I told my train stranger I was RELAXED. I lied."
+ },
+ "beats": {
+  "hook": 0.0,
+  "penClick": 0.4,
+  "herTap1": 0.5,
+  "herTap2": 0.9,
+  "glanceUp": 1.5,
+  "penDown": 2.5,
+  "tagA": 3.0,
+  "writeStartA": 3.3,
+  "writeEndA": 5.4,
+  "smirk": 5.6,
+  "herBrow": 5.9,
+  "cupReach": 6.4,
+  "cupShake": 6.9,
+  "spill": 7.4,
+  "herGasp": 7.5,
+  "freeze": 8.1,
+  "blushMaxA": 8.4,
+  "rewindTag": 9.2,
+  "unspill": 9.2,
+  "train1": 10.0,
+  "cutB": 10.37,
+  "tagB": 10.8,
+  "breath": 10.9,
+  "writeStartB": 11.2,
+  "writeEndB": 13.3,
+  "blushB": 13.3,
+  "herRead": 13.5,
+  "herSmile": 13.8,
+  "herBoxes": 14.1,
+  "sameFill": 14.4,
+  "sameEnd": 15.6,
+  "bothSmile": 15.6,
+  "chime": 16.5,
+  "lastStopBoard": 16.5,
+  "doorsOpen": 16.9,
+  "newClue": 17.1,
+  "newClueEnd": 18.2,
+  "slide": 18.4,
+  "read": 19.0,
+  "standUp": 19.4,
+  "hover": 20.2,
+  "beeps": 20.4,
+  "pushIn": 21.0,
+  "looksUp": 22.0,
+  "doorsClosing": 23.0,
+  "train2": 23.2,
+  "choice": 23.57,
+  "cardA": 24.2,
+  "cardB": 25.0,
+  "tap": 26.6,
+  "comment": 28.0,
+  "endcard": 33.5
+ },
+ "clues": [
+  {
+   "id": "c1",
+   "by": "her",
+   "text": "How you feel right now (7)",
+   "len": 7,
+   "answer": null,
+   "visibleFrom": 0.0
+  },
+  {
+   "id": "a1",
+   "by": "him",
+   "branch": "A",
+   "text": "RELAXED",
+   "len": 7,
+   "answer": "RELAXED",
+   "fillFrom": 3.3,
+   "fillTo": 5.4,
+   "step": 0.3,
+   "wobble": true,
+   "spillAt": 7.4,
+   "unspillFrom": 9.2,
+   "unspillTo": 10.0
+  },
+  {
+   "id": "b1",
+   "by": "him",
+   "branch": "B",
+   "text": "NERVOUS",
+   "len": 7,
+   "answer": "NERVOUS",
+   "fillFrom": 11.2,
+   "fillTo": 13.3,
+   "step": 0.3
+  },
+  {
+   "id": "r1",
+   "by": "her",
+   "branch": "B",
+   "text": "(4)",
+   "len": 4,
+   "answer": "SAME",
+   "fillFrom": 14.4,
+   "fillTo": 15.6,
+   "step": 0.3,
+   "boxesDrawnFrom": 14.1
+  },
+  {
+   "id": "c2",
+   "by": "her",
+   "text": "Who you are (4)",
+   "len": 4,
+   "answer": null,
+   "visibleFrom": 17.1,
+   "reveal": [
+    17.1,
+    18.2
+   ]
+  }
+ ],
+ "choices": {
+  "question": "what should he write?",
+  "clue": "Who you are (4)",
+  "A": {
+   "l1": "DAVE",
+   "l2": "(4)",
+   "sub": "his real name",
+   "draw": "boxes"
+  },
+  "B": {
+   "l1": "DUKE",
+   "l2": "(4)",
+   "sub": "the name he wishes he had",
+   "draw": "boxes"
+  },
+  "winner": "A",
+  "part3": "B plays first and fails (phone: 'Mum: Dave, call me back'), rewind, A carries on"
+ },
+ "strips": [
+  {
+   "text": "she writes the clues. I fill the boxes.",
+   "from": 0.0,
+   "to": 2.9,
+   "y": 1190
+  },
+  {
+   "text": "take 1: RELAXED",
+   "from": 3.0,
+   "to": 9.0,
+   "y": 360,
+   "tag": true
+  },
+  {
+   "text": "he was not relaxed.",
+   "from": 6.4,
+   "to": 8.4,
+   "y": 1190
+  },
+  {
+   "text": "rewind. the honest way.",
+   "from": 9.2,
+   "to": 10.0,
+   "y": 360
+  },
+  {
+   "text": "take 2: NERVOUS",
+   "from": 10.8,
+   "to": 16.4,
+   "y": 360,
+   "tag": true
+  },
+  {
+   "text": "last stop. doors close soon.",
+   "from": 16.8,
+   "to": 19.0,
+   "y": 360
+  },
+  {
+   "text": "she still doesn't know my name.",
+   "from": 19.0,
+   "to": 22.0,
+   "y": 360
+  },
+  {
+   "text": "what should he write?",
+   "from": 23.6,
+   "to": 33.5,
+   "y": 340
+  },
+  {
+   "text": "comment A or B",
+   "from": 28.0,
+   "to": 33.5,
+   "y": 1190
+  },
+  {
+   "text": "seven across",
+   "from": 33.5,
+   "to": 36.5,
+   "y": 380,
+   "big": true
+  },
+  {
+   "text": "part 3 · comment A or B",
+   "from": 33.65,
+   "to": 36.5,
+   "y": 600
+  }
+ ],
+ "audio": {
+  "bpm": 112,
+  "clack": {
+   "meter": "6/8",
+   "bpm": 112,
+   "from": 0.0,
+   "to": 36.5,
+   "accentEvery": 6,
+   "muteFrom": 7.5,
+   "muteTo": 8.4,
+   "reverseFrom": 9.2,
+   "reverseTo": 10.0
+  },
+  "groove": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    10.8,
+    16.5
+   ],
+   [
+    23.6,
+    33.5
+   ]
+  ],
+  "musicDropFrom": 20.2,
+  "musicBackAt": 23.6,
+  "musicDuck": [
+   [
+    3.3,
+    5.4
+   ],
+   [
+    11.2,
+    13.3
+   ],
+   [
+    14.4,
+    15.6
+   ]
+  ],
+  "penClick": [
+   0.4,
+   17.0
+  ],
+  "penTap": [
+   0.0,
+   0.4,
+   0.8,
+   1.2
+  ],
+  "penScratch": [
+   [
+    3.3,
+    5.4
+   ],
+   [
+    11.2,
+    13.3
+   ],
+   [
+    14.1,
+    15.6
+   ],
+   [
+    17.1,
+    18.2
+   ]
+  ],
+  "letterTicks": [
+   3.3,
+   3.6,
+   3.9,
+   4.2,
+   4.5,
+   4.8,
+   5.1,
+   11.2,
+   11.5,
+   11.8,
+   12.1,
+   12.4,
+   12.7,
+   13.0,
+   14.4,
+   14.7,
+   15.0,
+   15.3
+  ],
+  "cupRattle": [
+   [
+    6.9,
+    7.4
+   ]
+  ],
+  "splat": [
+   7.4
+  ],
+  "drips": [
+   7.9,
+   8.2
+  ],
+  "rewindSweep": [
+   [
+    9.2,
+    10.4
+   ]
+  ],
+  "chime": [
+   16.5
+  ],
+  "doorHiss": [
+   16.9,
+   23.0
+  ],
+  "doorBeeps": [
+   20.4,
+   21.0,
+   21.5,
+   21.9,
+   22.2,
+   22.5,
+   22.75,
+   23.0
+  ],
+  "pageRustle": [
+   14.1,
+   17.1,
+   18.4
+  ],
+  "passingTrain": [
+   10.0,
+   23.2
+  ],
+  "passingTrainReversed": [
+   10.0
+  ],
+  "whooshes": [
+   18.4
+  ],
+  "stamps": [
+   3.0,
+   9.2,
+   10.8,
+   23.6,
+   24.2,
+   25.0,
+   33.5
+  ],
+  "blushPing": [
+   13.3
+  ],
+  "warmNote": [
+   15.6
+  ]
+ }
+}
