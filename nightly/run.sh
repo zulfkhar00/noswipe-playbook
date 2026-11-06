@@ -1,13 +1,14 @@
 #!/bin/bash
 # Start one nightly run on the render server.
 #   nightly/run.sh [DAY] [--live]
-# DAY defaults to tomorrow in Pacific time (the phone and its posting rounds live there; this server runs on UTC).
+# DAY defaults to the coming posting day in Pacific time (the phone and its posting rounds live there; this server
+# runs on UTC): today when started before 06:00 Pacific (the 00:30 cron run), else tomorrow.
 # Without --live it is a dry run: the plan stays in ~/nightly/runs/<DAY>/out/
 # and is NOT handed to the phone engine. Only one run at a time.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export POST_TZ="America/Los_Angeles"
-tomorrow() { TZ="$POST_TZ" date -d tomorrow +%F; }
+tomorrow() { if [ "$(TZ="$POST_TZ" date +%-H)" -lt 6 ]; then TZ="$POST_TZ" date +%F; else TZ="$POST_TZ" date -d tomorrow +%F; fi; }
 
 DAY="${1:-$(tomorrow)}"
 DRY_RUN=1
@@ -15,6 +16,13 @@ DRY_RUN=1
 [[ "$DAY" == "--live" ]] && DAY="$(tomorrow)"
 
 RUN_DIR="$HOME/nightly/runs/$DAY"
+# a day already planned by a finished live run is never planned twice (its posts may be going out)
+if [[ "$DRY_RUN" == 0 ]] && grep -q "DRY_RUN=0" "$RUN_DIR/run.log" 2>/dev/null && grep -q "exit=0" "$RUN_DIR/run.log"; then
+  echo "$(date -Is) $DAY already has a live plan: nothing to do"
+  HC="$(head -1 "$HOME/nightly/health.url" 2>/dev/null || true)"
+  [ -n "$HC" ] && curl -fsS -m 10 --retry 3 "$HC/0" >/dev/null 2>&1 || true
+  exit 0
+fi
 mkdir -p "$RUN_DIR/out/videos"
 exec 9>"$HOME/nightly/.lock"
 flock -n 9 || { echo "another nightly run is in progress"; exit 1; }
