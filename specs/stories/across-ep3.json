@@ -1,0 +1,387 @@
+{
+ "id": "across-ep3",
+ "season": "Seven Across",
+ "episode": 3,
+ "title": "A stranger on my train wants my name. Part 3",
+ "note": "Silent, stands alone. Frame 1 = open doors, LAST STOP board, her at the door, his sheet with 'Who you are (4)' and 4 empty boxes, QUIET CARRIAGE sign. Take 1 (DUKE): he writes DUKE chin up, his phone lights 'Mum: Dave, call me back', she glances politely and looks out of the window, he slaps the phone face down (joke is on him, never her); the opposite train runs BACKWARDS as the rewind. Take 2 (DAVE): he turns the phone face down on purpose (no notification), writes DAVE, she comes back and fills her own name IRIS in green ink (payoff). The beeps speed up, she looks at the door then the boxes and sits back down by her own choice; the doors close with her aboard, the board flips to RETURN TRIP, the train rolls and she writes 'Look at the (6)'. His eyes go from the face-down phone to the window, which is slowing. Vote A SCREEN (my phone, again) vs B WINDOW (the view, with her). B wins in part 4: the wrong A plays first (the train jolts to a halt mid-track, the phone slides off the table and he dives for it while she looks out of the window), rewind, then B WINDOW carries on. No NoSwipe, no noswipe.app. Only the vote uses A and B; tags are takes. All times in seconds.",
+ "duration": 31.5,
+ "cast": {
+  "him": "orange beanie, ear blush, phone at the table edge, face down from 8.1 in take 2",
+  "her": "mustard scarf, pen, booklet; stands at the door, then sits by choice at 13.8; blushes only in take 2"
+ },
+ "hooks": {
+  "a": "A stranger on my train asks my name. By crossword.",
+  "b": "I told a stranger my name was DUKE. It's Dave."
+ },
+ "beats": {
+  "hook": 0.0,
+  "penClick": 0.4,
+  "beep1": 0.4,
+  "herGlanceBack": 1.0,
+  "hover": 1.5,
+  "tagDuke": 3.0,
+  "writeStartDuke": 3.2,
+  "writeEndDuke": 4.4,
+  "phoneLights": 4.7,
+  "momCard": 4.8,
+  "herGlance": 5.2,
+  "herLooksOut": 5.6,
+  "slapPhone": 5.85,
+  "freezeDuke": 5.8,
+  "blushMaxDuke": 6.2,
+  "rewindTag": 6.4,
+  "unwrite": 6.4,
+  "train1": 7.0,
+  "cutDave": 7.37,
+  "tagDave": 7.8,
+  "breath": 7.9,
+  "phoneFaceDown": 8.1,
+  "writeStartDave": 8.4,
+  "writeEndDave": 9.6,
+  "blushDave": 9.7,
+  "herRead": 9.8,
+  "herSmile": 10.0,
+  "herWalksBack": 10.1,
+  "herBoxes": 10.4,
+  "irisFill": 11.0,
+  "irisEnd": 12.2,
+  "bothSmile": 12.2,
+  "beepsFast": 13.0,
+  "herDoorGlance": 13.1,
+  "herBoxGlance": 13.5,
+  "herSits": 13.8,
+  "doorsClose": 14.4,
+  "boardFlip": 14.4,
+  "newClue": 14.6,
+  "newClueEnd": 15.6,
+  "departs": 14.9,
+  "slide": 15.8,
+  "read": 16.4,
+  "eyesPhone": 16.8,
+  "pushIn": 17.0,
+  "brake": 17.0,
+  "eyesWindow": 17.4,
+  "train2": 17.9,
+  "choice": 18.27,
+  "cardA": 18.7,
+  "cardB": 19.3,
+  "voteFull": 19.9,
+  "tap": 21.0,
+  "comment": 21.8,
+  "endcard": 28.5
+ },
+ "clues": [
+  {
+   "id": "c1",
+   "by": "her",
+   "text": "Who you are (4)",
+   "len": 4,
+   "answer": null,
+   "visibleFrom": 0.0
+  },
+  {
+   "id": "a1",
+   "by": "him",
+   "branch": "DUKE",
+   "text": "DUKE",
+   "len": 4,
+   "answer": "DUKE",
+   "fillFrom": 3.2,
+   "fillTo": 4.4,
+   "step": 0.3,
+   "unwriteFrom": 6.4,
+   "unwriteTo": 7.0
+  },
+  {
+   "id": "b1",
+   "by": "him",
+   "branch": "DAVE",
+   "text": "DAVE",
+   "len": 4,
+   "answer": "DAVE",
+   "fillFrom": 8.4,
+   "fillTo": 9.6,
+   "step": 0.3
+  },
+  {
+   "id": "r1",
+   "by": "her",
+   "branch": "DAVE",
+   "text": "(4)",
+   "len": 4,
+   "answer": "IRIS",
+   "fillFrom": 11.0,
+   "fillTo": 12.2,
+   "step": 0.3,
+   "boxesDrawnFrom": 10.4
+  },
+  {
+   "id": "c2",
+   "by": "her",
+   "text": "Look at the (6)",
+   "len": 6,
+   "answer": null,
+   "visibleFrom": 14.6,
+   "reveal": [
+    14.6,
+    15.6
+   ]
+  }
+ ],
+ "choices": {
+  "question": "what should I look at?",
+  "clue": "Look at the (6)",
+  "A": {
+   "l1": "SCREEN",
+   "l2": "(6)",
+   "sub": "my phone, again",
+   "draw": "boxes"
+  },
+  "B": {
+   "l1": "WINDOW",
+   "l2": "(6)",
+   "sub": "the view, with her",
+   "draw": "boxes"
+  },
+  "winner": "B",
+  "part4": "A plays first and fails: he picks up the phone (plain lock screen, no notification), the train jolts to a halt mid-track, the phone slides off the table and he dives for it while she is already looking out of the window; rewind; B WINDOW carries on: both look out at fields, the train stopped"
+ },
+ "strips": [
+  {
+   "text": "her stop. doors close soon.",
+   "from": 0.0,
+   "to": 2.9,
+   "y": 1190
+  },
+  {
+   "text": "take 1: DUKE",
+   "from": 3.0,
+   "to": 6.3,
+   "y": 330,
+   "tag": true
+  },
+  {
+   "text": "mum disagrees.",
+   "from": 5.4,
+   "to": 6.3,
+   "y": 1190
+  },
+  {
+   "text": "rewind. the honest way.",
+   "from": 6.4,
+   "to": 7.7,
+   "y": 330
+  },
+  {
+   "text": "take 2: DAVE",
+   "from": 7.8,
+   "to": 14.3,
+   "y": 330,
+   "tag": true
+  },
+  {
+   "text": "phone face down.",
+   "from": 8.1,
+   "to": 9.5,
+   "y": 1190
+  },
+  {
+   "text": "a name for a name.",
+   "from": 10.8,
+   "to": 12.6,
+   "y": 1190
+  },
+  {
+   "text": "doors closed. she stayed.",
+   "from": 14.4,
+   "to": 16.3,
+   "y": 1190
+  },
+  {
+   "text": "the train is slowing.",
+   "from": 16.8,
+   "to": 18.2,
+   "y": 1190
+  },
+  {
+   "text": "what should I look at?",
+   "from": 18.3,
+   "to": 28.5,
+   "y": 340
+  },
+  {
+   "text": "comment A or B",
+   "from": 21.8,
+   "to": 28.5,
+   "y": 1190
+  },
+  {
+   "text": "seven across",
+   "from": 28.5,
+   "to": 31.5,
+   "y": 380,
+   "big": true
+  },
+  {
+   "text": "part 4 \u00b7 comment A or B",
+   "from": 28.65,
+   "to": 31.5,
+   "y": 600
+  }
+ ],
+ "audio": {
+  "bpm": 112,
+  "clack": {
+   "meter": "6/8",
+   "bpm": 112,
+   "from": 0.0,
+   "to": 31.5,
+   "accentEvery": 6,
+   "muteFrom": 5.0,
+   "muteTo": 6.4,
+   "reverseFrom": 6.4,
+   "reverseTo": 7.0
+  },
+  "groove": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    7.8,
+    14.4
+   ],
+   [
+    18.3,
+    28.5
+   ]
+  ],
+  "musicDropFrom": 15.6,
+  "musicBackAt": 18.3,
+  "musicDuck": [
+   [
+    3.2,
+    4.4
+   ],
+   [
+    8.4,
+    9.6
+   ],
+   [
+    11.0,
+    12.2
+   ]
+  ],
+  "penClick": [
+   0.4,
+   14.5
+  ],
+  "penScratch": [
+   [
+    3.2,
+    4.4
+   ],
+   [
+    8.4,
+    9.6
+   ],
+   [
+    10.4,
+    12.2
+   ],
+   [
+    14.6,
+    15.6
+   ]
+  ],
+  "letterTicks": [
+   3.2,
+   3.5,
+   3.8,
+   4.1,
+   8.4,
+   8.7,
+   9.0,
+   9.3,
+   11.0,
+   11.3,
+   11.6,
+   11.9
+  ],
+  "phoneBuzz": [
+   4.7,
+   5.1
+  ],
+  "phoneThud": [
+   5.85
+  ],
+  "rewindSweep": [
+   [
+    6.4,
+    7.4
+   ]
+  ],
+  "chime": [
+   14.4
+  ],
+  "doorHiss": [
+   14.4
+  ],
+  "doorBeeps": [
+   0.4,
+   1.3,
+   2.2,
+   7.9,
+   8.8,
+   12.6,
+   13.1,
+   13.5,
+   13.8,
+   14.05,
+   14.25,
+   14.4
+  ],
+  "seatThump": [
+   14.1
+  ],
+  "trainRoll": [
+   14.9
+  ],
+  "brakeSqueal": [
+   [
+    17.0,
+    17.9
+   ]
+  ],
+  "pageRustle": [
+   10.4,
+   14.6,
+   15.8
+  ],
+  "passingTrain": [
+   7.0,
+   17.9
+  ],
+  "passingTrainReversed": [
+   7.0
+  ],
+  "whooshes": [
+   15.8
+  ],
+  "stamps": [
+   3.0,
+   6.4,
+   7.8,
+   18.3,
+   18.7,
+   19.3,
+   28.5
+  ],
+  "blushPing": [
+   9.7
+  ],
+  "warmNote": [
+   12.2
+  ]
+ }
+}

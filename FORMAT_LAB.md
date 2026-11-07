@@ -16,10 +16,14 @@ Change one variable at a time within a format.
 | 2026-11-04 | IG @tinyloveshows | silent story (Seven Across) | P1 hook a | A stranger on my train leaves me crossword clues. | 1724 (24h) | | 20 | ~46% | 0 | 1 | | 0 | **double down**; 28% skip |
 | 2026-11-04 | IG @tinyloveshows | silent story (Seven Across) | P1 hook b | I swipe every morning on my train. She noticed. | 250 (12h) | | 14 | ~33% | 0 | 0 | | 0 | lost to a; 41% skip |
 | 2026-11-04 | IG @tinyloveshows | silent story (Seven Across) | P1 hook c | Her clue for me: 'You, every morning' (7) | 242 (24h) | | 9 | ~21% | 0 | 0 | | 0 | lost to a; 45% skip |
-| 2026-11-06 | IG @tinyloveshows | silent story (Seven Across) | P2 hook a | A stranger on my train asks how I feel. By crossword. | | | | | | | | | planned (hook test) |
-| 2026-11-06 | IG @tinyloveshows | silent story (Seven Across) | P2 hook b | I told my train stranger I was RELAXED. I lied. | | | | | | | | | planned (hook test) |
-| 2026-11-06 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P1 hook a | Imagine the apps only gave you ten swipes today. | | | | | | | | | planned (format + hook test) |
-| 2026-11-06 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P1 hook b | Ten swipes today. That's it. Choose carefully. | | | | | | | | | planned (format + hook test) |
+| 2026-11-06 | IG @tinyloveshows | silent story (Seven Across) | P2 hook a | A stranger on my train asks how I feel. By crossword. | 1248 (6h) | | 17 | ~46% | 0 | 0 | | 0.7% (first engine comments) | **double down**; 31% skip; posted first, new body |
+| 2026-11-06 | IG @tinyloveshows | silent story (Seven Across) | P2 hook b | I told my train stranger I was RELAXED. I lied. | 152 (3h) | | 11 | ~30% | 0 | 0 | | 0 | floor; repeat body, posted third |
+| 2026-11-06 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P1 hook a | Imagine the apps only gave you ten swipes today. | 176 (6h) | | 11 | ~28% | 0 | 0 | | 0 | floor; new body, 2 h after a climbing post; P2 decides |
+| 2026-11-06 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P1 hook b | Ten swipes today. That's it. Choose carefully. | 147 (1h) | | 11 | ~28% | 0 | 0 | | 0 | floor; repeat body |
+| 2026-11-07 | IG @tinyloveshows | silent story (Seven Across) | P3 hook b (posted FIRST) | I told a stranger my name was DUKE. It's Dave. | | | | | | | | | planned: order-reversal test |
+| 2026-11-07 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P2 hook a | A stranger in your queue has one swipe left too. | | | | | | | | | planned: format's 2nd episode, kill check |
+| 2026-11-07 | IG @tinyloveshows | silent story (Seven Across) | P3 hook a (repeat body) | A stranger on my train asks my name. By crossword. | | | | | | | | | planned: order-reversal test |
+| 2026-11-07 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P2 hook b | Last swipe. She's right in front of you. | | | | | | | | | planned |
 
 ## Hook patterns (running record)
 
@@ -28,9 +32,14 @@ Change one variable at a time within a format.
 | Plain first-person situation, apps-related | "My neighbour swipes at 2 AM too." (Alley P1) | 12.5k, the best post |
 | Recap strips first (mid-season part) | Dryer P5 | 61% skip, 9 s average watch: weak |
 | Situation of the device (stranger + device) | Seven Across P1a "A stranger on my train leaves me crossword clues." | **won**: 1.7k views, 28% skip, 20 s watch (posted first, n=1) |
-| Confession + twist, apps-related | Seven Across P1b "I swipe every morning on my train. She noticed." | lost: 250 views, 41% skip, 14 s watch; retest P2b "I told my train stranger I was RELAXED. I lied." 2026-11-06 |
+| Confession + twist | Seven Across P3b "I told a stranger my name was DUKE. It's Dave." goes FIRST 2026-11-07 (blind hook 8 vs a 6). Earlier: Seven Across P1b "I swipe every morning on my train. She noticed." | lost: 250 views, 41% skip, 14 s watch; retest P2b "I told my train stranger I was RELAXED. I lied." 2026-11-06 |
 | Puzzle/curiosity (show the clue) | Seven Across P1c "Her clue for me: 'You, every morning' (7)" | lost: 242 views, 45% skip, 9 s watch |
 | Second person "Imagine..." narrated | Ten Swipes P1a "Imagine the apps only gave you ten swipes today." | testing 2026-11-06 |
 | Direct stakes, second person | Ten Swipes P1b "Ten swipes today. That's it. Choose carefully." | testing 2026-11-06 |
 
 Compare a/b/c at 24h/48h on skip rate and average watch first (they share the body), then views.
+
+**Caution (2026-11-07):** every hook test so far is confounded. Hook a always went out first on a new body, and every
+repeat of a body (any hook) stayed on the 150-270 view floor, while 2 of 3 new Across bodies broke out (1.2-1.8k).
+"Won" above may be a first-publish effect, not the hook. 2026-11-07 reverses the order (confession hook b first on the new
+Across P3 body, the "stranger" hook a later on the repeat). Read it before trusting any hook result.

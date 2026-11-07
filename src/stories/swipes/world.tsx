@@ -60,9 +60,9 @@ export const HUD = {x: 70, y: 290, w: 340, h: 180};
 export const SLOT = {x: HUD.x + HUD.w, y: HUD.y + 40}; // where coins drop in
 
 /** The counter chip: label "SWIPES LEFT", a big Anton number and ten pips that go dark one at a time. */
-export const Hud: React.FC<{counter: CounterStep[]; t: number; scale?: number}> = ({counter, t, scale = 1}) => {
+export const Hud: React.FC<{counter: CounterStep[]; t: number; scale?: number; redAtZero?: boolean}> = ({counter, t, scale = 1, redAtZero = false}) => {
   const {value, since, index} = counterAt(counter, t);
-  const red = value === 1;
+  const red = value === 1 || (redAtZero && value === 0);
   const col = red ? C.red : C.gold;
   const pop = index === 0 ? 1 : 1 + 0.18 * Math.max(0, 1 - since / 0.18);
   const pulse = red ? 1 + 0.05 * Math.sin(Math.max(0, since) * 11) : 1;
@@ -172,7 +172,7 @@ export const CoinDrop: React.FC<{t: number; t0: number}> = ({t, t0}) => {
 
 // ----------------------------------------------------------------------------------------- end card
 
-export const EndCard: React.FC<{age: number}> = ({age}) => {
+export const EndCard: React.FC<{age: number; label?: string}> = ({age, label = 'PART 2 · A OR B'}) => {
   const s1 = springIn(age, 0, 14), s2 = springIn(age, 0.25, 14), pipsOn = Math.min(10, Math.floor(age / 0.07));
   return <AbsoluteFill>
     <Ground />
@@ -184,7 +184,7 @@ export const EndCard: React.FC<{age: number}> = ({age}) => {
       <g transform={`translate(540 1040) scale(${s2}) translate(-540 -1040)`}>
         <rect x={220 + 8} y={985 + 8} width={640} height={110} rx={26} fill={C.ink} />
         <rect x={220} y={985} width={640} height={110} rx={26} fill={C.gold} stroke={C.ink} strokeWidth={6} />
-        <text x={540} y={1062} textAnchor="middle" fontFamily={F.cond} fontWeight={700} fontSize={70} fill={C.ink}>PART 2 · A OR B</text>
+        <text x={540} y={1062} textAnchor="middle" fontFamily={F.cond} fontWeight={700} fontSize={70} fill={C.ink}>{label}</text>
       </g>
       {Array.from({length: 10}, (_, i) => i === 0
         ? <circle key={i} cx={540 - 4.5 * 52} cy={1180} r={16 + 3 * Math.sin(age * 8)} fill={C.red} stroke={C.ink} strokeWidth={4} />

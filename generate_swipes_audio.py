@@ -32,6 +32,7 @@ DELIVERY = {
     "punchy": {"stability": 0.4, "style": 0.4, "speed": 1.04},
     "slow reveal": {"stability": 0.55, "style": 0.3, "speed": 0.94},
     "deadpan": {"stability": 0.6, "style": 0.2, "speed": 0.98},
+    "quick": {"stability": 0.5, "style": 0.3, "speed": 1.12},
 }
 
 SPEC: dict = {}
@@ -302,6 +303,179 @@ def build(data: dict) -> None:
         print("wrote", out / f"{SPEC['id']}-{name}.wav")
 
 
+# --------------------------------------------------------------------------------- part 2 (swipes-ep2)
+# Hook a and b have different first lines; each variant gets its own timeline (the body keeps its own exact word
+# timings, only offset by the hook length) and its own music/sfx/room beds: swipes-ep2-<hook>-{music,sfx,room}.wav.
+
+
+def timeline2(h: str) -> dict:
+    trimmed = PUBLIC / f"voice-{SPEC['id']}-trimmed"
+    trimmed.mkdir(parents=True, exist_ok=True)
+    n_body = len(SPEC["lines"])
+    hook = take(1 if h == "a" else n_body + 1, 0.1, trimmed, SPEC["hooks"][h]["line1"])
+    body_start = hook["start"] + hook["duration"] + SPEC["hooks"][h]["gapBeforeLine2"]
+    lines, t = [], body_start
+    for ln in SPEC["lines"][1:]:
+        start = t if ln["n"] == 2 else t + ln["gapBefore"]
+        if ln["n"] == 8:  # the payoff 'Neither are you.' holds >= 1.5 s before the vote wipe begins to cover it
+            nw = next(w["start"] for w in lines[-1]["words"] if norm(w["text"]).startswith("neither"))
+            start = max(start, nw + 1.55)
+        lines.append(take(ln["n"], start, trimmed, ln["text"]))
+        t = start + lines[-1]["duration"]
+    print(f"[{h}] hook {hook['duration']:.2f}s ends {hook['start'] + hook['duration']:.2f}; body starts {body_start:.2f}")
+    for L in lines:
+        print(f"   {L['start']:6.2f} +{L['duration']:.2f}  {L['text']}")
+
+    def at(line: int, word: str, offset: float = 0.0) -> float:
+        ws = lines[line - 2]["words"]
+        hit = next((w["start"] for w in ws if norm(w["text"]).startswith(norm(word))), None)
+        if hit is None:
+            raise SystemExit(f"word {word!r} not found in line {line}")
+        return round(hit + offset, 3)
+
+    beats = {"hook": 0.0, "bodyStart": round(body_start, 3)}
+    for b in SPEC["beats"]:
+        if "line" in b:
+            beats[b["name"]] = at(b["line"], b["word"], b.get("offset", 0.0))
+    for ln in SPEC["lines"][1:]:
+        i = ln["n"] - 2
+        beats[f"l{ln['n']}"] = lines[i]["start"]
+        beats[f"e{ln['n']}"] = round(lines[i]["start"] + lines[i]["duration"], 3)
+    beats["type0"] = beats["typed"]
+    beats["del0"] = round(max(beats["delete"], beats["typed"] + 0.21 + 0.65), 3)   # 'hey' stays whole >= 0.65 s
+    beats["next"] = round(beats["left"] + 0.5, 3)
+    beats["ruleStamp"] = round(beats["left"] + 0.6, 3)
+    beats["voteBoard"] = round(beats["l8"] - 0.3, 3)
+    beats["endcard"] = round(beats["e9"] + 0.5, 3)
+    beats["total"] = round(beats["endcard"] + 3.0, 3)
+    counter = [{"t": 0.0, "value": 1}, {"t": beats["swiped"], "value": 0}, {"t": beats["rewind"] + 0.55, "value": 1}]
+    ticks = [round(beats["buzz"] + k, 3) for k in (0.0, 1.0, 2.0) if beats["buzz"] + k < beats["clock59"]] + [beats["clock59"]]
+    cues = {
+        "swipe": [beats["swiped"]], "matchChime": [beats["swiped"] + 0.1],
+        "keyBlip": [round(beats["type0"] + k, 3) for k in (0.0, 0.07, 0.14)],
+        "deleteBlip": [round(beats["del0"] + k, 3) for k in (0.0, 0.07, 0.14)],
+        "bell": [beats["next"]],
+        "stamp": [beats["ruleStamp"], beats["cardA"], beats["cardB"], beats["endcard"]],
+        "coinRewind": [beats["rewind"]], "chairScrape": [round(beats["maybe"] - 0.05, 3)],
+        "phoneBuzz": [beats["buzz"]], "phoneFlip": [beats["flip"]], "clockTick": ticks, "voteDing": [beats["voteBoard"]],
+    }
+    data = {"id": SPEC["id"], "hook": hook, "lines": lines, "beats": beats, "counter": counter, "cues": cues,
+            "duration": beats["total"]}
+    print(f"[{h}] total {data['duration']:.2f}s; cardA {beats['cardA']:.2f} cardB {beats['cardB']:.2f}; endcard {beats['endcard']:.2f}")
+    return data
+
+
+def buzz() -> np.ndarray:
+    t = tt(0.5)
+    return square(95, t) * (np.sin(2 * np.pi * 14 * t) > 0) * np.minimum(1, (0.5 - t) / 0.05) * 0.4
+
+
+def key_blip() -> np.ndarray:
+    t = tt(0.05)
+    return square(1500, t) * np.exp(-t * 60) * 0.25
+
+
+def del_blip() -> np.ndarray:
+    t = tt(0.06)
+    return square(700, t) * np.exp(-t * 50) * 0.25
+
+
+def bell() -> np.ndarray:
+    t = tt(0.9)
+    return (np.sin(2 * np.pi * 2093 * t) + 0.5 * np.sin(2 * np.pi * 3135 * t)) * np.exp(-t * 6) * 0.3
+
+
+def match_chime() -> np.ndarray:
+    out = np.zeros(int(0.5 * RATE))
+    for k, m in enumerate((81, 85, 88)):
+        t = tt(0.3)
+        i = int(k * 0.07 * RATE)
+        out[i:i + len(t)] += (np.sin(2 * np.pi * midi(m) * t) * np.exp(-t * 9) * 0.3)[:len(out) - i]
+    return out
+
+
+def coin_rewind() -> np.ndarray:
+    t = tt(0.8)
+    f = 3200 - 2400 * (t / 0.8)
+    return np.sin(2 * np.pi * np.cumsum(f) / RATE) * np.exp(-t * 2.2) * np.minimum(1, t / 0.02) * 0.3
+
+
+def chair_scrape() -> np.ndarray:
+    t = tt(0.3)
+    return fft_filter(rng.uniform(-1, 1, len(t)), 300, 2200) * np.sin(np.pi * t / 0.3) * 0.5
+
+
+def phone_flip() -> np.ndarray:
+    t = tt(0.2)
+    return (0.8 * np.sin(2 * np.pi * (140 + 80 * np.exp(-t * 30)) * t) * np.exp(-t * 25)
+            + 0.3 * fft_filter(rng.uniform(-1, 1, len(t)), 1500, 6000) * np.exp(-t * 80))
+
+
+def music2(d: float, B: dict) -> np.ndarray:
+    st = Stem(d)
+    step = 0.3
+    chords = [(45, [57, 60, 64]), (41, [53, 57, 60]), (48, [55, 60, 64]), (43, [55, 59, 62])]
+    drop_from, drop_to = B["maybe"] - 0.1, B["voteBoard"]
+    for i in range(int(d / step)):
+        t = i * step
+        if drop_from <= t < drop_to or t >= B["endcard"]:
+            continue
+        bass, arp = chords[(i // 4) % 4]
+        if i % 2 == 0:
+            tn = tt(step * 0.9)
+            st.add(t, square(midi(bass), tn, 0.5) * np.exp(-tn * 6) * 0.28)
+        tn = tt(step * 0.8)
+        st.add(t, tri(midi(arp[[0, 1, 2, 1][i % 4]] + 12), tn) * np.exp(-tn * 5) * 0.3)
+    w = tt(2.0)
+    chord = sum(np.sin(2 * np.pi * midi(m) * w) for m in (57, 60, 64, 67)) * np.exp(-w * 1.2) * np.minimum(1, w / 0.05) * 0.1
+    st.add(B["neither"], chord)
+    e = tt(2.5)
+    ec = sum(np.sin(2 * np.pi * midi(m) * e) + 0.3 * np.sin(2 * np.pi * midi(m) * 2 * e) for m in (57, 61, 64, 69)) * np.exp(-e * 1.3) * np.minimum(1, e / 0.02) * 0.1
+    st.add(B["endcard"], ec)
+    return st.buf
+
+
+def build2(h: str, data: dict) -> None:
+    B, C, d = data["beats"], data["cues"], data["duration"]
+    sfx = Stem(d)
+    spec = [("swipe", swipe_whoosh, 0.8), ("matchChime", match_chime, 0.8), ("keyBlip", key_blip, 0.8), ("deleteBlip", del_blip, 0.8),
+            ("bell", bell, 0.8), ("stamp", stamp, 0.9), ("coinRewind", coin_rewind, 0.8), ("chairScrape", chair_scrape, 0.7),
+            ("phoneBuzz", buzz, 0.8), ("phoneFlip", phone_flip, 0.8), ("clockTick", tick, 0.7), ("voteDing", ding, 0.8)]
+    for key, fn, vol in spec:
+        for x in C[key]:
+            sfx.add(x, fn(), vol)
+    sfx.add(B["swiped"] + 0.12, coin(), 0.7)
+    sfx.add(B["cardA"] + 0.02, pop(), 0.8)
+    sfx.add(B["cardB"] + 0.02, pop(), 0.8)
+    sfx.add(B["comment"], pop(), 0.6)
+    n = int(d * RATE)
+    pink = np.cumsum(rng.uniform(-1, 1, n)) * 0.002
+    pink = fft_filter(pink - np.mean(pink), 80, 700)
+    pink = pink / (np.max(np.abs(pink)) + 1e-9) * 0.35
+    t = np.arange(n) / RATE
+    gate = np.clip((t - B["tagHi"]) / 0.3, 0, 1) * np.clip((B["endcard"] - t) / 0.5, 0, 1)
+    out = PUBLIC / "audio"
+    out.mkdir(exist_ok=True)
+    for name, buf in (("music", music2(d, B)), ("sfx", sfx.buf), ("room", pink * gate)):
+        peak = max(1e-9, np.max(np.abs(buf)))
+        buf = buf / peak * (0.5 if name == "room" else 0.8)
+        with wave.open(str(out / f"{SPEC['id']}-{h}-{name}.wav"), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(RATE)
+            w.writeframes((np.clip(buf, -1, 1) * 32767).astype("<i2").tobytes())
+        print("wrote", out / f"{SPEC['id']}-{h}-{name}.wav")
+
+
+def main2() -> None:
+    res = {}
+    for h in ("a", "b"):
+        res[h] = timeline2(h)
+        build2(h, res[h])
+    (ROOT / "src" / "stories" / f"{SPEC['id']}.timeline.json").write_text(json.dumps(res, indent=1, ensure_ascii=False) + "\n")
+
+
 if __name__ == "__main__":
     configure(sys.argv[1] if len(sys.argv) > 1 else "swipes-ep1")
-    build(timeline())
+    if SPEC["id"] == "swipes-ep2":
+        main2()
+    else:
+        build(timeline())

@@ -177,6 +177,19 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 | 1c | Her crossword clue for me: You, every morning. Part 1 (53) | same | `Across1` hook c |
 | 2a | A stranger on my train asks how I feel. Part 2 (46) | `specs/stories/across-ep2.json` | `Across2` hook a |
 | 2b | I told my train stranger I was RELAXED. I lied. Part 2 (54) | same | `Across2` hook b |
+| 3a | A stranger on my train wants my name. Part 3 (44) | `specs/stories/across-ep3.json` | `Across3` hook a |
+| 3b | I told a stranger my name was DUKE. It's Dave. Part 3 (53) | same | `Across3` hook b |
+
+**What happened (part 3, nightly for 2026-11-07):** 31.5 s, vote up at 18.3 s (both cards in by 19.3). Frame 1: her stop,
+doors open, "Who you are (4)". Take 1 DUKE: his phone lights "Mum: Dave, call me back" ("mum disagrees."); the opposite
+train runs backwards. Take 2 DAVE: phone face down, she writes her name IRIS ("a name for a name."), steps to the door,
+looks back and sits by her own choice; doors close, board flips LAST STOP to RETURN TRIP. Her new clue "Look at the (6)";
+vote "what should I look at?" A SCREEN (my phone, again) / B WINDOW (the view, with her). Blind check round 1 clarity 6
+(crop, IRIS too small, why she stays, third-person vote), round 2 clarity 7, hook a 6 / b 8.
+**Part 4 is decided:** B WINDOW wins. A plays first: he picks up the phone (plain lock screen), the train jolts to a halt
+mid-track, the phone slides off the table and he dives for it while she is already looking out of the window; rewind;
+B: both look out at the fields, the train stopped. NoSwipe mention 1 is a bystander's phone notification later in part 4,
+never the leads.
 
 **What happened (part 2, nightly for 2026-11-06):** part 1 hook a won, and 0 comments with 20 s average watch said the vote comes too late, so part 2 runs 36.5 s with the vote up at 23.6 s. It stands alone with no recap card. It plays both branches, tagged "take 1: RELAXED" (the cup shakes, "he was not relaxed.", coffee over the sheet, she offers a napkin; the opposite train runs backwards) and "take 2: NERVOUS" (she writes SAME). Blind check round 1 was clarity 6: A/B meant two things (so the tags became takes; only the vote says A and B), the spill had no cause, and her gasp read as judging. Round 2: clarity 7, hook a 7, hook b 8.
 **Part 3 is decided:** vote A DAVE (his real name) vs B DUKE (the name he wishes he had). A wins: the wrong B plays first (mid-DUKE his phone lights up "Mum: Dave, call me back"), rewind, then A carries on. Note the honest answer is A this time so voters can't guess by habit.
@@ -201,3 +214,14 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 |---|---|---|---|
 | 1a | The apps only gave me ten swipes today. Part 1 (46) | `specs/stories/swipes-ep1.json` | `Swipes1` hook a |
 | 1b | One swipe left and a stranger in my coffee queue. Part 1 (56) | same | `Swipes1` hook b |
+| 2a | A stranger in my queue has one swipe left too. Part 2 (53) | `specs/stories/swipes-ep2.json` | `Swipes2` hook a |
+| 2b | Last swipe, and she's right in front of me. Part 2 (50) | same | `Swipes2` hook b |
+
+**What happened (part 2, nightly for 2026-11-07):** 29.4 s. Plays both branches, tagged YOU SWIPED / YOU SAID HI. Swipe:
+"hey" typed and deleted, she takes her coffee and leaves, barista NEXT, RULE 1 / NO GOING BACK, REWIND disc. Hi: "coffee
+first. Then maybe.", she clears her bag off the chair ("Sit, if you like."), your phone: LAST SWIPE EXPIRES AT 6:00; she turns
+her phone face down: "I'm not a swipe. Neither are you." Vote A SWIPE BEFORE 6:00 / B LET IT EXPIRE (planned winner B; part 3
+plays A first: you swipe at 5:59, she nods, takes her cup to the window table, NO GOING BACK, rewind; then B: phones face
+down, both counters pop to 0 at 6:00, you sit; next vote: say something rehearsed or something true). Board at 20.8 s (the
+18 s target was given up to make the swipe branch readable). 501 ElevenLabs characters.
+**Kill check:** P1 sat on the 150-180 floor. If P2's fresh body also stays on the floor at 24h with a clean slot, kill the format.

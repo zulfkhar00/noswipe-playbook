@@ -219,6 +219,49 @@ def pen_tap() -> np.ndarray:
     return (np.sin(2 * np.pi * 900 * t) * 0.6 + fft_lowpass(noise(0.1), 2500) * 0.6) * np.exp(-t * 70)
 
 
+def phone_thud() -> np.ndarray:
+    """A flat palm slapping a phone onto a table: short low knock plus a dry slap."""
+    t = tt(0.3)
+    knock = np.sin(2 * np.pi * (150 - 60 * t) * t) * np.exp(-t * 28)
+    slap = (noise(0.3) - fft_lowpass(noise(0.3), 1800)) * np.exp(-t * 90)
+    return 0.9 * knock + 0.5 * fft_lowpass(slap, 5000)
+
+
+def seat_thump() -> np.ndarray:
+    """Someone sitting down on a padded bench: soft low thump and a cushion sigh."""
+    t = tt(0.45)
+    thump = np.sin(2 * np.pi * (85 - 30 * t) * t) * np.exp(-t * 11)
+    sigh = fft_lowpass(noise(0.45), 900) * np.exp(-t * 7) * 0.35
+    return 1.0 * thump + sigh
+
+
+def train_roll(d: float = 2.4) -> np.ndarray:
+    """A train pulling away: rumble swell plus rail joints that speed up."""
+    t = tt(d)
+    swell = np.clip(t / d, 0, 1) ** 0.7
+    rum = fft_lowpass(noise(d), 260) * 1.6 * swell + np.sin(2 * np.pi * (38 + 22 * swell) * t) * 0.4 * swell
+    out = rum.copy()
+    tk, gap = 0.0, 0.5
+    while tk < d - 0.15:
+        seg = clack(0.7 * (0.4 + swell[min(len(t) - 1, int(tk * RATE))]))
+        i = int(tk * RATE)
+        n = min(len(seg), len(out) - i)
+        out[i:i + n] += seg[:n]
+        tk += gap
+        gap = max(0.17, gap * 0.82)
+    return out * np.minimum(1, (d - t) / 0.3)
+
+
+def brake_squeal(d: float) -> np.ndarray:
+    """Brakes biting: a falling metal squeal over a hushing rush."""
+    t = tt(d)
+    f = 3200 - 1300 * (t / d) ** 0.8 + 70 * np.sin(2 * np.pi * 9 * t)
+    ph = 2 * np.pi * np.cumsum(f) / RATE
+    sq = (np.sin(ph) + 0.4 * np.sin(2 * ph) + 0.25 * np.sin(3.01 * ph)) * (0.55 + 0.45 * np.sin(2 * np.pi * 14 * t))
+    rush = fft_lowpass(noise(d), 3000) * 0.5
+    return (0.28 * sq + rush) * np.minimum(1, t / 0.12) * np.minimum(1, (d - t) / 0.2) * (1 - 0.3 * t / d)
+
+
 # --- stems ------------------------------------------------------------------------------------
 
 def room(st: Stem, a: dict, dur: float) -> None:
@@ -328,6 +371,14 @@ def sfx(st: Stem, a: dict) -> None:
         st.add(t, stamp(), 0.8)
     for t in a["whooshes"]:
         st.add(t, whoosh(0.5), 0.6)
+    for t in a.get("phoneThud", []):
+        st.add(t, phone_thud(), 0.9)
+    for t in a.get("seatThump", []):
+        st.add(t, seat_thump(), 0.8)
+    for t in a.get("trainRoll", []):
+        st.add(t, train_roll(2.4), 0.55)
+    for lo, hi in a.get("brakeSqueal", []):
+        st.add(lo, brake_squeal(hi - lo), 0.45)
     for t in a.get("blushPing", []):
         st.add(t, ping(), 0.6)
 

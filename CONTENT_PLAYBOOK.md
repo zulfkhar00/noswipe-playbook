@@ -10,11 +10,15 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
 - Our skip rate is 41-59%: about half the viewers leave in the first seconds. The hook matters more than anything else. `ours`
 - A plain, relatable first-person situation, readable in under a second, worked ("Across the Alley" part 1: 12.5k). `ours`
 - Same body, three openings (Seven Across part 1): the plain situation "A stranger on my train leaves me crossword clues." beat confession and puzzle-first on skip (28% vs 41/45), watch (20 s vs 14/9 s) and views (1.7k vs 250). One test, and it went out first. `ours`
+- Views are two-level on our account: a floor of 150-270 and breakouts of 1.2-1.8k. Every repeat of a body (same video, new
+  hook) has stayed on the floor; only new bodies broke out. Same-body hook tests may be measuring first publish, not the
+  hook (order-reversal test 2026-11-07). `ours`
 - Mid-season recap strips lost viewers (Dryer P5: 61% skip); a season opener on a clear device held them. `ours`
 - Something moving and a clear tension or question in frame 1; no slow fade-in, no logo, no setup. `general`
 
 ## Watch time
 - Average watch is 9-20 s on our posts of about 45 s. Shorter cuts and an ending that loops into the start should help. `general`
+- Moving the vote from 32 s to 24 s (Seven Across P2) brought our first engine-post comments (0.7%, 1.2k views). `ours`
 - With 20 s average watch and the vote at 32 s, Seven Across P1 got 0 comments at 1.7k views: the vote has to land earlier (P2 puts it at 24 s, testing). `ours`
 
 ## Spread
