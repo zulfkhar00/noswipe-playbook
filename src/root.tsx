@@ -15,6 +15,7 @@ import {SEAT14B_FPS, SEAT14B_FRAMES, Seat14B} from './safety/seat14b';
 import {GC3_FPS, GC3_FRAMES, GroupChat3} from './stories/groupchat/ep3';
 import {ACROSS1_FPS, ACROSS1_FRAMES, Across1} from './stories/across/ep1';
 import {ACROSS2_FPS, ACROSS2_FRAMES, Across2} from './stories/across/ep2';
+import {ACROSS3_FPS, ACROSS3_FRAMES, Across3} from './stories/across/ep3';
 import {DRYER6_FPS, DRYER6_FRAMES, Dryer6} from './stories/dryer/ep6';
 import {DRYER5_FPS, DRYER5_FRAMES, Dryer5} from './stories/dryer/ep5';
 import {DRYER4_FPS, DRYER4_FRAMES, Dryer4} from './stories/dryer/ep4';
@@ -27,13 +28,16 @@ import {ALLEY3_FPS, ALLEY3_FRAMES, Alley3} from './stories/alley/ep3';
 import {ALLEY4_FPS, ALLEY4_FRAMES, Alley4} from './stories/alley/ep4';
 import {ALLEY5_FPS, ALLEY5_FRAMES, Alley5} from './stories/alley/ep5';
 import {SWIPES1_FPS, SWIPES1_FRAMES, Swipes1} from './stories/swipes/ep1';
+import {SWIPES2_FPS, swipes2Frames, Swipes2} from './stories/swipes/ep2';
 import {ALLEY6_FPS, ALLEY6_FRAMES, Alley6} from './stories/alley/ep6';
 
 export const Root: React.FC = () => (
   <>
     <Composition id="Swipes1" component={Swipes1} durationInFrames={SWIPES1_FRAMES} fps={SWIPES1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Swipes2" component={Swipes2} durationInFrames={swipes2Frames('b')} fps={SWIPES2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} calculateMetadata={({props}) => ({durationInFrames: swipes2Frames(props.hook as 'a' | 'b')})} />
     <Composition id="Across1" component={Across1} durationInFrames={ACROSS1_FRAMES} fps={ACROSS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across2" component={Across2} durationInFrames={ACROSS2_FRAMES} fps={ACROSS2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Across3" component={Across3} durationInFrames={ACROSS3_FRAMES} fps={ACROSS3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Dryer6" component={Dryer6} durationInFrames={DRYER6_FRAMES} fps={DRYER6_FPS} width={1080} height={1920} />
     <Composition id="Dryer5" component={Dryer5} durationInFrames={DRYER5_FRAMES} fps={DRYER5_FPS} width={1080} height={1920} />
     <Composition id="Dryer4" component={Dryer4} durationInFrames={DRYER4_FRAMES} fps={DRYER4_FPS} width={1080} height={1920} />

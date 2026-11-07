@@ -336,6 +336,86 @@
     "want_next": 7,
     "rounds": 2
    }
+  },
+  {
+   "id": "across-3-b",
+   "day": "2026-11-07",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 3,
+   "hook": "b",
+   "caption": "I told a stranger my name was DUKE. It's Dave. Part 3. Then my mum texted. The honest name got me hers back, and she stayed on the train. Her new clue has six boxes: A SCREEN or B WINDOW? #sevenacross #commute #crossword #strangers #shortfilm",
+   "video": "videos/across-3-b.mp4",
+   "composition": "Across3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 8,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "swipes-2-a",
+   "day": "2026-11-07",
+   "account": "tinyloveshows",
+   "format": "voiced story",
+   "season": "Ten Swipes Left",
+   "episode": 2,
+   "hook": "a",
+   "caption": "A stranger in my queue has one swipe left too. Part 2. Ten swipes a day and you are on your last. She says she is not a swipe. Swipe before six, or let it expire? Comment A or B. #datingapps #swipefatigue #storytime #firstdate #choosetheending",
+   "video": "videos/swipes-2-a.mp4",
+   "composition": "Swipes2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "across-3-a",
+   "day": "2026-11-07",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 3,
+   "hook": "a",
+   "caption": "A stranger on my train wants my name. Part 3. I gave her the honest one and she gave hers back. Doors closed and she stayed. New clue, six boxes: A SCREEN or B WINDOW? #sevenacross #commute #crossword #strangers #shortfilm",
+   "video": "videos/across-3-a.mp4",
+   "composition": "Across3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "swipes-2-b",
+   "day": "2026-11-07",
+   "account": "tinyloveshows",
+   "format": "voiced story",
+   "season": "Ten Swipes Left",
+   "episode": 2,
+   "hook": "b",
+   "caption": "Last swipe, and she's right in front of me. Part 2. Your phone says the last swipe expires at six. She turns hers face down. Swipe before six, or let it expire? Comment A or B. #datingapps #swipefatigue #coffeequeue #interactivestory #dating",
+   "video": "videos/swipes-2-b.mp4",
+   "composition": "Swipes2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 3
+   }
   }
  ]
 }

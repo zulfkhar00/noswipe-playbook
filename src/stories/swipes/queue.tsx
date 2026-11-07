@@ -75,12 +75,12 @@ const Her: React.FC<{t: number; turn: number; raise: number; smile: number}> = (
   </g>;
 };
 
-export const Queue: React.FC<{t: number; turn: number; raise: number; smile: number}> = ({t, turn, raise, smile}) => {
+export const Queue: React.FC<{t: number; turn: number; raise: number; smile: number; hideHer?: boolean}> = ({t, turn, raise, smile, hideHer = false}) => {
   const wave = Math.sin(t * 3) * 0.5;
   return <g>
     {/* wall and floor */}
     <rect x={-20} y={0} width={1120} height={860} fill={C.wall} />
-    <rect x={-20} y={860} width={1120} height={1100} fill={C.floor} />
+    <rect x={-20} y={860} width={1120} height={1300} fill={C.floor} />
     <rect x={-20} y={852} width={1120} height={10} fill={C.gold} opacity={0.55} />
     {[-700, -250, 150, 540, 930, 1330, 1780].map((x, i) => <line key={i} x1={540 + (x - 540) * 0.12} y1={862} x2={x} y2={1960} stroke="#1F2740" strokeWidth={5} />)}
     {/* sign: COFFEE */}
@@ -128,6 +128,6 @@ export const Queue: React.FC<{t: number; turn: number; raise: number; smile: num
     {/* the line: back to front */}
     <Back x={700} y={884} s={0.6} body={C.paper} hair={C.ink} />
     <Back x={610} y={1010} s={0.82} body={C.cyan} hair="#5B3B2A" hat bob={Math.sin(t * 2 + 1) * 2} />
-    <Her t={t} turn={turn} raise={raise} smile={smile} />
+    {!hideHer && <Her t={t} turn={turn} raise={raise} smile={smile} />}
   </g>;
 };

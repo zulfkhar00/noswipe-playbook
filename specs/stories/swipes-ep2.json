@@ -1,0 +1,245 @@
+{
+  "id": "swipes-ep2",
+  "season": "Ten Swipes Left",
+  "episode": 2,
+  "composition": "Swipes2",
+  "title": "She said she's not a swipe. I had one left. Part 2",
+  "note": "Narrated second-person story. Plays BOTH branches of part 1's vote, each tagged on screen (YOU SWIPED / YOU SAID HI). Swipe branch ends 'This is the end. Let's rewind.' and pays off RULE 1 NO GOING BACK. Hi branch: her nod at the empty chair is a clear invitation (bag lifted off the chair, chair pulled out, open palm, bubble 'Sit, if you like.'). Own payoff: she says 'I'm not a swipe' and turns her phone face down, a person and not a card. The joke is on the apps and on you. She can leave at any time and it is respected. No NoSwipe mention, no app logos or UI, no promises. Narrator voices her lines; your 'Hi. Also on my last one.' and her 'Sit, if you like.' are on-screen bubbles only (never narrated). Board fully up by 18 s with hook a (cardB on 'let'). v2: narration slowed down for clarity; swipe branch shows her taking the cup and leaving before the RULE 1 stamp; payoff 'Neither are you' holds >=1.2 s.",
+  "duration": 30,
+  "estimatedNarrationSec": 20.7,
+  "cast": {
+    "you": "POV only: a thumb, a cuff and the phone. Never drawn as a person.",
+    "her": "queue person from part 1: bun, coral top, same cup; one smile arc as the only facial feature",
+    "barista": "flat bean silhouette behind the counter, no face",
+    "voice": "Witty McGee, calm, second person, eleven_multilingual_v2"
+  },
+  "context": "You're on your last swipe. She's right ahead.",
+  "hooks": {
+    "a": {
+      "line1": "A stranger in your queue has one swipe left too.",
+      "caption": "HER LAST SWIPE TOO",
+      "gapBeforeLine2": 0.15
+    },
+    "b": {
+      "line1": "Last swipe. She's right in front of you.",
+      "caption": "ONE SWIPE. SHE'S HERE.",
+      "gapBeforeLine2": 0.15
+    }
+  },
+  "lines": [
+    {
+      "n": 1,
+      "gapBefore": 0.05,
+      "text": "A stranger in your queue has one swipe left too.",
+      "delivery": "warm"
+    },
+    {
+      "n": 2,
+      "gapBefore": 0.15,
+      "text": "So you swiped. You typed hey. You deleted it.",
+      "delivery": "punchy"
+    },
+    {
+      "n": 3,
+      "gapBefore": 0.3,
+      "text": "She took her coffee and left. Let's rewind.",
+      "delivery": "deadpan"
+    },
+    {
+      "n": 4,
+      "gapBefore": 0.5,
+      "text": "This time, you say hi.",
+      "delivery": "warm"
+    },
+    {
+      "n": 5,
+      "gapBefore": 0.35,
+      "text": "She says, coffee first. Then maybe.",
+      "delivery": "warm"
+    },
+    {
+      "n": 6,
+      "gapBefore": 0.3,
+      "text": "Your phone buzzes. Your last swipe expires at six.",
+      "delivery": "slow reveal"
+    },
+    {
+      "n": 7,
+      "gapBefore": 0.15,
+      "text": "She says, I'm not a swipe. Neither are you.",
+      "delivery": "warm"
+    },
+    {
+      "n": 8,
+      "gapBefore": 0.3,
+      "text": "Swipe before six, or let it expire?",
+      "delivery": "slow reveal"
+    },
+    {
+      "n": 9,
+      "gapBefore": 0.25,
+      "text": "Comment A or B.",
+      "delivery": "warm"
+    }
+  ],
+  "beats": [
+    {
+      "name": "hook"
+    },
+    {
+      "name": "tagSwiped",
+      "line": 2,
+      "word": "So",
+      "offset": 0.0
+    },
+    {
+      "name": "swiped",
+      "line": 2,
+      "word": "swiped",
+      "offset": 0.0
+    },
+    {
+      "name": "typed",
+      "line": 2,
+      "word": "typed",
+      "offset": 0.0
+    },
+    {
+      "name": "hey",
+      "line": 2,
+      "word": "hey",
+      "offset": 0.0
+    },
+    {
+      "name": "delete",
+      "line": 2,
+      "word": "deleted",
+      "offset": 0.0
+    },
+    {
+      "name": "took",
+      "line": 3,
+      "word": "took",
+      "offset": 0.0
+    },
+    {
+      "name": "coffeeTake",
+      "line": 3,
+      "word": "coffee",
+      "offset": 0.0
+    },
+    {
+      "name": "left",
+      "line": 3,
+      "word": "left",
+      "offset": 0.0
+    },
+    {
+      "name": "rewind",
+      "line": 3,
+      "word": "rewind",
+      "offset": 0.45
+    },
+    {
+      "name": "tagHi",
+      "line": 4,
+      "word": "This",
+      "offset": 0.0
+    },
+    {
+      "name": "youHi",
+      "line": 4,
+      "word": "say",
+      "offset": 0.0
+    },
+    {
+      "name": "coffee",
+      "line": 5,
+      "word": "coffee",
+      "offset": 0.0
+    },
+    {
+      "name": "maybe",
+      "line": 5,
+      "word": "maybe",
+      "offset": 0.0
+    },
+    {
+      "name": "invite",
+      "line": 5,
+      "word": "maybe",
+      "offset": 0.1
+    },
+    {
+      "name": "buzz",
+      "line": 6,
+      "word": "buzzes",
+      "offset": 0.0
+    },
+    {
+      "name": "expires",
+      "line": 6,
+      "word": "expires",
+      "offset": 0.0
+    },
+    {
+      "name": "clock59",
+      "line": 6,
+      "word": "six",
+      "offset": 0.0
+    },
+    {
+      "name": "flip",
+      "line": 7,
+      "word": "swipe",
+      "offset": 0.1
+    },
+    {
+      "name": "neither",
+      "line": 7,
+      "word": "Neither",
+      "offset": 0.0
+    },
+    {
+      "name": "cardA",
+      "line": 8,
+      "word": "Swipe",
+      "offset": 0.0
+    },
+    {
+      "name": "cardB",
+      "line": 8,
+      "word": "let",
+      "offset": 0.0
+    },
+    {
+      "name": "comment",
+      "line": 9,
+      "word": "Comment",
+      "offset": 0.0
+    },
+    {
+      "name": "endcard"
+    }
+  ],
+  "vote": {
+    "question": "swipe someone new, or stay and talk?",
+    "A": {
+      "l1": "A",
+      "l2": "SWIPE SOMEONE NEW",
+      "draw": "thumb on a profile card with swipe arrows, 6:00 pill"
+    },
+    "B": {
+      "l1": "B",
+      "l2": "LET IT EXPIRE",
+      "draw": "phone face down next to a cup, 6:00 pill"
+    },
+    "plannedWinner": "B",
+    "whyNotGuessable": "Habit says spend it. B lets a swipe burn on purpose.",
+    "nextPartPlaysFirst": "A: you swipe a stranger's card at 5:59, match burst, counter 0, the clock hits 6:00. She gives a small nod, takes her cup and walks to the window table. Stamp 'NO GOING BACK', 'This is the end. Let's rewind.' Then B continues.",
+    "nextPartContinues": "B: you set your phone face down beside hers. At 6:00 both counters pop to 0 and the coins drift off. You sit in the chair she offered. Next vote seed: she asks what you do when you're not swiping. Say something rehearsed, or say something true?"
+  },
+  "endCard": {
+    "text": "ten swipes left · part 3 · A or B"
+  }
+}
