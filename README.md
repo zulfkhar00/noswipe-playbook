@@ -1,6 +1,6 @@
-# noswipe-videos
+# noswipe-playbook
 
-Short vertical (1080×1920, 60 fps) 2.5D motion-graphics ads for NoSwipe, drawn as SVG in Remotion. See `AGENTS.md` for the rules every video follows.
+The nightly Claude Code run (nightly/run.sh, nightly/brief.md) reads the stats and CONTENT_PLAYBOOK.md, decides the next day, and writes and renders the videos here (checkout in ~/noswipe-videos; the folder keeps the old name). Short vertical (1080×1920, 60 fps) 2.5D motion-graphics ads for NoSwipe, drawn as SVG in Remotion. See `AGENTS.md` for the rules every video follows.
 
 <!-- The scenario-writer agent (.claude/agents/scenario-writer.md) reads this table to avoid repeating personas and hooks. Keep it current. -->
 
