@@ -179,6 +179,20 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 | 2b | I told my train stranger I was RELAXED. I lied. Part 2 (54) | same | `Across2` hook b |
 | 3a | A stranger on my train wants my name. Part 3 (44) | `specs/stories/across-ep3.json` | `Across3` hook a |
 | 3b | I told a stranger my name was DUKE. It's Dave. Part 3 (53) | same | `Across3` hook b |
+| 4a | A stranger on my train left a clue. I missed it. Part 4 (55) | `specs/stories/across-ep4.json` | `Across4` hook a |
+| 4b | She wrote me a clue. I checked my phone instead. Part 4 (55) | same | `Across4` hook b |
+
+**What happened (part 4, nightly for 2026-11-08):** 28.4 s, vote fully up at 19.5 s. Frame 1: the carriage moving, her clue
+"Look at the (6)", his phone (lock screen 7:44) in hand. Take 1 SCREEN: the train jolts to a halt, his phone slides off the
+table, he dives; she points at the window; opposite train backwards. Take 2 WINDOW: both phones face down, a lone orange
+hot-air balloon rises over the hills, he writes WINDOW without looking down, she ticks it and doodles a balloon. Board flips
+to NEXT STOP, she writes "Tomorrow, same (4)" and looks back from the door. Vote A SEAT ("I'll save her seat") / B TIME
+("7:42, same as ever"). **NoSwipe mention 1 was tried (a sleeping bystander's phone) and CUT:** the blind check read it as a
+plug that broke the story. No mention used yet this season. Blind check: round 1 clarity 6, round 2 clarity 6 (strip POV,
+hook a), round 3 (my text fixes) clarity 7, hook a 6 / b 7, satisfaction 7. Body strips are now first person ("I").
+**Part 5 is decided:** B TIME wins. A first: next morning he parks his coat on her seat, fends off a commuter, she never
+appears, he sits guarding an empty seat; rewind. B: 7:42 as normal, her seat empty, her stop passes; he finds her booklet
+page with a new clue under the table clip; the vote sets up part 6 "Last stop".
 
 **What happened (part 3, nightly for 2026-11-07):** 31.5 s, vote up at 18.3 s (both cards in by 19.3). Frame 1: her stop,
 doors open, "Who you are (4)". Take 1 DUKE: his phone lights "Mum: Dave, call me back" ("mum disagrees."); the opposite
@@ -225,3 +239,43 @@ plays A first: you swipe at 5:59, she nods, takes her cup to the window table, N
 down, both counters pop to 0 at 6:00, you sit; next vote: say something rehearsed or something true). Board at 20.8 s (the
 18 s target was given up to make the swipe branch readable). 501 ElevenLabs characters.
 **Kill check:** P1 sat on the 150-180 floor. If P2's fresh body also stays on the floor at 24h with a clean slot, kill the format.
+**Killed 2026-11-08:** P2 stayed on the floor too (158 / 150 views, 41-48% skip, 9-11 s watch). Its slot went to Season 7 Lane 8.
+
+## Season 7 · Lane 8 (silent bowling-alley romance, scoreboard name boxes)
+
+**Logline:** Two strangers bowl alone on neighbouring lanes 7 and 8. The only chat is the 9-cell player-name box on the
+overhead scoreboards. He keeps skipping his own turn to swipe; she renames herself to talk to him.
+
+**Why this season:** replaces Ten Swipes Left (killed). Keeps what works (silent, two strangers, a written device, a plain
+first-person hook, an early vote ~19 s) and makes the device huge and readable in under a second; the phone costing him his
+turn ties it to swipe fatigue. Picked pitch 1 of 5 on 2026-11-08 (others: Table Nine wedding place cards, Fifty Whites
+paint swatches, Red Light chalk wall, Plot 14 garden labels; keep them for later seasons).
+
+| | Look | How they write |
+|---|---|---|
+| Him (lane 7) | tangerine hoodie, ink cap, lemon ball, phone | types on the NAME keypad: SORRY |
+| Her (lane 8) | violet jacket, high ponytail + lemon scrunchie, violet ball | flips her name box: YOUR TURN, AGAIN, NICE!, BEAT ME? |
+
+**Look and sound:** 80s Memphis carpet pop. Ink #1D1A2F, cream #FFF7E6, teal #12A8A0, tangerine #FF6B2C, lemon #FFD93D,
+violet #7C4DFF. Jost 800 strips, Nunito 900 cards and end card, Barlow Condensed 800 scoreboard letters. Bean figures with dot
+eyes. **Signature transition:** the ball wipe (a violet ball rolls across the foreground, an iris opens behind it). Gated drum
+machine, square bass, glass marimba at 108 bpm; keypad beeps, flap ticks, ball rumble, pin clacks. Code: `src/stories/lane/
+{world,ep1}.tsx`; audio: `python3 generate_lane_audio.py lane-ep1`.
+
+**Arc (6 parts):** 1 Beat me · 2 The game (A ONE SEC plays first and fails: frame timer runs out, his box blinks ONE SEC
+beside a lonely 1; the ball rolls back up the lane as the rewind; B GAME ON carries on) · 3 Loser buys fries (he has to name
+his own row) · 4 the alley owner's phone chimes NoSwipe (bystander, mention 1; note Across's bystander mention was cut as a
+plug, so make it part of the gag or skip it) · 5 last frame, she is called away · 6 final frame: real first names, no phone.
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "lane 8 · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | My lane neighbour texts me through the scoreboard. Part 1 (57) | `specs/stories/lane-ep1.json` | `Lane1` hook a |
+| 1b | I skipped my turn to swipe. She wrote YOUR TURN. Part 1 (55) | same | `Lane1` hook b |
+
+**What happened (part 1, nightly for 2026-11-08):** 32 s, vote up at 19.9 s. He swipes at the foul line, TURN SKIPPED; her box
+YOUR TURN; he types SORRY, pockets the phone; gutter; one pin (her box NICE!); her strike; BEAT ME?; his pocket buzzes; vote
+"what should I put in my name box?" A ONE SEC / B GAME ON (B wins). Blind check round 1 clarity 6 (swiping not visible,
+strips over the boards, keypad unreadable, vote ambiguous), round 2 clarity 7, hook a 6 / b 7, satisfaction 5 (the part's own
+payoff is thin: give part 2 a bigger one).

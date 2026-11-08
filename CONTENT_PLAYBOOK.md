@@ -13,6 +13,10 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
 - Views are two-level on our account: a floor of 150-270 and breakouts of 1.2-1.8k. Every repeat of a body (same video, new
   hook) has stayed on the floor; only new bodies broke out. Same-body hook tests may be measuring first publish, not the
   hook (order-reversal test 2026-11-07). `ours`
+- First publish is not enough: Seven Across P3's first publish, with the same "A stranger on my train" hook pattern, stayed on
+  the floor (156 at 3h, 45% skip). Breakouts show by 3h (430-644 views, ~30% skip). The opening body matters. `ours`
+- Narrated second person with the reference accounts' mechanics (Ten Swipes Left) stayed on the floor in both episodes
+  (150-363 views, 39-48% skip). On our account, silent two-strangers stories beat it; killed 2026-11-08. `ours`
 - Mid-season recap strips lost viewers (Dryer P5: 61% skip); a season opener on a clear device held them. `ours`
 - Something moving and a clear tension or question in frame 1; no slow fade-in, no logo, no setup. `general`
 

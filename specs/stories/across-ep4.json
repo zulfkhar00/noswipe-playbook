@@ -1,0 +1,350 @@
+{
+ "id": "across-ep4",
+ "season": "Seven Across",
+ "episode": 4,
+ "title": "A stranger on my train left a clue. Part 4",
+ "note": "Silent, stands alone, no recap. Frame 1 = moving carriage, QUIET CARRIAGE sign, her clue 'Look at the (6)' with 6 empty boxes, his hand already closing on his phone (plain lock screen 7:44, no notifications). Take 1 (SCREEN): he looks at the phone, she turns to the window; the train jolts to a halt, the phone slides off the table and he dives after it; she points her pen at the window with a kind nudge (the balloon is never shown in take 1); joke is on him only; the opposite train runs BACKWARDS as the rewind. Take 2 (WINDOW): both flip their phones face down, the same halt arrives gently (his palm stops his phone), a lone orange balloon rises over the hills and they see it together; he writes WINDOW, she answers with a green tick and a balloon doodle. The train rolls, the board flips to NEXT STOP, she stands and writes 'Tomorrow, same (4)', glances back unsure from the door. Vote A SEAT (I'll save her seat) vs B TIME (7:42, same as ever). B wins in part 5. Only the vote uses A and B; tags are takes. All times in seconds.",
+ "duration": 28.4,
+ "cast": {
+  "him": "orange beanie, ear blush, phone in hand at 0.0; face down from 7.5 in take 2",
+  "her": "mustard scarf, pen, booklet, small phone under the booklet (face down at 7.9 in take 2); stands from 14.5; blush only in take 2"
+ },
+ "hooks": {
+  "a": "A stranger on my train left a clue. I missed it.",
+  "b": "She wrote me a clue. I checked my phone instead."
+ },
+ "beats": {
+  "hook": 0.0,
+  "penClick": 0.4,
+  "phoneUp": 0.5,
+  "herGlance": 1.2,
+  "herLooksOut": 2.0,
+  "blushStart": 2.4,
+  "tagScreen": 3.0,
+  "brake1": 3.3,
+  "jolt": 3.9,
+  "phoneSlides": 3.95,
+  "dive": 4.1,
+  "phoneFalls": 4.35,
+  "resurface": 4.8,
+  "herPoints": 5.3,
+  "freezeScreen": 5.9,
+  "rewindTag": 6.2,
+  "train1": 6.6,
+  "cutWindow": 6.97,
+  "tagWindow": 7.2,
+  "phoneDown": 7.5,
+  "herPhoneDown": 7.9,
+  "brake2": 8.3,
+  "phoneSlides2": 8.45,
+  "palmStop": 8.75,
+  "stop": 8.9,
+  "eyesUp": 9.0,
+  "balloonRises": 9.1,
+  "herPoints2": 9.7,
+  "blushPing": 10.5,
+  "writeStartWindow": 10.7,
+  "writeEndWindow": 12.2,
+  "tick": 12.4,
+  "doodle": 12.7,
+  "doodleEnd": 13.3,
+  "bothSmile": 13.3,
+  "roll": 14.0,
+  "nextStop": 14.2,
+  "herStands": 14.5,
+  "newClue": 15.0,
+  "newClueEnd": 16.0,
+  "slide": 16.3,
+  "read": 16.6,
+  "herLooksBack": 16.9,
+  "pushIn": 17.1,
+  "train2": 17.5,
+  "choice": 17.87,
+  "cardA": 18.3,
+  "cardB": 18.9,
+  "voteFull": 19.5,
+  "tap": 20.6,
+  "comment": 21.4,
+  "endcard": 25.4
+ },
+ "clues": [
+  {
+   "id": "c1",
+   "by": "her",
+   "text": "Look at the (6)",
+   "len": 6,
+   "answer": null,
+   "visibleFrom": 0.0
+  },
+  {
+   "id": "b1",
+   "by": "him",
+   "branch": "WINDOW",
+   "text": "WINDOW",
+   "len": 6,
+   "answer": "WINDOW",
+   "fillFrom": 10.7,
+   "fillTo": 12.2,
+   "step": 0.25
+  },
+  {
+   "id": "r1",
+   "by": "her",
+   "branch": "WINDOW",
+   "text": "green tick and a tiny balloon doodle",
+   "len": 0,
+   "answer": null,
+   "drawFrom": 12.4,
+   "drawTo": 13.3
+  },
+  {
+   "id": "c2",
+   "by": "her",
+   "text": "Tomorrow, same (4)",
+   "len": 4,
+   "answer": null,
+   "visibleFrom": 15.0,
+   "reveal": [
+    15.0,
+    16.0
+   ]
+  }
+ ],
+ "choices": {
+  "question": "what should I write?",
+  "clue": "Tomorrow, same (4)",
+  "A": {
+   "l1": "SEAT",
+   "l2": "(4)",
+   "sub": "I'll save her seat",
+   "draw": "boxes"
+  },
+  "B": {
+   "l1": "TIME",
+   "l2": "(4)",
+   "sub": "7:42, same as ever",
+   "draw": "boxes"
+  },
+  "winner": "B",
+  "part5": "A plays first and fails: next morning he arrives early and parks his coat on her seat, fends off a commuter with a taken nod, and she never appears; he sits guarding an empty seat (joke on him only); rewind (opposite train backwards); B TIME carries on: 7:42, the seat is empty, she isn't on the train; he finds her booklet page with a new clue under the table clip; next vote sets up part 6 Last stop"
+ },
+ "strips": [
+  {
+   "text": "her crossword clue for me. I check my phone.",
+   "from": 0.0,
+   "to": 2.9,
+   "y": 1190
+  },
+  {
+   "text": "take 1: SCREEN",
+   "from": 3.0,
+   "to": 6.1,
+   "y": 330,
+   "tag": true
+  },
+  {
+   "text": "I looked down. she looked out.",
+   "from": 5.0,
+   "to": 6.1,
+   "y": 1190
+  },
+  {
+   "text": "rewind. eyes up this time.",
+   "from": 6.2,
+   "to": 7.1,
+   "y": 330
+  },
+  {
+   "text": "take 2: WINDOW",
+   "from": 7.2,
+   "to": 14.0,
+   "y": 330,
+   "tag": true
+  },
+  {
+   "text": "phones face down. both.",
+   "from": 7.5,
+   "to": 8.8,
+   "y": 1190
+  },
+  {
+   "text": "found it. together.",
+   "from": 12.4,
+   "to": 13.9,
+   "y": 1190
+  },
+  {
+   "text": "her stop is next.",
+   "from": 14.2,
+   "to": 16.0,
+   "y": 1190
+  },
+  {
+   "text": "one more clue. four boxes.",
+   "from": 16.1,
+   "to": 17.7,
+   "y": 1190
+  },
+  {
+   "text": "what should I write?",
+   "from": 17.87,
+   "to": 25.4,
+   "y": 340
+  },
+  {
+   "text": "comment A or B",
+   "from": 21.4,
+   "to": 25.4,
+   "y": 1190
+  },
+  {
+   "text": "seven across",
+   "from": 25.4,
+   "to": 28.4,
+   "y": 380,
+   "big": true
+  },
+  {
+   "text": "part 5 \u00b7 comment A or B",
+   "from": 25.55,
+   "to": 28.4,
+   "y": 600
+  }
+ ],
+ "audio": {
+  "bpm": 112,
+  "clack": {
+   "meter": "6/8",
+   "bpm": 112,
+   "from": 0.0,
+   "to": 28.4,
+   "accentEvery": 6,
+   "muteFrom": 3.9,
+   "muteTo": 6.2,
+   "reverseFrom": 6.2,
+   "reverseTo": 6.97,
+   "mute2From": 8.9,
+   "mute2To": 14.0
+  },
+  "groove": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    7.2,
+    14.0
+   ],
+   [
+    17.87,
+    25.4
+   ]
+  ],
+  "musicDropFrom": 15.0,
+  "musicBackAt": 17.87,
+  "musicDuck": [
+   [
+    10.7,
+    12.2
+   ],
+   [
+    12.7,
+    13.3
+   ]
+  ],
+  "penClick": [
+   0.4,
+   14.9
+  ],
+  "penScratch": [
+   [
+    10.7,
+    12.2
+   ],
+   [
+    12.4,
+    13.3
+   ],
+   [
+    15.0,
+    16.0
+   ]
+  ],
+  "letterTicks": [
+   10.7,
+   10.95,
+   11.2,
+   11.45,
+   11.7,
+   11.95
+  ],
+  "phoneThud": [
+   4.35,
+   7.5,
+   7.9,
+   8.75
+  ],
+  "phoneThudSoftFrom": 7.0,
+  "phoneSlide": [
+   [
+    3.95,
+    4.3
+   ],
+   [
+    8.45,
+    8.7
+   ]
+  ],
+  "rewindSweep": [
+   [
+    6.2,
+    7.2
+   ]
+  ],
+  "chime": [
+   14.2
+  ],
+  "trainRoll": [
+   14.0
+  ],
+  "brakeSqueal": [
+   [
+    3.3,
+    3.9
+   ],
+   [
+    8.3,
+    8.9
+   ]
+  ],
+  "pageRustle": [
+   15.0,
+   16.3
+  ],
+  "passingTrain": [
+   6.6,
+   17.5
+  ],
+  "passingTrainReversed": [
+   6.6
+  ],
+  "whooshes": [
+   16.3
+  ],
+  "stamps": [
+   3.0,
+   6.2,
+   7.2,
+   17.87,
+   18.3,
+   18.9,
+   25.4
+  ],
+  "blushPing": [
+   10.5
+  ],
+  "warmNote": [
+   13.3
+  ]
+ }
+}

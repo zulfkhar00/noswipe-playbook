@@ -87,7 +87,23 @@ const Cow: React.FC<{x: number}> = ({x}) => <g transform={`translate(${x} 690)`}
   <path d="M 40 -42 L 44 -54 M 52 -38 L 58 -50" stroke={C.ink} strokeWidth={3} strokeLinecap="round" />
 </g>;
 
-export const Window: React.FC<{t: number; off?: number; station?: number; platX?: number; walkerX?: number; walkerOp?: number}> = ({t, off: offIn, station = 0, platX = 0, walkerX = 0, walkerOp = 0}) => {
+/** A hot-air balloon for the window sky: centre of the envelope at (x, y), s = scale (1 = 200 px wide). */
+export const Balloon: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1}) => {
+  const env = 'M 0 -104 C 100 -104 112 20 44 84 L 24 100 L -24 100 L -44 84 C -112 20 -100 -104 0 -104 Z';
+  const cols = [C.rust, C.orangeDeep, C.rust, C.orangeDeep, C.rust];
+  return <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <clipPath id="balloonclip"><path d={env} /></clipPath>
+    <g clipPath="url(#balloonclip)">
+      {cols.map((c, i) => <rect key={i} x={-110 + i * 44} y={-110} width={46} height={220} fill={c} />)}
+      <path d="M -110 -20 Q 0 20 110 -20 L 110 -4 Q 0 36 -110 -4 Z" fill={C.ink} opacity={0.12} />
+    </g>
+    <path d={env} fill="none" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
+    <path d="M -22 100 L -16 132 M 22 100 L 16 132" stroke={C.ink} strokeWidth={4} />
+    <rect x={-24} y={132} width={48} height={32} rx={6} fill={C.rustDark} stroke={C.ink} strokeWidth={4} />
+  </g>;
+};
+
+export const Window: React.FC<{t: number; off?: number; station?: number; platX?: number; walkerX?: number; walkerOp?: number; balloon?: {x: number; y: number; s?: number} | null}> = ({t, off: offIn, station = 0, platX = 0, walkerX = 0, walkerOp = 0, balloon = null}) => {
   const off = offIn ?? t * SPEED;
   const sunY = HORIZON + 40 - Math.min(190, 40 + t * 11);   // the sun climbs all episode
   const rays = Array.from({length: 14}, (_, i) => i);
@@ -105,6 +121,7 @@ export const Window: React.FC<{t: number; off?: number; station?: number; platX?
       </g>
       <circle cx={580} cy={sunY} r={118} fill={C.orange} opacity={0.3} />
       <circle cx={580} cy={sunY} r={78} fill={C.orange} />
+      {balloon && <Balloon x={balloon.x} y={balloon.y} s={balloon.s} />}
       <g transform={`translate(${wrapX(off * 0.3, 1800)} 0)`}>
         <path d={HILL1} fill="#9CBBA9" /><path d={HILL2} fill="#6F9A84" transform="translate(300 0)" />
       </g>

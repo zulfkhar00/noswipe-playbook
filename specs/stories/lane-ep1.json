@@ -1,0 +1,365 @@
+{
+ "id": "lane-ep1",
+ "season": "Lane 8",
+ "episode": 1,
+ "title": "My lane neighbour talks in scoreboard names. Part 1",
+ "note": "Silent bowling-alley story. The only chat is the 9-cell player-name box on the overhead scoreboards. He skips his own turn to swipe (TURN SKIPPED); she nudges him by renaming herself YOUR TURN. He is the joke (gutter, one pin celebrated like a title); she is warm and an equal (strike, modest). Ends on a vote: ONE SEC (phone first) vs GAME ON (phone away). Part 2: A ONE SEC plays first and fails (frame timer runs out, his name box blinks ONE SEC beside a lonely score of 1), the ball rolls back up the lane as the rewind, then B GAME ON carries on. No NoSwipe mention. All times in seconds.",
+ "duration": 32.0,
+ "cast": {
+  "him": "tangerine hoodie, ink cap, lemon ball, phone in right hand, name box ME",
+  "her": "violet jacket, high ponytail with lemon scrunchie, violet ball, name box PLAYER 1"
+ },
+ "hooks": {
+  "a": "My lane neighbour texts me through the scoreboard.",
+  "b": "I skipped my turn to swipe. She wrote YOUR TURN."
+ },
+ "beats": {
+  "hook": 0.0,
+  "swipes": 0.3,
+  "timerZero": 2.4,
+  "ballWipe1": 3.0,
+  "herName": 3.4,
+  "lookUp": 4.7,
+  "typeSorry": 5.0,
+  "sorryDone": 5.8,
+  "pocket": 6.4,
+  "release": 7.6,
+  "ballRoll": 7.8,
+  "gutter": 9.0,
+  "slump": 9.3,
+  "herAgain": 9.8,
+  "ball2": 11.0,
+  "nudge": 12.8,
+  "wobble": 13.0,
+  "pinFall": 14.0,
+  "cheer": 14.2,
+  "ballWipe2": 14.8,
+  "herRoll": 15.1,
+  "strike": 16.0,
+  "herBeatMe": 16.4,
+  "buzz": 17.4,
+  "ballWipe3": 18.0,
+  "choice": 18.4,
+  "cardA": 18.9,
+  "cardB": 19.9,
+  "tap": 22.0,
+  "comment": 23.4,
+  "buzz2": 25.0,
+  "endcard": 28.4
+ },
+ "names": [
+  {
+   "id": "n1",
+   "by": "system",
+   "lane": 7,
+   "text": "YOUR TURN",
+   "visibleFrom": 0.0,
+   "until": 2.4,
+   "blink": true
+  },
+  {
+   "id": "n2",
+   "by": "system",
+   "lane": 7,
+   "text": "TURN SKIPPED",
+   "visibleFrom": 2.4,
+   "until": 5.0
+  },
+  {
+   "id": "n3",
+   "by": "her",
+   "lane": 8,
+   "text": "YOUR TURN",
+   "len": 9,
+   "flipFrom": 3.4,
+   "flipTo": 4.5
+  },
+  {
+   "id": "n4",
+   "by": "him",
+   "lane": 7,
+   "text": "SORRY",
+   "len": 5,
+   "typeFrom": 5.0,
+   "typeTo": 5.8
+  },
+  {
+   "id": "n5",
+   "by": "her",
+   "lane": 8,
+   "text": "AGAIN",
+   "len": 5,
+   "flipFrom": 9.8,
+   "flipTo": 10.4
+  },
+  {
+   "id": "n5b",
+   "by": "her",
+   "lane": 8,
+   "text": "NICE!",
+   "len": 5,
+   "flipFrom": 14.1,
+   "flipTo": 14.58
+  },
+  {
+   "id": "n6",
+   "by": "her",
+   "lane": 8,
+   "text": "BEAT ME?",
+   "len": 8,
+   "flipFrom": 16.4,
+   "flipTo": 16.82
+  }
+ ],
+ "choices": {
+  "question": "what should I put in my name box?",
+  "A": {
+   "l1": "ONE SEC",
+   "l2": null,
+   "draw": "cells"
+  },
+  "B": {
+   "l1": "GAME ON",
+   "l2": null,
+   "draw": "cells"
+  },
+  "winner": "B"
+ },
+ "strips": [
+  {
+   "text": "tuesday · lane 7 · bowling alone",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 1150
+  },
+  {
+   "text": "her name box is her message.",
+   "from": 3.4,
+   "to": 6.6,
+   "y": 330
+  },
+  {
+   "text": "I type back.",
+   "from": 5.0,
+   "to": 6.6,
+   "y": 1150
+  },
+  {
+   "text": "phone away. first real turn.",
+   "from": 6.8,
+   "to": 9.0,
+   "y": 330
+  },
+  {
+   "text": "gutter.",
+   "from": 9.2,
+   "to": 10.8,
+   "y": 330
+  },
+  {
+   "text": "ball two.",
+   "from": 11.0,
+   "to": 13.9,
+   "y": 330
+  },
+  {
+   "text": "one pin. I'm thrilled.",
+   "from": 14.1,
+   "to": 14.9,
+   "y": 330
+  },
+  {
+   "text": "her turn.",
+   "from": 15.1,
+   "to": 16.3,
+   "y": 330
+  },
+  {
+   "text": "her challenge.",
+   "from": 16.4,
+   "to": 17.3,
+   "y": 330
+  },
+  {
+   "text": "my pocket buzzes.",
+   "from": 17.5,
+   "to": 18.3,
+   "y": 1150
+  },
+  {
+   "text": "what should I put in my name box?",
+   "from": 18.4,
+   "to": 28.4,
+   "y": 380
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.4,
+   "to": 28.4,
+   "y": 450
+  },
+  {
+   "text": "lane 8 · part 2 · A or B",
+   "from": 28.4,
+   "to": 32.0,
+   "y": 380,
+   "big": true
+  }
+ ],
+ "audio": {
+  "bpm": 108,
+  "ambience": {
+   "from": 0.0,
+   "to": 32.0,
+   "layers": [
+    "alley hum",
+    "distant pin crashes",
+    "jukebox murmur"
+   ]
+  },
+  "groove": [
+   [
+    0.0,
+    2.4
+   ],
+   [
+    3.0,
+    10.8
+   ],
+   [
+    14.8,
+    17.4
+   ],
+   [
+    18.4,
+    32.0
+   ]
+  ],
+  "musicNote": "gated drums, bouncy square-wave bass, glass-marimba lead; holes at the bonk, under ball two and the pin wobble, and at the pocket buzz",
+  "musicDuck": [
+   [
+    5.0,
+    5.8
+   ]
+  ],
+  "swipeTicks": [
+   0.3,
+   0.65,
+   1.0,
+   1.35,
+   1.7,
+   2.05
+  ],
+  "timerTicks": [
+   1.4,
+   1.7,
+   2.0,
+   2.2,
+   2.4
+  ],
+  "bonk": [
+   2.4
+  ],
+  "flipTicks": [
+   3.4,
+   3.52,
+   3.64,
+   3.76,
+   3.88,
+   4.0,
+   4.12,
+   4.24,
+   4.36,
+   9.8,
+   9.92,
+   10.04,
+   10.16,
+   10.28,
+   14.1,
+   14.22,
+   14.34,
+   14.46,
+   14.58,
+   16.4,
+   16.46,
+   16.52,
+   16.58,
+   16.64,
+   16.7,
+   16.76,
+   16.82
+  ],
+  "keypadBeeps": [
+   5.0,
+   5.2,
+   5.4,
+   5.6,
+   5.8
+  ],
+  "ballRoll": [
+   [
+    7.8,
+    9.0
+   ],
+   [
+    11.4,
+    12.8
+   ],
+   [
+    15.4,
+    16.0
+   ]
+  ],
+  "gutterThud": [
+   9.0
+  ],
+  "pinClack": [
+   12.8
+  ],
+  "pinWobble": [
+   [
+    13.0,
+    14.0
+   ]
+  ],
+  "pinFall": [
+   14.0
+  ],
+  "scorePop": [
+   14.2
+  ],
+  "softClaps": [
+   14.5
+  ],
+  "strikeCrash": [
+   16.0
+  ],
+  "phoneBuzz": [
+   17.4,
+   25.0
+  ],
+  "ballWipe": [
+   3.0,
+   14.8,
+   18.0
+  ],
+  "cardPops": [
+   18.9,
+   19.9
+  ],
+  "stamps": [
+   3.4,
+   6.8,
+   9.2,
+   11.0,
+   14.1,
+   15.1,
+   16.4,
+   18.4,
+   28.4
+  ],
+  "endChime": [
+   28.4
+  ]
+ }
+}

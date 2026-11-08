@@ -416,6 +416,86 @@
     "want_next": 6,
     "rounds": 3
    }
+  },
+  {
+   "id": "across-4-b",
+   "day": "2026-11-08",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 4,
+   "hook": "b",
+   "caption": "She wrote me a clue. I checked my phone instead. Part 4. Quiet carriage, her clue says Look at the ___, and the train stops mid-track. Second take: phones face down. Her last clue before her stop: A SEAT or B TIME? #sevenacross #commute #crossword #strangers #shortfilm",
+   "video": "videos/across-4-b.mp4",
+   "composition": "Across4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "lane-1-a",
+   "day": "2026-11-08",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Lane 8",
+   "episode": 1,
+   "hook": "a",
+   "caption": "My lane neighbour texts me through the scoreboard. Part 1. I skipped my own turn to swipe. She changed her name box to YOUR TURN. Now it says BEAT ME? and my pocket is buzzing. What do I type, A ONE SEC or B GAME ON? #bowling #lovestory #animation #strangers #tinyloveshows",
+   "video": "videos/lane-1-a.mp4",
+   "composition": "Lane1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "across-4-a",
+   "day": "2026-11-08",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 4,
+   "hook": "a",
+   "caption": "A stranger on my train left a clue. I missed it. Part 4. Six boxes, one clue, and a train that halts in the fields. We found the answer together. Now she wants four letters before her stop: A SEAT or B TIME? #sevenacross #trainstory #crossword #shortstory #romance",
+   "video": "videos/across-4-a.mp4",
+   "composition": "Across4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "lane-1-b",
+   "day": "2026-11-08",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Lane 8",
+   "episode": 1,
+   "hook": "b",
+   "caption": "I skipped my turn to swipe. She wrote YOUR TURN. Part 1. Two strangers bowling alone on lanes 7 and 8, talking only through the scoreboard. One gutter, one pin, one strike. Her name box says BEAT ME? Comment A ONE SEC or B GAME ON. #bowling #swipefatigue #shortstory #romance #animation",
+   "video": "videos/lane-1-b.mp4",
+   "composition": "Lane1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
   }
  ]
 }

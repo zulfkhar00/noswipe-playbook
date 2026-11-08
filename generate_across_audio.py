@@ -227,6 +227,20 @@ def phone_thud() -> np.ndarray:
     return 0.9 * knock + 0.5 * fft_lowpass(slap, 5000)
 
 
+def phone_thud_soft() -> np.ndarray:
+    """A phone set down (or stopped by a palm) gently: a small low pat, no slap."""
+    t = tt(0.22)
+    pat = np.sin(2 * np.pi * (130 - 40 * t) * t) * np.exp(-t * 38)
+    return 0.45 * pat + 0.12 * fft_lowpass(noise(0.22), 2500) * np.exp(-t * 70)
+
+
+def phone_slide(d: float) -> np.ndarray:
+    """A phone skidding across a tabletop: a gritty hiss that thins out."""
+    t = tt(d)
+    g = (noise(d) - fft_lowpass(noise(d), 900)) * (1 - 0.5 * t / d)
+    return fft_lowpass(g, 4200) * 0.5 * np.minimum(1, t / 0.03) * np.minimum(1, (d - t) / 0.08) * (0.7 + 0.3 * np.sin(2 * np.pi * 31 * t))
+
+
 def seat_thump() -> np.ndarray:
     """Someone sitting down on a padded bench: soft low thump and a cushion sigh."""
     t = tt(0.45)
@@ -271,13 +285,14 @@ def room(st: Stem, a: dict, dur: float) -> None:
     c = a["clack"]
     eighth = 60.0 / (c["bpm"] * 1.5)           # 6/8: the dotted quarter is the beat
     lo, hi = c.get("muteFrom", -1), c.get("muteTo", -1)
+    lo2, hi2 = c.get("mute2From", -1), c.get("mute2To", -1)
     i, t = 0, c.get("from", 0.0)
     while t < min(dur, c.get("to", dur)):
         pos = i % 6
         vol = 1.0 if pos == 0 else 0.75 if pos == 3 else 0.4
         if c.get("reverseFrom", -1) <= t < c.get("reverseTo", -1):
             st.add(t - 0.14, clack(vol)[::-1], 0.55)       # rewind: each clack plays backwards
-        elif not (lo <= t < hi):
+        elif not (lo <= t < hi) and not (lo2 <= t < hi2):
             st.add(t, clack(vol), 0.55)
         i += 1
         t += eighth
@@ -341,7 +356,7 @@ def sfx(st: Stem, a: dict) -> None:
     for t in a["chime"]:
         st.add(t, bell(784), 0.4)
         st.add(t + 0.28, bell(659, 2.0), 0.4)
-    for t in a["doorHiss"]:
+    for t in a.get("doorHiss", []):
         st.add(t, hiss(1.0), 0.7)
     for t in a["pageRustle"]:
         st.add(t, rustle(0.45), 0.8)
@@ -372,7 +387,12 @@ def sfx(st: Stem, a: dict) -> None:
     for t in a["whooshes"]:
         st.add(t, whoosh(0.5), 0.6)
     for t in a.get("phoneThud", []):
-        st.add(t, phone_thud(), 0.9)
+        if t >= a.get("phoneThudSoftFrom", 1e9):  # take 2: phones set down / stopped gently
+            st.add(t, phone_thud_soft(), 0.9)
+        else:
+            st.add(t, phone_thud(), 0.9)
+    for lo, hi in a.get("phoneSlide", []):
+        st.add(lo, phone_slide(hi - lo), 0.8)
     for t in a.get("seatThump", []):
         st.add(t, seat_thump(), 0.8)
     for t in a.get("trainRoll", []):
