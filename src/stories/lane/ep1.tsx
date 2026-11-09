@@ -225,7 +225,7 @@ const LaneShot: React.FC<{t: number; m: string}> = ({t, m}) => {
 };
 
 /** Seen from behind, local origin = feet, drawn at scale 1.5. */
-const BackFigure: React.FC<{kind: 'him' | 'her'; p: Pose; t: number; ball: string | null}> = ({kind, p, t, ball}) => {
+export const BackFigure: React.FC<{kind: 'him' | 'her'; p: Pose; t: number; ball: string | null}> = ({kind, p, t, ball}) => {
   const him = kind === 'him', body = him ? C.orange : C.violet, skin = him ? C.skinHim : C.skinHer;
   const sw = Math.sin(t * 2) * 2;
   const a2 = p.a2;

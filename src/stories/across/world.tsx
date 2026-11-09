@@ -62,7 +62,7 @@ const HORIZON = 650;
 const SPEED = 520;
 const wrapX = (off: number, period: number) => -((off % period) + period) % period;
 
-const hillPath = (amp: number, base: number, period: number, seed: number) => {
+export const hillPath = (amp: number, base: number, period: number, seed: number) => {
   const pts: string[] = [];
   for (let x = 0; x <= period * 2 + 20; x += 20) {
     const y = base - amp * (0.55 + 0.45 * Math.sin((x / period) * Math.PI * 2 + seed)) - amp * 0.3 * Math.sin((x / period) * Math.PI * 6 + seed * 2);
@@ -103,15 +103,20 @@ export const Balloon: React.FC<{x: number; y: number; s?: number}> = ({x, y, s =
   </g>;
 };
 
-export const Window: React.FC<{t: number; off?: number; station?: number; platX?: number; walkerX?: number; walkerOp?: number; balloon?: {x: number; y: number; s?: number} | null}> = ({t, off: offIn, station = 0, platX = 0, walkerX = 0, walkerOp = 0, balloon = null}) => {
+const mixHex = (a: string, b: string, k: number) => {
+  const pa = [1, 3, 5].map((i) => parseInt(a.slice(i, i + 2), 16)), pb = [1, 3, 5].map((i) => parseInt(b.slice(i, i + 2), 16));
+  return '#' + pa.map((v, i) => Math.round(lerp(v, pb[i], k)).toString(16).padStart(2, '0')).join('');
+};
+
+export const Window: React.FC<{t: number; off?: number; station?: number; platX?: number; walkerX?: number; walkerOp?: number; balloon?: {x: number; y: number; s?: number} | null; dusk?: number}> = ({t, off: offIn, station = 0, platX = 0, walkerX = 0, walkerOp = 0, balloon = null, dusk = 0}) => {
   const off = offIn ?? t * SPEED;
-  const sunY = HORIZON + 40 - Math.min(190, 40 + t * 11);   // the sun climbs all episode
+  const sunY = lerp(HORIZON + 40 - Math.min(190, 40 + t * 11), HORIZON - 30, dusk);   // the sun climbs all episode
   const rays = Array.from({length: 14}, (_, i) => i);
   return <g>
     <defs>
       <clipPath id="winclip"><rect x={WIN.x} y={WIN.y} width={WIN.w} height={WIN.h} rx={16} /></clipPath>
       <linearGradient id="skyg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stopColor={C.sky} /><stop offset="0.55" stopColor="#F6DDBA" /><stop offset="1" stopColor="#FFB070" />
+        <stop offset="0" stopColor={mixHex(C.sky, '#E9A06E', dusk)} /><stop offset="0.55" stopColor={mixHex('#F6DDBA', '#E5702A', dusk)} /><stop offset="1" stopColor={mixHex('#FFB070', '#B5452B', dusk)} />
       </linearGradient>
     </defs>
     <g clipPath="url(#winclip)">
@@ -120,10 +125,10 @@ export const Window: React.FC<{t: number; off?: number; station?: number; platX?
         {rays.map((i) => <path key={i} d={`M 0 0 L ${-30} -520 L ${30} -520 Z`} transform={`rotate(${i * (360 / 14)})`} fill={C.orange} />)}
       </g>
       <circle cx={580} cy={sunY} r={118} fill={C.orange} opacity={0.3} />
-      <circle cx={580} cy={sunY} r={78} fill={C.orange} />
+      <circle cx={580} cy={sunY} r={78 + 14 * dusk} fill={mixHex(C.orange, '#E8501F', dusk)} />
       {balloon && <Balloon x={balloon.x} y={balloon.y} s={balloon.s} />}
       <g transform={`translate(${wrapX(off * 0.3, 1800)} 0)`}>
-        <path d={HILL1} fill="#9CBBA9" /><path d={HILL2} fill="#6F9A84" transform="translate(300 0)" />
+        <path d={HILL1} fill={mixHex('#9CBBA9', '#8E5646', dusk)} /><path d={HILL2} fill={mixHex('#6F9A84', '#6A3B34', dusk)} transform="translate(300 0)" />
       </g>
       <g transform={`translate(${wrapX(off * 0.7, 840)} 0)`}>
         {[0, 1, 2, 3].map((k) => <Pylon key={k} x={k * 420 + 120} />)}
@@ -210,7 +215,7 @@ export const Door: React.FC<{open: number; glow?: number}> = ({open, glow = 1}) 
 export type Face = {look: [number, number]; mouth: 'flat' | 'smile' | 'o' | 'grin' | 'wince'; brow: number; rot: number; blush: number; cheek?: number};
 
 /** Head in profile facing right (flip with the parent). */
-const Head: React.FC<{t: number; skin: string; face: Face; hat: 'beanie' | 'hair'; scarf?: boolean}> = ({t, skin, face, hat}) => {
+export const Head: React.FC<{t: number; skin: string; face: Face; hat: 'beanie' | 'hair' | 'cap'; scarf?: boolean}> = ({t, skin, face, hat}) => {
   const blink = (t % 3.9) < 0.12 ? 0.12 : 1;
   const [lx, ly] = face.look;
   const earFill = face.blush > 0 ? `rgb(${Math.round(lerp(237, 232, face.blush))},${Math.round(lerp(183, 70, face.blush))},${Math.round(lerp(143, 50, face.blush))})` : skin;
@@ -235,13 +240,17 @@ const Head: React.FC<{t: number; skin: string; face: Face; hat: 'beanie' | 'hair
       <path d="M -56 -36 L 58 -36 L 60 -8 L -54 -6 Z" fill={C.orangeDeep} />
       {[-36, -14, 8, 30, 50].map((x) => <path key={x} d={`M ${x} -34 L ${x + 1} -8`} stroke={C.orange} strokeWidth={4} />)}
       <circle cx={0} cy={-96} r={17} fill="#FFA965" />
+    </g> : hat === 'cap' ? <g>
+      <path d="M -54 -20 C -58 -80 -6 -92 28 -76 C 48 -66 56 -46 56 -22 Z" fill="#5C6670" />
+      <path d="M 24 -40 C 56 -42 84 -34 92 -22 L 56 -20 Z" fill="#434B53" />
+      <rect x={-56} y={-26} width={112} height={8} rx={4} fill="#434B53" />
     </g> : <g>
       <path d="M -54 -2 C -70 -76 0 -98 40 -70 C 56 -58 58 -42 55 -30 C 34 -50 6 -42 -4 -20 C -6 8 -4 36 -16 66 C -52 78 -66 30 -54 -2 Z" fill={C.hair} />
     </g>}
   </g>;
 };
 
-const Torso: React.FC<{coat: string}> = ({coat}) => <path d="M -70 62 L 50 62 C 96 70 122 112 128 176 L 132 560 L -122 560 L -112 124 C -108 92 -96 72 -70 62 Z" fill={coat} />;
+export const Torso: React.FC<{coat: string}> = ({coat}) => <path d="M -70 62 L 50 62 C 96 70 122 112 128 176 L 132 560 L -122 560 L -112 124 C -108 92 -96 72 -70 62 Z" fill={coat} />;
 
 export const Him: React.FC<{t: number; face: Face; x?: number; y?: number}> = ({t, face, x = 275, y = 840}) => <g transform={`translate(${x} ${y})`}>
   <Torso coat={C.rust} />
@@ -327,6 +336,7 @@ export type SheetSpec = {
   wobble?: boolean;                         // his letters get shakier and more uneven, letter by letter
   stain?: {at: number; x: number; y: number};   // a coffee puddle that spreads from `at` (driven by t, so it can run backwards)
   row2?: {n: number; s: string; boxesFrom: number; from: number; step: number; ink: string; bw?: number; y?: number};
+  handwrite?: boolean;                      // letters are written on with a left-to-right wipe
   extra?: number;                           // extra card height below the box row  // a second row of boxes, right-aligned
 };
 const BOX = 50, GAP = 6;
@@ -382,6 +392,11 @@ export const Paper: React.FC<{t: number; s: SheetSpec; id: string}> = ({t, s, id
         return <text key={i} x={boxX(s.n, i, s.groups) + cl(j2 * w * 0.8, 3)} y={46 + cl(j * w * 0.8, 3)} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={54 + cl(j2 * w * 1.6, 6)} fill={s.letters!.ink}
           transform={`translate(0 ${(1 - k) * -4}) rotate(${cl(j * w * 1.3, 8)} ${boxX(s.n, i, s.groups)} 30)`} opacity={k}>{ch}</text>;
       }
+      if (s.handwrite) {
+        const bx = boxX(s.n, i, s.groups), kk = clamp((t - (s.letters!.from + i * s.letters!.step)) / Math.min(0.24, s.letters!.step * 0.95));
+        return <g key={i}><clipPath id={`hw${id}${i}`}><rect x={bx - 30} y={-12} width={60 * kk} height={80} /></clipPath>
+          <g clipPath={`url(#hw${id}${i})`}><text x={bx} y={46} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={56} fill={s.letters!.ink} transform={`rotate(${(i % 3 - 1) * 2.5} ${bx} 30)`}>{ch}</text></g></g>;
+      }
       return <text key={i} x={boxX(s.n, i, s.groups)} y={46} textAnchor="middle" fontFamily={PEN} fontWeight={700} fontSize={56} fill={s.letters!.ink}
         transform={`translate(0 ${(1 - k) * -10}) rotate(${(i % 3 - 1) * 2.5} ${boxX(s.n, i, s.groups)} 30)`} opacity={k}>{ch}</text>;
     })}
@@ -429,7 +444,7 @@ const wrap = (text: string, max: number) => {
 };
 
 /** A ticket-style strip in screen space. `age` is seconds since it appeared (stamp pop); `out` 0..1 fade. */
-export const Strip: React.FC<{text: string; y: number; age: number; out: number; size?: number; rot?: number; hue?: 'ink' | 'orange' | 'cream'; maxW?: number}> = ({text, y, age, out, size = 60, rot = 0, hue = 'ink', maxW = 960}) => {
+export const Strip: React.FC<{text: string; y: number; age: number; out: number; size?: number; rot?: number; hue?: 'ink' | 'orange' | 'cream'; maxW?: number; outline?: boolean}> = ({text, y, age, out, size = 60, rot = 0, hue = 'ink', maxW = 960, outline = false}) => {
   const f = 0.43;
   const max = Math.floor((maxW - 90) / (size * f));
   const lines = wrap(text, max);
@@ -442,7 +457,7 @@ export const Strip: React.FC<{text: string; y: number; age: number; out: number;
   const top = y - size * 0.62 - 6;
   return <g opacity={clamp(1 - out) * clamp(age / 0.05 + 0.2)} transform={`translate(540 ${top + h / 2}) rotate(${rot}) scale(${pop}) translate(-540 ${-(top + h / 2)})`}>
     <rect x={540 - w / 2 + 9} y={top + 11} width={w} height={h} rx={14} fill={C.rust} />
-    <rect x={540 - w / 2} y={top} width={w} height={h} rx={14} fill={bg} stroke={C.ink} strokeWidth={hue === 'ink' ? 0 : 4} />
+    <rect x={540 - w / 2} y={top} width={w} height={h} rx={14} fill={bg} stroke={outline ? C.cream : C.ink} strokeWidth={outline ? 5 : hue === 'ink' ? 0 : 4} />
     <rect x={540 - w / 2} y={top} width={14} height={h} rx={7} fill={C.orange} />
     {lines.map((l, i) => <text key={i} x={540 + 6} y={top + 15 + size * 0.86 + i * lh} textAnchor="middle" fontFamily={STRIPF} fontWeight={700} fontSize={size} letterSpacing={0.8} fill={fg}>{l}</text>)}
   </g>;

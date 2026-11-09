@@ -24,10 +24,14 @@ Change one variable at a time within a format.
 | 2026-11-07 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P2 hook a | A stranger in your queue has one swipe left too. | 158 (6h) | | 11 | ~37% | 0 | 0 | | 0 | floor; **kill the format** (both episodes bottom) |
 | 2026-11-07 | IG @tinyloveshows | silent story (Seven Across) | P3 hook a (became first publish) | A stranger on my train asks my name. By crossword. | 156 (3h) | | 11 | ~35% | 0 | 0 | | 0 | floor at 3h (breakouts were 430-644 at 3h); 45% skip |
 | 2026-11-07 | IG @tinyloveshows | voiced 2nd-person story (Ten Swipes Left) | P2 hook b | Last swipe. She's right in front of you. | 150 (3h) | | 9 | ~31% | 0 | 0 | | 0 | floor; killed (post 'unverified') |
-| 2026-11-08 | IG @tinyloveshows | silent story (Seven Across) | P4 hook b (FIRST, 12:30) | She wrote me a clue. I checked my phone instead. | | | | | | | | | planned: reversal test retry; P4 decides if the season fades |
-| 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook a | My lane neighbour texts me through the scoreboard. | | | | | | | | | planned: new season replacing Ten Swipes |
-| 2026-11-08 | IG @tinyloveshows | silent story (Seven Across) | P4 hook a (repeat body) | A stranger on my train left a clue. I missed it. | | | | | | | | | planned |
-| 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook b (repeat body) | I skipped my turn to swipe. She wrote YOUR TURN. | | | | | | | | | planned |
+| 2026-11-08 | IG @tinyloveshows | silent story (Seven Across) | P4 hook b (FIRST, 12:30) | She wrote me a clue. I checked my phone instead. | 137 (6h) | | 7 | ~25% | 0 | 0 | | 0 | floor; reversal inconclusive; **wind Across down** (finale 2026-11-09) |
+| 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook a | My lane neighbour texts me through the scoreboard. | - | | | | | | | | **post failed** (keyboard auto-capitalised 'and' after 'BEAT ME?'); never published |
+| 2026-11-08 | IG @tinyloveshows | silent story (Seven Across) | P4 hook a (repeat body) | A stranger on my train left a clue. I missed it. | 159 (6h) | | 9 | ~32% | 0 | 0 | | 0.8% | floor; 52% skip |
+| 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook b (repeat body) | I skipped my turn to swipe. She wrote YOUR TURN. | 143 (3h) | | 7 | ~22% | 0 | 0 | | 0 | floor (became first publish); 53% skip, worst yet; P2 decides |
+| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook a (FIRST, 12:30) | A stranger on my train left me one last clue. | | | | | | | | | planned: finale; one-strip bright frame 1 |
+| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook a | My lane neighbour texts me through the scoreboard. | | | | | | | | | planned: kill check for Lane 8 |
+| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook b (repeat body) | Her seat was empty. Her clue said where she'd be. | | | | | | | | | planned |
+| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook b (repeat body) | She dared me on the scoreboard. Then my phone buzzed. | | | | | | | | | planned |
 
 ## Hook patterns (running record)
 
@@ -52,3 +56,8 @@ Across P3 body, the "stranger" hook a later on the repeat). Read it before trust
 "stranger on my train" pattern and still sat at the floor (156 at 3h, 45% skip). So neither "first publish" nor the hook
 pattern alone makes a breakout; the body/opening matters (P3 opened on a busier, static last-stop setup). Early read: a
 breakout is visible by 3h (430-644 views, ~30% skip). Retry of the reversal on 2026-11-08 with Across P4 (b first).
+
+**Update 2026-11-09:** P4 reversal: both hooks floor (137 / 159 at 6h), inconclusive. Frame-1 stills comparison: both
+breakouts (Across P1, P2) opened on ONE strip, a big bright window, two large faces and one big clean clue card; every floor
+opener since (Across P3, P4, Lane P1) had a second strip/chip, a smaller device or a dark busy frame. Tonight both new bodies
+open on one strip only. If either breaks out at 3h, promote "one strip, one big device, bright" to the playbook.

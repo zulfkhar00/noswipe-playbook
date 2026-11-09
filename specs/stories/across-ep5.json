@@ -1,0 +1,311 @@
+{
+ "id": "across-ep5",
+ "season": "Seven Across",
+ "episode": 5,
+ "title": "A stranger on my train left me one last clue. Part 5 (finale)",
+ "note": "Season finale 'Last stop'. Silent, stands alone. Frame 1 = ONE strip only (the hook): sunrise carriage as part 1, HER SEAT EMPTY, him alone looking at it. Take 1 SEAT: he tosses coat+bag onto her seat, a commuter with a coffee wants it, he guards, then plops onto her side himself; cut-in: a folded page (hers, 'Iris') crumples (he doesn't see); opposite train BACKWARDS. Take 2 TIME: 7:42, her page under the table clip, big clue 'Where I'll be at 6 (4,4)' = LAST STOP. Sunset time jump, board flips to LAST STOP, doors, platform, Iris on the bench; clue 'Us, tomorrow (4,4)' = SAME TIME; first words 'hi.' 'hi.'; end card 'seven across · the end'. No NoSwipe mention, no vote. All times in seconds.",
+ "duration": 31.6,
+ "cast": {
+  "him": "Dave, orange beanie",
+  "her": "Iris, mustard scarf; absent until 19.0",
+  "extra": "commuter with flat cap and coffee (take 1 only, neutral)"
+ },
+ "hooks": {
+  "a": "A stranger on my train left me one last clue.",
+  "b": "Her seat was empty. Her clue said where she'd be."
+ },
+ "beats": {
+  "hook": 0.0,
+  "tagSeat": 3.0,
+  "toss": 3.45,
+  "commuterIn": 4.3,
+  "guard": 5.3,
+  "commuterOut": 5.95,
+  "plop": 6.5,
+  "land": 7.0,
+  "crumple": 7.1,
+  "freeze": 7.9,
+  "rewind": 8.2,
+  "train1": 8.6,
+  "cutTake2": 8.97,
+  "tagTime": 9.3,
+  "spot": 10.0,
+  "pageUp": 10.5,
+  "clueIn": 11.0,
+  "writeFrom": 11.8,
+  "writeTo": 13.8,
+  "jump": 14.9,
+  "dusk": 15.7,
+  "board1": 16.4,
+  "board2": 17.2,
+  "board3": 18.0,
+  "doors": 18.6,
+  "platform": 19.0,
+  "herLooksUp": 19.6,
+  "sitDown": 20.9,
+  "clue2": 21.5,
+  "write2From": 22.5,
+  "tick": 24.2,
+  "firstWords": 24.7,
+  "hiHim": 25.4,
+  "hiHer": 26.1,
+  "endcard": 27.2,
+  "penPass": 21.75
+ },
+ "clues": [
+  {
+   "id": "c1",
+   "by": "her",
+   "text": "Where I'll be|at 6 (4,4)",
+   "len": 8,
+   "groups": [
+    4
+   ],
+   "answer": "LASTSTOP",
+   "fillFrom": 11.8,
+   "step": 0.25
+  },
+  {
+   "id": "c2",
+   "by": "her",
+   "text": "Us, tomorrow (4,4)",
+   "len": 8,
+   "groups": [
+    4
+   ],
+   "answer": "SAMETIME",
+   "fillFrom": 22.5,
+   "step": 0.2
+  }
+ ],
+ "strips": [
+  {
+   "text": "I saved her seat.",
+   "from": 3.2,
+   "to": 5.4,
+   "y": 1190
+  },
+  {
+   "text": "She didn't come.",
+   "from": 5.4,
+   "to": 6.7,
+   "y": 1190
+  },
+  {
+   "text": "I sat on her clue.",
+   "from": 6.9,
+   "to": 7.95,
+   "y": 1190
+  },
+  {
+   "text": "take 1: SEAT",
+   "from": 3.0,
+   "to": 8.0,
+   "y": 337,
+   "tag": true
+  },
+  {
+   "text": "rewind.",
+   "from": 8.2,
+   "to": 9.1,
+   "y": 337
+  },
+  {
+   "text": "take 2: TIME",
+   "from": 9.3,
+   "to": 15.0,
+   "y": 337,
+   "tag": true
+  },
+  {
+   "text": "no Iris on the 7:42. just her clue.",
+   "from": 9.25,
+   "to": 11.0,
+   "y": 1190
+  },
+  {
+   "text": "I rode to the end of the line.",
+   "from": 15.3,
+   "to": 18.7,
+   "y": 1190
+  },
+  {
+   "text": "she was there.",
+   "from": 19.3,
+   "to": 21.0,
+   "y": 1190
+  },
+  {
+   "text": "her last clue for me:",
+   "from": 21.4,
+   "to": 24.2,
+   "y": 1190
+  },
+  {
+   "text": "out loud, at last:",
+   "from": 24.7,
+   "to": 27.2,
+   "y": 1190
+  },
+  {
+   "text": "seven across · the end",
+   "from": 27.2,
+   "to": 31.6,
+   "y": 420,
+   "big": true
+  },
+  {
+   "text": "a new story starts next.",
+   "from": 27.5,
+   "to": 31.6,
+   "y": 760
+  },
+  {
+   "text": "where she'd be at 6:",
+   "from": 11.0,
+   "to": 14.0,
+   "y": 1190
+  }
+ ],
+ "audio": {
+  "bpm": 112,
+  "clack": {
+   "meter": "6/8",
+   "bpm": 112,
+   "from": 0.0,
+   "to": 18.0,
+   "accentEvery": 6,
+   "reverseFrom": 8.2,
+   "reverseTo": 8.97
+  },
+  "groove": [
+   [
+    0.0,
+    3.0
+   ],
+   [
+    9.3,
+    14.9
+   ],
+   [
+    19.0,
+    27.2
+   ]
+  ],
+  "musicDropFrom": 14.9,
+  "musicBackAt": 19.0,
+  "musicDuck": [
+   [
+    11.8,
+    13.8
+   ],
+   [
+    22.5,
+    24.1
+   ]
+  ],
+  "swell": [
+   24.7,
+   27.2
+  ],
+  "penClick": [
+   0.4,
+   11.0,
+   21.8,
+   24.0
+  ],
+  "penScratch": [
+   [
+    11.8,
+    13.8
+   ],
+   [
+    22.5,
+    24.1
+   ],
+   [
+    24.2,
+    24.55
+   ]
+  ],
+  "letterTicks": [
+   11.8,
+   12.05,
+   12.3,
+   12.55,
+   12.8,
+   13.05,
+   13.3,
+   13.55,
+   22.5,
+   22.7,
+   22.9,
+   23.1,
+   23.3,
+   23.5,
+   23.7,
+   23.9
+  ],
+  "seatThump": [
+   3.95,
+   4.4,
+   7.0
+  ],
+  "rewindSweep": [
+   [
+    8.2,
+    9.1
+   ]
+  ],
+  "chime": [
+   16.4,
+   17.2,
+   18.0
+  ],
+  "doorHiss": [
+   18.6
+  ],
+  "brakeSqueal": [
+   [
+    17.4,
+    18.5
+   ]
+  ],
+  "pageRustle": [
+   7.1,
+   10.5,
+   11.0
+  ],
+  "passingTrain": [
+   8.6
+  ],
+  "passingTrainReversed": [
+   8.6
+  ],
+  "whooshes": [
+   19.0,
+   21.4
+  ],
+  "stamps": [
+   3.0,
+   8.2,
+   9.3,
+   15.3,
+   24.7,
+   27.2
+  ],
+  "blushPing": [
+   19.9,
+   26.2
+  ],
+  "warmNote": [
+   16.4,
+   17.2,
+   18.0,
+   24.55,
+   25.4,
+   26.1
+  ],
+  "trainRoll": []
+ }
+}

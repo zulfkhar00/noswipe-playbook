@@ -175,6 +175,23 @@ def pop(f: float = 880) -> np.ndarray:
     return np.sin(ph) * env(t, 0.002, 0.07) * 0.6
 
 
+def power_off() -> np.ndarray:                                  # falling two-tone, then a soft tick
+    t = tt(0.35)
+    f = 1500 * np.exp(-t * 4.5) + 300
+    return np.sin(2 * np.pi * np.cumsum(f) / RATE) * env(t, 0.003, 0.14) * 0.6
+
+
+def slap() -> np.ndarray:                                       # air high-five: flat clap + short ping
+    t = tt(0.2)
+    return fft_bp(noise(0.2), 1200, 7000) * env(t, 0.0005, 0.03) * 2.0 + np.sin(2 * np.pi * 1500 * t) * env(t, 0.001, 0.05) * 0.4
+
+
+def tape_rewind(d: float) -> np.ndarray:                        # rising warble, like a tape spinning back
+    t = tt(d)
+    f = 300 + 1500 * (t / d) ** 2
+    return np.sin(2 * np.pi * np.cumsum(f) / RATE) * 0.3 * np.minimum(1, (d - t) / 0.1) * (0.6 + 0.4 * np.sin(2 * np.pi * 22 * t))
+
+
 def stamp() -> np.ndarray:
     t = tt(0.2)
     return np.sin(2 * np.pi * 110 * t) * env(t, 0.002, 0.05) * 0.7 + fft_lp(noise(0.2), 900) * env(t, 0.001, 0.02) * 0.4
@@ -278,6 +295,12 @@ def sfx(st: Stem, a: dict) -> None:
         st.add(t + 0.05, marimba(76 + 4 * i, 0.6), 0.25)
     for t in a["stamps"]:
         st.add(t, stamp(), 0.6)
+    for t in a.get("powerOff", []):
+        st.add(t, power_off(), 0.7)
+    for t in a.get("slap", []):
+        st.add(t, slap(), 0.8)
+    for lo, hi in a.get("rewind", []):
+        st.add(lo, tape_rewind(hi - lo), 0.6)
     for t in a["endChime"]:
         for k, m in enumerate([69, 72, 76, 81]):
             st.add(t + k * 0.09, marimba(m, 2.0), 0.28)

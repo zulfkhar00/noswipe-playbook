@@ -181,6 +181,18 @@ The account's first **AI-visuals** season: start frames from Nano Banana Pro (Ge
 | 3b | I told a stranger my name was DUKE. It's Dave. Part 3 (53) | same | `Across3` hook b |
 | 4a | A stranger on my train left a clue. I missed it. Part 4 (55) | `specs/stories/across-ep4.json` | `Across4` hook a |
 | 4b | She wrote me a clue. I checked my phone instead. Part 4 (55) | same | `Across4` hook b |
+| 5a | A stranger on my train left me one last clue. Finale (52) | `specs/stories/across-ep5.json` | `Across5` hook a |
+| 5b | Her seat was empty. Her clue said where she'd be. Finale (56) | same | `Across5` hook b |
+
+**What happened (part 5 = FINALE, nightly for 2026-11-09):** planned parts 5 and 6 merged into one finale because P3 and P4
+both sat on the floor (pre-registered wind-down rule). 31.6 s, no vote. Frame 1: her seat empty, her folded page on the table
+(grid, balloon doodle, "– Iris"), one hook strip. Take 1 SEAT: he guards her seat with his coat from a commuter, she never comes,
+he plops onto her seat and crumples her page ("crunch"); opposite train backwards. Take 2 TIME: "no Iris on the 7:42. just her
+clue." "Where I'll be at 6 (4,4)" = LAST STOP; sunrise window turns to sunset, boards 5:58 -> 6:00 · LAST STOP; she's on the
+platform bench; she passes him the pen for "Us, tomorrow (4,4)", he writes SAME TIME, she ticks it; "out loud, at last:"
+"hi." "hi.". End card "seven across · the end · a new story starts next." No NoSwipe mention this season at all.
+Blind check: round 1 clarity 6, round 2 clarity 6 (maker fixes), round 3 (my text fixes) clarity 7, hook a 5 / b 6,
+satisfaction 8, want_next 6. **Season over.**
 
 **What happened (part 4, nightly for 2026-11-08):** 28.4 s, vote fully up at 19.5 s. Frame 1: the carriage moving, her clue
 "Look at the (6)", his phone (lock screen 7:44) in hand. Take 1 SCREEN: the train jolts to a halt, his phone slides off the
@@ -273,9 +285,23 @@ plug, so make it part of the gag or skip it) · 5 last frame, she is called away
 |---|---|---|---|
 | 1a | My lane neighbour texts me through the scoreboard. Part 1 (57) | `specs/stories/lane-ep1.json` | `Lane1` hook a |
 | 1b | I skipped my turn to swipe. She wrote YOUR TURN. Part 1 (55) | same | `Lane1` hook b |
+| 2a | My lane neighbour texts me. I finally answered. Part 2 (54) | `specs/stories/lane-ep2.json` | `Lane2` hook a |
+| 2b | She dared me on the scoreboard. My phone buzzed. Part 2 (55) | same | `Lane2` hook b |
 
 **What happened (part 1, nightly for 2026-11-08):** 32 s, vote up at 19.9 s. He swipes at the foul line, TURN SKIPPED; her box
 YOUR TURN; he types SORRY, pockets the phone; gutter; one pin (her box NICE!); her strike; BEAT ME?; his pocket buzzes; vote
 "what should I put in my name box?" A ONE SEC / B GAME ON (B wins). Blind check round 1 clarity 6 (swiping not visible,
 strips over the boards, keypad unreadable, vote ambiguous), round 2 clarity 7, hook a 6 / b 7, satisfaction 5 (the part's own
 payoff is thin: give part 2 a bigger one).
+
+**What happened (part 2, nightly for 2026-11-09):** lane-1-a never posted (the phone keyboard auto-capitalised "and" after
+"BEAT ME?", failing the caption check), so P1 = lane-1-b only: 143 at 3h, 53% skip. P2 opening rebuilt brighter with ONE
+strip, big boards (his box blinking cursor, hers BEAT ME?), his phone buzzing. 32 s. Take 1 ONE SEC: timer ring runs out
+(TIME!), her box OK, she turns back; rewind icon, pins fly back up. Take 2 GAME ON: phone off, spare (NICE!), her strike
+(YOUR MOVE), his first strike, air high-five over the ball return (OK. WOW., tied); her box LOSER / BUYS / FRIES?; vote
+"loser buys fries. what should I type?" A LET YOU WIN / B DEAL (fully up ~20.7 s); end card "lane 8 · part 3 · A or B".
+Blind check round 1: clarity 7, hook a 6 / b 7, satisfaction 6, want_next 7.
+**Part 3 is decided:** B DEAL wins (letting her win is patronising). A plays first: he types LET YOU WIN, rolls a deliberate
+gutter, her box flips to REALLY? and she bowls her own last ball with her back to him; rewind. B: DEAL, both bowl the last
+frame for real. **Kill check:** if P2's first publish (lane-2-a) is also on the floor at 24h, kill Lane 8.
+

@@ -18,6 +18,11 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
 - Narrated second person with the reference accounts' mechanics (Ten Swipes Left) stayed on the floor in both episodes
   (150-363 views, 39-48% skip). On our account, silent two-strangers stories beat it; killed 2026-11-08. `ours`
 - Mid-season recap strips lost viewers (Dryer P5: 61% skip); a season opener on a clear device held them. `ours`
+- Hypothesis from our stills (2026-11-09, untested): both breakouts opened on ONE strip, one big bright device and two
+  large faces; every floor opener since had a second strip/chip, a smaller device or a dark busy frame. Testing a
+  one-strip frame 1 on Across P5 and Lane P2. `ours`
+- Seasons decay part by part (Alley 12.5k -> 3k; Across 1.8k, 1.8k, 364, ~150): wind a season down once two parts in a
+  row sit on the floor, with a finale rather than a fade. `ours`
 - Something moving and a clear tension or question in frame 1; no slow fade-in, no logo, no setup. `general`
 
 ## Watch time

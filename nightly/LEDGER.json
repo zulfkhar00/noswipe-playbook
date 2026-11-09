@@ -496,6 +496,86 @@
     "want_next": 7,
     "rounds": 2
    }
+  },
+  {
+   "id": "across-5-a",
+   "day": "2026-11-09",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 5,
+   "hook": "a",
+   "caption": "A stranger on my train left me one last clue. Finale. Her seat was empty, but her page said where she would be at 6. I rode to the end of the line. Send this to someone who still believes in strangers. #sevenacross #trainstory #crossword #strangerstolovers #shortstory",
+   "video": "videos/across-5-a.mp4",
+   "composition": "Across5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 8,
+    "want_next": 6,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "lane-2-a",
+   "day": "2026-11-09",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Lane 8",
+   "episode": 2,
+   "hook": "a",
+   "caption": "My lane neighbour texts me. I finally answered. Part 2. I typed ONE SEC and lost my turn. Second take: phone off, game on, my first strike. Now she wants a bet. Comment A LET YOU WIN or B DEAL. #bowling #strangerstolovers #shortstory #romance #animation",
+   "video": "videos/lane-2-a.mp4",
+   "composition": "Lane2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "across-5-b",
+   "day": "2026-11-09",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Seven Across",
+   "episode": 5,
+   "hook": "b",
+   "caption": "Her seat was empty. Her clue said where she'd be. Finale. Seven across ends here: one clue, four plus four boxes, and a ride to the last stop. Send this to the friend who reads on the train. #sevenacross #commute #crossword #strangerstolovers #romance",
+   "video": "videos/across-5-b.mp4",
+   "composition": "Across5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 8,
+    "want_next": 6,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "lane-2-b",
+   "day": "2026-11-09",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Lane 8",
+   "episode": 2,
+   "hook": "b",
+   "caption": "She dared me on the scoreboard. My phone buzzed. Part 2. Lanes 7 and 8, two strangers bowling alone, talking only through the name boxes. One strike later she wants a bet. Comment A LET YOU WIN or B DEAL. #bowling #lovestory #strangers #shortfilm #animation",
+   "video": "videos/lane-2-b.mp4",
+   "composition": "Lane2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
   }
  ]
 }

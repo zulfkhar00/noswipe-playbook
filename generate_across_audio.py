@@ -403,6 +403,20 @@ def sfx(st: Stem, a: dict) -> None:
         st.add(t, ping(), 0.6)
 
 
+def swell(st: Stem, a: dict) -> None:
+    """Finale: a warm rising vibes + soft pad swell (a["swell"] = [from, to])."""
+    lo, hi = a["swell"]
+    n = int((hi - lo) * RATE)
+    x = np.arange(n) / RATE
+    pad = np.zeros(n)
+    for m in (53, 60, 64, 69, 72):
+        pad += np.sin(2 * np.pi * midi(m) * x) + 0.4 * np.sin(2 * np.pi * midi(m) * 2 * x)
+    pad *= (x / (hi - lo)) ** 1.6 * (1 - np.clip((x - (hi - lo - 0.5)) / 0.5, 0, 1))
+    st.add(lo, pad * 0.05, 1.0)
+    for k, m in enumerate((60, 64, 67, 72, 76)):
+        st.add(lo + k * 0.3, vibes(m, 2.0), 0.2)
+
+
 def write(path: Path, x: np.ndarray, peak: float = 0.8) -> None:
     x = x * min(1.0, peak / max(1e-9, np.abs(x).max()))
     with wave.open(str(path), "wb") as w:
@@ -420,6 +434,8 @@ if __name__ == "__main__":
     room(r, a, dur)
     music(m, a, dur)
     sfx(s, a)
+    if "swell" in a:
+        swell(m, a)
     (ROOT / "public" / "audio").mkdir(parents=True, exist_ok=True)
     write(ROOT / f"public/audio/{ep}-room.wav", r.buf, 0.45)
     write(ROOT / f"public/audio/{ep}-music.wav", m.buf)
