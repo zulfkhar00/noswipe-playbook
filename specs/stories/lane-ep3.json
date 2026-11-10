@@ -1,0 +1,278 @@
+{
+ "id": "lane-ep3",
+ "season": "Lane 8",
+ "episode": 3,
+ "title": "Loser buys fries. Part 3",
+ "note": "Silent. Frame 1: ONE strip, two big boards (his cursor blinks, hers LOSER / BUYS FRIES?), two big figures. Take A LET U WIN (9 cells; vote text LET YOU WIN) fails: gutter, fake shrug, her REALLY?, she bowls alone; rewind. Take B DEAL: both bowl for real, she spares (141), he strikes after a wobbling last pin (143), I BUY., fries slid along the ball return, half slid back; her box types NAME? slowly, his still PLAYER 7. Vote A PLAYER 7 / B DAN. No NoSwipe mention.",
+ "duration": 32.4,
+ "hooks": {
+  "a": "A stranger on the next lane bet me fries.",
+  "b": "Loser buys fries, she typed. So I tried to lose."
+ },
+ "beats": {
+  "wipe1": 3.0,
+  "type1": 3.4,
+  "gutterShot": 5.2,
+  "gutterRel": 5.75,
+  "bay2": 6.6,
+  "herReally": 6.9,
+  "herTurn": 7.8,
+  "herShotA": 8.0,
+  "herRelA": 8.5,
+  "herHitA": 9.2,
+  "wipe2": 9.8,
+  "rewind": 10.5,
+  "wipe3": 11.5,
+  "type2": 11.8,
+  "fine": 12.6,
+  "herShotB": 13.6,
+  "herRelB": 14.1,
+  "herHitB": 14.7,
+  "bay3": 15.3,
+  "hisShot": 16.1,
+  "hisRel": 16.3,
+  "hisHit": 16.9,
+  "fall": 17.5,
+  "bay4": 18.9,
+  "iBuy": 19.5,
+  "fries": 20.2,
+  "slideIn": 20.25,
+  "take": 20.85,
+  "slideBack": 21.15,
+  "herTakes": 21.7,
+  "cliff": 21.9,
+  "name": 22.1,
+  "wipe4": 24.0,
+  "cardA": 24.85,
+  "cardB": 25.1,
+  "comment": 26.2,
+  "endcard": 29.6
+ },
+ "choices": {
+  "question": "she wants my real name. what should I type?",
+  "A": {
+   "l1": "PLAYER 7",
+   "l2": "stay a mystery"
+  },
+  "B": {
+   "l1": "DAN",
+   "l2": "my real name"
+  }
+ },
+ "strips": [
+  {
+   "text": "take A: LET YOU WIN",
+   "from": 3.15,
+   "to": 5.1,
+   "tag": true
+  },
+  {
+   "text": "I tried to lose. She noticed.",
+   "from": 6.7,
+   "to": 9.6
+  },
+  {
+   "text": "rewind.",
+   "from": 9.95,
+   "to": 11.4
+  },
+  {
+   "text": "take B: DEAL",
+   "from": 11.65,
+   "to": 13.3,
+   "tag": true
+  },
+  {
+   "text": "last frame. for real.",
+   "from": 13.3,
+   "to": 15.2
+  },
+  {
+   "text": "she's up 141 to 133. I need a strike.",
+   "from": 15.35,
+   "to": 16.9
+  },
+  {
+   "text": "she buys. I split them.",
+   "from": 20.35,
+   "to": 22.0,
+   "y": 1170
+  },
+  {
+   "text": "she wants my real name. what should I type?",
+   "from": 23.6,
+   "to": 29.6
+  },
+  {
+   "text": "comment A or B",
+   "from": 26.2,
+   "to": 29.6
+  }
+ ],
+ "audio": {
+  "bpm": 108,
+  "groove": [
+   [
+    3.0,
+    9.8
+   ],
+   [
+    11.5,
+    32.4
+   ]
+  ],
+  "musicDuck": [],
+  "swipeTicks": [],
+  "timerTicks": [],
+  "bonk": [],
+  "gutterThud": [
+   5.95
+  ],
+  "flipTicks": [
+   6.9,
+   6.94,
+   6.98,
+   7.02,
+   7.06,
+   7.1,
+   7.14,
+   10.5,
+   10.54,
+   10.58,
+   10.62,
+   10.66,
+   10.7,
+   10.74,
+   12.6,
+   12.66,
+   12.72,
+   12.78,
+   12.84,
+   14.75,
+   14.8,
+   14.85,
+   14.9,
+   17.5,
+   17.55,
+   17.6,
+   19.5,
+   19.56,
+   19.62,
+   19.68,
+   19.74,
+   19.8,
+   21.9,
+   21.95,
+   22.0,
+   22.05,
+   22.1,
+   22.1,
+   22.15,
+   22.2,
+   22.25,
+   22.36,
+   22.62,
+   22.88,
+   23.14
+  ],
+  "keypadBeeps": [
+   3.4,
+   3.51,
+   3.62,
+   3.73,
+   3.84,
+   3.95,
+   4.06,
+   4.17,
+   4.28,
+   11.8,
+   11.92,
+   12.04,
+   12.16
+  ],
+  "ballRoll": [
+   [
+    5.75,
+    6.6
+   ],
+   [
+    8.5,
+    9.2
+   ],
+   [
+    10.5,
+    11.4
+   ],
+   [
+    14.1,
+    14.7
+   ],
+   [
+    16.3,
+    16.9
+   ]
+  ],
+  "pinClack": [
+   9.2,
+   14.7,
+   16.9
+  ],
+  "pinWobble": [
+   [
+    14.8,
+    14.95
+   ],
+   [
+    17.0,
+    17.48
+   ]
+  ],
+  "pinFall": [
+   14.97,
+   17.5
+  ],
+  "scorePop": [
+   9.2,
+   14.7,
+   17.5
+  ],
+  "softClaps": [
+   19.2,
+   21.7
+  ],
+  "strikeCrash": [
+   9.2,
+   16.9
+  ],
+  "phoneBuzz": [],
+  "powerOff": [],
+  "slap": [],
+  "rewind": [
+   [
+    10.5,
+    11.4
+   ]
+  ],
+  "ballWipe": [
+   3.0,
+   9.8,
+   11.5,
+   24.0
+  ],
+  "cardPops": [
+   24.85,
+   25.1
+  ],
+  "stamps": [
+   3.2,
+   9.9,
+   11.6,
+   15.3,
+   24.7,
+   29.6
+  ],
+  "endChime": [
+   29.6
+  ]
+ }
+}

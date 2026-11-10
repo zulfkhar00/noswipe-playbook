@@ -1,0 +1,345 @@
+{
+ "id": "table-ep1",
+ "season": "Table Nine",
+ "episode": 1,
+ "title": "Still swiping? Part 1",
+ "note": "Silent. Frame 1 is fully composed with NO fade and ONE strip (the hook, 0-3.0, y=345): two large faces, both thumbs swiping (generic card glow only, no app UI), the big tent card centre. Her name is never shown this part. Her Sharpie '(still swiping?)' is already on the card in frame 1. Own payoff before the vote: she out-swipes him on the card ('since the bread'), both laugh, both phones go face down on the same beat (12.9). Then she asks '(why table 9?)'. Vote A I'M GREAT AT WEDDINGS / B I'M NOT. HENCE TABLE 9. Part 2 plays A first and it fails on HIM (brag, the dance floor finds him), lazy Susan spins backwards as the rewind; B is the planned winner (honest, makes her laugh). No NoSwipe mention. Safe zone: all text between y=270 and y=1250. Lazy Susan transition used twice (14.2, 19.8). Times in seconds.",
+ "duration": 32.0,
+ "hooks": {
+  "a": "The stranger beside me at this wedding swipes too.",
+  "b": "A stranger at the singles table rewrites my place card."
+ },
+ "beats": {
+  "frame1": 0.0,
+  "notice": 3.0,
+  "cardUp": 3.4,
+  "lookUp": 4.8,
+  "markerSlide": 6.0,
+  "uncap": 6.6,
+  "write1": 6.9,
+  "reads": 8.4,
+  "flipTent": 9.6,
+  "write2": 10.0,
+  "laugh": 11.9,
+  "phonesDown": 12.9,
+  "hush": 13.0,
+  "wipe1": 14.2,
+  "dessert": 14.6,
+  "write3": 15.2,
+  "slide": 17.2,
+  "gulp": 18.2,
+  "wipe2": 19.8,
+  "cardA": 20.3,
+  "cardB": 20.55,
+  "voteUp": 21.0,
+  "comment": 21.0,
+  "tap": 22.9,
+  "endcard": 27.7
+ },
+ "choices": {
+  "question": "why table nine? what should I write?",
+  "A": {
+   "l1": "I'M GREAT",
+   "l2": "AT WEDDINGS."
+  },
+  "B": {
+   "l1": "I'M NOT.",
+   "l2": "HENCE TABLE 9."
+  },
+  "winner": "B",
+  "why": "B is honest and funny, matches the account's dry tone and the shared laugh already earned; A is a brag, so part 2 can make it fail on him alone (the DJ finds him, the dance floor) without touching her.",
+  "part2": "A plays first, tagged take 1: I'M GREAT AT WEDDINGS. She raises one eyebrow, the DJ calls everyone to the floor, he loses to the dance floor; the lazy Susan spins backwards (rewind). Take 2: I'M NOT. HENCE TABLE 9. She laughs, phones stay face down, next vote about him."
+ },
+ "strips": [
+  {
+   "text": "she edited my place card.",
+   "from": 3.1,
+   "to": 5.2,
+   "y": 345
+  },
+  {
+   "text": "I could deny it.",
+   "from": 5.4,
+   "to": 7.0,
+   "y": 345
+  },
+  {
+   "text": "she turned the card over.",
+   "from": 8.6,
+   "to": 9.8,
+   "y": 345
+  },
+  {
+   "text": "phones down. both of us.",
+   "from": 12.8,
+   "to": 14.2,
+   "y": 345
+  },
+  {
+   "text": "dessert.",
+   "from": 14.4,
+   "to": 15.4,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "I have to answer this.",
+   "from": 18.0,
+   "to": 19.8,
+   "y": 345
+  },
+  {
+   "text": "why table nine? what should I write?",
+   "from": 20.3,
+   "to": 27.7,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 21.0,
+   "to": 27.7,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "front_printed": "OLLIE · TABLE 9",
+  "front_her": "(still swiping?)",
+  "front_his": "(since the salad.)",
+  "back_her_1": "(since the bread.)",
+  "back_her_2": "(why table 9?)"
+ },
+ "cast": {
+  "him": {
+   "name": "Ollie (shown only on his card)",
+   "look": "aubergine suit, terracotta tie loosened, messy dark hair, flushed ears, phone in his lap",
+   "acts": "thumb swipes, stops dead at the card, writes slowly, laughs with his eyes shut, gulps at the question",
+   "writes": "marker on the tent, short lowercase in parentheses"
+  },
+  "her": {
+   "name": "withheld until part 6",
+   "look": "sage-green dress, marigold earrings, low bun, phone in her lap",
+   "acts": "never looks up while she slides the marker, hides a smile, shoulders shake when she reads, laughs openly at the payoff",
+   "writes": "marker on the tent, lowercase in parentheses, always a dry aside"
+  },
+  "extras": "blurred cut-out guests on far planes only; no faces readable"
+ },
+ "look": {
+  "palette": {
+   "ivory": "#FBF5E9",
+   "eucalyptus": "#86A38C",
+   "terracotta": "#D9785B",
+   "marigold": "#F2B632",
+   "aubergine": "#2B1630",
+   "champagne": "#E9D9B0"
+  },
+  "fonts": {
+   "strips": "Nunito Sans 800",
+   "cards": "Gelasio italic bold (printed)",
+   "handwriting": "Permanent Marker",
+   "endcard": "Nunito Sans 800"
+  },
+  "style": "flat paper cut-out half-figures, big round heads, visible lids and brows for acting; ivory cloth plane, soft ink-tinted shadows, hard-offset shadow on the tent card",
+  "planes": [
+   "far: ballroom wall, string-light bokeh circles, soft arch window",
+   "mid: table, candle, lazy Susan disc, glasses, plates",
+   "near: blurred sprigs and a champagne flute at the frame edge"
+  ],
+  "camera": "slow push 1.00 to 1.03 in A; B is a tight card close-up with a light handheld wobble; C is a straight top-down vote board",
+  "transition": "lazy Susan spin: the centrepiece disc rotates fast with motion blur and wipes the old shot; backwards in part 2 as the rewind",
+  "layout": "frame 1: strip centre y=360 (290-430), faces y 470-840, tent card y 860-1150 (700 px wide), phones and thumbs y 1090-1240. Nothing outside y 270-1250."
+ },
+ "shots": [
+  {
+   "from": 0.0,
+   "to": 3.0,
+   "framing": "A",
+   "what": "frame 1, both thumbs swiping, tent card centre"
+  },
+  {
+   "from": 3.0,
+   "to": 3.4,
+   "framing": "A",
+   "what": "his thumb stops, eyes drop to the tent"
+  },
+  {
+   "from": 3.4,
+   "to": 4.8,
+   "framing": "B",
+   "what": "card close-up: OLLIE · TABLE 9, her (still swiping?)"
+  },
+  {
+   "from": 4.8,
+   "to": 6.6,
+   "framing": "A",
+   "what": "he looks at her, she stays on her phone, cheek lifts, marker slides over"
+  },
+  {
+   "from": 6.6,
+   "to": 8.4,
+   "framing": "B",
+   "what": "he writes (since the salad.) letter by letter"
+  },
+  {
+   "from": 8.4,
+   "to": 9.6,
+   "framing": "A",
+   "what": "she reads, shoulders shake"
+  },
+  {
+   "from": 9.6,
+   "to": 11.8,
+   "framing": "B",
+   "what": "she flips the tent, writes (since the bread.)"
+  },
+  {
+   "from": 11.8,
+   "to": 14.2,
+   "framing": "A",
+   "what": "he reads, both laugh, both phones face down on the same beat, quiet hold"
+  },
+  {
+   "from": 14.2,
+   "to": 15.2,
+   "framing": "A",
+   "what": "lazy Susan wipe, dessert plates on the cloth"
+  },
+  {
+   "from": 15.2,
+   "to": 17.2,
+   "framing": "B",
+   "what": "back of the tent: she writes (why table 9?)"
+  },
+  {
+   "from": 17.2,
+   "to": 19.8,
+   "framing": "A",
+   "what": "she slides the card over, he reads, gulps, thumb twitches toward the phone and stops"
+  },
+  {
+   "from": 19.8,
+   "to": 20.3,
+   "framing": "C",
+   "what": "lazy Susan wipe to the vote board"
+  },
+  {
+   "from": 20.3,
+   "to": 27.7,
+   "framing": "C",
+   "what": "two tent cards A and B pop up; pen hovers over the card, loop"
+  },
+  {
+   "from": 27.7,
+   "to": 32.0,
+   "framing": "C",
+   "what": "end card: table nine · part 2 · A or B"
+  }
+ ],
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0.0,
+    12.9
+   ],
+   [
+    14.2,
+    32.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    12.9,
+    14.2
+   ]
+  ],
+  "roomTone": [
+   [
+    0.0,
+    32.0
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4,
+   1.7,
+   2.0,
+   2.3,
+   2.6,
+   2.9,
+   3.3,
+   3.9,
+   4.5,
+   5.1,
+   5.7
+  ],
+  "markerSlide": [
+   6.0
+  ],
+  "capPop": [
+   6.6
+  ],
+  "scrawl": [
+   [
+    6.9,
+    8.2
+   ],
+   [
+    10.0,
+    11.7
+   ],
+   [
+    15.2,
+    16.8
+   ]
+  ],
+  "tentFlip": [
+   9.6
+  ],
+  "laughSting": [
+   11.9
+  ],
+  "phoneTap": [
+   12.9
+  ],
+  "forkTinks": [
+   1.2,
+   9.0,
+   16.5,
+   23.5
+  ],
+  "plateClink": [
+   14.6
+  ],
+  "gulp": [
+   18.2
+  ],
+  "slide": [
+   17.2
+  ],
+  "susanWhoosh": [
+   14.2,
+   19.8
+  ],
+  "cardPops": [
+   20.3,
+   20.55
+  ],
+  "stamps": [
+   3.1,
+   5.4,
+   8.6,
+   12.8,
+   14.4,
+   18.0,
+   20.3,
+   27.7
+  ],
+  "endChime": [
+   27.7
+  ]
+ }
+}

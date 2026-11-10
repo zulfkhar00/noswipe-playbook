@@ -15,6 +15,8 @@ import {SEAT14B_FPS, SEAT14B_FRAMES, Seat14B} from './safety/seat14b';
 import {GC3_FPS, GC3_FRAMES, GroupChat3} from './stories/groupchat/ep3';
 import {LANE1_FPS, LANE1_FRAMES, Lane1} from './stories/lane/ep1';
 import {LANE2_FPS, LANE2_FRAMES, Lane2} from './stories/lane/ep2';
+import {LANE3_FPS, LANE3_FRAMES, Lane3} from './stories/lane/ep3';
+import {TABLE1_FPS, TABLE1_FRAMES, Table1} from './stories/table/ep1';
 import {ACROSS1_FPS, ACROSS1_FRAMES, Across1} from './stories/across/ep1';
 import {ACROSS2_FPS, ACROSS2_FRAMES, Across2} from './stories/across/ep2';
 import {ACROSS3_FPS, ACROSS3_FRAMES, Across3} from './stories/across/ep3';
@@ -41,6 +43,8 @@ export const Root: React.FC = () => (
     <Composition id="Swipes2" component={Swipes2} durationInFrames={swipes2Frames('b')} fps={SWIPES2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} calculateMetadata={({props}) => ({durationInFrames: swipes2Frames(props.hook as 'a' | 'b')})} />
     <Composition id="Lane1" component={Lane1} durationInFrames={LANE1_FRAMES} fps={LANE1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Lane2" component={Lane2} durationInFrames={LANE2_FRAMES} fps={LANE2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Lane3" component={Lane3} durationInFrames={LANE3_FRAMES} fps={LANE3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Table1" component={Table1} durationInFrames={TABLE1_FRAMES} fps={TABLE1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across1" component={Across1} durationInFrames={ACROSS1_FRAMES} fps={ACROSS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across2" component={Across2} durationInFrames={ACROSS2_FRAMES} fps={ACROSS2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across3" component={Across3} durationInFrames={ACROSS3_FRAMES} fps={ACROSS3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />

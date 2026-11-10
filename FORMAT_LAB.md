@@ -28,10 +28,14 @@ Change one variable at a time within a format.
 | 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook a | My lane neighbour texts me through the scoreboard. | - | | | | | | | | **post failed** (keyboard auto-capitalised 'and' after 'BEAT ME?'); never published |
 | 2026-11-08 | IG @tinyloveshows | silent story (Seven Across) | P4 hook a (repeat body) | A stranger on my train left a clue. I missed it. | 159 (6h) | | 9 | ~32% | 0 | 0 | | 0.8% | floor; 52% skip |
 | 2026-11-08 | IG @tinyloveshows | silent story (Lane 8, new) | P1 hook b (repeat body) | I skipped my turn to swipe. She wrote YOUR TURN. | 143 (3h) | | 7 | ~22% | 0 | 0 | | 0 | floor (became first publish); 53% skip, worst yet; P2 decides |
-| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook a (FIRST, 12:30) | A stranger on my train left me one last clue. | | | | | | | | | planned: finale; one-strip bright frame 1 |
-| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook a | My lane neighbour texts me through the scoreboard. | | | | | | | | | planned: kill check for Lane 8 |
-| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook b (repeat body) | Her seat was empty. Her clue said where she'd be. | | | | | | | | | planned |
-| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook b (repeat body) | She dared me on the scoreboard. Then my phone buzzed. | | | | | | | | | planned |
+| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook a (FIRST, 12:30) | A stranger on my train left me one last clue. | 168 (6h) | | 6 | ~19% | 0 | 0 | | 0 | floor, 57% skip (worst); season over |
+| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook a | My lane neighbour texts me through the scoreboard. | 283 (6h) | | 11 | ~34% | 0 | 0 | | 0 | **continue**: 37% skip, best since Across P2; kill rule not fired |
+| 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook b (repeat body) | Her seat was empty. Her clue said where she'd be. | 233 (6h) | | 8 | ~25% | 0 | 0 | | 0 | floor, 53% skip |
+| 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook b (repeat body) | She dared me on the scoreboard. Then my phone buzzed. | 232 (3h) | | 8 | ~25% | 0 | 0 | | 0.5% | best repeat so far at 3h; 42% skip |
+| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine, new) | P1 hook a (FIRST, 12:30) | The stranger beside me at this wedding swipes too. | | | | | | | | | planned: apps-visible frame 1 (Alley pattern) |
+| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook a | A stranger on the next lane bet me fries. | | | | | | | | | planned: Lane wind-down check |
+| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine) | P1 hook b (repeat body) | A stranger at the singles table rewrites my place card. | | | | | | | | | planned |
+| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook b (repeat body) | Loser buys fries, she typed. So I tried to lose. | | | | | | | | | planned |
 
 ## Hook patterns (running record)
 
@@ -61,3 +65,9 @@ breakout is visible by 3h (430-644 views, ~30% skip). Retry of the reversal on 2
 breakouts (Across P1, P2) opened on ONE strip, a big bright window, two large faces and one big clean clue card; every floor
 opener since (Across P3, P4, Lane P1) had a second strip/chip, a smaller device or a dark busy frame. Tonight both new bodies
 open on one strip only. If either breaks out at 3h, promote "one strip, one big device, bright" to the playbook.
+
+**Update 2026-11-10:** the one-strip bright opener: Lane P2 improved (P1 53% skip -> P2 37%, 283 at 6h) but the Across finale
+did not (54-57% skip). A finale that leans on earlier parts loses cold viewers whatever the frame. Keep the one-strip opener
+and add: the hook must make sense with zero prior parts. Tonight's new season (Table Nine) puts the apps in frame 1 again
+(both strangers visibly swiping, like Alley P1's 12.5k). Read table-1-a at 3h: >430 views or <33% skip = the apps-visible
+opener is the lead pattern.

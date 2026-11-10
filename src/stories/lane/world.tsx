@@ -146,9 +146,9 @@ export const Ring: React.FC<{r: number; k: number; urgent?: number}> = ({r, k, u
 
 export type MonitorProps = {
   x: number; y: number; lane: number; cells: Cell[]; t: number; cellFlash?: number;
-  ring?: number | null; banner?: {text: string; age: number} | null; score: string; scorePop?: number; xMark?: number; shake?: number; dim?: boolean;
+  ring?: number | null; banner?: {text: string; age: number} | null; score: string; scorePop?: number; xMark?: number; shake?: number; dim?: boolean; sub?: {text: string; color?: string; size?: number};
 };
-export const Monitor: React.FC<MonitorProps> = ({x, y, lane, cells, t, cellFlash = 0, ring = null, banner = null, score, scorePop = 0, xMark = 0, shake = 0}) => {
+export const Monitor: React.FC<MonitorProps> = ({x, y, lane, cells, t, cellFlash = 0, ring = null, banner = null, score, scorePop = 0, xMark = 0, shake = 0, sub}) => {
   const W = 520, H = 300;
   const sx = shake * Math.sin(t * 90) * 7;
   return <g transform={`translate(${x - W / 2 + sx} ${y})`}>
@@ -172,7 +172,7 @@ export const Monitor: React.FC<MonitorProps> = ({x, y, lane, cells, t, cellFlash
     <g transform="translate(0 168)">
       {ring !== null
         ? <g><g transform="translate(86 52)"><Ring r={36} k={ring} urgent={ring < 0.3 ? 1 : 0} /></g><text x={140} y={64} fontFamily={BAR} fontWeight={800} fontSize={38} letterSpacing={2} fill={C.cream}>{ring < 0.12 ? 'TIME!' : 'TIME LEFT'}</text></g>
-        : <text x={36} y={68} fontFamily={BAR} fontWeight={800} fontSize={40} letterSpacing={2} fill="#8A84B8">FRAME 1</text>}
+        : <text x={36} y={68} fontFamily={BAR} fontWeight={800} fontSize={sub?.size ?? 40} letterSpacing={2} fill={sub?.color ?? '#8A84B8'}>{sub?.text ?? 'FRAME 1'}</text>}
       <rect x={W - 160} y={4} width={124} height={92} rx={10} fill="#1E1A3C" stroke={C.lemon} strokeWidth={4} />
       <text x={W - 98} y={30} textAnchor="middle" fontFamily={BAR} fontWeight={800} fontSize={22} letterSpacing={2} fill="#8A84B8">SCORE</text>
       <g transform={`translate(${W - 98} 74) scale(${1 + scorePop * 0.5}) translate(${-(W - 98)} -74)`}>

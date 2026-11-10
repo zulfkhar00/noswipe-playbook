@@ -287,6 +287,8 @@ plug, so make it part of the gag or skip it) · 5 last frame, she is called away
 | 1b | I skipped my turn to swipe. She wrote YOUR TURN. Part 1 (55) | same | `Lane1` hook b |
 | 2a | My lane neighbour texts me. I finally answered. Part 2 (54) | `specs/stories/lane-ep2.json` | `Lane2` hook a |
 | 2b | She dared me on the scoreboard. My phone buzzed. Part 2 (55) | same | `Lane2` hook b |
+| 3a | A stranger on the next lane bet me fries. Part 3 | `specs/stories/lane-ep3.json` | `Lane3` hook a |
+| 3b | Loser buys fries, she typed. So I tried to lose. Part 3 | same | `Lane3` hook b |
 
 **What happened (part 1, nightly for 2026-11-08):** 32 s, vote up at 19.9 s. He swipes at the foul line, TURN SKIPPED; her box
 YOUR TURN; he types SORRY, pockets the phone; gutter; one pin (her box NICE!); her strike; BEAT ME?; his pocket buzzes; vote
@@ -305,3 +307,58 @@ Blind check round 1: clarity 7, hook a 6 / b 7, satisfaction 6, want_next 7.
 gutter, her box flips to REALLY? and she bowls her own last ball with her back to him; rewind. B: DEAL, both bowl the last
 frame for real. **Kill check:** if P2's first publish (lane-2-a) is also on the floor at 24h, kill Lane 8.
 
+**What happened (part 3, nightly for 2026-11-10):** lane-2-a 283 at 6h, 37% skip (best since Across P2) -> continue. 32.4 s.
+Take A LET U WIN: deliberate gutter, her box REALLY?, she bowls alone; ball rewinds. Take B DEAL / FINE.: her SPARE! (141-133),
+his wobbling-pin STRIKE! wins 143-141, her box I BUY., fries slide along the ball return and he slides half back. Cliff: her
+box types NAME?; vote (up ~25.1 s) "she wants my real name. what should I type?" A PLAYER 7 (stay a mystery) / B DAN.
+Blind check 2 rounds: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 6 (flags: take A's failure hard to read in stills,
+fries small). **Part 4 lean:** B DAN (the series is about trading the screen name for a real one); if lane-3-a sits on the
+floor at 24h (<270, >45% skip), make part 4 the finale.
+
+
+## Season 8 · Table Nine (silent wedding-reception romance, place-card tents)
+
+**Logline:** Two strangers are seated side by side at a wedding's singles table, both swiping alone under the cloth. The folded
+place-card tent between them becomes their only conversation: she edits his card, he writes back, and the card passes across
+the table.
+
+**Why this season:** replaces Seven Across (ended 2026-11-09). Keeps what works: silent, two strangers, a written device, a
+plain first-person hook, and the apps as the visible situation in frame 1 (as in the 12.5k Alley P1). Frame 1 follows the
+one-strip hypothesis: ONE strip, one big bright device (the tent card), two large faces, both phones visibly swiping (generic
+card glow only). Picked pitch 1 of 5 on 2026-11-10 (others: Red Light chalk crossing, Fifty Whites paint chips, Plot 14
+garden stakes, Highlights library book; keep them for later seasons). No named couple, no real venue, no app UI; she writes
+her own lines and is never the punchline.
+
+| | Look | How they write |
+|---|---|---|
+| Him (Ollie, shown only on his card) | aubergine suit, terracotta tie, messy dark hair, flushed ears | marker on the tent, lowercase in parentheses |
+| Her (name withheld until part 6) | sage-green dress, marigold earrings, low bun | marker on the tent, lowercase in parentheses, dry asides |
+
+**Device:** one folded double-sided place-card tent (printed name and table, Gelasio) and one marker slid across the cloth.
+Max ~18 characters per line. Votes offer two answers about him; the wrong one embarrasses him, never her.
+
+**Look and sound:** ivory reception in flat paper cut-outs. Ivory #FBF5E9, eucalyptus #86A38C, terracotta #D9785B,
+marigold #F2B632, aubergine ink #2B1630, champagne #E9D9B0. Nunito Sans 800 strips and end card, Gelasio for the printed
+card, Permanent Marker for handwriting. Big-headed half-figures. Far plane string-light bokeh and an arch window, mid plane
+table and lazy Susan, near plane blurred sprigs. **Signature transition:** the lazy Susan spin (backwards for a rewind).
+Pizzicato-strings waltz in 3/4 at 96 bpm that drops out for the shared moment, fork-on-glass tinks, room tone, marker
+squeaks, phone taps. Code: `src/stories/table/{world,ep1}.tsx`; audio: `python3 generate_table_audio.py table-ep1`.
+
+**Arc (6 parts):**
+1. **Still swiping?** She edits his card; he writes back; she out-swipes him ("since the bread"); both phones go face down on
+   the same beat. Vote "why table nine? what should I write?" A I'M GREAT AT WEDDINGS / B I'M NOT. HENCE TABLE 9 (B wins).
+2. **Why table 9.** A plays first and fails on him (the DJ calls the floor, he loses to it); lazy Susan spins backwards;
+   B carries on, she laughs. Next vote again about him.
+3. **The speech.** The best man's endless toast; cards trade under it. Make the honest answer A this time.
+4. **The seating chart.** Table 9 gets moved to the back; a guest's phone may chime NoSwipe (mention 1, only if it is part
+   of the gag: Across' bystander mention was cut as a plug).
+5. **Last song.** The floor lights up; phones in his jacket; she is called to the family photo.
+6. **One card.** Finale, no phones: names for the first time, one tent reads "OLLIE · NOOR".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "table nine · part 2 · A or B", never "tomorrow".
+Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger beside me at this wedding swipes too. Part 1 | `specs/stories/table-ep1.json` | `Table1` hook a |
+| 1b | A singles table stranger rewrote my place card. Part 1 | same | `Table1` hook b |
