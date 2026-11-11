@@ -23,6 +23,9 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
   one-strip frame 1 on Across P5 and Lane P2. `ours`
 - Seasons decay part by part (Alley 12.5k -> 3k; Across 1.8k, 1.8k, 364, ~150): wind a season down once two parts in a
   row sit on the floor, with a finale rather than a fade. `ours`
+- **Lead opener (2026-11-11):** the apps visible in frame 1 (two strangers, phones lit mid-swipe, generic glow only), ONE
+  strip, one big bright device. Table Nine P1: 1451 and 858 at 6h (29-32% skip) on both hooks, including the first repeat
+  body off the floor; same as Alley P1's 12.5k. The earlier "repeats always floor" read was the opener, not the order. `ours`
 - Something moving and a clear tension or question in frame 1; no slow fade-in, no logo, no setup. `general`
 
 ## Watch time

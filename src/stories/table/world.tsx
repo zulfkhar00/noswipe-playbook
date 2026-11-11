@@ -341,8 +341,8 @@ export const tipOf = (l: Line): [number, number] => {
   return [l.x0 + w + 6, l.y - l.size * 0.28 + Math.sin(n * 2.1) * 3];
 };
 
-export const TentCard: React.FC<{face: 'front' | 'back'; lines: Line[]; scaleX: number}> = ({face, lines, scaleX}) => {
-  const ps = fitSize('OLLIE · TABLE 9', PRINT, 64, 600);
+export const TentCard: React.FC<{face: 'front' | 'back'; lines: Line[]; scaleX: number; printed?: string}> = ({face, lines, scaleX, printed = 'OLLIE · TABLE 9'}) => {
+  const ps = fitSize(printed, PRINT, 64, 600);
   return <g transform={`scale(${scaleX} 1)`}>
     {/* hard offset shadow */}
     <rect x={-CARD_W / 2 + 16} y={-CARD_H / 2 + 18} width={CARD_W} height={CARD_H} rx={18} fill={C.aubergine} opacity={0.88} />
@@ -351,7 +351,7 @@ export const TentCard: React.FC<{face: 'front' | 'back'; lines: Line[]; scaleX: 
     <path d={`M ${-CARD_W / 2 + 3} ${-CARD_H / 2 + 38} L ${CARD_W / 2 - 3} ${-CARD_H / 2 + 38}`} stroke="#CDB985" strokeWidth={4} />
     <rect x={-CARD_W / 2 + 28} y={CARD_H / 2 - 30} width={CARD_W - 56} height={4} fill={C.eucalyptus} opacity={0.5} />
     {face === 'front'
-      ? <text x={0} y={-48} textAnchor="middle" fontFamily={GEL} fontStyle="italic" fontWeight={700} fontSize={ps} fill={C.aubergine} letterSpacing={2}>OLLIE · TABLE 9</text>
+      ? <text x={0} y={-48} textAnchor="middle" fontFamily={GEL} fontStyle="italic" fontWeight={700} fontSize={ps} fill={C.aubergine} letterSpacing={2}>{printed}</text>
       : <text x={0} y={-70} textAnchor="middle" fontFamily={GEL} fontStyle="italic" fontWeight={700} fontSize={44} fill={C.aubergine} letterSpacing={3}>TABLE 9 · RESERVED</text>}
     {lines.map((l, i) => {
       const n = Math.round(l.text.length * clamp(l.prog));
@@ -437,7 +437,7 @@ export const VoteBoard: React.FC<{t: number}> = ({t}) => <g>
   </g>
 </g>;
 
-export const EndCard: React.FC<{t: number; a: number}> = ({t, a}) => {
+export const EndCard: React.FC<{t: number; a: number; part?: number}> = ({t, a, part = 2}) => {
   const pop = a < 0.35 ? 1 + 0.12 * (1 - a / 0.35) : 1;
   const mk = (txt: string, y: number, size: number, fill: string, fg: string, wd: number) => <g transform={`translate(540 ${y}) scale(${pop}) translate(-540 ${-y})`}>
     <rect x={540 - wd / 2 + 12} y={y - size * 0.8 + 14} width={wd} height={size * 1.5} rx={36} fill={C.aubergine} opacity={0.88} />
@@ -451,7 +451,7 @@ export const EndCard: React.FC<{t: number; a: number}> = ({t, a}) => {
     <rect x={-100} y={-100} width={1280} height={2100} fill={C.ivory} opacity={0.82} />
     <Bokeh t={t} n={16} y0={280} y1={1250} seed={9} />
     {mk('table nine', 720, 150, C.cloth, C.aubergine, 900)}
-    {mk('part 2', 940, 110, C.eucalyptus, C.aubergine, 520)}
+    {mk(`part ${part}`, 940, 110, C.eucalyptus, C.aubergine, 520)}
     {mk('A or B', 1160, 150, C.marigold, C.aubergine, 620)}
   </g>;
 };

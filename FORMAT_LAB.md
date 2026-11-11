@@ -32,15 +32,20 @@ Change one variable at a time within a format.
 | 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook a | My lane neighbour texts me through the scoreboard. | 283 (6h) | | 11 | ~34% | 0 | 0 | | 0 | **continue**: 37% skip, best since Across P2; kill rule not fired |
 | 2026-11-09 | IG @tinyloveshows | silent story (Seven Across) | P5 FINALE hook b (repeat body) | Her seat was empty. Her clue said where she'd be. | 233 (6h) | | 8 | ~25% | 0 | 0 | | 0 | floor, 53% skip |
 | 2026-11-09 | IG @tinyloveshows | silent story (Lane 8) | P2 hook b (repeat body) | She dared me on the scoreboard. Then my phone buzzed. | 232 (3h) | | 8 | ~25% | 0 | 0 | | 0.5% | best repeat so far at 3h; 42% skip |
-| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine, new) | P1 hook a (FIRST, 12:30) | The stranger beside me at this wedding swipes too. | | | | | | | | | planned: apps-visible frame 1 (Alley pattern) |
-| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook a | A stranger on the next lane bet me fries. | | | | | | | | | planned: Lane wind-down check |
-| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine) | P1 hook b (repeat body) | A stranger at the singles table rewrites my place card. | | | | | | | | | planned |
-| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook b (repeat body) | Loser buys fries, she typed. So I tried to lose. | | | | | | | | | planned |
+| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine, new) | P1 hook a (FIRST, 12:30) | The stranger beside me at this wedding swipes too. | 1451 (6h) | | 14 | ~44% | 0 | 0.1% | | 0.1% | **double down**: 32% skip, breakout (1105 at 3h) |
+| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook a | A stranger on the next lane bet me fries. | 248 (6h) | | 10 | ~31% | 0 | 0 | | 0 | floor, 45% skip -> **finale** P4 |
+| 2026-11-10 | IG @tinyloveshows | silent story (Table Nine) | P1 hook b (repeat body) | A stranger at the singles table rewrites my place card. | 858 (6h) | | 14 | ~44% | 0 | 0 | | 0 | **first repeat body off the floor**; 29% skip |
+| 2026-11-10 | IG @tinyloveshows | silent story (Lane 8) | P3 hook b (repeat body) | Loser buys fries, she typed. So I tried to lose. | 294 (3h) | | 14 | ~43% | 0 | 0 | | 0.4% | floor-ish, 32% skip |
+| 2026-11-11 | IG @tinyloveshows | silent story (Table Nine) | P2 hook a (FIRST, 12:00) | the stranger beside me at this wedding asked why I'm single. | | | | | | | | | planned: same apps-visible frame (his phone lit) |
+| 2026-11-11 | IG @tinyloveshows | silent story (Lane 8) | P4 FINALE hook a | my lane neighbour asked my real name on the scoreboard. | | | | | | | | | planned: finale, no vote, phone lit in frame 1 |
+| 2026-11-11 | IG @tinyloveshows | silent story (Table Nine) | P2 hook b (repeat body) | singles table. she asked why I'm on it. I lied first. | | | | | | | | | planned: confession pattern on a strong body |
+| 2026-11-11 | IG @tinyloveshows | silent story (Table Nine) | P2 hook c (repeat body) | a stranger at this wedding caught me swiping. then she wrote this. | | | | | | | | | planned: apps-in-the-hook wording |
 
 ## Hook patterns (running record)
 
 | Pattern | Example | Result so far |
 |---|---|---|
+| Apps visible in frame 1 (strangers swiping, one strip, one big device) | Table P1a/b (2026-11-10) | **won twice**: 1451 and 858 at 6h, 29-32% skip, incl. the first repeat body ever off the floor. Lead pattern. |
 | Plain first-person situation, apps-related | "My neighbour swipes at 2 AM too." (Alley P1) | 12.5k, the best post |
 | Recap strips first (mid-season part) | Dryer P5 | 61% skip, 9 s average watch: weak |
 | Situation of the device (stranger + device) | Seven Across P1a "A stranger on my train leaves me crossword clues." | **won**: 1.7k views, 28% skip, 20 s watch (posted first, n=1) |
@@ -71,3 +76,7 @@ did not (54-57% skip). A finale that leans on earlier parts loses cold viewers w
 and add: the hook must make sense with zero prior parts. Tonight's new season (Table Nine) puts the apps in frame 1 again
 (both strangers visibly swiping, like Alley P1's 12.5k). Read table-1-a at 3h: >430 views or <33% skip = the apps-visible
 opener is the lead pattern.
+
+**Update 2026-11-11:** the apps-visible opener won: table-1-a 1451 at 6h (32% skip) and table-1-b, a REPEAT body, 858 at 6h
+(29% skip). So repeats are not doomed: the floor was the body/opener, not the publish order. Both Table P2 and the Lane finale
+open on his phone lit mid-swipe. Table P2 gets three hooks on one body (a situation / b confession / c "caught me swiping").

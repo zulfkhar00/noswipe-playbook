@@ -141,6 +141,44 @@ def stamp():
     return np.sin(2 * np.pi * 110 * t) * env(t, 0.002, 0.05) * 0.6 + fft_lp(noise(0.2), 900) * env(t, 0.001, 0.02) * 0.35
 
 
+def buzz():
+    t = tt(0.3)
+    return np.sin(2 * np.pi * 95 * t) * np.sign(np.sin(2 * np.pi * 28 * t)) * 0.5 * np.minimum(1, (0.3 - t) / 0.05) * 0.8
+
+
+def dj_stab():
+    t = tt(0.7)
+    s = sum(np.sign(np.sin(2 * np.pi * midi(m) * t)) * 0.12 for m in (60, 64, 67, 72))
+    return fft_lp(s, 2500) * env(t, 0.003, 0.25)
+
+
+def spot_sweep(d=1.2):
+    t = tt(d)
+    f = 300 + 900 * np.clip(t / d, 0, 1)
+    return np.sin(2 * np.pi * np.cumsum(f) / RATE) * np.sin(np.pi * np.clip(t / d, 0, 1)) * 0.25
+
+
+def cheer(d=1.2):
+    t = tt(d)
+    return fft_bp(noise(d), 500, 3000) * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.7 * 0.9
+
+
+def conga_hit(low=False):
+    t = tt(0.18)
+    f = 150 if low else 260
+    return np.sin(2 * np.pi * (f + 60 * np.exp(-t * 30)) * t) * env(t, 0.001, 0.05) * 0.9 + fft_bp(noise(0.18), 800, 3500) * env(t, 0.0005, 0.01) * 0.3
+
+
+def glass_tink():
+    t = tt(0.9)
+    return (np.sin(2 * np.pi * 3300 * t) + 0.6 * np.sin(2 * np.pi * 5100 * t)) * env(t, 0.0003, 0.28) * 0.3
+
+
+def mic_thump():
+    t = tt(0.15)
+    return np.sin(2 * np.pi * 90 * t) * env(t, 0.001, 0.04) * 0.7 + fft_lp(noise(0.15), 600) * env(t, 0.001, 0.02) * 0.5
+
+
 # --- stems -------------------------------------------------------------------------------------
 def room(st: Stem, dur):
     n = len(st.buf)
@@ -190,6 +228,13 @@ def sfx(st: Stem, a):
     for t in a["susanWhoosh"]: st.add(t - 0.1, whoosh(0.8), 0.7)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.5)
+    for t in a.get("phoneBuzz", []): st.add(t, buzz(), 0.8)
+    for t in a.get("djStab", []): st.add(t, dj_stab(), 0.7)
+    for t in a.get("spotSweep", []): st.add(t, spot_sweep(), 0.6)
+    for t in a.get("cheer", []): st.add(t, cheer(), 0.5)
+    for i, t in enumerate(a.get("congaHits", [])): st.add(t, conga_hit(i % 3 == 0), 0.7)
+    for t in a.get("glassTink", []): st.add(t, glass_tink(), 0.8)
+    for t in a.get("mic", []): st.add(t, mic_thump(), 0.7)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)
 

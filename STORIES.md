@@ -315,6 +315,14 @@ Blind check 2 rounds: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 6 (fl
 fries small). **Part 4 lean:** B DAN (the series is about trading the screen name for a real one); if lane-3-a sits on the
 floor at 24h (<270, >45% skip), make part 4 the finale.
 
+| 4a FINALE | She asked my real name on the bowling scoreboard. Finale (56) | `specs/stories/lane-ep4.json` | `Lane4` hook a |
+
+**What happened (part 4 FINALE, nightly for 2026-11-11):** lane-3-a floored (248 at 6h, 45% skip) -> finale. 30 s, no vote.
+Frame 1: his phone lit mid-swipe, boards NAME? / PLAYER 7. He pockets it, deletes PLAYER 7, types DAN; her board JUNE; LAST
+GAME, house lights dim; her strike, his gutter (NICE TRY / NICE, DAN); both leave their phones in the shoe cubbies; fries on
+one bench; boards merge DAN · JUNE; "send this to someone you'd bowl badly with"; end card "lane 8 · the end". No NoSwipe
+mention (no gag-shaped place for it). Blind check 1 round: clarity 7, hook 7, satisfaction 7, want_next 6. **Season over.**
+
 
 ## Season 8 · Table Nine (silent wedding-reception romance, place-card tents)
 
@@ -362,3 +370,18 @@ Wind-down rule: two parts in a row on the floor -> finale, not a fade.
 |---|---|---|---|
 | 1a | The stranger beside me at this wedding swipes too. Part 1 | `specs/stories/table-ep1.json` | `Table1` hook a |
 | 1b | A singles table stranger rewrote my place card. Part 1 | same | `Table1` hook b |
+| 2a | Wedding stranger asked why I'm single. Part 2 (45) | `specs/stories/table-ep2.json` | `Table2` hook a |
+| 2b | Singles table. She asked why I'm on it. I lied first (52) | same | `Table2` hook b |
+| 2c | A wedding stranger caught me swiping. Then she wrote this (57) | same | `Table2` hook c |
+
+**What happened (part 1, posted 2026-11-10):** breakout on both hooks: table-1-a 1451 at 6h (32% skip), table-1-b (repeat)
+858 at 6h (29% skip). Vote B (I'M NOT. HENCE TABLE 9) carried as planned.
+
+**What happened (part 2, nightly for 2026-11-11):** 32 s. Frame 1: his phone lit mid-swipe, tent card "(why table 9?)"; he
+flips the phone face down. Take 1 "(i'm great at weddings.)": spotlight, DJ sign SINGLES TO THE FLOOR!, conga line carries him
+off while she eats cake ("I lost to the dance floor."). Lazy Susan spins back. Take 2 "(i'm not. hence table 9.)": she laughs,
+"(same. good table.)", ignores her buzzing phone, stands her card next to his. Best man taps his glass; her card "(cake? sneak
+out?)". Vote (up 21.8 s) "she wants to sneak out mid-speech. what do I write?" A (YES. NOW.) / B (AFTER THE SPEECH.).
+Blind check 1 round: clarity 7, hook a 5 / b 6 / c 5, satisfaction 7, want_next 7 (fixed after: "two tents" strip, cake vs
+sneak-out mismatch). **Part 3 (The speech):** A is the planned winner (honest, bold); B plays first and fails on him: the
+speech never ends, he falls asleep on the cake.

@@ -1,0 +1,242 @@
+{
+ "id": "table-ep2",
+ "season": "Table Nine",
+ "episode": 2,
+ "title": "Why table 9. Part 2",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345): two large faces, his phone lit mid-swipe (generic card glow), big tent card with her '(why table 9?)'. He flips the phone at ~1.8 and takes the marker. Take 1 (I'M GREAT AT WEDDINGS) fails on him: spotlight, DJ sign SINGLES TO THE FLOOR!, hands on his shoulders, conga line; she calmly eats cake. Lazy Susan spins backwards (rewind) to take 2 (I'M NOT. HENCE TABLE 9.): she laughs, replies '(same. good table.)', her phone buzzes face down and she does not look, she stands her own card next to his (two tents). Best man taps his glass; she writes '(cake? now?)' = sneak out mid-speech; he gulps. Vote A (yes. now.) / B (after the speech.). No NoSwipe mention. Text only between y=270 and y=1250.",
+ "duration": 32.0,
+ "hooks": {
+  "a": "the stranger beside me at this wedding asked why I'm single.",
+  "b": "singles table. she asked why I'm on it. I lied first.",
+  "c": "a stranger at this wedding caught me swiping. then she wrote this."
+ },
+ "beats": {
+  "phoneDown": 1.7,
+  "uncap": 3.4,
+  "write1": 3.6,
+  "slide1": 5.0,
+  "eyebrow": 5.7,
+  "floor": 6.0,
+  "spot": 7.3,
+  "grab": 7.7,
+  "wipe1": 10.2,
+  "write2": 11.6,
+  "laugh": 13.45,
+  "flip": 14.6,
+  "write3": 15.0,
+  "buzz": 16.1,
+  "tents": 16.4,
+  "tink": 17.6,
+  "write4": 18.8,
+  "gulp": 19.85,
+  "wipe2": 20.5,
+  "cardA": 21.1,
+  "cardB": 21.35,
+  "voteUp": 21.8,
+  "comment": 21.1,
+  "tap": 23.2,
+  "endcard": 27.5
+ },
+ "choices": {
+  "question": "she wants to sneak out mid-speech. what do I write?",
+  "A": {
+   "l1": "(YES.",
+   "l2": "NOW.)"
+  },
+  "B": {
+   "l1": "(AFTER THE",
+   "l2": "SPEECH.)"
+  },
+  "why": "A is the reckless romantic move, B the polite one; both leave her wish intact and keep it about him. Part 3 (the speech) plays the winner under the best man's endless toast."
+ },
+ "strips": [
+  {
+   "text": "take 1.",
+   "from": 3.2,
+   "to": 4.6,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "I lost to the dance floor.",
+   "from": 7.4,
+   "to": 10.0,
+   "y": 345
+  },
+  {
+   "text": "take 2.",
+   "from": 10.9,
+   "to": 12.1,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "her card. next to mine.",
+   "from": 16.3,
+   "to": 17.55,
+   "y": 345
+  },
+  {
+   "text": "the best man taps his glass.",
+   "from": 17.65,
+   "to": 18.6,
+   "y": 345
+  },
+  {
+   "text": "she wants to sneak out mid-speech. what do I write?",
+   "from": 21.1,
+   "to": 27.5,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 21.1,
+   "to": 27.5,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "front_printed": "OLLIE · TABLE 9",
+  "her_printed": "TABLE 9 · GUEST",
+  "back_her_q": "(why table 9?)",
+  "his_1": "(i'm great at weddings.)",
+  "his_2": "(i'm not. hence table 9.)",
+  "her_reply": "(same. good table.)",
+  "her_cake": "(cake? sneak out?)",
+  "dj_sign": "SINGLES TO THE FLOOR!"
+ },
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0,
+    6.0
+   ],
+   [
+    10.2,
+    32.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    16.0,
+    17.4
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    32.0
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "markerSlide": [
+   5.0,
+   13.05
+  ],
+  "capPop": [
+   3.4
+  ],
+  "scrawl": [
+   [
+    3.6,
+    4.9
+   ],
+   [
+    11.6,
+    13.0
+   ],
+   [
+    15.0,
+    15.8
+   ],
+   [
+    18.8,
+    19.7
+   ]
+  ],
+  "tentFlip": [
+   14.62,
+   16.55
+  ],
+  "laughSting": [
+   13.45
+  ],
+  "phoneTap": [
+   1.78
+  ],
+  "phoneBuzz": [
+   16.1,
+   16.45
+  ],
+  "forkTinks": [
+   1.2,
+   9.0,
+   12.0,
+   19.0
+  ],
+  "plateClink": [
+   8.4
+  ],
+  "gulp": [
+   19.85
+  ],
+  "slide": [],
+  "susanWhoosh": [
+   10.2,
+   20.5
+  ],
+  "cardPops": [
+   21.1,
+   21.35
+  ],
+  "stamps": [
+   3.2,
+   7.4,
+   10.9,
+   16.3,
+   17.65,
+   21.1,
+   27.5
+  ],
+  "endChime": [
+   27.5
+  ],
+  "djStab": [
+   6.05
+  ],
+  "spotSweep": [
+   6.3
+  ],
+  "cheer": [
+   7.7
+  ],
+  "congaHits": [
+   7.0,
+   7.375,
+   7.75,
+   8.125,
+   8.5,
+   8.875,
+   9.25,
+   9.625,
+   10.0,
+   10.0
+  ],
+  "glassTink": [
+   17.6,
+   17.9,
+   18.1
+  ],
+  "mic": [
+   18.2
+  ]
+ }
+}

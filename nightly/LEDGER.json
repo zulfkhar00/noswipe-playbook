@@ -656,6 +656,86 @@
     "want_next": 6,
     "rounds": 2
    }
+  },
+  {
+   "id": "table-2-a",
+   "day": "2026-11-11",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 2,
+   "hook": "a",
+   "caption": "Wedding stranger asked why I'm single. Part 2. Take one, I bragged and lost to the dance floor. Take two, I told the truth and she laughed. Now the speech starts and she wants cake. Comment A or B. #wedding #lovestory #strangers #shortfilm #animation",
+   "video": "videos/table-2-a.mp4",
+   "composition": "Table2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "lane-4-a",
+   "day": "2026-11-11",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Lane 8",
+   "episode": 4,
+   "hook": "a",
+   "caption": "She asked my real name on the bowling scoreboard. Finale. Lane 8 ends here. Two strangers on lanes 7 and 8 who only talked through the name boxes. Send this to someone you would bowl badly with. #bowling #lovestory #strangerstolovers #shortfilm #animation",
+   "video": "videos/lane-4-a.mp4",
+   "composition": "Lane4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "table-2-b",
+   "day": "2026-11-11",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 2,
+   "hook": "b",
+   "caption": "Singles table. She asked why I'm on it. I lied first. Part 2. Two strangers at a wedding talk only through his place card. The lie went badly, the truth went better. Sneak out for cake, A or B? #weddingseason #romance #meetcute #shortstory #animation",
+   "video": "videos/table-2-b.mp4",
+   "composition": "Table2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "table-2-c",
+   "day": "2026-11-11",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 2,
+   "hook": "c",
+   "caption": "A wedding stranger caught me swiping. Then she wrote this. Part 2. One place card passed across the singles table. Why table nine? I answered twice. Comment A or B for what I write next. #singlelife #strangerstolovers #wedding #shortfilm #animation",
+   "video": "videos/table-2-c.mp4",
+   "composition": "Table2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
   }
  ]
 }
