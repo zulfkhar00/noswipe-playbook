@@ -385,3 +385,73 @@ out?)". Vote (up 21.8 s) "she wants to sneak out mid-speech. what do I write?" A
 Blind check 1 round: clarity 7, hook a 5 / b 6 / c 5, satisfaction 7, want_next 7 (fixed after: "two tents" strip, cake vs
 sneak-out mismatch). **Part 3 (The speech):** A is the planned winner (honest, bold); B plays first and fails on him: the
 speech never ends, he falls asleep on the cake.
+
+| 3a | The stranger at this wedding wants to sneak out. Part 3 (55) | `specs/stories/table-ep3.json` | `Table3` hook a |
+| 3b | Mid-speech, a wedding stranger caught me swiping. Part 3 (56) | same | `Table3` hook b |
+
+**What happened (part 3, nightly for 2026-11-12):** Table P2 broke out on all three hooks (2092 / 1538 / 1156). 33 s. Frame 1:
+his phone lit mid-swipe, card "(cake? now?)", best man at the mic behind. Take 1 "(after the speech.)": the speech never ends
+(cue-card stack, baby slideshow, spinning clock), "the cake rolled past.", empty stand, "I waited. the cake left." Lazy Susan
+rewind, "rewind. take 2." "(yes. now.)": they crouch-walk out, two forks, terrace, one slice, napkin "(best speech ever.)", his
+pocket buzzes and he ignores it. Cliff: the aunt's new card "TABLE 2 · moved for family photos". Vote (up 23.7 s) "they're moving
+her to table 2. what do I write?" A (TAKE ME WITH YOU.) / B (I'LL SWAP OUR CARDS.). Blind check 2 rounds: clarity 8, hook a 8 /
+b 7, satisfaction 7, want_next 8 (I rewrote hook b and added the cart and rewind strips). Open: the forks shot has no strip; his
+buzzing pocket glow reads as a ring box. **Part 4 (seating chart):** pick the winner from comments; if none, B (swapping the
+cards is the bolder gag), A plays first and fails on him.
+
+## Season 9 · Fifty Whites (silent paint-aisle romance, paint-chip handoffs)
+
+**Logline:** Two strangers each need a white for their own flat and both keep swiping between the chips. She starts
+answering him with paint-chip names and a pencil on a chain.
+
+**Why this season:** the apps-visible opener won 7 of 7 posts (Table Nine P1-P2, the Lane 8 finale), so frame 1 keeps ONE
+strip, two big faces, a phone lit mid-swipe and one big bright device. Here the device is also the swipe-fatigue metaphor:
+fifty near-identical whites. Runs in parallel with Table Nine in a different setting, palette, type, cast, transition and
+sound. Picked pitch 1 of 5 on 2026-11-12 (others: Pie for Two, a holiday-night diner, kept for Thanksgiving week; Red Light
+chalk wall; Highlights library book; Plot 14 garden stakes).
+
+| | Look | How they talk |
+|---|---|---|
+| Me (him, unnamed) | charcoal hoodie, tidy dark hair, flushed ears, phone | hands chips across; his reflex is to swipe chips off the fan like cards |
+| Her (name withheld until part 6) | oatmeal knit, claw clip, paint-flecked cuffs | hands chips; writes on the back of a chip with the pencil on the chain, lowercase, dry |
+
+**Device:** a fan-deck of paint chips with invented generic names (FOG, OAT MILK, SAME, EGGSHELL, POPPY, ALMOST TUESDAY).
+A chip handed across is the line; the back of a chip takes two short pencil lines (max ~18 characters each). Votes offer
+two chips about him; the wrong one embarrasses him, never her.
+
+**Look and sound:** flat paper cut-outs in a bright hardware aisle. Navy #1B2A4A (pegboard, ink), cobalt #2F5BFF, poppy
+#FF4F8B, sunflower #FFC400, mint #5EE0B5; the whites #FAFAF7, #F3EBDD, #EADFC8, #E4E8EA; his hoodie #3A3D45, her knit
+#CDBB9C (neutral clothes so the chips are the only colour). Big-headed half-figures with a white die-cut paper edge. Far
+plane pegboard and chip racks, mid the fan and chip tray, near the rack edge, pencil on a chain, a blurred paint can. Fonts:
+Inter 800 (chip names, vote cards, strips), Anton (end card), Courier Prime (stamp). **Signature transition:** the
+fan-deck (chips fan out from a corner pivot to reveal the next shot; a rewind snaps the fan shut). Sound: fluorescent hum,
+chip riffle on every handoff, intercom ding, paint-shaker rattle; easy bossa at 100 bpm (nylon pluck, shaker, soft bass)
+that drops out for the shared moment. Code: `src/stories/whites/{world,ep1}.tsx`; audio: `python3 generate_whites_audio.py
+whites-ep1`.
+
+**Arc (6 parts):**
+1. **Which white.** Both swipe in the aisle; she hands him SAME; shared laugh; phones down; she asks which white he is.
+   Vote A EGGSHELL / B POPPY (B planned to win).
+2. **Poppy.** A plays first and fails on him (he hands EGGSHELL and blends into the beige test wall while she walks past;
+   the fan snaps shut as the rewind); B: POPPY, she laughs. Next vote about him.
+3. **Mixing.** Ten minutes at the paint shaker pins them together. Make the honest answer A this time.
+4. **Test patch.** They paint a test square each. A bystander's phone may chime NoSwipe (mention 1, only as part of the gag).
+5. **Closing time.** The intercom calls her; she leaves her chip on the shelf.
+6. **One chip.** Finale, no phones: names for the first time, two chips taped together read "POPPY + SAME".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "fifty whites · part 2 · A or B", never
+"tomorrow". Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger in the paint aisle swipes too. Part 1 (51) | `specs/stories/whites-ep1.json` | `Whites1` hook a |
+| 1b | A stranger caught me swiping in the paint aisle. Part 1 (56) | same | `Whites1` hook b |
+
+**What happened (part 1, nightly for 2026-11-12):** 32 s, vote up 21.8 s. Frame 1: both phones lit mid-swipe with a profile
+card (generic portrait), the fan of whites between them, his guilty side-eye, her smirk. He flicks three chips off the fan like
+swipes ("I swipe left on paint now."); she hands him SAME ("she handed me this."), tilts her own phone ("she swipes too."),
+shared laugh, "phones down. both of us."; she writes "which white / are you?" on the back; EGGSHELL vs POPPY ("one of these
+isn't white.", "she's waiting."); fan-deck wipe to the vote A EGGSHELL (the safe one) / B POPPY (not a white). Blind check 2
+rounds: clarity 6 -> 7 (fixed: phones didn't read as dating, SAME unexplained, blur block, icon), hook a 5 / b 7, satisfaction
+5, want_next 7. **Part 2 lean:** B POPPY wins; A plays first (he hands EGGSHELL and blends into the beige test wall). Give part
+2 a bigger payoff of its own (satisfaction 5 here). If whites-1-a sits on the floor at 6h (<300, >40% skip), revisit.

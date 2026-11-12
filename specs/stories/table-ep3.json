@@ -1,0 +1,282 @@
+{
+ "id": "table-ep3",
+ "season": "Table Nine",
+ "episode": 3,
+ "title": "The speech. Part 3",
+ "note": "Silent. Frame 1 fully composed: ONE strip (hook), two large faces, his phone lit mid-swipe, tent card with her '(cake? now?)', best man small at a mic with glass raised. He flips the phone at ~1.8. Take 1 (after the speech) fails on him: endless speech (cue-card stack, baby slideshow, clock, melting candles), cake cart wheeled away, empty stand, her shrug. Lazy Susan back, take 2 (yes. now.): they duck, crouch-walk out, forks, terrace, one slice, napkin (best speech ever.), his pocket buzzes unread. Cliff: new tent card TABLE 2 at her seat (moved for family photos), aunt with clipboard leaving. Vote A (take me with you) / B (I'll swap our cards). No NoSwipe mention.",
+ "duration": 32.9,
+ "hooks": {
+  "a": "the stranger beside me at this wedding wants to sneak out.",
+  "b": "mid-speech, the stranger beside me caught me swiping."
+ },
+ "beats": {
+  "phoneDown": 1.7,
+  "uncap": 3.4,
+  "write1": 3.6,
+  "slide1": 5.0,
+  "wait": 5.4,
+  "cartIn": 7.0,
+  "cartOut": 8.8,
+  "stand": 8.8,
+  "shrug": 9.7,
+  "wipe1": 11.0,
+  "write2": 12.3,
+  "duck": 14.25,
+  "sneak": 14.7,
+  "cake": 16.2,
+  "door": 17.1,
+  "terrace": 17.3,
+  "buzz": 18.4,
+  "napkin": 18.0,
+  "cliff": 19.9,
+  "wipe2": 22.4,
+  "cardA": 23.0,
+  "cardB": 23.25,
+  "voteUp": 23.7,
+  "comment": 23.0,
+  "tap": 26.0,
+  "endcard": 28.9
+ },
+ "choices": {
+  "question": "they're moving her to table 2. what do I write?",
+  "A": {
+   "l1": "(TAKE ME",
+   "l2": "WITH YOU.)"
+  },
+  "B": {
+   "l1": "(I'LL SWAP",
+   "l2": "OUR CARDS.)"
+  },
+  "why": "Both about him; neither mocks her. Part 4 (the seating chart) plays the winner."
+ },
+ "strips": [
+  {
+   "text": "take 1.",
+   "from": 3.2,
+   "to": 4.6,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "the speech is still going.",
+   "from": 5.55,
+   "to": 7.7,
+   "y": 345
+  },
+  {
+   "text": "the cake rolled past.",
+   "from": 7.95,
+   "to": 9.7,
+   "y": 345
+  },
+  {
+   "text": "I waited. the cake left.",
+   "from": 9.85,
+   "to": 10.9,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 11.4,
+   "to": 12.6,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "we crouch-walked out.",
+   "from": 14.8,
+   "to": 16.1,
+   "y": 345
+  },
+  {
+   "text": "we missed the whole speech.",
+   "from": 17.8,
+   "to": 19.8,
+   "y": 345
+  },
+  {
+   "text": "they're moving her to table 2.",
+   "from": 20.35,
+   "to": 22.35,
+   "y": 345
+  },
+  {
+   "text": "they're moving her to table 2. what do I write?",
+   "from": 23.0,
+   "to": 28.9,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.0,
+   "to": 28.9,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "her_printed": "TABLE 9 · GUEST",
+  "back_her_q": "(cake? now?)",
+  "his_1": "(after the speech.)",
+  "his_2": "(yes. now.)",
+  "napkin": "(best speech ever.)",
+  "new_print": "TABLE 2",
+  "new_small": "moved for family photos"
+ },
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0,
+    10.8
+   ],
+   [
+    11.0,
+    17.1
+   ],
+   [
+    19.9,
+    32.9
+   ]
+  ],
+  "musicDuck": [
+   [
+    17.1,
+    19.9
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    32.9
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "markerSlide": [
+   5.0,
+   13.55
+  ],
+  "capPop": [
+   3.4
+  ],
+  "scrawl": [
+   [
+    3.6,
+    4.9
+   ],
+   [
+    12.3,
+    13.5
+   ],
+   [
+    18.0,
+    19.2
+   ]
+  ],
+  "tentFlip": [],
+  "laughSting": [],
+  "phoneTap": [
+   1.78
+  ],
+  "phoneBuzz": [
+   18.4,
+   18.75,
+   19.1
+  ],
+  "forkTinks": [
+   1.2,
+   16.5,
+   16.65,
+   18.9
+  ],
+  "plateClink": [
+   17.9
+  ],
+  "gulp": [
+   21.0
+  ],
+  "slide": [],
+  "susanWhoosh": [
+   11.0,
+   22.4
+  ],
+  "cardPops": [
+   23.0,
+   23.25
+  ],
+  "stamps": [
+   3.2,
+   5.55,
+   9.85,
+   11.4,
+   14.8,
+   17.8,
+   20.35,
+   23.0,
+   28.9
+  ],
+  "endChime": [
+   28.9
+  ],
+  "clockTicks": [
+   5.4,
+   5.65,
+   5.9,
+   6.15,
+   6.4,
+   6.65,
+   6.9,
+   7.15,
+   7.4,
+   7.65,
+   7.9,
+   8.15,
+   8.4,
+   8.65,
+   8.9,
+   9.15
+  ],
+  "projClicks": [
+   5.4,
+   6.3,
+   7.2,
+   8.1,
+   9.0,
+   9.9
+  ],
+  "wheels": [
+   [
+    7.0,
+    8.8
+   ]
+  ],
+  "doorClick": [
+   17.1
+  ],
+  "chairScoot": [
+   19.95
+  ],
+  "cliffSting": [
+   19.95
+  ],
+  "cardFlips": [
+   5.7,
+   6.25,
+   6.8,
+   7.35,
+   7.9,
+   8.45,
+   9.0,
+   9.55,
+   10.1
+  ],
+  "glassTink": [],
+  "mic": []
+ }
+}

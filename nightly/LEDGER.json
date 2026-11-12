@@ -736,6 +736,86 @@
     "want_next": 7,
     "rounds": 1
    }
+  },
+  {
+   "id": "table-3-a",
+   "day": "2026-11-12",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 3,
+   "hook": "a",
+   "caption": "The stranger at this wedding wants to sneak out. Part 3. Her place card said cake, now, right in the middle of the speech. Take one, I waited and the cake left. Take two, we ran. Now they're moving her to table 2. Comment A or B. #wedding #lovestory #strangers #shortfilm #animation",
+   "video": "videos/table-3-a.mp4",
+   "composition": "Table3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 8,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "whites-1-a",
+   "day": "2026-11-12",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 1,
+   "hook": "a",
+   "caption": "The stranger in the paint aisle swipes too. Part 1. Fifty whites, two strangers, both swiping. Then she handed me a chip called SAME. Now she wants to know which white I am. Comment A or B. #strangerstolovers #romance #singlelife #shortstory #animation",
+   "video": "videos/whites-1-a.mp4",
+   "composition": "Whites1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "table-3-b",
+   "day": "2026-11-12",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 3,
+   "hook": "b",
+   "caption": "Mid-speech, a wedding stranger caught me swiping. Part 3. She wrote cake, now on my place card. Waiting politely cost me the cake, so we rewound and sneaked out. Then the seating chart changed. Comment A or B. #weddingseason #meetcute #romance #shortstory #animation",
+   "video": "videos/table-3-b.mp4",
+   "composition": "Table3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "whites-1-b",
+   "day": "2026-11-12",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 1,
+   "hook": "b",
+   "caption": "A stranger caught me swiping in the paint aisle. Part 1. I swiped left on three paint chips by reflex. She handed me one called SAME and showed me her phone. Which white am I, A or B? #datingapps #meetcute #lovestory #shortfilm #animation",
+   "video": "videos/whites-1-b.mp4",
+   "composition": "Whites1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
   }
  ]
 }

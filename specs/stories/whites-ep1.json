@@ -1,0 +1,67 @@
+{
+ "id": "whites-ep1",
+ "season": "Fifty Whites",
+ "episode": 1,
+ "title": "Which white. Part 1",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345): two large faces, his phone lit mid-swipe (generic card glow, no UI), her phone lit too, and a huge fan of eight near-identical whites as the biggest, brightest object. He swipes three chips off the fan with his thumb like cards (2.2, 2.7, 3.2). She plucks one chip printed SAME (5.4) and slides it to him (6.4). She tilts her own lit phone toward him (8.0), they laugh (8.8, the part's own payoff) and both lay phones face down (9.7). She writes on the back of SAME with a pencil on a chain: 'which white / are you?' (11.3-13.0) and slides it back (13.2). He pulls EGGSHELL (15.0) and POPPY (15.6) from the fan, thumb twitching over them (16.4, 16.8), holds both out (17.8) while she waits palm up. Intercom ding 19.6, fan-deck wipe 20.5, vote board up by 21.8. No NoSwipe mention. No takes in part 1 (part 2 plays A first). Text only between y=270 and y=1250. Chip names are invented generic words.",
+ "duration": 32.0,
+ "hooks": {
+  "a": "the stranger in the paint aisle swipes too.",
+  "b": "a stranger caught me swiping in the paint aisle."
+ },
+ "beats": {
+  "glance": 1.7, "flick1": 2.2, "flick2": 2.7, "flick3": 3.2, "eyebrow": 3.8, "pluck": 5.4, "handoff": 6.4,
+  "read": 7.4, "screenShow": 8.0, "laugh": 8.8, "phonesDown": 9.7, "pencil": 11.0, "write": 11.3, "slide2": 13.2,
+  "gulp": 14.2, "fanPush": 14.8, "pullA": 15.0, "pullB": 15.6, "twitch1": 16.4, "twitch2": 16.8, "hold": 17.8,
+  "ding": 19.6, "sweat": 20.0, "fanWipe": 20.5, "cardA": 21.1, "cardB": 21.35, "voteUp": 21.8, "comment": 21.1,
+  "endcard": 27.5
+ },
+ "choices": {
+  "question": "she asked which white I am. what do I hand her?",
+  "A": {"l1": "EGGSHELL", "l2": "(the safe one)"},
+  "B": {"l1": "POPPY", "l2": "(not a white)"},
+  "why": "A is the safe, hide-in-the-crowd answer and B the bold, honest one; both keep it about him. Part 2 plays the winner after the loser: A first (he hands EGGSHELL and blends into the beige test wall while she walks past, fan snaps shut as the rewind), then B."
+ },
+ "strips": [
+  {"text": "the stranger in the paint aisle swipes too.", "from": 0.0, "to": 3.0, "y": 345, "hook": true},
+  {"text": "I swipe left on paint now.", "from": 3.3, "to": 5.3, "y": 345},
+  {"text": "she handed me this.", "from": 6.4, "to": 8.0, "y": 345},
+  {"text": "she swipes too.", "from": 8.0, "to": 9.6, "y": 345},
+  {"text": "phones down. both of us.", "from": 9.7, "to": 11.0, "y": 345},
+  {"text": "then she wrote on the back.", "from": 13.3, "to": 14.9, "y": 345},
+  {"text": "one of these isn't white.", "from": 15.6, "to": 17.9, "y": 345},
+  {"text": "she's waiting.", "from": 18.0, "to": 20.4, "y": 345},
+  {"text": "she asked which white I am. what do I hand her?", "from": 21.1, "to": 27.5, "y": 345},
+  {"text": "comment A or B", "from": 21.1, "to": 27.5, "y": 1170}
+ ],
+ "cards": {
+  "fan_names_small": ["FOG", "OAT MILK", "PORRIDGE", "ALMOST TUESDAY", "TIRED CREAM", "QUIET", "EGGSHELL", "SAME"],
+  "same_front": "SAME",
+  "same_back_l1": "which white",
+  "same_back_l2": "are you?",
+  "chip_A": "EGGSHELL",
+  "chip_B": "POPPY",
+  "end_card": "fifty whites · part 2 · A or B"
+ },
+ "audio": {
+  "bpm": 100, "meter": "4/4",
+  "groove": [[0, 6.2], [10.0, 32.0]],
+  "musicDuck": [[18.0, 19.6]],
+  "roomTone": [[0, 32.0]],
+  "swipeTicks": [0.2, 0.5, 0.8, 1.1, 1.4],
+  "chipFlicks": [2.2, 2.7, 3.2],
+  "chipRiffle": [5.4, 15.0, 15.6],
+  "chipSlide": [6.4, 13.2],
+  "laughSting": [8.8],
+  "phoneTap": [9.7, 9.9],
+  "pencilSwing": [11.0],
+  "scrawl": [[11.3, 13.0]],
+  "gulp": [14.2],
+  "thumbTicks": [16.4, 16.8],
+  "intercomDing": [19.6],
+  "fanWhoosh": [20.5],
+  "cardPops": [21.1, 21.35],
+  "stamps": [3.3, 6.4, 9.7, 13.3, 15.6, 18.0, 21.1, 27.5],
+  "endChime": [27.5]
+ }
+}

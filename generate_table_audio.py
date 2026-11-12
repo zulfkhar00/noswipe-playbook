@@ -179,6 +179,28 @@ def mic_thump():
     return np.sin(2 * np.pi * 90 * t) * env(t, 0.001, 0.04) * 0.7 + fft_lp(noise(0.15), 600) * env(t, 0.001, 0.02) * 0.5
 
 
+def sting_down():
+    s = np.zeros(int(RATE * 1.0))
+    for k, m in enumerate([79, 74, 70, 64]):
+        b = pluck(m, 0.45); a = int(k * 0.11 * RATE); s[a:a + len(b)] += b[:len(s) - a]
+    return s
+
+
+def clock_tick():
+    t = tt(0.04)
+    return np.sin(2 * np.pi * 1700 * t) * env(t, 0.0004, 0.008) * 0.5
+
+
+def door_click():
+    t = tt(0.12)
+    return np.sin(2 * np.pi * 240 * t) * env(t, 0.001, 0.02) * 0.8 + fft_bp(noise(0.12), 1500, 5000) * env(t, 0.0005, 0.006) * 0.5
+
+
+def card_flip():
+    t = tt(0.09)
+    return fft_bp(noise(0.09), 2000, 7000) * env(t, 0.001, 0.02) * 0.8
+
+
 # --- stems -------------------------------------------------------------------------------------
 def room(st: Stem, dur):
     n = len(st.buf)
@@ -235,6 +257,15 @@ def sfx(st: Stem, a):
     for i, t in enumerate(a.get("congaHits", [])): st.add(t, conga_hit(i % 3 == 0), 0.7)
     for t in a.get("glassTink", []): st.add(t, glass_tink(), 0.8)
     for t in a.get("mic", []): st.add(t, mic_thump(), 0.7)
+    for t in a.get("clockTicks", []): st.add(t, clock_tick(), 0.6)
+    for t in a.get("projClicks", []): st.add(t, phone_tap(), 0.6)
+    for lo, hi in a.get("wheels", []):
+        for k in range(int((hi - lo) / 0.22)): st.add(lo + k * 0.22, conga_hit(k % 2 == 0), 0.18)
+        st.add(lo, slide(hi - lo), 0.25)
+    for t in a.get("doorClick", []): st.add(t, door_click(), 0.8)
+    for t in a.get("chairScoot", []): st.add(t, slide(0.35), 0.5)
+    for t in a.get("cliffSting", []): st.add(t, sting_down(), 0.5)
+    for t in a.get("cardFlips", []): st.add(t, card_flip(), 0.5)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)
 

@@ -23,6 +23,9 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
   one-strip frame 1 on Across P5 and Lane P2. `ours`
 - Seasons decay part by part (Alley 12.5k -> 3k; Across 1.8k, 1.8k, 364, ~150): wind a season down once two parts in a
   row sit on the floor, with a finale rather than a fade. `ours`
+- **Lead opener confirmed (2026-11-12):** 7 of 7 posts with the apps visible in frame 1 broke out (1.1k-2.4k), including
+  every repeat body and the Lane 8 finale, whose parts 1-3 had floored with other openers. Hook lines that name the swiping
+  ("caught me swiping") had the lowest skip (25% at 3h). `ours`
 - **Lead opener (2026-11-11):** the apps visible in frame 1 (two strangers, phones lit mid-swipe, generic glow only), ONE
   strip, one big bright device. Table Nine P1: 1451 and 858 at 6h (29-32% skip) on both hooks, including the first repeat
   body off the floor; same as Alley P1's 12.5k. The earlier "repeats always floor" read was the opener, not the order. `ours`
