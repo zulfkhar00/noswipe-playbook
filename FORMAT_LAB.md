@@ -40,17 +40,21 @@ Change one variable at a time within a format.
 | 2026-11-11 | IG @tinyloveshows | silent story (Lane 8) | P4 FINALE hook a | my lane neighbour asked my real name on the scoreboard. | 1352 (6h) | | 15 | ~50% | 0.2% | 0.1% | | 0 | **finale broke out** (P1-P3 floor): 30% skip; season over |
 | 2026-11-11 | IG @tinyloveshows | silent story (Table Nine) | P2 hook b (repeat body) | singles table. she asked why I'm on it. I lied first. | 1538 (6h) | | 14 | ~44% | 0 | 0.1% | | 0.1% | breakout; 31% skip |
 | 2026-11-11 | IG @tinyloveshows | silent story (Table Nine) | P2 hook c (repeat body) | a stranger at this wedding caught me swiping. then she wrote this. | 1156 (3h) | | 15 | ~47% | 0 | 0.1% | | 0 | breakout; **25% skip, best 3h ever** |
-| 2026-11-12 | IG @tinyloveshows | silent story (Table Nine) | P3 hook a (FIRST, 12:00) | the stranger beside me at this wedding wants to sneak out. | | | | | | | | | planned: phone-lit frame 1 |
-| 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites, new) | P1 hook a (FIRST, 14:30) | the stranger in the paint aisle swipes too. | | | | | | | | | planned: new world, same opener (test) |
-| 2026-11-12 | IG @tinyloveshows | silent story (Table Nine) | P3 hook b (repeat body) | mid-speech, the stranger beside me caught me swiping. | | | | | | | | | planned: "caught me swiping" retest |
-| 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites) | P1 hook b (repeat body) | a stranger caught me swiping in the paint aisle. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-12 | IG @tinyloveshows | silent story (Table Nine) | P3 hook a (FIRST, 12:00) | the stranger beside me at this wedding wants to sneak out. | 1525 (12h) | | 14 | ~42% | 0 | 0.1% | | 0 | breakout, 33.5% skip -> continue |
+| 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites, new) | P1 hook a (FIRST, 14:30) | the stranger in the paint aisle swipes too. | 2195 (6h) | | 14 | ~44% | 0 | 0.1% | | 0.1% | **double down**: 23.4% skip, best ever; new world breaks out with the opener |
+| 2026-11-12 | IG @tinyloveshows | silent story (Table Nine) | P3 hook b (repeat body) | mid-speech, the stranger beside me caught me swiping. | 345 (6h) | | 11 | ~33% | 0 | 0.3% | | 0 | **floor**, 42% skip: same body as 3a, so the line lost (time clause first) |
+| 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites) | P1 hook b (repeat body) | a stranger caught me swiping in the paint aisle. | 1613 (3h) | | 13 | ~41% | 0 | 0 | | 0 | breakout, 25.5% skip, 1 follow |
+| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook a (FIRST, 12:00) | the stranger beside me at this wedding just got moved away. | | | | | | | | | planned: who+where first |
+| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook a (14:30) | the stranger in the paint aisle asked which white I am. | | | | | | | | | planned |
+| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook b (repeat body) | they moved the girl I like to table 2. I had a plan. | | | | | | | | | planned: names the stakes (blind hook 8 vs a 5) |
+| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook b (repeat body) | a stranger caught me swiping. then she asked which white I am. | | | | | | | | | planned: "caught me swiping" again |
 
 ## Hook patterns (running record)
 
 | Pattern | Example | Result so far |
 |---|---|---|
 | Apps visible in frame 1 (strangers swiping, one strip, one big device) | Table P1a/b (2026-11-10), Table P2a/b/c + Lane P4 (2026-11-11) | **won 7 of 7**: 1.1k-2.4k, 25-36% skip, incl. every repeat body and a finale whose season had floored. Lead pattern. |
-| Hook line names the swiping ("caught me swiping") | Table P2c (2026-11-11) | 25% skip at 3h, the lowest yet (repeat body, posted last); retest on a new body |
+| Hook line names the swiping ("caught me swiping") | Table P2c (2026-11-11), Whites P1b, Table P3b (2026-11-12) | Whites P1b 1.6k / 25.5% skip (works); Table P3b "mid-speech, ... caught me swiping" floored (345, 42%): a time clause before who+where loses |
 | Plain first-person situation, apps-related | "My neighbour swipes at 2 AM too." (Alley P1) | 12.5k, the best post |
 | Recap strips first (mid-season part) | Dryer P5 | 61% skip, 9 s average watch: weak |
 | Situation of the device (stranger + device) | Seven Across P1a "A stranger on my train leaves me crossword clues." | **won**: 1.7k views, 28% skip, 20 s watch (posted first, n=1) |
@@ -90,3 +94,8 @@ open on his phone lit mid-swipe. Table P2 gets three hooks on one body (a situat
 finale is the cleanest test: same season and look whose parts 1-3 floored (143-358) broke out once frame 1 showed his phone lit
 mid-swipe. The opener, not the setting, is the lever. Tonight: Table P3 (two hooks) and a new season's part 1 with the same
 opener, to test that a brand-new world breaks out with it too.
+
+**Update 2026-11-13:** apps-visible opener 10 of 11. Fifty Whites P1, a brand-new world, broke out on both hooks (2195 at 6h,
+23.4% skip, the best skip ever; 1613 at 3h). The one floor (table-3-b, 345) shared its body with a 1.5k post, so the hook LINE
+did it: "mid-speech, ..." opens on a time clause. Hook lines start with who + where ("the stranger beside me at this
+wedding...", "a stranger ... in the paint aisle"). Tonight Table P4b tests naming the stakes ("the girl I like").

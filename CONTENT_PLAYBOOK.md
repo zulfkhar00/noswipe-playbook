@@ -29,6 +29,10 @@ knowledge, not yet tested by us. Promote a claim when evidence comes in; drop it
 - **Lead opener (2026-11-11):** the apps visible in frame 1 (two strangers, phones lit mid-swipe, generic glow only), ONE
   strip, one big bright device. Table Nine P1: 1451 and 858 at 6h (29-32% skip) on both hooks, including the first repeat
   body off the floor; same as Alley P1's 12.5k. The earlier "repeats always floor" read was the opener, not the order. `ours`
+- **Hook line order (2026-11-13):** start with who + where ("the stranger beside me at this wedding...", "a stranger ... in the
+  paint aisle"). Same body, different line: "the stranger at this wedding wants to sneak out" 1525 vs "mid-speech, a wedding
+  stranger caught me swiping" 345 (42% skip). A brand-new world with the apps-visible opener broke out at once (Fifty Whites
+  P1: 2195 at 6h, 23% skip, our best skip). `ours`
 - Something moving and a clear tension or question in frame 1; no slow fade-in, no logo, no setup. `general`
 
 ## Watch time

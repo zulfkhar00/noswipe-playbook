@@ -816,6 +816,86 @@
     "want_next": 7,
     "rounds": 2
    }
+  },
+  {
+   "id": "table-4-a",
+   "day": "2026-11-13",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 4,
+   "hook": "a",
+   "caption": "They moved the stranger beside me at this wedding. Part 4. Two strangers at the singles table, talking only through one place card. Then her aunt moved her to table 2. Take one went badly. Take two, one swapped card. Comment A or B. #wedding #lovestory #strangers #shortfilm #animation",
+   "video": "videos/table-4-a.mp4",
+   "composition": "Table4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "whites-2-a",
+   "day": "2026-11-13",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 2,
+   "hook": "a",
+   "caption": "Paint aisle stranger asked which white I am. Part 2. Take one, I handed her eggshell and turned into the wall. Take two, poppy. Then she showed me her paint can. Comment A or B. #strangerstolovers #romance #meetcute #shortstory #animation",
+   "video": "videos/whites-2-a.mp4",
+   "composition": "Whites2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 8,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "table-4-b",
+   "day": "2026-11-13",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 4,
+   "hook": "b",
+   "caption": "Wedding stranger got moved to table 2. I had a plan. Part 4. One place card between two strangers at a wedding. Her aunt moved her away, so I tried two plans. Now it's the last song and I can't dance. A or B? #weddingseason #romance #singlelife #shortstory #animation",
+   "video": "videos/table-4-b.mp4",
+   "composition": "Table4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 8,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "whites-2-b",
+   "day": "2026-11-13",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 2,
+   "hook": "b",
+   "caption": "She caught me swiping, then asked which white I am. Part 2. Eggshell made me vanish into the wall, so we rewound. Poppy made her laugh. Now ten minutes on one bench. What should I do, A or B? #datingapps #lovestory #meetcute #shortfilm #animation",
+   "video": "videos/whites-2-b.mp4",
+   "composition": "Whites2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 8,
+    "rounds": 3
+   }
   }
  ]
 }

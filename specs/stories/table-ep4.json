@@ -1,0 +1,244 @@
+{
+ "id": "table-ep4",
+ "season": "Table Nine",
+ "episode": 4,
+ "title": "The seating chart. Part 4",
+ "note": "Silent. Frame 1 fully composed: ONE strip (hook), two large faces, his phone lit mid-swipe, big tent card TABLE 2 / moved for family photos with arrow at her seat, aunt with clipboard small behind. He flips the phone at ~1.8 and double-takes at the card. Take 1 (take me with you) fails on him: he drags his chair to table 2 and ends up squeezed into the family photo, flash. Lazy Susan back, take 2 (i'll swap our cards.): tiptoe swap of COUSIN RAJ's card with his own, Raj ends up happy at table 9, he sits beside her, the aunt double-takes and shrugs, she writes (smooth.). Cliff: DJ booth LAST SONG, she slides (dance?), he freezes. Vote A (I CAN'T. TEACH ME?) / B (I'LL WATCH YOUR BAG.). No NoSwipe mention.",
+ "duration": 33.6,
+ "hooks": {
+  "a": "the stranger beside me at this wedding just got moved away.",
+  "b": "they moved the girl I like to table 2. I had a plan."
+ },
+ "beats": {
+  "phoneDown": 1.7,
+  "uncap": 3.1,
+  "write1": 3.3,
+  "slide1": 4.6,
+  "follow": 5.0,
+  "family": 6.9,
+  "flash": 8.9,
+  "wipe1": 9.6,
+  "write2": 11.4,
+  "swapIn": 13.0,
+  "swap": 13.7,
+  "raj": 15.5,
+  "pay": 17.0,
+  "smooth": 18.5,
+  "cliff": 20.0,
+  "wipe2": 23.0,
+  "cardA": 23.6,
+  "cardB": 23.85,
+  "voteUp": 24.3,
+  "comment": 23.6,
+  "tap": 26.6,
+  "endcard": 29.6
+ },
+ "choices": {
+  "question": "she asked me to dance. I can't dance. what do I write?",
+  "A": {
+   "l1": "(I CAN'T.",
+   "l2": "TEACH ME?)"
+  },
+  "B": {
+   "l1": "(I'LL WATCH",
+   "l2": "YOUR BAG.)"
+  },
+  "why": "Both about him; neither mocks her. Part 5 (last song) plays the winner."
+ },
+ "strips": [
+  {
+   "text": "take 1. I wrote on my card:",
+   "from": 3.0,
+   "to": 4.5,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "I followed her to table 2.",
+   "from": 5.1,
+   "to": 6.85,
+   "y": 345
+  },
+  {
+   "text": "wrong move. I'm in their family photo now.",
+   "from": 7.1,
+   "to": 9.55,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 9.9,
+   "to": 11.4,
+   "y": 345,
+   "tag": true,
+   "big": true
+  },
+  {
+   "text": "I swapped my card with her cousin's.",
+   "from": 13.1,
+   "to": 15.4,
+   "y": 345
+  },
+  {
+   "text": "her cousin got my seat at table 9.",
+   "from": 15.6,
+   "to": 16.95,
+   "y": 345
+  },
+  {
+   "text": "her aunt saw. said nothing.",
+   "from": 17.1,
+   "to": 19.0,
+   "y": 345
+  },
+  {
+   "text": "last song. she asked me to dance.",
+   "from": 20.1,
+   "to": 22.95,
+   "y": 345
+  },
+  {
+   "text": "she asked me to dance. I can't dance. what do I write?",
+   "from": 23.6,
+   "to": 29.6,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.6,
+   "to": 29.6,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "his_1": "(take me with you.)",
+  "his_2": "(i'll swap our cards.)",
+  "her_smooth": "(smooth.)",
+  "her_dance": "(dance?)",
+  "new_print": "TABLE 2",
+  "new_small": "moved for family photos"
+ },
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0,
+    17.0
+   ],
+   [
+    20.0,
+    33.6
+   ]
+  ],
+  "musicDuck": [
+   [
+    17.0,
+    20.0
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    33.6
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "markerSlide": [
+   4.6,
+   12.65
+  ],
+  "capPop": [
+   3.1
+  ],
+  "scrawl": [
+   [
+    3.3,
+    4.4
+   ],
+   [
+    11.4,
+    12.5
+   ],
+   [
+    18.6,
+    19.35
+   ]
+  ],
+  "tentFlip": [],
+  "laughSting": [],
+  "phoneTap": [
+   1.78
+  ],
+  "phoneBuzz": [],
+  "forkTinks": [
+   1.2,
+   13.4,
+   13.7,
+   14.0
+  ],
+  "plateClink": [],
+  "gulp": [
+   21.3
+  ],
+  "slide": [
+   20.8
+  ],
+  "susanWhoosh": [
+   9.6,
+   23.0
+  ],
+  "cardPops": [
+   8.9,
+   14.5,
+   15.6,
+   20.2,
+   23.6,
+   23.85
+  ],
+  "stamps": [
+   3.0,
+   5.1,
+   7.1,
+   9.9,
+   13.1,
+   15.6,
+   17.1,
+   20.1,
+   23.6,
+   29.6
+  ],
+  "endChime": [
+   29.6
+  ],
+  "chairScoot": [
+   5.2,
+   5.65,
+   6.1
+  ],
+  "cliffSting": [
+   20.1
+  ],
+  "djStab": [
+   20.15
+  ],
+  "spotSweep": [
+   20.15
+  ],
+  "glassTink": [
+   8.8
+  ],
+  "clockTicks": [],
+  "projClicks": [],
+  "wheels": [],
+  "doorClick": [],
+  "cardFlips": [],
+  "mic": []
+ }
+}

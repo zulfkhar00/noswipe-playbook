@@ -399,6 +399,23 @@ b 7, satisfaction 7, want_next 8 (I rewrote hook b and added the cart and rewind
 buzzing pocket glow reads as a ring box. **Part 4 (seating chart):** pick the winner from comments; if none, B (swapping the
 cards is the bolder gag), A plays first and fails on him.
 
+| 4a | They moved the stranger beside me at this wedding. Part 4 (57) | `specs/stories/table-ep4.json` | `Table4` hook a |
+| 4b | Wedding stranger got moved to table 2. I had a plan. Part 4 (59) | same | `Table4` hook b |
+
+**What happened (part 3, posted 2026-11-12):** table-3-a 1525 at 12h (33.5% skip); table-3-b floored (345 at 6h, 42% skip) on
+the same body: its "mid-speech, ..." line was the problem. No usable vote counts; B (swap the cards) carried as planned.
+
+**What happened (part 4, nightly for 2026-11-13):** 33.6 s. Frame 1: his phone lit mid-swipe, the TABLE 2 / "moved for family
+photos" card at her seat, the aunt with a clipboard. Take 1 "(take me with you.)": he drags his chair to table 2 and ends up in
+the family photo ("wrong move. I'm in their family photo now."). Lazy Susan rewind (big "rewind. take 2." held 1.5 s). Take 2
+"(i'll swap our cards.)": he swaps his OLLIE card for COUSIN RAJ's at table 2 ("her cousin got my seat at table 9."), the aunt
+double-takes and shrugs ("her aunt saw. said nothing."), she writes "(smooth.)". Cliff: LAST SONG, her card "(dance?)", he
+freezes. Vote (up 24.3 s) "she asked me to dance. I can't dance. what do I write?" A (I CAN'T. TEACH ME?) / B (I'LL WATCH YOUR
+BAG.). Blind check 3 rounds: clarity 6 -> 6 -> 7 (I rewrote four strips and hook b myself), hook a 5 / b 8, satisfaction 7,
+want_next 8. Open: the swap with three cards is still busy. **Part 5 (Last song):** A is the planned winner (honest); B plays
+first and fails on him (he guards her bag alone while the whole room dances, maybe the bag owner is the aunt). Phones in his
+jacket; she is called to the family photo as the cliff. Wind-down: if table-4-a floors at 6h, make part 5 the finale.
+
 ## Season 9 · Fifty Whites (silent paint-aisle romance, paint-chip handoffs)
 
 **Logline:** Two strangers each need a white for their own flat and both keep swiping between the chips. She starts
@@ -455,3 +472,21 @@ isn't white.", "she's waiting."); fan-deck wipe to the vote A EGGSHELL (the safe
 rounds: clarity 6 -> 7 (fixed: phones didn't read as dating, SAME unexplained, blur block, icon), hook a 5 / b 7, satisfaction
 5, want_next 7. **Part 2 lean:** B POPPY wins; A plays first (he hands EGGSHELL and blends into the beige test wall). Give part
 2 a bigger payoff of its own (satisfaction 5 here). If whites-1-a sits on the floor at 6h (<300, >40% skip), revisit.
+
+| 2a | Paint aisle stranger asked which white I am. Part 2 (51) | `specs/stories/whites-ep2.json` | `Whites2` hook a |
+| 2b | She caught me swiping, then asked which white I am. Part 2 (58) | same | `Whites2` hook b |
+
+**What happened (part 1, posted 2026-11-12):** breakout on both hooks: whites-1-a 2195 at 6h (23.4% skip, best ever),
+whites-1-b 1613 at 3h (25.5%). B POPPY carried as planned.
+
+**What happened (part 2, nightly for 2026-11-13):** 33.1 s, vote up 23.1 s. Frame 1: his phone lit mid-swipe (1.5x, profile card
+with a heart badge), her chip "which white / are you?". Take 1 EGGSHELL: he fades into the beige test wall, she looks for him
+("the safe answer. I became the wall."). Fan-deck snaps shut (rewind). Take 2 POPPY ("not a white. she laughed."), then the
+payoff close-up: her can with POPPY taped on the lid beside his chip, labelled HER CAN / MY CHIP, "same pink." ("she'd picked it
+too."). Mixing counter "MIXING / 10 MIN WAIT", one bench, his phone buzzes big in his pocket. Vote "ten minutes on one bench.
+what do I do?" A PHONE AWAY. ASK HER. / B SHOW HER MY MATCHES. End card "fifty whites · part 3 · A or B". Blind check 3 rounds:
+clarity 7 -> 6 -> 7 (I added the close-up labels after round 2), hook a 7 / b 6, satisfaction 5 -> 6, want_next 8. Open: her
+can is not planted before the reveal; her pat arm is stiff. **Part 3 (Mixing):** A wins (honest); B plays first and fails on
+him (he scrolls her through his matches, all "seen 3 weeks ago"; she winces for him). Then A: his phone goes in the basket,
+they talk while the shaker rattles.
+

@@ -37,6 +37,12 @@ export const fitSize = (txt: string, font: (s: number) => string, size: number, 
   return s;
 };
 
+export const mixc = (a: string, b: string, k: number): string => {
+  const f = (h: string, i: number) => parseInt(h.slice(1 + i * 2, 3 + i * 2), 16);
+  const o = [0, 1, 2].map((i) => Math.round(lerp(f(a, i), f(b, i), k)).toString(16).padStart(2, '0'));
+  return '#' + o.join('');
+};
+
 // ---------------------------------------------------------------------------------------- camera
 export type Cam = {x: number; y: number; z: number};
 export type CamKey = Cam & {t: number};
@@ -124,10 +130,15 @@ const Mouthy: React.FC<{m: Mouth; t: number}> = ({m, t}) => {
   }
 };
 
-export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: number; pose: Pose; seed: number}> = ({who, x, y, t, pose, seed}) => {
+export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: number; pose: Pose; seed: number; camo?: number}> = ({who, x, y, t, pose, seed, camo = 0}) => {
   const him = who === 'him';
-  const skin = him ? C.skinHim : C.skinHer;
-  const hair = him ? C.hairHim : C.hairHer;
+  const mc = (c: string, k = 1) => (camo > 0 ? mixc(c, C.w3, Math.min(1, camo * k)) : c);
+  const edge = camo > 0 ? mixc('#FFFFFF', '#D9CBAA', camo) : '#fff';
+  const sh = 1 - camo * 0.9;
+  const skin = mc(him ? C.skinHim : C.skinHer);
+  const rawHair = him ? C.hairHim : C.hairHer;
+  const hair = mc(rawHair);
+  const hairBrow = mc(rawHair, 0.7);
   const ph = Math.sin(t * 2.1 + seed);
   const sc = 1 + ph * 0.007;
   const bodyD = 'M -340 780 L -326 270 Q -306 200 -200 186 Q -100 176 -54 150 L 54 150 Q 100 176 200 186 Q 306 200 326 270 L 340 780 Z';
@@ -137,20 +148,20 @@ export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: numb
   const brow = (side: number, raise: number) => {
     const bx = side * ex, by = -66 - raise * 22;
     const inner = pose.worry * 14;
-    return <path d={`M ${bx - 34} ${by + (side < 0 ? 0 : -inner)} Q ${bx} ${by - 12} ${bx + 34} ${by + (side < 0 ? -inner : 0)}`} fill="none" stroke={hair} strokeWidth={him ? 13 : 10} strokeLinecap="round" />;
+    return <path d={`M ${bx - 34} ${by + (side < 0 ? 0 : -inner)} Q ${bx} ${by - 12} ${bx + 34} ${by + (side < 0 ? -inner : 0)}`} fill="none" stroke={hairBrow} strokeWidth={him ? 13 : 10} strokeLinecap="round" />;
   };
-  const skinDeep = him ? '#D79570' : '#A97048';
+  const skinDeep = mc(him ? '#D79570' : '#A97048');
   return <g transform={`translate(${x} ${y + ph * 4})`}>
     {/* soft ink-tinted shadow */}
-    <path d={bodyD} transform="translate(18 24)" fill={C.navy} opacity={0.1} />
-    <path d={bodyD} transform="translate(9 12)" fill={C.navy} opacity={0.1} />
+    <path d={bodyD} transform="translate(18 24)" fill={C.navy} opacity={0.1 * sh} />
+    <path d={bodyD} transform="translate(9 12)" fill={C.navy} opacity={0.1 * sh} />
     <g transform={`scale(1 ${sc})`}>
-      <path d={bodyD} fill="#fff" stroke="#fff" strokeWidth={38} strokeLinejoin="round" />
-      <path d={bodyD} fill={him ? C.hoodie : C.knit} />
+      <path d={bodyD} fill={edge} stroke={edge} strokeWidth={38} strokeLinejoin="round" />
+      <path d={bodyD} fill={mc(him ? C.hoodie : C.knit)} />
       {him ? <g>
-        <ellipse cx={0} cy={190} rx={196} ry={64} fill={C.hoodieDeep} />
-        <path d="M -40 238 L -46 360" stroke="#E8E4DA" strokeWidth={8} strokeLinecap="round" /><path d="M 40 238 L 48 350" stroke="#E8E4DA" strokeWidth={8} strokeLinecap="round" />
-        <rect x={-264} y={520} width={528} height={140} rx={30} fill={C.hoodieDeep} opacity={0.55} />
+        <ellipse cx={0} cy={190} rx={196} ry={64} fill={mc(C.hoodieDeep)} />
+        <path d="M -40 238 L -46 360" stroke={mc("#E8E4DA")} strokeWidth={8} strokeLinecap="round" /><path d="M 40 238 L 48 350" stroke={mc("#E8E4DA")} strokeWidth={8} strokeLinecap="round" />
+        <rect x={-264} y={520} width={528} height={140} rx={30} fill={mc(C.hoodieDeep)} opacity={0.55} />
       </g> : <g>
         <ellipse cx={0} cy={188} rx={118} ry={44} fill={C.knitDeep} />
         {Array.from({length: 17}, (_, i) => <line key={i} x1={-304 + i * 38} y1={250} x2={-304 + i * 38 + (i - 8) * 1.5} y2={780} stroke={C.knitDeep} strokeWidth={4} opacity={0.5} />)}
@@ -160,17 +171,17 @@ export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: numb
     </g>
     <g transform={`translate(0 ${pose.bob}) rotate(${pose.tilt} 0 120)`}>
       {/* die-cut edge for head + hair */}
-      <circle r={168} fill="#fff" stroke="#fff" strokeWidth={36} />
-      {!him && <ellipse cx={0} cy={-170} rx={100} ry={66} fill="#fff" stroke="#fff" strokeWidth={36} />}
-      {!him && <path d="M -176 0 L -184 150 Q 0 190 184 150 L 176 0 Z" fill="#fff" stroke="#fff" strokeWidth={30} />}
+      <circle r={168} fill={edge} stroke={edge} strokeWidth={36} />
+      {!him && <ellipse cx={0} cy={-170} rx={100} ry={66} fill={edge} stroke={edge} strokeWidth={36} />}
+      {!him && <path d="M -176 0 L -184 150 Q 0 190 184 150 L 176 0 Z" fill={edge} stroke={edge} strokeWidth={30} />}
       {/* ears */}
-      <circle cx={-166} cy={14} r={32} fill={him ? '#F59A82' : skin} /><circle cx={166} cy={14} r={32} fill={him ? '#F59A82' : skin} />
+      <circle cx={-166} cy={14} r={32} fill={him ? mc('#F59A82') : skin} /><circle cx={166} cy={14} r={32} fill={him ? mc('#F59A82') : skin} />
       {!him && <g>
         <path d="M -176 -10 Q -190 100 -170 160 L 170 160 Q 190 100 176 -10 Z" fill={hair} />
         <ellipse cx={0} cy={-168} rx={96} ry={62} fill={hair} />
       </g>}
       <circle r={166} fill={skin} />
-      <circle cx={-92} cy={52} r={26} fill={C.poppy} opacity={him ? 0.34 : 0.25} /><circle cx={92} cy={52} r={26} fill={C.poppy} opacity={him ? 0.34 : 0.25} />
+      <circle cx={-92} cy={52} r={26} fill={C.poppy} opacity={(him ? 0.34 : 0.25) * (1 - camo)} /><circle cx={92} cy={52} r={26} fill={C.poppy} opacity={(him ? 0.34 : 0.25) * (1 - camo)} />
       {/* hair */}
       {him
         ? <path d="M -172 -6 Q -190 -190 0 -192 Q 190 -190 172 -6 Q 160 -92 70 -112 Q 10 -78 -60 -104 Q -140 -92 -172 -6 Z" fill={hair} />
@@ -187,7 +198,7 @@ export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: numb
         </g>)}
       {brow(-1, pose.browL)}{brow(1, pose.browR)}
       <path d="M -6 28 Q 12 46 -4 52" fill="none" stroke={skinDeep} strokeWidth={6} strokeLinecap="round" />
-      <Mouthy m={pose.mouth} t={t} />
+      <g opacity={1 - camo * 0.8}><Mouthy m={pose.mouth} t={t} /></g>
       {/* sweat */}
       {pose.sweat > 0 && [[-150, -90, 0], [152, -50, 0.4], [-132, 40, 0.7], [120, -118, 0.2]].map(([dx, dy, o], i) => {
         const k = ((t * 0.9 + o) % 1);
@@ -199,15 +210,20 @@ export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; t: numb
 };
 
 // ---------------------------------------------------------------------------------------- phone + hands
-export const Card: React.FC = () => <g>
+export const Card: React.FC<{rich?: boolean}> = ({rich = false}) => <g>
   <rect x={-66} y={-98} width={132} height={196} rx={18} fill="#fff" />
   <rect x={-54} y={-86} width={108} height={126} rx={12} fill="#CFE0FF" />
   <circle cx={0} cy={-44} r={22} fill="#7C8DB8" />
   <path d="M -42 40 Q -42 -8 0 -8 Q 42 -8 42 40 Z" fill="#7C8DB8" />
   <rect x={-48} y={56} width={96} height={12} rx={6} fill="#CFD6E6" /><rect x={-48} y={78} width={60} height={12} rx={6} fill="#CFD6E6" />
+  {rich && <g>
+    <path transform="translate(36 -66)" d="M 0 10 C -16 -6 -24 -20 -11 -26 C -4 -29 0 -23 0 -21 C 0 -23 4 -29 11 -26 C 24 -20 16 -6 0 10 Z" fill={C.poppy} stroke="#fff" strokeWidth={3} />
+    <rect x={-48} y={56} width={70} height={14} rx={7} fill="#4A5A8A" />
+    {[-48, -10, 28].map((x) => <rect key={x} x={x} y={100 - 10} width={32} height={12} rx={6} fill="#FFB3CC" />)}
+  </g>}
 </g>;
 
-export const PhoneUnit: React.FC<{who: 'him' | 'her'; x: number; y: number; rot: number; scale?: number; lit: number; p: number; dir: number; down: number; thumbOn: number}> = ({who, x, y, rot, scale = 1, lit, p, dir, down, thumbOn}) => {
+export const PhoneUnit: React.FC<{who: 'him' | 'her'; x: number; y: number; rot: number; scale?: number; lit: number; p: number; dir: number; down: number; thumbOn: number; rich?: boolean}> = ({who, x, y, rot, scale = 1, lit, p, dir, down, thumbOn, rich = false}) => {
   const him = who === 'him';
   const skin = him ? C.skinHim : C.skinHer;
   const sleeve = him ? C.hoodie : C.knit;
@@ -222,8 +238,8 @@ export const PhoneUnit: React.FC<{who: 'him' | 'her'; x: number; y: number; rot:
     {down < 0.5 ? <g>
       <rect x={-80} y={-150} width={160} height={300} rx={26} fill={lit > 0.3 ? 'url(#scr)' : '#1A2442'} />
       {lit > 0.3 && <g>
-        <g transform="translate(0 10) scale(0.92)" opacity={0.7}><Card /></g>
-        <g transform={`translate(${p * dir * 210} ${-p * 14}) rotate(${p * dir * 20}) translate(0 8)`} opacity={1 - smooth(p, 0.55, 1)}><Card /></g>
+        <g transform="translate(0 10) scale(0.92)" opacity={0.7}><Card rich={rich} /></g>
+        <g transform={`translate(${p * dir * 210} ${-p * 14}) rotate(${p * dir * 20}) translate(0 8)`} opacity={1 - smooth(p, 0.55, 1)}><Card rich={rich} /></g>
       </g>}
     </g> : <g><circle cx={-48} cy={-114} r={20} fill="#0E1630" stroke="#fff" strokeWidth={3} opacity={0.6} /><circle cx={-48} cy={-114} r={9} fill="#5C6A99" /></g>}
     {down < 0.5 && <g opacity={1 - down * 2}>
@@ -377,7 +393,7 @@ export const VoteCard: React.FC<{letter: string; l1: string; l2: string; y: numb
   </g>;
 };
 
-export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
+export const EndCard: React.FC<{a: number; t: number; part?: number}> = ({a, t, part = 2}) => {
   const pop = (d: number) => smooth(a, d, d + 0.2) * (1 + 0.06 * Math.sin(clamp((a - d) / 0.4) * Math.PI));
   const open = smooth(a, 0, 0.7);
   return <g>
@@ -392,8 +408,8 @@ export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
       <text x={540} y={650} textAnchor="middle" fontFamily={ANTON} fontSize={210} fill="#fff">fifty whites</text>
     </g>
     <g transform={`translate(540 860) scale(${pop(0.45)}) translate(-540 -860)`}>
-      <text x={546} y={886} textAnchor="middle" fontFamily={ANTON} fontSize={112} fill={C.navy}>part 2 · A or B</text>
-      <text x={540} y={874} textAnchor="middle" fontFamily={ANTON} fontSize={112} fill={C.sun}>part 2 · A or B</text>
+      <text x={546} y={886} textAnchor="middle" fontFamily={ANTON} fontSize={112} fill={C.navy}>part {part} · A or B</text>
+      <text x={540} y={874} textAnchor="middle" fontFamily={ANTON} fontSize={112} fill={C.sun}>part {part} · A or B</text>
     </g>
   </g>;
 };
