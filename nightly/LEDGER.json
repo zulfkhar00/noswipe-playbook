@@ -896,6 +896,86 @@
     "want_next": 8,
     "rounds": 3
    }
+  },
+  {
+   "id": "table-5-a",
+   "day": "2026-11-14",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 5,
+   "hook": "a",
+   "caption": "Wedding stranger asked me to dance. I can't dance. Part 5. Two strangers at the singles table, talking only through place cards. Take one, I held her bag all night. Take two, she taught me. Now she's leaving. A or B? #wedding #lovestory #strangers #shortfilm #animation",
+   "video": "videos/table-5-a.mp4",
+   "composition": "Table5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "whites-3-a",
+   "day": "2026-11-14",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 3,
+   "hook": "a",
+   "caption": "Ten minutes on a bench with the paint aisle stranger. Part 3. Take one, I showed her my matches and she felt sorry for me. Take two, phone away, one question. Now she's handing me the brush. Comment A or B. #strangerstolovers #romance #meetcute #shortstory #animation",
+   "video": "videos/whites-3-a.mp4",
+   "composition": "Whites3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 8,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "table-5-b",
+   "day": "2026-11-14",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Table Nine",
+   "episode": 5,
+   "hook": "b",
+   "caption": "The girl I like asked me to dance. I really can't. Part 5. One place card between two strangers at a wedding. I tried guarding her bag, then I asked her to teach me. One card left before she goes, A or B? #weddingseason #romance #singlelife #shortstory #animation",
+   "video": "videos/table-5-b.mp4",
+   "composition": "Table5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "whites-3-b",
+   "day": "2026-11-14",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 3,
+   "hook": "b",
+   "caption": "Caught swiping again, now stuck on one bench with her. Part 3. Paint store, ten minute wait, two strangers. My matches made her wince, so we rewound. Phone in the basket, chips instead. What do I paint, A or B? #datingapps #lovestory #meetcute #shortfilm #animation",
+   "video": "videos/whites-3-b.mp4",
+   "composition": "Whites3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 8,
+    "satisfaction": 6,
+    "want_next": 8,
+    "rounds": 1
+   }
   }
  ]
 }

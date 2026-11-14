@@ -416,6 +416,22 @@ want_next 8. Open: the swap with three cards is still busy. **Part 5 (Last song)
 first and fails on him (he guards her bag alone while the whole room dances, maybe the bag owner is the aunt). Phones in his
 jacket; she is called to the family photo as the cliff. Wind-down: if table-4-a floors at 6h, make part 5 the finale.
 
+| 5a | Wedding stranger asked me to dance. I can't dance. Part 5 (49) | `specs/stories/table-ep5.json` | `Table5` hook a |
+| 5b | The girl I like asked me to dance. I really can't. Part 5 (49) | same | `Table5` hook b |
+
+**What happened (part 4, posted 2026-11-13):** table-4-a 1848 at 12h (35.6% skip), table-4-b 2017 at 6h (30.4%): the stakes
+line beat who+where. No usable comment votes; A (TEACH ME) carried as planned.
+
+**What happened (part 5, nightly for 2026-11-14):** 33.6 s, vote up 24.3 s. Frame 1: his phone lit mid-swipe, her card
+"(dance?)", LAST SONG sign, the aunt behind. Take 1 "(i'll watch your bag.)": the room dances, the aunt in the conga, he hugs her
+sequined bag in a spotlight ("I became the bag guy."). Lazy Susan rewind. Take 2 "(i can't. teach me?)": she laughs, draws two
+footprints, "(stand here.)"; he steps on her toe; his pocket buzzes, ignored; music drops out; "I can't dance. we danced
+anyway." Cliff: house lights up, the aunt with keys "car's here!", the last blank card slides over. Vote "she's leaving. one card
+left. what do I write?" A (MY NAME. YOURS?) / B (SAME TABLE NEXT WEDDING?). Blind check 1 round: clarity 7, hook a 5 / b 7,
+satisfaction 6, want_next 7. Open: the dance shots fade the torsos into dark blocks; the slow-sway reads as a pose.
+**Part 6 (finale, One card):** A wins (names: OLLIE · NOOR), B plays first and fails on him; no phones; season over.
+
+
 ## Season 9 · Fifty Whites (silent paint-aisle romance, paint-chip handoffs)
 
 **Logline:** Two strangers each need a white for their own flat and both keep swiping between the chips. She starts
@@ -490,3 +506,18 @@ can is not planted before the reveal; her pat arm is stiff. **Part 3 (Mixing):**
 him (he scrolls her through his matches, all "seen 3 weeks ago"; she winces for him). Then A: his phone goes in the basket,
 they talk while the shaker rattles.
 
+| 3a | Ten minutes on a bench with the paint aisle stranger. Part 3 (52) | `specs/stories/whites-ep3.json` | `Whites3` hook a |
+| 3b | Caught swiping again, now stuck on one bench with her. Part 3 (53) | same | `Whites3` hook b |
+
+**What happened (part 2, posted 2026-11-13):** whites-2-a 2211 at 6h (21.1% skip, best ever), whites-2-b 2942 at 3h (23.2%, best
+3h ever). A (PHONE AWAY) carried as planned.
+
+**What happened (part 3, nightly for 2026-11-14):** 34.0 s, vote up 24.1 s. Frame 1: both on the bench, his phone lit mid-swipe,
+"MIXING · 10 MIN WAIT", her POPPY can in the shaker. Take 1 SHOW HER MY MATCHES: every match stamped "seen 3 wks ago", she
+winces and pats him. Fan snaps shut. Take 2 PHONE AWAY. ASK HER.: phone into the basket, chips "what's the room for?" / "my first
+own place." / "mine too."; the shaker stops, the music drops out; the clerk slides two POPPY cans ("two cans. same pink.").
+Cliff: she paints a test square and holds out the brush, "your turn." Vote "she handed me the brush. what do I paint?" A (A TINY
+HEART.) / B (A WINDOW. FOR YOUR ROOM.). Blind check 1 round: clarity 8, hook a 6 / b 8, satisfaction 6, want_next 8. Open: her
+pat can read as a shove; "seen" stamps are small; nothing says the paint is for a new flat before the chip question.
+**Part 4 (Test patch):** B (the window) is the planned winner (sweet, about her room); A plays first and fails on him (the heart
+drips into a blob). A bystander's phone may chime NoSwipe only if it is the gag.

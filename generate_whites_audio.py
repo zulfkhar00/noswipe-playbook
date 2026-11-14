@@ -145,6 +145,26 @@ def intercom_ding():
     return (np.sin(2 * np.pi * 1318 * t) + 0.5 * np.sin(2 * np.pi * 1760 * t)) * env(t, 0.002, 0.45) * 0.5 + fft_bp(noise(1.4), 1500, 3000) * env(t, 0.001, 0.02) * 0.1
 
 
+def rattle(d):
+    t = tt(d)
+    knocks = np.abs(np.sin(2 * np.pi * 11.5 * t)) ** 6 * (0.7 + 0.3 * np.sin(2 * np.pi * 3.1 * t))
+    body = fft_bp(noise(d), 180, 2600) * knocks * 0.9
+    ring = sum(np.sin(2 * np.pi * f * t) for f in (1900, 2750)) * 0.05 * np.abs(np.sin(2 * np.pi * 23 * t)) ** 4
+    rumble = np.sin(2 * np.pi * 58 * t) * 0.12 * (1 + np.sin(2 * np.pi * 23 * t))
+    return (body + ring + rumble) * np.minimum(1, t / 0.08) * np.minimum(1, (d - t) / 0.12)
+
+
+def clunk():
+    t = tt(0.5)
+    return (np.sin(2 * np.pi * 85 * t) * env(t, 0.002, 0.12) + fft_bp(noise(0.5), 300, 2500) * env(t, 0.001, 0.03) * 0.8
+            + np.sin(2 * np.pi * 1500 * t) * env(t, 0.001, 0.1) * 0.12)
+
+
+def buzz():
+    t = tt(0.26)
+    return np.sign(np.sin(2 * np.pi * 150 * t)) * 0.25 * (np.sin(2 * np.pi * 40 * t) > -0.3) * np.minimum(1, t / 0.01) * np.minimum(1, (0.26 - t) / 0.02) + fft_lp(noise(0.26), 700) * 0.2
+
+
 def whoosh(d=0.7):
     t = tt(d)
     k = np.sin(np.pi * np.clip(t / d, 0, 1)) ** 1.5
@@ -203,6 +223,9 @@ def music(st: Stem, a):
 
 
 def sfx(st: Stem, a):
+    for lo, hi in a.get("shakerRattle", []): st.add(lo, rattle(hi - lo), 0.55)
+    for t in a.get("shakerStop", []): st.add(t, clunk(), 0.9)
+    for t in a.get("phoneBuzz", []): st.add(t, buzz(), 0.7)
     for t in a["swipeTicks"]: st.add(t, tick(), 0.6)
     for t in a["chipFlicks"]: st.add(t, chip_flick(), 0.8)
     for t in a["chipRiffle"]: st.add(t, riffle(0.4), 0.5)

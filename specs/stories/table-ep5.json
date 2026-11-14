@@ -1,0 +1,268 @@
+{
+ "id": "table-ep5",
+ "season": "Table Nine",
+ "episode": 5,
+ "title": "Last song. Part 5",
+ "note": "Silent. Frame 1 fully composed: ONE strip (hook), two large faces, his phone lit mid-swipe (bigger), her big tent card (dance?), dance floor lit behind with DJ sign LAST SONG, aunt with clipboard small. He flips the phone at ~1.7 and freezes at the card. Take 1 (i'll watch your bag.): she goes to the floor, the whole room does a conga (even the aunt with her clipboard), he sits alone at table 9 hugging her sequined bag in a spotlight: I became the bag guy. Lazy Susan back, rewind. take 2. Take 2 (i can't. teach me?): she laughs, draws two footprints on the back of a place card + (stand here.). On the floor he steps on her toe (squash, wince-laugh), his jacket pocket buzzes (phone glow + buzz lines) and he ignores it, they sway under string lights, music drops out. Cliff: house lights up, aunt waves car keys (car's here!), she slides the LAST blank card to him. Vote A (MY NAME. / YOURS?) / B (SAME TABLE / NEXT WEDDING?). End card part 6. No NoSwipe mention.",
+ "duration": 33.6,
+ "hooks": {
+  "a": "the stranger beside me at this wedding asked me to dance.",
+  "b": "the girl I like asked me to dance. I can't dance."
+ },
+ "beats": {
+  "phoneDown": 1.7,
+  "uncap": 3.1,
+  "write1": 3.3,
+  "slide1": 4.6,
+  "floor": 5.0,
+  "bag": 6.9,
+  "wipe1": 9.6,
+  "write2": 11.4,
+  "foot": 13.0,
+  "toe": 15.1,
+  "dance": 16.5,
+  "buzz1": 16.9,
+  "buzz2": 17.3,
+  "cliff": 20.0,
+  "wipe2": 23.0,
+  "cardA": 23.6,
+  "cardB": 23.85,
+  "voteUp": 24.3,
+  "tap": 26.6,
+  "endcard": 29.6
+ },
+ "choices": {
+  "question": "she's leaving. one card left. what do I write?",
+  "A": {
+   "l1": "(MY NAME.",
+   "l2": "YOURS?)"
+  },
+  "B": {
+   "l1": "(SAME TABLE",
+   "l2": "NEXT WEDDING?)"
+  },
+  "why": "Both about him; neither mocks her. Part 6 plays the winner."
+ },
+ "strips": [
+  {
+   "text": "take 1. I wrote on my card:",
+   "from": 3.0,
+   "to": 4.5,
+   "y": 345,
+   "tag": true
+  },
+  {
+   "text": "she went to dance.",
+   "from": 5.1,
+   "to": 6.8,
+   "y": 345
+  },
+  {
+   "text": "I became the bag guy.",
+   "from": 7.0,
+   "to": 9.55,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 9.9,
+   "to": 11.4,
+   "y": 345,
+   "tag": true,
+   "big": true
+  },
+  {
+   "text": "she laughed. drew me a map.",
+   "from": 13.1,
+   "to": 14.95,
+   "y": 345
+  },
+  {
+   "text": "I stepped on her toe.",
+   "from": 15.15,
+   "to": 16.4,
+   "y": 345
+  },
+  {
+   "text": "my phone buzzed. I ignored it.",
+   "from": 16.55,
+   "to": 17.85,
+   "y": 345
+  },
+  {
+   "text": "I can't dance. we danced anyway.",
+   "from": 18.0,
+   "to": 19.95,
+   "y": 345
+  },
+  {
+   "text": "she's leaving. one card left.",
+   "from": 20.1,
+   "to": 22.95,
+   "y": 345
+  },
+  {
+   "text": "she's leaving. one card left. what do I write?",
+   "from": 23.6,
+   "to": 29.6,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.6,
+   "to": 29.6,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "his_1": "(i'll watch your bag.)",
+  "his_2": "(i can't. teach me?)",
+  "her_dance": "(dance?)",
+  "her_stand": "(stand here.)"
+ },
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0,
+    33.6
+   ]
+  ],
+  "musicDuck": [
+   [
+    17.5,
+    20.0
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    33.6
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "markerSlide": [
+   4.6,
+   12.65
+  ],
+  "capPop": [
+   3.1
+  ],
+  "scrawl": [
+   [
+    3.3,
+    4.4
+   ],
+   [
+    11.4,
+    12.5
+   ],
+   [
+    13.5,
+    14.0
+   ],
+   [
+    14.1,
+    14.9
+   ]
+  ],
+  "tentFlip": [],
+  "laughSting": [
+   13.15
+  ],
+  "phoneTap": [
+   1.78
+  ],
+  "phoneBuzz": [
+   16.9,
+   17.3
+  ],
+  "forkTinks": [
+   1.2,
+   5.0,
+   5.3
+  ],
+  "plateClink": [],
+  "gulp": [
+   21.3
+  ],
+  "slide": [
+   20.8
+  ],
+  "susanWhoosh": [
+   9.6,
+   23.0
+  ],
+  "cardPops": [
+   8.9,
+   13.1,
+   15.15,
+   20.2,
+   23.6,
+   23.85
+  ],
+  "stamps": [
+   3.0,
+   5.1,
+   7.0,
+   9.9,
+   13.1,
+   15.15,
+   16.55,
+   18.0,
+   20.1,
+   23.6,
+   29.6
+  ],
+  "endChime": [
+   29.6
+  ],
+  "chairScoot": [
+   4.9
+  ],
+  "cliffSting": [
+   20.1
+  ],
+  "djStab": [],
+  "spotSweep": [
+   7.0
+  ],
+  "glassTink": [],
+  "clockTicks": [],
+  "projClicks": [],
+  "wheels": [],
+  "doorClick": [
+   20.05
+  ],
+  "cardFlips": [],
+  "mic": [
+   15.55
+  ],
+  "cheer": [
+   5.4,
+   6.6
+  ],
+  "congaHits": [
+   5.2,
+   5.7,
+   6.2,
+   6.7,
+   7.2,
+   7.7,
+   8.2,
+   8.7,
+   7.0,
+   7.5,
+   8.0,
+   8.5,
+   9.0
+  ]
+ }
+}

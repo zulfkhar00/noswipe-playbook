@@ -44,10 +44,14 @@ Change one variable at a time within a format.
 | 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites, new) | P1 hook a (FIRST, 14:30) | the stranger in the paint aisle swipes too. | 2195 (6h) | | 14 | ~44% | 0 | 0.1% | | 0.1% | **double down**: 23.4% skip, best ever; new world breaks out with the opener |
 | 2026-11-12 | IG @tinyloveshows | silent story (Table Nine) | P3 hook b (repeat body) | mid-speech, the stranger beside me caught me swiping. | 345 (6h) | | 11 | ~33% | 0 | 0.3% | | 0 | **floor**, 42% skip: same body as 3a, so the line lost (time clause first) |
 | 2026-11-12 | IG @tinyloveshows | silent story (Fifty Whites) | P1 hook b (repeat body) | a stranger caught me swiping in the paint aisle. | 1613 (3h) | | 13 | ~41% | 0 | 0 | | 0 | breakout, 25.5% skip, 1 follow |
-| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook a (FIRST, 12:00) | the stranger beside me at this wedding just got moved away. | | | | | | | | | planned: who+where first |
-| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook a (14:30) | the stranger in the paint aisle asked which white I am. | | | | | | | | | planned |
-| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook b (repeat body) | they moved the girl I like to table 2. I had a plan. | | | | | | | | | planned: names the stakes (blind hook 8 vs a 5) |
-| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook b (repeat body) | a stranger caught me swiping. then she asked which white I am. | | | | | | | | | planned: "caught me swiping" again |
+| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook a (FIRST, 12:00) | the stranger beside me at this wedding just got moved away. | 1848 (12h) | | 14 | ~42% | 0 | 0 | | 0 | continue; 35.6% skip (Table skip creeping up by part) |
+| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook a (14:30) | the stranger in the paint aisle asked which white I am. | 2211 (6h) | | 15 | ~45% | 0 | 0.1% | | 0.1% | **double down**: 21.1% skip, best ever |
+| 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook b (repeat body) | they moved the girl I like to table 2. I had a plan. | 2017 (6h) | | 15 | ~45% | 0 | 0 | | 0 | stakes line beat who+where: 30.4% vs 35.6% skip |
+| 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook b (repeat body) | a stranger caught me swiping. then she asked which white I am. | 2942 (3h) | | 15 | ~45% | 0 | 0.1% | | 0 | **best 3h ever**, 23.2% skip |
+| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook a (FIRST, 12:00) | the stranger beside me at this wedding asked me to dance. | | | | | | | | | planned: who+where |
+| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook a (14:30) | the stranger in the paint aisle has ten minutes to kill with me. | | | | | | | | | planned: who+where |
+| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook b (repeat body) | the girl I like asked me to dance. I can't dance. | | | | | | | | | planned: stakes (blind hook 7 vs a 5) |
+| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook b (repeat body) | a stranger caught me swiping. now we're stuck on one bench. | | | | | | | | | planned: "caught me swiping" (blind 8 vs a 6) |
 
 ## Hook patterns (running record)
 
@@ -99,3 +103,9 @@ opener, to test that a brand-new world breaks out with it too.
 23.4% skip, the best skip ever; 1613 at 3h). The one floor (table-3-b, 345) shared its body with a 1.5k post, so the hook LINE
 did it: "mid-speech, ..." opens on a time clause. Hook lines start with who + where ("the stranger beside me at this
 wedding...", "a stranger ... in the paint aisle"). Tonight Table P4b tests naming the stakes ("the girl I like").
+
+**Update 2026-11-14:** 4 of 4 broke out again (apps-visible opener 14 of 15). Whites P2 a/b 2211 at 6h (21.1% skip, best) and
+2942 at 3h (best 3h). On the same body, Table P4's stakes line "the girl I like..." (30.4% skip) beat who+where (35.6%), and
+"caught me swiping" topped Whites again. Hook lines that name the stakes or the swiping lead; who+where is a solid floor.
+Table Nine's skip creeps up by part (29 -> 32 -> 36% on hook a); it ends with P6, so a new season's part 1 is due within 2 days.
+Tonight's hook b on both bodies names stakes/swiping again.
