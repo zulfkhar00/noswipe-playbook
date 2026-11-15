@@ -196,6 +196,15 @@ def door_click():
     return np.sin(2 * np.pi * 240 * t) * env(t, 0.001, 0.02) * 0.8 + fft_bp(noise(0.12), 1500, 5000) * env(t, 0.0005, 0.006) * 0.5
 
 
+def key_jangle():
+    s = np.zeros(int(RATE * 0.5))
+    for k in range(7):
+        t = tt(0.18)
+        b = (np.sin(2 * np.pi * (4800 + 700 * k) * t) + 0.6 * np.sin(2 * np.pi * (6900 + 300 * k) * t)) * env(t, 0.0004, 0.05) * 0.25
+        a = int(k * 0.045 * RATE); s[a:a + len(b)] += b[:len(s) - a]
+    return s
+
+
 def card_flip():
     t = tt(0.09)
     return fft_bp(noise(0.09), 2000, 7000) * env(t, 0.001, 0.02) * 0.8
@@ -265,6 +274,7 @@ def sfx(st: Stem, a):
     for t in a.get("doorClick", []): st.add(t, door_click(), 0.8)
     for t in a.get("chairScoot", []): st.add(t, slide(0.35), 0.5)
     for t in a.get("cliffSting", []): st.add(t, sting_down(), 0.5)
+    for t in a.get("keyJangle", []): st.add(t, key_jangle(), 0.7)
     for t in a.get("cardFlips", []): st.add(t, card_flip(), 0.5)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)

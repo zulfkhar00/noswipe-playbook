@@ -1,0 +1,420 @@
+{
+ "id": "bag-ep1",
+ "season": "Same Bag",
+ "composition": "Bag1",
+ "episode": 1,
+ "title": "Same bag. Part 1",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345). Arrivals hall, generic board ARRIVALS / BELT 4, belt carousel behind. Two large faces: his phone lit mid-swipe (generic profile-card glow, no UI; thumb flicks 0.2-1.4), her phone lit too in one hand, and in her other hand the kraft luggage tag, the biggest and brightest object, reading (that one's mine.). He holds a grey suitcase by the handle; the bag has a chartreuse tag loop (HERS). At 1.7 his thumb stops and he freezes; at 3.6 an identical grey bag with NO loop rides past behind him (planted: his own). Part 1 is the season opener: no take 1, no rewind. Own payoff before the cliff: she writes where his bag is, he swaps bags, they laugh (12.4), both phones go into the bags (13.6). Cliff: she takes the blank tag off HIS bag and writes (rough trip?); his bag pocket buzzes with a match and he ignores it; belt stops, board flips to BELT 4 / EMPTY. Vote board up by 23.5 s. Whenever the tag carries a line it is a WHOLE-FRAME insert (tag ~920 px wide, centred around y=760, Caveat 700 ink on kraft, hand drawn in). Text only between y=270 and y=1250. No NoSwipe mention (none in part 1). No airline, airport or place names; board text is generic. Her lines are dry and kind; the joke is only his wrong grab. Revision 2: second strip 1.2-3.2; hers/mine labels; she ties a short ribbon on his handle (12.4-14.0, laugh); phones enter their own front pockets 14.0-15.3 (his first); ping = phone-shaped glow in his pocket, calm small smile; wide = him holding pen over tag, bags on the floor; vote question carries the cause.",
+ "duration": 32.6,
+ "hooks": {
+  "a": "the stranger at baggage claim swipes too.",
+  "b": "a stranger caught me swiping at baggage claim. she wrote this."
+ },
+ "hookProp": "a | b (only the hook strip text in 0-3.0 changes; the body is identical)",
+ "beats": {
+  "freeze": 1.7,
+  "wrongBag": 3.3,
+  "ownBagPass": 3.6,
+  "pass1": 5.3,
+  "write1": 5.8,
+  "slide2": 7.6,
+  "read": 8.0,
+  "penBack": 8.4,
+  "write2": 8.7,
+  "point": 10.2,
+  "turn": 10.4,
+  "grab": 11.0,
+  "swap": 11.4,
+  "laugh": 12.4,
+  "phonesDown": 14.0,
+  "tagOff": 15.2,
+  "uncap": 15.6,
+  "write3": 16.0,
+  "slide3": 18.0,
+  "read3": 18.8,
+  "gulp": 19.2,
+  "buzz": 19.6,
+  "ignore": 19.9,
+  "beltStop": 20.4,
+  "beltWipe": 22.4,
+  "cardA": 23.0,
+  "cardB": 23.25,
+  "voteUp": 23.5,
+  "comment": 23.0,
+  "endcard": 28.5,
+  "ribbon": 13.0,
+  "tieStart": 12.55
+ },
+ "choices": {
+  "question": "she asked if it was a rough trip. what do I write?",
+  "A": {
+   "l1": "(WORK.",
+   "l2": "VERY BUSY.)"
+  },
+  "B": {
+   "l1": "(A DATE",
+   "l2": "THAT DIED.)"
+  },
+  "why": "Both are about him. A is the busy-man brag; B is the honest, self-deprecating answer about his own date (no woman is the joke). B is the planned winner. Part 2 plays A first and fails on him (he sounds pompous, then his bag rides off on the belt and he trails after it), belt reverses as the rewind, then B carries on."
+ },
+ "inserts": [
+  {
+   "id": "tag_front",
+   "from": 0.0,
+   "to": 1.7,
+   "side": "front",
+   "lines": [
+    "(that one's mine.)"
+   ],
+   "note": "frame 1: tag held up large, front side"
+  },
+  {
+   "id": "tag_his",
+   "from": 5.6,
+   "to": 7.9,
+   "side": "back",
+   "lines": [
+    "(oh. sorry.)"
+   ],
+   "note": "whole frame; his hand writes it in with her pen"
+  },
+  {
+   "id": "tag_hers",
+   "from": 8.5,
+   "to": 10.3,
+   "side": "back",
+   "lines": [
+    "(oh. sorry.)",
+    "(yours: behind you.)"
+   ],
+   "note": "whole frame; her reply writes in under his line"
+  },
+  {
+   "id": "tag_q",
+   "from": 15.8,
+   "to": 19.2,
+   "side": "his blank bag tag",
+   "lines": [
+    "(rough trip?)"
+   ],
+   "note": "whole frame; new tag taken off HIS bag; held until he gulps"
+  }
+ ],
+ "shots": [
+  {
+   "from": 0.0,
+   "to": 3.3,
+   "shot": "Frame 1 two-shot over the belt: big faces, both phones lit, tag held up centre, his hand on her bag; he freezes at 1.7"
+  },
+  {
+   "from": 3.3,
+   "to": 5.6,
+   "shot": "Medium: he lets go of the handle like it is hot; his own loop-less grey bag glides by behind him (3.6)"
+  },
+  {
+   "from": 5.6,
+   "to": 7.9,
+   "shot": "Whole-frame tag close-up: his line writes in"
+  },
+  {
+   "from": 7.9,
+   "to": 8.5,
+   "shot": "Her face reading, small smirk"
+  },
+  {
+   "from": 8.5,
+   "to": 10.3,
+   "shot": "Whole-frame tag: her line writes in under his"
+  },
+  {
+   "from": 10.3,
+   "to": 12.4,
+   "shot": "Medium: she points, he turns, grabs his bag off the belt, hands hers back (swap)"
+  },
+  {
+   "from": 12.4,
+   "to": 13.6,
+   "shot": "Close two-shot: both laugh (payoff)"
+  },
+  {
+   "from": 13.6,
+   "to": 15.4,
+   "shot": "Phones slide into the bag pockets; music ducks"
+  },
+  {
+   "from": 15.4,
+   "to": 19.2,
+   "shot": "She unclips his blank tag; whole-frame tag close-up: (rough trip?) writes in; slides it across"
+  },
+  {
+   "from": 19.2,
+   "to": 20.4,
+   "shot": "His face: gulp; bag pocket glows with a match, he ignores it"
+  },
+  {
+   "from": 20.4,
+   "to": 22.4,
+   "shot": "Wide: belt stops, board flips BELT 4 / EMPTY; she waits with the tag"
+  },
+  {
+   "from": 22.4,
+   "to": 32.6,
+   "shot": "Belt-flap wipe to the vote board, then end card"
+  }
+ ],
+ "strips": [
+  {
+   "text": "the stranger at baggage claim swipes too.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "a stranger caught me swiping at baggage claim. she wrote this.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "I grabbed her bag. it looks like mine.",
+   "from": 1.2,
+   "to": 3.2,
+   "y": 555
+  },
+  {
+   "text": "I took the wrong bag.",
+   "from": 3.3,
+   "to": 5.0,
+   "y": 345
+  },
+  {
+   "text": "I said sorry on her tag.",
+   "from": 5.3,
+   "to": 7.5,
+   "y": 345
+  },
+  {
+   "text": "she read it.",
+   "from": 7.6,
+   "to": 8.28,
+   "y": 345
+  },
+  {
+   "text": "she told me where mine was.",
+   "from": 8.3,
+   "to": 10.3,
+   "y": 345
+  },
+  {
+   "text": "we had the same bag.",
+   "from": 10.6,
+   "to": 12.3,
+   "y": 345
+  },
+  {
+   "text": "she marked mine. so I'd stop taking hers.",
+   "from": 12.4,
+   "to": 14.0,
+   "y": 345
+  },
+  {
+   "text": "phones away. both of us.",
+   "from": 14.0,
+   "to": 15.3,
+   "y": 345
+  },
+  {
+   "text": "she used my tag.",
+   "from": 15.4,
+   "to": 17.8,
+   "y": 345
+  },
+  {
+   "text": "my phone buzzed. a match. I didn't look.",
+   "from": 19.4,
+   "to": 20.4,
+   "y": 345
+  },
+  {
+   "text": "belt's empty. she's still waiting.",
+   "from": 20.5,
+   "to": 22.3,
+   "y": 345
+  },
+  {
+   "text": "she asked if it was a rough trip. I flew in for a date. it flopped.",
+   "from": 23.0,
+   "to": 28.5,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.0,
+   "to": 28.5,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "tag_front": "(that one's mine.)",
+  "his_1": "(oh. sorry.)",
+  "her_1": "(yours: behind you.)",
+  "her_2": "(rough trip?)",
+  "board": "ARRIVALS / BELT 4",
+  "board_end": "BELT 4 / EMPTY",
+  "bag_hers": "grey suitcase, chartreuse tag loop",
+  "bag_his": "same grey suitcase, no loop, blank kraft tag",
+  "end_card": "same bag · part 2 · A or B",
+  "vote_header": "what do I write?",
+  "labels": "Caveat 700 'hers' (loop bag) and 'mine' (loop-less bag) with arrows at 3.4-5.2 s and 10.7-12.4 s",
+  "ribbon": "short chartreuse ribbon tied on HIS handle at 13.0 by her; loop stays on HER bag"
+ },
+ "look": {
+  "palette": {
+   "concrete": "#E6E3DC",
+   "hiVis": "#C6F135",
+   "amber": "#FFB000",
+   "carbon": "#1C1C1F",
+   "sky": "#8EC9FF",
+   "kraft": "#D8B589",
+   "suitcase": "#5B6B7A"
+  },
+  "fonts": {
+   "strips_endcard": "Jost 800",
+   "board": "Barlow Condensed 700",
+   "tag": "Caveat 700"
+  },
+  "cast": {
+   "him": "olive bomber jacket, rumpled hair, flushed ears, phone",
+   "her": "camel coat, round glasses, curly bob, phone, pen"
+  },
+  "transition": "belt-flap wipe (rubber flaps sweep across carrying the next shot in); reversed for a rewind in part 2"
+ },
+ "audio": {
+  "bpm": 110,
+  "meter": "4/4",
+  "groove": [
+   [
+    0,
+    12.2
+   ],
+   [
+    14.6,
+    32.6
+   ]
+  ],
+  "musicDuck": [
+   [
+    12.2,
+    14.6
+   ],
+   [
+    19.2,
+    20.6
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    32.6
+   ]
+  ],
+  "beltRumble": [
+   [
+    0,
+    22.4
+   ]
+  ],
+  "wheelClacks": [
+   3.6,
+   10.6,
+   11.0
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "phoneTap": [
+   14.9,
+   15.05
+  ],
+  "tagSlides": [
+   5.3,
+   7.6,
+   18.0
+  ],
+  "penCaps": [
+   5.5,
+   15.6
+  ],
+  "scrawl": [
+   [
+    5.8,
+    7.0
+   ],
+   [
+    8.7,
+    9.9
+   ],
+   [
+    16.0,
+    17.6
+   ]
+  ],
+  "bagThumps": [
+   11.0,
+   11.4
+  ],
+  "laughSting": [
+   12.4
+  ],
+  "gulp": [
+   19.2
+  ],
+  "phoneBuzz": [
+   19.6,
+   19.8
+  ],
+  "beltStop": [
+   20.4
+  ],
+  "boardFlip": [
+   20.4
+  ],
+  "beltWhoosh": [
+   22.4
+  ],
+  "cliffSting": [
+   20.5
+  ],
+  "cardPops": [
+   23.0,
+   23.25
+  ],
+  "stamps": [
+   3.3,
+   5.3,
+   8.3,
+   10.6,
+   12.4,
+   14.0,
+   15.4,
+   19.4,
+   20.5,
+   23.0,
+   28.5
+  ],
+  "endChime": [
+   28.5
+  ],
+  "ribbonTie": [
+   12.9
+  ]
+ }
+}

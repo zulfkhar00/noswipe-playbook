@@ -431,6 +431,17 @@ left. what do I write?" A (MY NAME. YOURS?) / B (SAME TABLE NEXT WEDDING?). Blin
 satisfaction 6, want_next 7. Open: the dance shots fade the torsos into dark blocks; the slow-sway reads as a pose.
 **Part 6 (finale, One card):** A wins (names: OLLIE · NOOR), B plays first and fails on him; no phones; season over.
 
+| 6a | The girl I like at this wedding is leaving. Part 6 (42) | `specs/stories/table-ep6.json` | `Table6` hook a |
+| 6b | A stranger caught me swiping at this wedding. Part 6 (44) | same | `Table6` hook b |
+
+**What happened (part 6 finale, nightly for 2026-11-15):** 34 s, no vote. Frame 1: his phone lit mid-swipe (flipped face down
+at 1.5 s, the last phone we see), the blank tent, the aunt with car keys; "we never spoke. we only wrote on this card." Take 1
+"(same table next wedding?)": the aunt grabs the card, writes "(it's a date! -auntie)" and pinches his cheek ("her aunt said
+yes.", "it wasn't for her."). Lazy Susan rewind. Take 2 "(ollie. yours?)" -> "(noor.)", the tent turns to OLLIE · NOOR, "she
+waved. I kept the card."; payoff on the empty table: "(same table / next wedding.)" in her hand, "she wrote back." End card
+"table nine · the end · follow for the next story". Blind check 2 rounds: clarity 6 -> 7, hook a 6 / b 5, satisfaction 8,
+want_next 6 (round 2 added the aunt-grab strips, bigger ink, warm reveal). Posted while the phone was offline: it queues behind
+P5. Season over.
 
 ## Season 9 · Fifty Whites (silent paint-aisle romance, paint-chip handoffs)
 
@@ -521,3 +532,56 @@ HEART.) / B (A WINDOW. FOR YOUR ROOM.). Blind check 1 round: clarity 8, hook a 6
 pat can read as a shove; "seen" stamps are small; nothing says the paint is for a new flat before the chip question.
 **Part 4 (Test patch):** B (the window) is the planned winner (sweet, about her room); A plays first and fails on him (the heart
 drips into a blob). A bystander's phone may chime NoSwipe only if it is the gag.
+
+
+## Season 10 · Same Bag (silent baggage-claim romance, luggage-tag handoffs)
+
+**Logline:** Two strangers wait at the same carousel, both swiping. Two identical grey suitcases, one wrong grab, and she
+answers him on the back of luggage tags.
+
+**Why this season:** replaces Table Nine (finale 2026-11-15) and runs in parallel with Fifty Whites. Keeps the apps-visible
+opener (ONE strip, two big faces, a phone lit mid-swipe, one big bright device); the kraft tag is shown whole-frame whenever it
+carries a line. Picked pitch 3 of 5 on 2026-11-15 (others: Cabin Six gondola fog-writing, Highlights library book, Red Light
+chalk wall, Four Frames photo booth; Pie for Two still reserved for Thanksgiving week). Picked for the most everyday, instantly
+readable setting and a plain mix-up hook, ahead of holiday travel.
+
+| | Look | How they write |
+|---|---|---|
+| Him (unnamed) | olive bomber, rumpled hair, flushed ears; grey suitcase, no loop | pen on a kraft tag, lowercase in parentheses |
+| Her (name withheld until part 6) | camel coat, round glasses, curly bob; grey suitcase with a chartreuse tag loop | pen on a kraft tag, dry and kind |
+
+**Device:** a double-sided kraft luggage tag and one pen, max ~18 characters per line. Votes are about him; the wrong one
+embarrasses him, never her.
+
+**Look and sound:** flat paper cut-out arrivals hall: concrete #E6E3DC, hi-vis chartreuse #C6F135, amber #FFB000, carbon
+#1C1C1F, sky #8EC9FF, kraft #D8B589, slate suitcases #5B6B7A. Jost 800 (strips, vote cards, end card), Barlow Condensed 700
+(the generic ARRIVALS / BELT 4 board), Caveat 700 (tags). **Signature transition:** the belt-flap wipe (reversed belt for a
+rewind). Sound: belt rumble, wheel clacks, soft house at 110 bpm with electric piano that drops out for the shared moment,
+tag slides, pen scratches, a board flip, a muted match buzz. Code: `src/stories/bag/{world,ep1}.tsx`; audio:
+`python3 generate_bag_audio.py bag-ep1`.
+
+**Arc (6 parts):**
+1. **Same bag.** He grabs her identical bag; sorry on her tag; she points to his; swap, laugh, phones into the bags. She
+   writes "(rough trip?)" on his tag. Vote A (WORK. VERY BUSY.) / B (A DATE THAT DIED.) (B planned).
+2. **Rough trip.** A plays first and fails on him (pompous, then trails his bag round the belt); belt reverses; B carries on.
+3. **Stuck zip.** Her zip jams, he fixes it his own way. Honest answer is A this time.
+4. **Long wait.** Her ride is delayed, one bench. A bystander's phone may chime NoSwipe (mention 1, gag only).
+5. **Lost bag.** Her second bag never arrives; she is called to the desk.
+6. **Two tags.** Finale, no phones: names, two tags clipped to one handle read "MILES · ANYA".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "same bag · part 2 · A or B", never "tomorrow".
+Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger at baggage claim swipes too. Part 1 (40) | `specs/stories/bag-ep1.json` | `Bag1` hook a |
+| 1b | She caught me swiping at baggage claim, then wrote this (55) | same | `Bag1` hook b |
+
+**What happened (part 1, nightly for 2026-11-15):** 32.6 s, vote up 23.5 s. Frame 1: his phone lit mid-swipe, her huge kraft
+tag "(that one's mine.)", ARRIVALS / BELT 4, his hand on her bag (chartreuse loop); "I grabbed her bag. it looks like mine."
+"hers" / "mine" labels; sorry on her tag, "(yours: behind you.)", swap; she ties a chartreuse bow on his handle ("she marked
+mine. so I'd stop taking hers."); phones away; she writes "(rough trip?)" on his tag; his pocket buzzes, he doesn't look;
+belt empty, she waits. Vote "she asked if it was a rough trip. I flew in for a date. it flopped." A (WORK. VERY BUSY.) / B (A
+DATE THAT DIED.). Blind check 2 rounds: clarity 6 -> 7, hook a 5 / b 7, satisfaction 4 -> 5, want_next 7. Open for part 2: the
+date backstory lands only at the vote (plant it earlier), the bow makes both bags chartreuse, the second strip covers the
+board. **Part 2 (Rough trip):** B wins unless comments say otherwise; A plays first and fails on him.

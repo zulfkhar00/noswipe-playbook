@@ -1,0 +1,214 @@
+{
+ "id": "table-ep6",
+ "season": "Table Nine",
+ "episode": 6,
+ "title": "One card. Part 6 (finale)",
+ "note": "Silent finale. Frame 1: ONE strip, his phone lit mid-swipe, last blank tent in front of him, house lights up, aunt with car keys; phone face down by 1.5 s (last lit phone). Take 1 (same table next wedding?) fails on him: aunt RSVPs for herself. Lazy Susan back. Take 2 (ollie. yours?): she writes (noor.), tent turns to OLLIE . NOOR, music drops; she tucks card under his glass, waves from the door. Payoff: empty table, she wrote back (same table next wedding.). End card the end. No vote, no NoSwipe.",
+ "duration": 34.0,
+ "hooks": {
+  "a": "the girl I like at this wedding is leaving. one card left.",
+  "b": "a stranger caught me swiping at this wedding. now she's leaving."
+ },
+ "beats": {
+  "phoneDown": 1.4,
+  "uncap": 3.1,
+  "write1": 3.3,
+  "aunt": 5.2,
+  "wipe1": 12.0,
+  "uncap2": 13.5,
+  "reply": 15.5,
+  "reveal": 18.2,
+  "buzz1": 22.5,
+  "buzz2": 23.0,
+  "leave": 22.0,
+  "empty": 26.0,
+  "writeEnd0": 27.0,
+  "writeEnd1": 28.8,
+  "endcard": 31.0
+ },
+ "cards": {
+  "his_1": "(same table next wedding?)",
+  "his_2": "(ollie. yours?)",
+  "aunt": "(it's a date! -auntie)",
+  "her_name": "(noor.)",
+  "her_end": "(same table next wedding.)"
+ },
+ "strips": [
+  {
+   "text": "we never spoke. we only wrote on this card.",
+   "from": 1.2,
+   "to": 3.4,
+   "y": 1170,
+   "small": true
+  },
+  {
+   "text": "take 1. I wrote:",
+   "from": 3.1,
+   "to": 4.9,
+   "y": 345
+  },
+  {
+   "text": "her aunt grabbed my card.",
+   "from": 6.0,
+   "to": 7.4,
+   "y": 345
+  },
+  {
+   "text": "her aunt said yes.",
+   "from": 7.4,
+   "to": 9.4,
+   "y": 345
+  },
+  {
+   "text": "it wasn't for her.",
+   "from": 9.6,
+   "to": 11.8,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 12.4,
+   "to": 14.5,
+   "y": 345,
+   "big": true
+  },
+  {
+   "text": "her name is noor.",
+   "from": 18.5,
+   "to": 21.9,
+   "y": 345
+  },
+  {
+   "text": "she waved. I kept the card.",
+   "from": 22.5,
+   "to": 25.9,
+   "y": 345
+  },
+  {
+   "text": "she wrote back.",
+   "from": 29.0,
+   "to": 30.9,
+   "y": 345
+  }
+ ],
+ "audio": {
+  "bpm": 96,
+  "meter": "3/4",
+  "groove": [
+   [
+    0,
+    34.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    17.8,
+    22.0
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    34.0
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "markerSlide": [
+   4.9,
+   15.2
+  ],
+  "capPop": [
+   3.1,
+   13.5
+  ],
+  "scrawl": [
+   [
+    3.3,
+    4.55
+   ],
+   [
+    7.9,
+    9.0
+   ],
+   [
+    13.6,
+    14.8
+   ],
+   [
+    16.7,
+    17.5
+   ],
+   [
+    27.0,
+    28.8
+   ]
+  ],
+  "tentFlip": [
+   7.1,
+   16.0,
+   18.9
+  ],
+  "laughSting": [
+   6.9
+  ],
+  "phoneTap": [
+   1.5
+  ],
+  "phoneBuzz": [
+   22.5,
+   23.0
+  ],
+  "forkTinks": [],
+  "plateClink": [],
+  "gulp": [],
+  "slide": [
+   23.0
+  ],
+  "susanWhoosh": [
+   12.0
+  ],
+  "cardPops": [
+   1.2,
+   6.0,
+   7.4,
+   9.6,
+   12.4,
+   18.5,
+   22.5,
+   29.0
+  ],
+  "stamps": [
+   3.1,
+   6.0,
+   7.4,
+   9.6,
+   12.5,
+   18.5,
+   22.5,
+   29.0
+  ],
+  "keyJangle": [
+   0.6,
+   1.0,
+   1.9,
+   24.0,
+   24.4,
+   24.8,
+   25.2
+  ],
+  "doorClick": [
+   23.8
+  ],
+  "glassTink": [
+   31.0,
+   31.5
+  ],
+  "endChime": []
+ }
+}
