@@ -20,6 +20,7 @@ import {LANE4_FPS, LANE4_FRAMES, Lane4} from './stories/lane/ep4';
 import {WHITES1_FPS, WHITES1_FRAMES, Whites1} from './stories/whites/ep1';
 import {WHITES2_FPS, WHITES2_FRAMES, Whites2} from './stories/whites/ep2';
 import {WHITES3_FPS, WHITES3_FRAMES, Whites3} from './stories/whites/ep3';
+import {WHITES4_FPS, WHITES4_FRAMES, Whites4} from './stories/whites/ep4';
 import {TABLE1_FPS, TABLE1_FRAMES, Table1} from './stories/table/ep1';
 import {TABLE2_FPS, TABLE2_FRAMES, Table2} from './stories/table/ep2';
 import {TABLE3_FPS, TABLE3_FRAMES, Table3} from './stories/table/ep3';
@@ -27,6 +28,7 @@ import {TABLE4_FPS, TABLE4_FRAMES, Table4} from './stories/table/ep4';
 import {TABLE5_FPS, TABLE5_FRAMES, Table5} from './stories/table/ep5';
 import {TABLE6_FPS, TABLE6_FRAMES, Table6} from './stories/table/ep6';
 import {BAG1_FPS, BAG1_FRAMES, Bag1} from './stories/bag/ep1';
+import {BAG2_FPS, BAG2_FRAMES, Bag2} from './stories/bag/ep2';
 import {ACROSS1_FPS, ACROSS1_FRAMES, Across1} from './stories/across/ep1';
 import {ACROSS2_FPS, ACROSS2_FRAMES, Across2} from './stories/across/ep2';
 import {ACROSS3_FPS, ACROSS3_FRAMES, Across3} from './stories/across/ep3';
@@ -60,11 +62,13 @@ export const Root: React.FC = () => (
     <Composition id="Whites1" component={Whites1} durationInFrames={WHITES1_FRAMES} fps={WHITES1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Whites2" component={Whites2} durationInFrames={WHITES2_FRAMES} fps={WHITES2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Whites3" component={Whites3} durationInFrames={WHITES3_FRAMES} fps={WHITES3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Whites4" component={Whites4} durationInFrames={WHITES4_FRAMES} fps={WHITES4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table3" component={Table3} durationInFrames={TABLE3_FRAMES} fps={TABLE3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table4" component={Table4} durationInFrames={TABLE4_FRAMES} fps={TABLE4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table5" component={Table5} durationInFrames={TABLE5_FRAMES} fps={TABLE5_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table6" component={Table6} durationInFrames={TABLE6_FRAMES} fps={TABLE6_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Bag1" component={Bag1} durationInFrames={BAG1_FRAMES} fps={BAG1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Bag2" component={Bag2} durationInFrames={BAG2_FRAMES} fps={BAG2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across1" component={Across1} durationInFrames={ACROSS1_FRAMES} fps={ACROSS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across2" component={Across2} durationInFrames={ACROSS2_FRAMES} fps={ACROSS2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across3" component={Across3} durationInFrames={ACROSS3_FRAMES} fps={ACROSS3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />

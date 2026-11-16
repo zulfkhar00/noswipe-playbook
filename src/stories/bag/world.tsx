@@ -68,7 +68,7 @@ export const Board: React.FC<{flip: number; y?: number}> = ({flip, y = 470}) => 
 // ---------------------------------------------------------------------------------------- belts
 const SLAT = 90;
 /** Far belt behind the figures (mid-far plane): a band with bags riding on it. */
-export const FarBelt: React.FC<{t: number; pos: number; keyBag: number | null; empty?: boolean}> = ({pos, keyBag, empty = false}) => {
+export const FarBelt: React.FC<{t: number; pos: number; keyBag: number | null; empty?: boolean; keyRibbon?: boolean}> = ({pos, keyBag, empty = false, keyRibbon = false}) => {
   const others = [
     {o: 0, col: C.sky, deep: '#5FA5E0', w: 210}, {o: 700, col: C.amber, deep: '#D48F00', w: 190}, {o: 1500, col: '#3A3A42', deep: '#26262C', w: 200}];
   return <g>
@@ -79,7 +79,7 @@ export const FarBelt: React.FC<{t: number; pos: number; keyBag: number | null; e
       const x = (((b.o - pos) % 2400) + 2400) % 2400 - 400;
       return <g key={i} transform={`translate(${x} 858) scale(0.8)`}><Bag x={0} y={-165} loop={false} tag={false} body={b.col} deep={b.deep} wScale={b.w / 240} /></g>;
     })}
-    {!empty && keyBag !== null && <g transform={`translate(${keyBag} 858) scale(0.8)`}><Bag x={0} y={-165} loop={false} tag /></g>}
+    {!empty && keyBag !== null && <g transform={`translate(${keyBag} 858) scale(0.8)`}><Bag x={0} y={-165} loop={false} tag ribbon={keyRibbon ? 1 : 0} ribbonColor={C.amber} /></g>}
   </g>;
 };
 
@@ -113,8 +113,8 @@ export const NearRail: React.FC<{t: number}> = ({t}) => <g filter="url(#blurNear
 </g>;
 
 // ---------------------------------------------------------------------------------------- bag
-export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; body?: string; deep?: string; wScale?: number; ribbon?: number; pocketGlow?: number; shake?: number; rot?: number; scale?: number}> = ({
-  x, y, loop, tag, body = C.suitcase, deep = C.suitcaseDeep, wScale = 1, pocketGlow = 0, shake = 0, rot = 0, scale = 1, ribbon = 0}) => {
+export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; body?: string; deep?: string; wScale?: number; ribbon?: number; pocketGlow?: number; shake?: number; rot?: number; scale?: number; ribbonColor?: string; tagString?: string; pouch?: boolean; zipX?: number; zipRot?: number; jam?: number; children?: React.ReactNode}> = ({
+  x, y, loop, tag, body = C.suitcase, deep = C.suitcaseDeep, wScale = 1, pocketGlow = 0, shake = 0, rot = 0, scale = 1, ribbon = 0, ribbonColor = C.hiVis, tagString = C.carbon, pouch = false, zipX = 0, zipRot = 0, jam = 0, children}) => {
   const w = 240 * wScale, h = 330;
   const sx = Math.sin(shake * 60) * 5 * shake;
   return <g transform={`translate(${x + sx} ${y}) rotate(${rot}) scale(${scale})`}>
@@ -131,7 +131,8 @@ export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; b
     {/* front pocket */}
     <rect x={-72} y={26} width={144} height={112} rx={20} fill={deep} stroke={C.carbon} strokeWidth={4} />
     <line x1={-56} y1={44} x2={56} y2={44} stroke={C.carbon} strokeWidth={4} strokeDasharray="8 6" />
-    <rect x={-8} y={36} width={16} height={16} rx={6} fill={C.amber} />
+    <g transform={`translate(${zipX} 0) rotate(${zipRot} 0 44)`}><rect x={-8} y={36} width={16} height={16} rx={6} fill={C.amber} stroke={zipX ? C.carbon : 'none'} strokeWidth={3} /></g>
+    {jam > 0 && <g fill="none" stroke={C.carbon} strokeWidth={5} strokeLinecap="round">{[-1, 0, 1].map((k) => <path key={k} transform={`translate(${zipX + k * 2} 0)`} d={`M ${-6 + k * 30} 8 l 9 -26 l 9 26`} opacity={jam} />)}</g>}
     {pocketGlow > 0 && <g>
       <circle cx={0} cy={82} r={140} fill="url(#glowSky)" opacity={pocketGlow * 0.8} />
       <rect x={-72} y={26} width={144} height={112} rx={20} fill={C.sky} opacity={pocketGlow * 0.4} />
@@ -144,14 +145,19 @@ export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; b
       <rect x={34} y={-h / 2 + 62} width={28} height={14} fill={C.carbon} opacity={0.35} />
     </g>}
     {ribbon > 0 && <g transform={`translate(34 ${-h / 2 - 52}) scale(${ribbon})`}>
-      <path d="M 0 4 L -18 70 L -2 62 L 6 74 L 12 8 Z" fill={C.hiVis} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
-      <path d="M 0 0 Q -44 -36 -50 2 Q -44 30 0 0 Z" fill={C.hiVis} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
-      <path d="M 0 0 Q 44 -36 50 2 Q 44 30 0 0 Z" fill={C.hiVis} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
-      <circle r={9} fill={C.hiVis} stroke={C.carbon} strokeWidth={4} />
+      <path d="M 0 4 L -18 70 L -2 62 L 6 74 L 12 8 Z" fill={ribbonColor} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
+      <path d="M 0 0 Q -44 -36 -50 2 Q -44 30 0 0 Z" fill={ribbonColor} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
+      <path d="M 0 0 Q 44 -36 50 2 Q 44 30 0 0 Z" fill={ribbonColor} stroke={C.carbon} strokeWidth={4} strokeLinejoin="round" />
+      <circle r={9} fill={ribbonColor} stroke={C.carbon} strokeWidth={4} />
     </g>}
     {tag && <g transform={`translate(-52 ${-h / 2 - 28}) rotate(14)`}>
-      <path d="M 0 0 L 0 36" stroke={C.carbon} strokeWidth={4} /><g transform="translate(-26 34)"><rect width={52} height={74} rx={7} fill={C.kraft} stroke={C.kraftDeep} strokeWidth={4} /><circle cx={26} cy={12} r={5} fill={C.concrete} stroke={C.kraftDeep} strokeWidth={2} /></g>
+      <path d="M 0 0 L 0 36" stroke={tagString} strokeWidth={tagString === C.carbon ? 4 : 7} /><g transform="translate(-26 34)"><rect width={52} height={74} rx={7} fill={C.kraft} stroke={C.kraftDeep} strokeWidth={4} /><circle cx={26} cy={12} r={5} fill={C.concrete} stroke={C.kraftDeep} strokeWidth={2} /></g>
     </g>}
+    {pouch && <g>
+      <rect x={w / 2 - 38} y={30} width={92} height={124} rx={18} fill={deep} stroke={C.carbon} strokeWidth={4} />
+      <line x1={w / 2 - 22} y1={54} x2={w / 2 + 38} y2={54} stroke={C.carbon} strokeWidth={4} strokeDasharray="8 6" />
+    </g>}
+    {children}
   </g>;
 };
 
@@ -305,7 +311,7 @@ export const tagGeom = (w: number, h: number, nLines: number, lines: string[], m
   return {x0, size, ys: lines.map((_, i) => -total / 2 + i * lh + size * 0.32), widths: lines.map((l) => textW(l, font(size)))};
 };
 
-export const KraftTag: React.FC<{w: number; h: number; lines: TagLine[]; size: number; x?: number; y?: number; rot?: number; scale?: number; shadow?: number; ruled?: boolean; id: string; barcode?: boolean; string?: boolean}> = ({w, h, lines, size, x = 0, y = 0, rot = 0, scale = 1, shadow = 1, ruled = false, id, barcode = false, string = true}) => {
+export const KraftTag: React.FC<{w: number; h: number; lines: TagLine[]; size: number; x?: number; y?: number; rot?: number; scale?: number; shadow?: number; ruled?: boolean; id: string; barcode?: boolean; string?: boolean; stringColor?: string}> = ({w, h, lines, size, x = 0, y = 0, rot = 0, scale = 1, shadow = 1, ruled = false, id, barcode = false, string = true, stringColor = C.carbon}) => {
   const g = tagGeom(w, h, lines.length, lines.map((l) => l.txt), size);
   const cut = 70;
   const d = `M ${-w / 2 + cut} ${-h / 2} L ${w / 2 - 14} ${-h / 2} Q ${w / 2} ${-h / 2} ${w / 2} ${-h / 2 + 14} L ${w / 2} ${h / 2 - 14} Q ${w / 2} ${h / 2} ${w / 2 - 14} ${h / 2} L ${-w / 2 + cut} ${h / 2} L ${-w / 2} ${h / 2 - cut} L ${-w / 2} ${-h / 2 + cut} Z`;
@@ -319,7 +325,8 @@ export const KraftTag: React.FC<{w: number; h: number; lines: TagLine[]; size: n
     {/* reinforced hole + string */}
     <circle cx={-w / 2 + 62} cy={0} r={34} fill="#F1DDB8" stroke={C.kraftDeep} strokeWidth={5} />
     <circle cx={-w / 2 + 62} cy={0} r={19} fill={C.concrete} stroke={C.kraftDeep} strokeWidth={4} />
-    {string && <path d={`M ${-w / 2 + 62} 0 Q ${-w / 2 - 70} -90 ${-w / 2 - 150} -40`} fill="none" stroke={C.carbon} strokeWidth={6} opacity={0.75} />}
+    {string && stringColor === C.carbon && <path d={`M ${-w / 2 + 62} 0 Q ${-w / 2 - 70} -90 ${-w / 2 - 150} -40`} fill="none" stroke={C.carbon} strokeWidth={6} opacity={0.75} />}
+    {string && stringColor !== C.carbon && <g fill="none" strokeLinecap="round"><path d={`M ${-w / 2 + 62} 0 Q ${-w / 2 - 50} -70 ${-w / 2 - 110} -30`} stroke={C.carbon} strokeWidth={17} /><path d={`M ${-w / 2 + 62} 0 Q ${-w / 2 - 50} -70 ${-w / 2 - 110} -30`} stroke={stringColor} strokeWidth={9} /></g>}
     {barcode && Array.from({length: 22}, (_, i) => <rect key={i} x={g.x0 + i * 15 + (i % 3)} y={h / 2 - 58} width={i % 4 === 0 ? 9 : 5} height={30} fill={C.carbon} opacity={0.55} />)}
     <defs>{lines.map((l, i) => <clipPath key={i} id={`${id}c${i}`}><rect x={g.x0 - 30} y={g.ys[i] - g.size} width={(g.widths[i] + 60) * clamp(l.p)} height={g.size * 1.6} /></clipPath>)}</defs>
     {lines.map((l, i) => <text key={i} x={g.x0} y={g.ys[i]} fontFamily={CAVEAT} fontWeight={700} fontSize={g.size} fill={C.ink} clipPath={`url(#${id}c${i})`} transform={`rotate(${i % 2 ? 0.6 : -0.5} ${g.x0} ${g.ys[i]})`}>{l.txt}</text>)}
@@ -406,7 +413,7 @@ export const VoteCard: React.FC<{letter: string; l1: string; l2: string; y: numb
   </g>;
 };
 
-export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
+export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon?: boolean}> = ({a, t, part = 2, amberRibbon = false}) => {
   const pop = (d: number) => { const k = clamp((a - d) / 0.3); return k <= 0 ? 0 : 1 + Math.sin(k * Math.PI * 1.5) * Math.exp(-k * 4.2) * 0.4 - Math.exp(-k * 9) * (1 - k); };
   return <g>
     <HallWall />
@@ -419,12 +426,12 @@ export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
       <text x={9} y={19} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={176} fill={C.carbon} opacity={0.25}>same bag.</text>
       <text x={0} y={10} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={176} fill={C.carbon}>same bag.</text>
     </g>
-    <g transform={`translate(280 880) scale(${pop(0.15)})`}><Bag x={0} y={0} loop={false} tag /></g>
+    <g transform={`translate(280 880) scale(${pop(0.15)})`}><Bag x={0} y={0} loop={false} tag ribbon={amberRibbon ? 1 : 0} ribbonColor={C.amber} /></g>
     <g transform={`translate(800 880) scale(${pop(0.25)})`}><Bag x={0} y={0} loop tag={false} /></g>
     <g transform={`translate(540 1190) scale(${pop(0.4)})`}>
       <rect x={-330} y={-62} width={660} height={116} rx={22} fill={C.carbon} transform="translate(10 12)" opacity={0.9} />
       <rect x={-330} y={-62} width={660} height={116} rx={22} fill={C.hiVis} stroke={C.carbon} strokeWidth={6} />
-      <text x={0} y={26} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={74} fill={C.carbon}>part 2 · A or B</text>
+      <text x={0} y={26} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={74} fill={C.carbon}>part {part} · A or B</text>
     </g>
   </g>;
 };
@@ -439,5 +446,48 @@ export const Label: React.FC<{x: number; y: number; text: string; tx: number; ty
     <path d={path} fill="none" stroke="#fff" strokeWidth={16} strokeLinecap="round" /><path d={hd(0.5)} stroke="#fff" strokeWidth={16} strokeLinecap="round" /><path d={hd(-0.5)} stroke="#fff" strokeWidth={16} strokeLinecap="round" />
     <path d={path} fill="none" stroke={C.carbon} strokeWidth={7} strokeLinecap="round" /><path d={hd(0.5)} stroke={C.carbon} strokeWidth={7} strokeLinecap="round" /><path d={hd(-0.5)} stroke={C.carbon} strokeWidth={7} strokeLinecap="round" />
     <text x={x} y={y} textAnchor="middle" fontFamily={CAVEAT} fontWeight={700} fontSize={size} fill={C.carbon} stroke="#fff" strokeWidth={16} strokeLinejoin="round" paintOrder="stroke">{text}</text>
+  </g>;
+};
+
+// ---------------------------------------------------------------------------------------- flowers
+/** Supermarket bunch gripped at (0,0), stems up. droop 0 = perky, 1 = limp (heads fold over and hang). `fall` = seconds since droop (petals). */
+export const Flowers: React.FC<{droop: number; t?: number; fall?: number; scale?: number; rot?: number; x?: number; y?: number}> = ({droop, t = 0, fall = -1, scale = 1, rot = 0, x = 0, y = 0}) => {
+  const stems = [{a: -30, L: 178}, {a: -15, L: 205}, {a: 0, L: 222}, {a: 14, L: 196}, {a: 29, L: 172}];
+  const d = clamp(droop);
+  const pink = ['#F06A8D', '#FF8FA3', '#F5F0E6', '#F06A8D', '#FF8FA3'];
+  const dull = ['#B58A96', '#BC9AA2', '#CFC7B8', '#B58A96', '#BC9AA2'];
+  const leaf = '#3E8E4E';
+  const rad = (a: number) => (a * Math.PI) / 180;
+  const pts = stems.map((st, i) => {
+    const dir = st.a === 0 ? 1 : Math.sign(st.a);
+    const sx = Math.sin(rad(st.a)), cx = Math.cos(rad(st.a));
+    const sway = (1 - d) * Math.sin(t * 2.4 + i) * 4;
+    const pH = [sx * st.L + sway, -cx * st.L], pC2 = [sx * st.L * 0.72, -cx * st.L * 0.8];
+    const tx = sx * st.L * 0.3;
+    const hH = [tx + dir * st.L * 0.5, st.L * 0.1 + i * 7], hC2 = [tx + dir * st.L * 0.22, -st.L * 0.9];
+    const c1 = [sx * st.L * 0.12, -st.L * 0.5];
+    const H = [lerp(pH[0], hH[0], d), lerp(pH[1], hH[1], d)], C2 = [lerp(pC2[0], hC2[0], d), lerp(pC2[1], hC2[1], d)];
+    return {st, dir, c1, C2, H};
+  });
+  return <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${scale})`}>
+    {pts.map((p, i) => <path key={`s${i}`} d={`M 0 0 C ${p.c1[0]} ${p.c1[1]} ${p.C2[0]} ${p.C2[1]} ${p.H[0]} ${p.H[1]}`} fill="none" stroke={C.carbon} strokeWidth={14} strokeLinecap="round" />)}
+    {pts.map((p, i) => <path key={`g${i}`} d={`M 0 0 C ${p.c1[0]} ${p.c1[1]} ${p.C2[0]} ${p.C2[1]} ${p.H[0]} ${p.H[1]}`} fill="none" stroke={leaf} strokeWidth={8} strokeLinecap="round" />)}
+    {pts.map((p, i) => <ellipse key={`l${i}`} cx={p.c1[0] * 0.9 + p.dir * 18} cy={p.c1[1] * 0.9} rx={22} ry={9} fill={leaf} stroke={C.carbon} strokeWidth={3} transform={`rotate(${p.dir * (30 + 70 * d)} ${p.c1[0] * 0.9} ${p.c1[1] * 0.9})`} />)}
+    {pts.map((p, i) => {
+      const col = d > 0.5 ? dull[i] : pink[i];
+      const petals = d > 0.5 ? 5 : 7;
+      const r = 32 - d * 6;
+      return <g key={`h${i}`} transform={`translate(${p.H[0]} ${p.H[1]}) rotate(${d * p.dir * 150})`}>
+        {Array.from({length: petals}, (_, k) => <ellipse key={k} cx={0} cy={-r * 0.8} rx={r * 0.5} ry={r * 0.72} fill={col} stroke={C.carbon} strokeWidth={4} transform={`rotate(${(k * 360) / petals + (d > 0.5 ? (k % 2) * 14 : 0)})`} />)}
+        <circle r={r * 0.42} fill={d > 0.5 ? '#B89A5A' : '#FFD25A'} stroke={C.carbon} strokeWidth={4} />
+      </g>;
+    })}
+    {fall >= 0 && fall < 1.1 && [0, 1, 2].map((i) => {
+      const p = pts[(i * 2 + 1) % 5], k = clamp(fall / 1.1 - i * 0.12);
+      return <g key={`f${i}`} transform={`translate(${p.H[0] + (i - 1) * 22 + Math.sin(k * 9 + i) * 16} ${p.H[1] + 40 + k * 330}) rotate(${k * 260 + i * 40})`} opacity={1 - k * 0.8}><ellipse rx={11} ry={17} fill="#D9A3AE" stroke={C.carbon} strokeWidth={3} /></g>;
+    })}
+    <path d="M 0 22 L -64 -70 Q 0 -50 64 -70 Z" fill="#fff" fillOpacity={0.55} stroke="#fff" strokeWidth={4} strokeLinejoin="round" />
+    <path d="M -22 -2 L -34 -46 M 6 4 L 4 -52 M 28 -4 L 38 -48" stroke="#fff" strokeWidth={3} opacity={0.8} />
+    <rect x={-20} y={-8} width={40} height={14} rx={7} fill="#F06A8D" stroke={C.carbon} strokeWidth={3} />
   </g>;
 };

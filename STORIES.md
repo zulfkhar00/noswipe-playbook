@@ -534,6 +534,20 @@ pat can read as a shove; "seen" stamps are small; nothing says the paint is for 
 drips into a blob). A bystander's phone may chime NoSwipe only if it is the gag.
 
 
+| 4a | The paint aisle stranger handed me her brush. Part 4 (52) | `specs/stories/whites-ep4.json` | `Whites4` hook a |
+| 4b | She caught me swiping and handed me her brush. Part 4 (53) | same | `Whites4` hook b |
+
+**What happened (part 4, nightly for 2026-11-16):** 34.0 s, vote up 23.9 s. Frame 1: his phone lit mid-swipe, her arm holding
+the brush out, her wet POPPY square on the TEST PATCH board. Take 1 A TINY HEART.: the heart drips into a tomato ("I painted a
+heart. it's a tomato."), she holds in a kind smile and gives a thumbs-up. Fan snaps shut ("rewind. take 2."). Take 2 A WINDOW.
+FOR YOUR ROOM.: a POPPY window; she writes "it needs / a view." and paints a sunflower sun in it; shared laugh; she holds the
+board up and keeps it. Cliff: intercom, STORE CLOSES / IN 10 MIN, "we never even swapped names." Vote "they're closing. what do
+I do?" A (ASK HER / FOR COFFEE.) / B (BUY MORE / PAINT. STALL.). End card "fifty whites · part 5 · A or B". No NoSwipe mention
+(both season slots still free; best fit a cashier's phone in part 5's STALL branch). Blind check 1 round + polish: clarity 7,
+hook a 6 / b 7, satisfaction 7, want_next 8. Open: the thumbs-up hand reads as a raised finger; her arms are long diagonals.
+**Part 5 (Closing time):** A wins (honest, planned); B plays first and fails on him (he buys a cart of rollers, tape and a
+ladder at the register while the intercom calls her; she leaves her chip on the shelf), then rewind and A.
+
 ## Season 10 · Same Bag (silent baggage-claim romance, luggage-tag handoffs)
 
 **Logline:** Two strangers wait at the same carousel, both swiping. Two identical grey suitcases, one wrong grab, and she
@@ -585,3 +599,16 @@ belt empty, she waits. Vote "she asked if it was a rough trip. I flew in for a d
 DATE THAT DIED.). Blind check 2 rounds: clarity 6 -> 7, hook a 5 / b 7, satisfaction 4 -> 5, want_next 7. Open for part 2: the
 date backstory lands only at the vote (plant it earlier), the bow makes both bags chartreuse, the second strip covers the
 board. **Part 2 (Rough trip):** B wins unless comments say otherwise; A plays first and fails on him.
+
+| 2a | A baggage claim stranger asked about my trip. Part 2 (52) | `specs/stories/bag-ep2.json` | `Bag2` hook a |
+| 2b | Baggage claim stranger caught me swiping. Again. Part 2 (55) | same | `Bag2` hook b |
+
+**What happened (part 2, nightly for 2026-11-16):** 33.4 s, vote up 23.8 s. Frame 1: his phone lit mid-swipe, her big tag
+"(rough trip?)". Backstory planted at 3-5.7 s: limp flowers droop, "I flew in for a date." / "it flopped." Take 1 (work. / very
+busy.): he poses, sets his bag on the belt, it rides away, he chases it. Belt-flap wipe reversed (rewind). Take 2 (a date / that
+died.): they laugh together, she writes "(their loss.)", then her own tag "(same. layover.)"; tags tap. His ribbon is now AMBER
+(only her bag is chartreuse). Cliff: her zip jams with her phone half in. Vote "her zip's stuck. what do I do?" A (ASK FIRST.
+THEN HELP.) / B (YANK IT. LOOK STRONG.). End card "same bag · part 3 · A or B". Blind check 1 round + fixes (bag exit, shared
+laugh, full "(their loss.)", bigger payoff tags, zip close-up, bigger phone): clarity 7, hook a 5 / b 6, satisfaction 7,
+want_next 7. Open: the swiping thread drops after frame 1. **Part 3 (Stuck zip):** A wins (planned); B plays first and fails
+on him (he yanks, the tab pops off, he topples over his own bag), belt reverses, then A.

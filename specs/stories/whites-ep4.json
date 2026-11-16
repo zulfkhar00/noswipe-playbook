@@ -1,0 +1,297 @@
+{
+ "id": "whites-ep4",
+ "season": "Fifty Whites",
+ "episode": 4,
+ "title": "Test patch. Part 4",
+ "note": "Silent. Test-patch end of the paint aisle (small plate TEST PATCH, a primed sample board on a stand at the right with HER wet POPPY square already on it and a blank pencil-dotted square beside it for him, pegboard + chip racks far, her basket with the POPPY can and the pencil on a chain near, blurred paint can at the rack edge). Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345): two large faces, HIS PHONE LIT MID-SWIPE (1.5x, generic profile card + heart badge, no UI) in his hand, her arm out holding the brush to him, her POPPY square wet behind it. Readable as 'she handed me the brush'. She glances at the phone (1.5), he pockets it (1.8) and takes the brush (2.5). Continuity: ep3 put his phone in the basket; for frame 1 it is back in his hand (apps-visible opener), no gag about it. Take 1 (3.0-8.2): chip A TINY / HEART.; he paints a small neat heart in the blank square (4.0-4.6), it starts to drip (5.0), drips run together (5.6), a stray mint drip lands on top as a stem (5.9): it is a tomato; he gulps (6.4); she tilts her head with the blob, presses her lips to hold a kind smile, gives a small thumbs-up (7.0-7.9). Fan-deck snaps shut (8.2-8.85), big 'rewind. take 2.' held 8.45-9.95. Take 2 (9.5-21.4): chip A WINDOW. / FOR YOUR ROOM.; he takes the brush (10.9), paints slow and steady: square frame (11.2-12.3), cross bars (12.4-13.2), steps back (13.4). PAYOFF (13.9-21.4): she leans in and looks a long time (14.0), smile builds (14.6), pencil on the chain swings, she writes on the back of a chip (15.2-16.3) and turns it to camera (16.5): 'it needs / a view.' (dry, kind), then she takes the brush from his hand (17.0), dips SUNFLOWER and paints a little sun in the top right pane (17.4-18.5); warm sunflower light washes both faces (18.6), shared laugh 18.7 (bossa drops out), she lifts the board off the stand and slides it into her basket beside the POPPY can (19.2-19.9, 'she kept it.'). Cliff (21.5): intercom ding, a ceiling speaker pops in the top right corner with sound arcs and a big banner STORE CLOSES / IN 10 MIN (slams in 21.7, held to 22.9), the far aisle lights go dark row by row, both look up, then at each other; he freezes (gulp 22.0). Fan-deck wipe 22.9, vote up by 23.9, end card 30.5. Text only between y=270 and y=1250. NoSwipe mention SKIPPED (a bystander chime would cost clarity on a beat that is already two gags and a cliff; the Across mention was cut as a plug; both season slots stay free, the best fit is a cashier's phone in part 5's STALL branch).",
+ "duration": 34.0,
+ "hooks": {
+  "a": "the stranger in the paint aisle handed me her brush.",
+  "b": "a stranger caught me swiping. then she handed me a brush."
+ },
+ "beats": {
+  "glance": 1.5,
+  "pocket": 1.8,
+  "grab": 2.5,
+  "take1": 3.0,
+  "heartStart": 4.0,
+  "heartDone": 4.6,
+  "drip": 5.0,
+  "blob": 5.6,
+  "stem": 5.9,
+  "gulp1": 6.4,
+  "tilt": 6.6,
+  "thumbsUp": 7.4,
+  "rewind": 8.2,
+  "bigText": 8.45,
+  "open": 8.85,
+  "take2": 9.5,
+  "chipB": 10.0,
+  "grab2": 10.9,
+  "frameStart": 11.2,
+  "frameDone": 12.3,
+  "crossStart": 12.4,
+  "crossDone": 13.2,
+  "stepBack": 13.4,
+  "look": 14.0,
+  "smile": 14.6,
+  "pencil": 15.0,
+  "write1": 15.2,
+  "write2": 15.8,
+  "chipC": 16.5,
+  "brushBack": 17.0,
+  "sunStart": 17.4,
+  "sunDone": 18.5,
+  "glow": 18.6,
+  "laugh": 18.7,
+  "keep": 19.2,
+  "kept": 19.9,
+  "ding": 21.5,
+  "banner": 21.7,
+  "lightsOut": 21.9,
+  "gulp2": 22.0,
+  "voteWipe": 22.9,
+  "cardA": 23.3,
+  "cardB": 23.6,
+  "voteUp": 23.9,
+  "endcard": 30.5
+ },
+ "choices": {
+  "question": "they're closing. what do I do?",
+  "A": {
+   "l1": "ASK HER",
+   "l2": "FOR COFFEE."
+  },
+  "B": {
+   "l1": "BUY MORE",
+   "l2": "PAINT. STALL."
+  },
+  "why": "Both are about him; neither mocks her. A (ask her for coffee) is the honest, brave answer and the PLANNED WINNER. B is the cowardly stall: it plays first in part 5 and fails on him (he buys a cart of rollers, tape and a ladder at the register while the intercom calls her), then rewind and A."
+ },
+ "strips": [
+  {
+   "text": "hook",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true
+  },
+  {
+   "text": "take 1: A TINY HEART.",
+   "from": 3.1,
+   "to": 5.8,
+   "y": 345
+  },
+  {
+   "text": "I painted a heart. it's a tomato.",
+   "from": 5.9,
+   "to": 8.1,
+   "y": 345
+  },
+  {
+   "text": "take 2: A WINDOW. FOR YOUR ROOM.",
+   "from": 10.1,
+   "to": 11.5,
+   "y": 345
+  },
+  {
+   "text": "slow. steady. just a window.",
+   "from": 11.6,
+   "to": 13.9,
+   "y": 345
+  },
+  {
+   "text": "she looked at it. a long time.",
+   "from": 14.0,
+   "to": 16.5,
+   "y": 345
+  },
+  {
+   "text": "my window had no view.",
+   "from": 16.6,
+   "to": 18.6,
+   "y": 345
+  },
+  {
+   "text": "her sun. my window.",
+   "from": 18.7,
+   "to": 19.9,
+   "y": 345
+  },
+  {
+   "text": "she kept it.",
+   "from": 20.0,
+   "to": 21.4,
+   "y": 345
+  },
+  {
+   "text": "we never even swapped names.",
+   "from": 21.8,
+   "to": 22.9,
+   "y": 345
+  },
+  {
+   "text": "they're closing. what do I do?",
+   "from": 23.3,
+   "to": 30.5,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.3,
+   "to": 30.5,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "chip_take1": [
+   "A TINY",
+   "HEART."
+  ],
+  "chip_take2": [
+   "A WINDOW.",
+   "FOR YOUR ROOM."
+  ],
+  "sign": "TEST PATCH",
+  "banner": [
+   "STORE CLOSES",
+   "IN 10 MIN"
+  ],
+  "chips": [
+   [
+    "it needs",
+    "a view."
+   ]
+  ],
+  "end_card": "fifty whites · part 5 · A or B"
+ },
+ "audio": {
+  "bpm": 100,
+  "meter": "4/4",
+  "groove": [
+   [
+    0,
+    18.6
+   ],
+   [
+    21.6,
+    34.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    8.2,
+    8.85
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    34.0
+   ]
+  ],
+  "shakerRattle": [],
+  "shakerStop": [],
+  "phoneBuzz": [],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "chipFlicks": [
+   3.0,
+   10.0,
+   16.5
+  ],
+  "chipRiffle": [
+   3.0,
+   10.0,
+   16.5
+  ],
+  "chipSlide": [
+   2.5,
+   10.9,
+   17.0,
+   19.2
+  ],
+  "laughSting": [
+   18.7
+  ],
+  "phoneTap": [
+   1.85
+  ],
+  "pencilSwing": [
+   15.0,
+   15.7
+  ],
+  "scrawl": [
+   [
+    4.0,
+    4.6
+   ],
+   [
+    11.2,
+    12.3
+   ],
+   [
+    12.4,
+    13.2
+   ],
+   [
+    15.2,
+    15.7
+   ],
+   [
+    15.8,
+    16.3
+   ],
+   [
+    17.4,
+    18.5
+   ]
+  ],
+  "gulp": [
+   1.9,
+   6.4,
+   9.6,
+   22.0
+  ],
+  "thumbTicks": [
+   5.0,
+   5.3,
+   5.6,
+   5.9
+  ],
+  "intercomDing": [
+   21.5
+  ],
+  "fanWhoosh": [
+   8.2,
+   8.85,
+   22.9
+  ],
+  "cardPops": [
+   23.3,
+   23.6
+  ],
+  "stamps": [
+   3.1,
+   5.9,
+   8.45,
+   10.1,
+   11.6,
+   14.0,
+   16.6,
+   18.7,
+   20.0,
+   21.8,
+   23.3,
+   30.5
+  ],
+  "endChime": [
+   30.5
+  ]
+ }
+}

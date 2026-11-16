@@ -1056,6 +1056,86 @@
     "want_next": 7,
     "rounds": 2
    }
+  },
+  {
+   "id": "whites-4-a",
+   "day": "2026-11-16",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 4,
+   "hook": "a",
+   "caption": "The paint aisle stranger handed me her brush. Part 4. Take one, my tiny heart turned into a tomato. Take two, I painted a window and she gave it a sun. Now the store is closing. What do I do, A or B? #strangerstolovers #romance #meetcute #shortstory #animation",
+   "video": "videos/whites-4-a.mp4",
+   "composition": "Whites4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "bag-2-a",
+   "day": "2026-11-16",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 2,
+   "hook": "a",
+   "caption": "A baggage claim stranger asked about my trip. Part 2. I flew in for a date that flopped, so I wrote the truth on her tag. Her zip just jammed. What do I do, A or B? #airport #meetcute #strangers #shortstory #animation",
+   "video": "videos/bag-2-a.mp4",
+   "composition": "Bag2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "whites-4-b",
+   "day": "2026-11-16",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 4,
+   "hook": "b",
+   "caption": "She caught me swiping and handed me her brush. Part 4. Take one, my tiny heart looked like a tomato, so we rewound. Take two, a window with a sun. Now the store is closing. What do I do, A or B? #datingapps #lovestory #meetcute #shortfilm #animation",
+   "video": "videos/whites-4-b.mp4",
+   "composition": "Whites4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 8,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "bag-2-b",
+   "day": "2026-11-16",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 2,
+   "hook": "b",
+   "caption": "Baggage claim stranger caught me swiping. Again. Part 2. I flew in for a date that flopped, then she asked about my trip. Her zip just jammed. What do I do, A or B? #datingapps #travel #strangerstolovers #shortfilm #animation",
+   "video": "videos/bag-2-b.mp4",
+   "composition": "Bag2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
   }
  ]
 }

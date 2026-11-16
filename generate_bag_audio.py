@@ -222,6 +222,40 @@ def flap_whoosh():
     return fft_bp(noise(0.7), 150, 2600) * k * 1.4 + fft_bp(noise(0.7), 3000, 8000) * k * 0.3 * (np.abs(np.sin(2 * np.pi * 17 * t)) ** 2)
 
 
+def flower_droop():
+    t = tt(0.9)
+    f = 520 * np.exp(-t * 2.2)
+    sad = np.sin(2 * np.pi * np.cumsum(f) / RATE) * env(t, 0.01, 0.45) * 0.5
+    plop = np.sin(2 * np.pi * 95 * t) * env(t, 0.002, 0.07) * 0.5
+    return sad + np.pad(plop, (int(0.38 * RATE), 0))[:len(t)] * 0.9
+
+
+def zip_jam():
+    t = tt(0.32)
+    rasp = fft_bp(noise(0.32), 2500, 7500) * (np.abs(np.sin(2 * np.pi * 38 * t)) ** 1.2) * np.minimum(1, (0.26 - t).clip(0) / 0.05) * 0.9
+    stop = np.sin(2 * np.pi * 240 * t) * env(np.maximum(t - 0.26, 0), 0.001, 0.03) * (t > 0.26) * 0.7
+    return rasp + stop
+
+
+def jog_pat():
+    t = tt(0.12)
+    return (np.sin(2 * np.pi * 150 * t) * env(t, 0.001, 0.025) + fft_lp(noise(0.12), 900) * env(t, 0.001, 0.02) * 0.6) * 0.8
+
+
+def belt_rewind(d=1.0):
+    t = tt(d)
+    k = np.clip(t / d, 0, 1)
+    f = 180 + 1500 * (1 - k) ** 2
+    tone = np.sin(2 * np.pi * np.cumsum(f) / RATE) * 0.2 * np.sin(np.pi * k)
+    fl = fft_bp(noise(d), 300, 3500) * (np.abs(np.sin(2 * np.pi * 22 * t)) ** 2) * np.sin(np.pi * k) * 0.9
+    return tone + fl
+
+
+def tag_tap():
+    t = tt(0.9)
+    return (np.sin(2 * np.pi * 2093 * t) * env(t, 0.0005, 0.25) + 0.5 * np.sin(2 * np.pi * 3136 * t) * env(t, 0.0005, 0.12)) * 0.45 + fft_bp(noise(0.9), 3000, 9000) * env(t, 0.0005, 0.006) * 0.5
+
+
 def pen_cap():
     t = tt(0.12)
     return (np.sin(2 * np.pi * 1700 * t) * env(t, 0.0005, 0.02) + fft_bp(noise(0.12), 1500, 6000) * env(t, 0.0005, 0.01)) * 0.8
@@ -277,12 +311,17 @@ def sfx(st: Stem, a):
     for t in a["phoneTap"]:
         st.add(t, phone_tap(), 0.9); st.add(t + 0.012, phone_tap(), 0.7)
     for t in a.get("ribbonTie", []): st.add(t, slide(0.35), 0.5)
-    for t in a["gulp"]: st.add(t, gulp(), 0.8)
+    for t in a.get("gulp", []): st.add(t, gulp(), 0.8)
     for t in a["phoneBuzz"]: st.add(t, buzz(), 0.7)
-    for t in a["beltStop"]: st.add(t, belt_stop(), 0.9)
-    for t in a["boardFlip"]: st.add(t + 0.1, board_flip(), 0.6)
+    for t in a.get("beltStop", []): st.add(t, belt_stop(), 0.9)
+    for t in a.get("boardFlip", []): st.add(t + 0.1, board_flip(), 0.6)
     for t in a["beltWhoosh"]: st.add(t - 0.05, flap_whoosh(), 0.8)
-    for t in a["cliffSting"]: st.add(t, cliff_sting(), 0.6)
+    for t in a.get("cliffSting", []): st.add(t, cliff_sting(), 0.6)
+    for t in a.get("flowerDroop", []): st.add(t, flower_droop(), 0.8)
+    for t in a.get("zipJam", []): st.add(t, zip_jam(), 0.8)
+    for t in a.get("jogPats", []): st.add(t, jog_pat(), 0.7)
+    for t in a.get("beltRewind", []): st.add(t, belt_rewind(1.0), 0.9)
+    for t in a.get("tagTap", []): st.add(t, tag_tap(), 0.7)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.5)
     for t in a["endChime"]:

@@ -57,6 +57,10 @@ Change one variable at a time within a format.
 | 2026-11-15 | IG @tinyloveshows | silent story (Same Bag, new) | P1 hook a (14:30) | the stranger at baggage claim swipes too. | | | | | | | | | planned: who+where on a new world |
 | 2026-11-15 | IG @tinyloveshows | silent story (Table Nine) | P6 FINALE hook b (repeat body) | a stranger caught me swiping at this wedding. now she's leaving. | | | | | | | | | planned: "caught me swiping" |
 | 2026-11-15 | IG @tinyloveshows | silent story (Same Bag) | P1 hook b (repeat body) | a stranger caught me swiping at baggage claim. she wrote this. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook a (12:00) | the stranger in the paint aisle handed me her brush. | | | | | | | | | planned: who+where (blind hook 6 vs b 7) |
+| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook a (14:30) | the stranger at baggage claim asked how my trip was. | | | | | | | | | planned: who+where (blind 5 vs b 6) |
+| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook b (repeat body) | a stranger caught me swiping. then she handed me a brush. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook b (repeat body) | a stranger caught me swiping at baggage claim. again. | | | | | | | | | planned: "caught me swiping" |
 
 ## Hook patterns (running record)
 
@@ -119,3 +123,7 @@ Tonight's hook b on both bodies names stakes/swiping again.
 Whites P3) and every later stats read are still queued. Tonight: Table Nine finale P6 + new season Same Bag P1 (apps-visible
 opener at baggage claim), each with a who+where/stakes hook a vs a "caught me swiping" hook b. Whites P4 waits until P3 is out.
 Read Same Bag P1 at 3h against Whites P1 (2195 at 6h, 23% skip) to see if a third new world breaks out with the opener.
+
+**Update 2026-11-16:** still no new stats: the phone has been off adb since 2026-11-14 (last job 10:35 UTC), so 8 posts
+(11-14, 11-15) plus every stats read are queued. Tonight continues both seasons in order behind them: Whites P4 and Same Bag
+P2, each who+where (a) vs "caught me swiping" (b) again. Nothing in the hook record changes until the backlog posts.
