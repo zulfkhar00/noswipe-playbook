@@ -548,6 +548,24 @@ hook a 6 / b 7, satisfaction 7, want_next 8. Open: the thumbs-up hand reads as a
 **Part 5 (Closing time):** A wins (honest, planned); B plays first and fails on him (he buys a cart of rollers, tape and a
 ladder at the register while the intercom calls her; she leaves her chip on the shelf), then rewind and A.
 
+| 5a | The girl I like leaves the paint aisle in 10 min. Part 5 (56) | `specs/stories/whites-ep5.json` | `Whites5` hook a |
+| 5b | She caught me swiping. Now the store is closing. Part 5 (55) | same | `Whites5` hook b |
+
+**What happened (part 5, nightly for 2026-11-17):** 34.2 s, vote up 24.3 s. Frame 1: his phone lit mid-swipe, a hanging sign
+STORE / CLOSES / IN 10 MIN between the two faces, her holding the TEST PATCH board (POPPY window + sunflower sun), a register
+with a bored cashier, an empty chip stand. Hook a "the girl I like from the paint aisle leaves in 10 min." / hook b "she caught me
+swiping. now the store closes in 10 min."; stakes strip "we never even swapped names." at 3.1 s. Take 1 BUY MORE PAINT. STALL.:
+basket of rollers, tape and a ladder, ITEMS counter to 48, intercom ding (sign flips to NOW), she places her POPPY chip on the
+stand (bigger, where she stood), waves and leaves by 7.3 s (her spot is empty), the ladder tips onto him ("I bought a ladder. she left."). Fan snaps shut ("rewind. take 2."). Take 2
+ASK HER FOR COFFEE.: his pocket phone buzzes (a heart pops out of his hoodie pocket) and he ignores it; he writes "coffee? / across the / street?" and
+slides it over; she reads, laughs (music drops out), flips the chip and writes "only if you / pick the cup." with a cup doodle,
+whole-frame close-up ("yes. with conditions."). Cliff outside: shutter down, a CAFE across the street, she holds a chip "so,
+what's / your name?". Vote "what do I write on my chip?" A (MY REAL NAME. / NO JOKE.) / B (JUST SIGN IT / 'LADDER GUY'.). End card "fifty
+whites · part 6 · A or B". No NoSwipe mention (both season slots still free; part 6 finale is no-phones, so a mention would need
+to land in the finale's last beat or be skipped). Hands redrawn locally (`Hand5`: short near-vertical arms, short side thumb, no
+thumbs-up). Blind check: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 7; polish round done (phone lit through 3 s on both hooks, earlier exit, pocket phone, smaller close-up chip, register enlarged, B = callback to the ladder). **Part 6 (finale):** A (real name) is the planned winner; B plays first and fails on
+him (he signs as LADDER GUY, she reads it deadpan), rewind, A, names exchanged, two chips taped together read "POPPY + SAME".
+
 ## Season 10 · Same Bag (silent baggage-claim romance, luggage-tag handoffs)
 
 **Logline:** Two strangers wait at the same carousel, both swiping. Two identical grey suitcases, one wrong grab, and she
@@ -612,3 +630,20 @@ THEN HELP.) / B (YANK IT. LOOK STRONG.). End card "same bag · part 3 · A or B"
 laugh, full "(their loss.)", bigger payoff tags, zip close-up, bigger phone): clarity 7, hook a 5 / b 6, satisfaction 7,
 want_next 7. Open: the swiping thread drops after frame 1. **Part 3 (Stuck zip):** A wins (planned); B plays first and fails
 on him (he yanks, the tab pops off, he topples over his own bag), belt reverses, then A.
+
+| 3a | Her phone got stuck in her zip at baggage claim. Part 3 (55) | `specs/stories/bag-ep3.json` | `Bag3` hook a |
+| 3b | She caught me swiping. Now her zip's stuck. Part 3 (50) | same | `Bag3` hook b |
+
+**What happened (part 3, nightly for 2026-11-17):** 34.0 s, vote up 23.95 s. Frame 1: his phone lit mid-swipe, her grey suitcase
+(chartreuse loop) held up with the front zip jammed and HER phone (pink case, labelled "her phone" with an arrow) wedged in it,
+ARRIVALS / BELT 4; hook a "the stranger at baggage claim got her phone stuck in her zip." / hook b "she caught me swiping. now her
+zip's stuck." Take 1 (B, fails on him): he flexes, yanks, the amber zip tab pops off and flies, he trips over his own bag (it tips
+over) and rides the belt on his back, legs in the air, while she smiles behind her hand (amused with him). Belt-flap wipe reversed
+(rewind). Take 2 (A): his tag "(can I try?)" handed to her, she nods, his pocket phone buzzes and he lets it (glances once, grits
+his teeth), he works the tab slowly, her pink-case phone pops free; music drops out for her tag "(my hero. / mildly.)"; payoff of
+the swiping thread: his pocket buzzes again, he takes the phone out and switches it OFF (dark screen, power symbol) for her.
+Cliff: both look up, the board flips to RIDE / DELAYED 40 MIN. Vote "her ride's late. what do I do?" A (WAIT WITH HER. NO PHONE.)
+/ B (FLEX AGAIN. CARRY BOTH BAGS., callback to take 1). End card "same bag. / next: part 4 · A or B". No NoSwipe mention. Blind
+check round 1 (clarity 6, hook a 5 / b 7, satisfaction 6) fixed in round 2 (her phone case + label, bent arms, tumble framing, vote
+B, end card). Added `noTab`/`caseColor` props to `Bag`/`Phone`, `prefix` to `EndCard`, and a `pops` list to
+`generate_bag_audio.py`. **Part 4 (Long wait):** A wins (planned, honest again); B plays first and fails on him, rewind, then A.

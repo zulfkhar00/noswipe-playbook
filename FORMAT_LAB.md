@@ -61,6 +61,10 @@ Change one variable at a time within a format.
 | 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook a (14:30) | the stranger at baggage claim asked how my trip was. | | | | | | | | | planned: who+where (blind 5 vs b 6) |
 | 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook b (repeat body) | a stranger caught me swiping. then she handed me a brush. | | | | | | | | | planned: "caught me swiping" |
 | 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook b (repeat body) | a stranger caught me swiping at baggage claim. again. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook a (12:00) | the girl I like from the paint aisle leaves in 10 min. | | | | | | | | | planned: stakes line (blind hook 7 vs b 5) |
+| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook a (14:30) | the stranger at baggage claim got her phone stuck in her zip. | | | | | | | | | planned: who+where (blind 6 vs b 5) |
+| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook b (repeat body) | she caught me swiping. now the store closes in 10 min. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook b (repeat body) | she caught me swiping. now her zip's stuck. | | | | | | | | | planned: "caught me swiping" |
 
 ## Hook patterns (running record)
 
@@ -127,3 +131,9 @@ Read Same Bag P1 at 3h against Whites P1 (2195 at 6h, 23% skip) to see if a thir
 **Update 2026-11-16:** still no new stats: the phone has been off adb since 2026-11-14 (last job 10:35 UTC), so 8 posts
 (11-14, 11-15) plus every stats read are queued. Tonight continues both seasons in order behind them: Whites P4 and Same Bag
 P2, each who+where (a) vs "caught me swiping" (b) again. Nothing in the hook record changes until the backlog posts.
+
+**Update 2026-11-17:** no new stats for the 4th night (phone off adb since 2026-11-14 10:35 UTC; 12 posts, 6 research
+sessions and 14 stats reads queued). Tonight continues both seasons in order: Whites P5 (hook a is a stakes line, "the girl
+I like...", the pattern that beat who+where on Table P4) and Same Bag P3, each vs "caught me swiping". Blind checkers rated
+"caught me swiping" lowest tonight when the frame doesn't show her catching him (b 5 on both); judge scores don't predict
+our stats (judge_vs_stats), so the backlog decides.

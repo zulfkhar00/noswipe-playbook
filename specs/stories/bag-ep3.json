@@ -1,0 +1,315 @@
+{
+ "id": "bag-ep3",
+ "season": "Same Bag",
+ "composition": "Bag3",
+ "episode": 3,
+ "title": "Stuck zip. Part 3",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345): his phone lit mid-swipe (generic profile card), her grey suitcase (chartreuse loop) held up with the front zip JAMMED and her phone half stuck in it, ARRIVALS / BELT 4 board. Cold-viewer read: two strangers at baggage claim, her zip is stuck. TAKE 1 (B, plays first, fails on HIM): 3.0-5.3 he flexes (fists up, puffed chest); 5.3-6.3 he yanks the amber zip tab; 6.3 the tab pops off and flies (lands on the belt); he tips backwards, trips over his own bag (tips over, 6.9) and lands on the belt lying down; 7.2-9.5 he rides the belt away a little while she smiles kindly behind her hand (she is amused WITH him, never mocking); her zip still stuck. REWIND 9.6-10.6: belt-flap wipe reversed, hall plays backwards, music ducks. TAKE 2 (A): whole-frame kraft tag, his pen writes (can I try?) 10.8-11.8; slides to her 12.2; 12.5 she reads and nods; 13.0 his pocket phone buzzes (generic lit phone peeking from the jacket pocket), he glances down once and lets it buzz; 14.4 he works the zip tab slowly (wiggle), 15.5 buzzes again, he does not look; 16.5 the zip frees and her phone pops out into her hand (16.8). Music drops out for the shared moment 16.9-20.3: whole-frame tag, his line on top, her pen writes (my hero. / mildly.) 17.7-18.9. PAYOFF OF THE SWIPING THREAD 19.7-21.7: his pocket buzzes a third time, he takes the phone out, the generic lit screen, switches it OFF (screen goes dark) and pockets it; she sees it. CLIFF 21.8-23.4: both look up, the board flips (22.15-22.5) to RIDE / DELAYED 40 MIN. Belt-flap wipe to the vote at 23.4, vote fully up 23.95, end card 29.6. Tags are whole-frame inserts (~920 px wide, Caveat 700, lowercase in parentheses, max 18 chars per line). Text only between y=270 and y=1250. Body strips max 7 words. No NoSwipe mention. No app UI/logos. The joke is only on him.",
+ "duration": 34.0,
+ "hooks": {
+  "a": "the stranger at baggage claim got her phone stuck in her zip.",
+  "b": "she caught me swiping. now her zip's stuck."
+ },
+ "hookProp": "a | b (only the hook strip text in 0-3.0 changes; the body is identical)",
+ "beats": {
+  "swipeStart": 0.2,
+  "freeze": 1.7,
+  "pocket": 2.4,
+  "take1": 3.0,
+  "flexUp": 3.3,
+  "yankStart": 5.4,
+  "pop": 6.3,
+  "tipOver": 6.9,
+  "land": 7.2,
+  "rideEnd": 9.5,
+  "rewind": 9.6,
+  "take2": 10.6,
+  "write1": 10.8,
+  "slide1": 12.2,
+  "nod": 12.6,
+  "buzz1": 13.0,
+  "workStart": 14.4,
+  "buzz2": 15.5,
+  "free": 16.6,
+  "phoneOut": 16.8,
+  "tag2": 17.4,
+  "write2": 17.7,
+  "buzz3": 19.85,
+  "phoneUp": 20.2,
+  "screenOff": 20.9,
+  "pocket2": 21.2,
+  "cliff": 21.8,
+  "boardFlip": 22.15,
+  "voteWipe": 23.4,
+  "cardA": 23.7,
+  "cardB": 23.9,
+  "voteUp": 23.95,
+  "comment": 23.7,
+  "endcard": 29.6
+ },
+ "choices": {
+  "question": "her ride's late. what do I do?",
+  "A": {
+   "l1": "WAIT WITH HER.",
+   "l2": "NO PHONE."
+  },
+  "B": {
+   "l1": "FLEX AGAIN.",
+   "l2": "CARRY BOTH BAGS."
+  },
+  "why": "Both are about him. A is the honest, sweet answer and pays off the phone he switched off; B callbacks take 1 and embarrasses him (flexing again, carrying both bags). A is the planned winner again; part 4 plays B first and it flops on him, then rewind, then A."
+ },
+ "strips": [
+  {
+   "text": "the stranger at baggage claim got her phone stuck in her zip.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now her zip's stuck.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "take 1: yank it. look strong.",
+   "from": 3.1,
+   "to": 5.2,
+   "y": 345
+  },
+  {
+   "text": "I yanked it. the zip won.",
+   "from": 5.3,
+   "to": 7.0,
+   "y": 345
+  },
+  {
+   "text": "I tripped on my own bag.",
+   "from": 7.1,
+   "to": 8.5,
+   "y": 345
+  },
+  {
+   "text": "the belt gave me a ride.",
+   "from": 8.6,
+   "to": 9.55,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2: ask first.",
+   "from": 9.7,
+   "to": 12.4,
+   "y": 345
+  },
+  {
+   "text": "my phone buzzed. I let it.",
+   "from": 12.9,
+   "to": 14.3,
+   "y": 345
+  },
+  {
+   "text": "then the slow way.",
+   "from": 14.5,
+   "to": 16.5,
+   "y": 345
+  },
+  {
+   "text": "it popped free.",
+   "from": 16.6,
+   "to": 17.35,
+   "y": 345
+  },
+  {
+   "text": "she wrote back.",
+   "from": 17.5,
+   "to": 19.6,
+   "y": 345
+  },
+  {
+   "text": "I switched my phone off.",
+   "from": 19.8,
+   "to": 21.7,
+   "y": 345
+  },
+  {
+   "text": "then her ride was delayed.",
+   "from": 21.9,
+   "to": 23.3,
+   "y": 345
+  },
+  {
+   "text": "her ride's late. what do I do?",
+   "from": 23.7,
+   "to": 29.6,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.7,
+   "to": 29.6,
+   "y": 1150
+  }
+ ],
+ "cards": {
+  "his_take2": "(can I try?)",
+  "her_reply_l1": "(my hero.",
+  "her_reply_l2": "mildly.)",
+  "board": "ARRIVALS / BELT 4",
+  "board_flip": "RIDE / DELAYED 40 MIN",
+  "end_card": "next: part 4 · A or B",
+  "props": "her grey suitcase with chartreuse loop, jammed front zip with her phone half in, amber zip tab (flies off in take 1 only), his AMBER-ribbon bag (tips over at 6.9), his phone (lit, pocket buzz, switched off)"
+ },
+ "look": {
+  "palette": {
+   "concrete": "#E6E3DC",
+   "hiVis": "#C6F135",
+   "amber": "#FFB000",
+   "carbon": "#1C1C1F",
+   "sky": "#8EC9FF",
+   "kraft": "#D8B589",
+   "suitcase": "#5B6B7A"
+  },
+  "fonts": {
+   "strips_endcard": "Jost 800",
+   "board": "Barlow Condensed 700",
+   "tag": "Caveat 700"
+  },
+  "transition": "belt-flap wipe; REVERSED at 9.6-10.6 as the rewind"
+ },
+ "audio": {
+  "bpm": 110,
+  "meter": "4/4",
+  "groove": [
+   [
+    0,
+    34.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    9.6,
+    10.6
+   ],
+   [
+    16.9,
+    20.3
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    34.0
+   ]
+  ],
+  "beltRumble": [
+   [
+    0,
+    23.4
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "phoneTap": [
+   2.4,
+   20.9,
+   21.3
+  ],
+  "penCaps": [
+   10.7,
+   17.6
+  ],
+  "scrawl": [
+   [
+    10.9,
+    11.8
+   ],
+   [
+    17.7,
+    18.3
+   ],
+   [
+    18.3,
+    18.9
+   ]
+  ],
+  "tagSlides": [
+   12.2
+  ],
+  "bagThumps": [
+   5.9,
+   6.9,
+   7.2
+  ],
+  "wheelClacks": [
+   7.0
+  ],
+  "laughSting": [
+   8.0
+  ],
+  "tagTap": [
+   6.3
+  ],
+  "beltRewind": [
+   9.6
+  ],
+  "phoneBuzz": [
+   13.0,
+   13.15,
+   15.5,
+   15.65,
+   19.85,
+   20.0
+  ],
+  "zipJam": [
+   0.45,
+   1.0,
+   1.5,
+   5.5,
+   5.9
+  ],
+  "pops": [
+   16.7
+  ],
+  "boardFlip": [
+   22.15
+  ],
+  "cliffSting": [
+   22.6
+  ],
+  "beltWhoosh": [
+   23.4
+  ],
+  "cardPops": [
+   23.7,
+   23.9
+  ],
+  "stamps": [
+   3.1,
+   5.3,
+   7.1,
+   8.6,
+   9.7,
+   12.9,
+   14.5,
+   16.6,
+   17.5,
+   19.8,
+   21.9,
+   23.7,
+   29.6
+  ],
+  "endChime": [
+   29.6
+  ]
+ }
+}

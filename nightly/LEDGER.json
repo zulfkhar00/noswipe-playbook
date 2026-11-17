@@ -1136,6 +1136,86 @@
     "want_next": 7,
     "rounds": 1
    }
+  },
+  {
+   "id": "whites-5-a",
+   "day": "2026-11-17",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 5,
+   "hook": "a",
+   "caption": "The girl I like leaves the paint aisle in 10 min. Part 5. Take one, I stalled with a ladder and she left. Take two, I asked her to coffee on a paint chip. Now she wants my name. What do I write, A or B? #strangerstolovers #romance #meetcute #shortstory #animation",
+   "video": "videos/whites-5-a.mp4",
+   "composition": "Whites5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "bag-3-a",
+   "day": "2026-11-17",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 3,
+   "hook": "a",
+   "caption": "Her phone got stuck in her zip at baggage claim. Part 3. Take one, I yanked it and rode the belt. Take two, I asked first. Now her ride is 40 minutes late. What do I do, A or B? #airport #meetcute #strangers #shortstory #animation",
+   "video": "videos/bag-3-a.mp4",
+   "composition": "Bag3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "whites-5-b",
+   "day": "2026-11-17",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 5,
+   "hook": "b",
+   "caption": "She caught me swiping. Now the store is closing. Part 5. I bought a ladder to stall and she left, so we rewound. Take two, coffee on a paint chip. Now she wants my name. A or B? #datingapps #lovestory #meetcute #shortfilm #animation",
+   "video": "videos/whites-5-b.mp4",
+   "composition": "Whites5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "bag-3-b",
+   "day": "2026-11-17",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 3,
+   "hook": "b",
+   "caption": "She caught me swiping. Now her zip's stuck. Part 3. The strong move sent me around the belt, so we rewound. Take two, I asked first. Her ride is 40 minutes late. What do I do, A or B? #datingapps #travel #strangerstolovers #shortfilm #animation",
+   "video": "videos/bag-3-b.mp4",
+   "composition": "Bag3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 2
+   }
   }
  ]
 }

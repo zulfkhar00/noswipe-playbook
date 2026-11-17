@@ -321,6 +321,7 @@ def sfx(st: Stem, a):
     for t in a.get("zipJam", []): st.add(t, zip_jam(), 0.8)
     for t in a.get("jogPats", []): st.add(t, jog_pat(), 0.7)
     for t in a.get("beltRewind", []): st.add(t, belt_rewind(1.0), 0.9)
+    for t in a.get("pops", []): st.add(t, pop(900), 0.9)
     for t in a.get("tagTap", []): st.add(t, tag_tap(), 0.7)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.5)

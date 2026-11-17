@@ -1,0 +1,335 @@
+{
+ "id": "whites-ep5",
+ "season": "Fifty Whites",
+ "episode": 5,
+ "title": "Closing time. Part 5",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip: his phone lit mid-swipe (1.5x, generic profile card + heart badge, no UI), hanging yellow sign STORE / CLOSES / IN 10 MIN between the two big faces, her holding the TEST PATCH board (POPPY window + sunflower sun) in front of her chest, a register with a bored cashier at the bottom centre, an empty chip stand on the counter. Take 1 BUY MORE PAINT. STALL. (fails on him): basket of rollers, tape and a ladder, ITEMS counter ticks to 48, intercom ding, sign flips to NOW, she places her POPPY chip on the stand, waves and leaves, the ladder tips onto him. Fan snaps shut (rewind). Take 2 ASK HER FOR COFFEE.: his pocket phone buzzes and he ignores it, he writes coffee? / before they / lock us in. on a chip and slides it over, she reads (long pause, music drops out), laughs, flips the chip, writes only if you / pick the cup. with a cup doodle, whole-frame close-up. Cliff outside: shutter coming down, a CAFE across the street, she holds a chip so, what's / your name? Vote what do I write on my chip? A MY REAL NAME. NO JOKE. / B CALL ME MR. POPPY. End card fifty whites part 6 A or B. No NoSwipe mention. Hands drawn with short near-vertical arms (part 4 fix); no thumbs-up. Polish round: phone lit mid-swipe through 3 s, she leaves earlier (6.6-7.3) and her chip stands on the counter stand, pocket phone is drawn in a hoodie pocket, his chip reads coffee? / across the / street?, close-up chip smaller so smiles show, vote B JUST SIGN IT / 'LADDER GUY'., register enlarged.",
+ "duration": 34.2,
+ "hooks": {
+  "a": "the girl I like from the paint aisle leaves in 10 min.",
+  "b": "she caught me swiping. now the store closes in 10 min."
+ },
+ "beats": {
+  "glance": 1.5,
+  "pocket": 3.0,
+  "take1": 3.0,
+  "cardT1": 3.0,
+  "item1": 3.6,
+  "item2": 3.9,
+  "item3": 4.2,
+  "ladder": 4.6,
+  "countEnd": 5.4,
+  "ding": 5.5,
+  "place": 5.8,
+  "wave": 6.2,
+  "leave": 6.6,
+  "tip": 7.4,
+  "rewind": 8.0,
+  "bigText": 8.25,
+  "open": 8.65,
+  "take2": 9.3,
+  "cardT2": 9.8,
+  "buzz1": 10.9,
+  "buzz2": 11.2,
+  "pick1": 11.7,
+  "w1a": 11.85,
+  "w1b": 12.35,
+  "w1c": 12.9,
+  "ret1": 13.3,
+  "slide": 13.4,
+  "read": 13.85,
+  "laugh": 14.5,
+  "flip": 15.4,
+  "pick2": 15.6,
+  "w2a": 15.9,
+  "w2b": 16.5,
+  "cup": 17.1,
+  "ret2": 17.5,
+  "zoom": 17.8,
+  "back": 19.8,
+  "outWipe": 20.3,
+  "shutter": 21.0,
+  "chipOut": 22.0,
+  "voteWipe": 23.6,
+  "cardA": 24.0,
+  "cardB": 24.3,
+  "voteUp": 24.3,
+  "endcard": 30.7
+ },
+ "choices": {
+  "question": "what do I write on my chip?",
+  "A": {
+   "l1": "MY REAL NAME.",
+   "l2": "NO JOKE."
+  },
+  "B": {
+   "l1": "JUST SIGN IT",
+   "l2": "'LADDER GUY'."
+  },
+  "why": "Both are about him. A is the honest, sweet one and the PLANNED WINNER for part 6. B is the callback that embarrasses him: he signs as 'LADDER GUY' after the ladder stall in take 1."
+ },
+ "strips": [
+  {
+   "text": "hook",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true
+  },
+  {
+   "text": "we never even swapped names.",
+   "from": 3.1,
+   "to": 4.9,
+   "y": 345
+  },
+  {
+   "text": "I bought a ladder. she left.",
+   "from": 5.0,
+   "to": 8.0,
+   "y": 345
+  },
+  {
+   "text": "take 2. phone stays in my pocket.",
+   "from": 9.9,
+   "to": 11.3,
+   "y": 345
+  },
+  {
+   "text": "it buzzed. I ignored it.",
+   "from": 11.35,
+   "to": 12.75,
+   "y": 345
+  },
+  {
+   "text": "so I wrote it down.",
+   "from": 12.8,
+   "to": 13.9,
+   "y": 345
+  },
+  {
+   "text": "she read it. twice.",
+   "from": 13.95,
+   "to": 15.3,
+   "y": 345
+  },
+  {
+   "text": "she wrote back.",
+   "from": 15.4,
+   "to": 17.7,
+   "y": 345
+  },
+  {
+   "text": "yes. with conditions.",
+   "from": 17.9,
+   "to": 19.9,
+   "y": 345
+  },
+  {
+   "text": "shutter's down. still no names.",
+   "from": 21.1,
+   "to": 23.55,
+   "y": 345
+  },
+  {
+   "text": "what do I write on my chip?",
+   "from": 24.0,
+   "to": 30.7,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 24.0,
+   "to": 30.7,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "chip_take1": [
+   "BUY MORE",
+   "PAINT. STALL."
+  ],
+  "chip_take2": [
+   "ASK HER",
+   "FOR COFFEE."
+  ],
+  "sign": [
+   "STORE",
+   "CLOSES",
+   "IN 10 MIN"
+  ],
+  "signNow": "NOW",
+  "chips": [
+   [
+    "coffee?",
+    "across the",
+    "street?"
+   ],
+   [
+    "only if you",
+    "pick the cup."
+   ],
+   [
+    "so, what's",
+    "your name?"
+   ]
+  ],
+  "end_card": "fifty whites · part 6 · A or B"
+ },
+ "audio": {
+  "bpm": 100,
+  "meter": "4/4",
+  "groove": [
+   [
+    0,
+    34.2
+   ]
+  ],
+  "musicDuck": [
+   [
+    8.0,
+    8.7
+   ],
+   [
+    14.4,
+    19.9
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    34.2
+   ]
+  ],
+  "shakerRattle": [
+   [
+    21.0,
+    21.9
+   ]
+  ],
+  "shakerStop": [
+   21.95
+  ],
+  "phoneBuzz": [
+   10.9,
+   11.2
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4,
+   1.7,
+   2.0,
+   2.3,
+   2.6,
+   2.9
+  ],
+  "chipFlicks": [
+   3.0,
+   9.8,
+   17.8
+  ],
+  "chipRiffle": [
+   3.0,
+   9.8,
+   17.8
+  ],
+  "chipSlide": [
+   3.0,
+   5.8,
+   13.4,
+   19.8,
+   22.0
+  ],
+  "laughSting": [
+   14.5
+  ],
+  "phoneTap": [
+   3.05
+  ],
+  "pencilSwing": [
+   11.7,
+   15.6
+  ],
+  "scrawl": [
+   [
+    11.85,
+    12.25
+   ],
+   [
+    12.35,
+    12.8
+   ],
+   [
+    12.9,
+    13.3
+   ],
+   [
+    15.9,
+    16.4
+   ],
+   [
+    16.5,
+    17.1
+   ],
+   [
+    17.1,
+    17.5
+   ]
+  ],
+  "gulp": [
+   3.1,
+   5.6,
+   7.8,
+   9.5,
+   13.95,
+   22.8
+  ],
+  "thumbTicks": [
+   3.5,
+   3.65,
+   3.8,
+   3.95,
+   4.1,
+   4.25,
+   4.4,
+   4.55,
+   4.7,
+   4.85,
+   5.0,
+   5.15,
+   5.3,
+   7.4
+  ],
+  "intercomDing": [
+   5.5
+  ],
+  "fanWhoosh": [
+   8.0,
+   8.65,
+   20.3,
+   23.6
+  ],
+  "cardPops": [
+   24.0,
+   24.3
+  ],
+  "stamps": [
+   3.1,
+   5.0,
+   9.9,
+   11.35,
+   12.8,
+   13.95,
+   15.4,
+   17.9,
+   21.1,
+   24.0,
+   30.7
+  ],
+  "endChime": [
+   30.7
+  ]
+ }
+}

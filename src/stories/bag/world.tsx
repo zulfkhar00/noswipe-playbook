@@ -113,8 +113,8 @@ export const NearRail: React.FC<{t: number}> = ({t}) => <g filter="url(#blurNear
 </g>;
 
 // ---------------------------------------------------------------------------------------- bag
-export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; body?: string; deep?: string; wScale?: number; ribbon?: number; pocketGlow?: number; shake?: number; rot?: number; scale?: number; ribbonColor?: string; tagString?: string; pouch?: boolean; zipX?: number; zipRot?: number; jam?: number; children?: React.ReactNode}> = ({
-  x, y, loop, tag, body = C.suitcase, deep = C.suitcaseDeep, wScale = 1, pocketGlow = 0, shake = 0, rot = 0, scale = 1, ribbon = 0, ribbonColor = C.hiVis, tagString = C.carbon, pouch = false, zipX = 0, zipRot = 0, jam = 0, children}) => {
+export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; body?: string; deep?: string; wScale?: number; ribbon?: number; pocketGlow?: number; shake?: number; rot?: number; scale?: number; ribbonColor?: string; tagString?: string; pouch?: boolean; zipX?: number; zipRot?: number; jam?: number; noTab?: boolean; children?: React.ReactNode}> = ({
+  x, y, loop, tag, body = C.suitcase, deep = C.suitcaseDeep, wScale = 1, pocketGlow = 0, shake = 0, rot = 0, scale = 1, ribbon = 0, ribbonColor = C.hiVis, tagString = C.carbon, pouch = false, zipX = 0, zipRot = 0, jam = 0, noTab = false, children}) => {
   const w = 240 * wScale, h = 330;
   const sx = Math.sin(shake * 60) * 5 * shake;
   return <g transform={`translate(${x + sx} ${y}) rotate(${rot}) scale(${scale})`}>
@@ -131,7 +131,7 @@ export const Bag: React.FC<{x: number; y: number; loop: boolean; tag: boolean; b
     {/* front pocket */}
     <rect x={-72} y={26} width={144} height={112} rx={20} fill={deep} stroke={C.carbon} strokeWidth={4} />
     <line x1={-56} y1={44} x2={56} y2={44} stroke={C.carbon} strokeWidth={4} strokeDasharray="8 6" />
-    <g transform={`translate(${zipX} 0) rotate(${zipRot} 0 44)`}><rect x={-8} y={36} width={16} height={16} rx={6} fill={C.amber} stroke={zipX ? C.carbon : 'none'} strokeWidth={3} /></g>
+    {noTab ? <rect x={zipX - 6} y={41} width={12} height={6} rx={3} fill={C.carbon} opacity={0.7} /> : <g transform={`translate(${zipX} 0) rotate(${zipRot} 0 44)`}><rect x={-8} y={36} width={16} height={16} rx={6} fill={C.amber} stroke={zipX ? C.carbon : 'none'} strokeWidth={3} /></g>}
     {jam > 0 && <g fill="none" stroke={C.carbon} strokeWidth={5} strokeLinecap="round">{[-1, 0, 1].map((k) => <path key={k} transform={`translate(${zipX + k * 2} 0)`} d={`M ${-6 + k * 30} 8 l 9 -26 l 9 26`} opacity={jam} />)}</g>}
     {pocketGlow > 0 && <g>
       <circle cx={0} cy={82} r={140} fill="url(#glowSky)" opacity={pocketGlow * 0.8} />
@@ -275,7 +275,7 @@ const ProfileCard: React.FC = () => <g>
 </g>;
 
 /** Generic phone: lit profile-card glow only, no app UI. p = swipe progress 0..1 of the current flick. */
-export const Phone: React.FC<{who: 'him' | 'her'; x: number; y: number; rot?: number; scale?: number; lit?: number; p?: number; dir?: number; thumb?: number; arm?: boolean; base?: [number, number]}> = ({who, x, y, rot = 0, scale = 1, lit = 1, p = 0, dir = 1, thumb = 1, arm = true, base}) => {
+export const Phone: React.FC<{who: 'him' | 'her'; x: number; y: number; rot?: number; scale?: number; lit?: number; p?: number; dir?: number; thumb?: number; arm?: boolean; base?: [number, number]; caseColor?: string}> = ({who, x, y, rot = 0, scale = 1, lit = 1, p = 0, dir = 1, thumb = 1, arm = true, base, caseColor = C.carbon}) => {
   const him = who === 'him';
   const skin = him ? C.skinHim : C.skinHer, sleeve = him ? C.olive : C.camel;
   const side = him ? 1 : -1;
@@ -284,7 +284,7 @@ export const Phone: React.FC<{who: 'him' | 'her'; x: number; y: number; rot?: nu
     <g transform={`translate(${x} ${y}) scale(${scale}) rotate(${rot})`}>
       {lit > 0.01 && <circle r={210} fill="url(#glowSky)" opacity={lit * 0.55} />}
       <rect x={-96} y={-170} width={192} height={340} rx={36} fill={C.ink} opacity={0.2} transform="translate(12 16)" />
-      <rect x={-96} y={-170} width={192} height={340} rx={36} fill={C.carbon} />
+      <rect x={-96} y={-170} width={192} height={340} rx={36} fill={caseColor} stroke={caseColor === C.carbon ? 'none' : C.carbon} strokeWidth={5} />
       <rect x={-84} y={-158} width={168} height={316} rx={28} fill={lit > 0.3 ? 'url(#scr)' : '#26303F'} />
       {lit > 0.3 && <g>
         <g transform="translate(0 6) scale(0.95)" opacity={0.7}><ProfileCard /></g>
@@ -413,7 +413,7 @@ export const VoteCard: React.FC<{letter: string; l1: string; l2: string; y: numb
   </g>;
 };
 
-export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon?: boolean}> = ({a, t, part = 2, amberRibbon = false}) => {
+export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon?: boolean; prefix?: string}> = ({a, t, part = 2, amberRibbon = false, prefix = ''}) => {
   const pop = (d: number) => { const k = clamp((a - d) / 0.3); return k <= 0 ? 0 : 1 + Math.sin(k * Math.PI * 1.5) * Math.exp(-k * 4.2) * 0.4 - Math.exp(-k * 9) * (1 - k); };
   return <g>
     <HallWall />
@@ -429,9 +429,9 @@ export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon
     <g transform={`translate(280 880) scale(${pop(0.15)})`}><Bag x={0} y={0} loop={false} tag ribbon={amberRibbon ? 1 : 0} ribbonColor={C.amber} /></g>
     <g transform={`translate(800 880) scale(${pop(0.25)})`}><Bag x={0} y={0} loop tag={false} /></g>
     <g transform={`translate(540 1190) scale(${pop(0.4)})`}>
-      <rect x={-330} y={-62} width={660} height={116} rx={22} fill={C.carbon} transform="translate(10 12)" opacity={0.9} />
-      <rect x={-330} y={-62} width={660} height={116} rx={22} fill={C.hiVis} stroke={C.carbon} strokeWidth={6} />
-      <text x={0} y={26} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={74} fill={C.carbon}>part {part} · A or B</text>
+      <rect x={prefix ? -440 : -330} y={-62} width={prefix ? 880 : 660} height={116} rx={22} fill={C.carbon} transform="translate(10 12)" opacity={0.9} />
+      <rect x={prefix ? -440 : -330} y={-62} width={prefix ? 880 : 660} height={116} rx={22} fill={C.hiVis} stroke={C.carbon} strokeWidth={6} />
+      <text x={0} y={26} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={74} fill={C.carbon}>{prefix}part {part} · A or B</text>
     </g>
   </g>;
 };
