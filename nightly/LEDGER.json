@@ -1216,6 +1216,46 @@
     "want_next": 6,
     "rounds": 2
    }
+  },
+  {
+   "id": "whites-6-a",
+   "day": "2026-11-18",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 6,
+   "hook": "a",
+   "caption": "The girl from the paint aisle asked my name. Part 6, the finale. Take one, I signed it ladder guy. Take two, my real name, and she wrote hers back. Then coffee. #strangerstolovers #romance #meetcute #shortstory #animation",
+   "video": "videos/whites-6-a.mp4",
+   "composition": "Whites6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "whites-6-b",
+   "day": "2026-11-18",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Fifty Whites",
+   "episode": 6,
+   "hook": "b",
+   "caption": "She caught me swiping, now she wants my name. Part 6, the finale. I signed it ladder guy, so we rewound. Then I wrote my real name and she wrote hers. #datingapps #lovestory #meetcute #shortfilm #animation",
+   "video": "videos/whites-6-b.mp4",
+   "composition": "Whites6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 8,
+    "satisfaction": 7,
+    "want_next": 6,
+    "rounds": 1
+   }
   }
  ]
 }

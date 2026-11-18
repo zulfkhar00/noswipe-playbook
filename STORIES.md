@@ -566,6 +566,20 @@ to land in the finale's last beat or be skipped). Hands redrawn locally (`Hand5`
 thumbs-up). Blind check: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 7; polish round done (phone lit through 3 s on both hooks, earlier exit, pocket phone, smaller close-up chip, register enlarged, B = callback to the ladder). **Part 6 (finale):** A (real name) is the planned winner; B plays first and fails on
 him (he signs as LADDER GUY, she reads it deadpan), rewind, A, names exchanged, two chips taped together read "POPPY + SAME".
 
+| 6a | The girl from the paint aisle asked my name. Part 6 (44) | `specs/stories/whites-ep6.json` | `Whites6` hook a |
+| 6b | She caught me swiping, now she wants my name. Part 6 (45) | same | `Whites6` hook b |
+
+**What happened (part 6 finale, nightly for 2026-11-18):** 34.0 s, no vote. Frame 1: outside the closed store at dusk (shutter
+down, PAINT sign, CAFE across the street), his phone lit mid-swipe, her chip "so, what's / your name?". Hook b adds the catch
+(her eyes drop to his screen, raised brow, pink "!" at 0.8 s, he flinches with sweat). Context strip "we met in a paint aisle. we
+only talked on paint chips." at 3 s, phone off. Take 1 LADDER GUY: she writes "i'll wait / for the / real one." and turns to the
+cafe. Fan snaps shut (rewind). Take 2 THEO; she writes "june. / hi, theo.", shared laugh, music drops out; she tapes POPPY to
+SAME ("fifty whites. we picked the same one."); they cross to the cafe, two silhouettes and two cups ("real names. first
+coffee."). End card "fifty whites · the end · follow for the next story". Blind check 1 round: clarity 8, hook a 6 / b 8,
+satisfaction 7, want_next 6. Open flags (not fixed): the chip conceit is told, not shown, at 5 s; POPPY/SAME callback is opaque
+cold (POPPY is pink, not a white); "june." could read as the month; walkers small and faint at 26 s. No NoSwipe mention this
+season. Season over; only P6 was made tonight (phone off since 11-14, 16 posts queued).
+
 ## Season 10 · Same Bag (silent baggage-claim romance, luggage-tag handoffs)
 
 **Logline:** Two strangers wait at the same carousel, both swiping. Two identical grey suitcases, one wrong grab, and she

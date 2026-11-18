@@ -22,6 +22,7 @@ import {WHITES2_FPS, WHITES2_FRAMES, Whites2} from './stories/whites/ep2';
 import {WHITES3_FPS, WHITES3_FRAMES, Whites3} from './stories/whites/ep3';
 import {WHITES4_FPS, WHITES4_FRAMES, Whites4} from './stories/whites/ep4';
 import {WHITES5_FPS, WHITES5_FRAMES, Whites5} from './stories/whites/ep5';
+import {WHITES6_FPS, WHITES6_FRAMES, Whites6} from './stories/whites/ep6';
 import {TABLE1_FPS, TABLE1_FRAMES, Table1} from './stories/table/ep1';
 import {TABLE2_FPS, TABLE2_FRAMES, Table2} from './stories/table/ep2';
 import {TABLE3_FPS, TABLE3_FRAMES, Table3} from './stories/table/ep3';
@@ -66,6 +67,7 @@ export const Root: React.FC = () => (
     <Composition id="Whites3" component={Whites3} durationInFrames={WHITES3_FRAMES} fps={WHITES3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Whites4" component={Whites4} durationInFrames={WHITES4_FRAMES} fps={WHITES4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Whites5" component={Whites5} durationInFrames={WHITES5_FRAMES} fps={WHITES5_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Whites6" component={Whites6} durationInFrames={WHITES6_FRAMES} fps={WHITES6_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table3" component={Table3} durationInFrames={TABLE3_FRAMES} fps={TABLE3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table4" component={Table4} durationInFrames={TABLE4_FRAMES} fps={TABLE4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Table5" component={Table5} durationInFrames={TABLE5_FRAMES} fps={TABLE5_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
