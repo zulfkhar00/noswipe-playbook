@@ -661,3 +661,18 @@ Cliff: both look up, the board flips to RIDE / DELAYED 40 MIN. Vote "her ride's 
 check round 1 (clarity 6, hook a 5 / b 7, satisfaction 6) fixed in round 2 (her phone case + label, bent arms, tumble framing, vote
 B, end card). Added `noTab`/`caseColor` props to `Bag`/`Phone`, `prefix` to `EndCard`, and a `pops` list to
 `generate_bag_audio.py`. **Part 4 (Long wait):** A wins (planned, honest again); B plays first and fails on him, rewind, then A.
+
+| 4a | The girl I like at baggage claim is stuck here 40 min (53) | `specs/stories/bag-ep4.json` | `Bag4` hook a |
+| 4b | She caught me swiping, so I switched my phone off (49) | same | `Bag4` hook b |
+
+**What happened (part 4, nightly for 2026-11-19):** 35.4 s, vote up ~26 s. Frame 1: his phone lit mid-swipe on ONE bench beside
+her, both grey suitcases; hook a "the girl I like at baggage claim is stuck here for 40 min." / hook b "she caught me swiping. so I
+switched my phone off." with her head turn + "!" at 0.6-0.95 s. Both: power press 1.8 s, dark screen, pocketed. Board flips to
+RIDE / DELAYED 40 MIN with the P3 vote recap. Take 1 (B, fails on him): he hoists both bags, marches to the EXIT, empty kerb ("no
+car. her ride's late."), arms shaking; her tag "(my ride's not here yet.)". Reversed belt-flap rewind. Take 2 (A): phone face down,
+her "(rate that bag.)" game, his "(7. strong wheels.)", a lone ski boot "(2. lonely.)", board 40 -> 25 -> 10 MIN; music out for
+her "(best part of my whole trip.)", strip "I didn't miss my phone once." Cliff: belt stops, BELT 4 / COMPLETE, BAGGAGE DESK lights,
+dashed ghost bag. Vote "her other bag never came. what do I do?" A (GO TO THE DESK WITH HER.) / B (TELL HER IT'LL TURN UP.
+LEAVE.). Blind check 1 round: clarity 7, hook a 5 / b 7, satisfaction 7, want_next 6. Unfixed flags: her second bag is never
+shown before the cliff (plant it in P5's recap), the vote's B is lopsided, end card "same bag." opaque cold, hook a opener static.
+**Part 5 (Lost bag):** A wins (planned); B plays first and fails on him, rewind, then A at the desk.

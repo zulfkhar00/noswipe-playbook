@@ -1256,6 +1256,46 @@
     "want_next": 6,
     "rounds": 1
    }
+  },
+  {
+   "id": "bag-4-a",
+   "day": "2026-11-19",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 4,
+   "hook": "a",
+   "caption": "The girl I like at baggage claim is stuck here 40 min. Part 4. Take one, I carried both bags out to an empty curb. Take two, phone off, we rated bags on the belt. Now her other bag never came. What do I do, A or B? #airport #meetcute #strangers #shortstory #animation",
+   "video": "videos/bag-4-a.mp4",
+   "composition": "Bag4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 7,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "bag-4-b",
+   "day": "2026-11-19",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 4,
+   "hook": "b",
+   "caption": "She caught me swiping, so I switched my phone off. Part 4. Her ride is 40 minutes late. The strong move left me holding both bags on an empty curb, so we rewound. Take two, we rated bags. Now her bag is lost. A or B? #datingapps #travel #strangerstolovers #shortfilm #animation",
+   "video": "videos/bag-4-b.mp4",
+   "composition": "Bag4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 6,
+    "rounds": 1
+   }
   }
  ]
 }

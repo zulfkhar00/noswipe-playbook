@@ -32,6 +32,7 @@ import {TABLE6_FPS, TABLE6_FRAMES, Table6} from './stories/table/ep6';
 import {BAG1_FPS, BAG1_FRAMES, Bag1} from './stories/bag/ep1';
 import {BAG2_FPS, BAG2_FRAMES, Bag2} from './stories/bag/ep2';
 import {BAG3_FPS, BAG3_FRAMES, Bag3} from './stories/bag/ep3';
+import {BAG4_FPS, BAG4_FRAMES, Bag4} from './stories/bag/ep4';
 import {ACROSS1_FPS, ACROSS1_FRAMES, Across1} from './stories/across/ep1';
 import {ACROSS2_FPS, ACROSS2_FRAMES, Across2} from './stories/across/ep2';
 import {ACROSS3_FPS, ACROSS3_FRAMES, Across3} from './stories/across/ep3';
@@ -75,6 +76,7 @@ export const Root: React.FC = () => (
     <Composition id="Bag1" component={Bag1} durationInFrames={BAG1_FRAMES} fps={BAG1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Bag2" component={Bag2} durationInFrames={BAG2_FRAMES} fps={BAG2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Bag3" component={Bag3} durationInFrames={BAG3_FRAMES} fps={BAG3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Bag4" component={Bag4} durationInFrames={BAG4_FRAMES} fps={BAG4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across1" component={Across1} durationInFrames={ACROSS1_FRAMES} fps={ACROSS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across2" component={Across2} durationInFrames={ACROSS2_FRAMES} fps={ACROSS2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across3" component={Across3} durationInFrames={ACROSS3_FRAMES} fps={ACROSS3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />

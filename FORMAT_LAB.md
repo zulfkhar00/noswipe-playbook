@@ -67,6 +67,8 @@ Change one variable at a time within a format.
 | 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook b (repeat body) | she caught me swiping. now her zip's stuck. | | | | | | | | | planned: "caught me swiping" |
 | 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook a (round 12) | the girl from the paint aisle asked my name. | | | | | | | | | planned: stakes line (blind hook 6 vs b 8) |
 | 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook b (repeat body) | she caught me swiping. now she wants my name. | | | | | | | | | planned: "caught me swiping" with the catch shown in frame (! beat) |
+| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook a (round 12) | the girl I like at baggage claim is stuck here for 40 min. | | | | | | | | | planned: stakes line (blind hook 5 vs b 7) |
+| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook b (repeat body) | she caught me swiping. so I switched my phone off. | | | | | | | | | planned: "caught me swiping", catch shown in frame |
 
 ## Hook patterns (running record)
 
@@ -144,3 +146,8 @@ our stats (judge_vs_stats), so the backlog decides.
 and 14 stats reads queued). Tonight only 2 posts: the Fifty Whites finale with hook a (stakes) vs b ("caught me swiping", now
 with the catch SHOWN in the first 2 s: the checker scored it 8 vs last night's 5 when the catch was only in the text). Same Bag
 P4 and any new season wait until the queue drains.
+
+**Update 2026-11-19:** no new stats for the 6th night (phone off adb since 2026-11-14 10:35 UTC; 18 posts and 10 research
+sessions queued, last stats snapshot 2026-11-14 02:34). Tonight only 2 posts again: Same Bag P4 with hook a (stakes) vs b
+("caught me swiping", catch shown in frame, which the checker again rated higher: 7 vs 5). judge_vs_stats (n=30): clarity, hook
+and satisfaction scores show no relation to views or retention; want_next weakly positive (+0.33 / +0.31).
