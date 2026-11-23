@@ -48,27 +48,30 @@ Change one variable at a time within a format.
 | 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook a (14:30) | the stranger in the paint aisle asked which white I am. | 2211 (6h) | | 15 | ~45% | 0 | 0.1% | | 0.1% | **double down**: 21.1% skip, best ever |
 | 2026-11-13 | IG @tinyloveshows | silent story (Table Nine) | P4 hook b (repeat body) | they moved the girl I like to table 2. I had a plan. | 2017 (6h) | | 15 | ~45% | 0 | 0 | | 0 | stakes line beat who+where: 30.4% vs 35.6% skip |
 | 2026-11-13 | IG @tinyloveshows | silent story (Fifty Whites) | P2 hook b (repeat body) | a stranger caught me swiping. then she asked which white I am. | 2942 (3h) | | 15 | ~45% | 0 | 0.1% | | 0 | **best 3h ever**, 23.2% skip |
-| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook a (FIRST, 12:00) | the stranger beside me at this wedding asked me to dance. | | | | | | | | | planned: who+where |
-| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook a (14:30) | the stranger in the paint aisle has ten minutes to kill with me. | | | | | | | | | planned: who+where |
-| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook b (repeat body) | the girl I like asked me to dance. I can't dance. | | | | | | | | | planned: stakes (blind hook 7 vs a 5) |
-| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook b (repeat body) | a stranger caught me swiping. now we're stuck on one bench. | | | | | | | | | planned: "caught me swiping" (blind 8 vs a 6) |
-| 2026-11-14 | IG @tinyloveshows | (all four 11-14 posts) | | | | | | | | | | | | **not posted yet**: phone off adb since 2026-11-14 13:02 UTC; jobs queued, run late in order when it returns |
-| 2026-11-15 | IG @tinyloveshows | silent story (Table Nine) | P6 FINALE hook a (12:00) | the girl I like at this wedding is leaving. one card left. | | | | | | | | | planned: stakes line (blind hook 6 vs b 5) |
-| 2026-11-15 | IG @tinyloveshows | silent story (Same Bag, new) | P1 hook a (14:30) | the stranger at baggage claim swipes too. | | | | | | | | | planned: who+where on a new world |
-| 2026-11-15 | IG @tinyloveshows | silent story (Table Nine) | P6 FINALE hook b (repeat body) | a stranger caught me swiping at this wedding. now she's leaving. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-15 | IG @tinyloveshows | silent story (Same Bag) | P1 hook b (repeat body) | a stranger caught me swiping at baggage claim. she wrote this. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook a (12:00) | the stranger in the paint aisle handed me her brush. | | | | | | | | | planned: who+where (blind hook 6 vs b 7) |
-| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook a (14:30) | the stranger at baggage claim asked how my trip was. | | | | | | | | | planned: who+where (blind 5 vs b 6) |
-| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook b (repeat body) | a stranger caught me swiping. then she handed me a brush. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook b (repeat body) | a stranger caught me swiping at baggage claim. again. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook a (12:00) | the girl I like from the paint aisle leaves in 10 min. | | | | | | | | | planned: stakes line (blind hook 7 vs b 5) |
-| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook a (14:30) | the stranger at baggage claim got her phone stuck in her zip. | | | | | | | | | planned: who+where (blind 6 vs b 5) |
-| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook b (repeat body) | she caught me swiping. now the store closes in 10 min. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook b (repeat body) | she caught me swiping. now her zip's stuck. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook a (round 12) | the girl from the paint aisle asked my name. | | | | | | | | | planned: stakes line (blind hook 6 vs b 8) |
-| 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook b (repeat body) | she caught me swiping. now she wants my name. | | | | | | | | | planned: "caught me swiping" with the catch shown in frame (! beat) |
-| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook a (round 12) | the girl I like at baggage claim is stuck here for 40 min. | | | | | | | | | planned: stakes line (blind hook 5 vs b 7) |
-| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook b (repeat body) | she caught me swiping. so I switched my phone off. | | | | | | | | | planned: "caught me swiping", catch shown in frame |
+| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook a (FIRST, 12:00) | the stranger beside me at this wedding asked me to dance. | 2617 (24h) | | 16 | ~36% | 0.0% | 0.0% | | 0.0% | 32.6% skip; was planned: who+where |
+| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook a (14:30) | the stranger in the paint aisle has ten minutes to kill with me. | 365 (24h) | | 8 | ~23% | 0.0% | 0.0% | | 0.0% | 41.1% skip; was planned: who+where |
+| 2026-11-14 | IG @tinyloveshows | silent story (Table Nine) | P5 hook b (repeat body) | the girl I like asked me to dance. I can't dance. | 2571 (24h) | | 14 | ~31% | 0.0% | 0.0% | | 0.0% | 33.0% skip; was planned: stakes (blind hook 7 vs a 5) |
+| 2026-11-14 | IG @tinyloveshows | silent story (Fifty Whites) | P3 hook b (repeat body) | a stranger caught me swiping. now we're stuck on one bench. | 2552 (24h) | | 13 | ~37% | 0.0% | 0.1% | | 0.0% | 26.8% skip; was planned: "caught me swiping" (blind 8 vs a 6) |
+| 2026-11-15 | IG @tinyloveshows | silent story (Table Nine) | P6 FINALE hook a (12:00) | the girl I like at this wedding is leaving. one card left. | 2965 (24h) | | 19 | ~42% | 0.0% | 0.2% | | 0.0% | 30.1% skip; was planned: stakes line (blind hook 6 vs b 5) |
+| 2026-11-15 | IG @tinyloveshows | silent story (Same Bag, new) | P1 hook a (14:30) | the stranger at baggage claim swipes too. | 1392 (24h) | | 14 | ~41% | 0.0% | 0.2% | | 0.0% | 25.4% skip; was planned: who+where on a new world |
+| 2026-11-15 | IG @tinyloveshows | silent story (Table Nine) | P6 FINALE hook b (repeat body) | a stranger caught me swiping at this wedding. now she's leaving. | 2162 (12h) | | 19 | ~42% | 0.1% | 0.1% | | 0.0% | 26.4% skip; was planned: "caught me swiping" |
+| 2026-11-15 | IG @tinyloveshows | silent story (Same Bag) | P1 hook b (repeat body) | a stranger caught me swiping at baggage claim. she wrote this. | 1633 (24h) | | 14 | ~41% | 0.0% | 0.0% | | 0.1% | 28.9% skip; was planned: "caught me swiping" |
+| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook a (12:00) | the stranger in the paint aisle handed me her brush. | 2092 (24h) | | 18 | ~51% | 0.0% | 0.1% | | 0.1% | 19.5% skip; was planned: who+where (blind hook 6 vs b 7) |
+| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook a (14:30) | the stranger at baggage claim asked how my trip was. | 1718 (24h) | | 13 | ~38% | 0.0% | 0.2% | | 0.0% | 32.1% skip; was planned: who+where (blind 5 vs b 6) |
+| 2026-11-16 | IG @tinyloveshows | silent story (Fifty Whites) | P4 hook b (repeat body) | a stranger caught me swiping. then she handed me a brush. | 2012 (24h) | | 17 | ~49% | 0.1% | 0.1% | | 0.0% | 21.7% skip; was planned: "caught me swiping" |
+| 2026-11-16 | IG @tinyloveshows | silent story (Same Bag) | P2 hook b (repeat body) | a stranger caught me swiping at baggage claim. again. | 1224 (12h) | | 12 | ~35% | 0.0% | 0.0% | | 0.0% | 36.3% skip; was planned: "caught me swiping" |
+| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook a (12:00) | the girl I like from the paint aisle leaves in 10 min. | 1763 (24h) | | 14 | ~40% | 0.0% | 0.0% | | 0.0% | 26.4% skip; was planned: stakes line (blind hook 7 vs b 5) |
+| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook a (14:30) | the stranger at baggage claim got her phone stuck in her zip. | 1806 (24h) | | 15 | ~44% | 0.0% | 0.1% | | 0.0% | 25.0% skip; was planned: who+where (blind 6 vs b 5) |
+| 2026-11-17 | IG @tinyloveshows | silent story (Fifty Whites) | P5 hook b (repeat body) | she caught me swiping. now the store closes in 10 min. | 1862 (24h) | | 13 | ~37% | 0.0% | 0.2% | | 0.0% | 27.2% skip; was planned: "caught me swiping" |
+| 2026-11-17 | IG @tinyloveshows | silent story (Same Bag) | P3 hook b (repeat body) | she caught me swiping. now her zip's stuck. | 1762 (24h) | | 14 | ~41% | 0.0% | 0.0% | | 0.0% | 24.9% skip; was planned: "caught me swiping" |
+| 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook a (round 12) | the girl from the paint aisle asked my name. | 2037 (24h) | | 16 | ~46% | 0.1% | 0.2% | | 0.0% | 24.8% skip; was planned: stakes line (blind hook 6 vs b 8) |
+| 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook b (repeat body) | she caught me swiping. now she wants my name. | 1943 (24h) | | 14 | ~40% | 0.2% | 0.2% | | 0.0% | 28.4% skip; was planned: "caught me swiping" with the catch shown in frame (! beat) |
+| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook a (round 12) | the girl I like at baggage claim is stuck here for 40 min. | 1905 (12h) | | 17 | ~50% | 0.0% | 0.1% | | 0.0% | 20.9% skip; was planned: stakes line (blind hook 5 vs b 7) |
+| 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook b (repeat body) | she caught me swiping. so I switched my phone off. | 2112 (12h) | | 17 | ~50% | 0.0% | 0.0% | | 0.0% | 24.5% skip; was planned: "caught me swiping", catch shown in frame |
+| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook a (12:00) | the girl I like at baggage claim just lost her bag. | | | | | | | | | planned: stakes line (blind hook 7 vs b 6) |
+| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two, new) | P1 hook a (14:30) | the stranger on the next stool wants my last slice of pie. | | | | | | | | | planned: who+where on a new world, Thanksgiving week |
+| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook b (repeat body) | she caught me swiping. now her bag is lost. | | | | | | | | | planned: "caught me swiping", catch shown |
+| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two) | P1 hook b (repeat body) | she caught me swiping. now we both want the last slice. | | | | | | | | | planned: "caught me swiping", catch shown |
 
 ## Hook patterns (running record)
 
@@ -151,3 +154,11 @@ P4 and any new season wait until the queue drains.
 sessions queued, last stats snapshot 2026-11-14 02:34). Tonight only 2 posts again: Same Bag P4 with hook a (stakes) vs b
 ("caught me swiping", catch shown in frame, which the checker again rated higher: 7 vs 5). judge_vs_stats (n=30): clarity, hook
 and satisfaction scores show no relation to views or retention; want_next weakly positive (+0.33 / +0.31).
+
+**Update 2026-11-23:** the phone came back ~11-20 and the 18-post backlog went out 11-20..11-22 (nightly runs for 11-20..22 did
+not happen, so nothing new was planned). Backlog results: 19 of 20 posts broke out (1.2k-3.2k, latest snapshot); the one floor was whites-3-a (365).
+The only two floors since 11-12 (table-3-b 392, whites-3-a 365) both open the hook LINE on a time phrase ("Mid-speech",
+"Ten minutes on a bench"): never start a hook line with when. Same Bag is rising by part (P1 1.4-1.6k, P4 1.9-2.1k, P4a 20.9% skip),
+so no season decay this time. Hook a (stakes/who+where) vs b ("caught me swiping") is a tie overall: b won views on Whites P2/P3 and
+Bag P1/P4, a won skip on Whites P4-P6 and Bag P4. Shares, saves and comments stay ~0: votes don't draw comments. Tonight: Same Bag
+P5 + new season Pie for Two P1 (Thanksgiving diner), a vs b on each.

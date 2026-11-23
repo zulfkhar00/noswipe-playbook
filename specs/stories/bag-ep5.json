@@ -1,0 +1,373 @@
+{
+ "id": "bag-ep5",
+ "season": "Same Bag",
+ "composition": "Bag5",
+ "episode": 5,
+ "title": "Lost bag. Part 5",
+ "note": "Silent. Frame 1 fully drawn, belt stopped, board BELT 4 / COMPLETE, his phone lit mid-swipe, her suitcase (chartreuse loop) and a dashed ghost outline of the missing 2nd bag. Hook a: strip + ghost from frame 1; he lowers the phone at 2.0. Hook b: she catches him at 0.6-0.95 ('!'), he pockets the phone 1.15-1.65, ghost fades in 1.9. 2.5-3.8 insert of her two bags (labelled her 1st / 2nd bag), 3.8-5.0 BAGGAGE DESK lights. TAKE 1 (B, fails on him): his tag (it'll turn up!), he waves and strides to the EXIT, doors stay shut, bonk, doors open for a stranger, he looks back, she is alone at the desk. Rewind wipe. TAKE 2 (A): desk form DESCRIBE THE BAG, her tag (grey. like everyone's.), his tag (chartreuse loop. I noticed.), board flips BELT 5, her bag rides out; music drops for (you noticed that?) / (hard not to.); payoff strip. Cliff: RIDE / ARRIVED, she grabs both bags and looks at him. Vote A ASK FOR HER NAME / B SAY NOTHING. JUST WAVE. End card. No NoSwipe mention. No app UI/logos. Joke only on him. Round 2: tags held >=0.8 s, desk form clear, bonk burst on glass, car shot at 24.2, payoff strip 2.25 s, ghost pulse beat in hook a.",
+ "duration": 35.2,
+ "hooks": {
+  "a": "the girl I like at baggage claim just lost her bag.",
+  "b": "she caught me swiping. now her bag is lost."
+ },
+ "hookProp": "a | b (only the 0-2.5 s opening and the hook strip; identical from 2.5 s)",
+ "beats": {
+  "hookEnd": 2.5,
+  "catch0": 0.6,
+  "catch1": 0.95,
+  "ghostB": 1.9,
+  "insert": 2.5,
+  "deskDark": 3.6,
+  "deskLit": 3.8,
+  "take1": 4.8,
+  "exit": 6.3,
+  "walkEnd": 7.3,
+  "bonk": 7.4,
+  "stranger": 8.0,
+  "doorsOpen": 8.5,
+  "lookBack": 9.0,
+  "alone": 9.2,
+  "rewind": 10.3,
+  "take2": 11.0,
+  "t2": 12.1,
+  "dk2": 13.8,
+  "t3": 14.7,
+  "belt5": 16.5,
+  "bagIn": 16.7,
+  "bagStop": 17.9,
+  "t4": 18.7,
+  "t5": 20.4,
+  "payoff": 21.9,
+  "cliff": 24.2,
+  "voteWipe": 26.0,
+  "cardA": 26.85,
+  "cardB": 27.05,
+  "voteUp": 27.1,
+  "endcard": 31.1,
+  "cl2": 25.0
+ },
+ "choices": {
+  "question": "her ride's here. what do I do?",
+  "A": {
+   "l1": "ASK FOR",
+   "l2": "HER NAME."
+  },
+  "B": {
+   "l1": "SAY NOTHING.",
+   "l2": "JUST WAVE."
+  },
+  "why": "Both about him. A is the brave honest move, B is the shy walk-away that costs him. A planned winner for part 6."
+ },
+ "strips": [
+  {
+   "text": "the girl I like at baggage claim just lost her bag.",
+   "from": 0.0,
+   "to": 2.5,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now her bag is lost.",
+   "from": 0.0,
+   "to": 2.5,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "she had two bags. same chartreuse loop.",
+   "from": 2.55,
+   "to": 3.55,
+   "y": 345
+  },
+  {
+   "text": "her 2nd bag never came out.",
+   "from": 3.65,
+   "to": 4.7,
+   "y": 1190
+  },
+  {
+   "text": "tell her it'll turn up. leave.",
+   "from": 4.85,
+   "to": 6.25,
+   "y": 345
+  },
+  {
+   "text": "I strode to the exit.",
+   "from": 6.35,
+   "to": 7.35,
+   "y": 345
+  },
+  {
+   "text": "the doors didn't open for me.",
+   "from": 7.45,
+   "to": 9.1,
+   "y": 345
+  },
+  {
+   "text": "she was alone at the desk.",
+   "from": 9.25,
+   "to": 10.2,
+   "y": 345
+  },
+  {
+   "text": "rewind.",
+   "from": 10.3,
+   "to": 10.95,
+   "y": 345
+  },
+  {
+   "text": "go to the desk with her.",
+   "from": 11.05,
+   "to": 12.05,
+   "y": 345
+  },
+  {
+   "text": "she described her bag.",
+   "from": 12.15,
+   "to": 13.75,
+   "y": 345
+  },
+  {
+   "text": "I took the pen.",
+   "from": 13.85,
+   "to": 14.65,
+   "y": 345
+  },
+  {
+   "text": "I'd noticed one thing.",
+   "from": 14.75,
+   "to": 16.45,
+   "y": 345
+  },
+  {
+   "text": "the board said belt 5.",
+   "from": 16.55,
+   "to": 17.45,
+   "y": 345
+  },
+  {
+   "text": "there it was.",
+   "from": 17.55,
+   "to": 18.6,
+   "y": 345
+  },
+  {
+   "text": "found it. because I was looking at her, not my phone.",
+   "from": 21.95,
+   "to": 24.15,
+   "y": 345
+  },
+  {
+   "text": "then a car pulled up.",
+   "from": 24.25,
+   "to": 25.95,
+   "y": 345
+  },
+  {
+   "text": "her ride's here. what do I do?",
+   "from": 27.1,
+   "to": 31.1,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 27.1,
+   "to": 31.1,
+   "y": 1150
+  }
+ ],
+ "cards": {
+  "t1": [
+   "(it'll turn up!)"
+  ],
+  "t2": [
+   "(grey. like",
+   "everyone's.)"
+  ],
+  "t3": [
+   "(chartreuse loop.",
+   "I noticed.)"
+  ],
+  "t4": [
+   "(you noticed",
+   "that?)"
+  ],
+  "t5": [
+   "(hard not to.)"
+  ],
+  "form": "DESCRIBE THE BAG",
+  "board": "BELT 4 / COMPLETE -> BELT 5 / COMING OUT -> RIDE (car icon) / ARRIVED",
+  "desk": "BAGGAGE DESK",
+  "labels": [
+   "her 1st bag",
+   "her 2nd bag",
+   "take 1",
+   "take 2"
+  ],
+  "end_card": "same bag. / a silent baggage-claim love story / next: part 6 (finale) \u00b7 A or B"
+ },
+ "audio": {
+  "bpm": 110,
+  "meter": "4/4",
+  "groove": [
+   [
+    2.5,
+    35.2
+   ]
+  ],
+  "musicDuck": [
+   [
+    10.3,
+    11.0
+   ],
+   [
+    18.5,
+    21.9
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    35.2
+   ]
+  ],
+  "beltRumble": [
+   [
+    16.5,
+    18.0
+   ],
+   [
+    24.2,
+    25.0
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4,
+   1.7
+  ],
+  "phoneTap": [
+   1.3,
+   2.2
+  ],
+  "penCaps": [
+   4.82,
+   12.12,
+   14.72,
+   18.72,
+   20.42
+  ],
+  "scrawl": [
+   [
+    4.9,
+    5.4
+   ],
+   [
+    12.2,
+    12.6
+   ],
+   [
+    12.6,
+    13.0
+   ],
+   [
+    14.8,
+    15.25
+   ],
+   [
+    15.25,
+    15.65
+   ],
+   [
+    18.8,
+    19.2
+   ],
+   [
+    19.2,
+    19.5
+   ],
+   [
+    20.5,
+    21.0
+   ]
+  ],
+  "tagSlides": [],
+  "bagThumps": [
+   2.65,
+   2.85,
+   7.4,
+   13.9
+  ],
+  "wheelClacks": [
+   6.45,
+   6.75,
+   7.05,
+   8.2,
+   8.45
+  ],
+  "laughSting": [
+   14.0,
+   21.95
+  ],
+  "gulp": [
+   2.0,
+   9.0
+  ],
+  "boardFlip": [
+   16.5,
+   25.0
+  ],
+  "beltStop": [
+   17.9
+  ],
+  "beltRewind": [
+   10.3
+  ],
+  "cliffSting": [
+   24.3
+  ],
+  "pops": [
+   3.8
+  ],
+  "ding": [
+   8.5
+  ],
+  "phoneBuzz": [],
+  "beltWhoosh": [
+   26.0
+  ],
+  "cardPops": [
+   26.85,
+   27.05
+  ],
+  "stamps": [
+   0.0,
+   0.0,
+   2.55,
+   3.65,
+   4.85,
+   6.35,
+   7.45,
+   9.25,
+   10.3,
+   11.05,
+   12.15,
+   13.85,
+   14.75,
+   16.55,
+   17.55,
+   21.95,
+   24.25,
+   27.1,
+   27.1
+  ],
+  "endChime": [
+   31.1
+  ]
+ }
+}

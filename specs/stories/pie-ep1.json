@@ -1,0 +1,427 @@
+{
+ "id": "pie-ep1",
+ "season": "Pie for Two",
+ "composition": "Pie1",
+ "episode": 1,
+ "title": "Last slice. Part 1",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345, guest-check slip). Night diner counter, neon OPEN in the window, clock 11:41 PM. Two large faces: his phone lit mid-swipe (generic profile-card glow, no UI; thumb flicks 0.2-1.4), her phone lit too in one hand (pink case), and in her other hand the biggest, brightest object: a white napkin reading 'that's my slice.' in cranberry crayon. Behind them the glowing pie case with ONE slice of pumpkin pie and a LAST SLICE clip sign, plus a crayon cup (pumpkin, cranberry stubs) and the chrome napkin dispenser. Season opener: no take 1, no rewind. Own payoff before the cliff: the plate push-back standoff, the cream dollop landing on his ear and their shared laugh (13.3), then both phones under upside-down mugs (15.3, 15.9). Cliff: she writes 'split it? / who gets first bite?' on a new napkin; his phone buzzes under the mug and he ignores it (22.0-22.4); slice wipe to the vote board by 23.7 s. Whenever a napkin carries a line it is a WHOLE-FRAME insert (napkin ~800 px wide, centred around y=760, Patrick Hand 700 crayon drawn in; hers lowercase cranberry, his ALL CAPS pumpkin; no parentheses). Text only between y=270 and y=1250. No NoSwipe mention. No real diner or place names. She is warm and equal: the only jokes are his pushes, his ear and his flush. Waitress is silent. Strips are first person. NOTE: never use the word 'tip' (reads as gratuity at a diner); the stake is 'first bite'. ROUND 2: waitress adult behind counter; phones-in-mugs is a counter close-up (phones face-down, mug drops, light pool); best bite label drawn by 18.2; split-it napkin clean by 20.6; mug-buzz close-up 22.0-23.2 (wipe/vote/end +0.5 s); napkin handoff + shared laugh 13.3-14.3.",
+ "duration": 34.7,
+ "hooks": {
+  "a": "the stranger on the next stool wants my last slice of pie.",
+  "b": "she caught me swiping. now we both want the last slice."
+ },
+ "hookOpening": {
+  "a": [
+   "0.9 she lowers the napkin one inch and sneaks a sideways glance at him; his ears flush",
+   "1.7 he stops swiping, reads the napkin",
+   "2.1 his eyes go to the pie case"
+  ],
+  "b": [
+   "0.5 her eyes drop to his lit screen",
+   "0.8 pumpkin '!' burst above her head (y>=400)",
+   "1.1 he flinches, sweat drop, tilts the phone to his chest",
+   "1.5 she smirks, her own phone still lit (they caught each other)",
+   "1.7 he reads the napkin",
+   "2.1 his eyes go to the pie case"
+  ]
+ },
+ "beats": {
+  "swipeStart": 0.2,
+  "glanceA": 0.9,
+  "catchB": 0.8,
+  "flinchB": 1.1,
+  "freeze": 1.7,
+  "eyesToCase": 2.1,
+  "caseOpen": 3.3,
+  "serve": 3.6,
+  "plateDown": 4.0,
+  "push1": 5.4,
+  "push2": 6.4,
+  "push3": 7.2,
+  "pin": 7.7,
+  "pull": 8.0,
+  "write1": 8.5,
+  "crayonSwap": 9.7,
+  "write2": 9.9,
+  "montage": 11.0,
+  "launch": 12.6,
+  "splat": 12.9,
+  "laugh": 13.3,
+  "wipeEar": 13.6,
+  "buzzBoth": 14.6,
+  "mugHers": 15.3,
+  "mugHis": 15.9,
+  "biteClose": 17.6,
+  "fork": 17.9,
+  "biteLabel": 17.7,
+  "write3": 19.1,
+  "slide3": 21.0,
+  "read3": 21.5,
+  "gulp": 21.8,
+  "mugBuzz": 22.0,
+  "ignore": 22.4,
+  "sliceWipe": 23.2,
+  "cardA": 23.2,
+  "cardB": 23.35,
+  "voteUp": 23.7,
+  "comment": 23.2,
+  "endcard": 30.1
+ },
+ "choices": {
+  "question": "she asked who gets first bite. what do I write?",
+  "A": {
+   "l1": "YOU TAKE IT.",
+   "l2": "I'M FULL."
+  },
+  "B": {
+   "l1": "ME.",
+   "l2": "I CALLED IT."
+  },
+  "why": "Both about him. A is the polite lie, B the honest bold answer. B is the planned winner. Part 2 plays A first and fails on him (his stomach growls so loud the mugs rattle, the waitress deadpans a second fork), slice wipe reverses as the rewind, then B carries on."
+ },
+ "inserts": [
+  {
+   "id": "napkin_front",
+   "from": 0.0,
+   "to": 1.7,
+   "side": "her napkin held up large in her hand (not whole-frame)",
+   "lines": [
+    "that's my slice."
+   ],
+   "note": "frame 1: cranberry crayon, the biggest and brightest object"
+  },
+  {
+   "id": "napkin_swap",
+   "from": 8.4,
+   "to": 11.0,
+   "side": "fresh napkin from the dispenser",
+   "lines": [
+    "you first.",
+    "NO. YOU."
+   ],
+   "note": "whole frame; hers writes in 8.5-9.6, his under it 9.9-10.8"
+  },
+  {
+   "id": "napkin_q",
+   "from": 19.0,
+   "to": 21.9,
+   "side": "new napkin, hers",
+   "lines": [
+    "split it?",
+    "who gets first bite?"
+   ],
+   "note": "whole frame; writes in 19.1-20.9, slides to him at 21.0, held until he gulps"
+  }
+ ],
+ "shots": [
+  {
+   "from": 0.0,
+   "to": 3.1,
+   "shot": "Frame 1 two-shot at the counter: big faces, both phones lit and swiping, napkin held up, pie case glowing behind; per-hook opening beats; he freezes at 1.7"
+  },
+  {
+   "from": 3.1,
+   "to": 5.3,
+   "shot": "Medium: waitress opens the case, lifts the last slice, sets ONE plate between them; clock 11:41"
+  },
+  {
+   "from": 5.3,
+   "to": 8.0,
+   "shot": "Counter two-shot: the plate slides to her, back to him, to her; she pins it with a fork"
+  },
+  {
+   "from": 8.0,
+   "to": 11.0,
+   "shot": "Whole-frame napkin: you first. / NO. YOU. write in"
+  },
+  {
+   "from": 11.0,
+   "to": 13.0,
+   "shot": "Fast plate montage along the counter with motion blur; the cream dollop wobbles and launches"
+  },
+  {
+   "from": 13.0,
+   "to": 14.6,
+   "shot": "Close two-shot: cream on his ear, she laughs behind her hand, he laughs and wipes it (payoff)"
+  },
+  {
+   "from": 14.6,
+   "to": 17.6,
+   "shot": "Counter: both phones buzz; she flips a mug over hers, he flips a mug over his; glow leaks from under the rims; music ducks"
+  },
+  {
+   "from": 17.6,
+   "to": 19.0,
+   "shot": "Macro on the pointy end of the slice; her fork hovers; crayon label 'best bite' with an arrow draws on"
+  },
+  {
+   "from": 19.0,
+   "to": 22.0,
+   "shot": "Whole-frame napkin: split it? / who gets first bite? writes in and slides to him; then his face, gulp"
+  },
+  {
+   "from": 22.0,
+   "to": 22.7,
+   "shot": "His mug rattles with a muted buzz; he ignores it"
+  },
+  {
+   "from": 22.7,
+   "to": 34.2,
+   "shot": "Slice wipe to the vote board (two napkins), then the end card"
+  }
+ ],
+ "strips": [
+  {
+   "text": "the stranger on the next stool wants my last slice of pie.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now we both want the last slice.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "thanksgiving eve. we both ordered the last slice.",
+   "from": 3.1,
+   "to": 5.2,
+   "y": 345
+  },
+  {
+   "text": "I pushed it over. she pushed it back.",
+   "from": 5.3,
+   "to": 7.9,
+   "y": 345
+  },
+  {
+   "text": "we got very polite.",
+   "from": 8.0,
+   "to": 10.9,
+   "y": 345
+  },
+  {
+   "text": "we did this for a while.",
+   "from": 11.0,
+   "to": 12.8,
+   "y": 345
+  },
+  {
+   "text": "the cream found my ear.",
+   "from": 13.0,
+   "to": 14.5,
+   "y": 345
+  },
+  {
+   "text": "she put her phone in a mug.",
+   "from": 14.7,
+   "to": 16.2,
+   "y": 345
+  },
+  {
+   "text": "so did I.",
+   "from": 16.3,
+   "to": 17.5,
+   "y": 345
+  },
+  {
+   "text": "my mug buzzed. I let it.",
+   "from": 22.0,
+   "to": 23.2,
+   "y": 345
+  },
+  {
+   "text": "she asked who gets first bite. what do I write?",
+   "from": 23.2,
+   "to": 30.1,
+   "y": 345
+  },
+  {
+   "text": "comment A or B",
+   "from": 23.2,
+   "to": 30.1,
+   "y": 1170
+  }
+ ],
+ "cards": {
+  "napkin_front": "that's my slice.",
+  "hers_1": "you first.",
+  "his_1": "NO. YOU.",
+  "hers_2_l1": "split it?",
+  "hers_2_l2": "who gets first bite?",
+  "label": "best bite (cranberry crayon, arrow, 18.0-19.4)",
+  "case_sign": "LAST SLICE",
+  "clock": "11:41 PM",
+  "window_neon": "OPEN",
+  "vote_header": "what do I write?",
+  "end_card": "pie for two \u00b7 part 2 \u00b7 A or B"
+ },
+ "look": {
+  "palette": {
+   "espressoInk": "#2A1810",
+   "nightTeal": "#0F3B3A",
+   "mintFormica": "#A9DCCB",
+   "pumpkin": "#F2861E",
+   "cranberry": "#B5233F",
+   "custard": "#FFE7A8",
+   "chrome": "#DDE6E9",
+   "napkin": "#FFFDF6"
+  },
+  "fonts": {
+   "strips": "Courier Prime 700 (guest-check slip, ~56 px)",
+   "napkin_crayon": "Patrick Hand 700",
+   "neon_endcard_vote_letters": "Anton",
+   "chalkboard": "Permanent Marker"
+  },
+  "cast": {
+   "him": "rust work jacket, custard cord collar, hair flat on one side, flushed ears, phone, pumpkin crayon (ALL CAPS)",
+   "her": "chunky cranberry knit, gold hoops, curly half-up hair, cream pompom beanie on the next stool, pink-case phone, cranberry crayon (lowercase)",
+   "waitress": "mint uniform, cream apron, order pad, silent and deadpan"
+  },
+  "transition": "slice wipe: a pie wedge with a crimped crust edge sweeps clockwise from the centre like a clock hand and reveals the next shot; counter-clockwise for a rewind (part 2+)"
+ },
+ "audio": {
+  "bpm": 76,
+  "meter": "12/8",
+  "groove": [
+   [
+    0,
+    17.4
+   ],
+   [
+    20.6,
+    34.7
+   ]
+  ],
+  "musicDuck": [
+   [
+    17.6,
+    20.6
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    34.7
+   ]
+  ],
+  "neonBuzz": [
+   [
+    0,
+    3.0
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "caseHum": [
+   [
+    3.3,
+    4.2
+   ]
+  ],
+  "plateClinks": [
+   4.0,
+   7.7
+  ],
+  "plateScrapes": [
+   5.4,
+   6.4,
+   7.2,
+   11.0,
+   11.3,
+   11.6,
+   11.9,
+   12.2
+  ],
+  "napkinPulls": [
+   8.0,
+   13.4
+  ],
+  "napkinSlides": [
+   21.0
+  ],
+  "scrawl": [
+   [
+    8.5,
+    9.6
+   ],
+   [
+    9.9,
+    10.8
+   ],
+   [
+    19.1,
+    20.45
+   ]
+  ],
+  "crayonDraw": [
+   [
+    17.7,
+    18.2
+   ]
+  ],
+  "splat": [
+   12.9
+  ],
+  "laughSting": [
+   13.3
+  ],
+  "phoneBuzz": [
+   14.6,
+   14.8,
+   22.0,
+   22.3,
+   22.6,
+   22.9
+  ],
+  "mugClunks": [
+   15.3,
+   15.9
+  ],
+  "forkTink": [
+   17.9
+  ],
+  "celestaNote": [
+   17.9
+  ],
+  "gulp": [
+   21.8
+  ],
+  "sliceWhoosh": [
+   23.2
+  ],
+  "cardPops": [
+   23.2,
+   23.35
+  ],
+  "stamps": [
+   3.1,
+   5.3,
+   8.0,
+   11.0,
+   13.0,
+   14.7,
+   16.3,
+   22.0,
+   23.2,
+   30.1
+  ],
+  "endChime": [
+   30.1
+  ],
+  "instruments": "late-night jukebox doo-wop ballad: tremolo guitar triplet arpeggios, upright bass pluck, brushed snare on 2 and 4, soft ooh pad, finger snaps; drops to fridge hum + one celesta note for the shared moment; grill-sizzle room tone",
+  "laughHit": [
+   13.3
+  ]
+ }
+}

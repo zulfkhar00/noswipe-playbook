@@ -676,3 +676,80 @@ dashed ghost bag. Vote "her other bag never came. what do I do?" A (GO TO THE DE
 LEAVE.). Blind check 1 round: clarity 7, hook a 5 / b 7, satisfaction 7, want_next 6. Unfixed flags: her second bag is never
 shown before the cliff (plant it in P5's recap), the vote's B is lopsided, end card "same bag." opaque cold, hook a opener static.
 **Part 5 (Lost bag):** A wins (planned); B plays first and fails on him, rewind, then A at the desk.
+
+| 5a | My baggage claim crush just lost her bag. Part 5 (48) | `specs/stories/bag-ep5.json` | `Bag5` hook a |
+| 5b | Caught swiping at baggage claim. Now her bag's lost. Part 5 (59) | same | `Bag5` hook b |
+
+**What happened (part 5, nightly for 2026-11-23):** 35.2 s, vote up 27.1 s (tag holds and a new car shot pushed it). Frame 1: his
+phone lit mid-swipe, BELT 4 / COMPLETE, her one bag + a dashed "?" ghost of the missing one; hook a "the girl I like at baggage
+claim just lost her bag." (her look to the ghost, pulse, his glance by 0.8 s) / hook b "she caught me swiping. now her bag is
+lost." (head turn + "!", he pockets the phone). Insert "she had two bags. same chartreuse loop." with labelled bags. Take 1 (B):
+"(it'll turn up!)", he strides to the EXIT, the auto doors don't open for him (bonk), they open for a stranger; she is alone at
+the desk. Reversed belt-flap rewind. Take 2 (A): DESCRIBE THE BAG form, her "(grey. like everyone's.)", his "(chartreuse loop. I
+noticed.)", BELT 5 / COMING OUT, "her 2nd bag" rides out; music out for "(you noticed that?)" / "(hard not to.)"; payoff strip
+"found it. because I was looking at her, not my phone." Cliff: a car pulls up at PICK-UP, RIDE / ARRIVED. Vote "her ride's here.
+what do I do?" A (ASK FOR HER NAME.) / B (SAY NOTHING. JUST WAVE.). End card "a silent baggage-claim love story / same bag. / next:
+part 6 (finale) · A or B". Blind check 2 rounds: clarity 6 -> 7, hook a 6 -> 7 / b 7 -> 6, satisfaction 7, want_next 7. Open: b's
+"now her bag is lost" can read as if he caused it; the cause of belt 5 isn't shown. **Part 6 (Two tags, finale):** A wins
+(planned); B plays first (he waves, she leaves, he stands alone with her tag), rewind, then names: "MILES · ANYA" on two tags.
+
+## Season 11 · Pie for Two (silent night-diner romance, napkin crayon notes)
+
+**Logline:** Thanksgiving eve, a nearly empty all-night diner. Two solo strangers at the counter, both swiping. One slice of
+pumpkin pie is left in the case, and they both order it. They talk on napkins, in crayon.
+
+**Why this season:** started 2026-11-23 for Thanksgiving week (Thu 11-26); reserved since the 2026-11-12 pitch. Runs beside Same
+Bag (finale P6 due 11-24). Keeps the apps-visible opener (ONE strip, two big faces, both phones lit mid-swipe, generic glow, the
+napkin as the one big bright device). New gag: phones go under upside-down coffee mugs. No real diner or place names.
+
+| | Look | How they write |
+|---|---|---|
+| Him (name withheld until part 6: WES) | rust work jacket, custard cord collar, hair flat on one side from a long drive, flushed ears | pumpkin crayon, ALL CAPS, short and nervy |
+| Her (name withheld until part 6: ROSA) | chunky cranberry knit, gold hoops, curly half-up hair, cream pompom beanie, pink-case phone | cranberry crayon, lowercase, dry and kind |
+| The waitress | mint uniform, cream apron, order pad, deadpan, never writes | nothing: the straight man |
+
+**Device:** napkins from the chrome dispenser and a cup of crayon stubs; max ~18 characters per line, two lines per napkin, no
+parentheses. A napkin with a line is always a whole-frame insert (~800 px wide, centred near y=760). Never the word "tip" (reads
+as gratuity); the stake in P1-P2 is "first bite".
+
+**Look and sound:** flat vector night diner, thick espresso outlines, diagonal gloss on chrome and glass. Espresso ink #2A1810,
+night teal #0F3B3A, mint formica #A9DCCB, pumpkin #F2861E, cranberry #B5233F, custard #FFE7A8, chrome #DDE6E9, napkin #FFFDF6.
+Strips are printed guest-check slips (custard, torn edges, Courier Prime 700). Napkins Patrick Hand 700; neon, vote letters,
+end card Anton; chalkboard Permanent Marker. **Signature transition: the slice wipe** (a crimped pie wedge sweeps clockwise like
+a clock hand; counter-clockwise for a rewind). Sound: jukebox doo-wop ballad, 12/8 at 76 bpm (tremolo guitar, upright bass,
+brushes, ooh pad, snaps), dropping to fridge hum + one celesta note for the shared moment; plate scrapes, crayon scrawl,
+mug-flip clunks, muted buzz under a mug. Code `src/stories/pie/{world,ep1}.tsx`; audio `python3 generate_pie_audio.py pie-ep1`.
+
+**Arc (6 parts; from part 2 the losing option plays first, fails on him, slice wipe reverses "rewind. take 2.", then the winner):**
+1. **Last slice.** One plate between them, pushed back and forth ("you first." / "NO. YOU."), cream on his ear, phones under
+   mugs, she writes "split it? / who gets first bite?". Vote A YOU TAKE IT. I'M FULL. / B ME. I CALLED IT. **B wins.**
+2. **I called it.** A: his stomach growls so loud the mugs rattle, the waitress deadpans a second fork; rewind. B: fork duel for
+   the first bite, she lets him, he gives half back. Cliff "why are you at a diner at midnight?" A I'M A PIE CRITIC. / B
+   NOWHERE ELSE TO BE. **B wins.**
+3. **Nowhere else.** A: pie-critic act, the waitress hands him a one-star REVIEW card; rewind. B: she skipped the family drive too
+   (and the questions about the apps); mugs clink. Cliff: the jukebox lights up. A SOMETHING SLOW. / B SOMETHING DUMB. **A wins.**
+4. **Last call.** B: a novelty song fills the empty diner; rewind. A: one slow song, two stools. Check "1 PIE · 2 FORKS".
+   Optional NoSwipe mention 1 (gag only: the waitress's phone chimes it, she silences it). A I'LL GET IT. / B SPLIT IT. WE'RE
+   EVEN. **B wins.**
+5. **Closing time.** A: his wallet holds a gum wrapper; rewind. B: split, crust bagged as leftovers, sidewalk at 12:00, her
+   brother's car honks; last napkin slides to him. A WES. YOURS? / B I'LL SAVE YOU A SLICE. **A wins.**
+6. **One napkin.** Finale, no vote: B first (case empty, she waves from the car), rewind, A: names, one napkin signed in both
+   crayons "WES · ROSA". End card "pie for two · the end".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "pie for two · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger on the next stool wants my last pie. Part 1 | `specs/stories/pie-ep1.json` | `Pie1` hook a |
+| 1b | Caught swiping at a diner. We want the last pie. Part 1 | same | `Pie1` hook b |
+
+**What happened (part 1, nightly for 2026-11-23):** 34.7 s, vote board up 23.7 s, end card 30.1 s. Frame 1: both phones lit
+mid-swipe at the counter, her napkin "that's my slice.", LAST SLICE case, 11:41 PM, neon OPEN; hook a "the stranger on the next
+stool wants my last slice of pie." / hook b "she caught me swiping. now we both want the last slice." (her eyes to his screen,
+"!", his flinch). Adult waitress serves one plate; push-back standoff; napkins "you first." / "NO. YOU."; plate montage, cream on
+his ear, shared 1 s laugh, she hands him a napkin; close-up: phones flipped face-down and mugs dropped over them (glow pools);
+"best bite" macro; napkin "split it? / who gets first bite?"; his mug buzzes, he looks away. Vote A (YOU TAKE IT. I'M FULL.) / B
+(ME. I CALLED IT.). Blind check 2 rounds (round 1: waitress read as a child, mugs/phones unclear, "best bite" missing, napkin
+covered): clarity 7, hook a 6 -> 7 / b 7, satisfaction 4, want_next 6. Open: the hook frame shows the standoff before the
+"we both ordered" beat (reads as a flash-forward); the napkin is held by him in the face shot though "she asked". **Part 2:** B
+wins (planned), A plays first and fails on him.

@@ -413,8 +413,10 @@ export const VoteCard: React.FC<{letter: string; l1: string; l2: string; y: numb
   </g>;
 };
 
-export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon?: boolean; prefix?: string}> = ({a, t, part = 2, amberRibbon = false, prefix = ''}) => {
+export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon?: boolean; prefix?: string; pill?: string; pillSize?: number; tagline?: string}> = ({a, t, part = 2, amberRibbon = false, prefix = '', pill, pillSize = 74, tagline}) => {
+  const pillText = pill ?? `${prefix}part ${part} · A or B`;
   const pop = (d: number) => { const k = clamp((a - d) / 0.3); return k <= 0 ? 0 : 1 + Math.sin(k * Math.PI * 1.5) * Math.exp(-k * 4.2) * 0.4 - Math.exp(-k * 9) * (1 - k); };
+  const pw = pill ? Math.min(1000, textW(pillText, `800 ${pillSize}px ${JOST}`) + 90) : prefix ? 880 : 660;
   return <g>
     <HallWall />
     <rect x={-300} y={1260} width={1680} height={30} fill="#55555C" />
@@ -426,12 +428,13 @@ export const EndCard: React.FC<{a: number; t: number; part?: number; amberRibbon
       <text x={9} y={19} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={176} fill={C.carbon} opacity={0.25}>same bag.</text>
       <text x={0} y={10} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={176} fill={C.carbon}>same bag.</text>
     </g>
+    {tagline && <g transform={`translate(540 395) scale(${pop(0.1)})`}><text x={0} y={0} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={54} fill={C.carbon}>{tagline}</text></g>}
     <g transform={`translate(280 880) scale(${pop(0.15)})`}><Bag x={0} y={0} loop={false} tag ribbon={amberRibbon ? 1 : 0} ribbonColor={C.amber} /></g>
     <g transform={`translate(800 880) scale(${pop(0.25)})`}><Bag x={0} y={0} loop tag={false} /></g>
     <g transform={`translate(540 1190) scale(${pop(0.4)})`}>
-      <rect x={prefix ? -440 : -330} y={-62} width={prefix ? 880 : 660} height={116} rx={22} fill={C.carbon} transform="translate(10 12)" opacity={0.9} />
-      <rect x={prefix ? -440 : -330} y={-62} width={prefix ? 880 : 660} height={116} rx={22} fill={C.hiVis} stroke={C.carbon} strokeWidth={6} />
-      <text x={0} y={26} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={74} fill={C.carbon}>{prefix}part {part} · A or B</text>
+      <rect x={-pw / 2} y={-62} width={pw} height={116} rx={22} fill={C.carbon} transform="translate(10 12)" opacity={0.9} />
+      <rect x={-pw / 2} y={-62} width={pw} height={116} rx={22} fill={C.hiVis} stroke={C.carbon} strokeWidth={6} />
+      <text x={0} y={pillSize * 0.35} textAnchor="middle" fontFamily={JOST} fontWeight={800} fontSize={pillSize} fill={C.carbon}>{pillText}</text>
     </g>
   </g>;
 };

@@ -1296,6 +1296,86 @@
     "want_next": 6,
     "rounds": 1
    }
+  },
+  {
+   "id": "bag-5-a",
+   "day": "2026-11-23",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 5,
+   "hook": "a",
+   "caption": "My baggage claim crush just lost her bag. Part 5. Take one, I said it'll turn up and walked into the exit doors. Take two, I went to the desk with her and spotted her bag on belt 5. Now her ride is here. A or B? #airport #meetcute #strangerstolovers #shortstory #animation",
+   "video": "videos/bag-5-a.mp4",
+   "composition": "Bag5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "bag-5-b",
+   "day": "2026-11-23",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 5,
+   "hook": "b",
+   "caption": "Caught swiping at baggage claim. Now her bag's lost. Part 5. The easy move left her alone at the desk, so we rewound. Take two, I noticed one thing nobody else did. Her ride just pulled up. A or B? #datingapps #travel #lovestory #shortfilm #animation",
+   "video": "videos/bag-5-b.mp4",
+   "composition": "Bag5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "pie-1-a",
+   "day": "2026-11-23",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 1,
+   "hook": "a",
+   "caption": "The stranger on the next stool wants my last pie. Part 1. Thanksgiving eve, an empty diner, one slice left, and we both ordered it. Who gets first bite, A or B? #thanksgiving #meetcute #strangerstolovers #shortstory #animation",
+   "video": "videos/pie-1-a.mp4",
+   "composition": "Pie1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 4,
+    "want_next": 6,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "pie-1-b",
+   "day": "2026-11-23",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 1,
+   "hook": "b",
+   "caption": "Caught swiping at a diner. We want the last pie. Part 1. She pushed the plate back, the cream found my ear, and our phones went under the mugs. What do I write, A or B? #datingapps #thanksgiving #lovestory #shortfilm #animation",
+   "video": "videos/pie-1-b.mp4",
+   "composition": "Pie1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 4,
+    "want_next": 6,
+    "rounds": 2
+   }
   }
  ]
 }
