@@ -256,6 +256,11 @@ def tag_tap():
     return (np.sin(2 * np.pi * 2093 * t) * env(t, 0.0005, 0.25) + 0.5 * np.sin(2 * np.pi * 3136 * t) * env(t, 0.0005, 0.12)) * 0.45 + fft_bp(noise(0.9), 3000, 9000) * env(t, 0.0005, 0.006) * 0.5
 
 
+def horn(d=0.2):
+    t = tt(d)
+    return (np.sin(2 * np.pi * 420 * t) + 0.8 * np.sin(2 * np.pi * 530 * t)) * np.minimum(1, t / 0.008) * np.minimum(1, (d - t) / 0.02) * 0.4
+
+
 def pen_cap():
     t = tt(0.12)
     return (np.sin(2 * np.pi * 1700 * t) * env(t, 0.0005, 0.02) + fft_bp(noise(0.12), 1500, 6000) * env(t, 0.0005, 0.01)) * 0.8
@@ -292,6 +297,17 @@ def music(st: Stem, a):
                 for j in range(3):
                     st.add(t0 + (j * 1.5 + 0.5) * beat, nylon(mel[(k // 2 * 3 + j) % len(mel)], 0.5), 0.2)
             k += 1
+    for lo, hi in a.get("swell", []):   # fuller return: sustained pad + a melody note every bar
+        k = int(np.ceil(lo / bar))
+        while k * bar < hi - 0.01:
+            t0 = k * bar
+            root, chord = prog[k % 4]
+            tp = tt(bar)
+            pad = sum(np.sin(2 * np.pi * midi(m + 12) * tp) for m in chord) * np.minimum(1, tp / 0.3) * np.minimum(1, (bar - tp) / 0.3)
+            st.add(t0, pad, 0.05)
+            for j in range(3):
+                st.add(t0 + (j * 1.5 + 0.5) * beat, nylon(mel[(k * 3 + j + 1) % len(mel)] + 5 * (j == 2), 0.5), 0.12)
+            k += 1
     for lo, hi in a["musicDuck"]:
         i0, i1 = int(lo * RATE), int(hi * RATE)
         fade = int(0.15 * RATE)
@@ -323,6 +339,7 @@ def sfx(st: Stem, a):
     for t in a.get("beltRewind", []): st.add(t, belt_rewind(1.0), 0.9)
     for t in a.get("pops", []): st.add(t, pop(900), 0.9)
     for t in a.get("ding", []): st.add(t, intercom_ding(), 0.7)
+    for t in a.get("horn", []): st.add(t, horn(), 0.8)
     for t in a.get("tagTap", []): st.add(t, tag_tap(), 0.7)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.5)

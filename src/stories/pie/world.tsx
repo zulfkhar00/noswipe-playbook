@@ -478,15 +478,17 @@ const FullPie: React.FC = () => <g>
   <circle cx={-60} cy={-26} r={22} fill={C.cream} stroke={C.ink} strokeWidth={5} />
 </g>;
 
-export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
+export const EndCard: React.FC<{a: number; t: number; pill?: string; kicker?: string}> = ({a, t, pill, kicker}) => {
   const pop = (d: number) => { const k = clamp((a - d) / 0.3); return k <= 0 ? 0 : 1 + Math.sin(k * Math.PI * 1.5) * Math.exp(-k * 4.2) * 0.4 - Math.exp(-k * 9) * (1 - k); };
   const flick = 0.85 + 0.15 * Math.sin(t * 29) * Math.sin(t * 5.1);
-  const pillT = 'part 2 · A or B';
-  const pw = textW(pillT, `700 74px ${COUR}`) + 100;
+  const pillT = pill ?? 'part 2 · A or B';
+  const pfs = Math.min(74, Math.floor((880 / textW(pillT, `700 74px ${COUR}`)) * 74));
+  const pw = textW(pillT, `700 ${pfs}px ${COUR}`) + 100;
   return <g>
     <Far t={t} />
     <rect x={-200} y={1000} width={1480} height={1000} fill={C.tealLite} />
     <Counter />
+    {kicker && <g transform={`translate(540 590) scale(${pop(0)})`}><text x={0} y={0} textAnchor="middle" fontFamily={COUR} fontWeight={700} fontSize={52} fill={C.custard} stroke={C.ink} strokeWidth={9} paintOrder="stroke" letterSpacing={1}>{kicker}</text></g>}
     <g transform={`translate(540 800) scale(${pop(0)})`} opacity={flick}>
       <text x={0} y={0} textAnchor="middle" fontFamily={ANTON} fontSize={190} fill={C.pumpkin} stroke={C.pumpkin} strokeWidth={30} opacity={0.6} filter="url(#blurGlow)" letterSpacing={4}>pie for two</text>
       <text x={0} y={0} textAnchor="middle" fontFamily={ANTON} fontSize={190} fill="#1A0D08" stroke={C.pumpkin} strokeWidth={11} strokeLinejoin="round" letterSpacing={4}>pie for two</text>
@@ -499,7 +501,7 @@ export const EndCard: React.FC<{a: number; t: number}> = ({a, t}) => {
     <g transform={`translate(540 1190) scale(${pop(0.4)})`}>
       <rect x={-pw / 2 + 9} y={-60 + 12} width={pw} height={116} rx={14} fill={C.ink} opacity={0.4} />
       <rect x={-pw / 2} y={-60} width={pw} height={116} rx={14} fill={C.custard} stroke={C.ink} strokeWidth={6} />
-      <text x={0} y={18} textAnchor="middle" fontFamily={COUR} fontWeight={700} fontSize={74} fill={C.ink}>{pillT}</text>
+      <text x={0} y={18} textAnchor="middle" fontFamily={COUR} fontWeight={700} fontSize={pfs} fill={C.ink}>{pillT}</text>
     </g>
   </g>;
 };

@@ -1376,6 +1376,86 @@
     "want_next": 6,
     "rounds": 2
    }
+  },
+  {
+   "id": "bag-6-b",
+   "day": "2026-11-24",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 6,
+   "hook": "b",
+   "caption": "Caught swiping, and I still don't know her name. Part 6. The finale. First try, I just waved and she was gone. Take two, phone off, I wrote my name on a luggage tag and she wrote hers. #datingapps #airport #lovestory #shortfilm #animation",
+   "video": "videos/bag-6-b.mp4",
+   "composition": "Bag6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 8,
+    "want_next": 6,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "pie-2-a",
+   "day": "2026-11-24",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 2,
+   "hook": "a",
+   "caption": "A diner stranger and I fought for the first bite. Part 2. Take one, I said I was full and my stomach told on me. Take two, I called it, then gave half back. She asks why I'm here, A or B? #thanksgiving #meetcute #strangerstolovers #shortstory #animation",
+   "video": "videos/pie-2-a.mp4",
+   "composition": "Pie2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "bag-6-a",
+   "day": "2026-11-24",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Same Bag",
+   "episode": 6,
+   "hook": "a",
+   "caption": "Her ride is here and I don't know her name. Part 6. The finale of a silent baggage claim love story. Two tags, one handle, and one more note from her. #airport #meetcute #strangerstolovers #shortstory #animation",
+   "video": "videos/bag-6-a.mp4",
+   "composition": "Bag6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 8,
+    "want_next": 6,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "pie-2-b",
+   "day": "2026-11-24",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 2,
+   "hook": "b",
+   "caption": "She saw me swiping. Then we dueled over pie. Part 2. Phones under the mugs, forks up, last slice on Thanksgiving eve. She wants to know why I'm at a diner. What do I write, A or B? #datingapps #thanksgiving #lovestory #shortfilm #animation",
+   "video": "videos/pie-2-b.mp4",
+   "composition": "Pie2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 3
+   }
   }
  ]
 }

@@ -68,10 +68,14 @@ Change one variable at a time within a format.
 | 2026-11-18 | IG @tinyloveshows | silent story (Fifty Whites) | P6 FINALE hook b (repeat body) | she caught me swiping. now she wants my name. | 1943 (24h) | | 14 | ~40% | 0.2% | 0.2% | | 0.0% | 28.4% skip; was planned: "caught me swiping" with the catch shown in frame (! beat) |
 | 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook a (round 12) | the girl I like at baggage claim is stuck here for 40 min. | 1905 (12h) | | 17 | ~50% | 0.0% | 0.1% | | 0.0% | 20.9% skip; was planned: stakes line (blind hook 5 vs b 7) |
 | 2026-11-19 | IG @tinyloveshows | silent story (Same Bag) | P4 hook b (repeat body) | she caught me swiping. so I switched my phone off. | 2112 (12h) | | 17 | ~50% | 0.0% | 0.0% | | 0.0% | 24.5% skip; was planned: "caught me swiping", catch shown in frame |
-| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook a (12:00) | the girl I like at baggage claim just lost her bag. | | | | | | | | | planned: stakes line (blind hook 7 vs b 6) |
-| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two, new) | P1 hook a (14:30) | the stranger on the next stool wants my last slice of pie. | | | | | | | | | planned: who+where on a new world, Thanksgiving week |
-| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook b (repeat body) | she caught me swiping. now her bag is lost. | | | | | | | | | planned: "caught me swiping", catch shown |
-| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two) | P1 hook b (repeat body) | she caught me swiping. now we both want the last slice. | | | | | | | | | planned: "caught me swiping", catch shown |
+| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook a (12:00) | the girl I like at baggage claim just lost her bag. | 1389 (12h) | | 14 | ~40% | 0.1% | 0.2% | | 0.0% | 23.0% skip; was planned: stakes line (blind hook 7 vs b 6) |
+| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two, new) | P1 hook a (14:30) | the stranger on the next stool wants my last slice of pie. | 1746 (6h) | | 15 | ~43% | 0.0% | 0.0% | | 0.1% | 23.5% skip; was planned: who+where on a new world, Thanksgiving week |
+| 2026-11-23 | IG @tinyloveshows | silent story (Same Bag) | P5 hook b (repeat body) | she caught me swiping. now her bag is lost. | 1930 (6h) | | 18 | ~51% | 0.0% | 0.1% | | 0.1% | 21.4% skip; was planned: "caught me swiping", catch shown |
+| 2026-11-23 | IG @tinyloveshows | silent story (Pie for Two) | P1 hook b (repeat body) | she caught me swiping. now we both want the last slice. | 1761 (3h) | | 14 | ~40% | 0.0% | 0.1% | | 0.0% | 25.6% skip; was planned: "caught me swiping", catch shown |
+| 2026-11-24 | IG @tinyloveshows | silent story (Same Bag) | P6 finale hook b (12:00) | she caught me swiping. I don't even know her name. | | | | | | | | | planned: "caught me swiping" goes FIRST (blind hook 6 vs a 7) |
+| 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook a (14:30) | the stranger beside me and I are fighting over the first bite of pie. | | | | | | | | | planned: who+where (blind hook 5 vs b 7) |
+| 2026-11-24 | IG @tinyloveshows | silent story (Same Bag) | P6 finale hook a (repeat body, 17:00) | her ride is here and I still don't know her name. | | | | | | | | | planned: stakes line |
+| 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook b (repeat body, 20:30) | she caught me swiping. now we're dueling over pie. | | | | | | | | | planned: "caught me swiping", catch shown |
 
 ## Hook patterns (running record)
 
@@ -162,3 +166,8 @@ The only two floors since 11-12 (table-3-b 392, whites-3-a 365) both open the ho
 so no season decay this time. Hook a (stakes/who+where) vs b ("caught me swiping") is a tie overall: b won views on Whites P2/P3 and
 Bag P1/P4, a won skip on Whites P4-P6 and Bag P4. Shares, saves and comments stay ~0: votes don't draw comments. Tonight: Same Bag
 P5 + new season Pie for Two P1 (Thanksgiving diner), a vs b on each.
+
+**Update 2026-11-24:** 4 of 4 broke out on 11-23, read early (3-12h): bag-5-a 1389 / 23.0%, bag-5-b 1930 / 21.4%, pie-1-a 1746 /
+23.5%, pie-1-b 1761 / 25.6%. Pie for Two is the 4th new world in a row to work with the apps-visible opener. Tonight: the Same Bag
+finale with "caught me swiping" (b) posted first and the stakes line second, to separate hook from publish order, plus Pie P2 (a first).
+Same Bag is over: a new season's part 1 is due next to Pie. judge_vs_stats (n=54): no score predicts views or retention.

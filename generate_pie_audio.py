@@ -109,6 +109,25 @@ def phone_buzz_muted():
     return buzz() * 0.8
 
 
+def growl(d):
+    t = tt(d)
+    f = 62 + 18 * np.sin(2 * np.pi * 3.2 * t)
+    body = np.sin(2 * np.pi * np.cumsum(f) / RATE) * 0.7 + fft_lp(noise(d), 260) * 1.2
+    return body * (0.55 + 0.45 * np.abs(np.sin(2 * np.pi * 11 * t))) * np.minimum(1, t / 0.08) * np.minimum(1, (d - t) / 0.15)
+
+
+def mug_rattle(d):
+    t = tt(d)
+    ticks = np.abs(np.sin(2 * np.pi * 17 * t)) ** 12
+    return (fft_bp(noise(d), 1500, 5000) * ticks * 0.9 + np.sin(2 * np.pi * 2100 * t) * ticks * 0.12) * np.minimum(1, t / 0.05) * np.minimum(1, (d - t) / 0.2)
+
+
+def fork_clink():
+    t = tt(0.5)
+    return (np.sin(2 * np.pi * 4200 * t) * env(t, 0.0004, 0.12) + 0.6 * np.sin(2 * np.pi * 6100 * t) * env(t, 0.0004, 0.07)
+            + 0.3 * np.sin(2 * np.pi * 7900 * t) * env(t, 0.0004, 0.04)) * 0.4 + fft_bp(noise(0.5), 3500, 9000) * env(t, 0.0003, 0.01) * 0.4
+
+
 def room(st: Stem, a):
     n = len(st.buf); tm = np.arange(n) / RATE
     fridge = (np.sin(2 * np.pi * 60 * tm) * 0.5 + np.sin(2 * np.pi * 120 * tm) * 0.3 + np.sin(2 * np.pi * 180 * tm) * 0.08) * 0.014
@@ -175,6 +194,9 @@ def sfx(st: Stem, a):
     for t in a["sliceWhoosh"]: st.add(t - 0.05, slice_whoosh(), 0.9)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.45)
+    for lo, hi in a.get("growls", []): st.add(lo, growl(hi - lo), 0.9)
+    for lo, hi in a.get("mugRattles", []): st.add(lo, mug_rattle(hi - lo), 0.6)
+    for t in a.get("forkClinks", []): st.add(t, fork_clink(), 0.8)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)
 

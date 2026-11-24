@@ -1,0 +1,346 @@
+{
+ "id": "bag-ep6",
+ "season": "Same Bag",
+ "composition": "Bag6",
+ "episode": 6,
+ "title": "Two tags. Part 6 (finale)",
+ "note": "Silent finale. Opener (the only hook difference, 0-3 s): BELT 4 plate, her one grey bag with chartreuse loop, board RIDE / ARRIVED, a window showing her car pulling up at PICK-UP, his phone lit mid-swipe. a: she looks to the car, he glances at her by 0.8 s. b: she turns + '!' at 0.6-0.95, he flinches and pockets the phone. 3-5.5 insert: three earlier tags + 'we talked on luggage tags. no names.' TAKE 1 (vote B, fails on him): he waves bigger and bigger, she walks to her car, his bag rolls off without him, blank tag. Rewind wipe. TAKE 2 (A): phone off, tag raised at the car door, (wait. I'm Miles.), (finally. Anya.) with music out, MILES / ANYA tags on one handle (2.5 s full frame). Epilogue: driver taps horn, (coffee? you're buying.), tiny wave, tag, phone buzz ignored, walks off with his bag. End card, no vote, no NoSwipe mention.",
+ "duration": 36.0,
+ "hooks": {
+  "a": "her ride is here and I still don't know her name.",
+  "b": "she caught me swiping. I\u00a0don't even know her name."
+ },
+ "hookProp": "a | b (only the 0-3 s opening and the hook strip)",
+ "beats": {
+  "hookEnd": 3.0,
+  "catch0": 0.6,
+  "catch1": 0.95,
+  "insert": 3.0,
+  "take1": 5.9,
+  "doorsOpen": 6.2,
+  "walk0": 6.0,
+  "inCar": 7.85,
+  "carGo1": 8.3,
+  "release": 7.9,
+  "blank": 9.5,
+  "rewind": 11.0,
+  "take2": 11.75,
+  "power": 12.3,
+  "k2": 13.5,
+  "t6": 15.0,
+  "k3": 16.9,
+  "t7": 18.5,
+  "names": 20.5,
+  "e1": 23.0,
+  "t8": 24.6,
+  "e2": 26.4,
+  "endcard": 32.0
+ },
+ "strips": [
+  {
+   "text": "her ride is here and I still don't know her name.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. I\u00a0don't even know her name.",
+   "from": 0.0,
+   "to": 3.0,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "I flew in for a date. it flopped. then we met.",
+   "from": 3.05,
+   "to": 4.3,
+   "y": 345
+  },
+  {
+   "text": "we only talked on luggage tags. no names.",
+   "from": 4.35,
+   "to": 5.85,
+   "y": 345
+  },
+  {
+   "text": "first try: say nothing. just wave.",
+   "from": 5.95,
+   "to": 6.95,
+   "y": 345
+  },
+  {
+   "text": "she walked to her car.",
+   "from": 7.0,
+   "to": 8.3,
+   "y": 345
+  },
+  {
+   "text": "I waved bigger. she was already gone.",
+   "from": 8.35,
+   "to": 9.45,
+   "y": 345
+  },
+  {
+   "text": "I still don't know her name.",
+   "from": 9.55,
+   "to": 10.95,
+   "y": 345
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 11.0,
+   "to": 12.4,
+   "y": 345
+  },
+  {
+   "text": "phone off.",
+   "from": 12.45,
+   "to": 13.45,
+   "y": 345
+  },
+  {
+   "text": "she reached for the car door.",
+   "from": 13.55,
+   "to": 14.95,
+   "y": 345
+  },
+  {
+   "text": "so I told her mine.",
+   "from": 15.05,
+   "to": 16.85,
+   "y": 345
+  },
+  {
+   "text": "she read it. smiled. took out a pen.",
+   "from": 16.95,
+   "to": 18.45,
+   "y": 345
+  },
+  {
+   "text": "she wrote back.",
+   "from": 18.6,
+   "to": 20.4,
+   "y": 345
+  },
+  {
+   "text": "Miles + Anya. same handle.",
+   "from": 20.55,
+   "to": 22.95,
+   "y": 345
+  },
+  {
+   "text": "her ride tapped the horn. politely.",
+   "from": 23.05,
+   "to": 24.55,
+   "y": 345
+  },
+  {
+   "text": "she slid me one last tag.",
+   "from": 24.65,
+   "to": 26.35,
+   "y": 345
+  },
+  {
+   "text": "I nodded. like a professional.",
+   "from": 26.5,
+   "to": 28.4,
+   "y": 345
+  },
+  {
+   "text": "an app buzzed. I didn't look.",
+   "from": 29.0,
+   "to": 30.2,
+   "y": 345
+  },
+  {
+   "text": "I flew in for a bad date. I left with her tag.",
+   "from": 30.25,
+   "to": 32.0,
+   "y": 345
+  }
+ ],
+ "cards": {
+  "ctx": [
+   "(rough trip?)",
+   "(it flopped.)"
+  ],
+  "blank": "NAME: ____",
+  "t6": [
+   "(wait.",
+   "I'm Miles.)"
+  ],
+  "t7": [
+   "(finally.",
+   "Anya.)"
+  ],
+  "names": [
+   "MILES",
+   "ANYA"
+  ],
+  "t8": [
+   "(coffee?",
+   "you're buying.)"
+  ],
+  "board": "RIDE / ARRIVED",
+  "plate": "BELT 4",
+  "end_card": "a silent baggage-claim love story / same bag. / the end"
+ },
+ "audio": {
+  "bpm": 110,
+  "meter": "4/4",
+  "groove": [
+   [
+    3.0,
+    32.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    10.95,
+    11.75
+   ],
+   [
+    18.4,
+    20.6
+   ]
+  ],
+  "swell": [
+   [
+    20.6,
+    32.0
+   ]
+  ],
+  "roomTone": [
+   [
+    0,
+    36.0
+   ]
+  ],
+  "beltRumble": [
+   [
+    0.0,
+    5.8
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4,
+   1.7,
+   11.85,
+   12.1
+  ],
+  "phoneTap": [
+   1.9,
+   2.6,
+   12.3,
+   13.0
+  ],
+  "penCaps": [
+   15.02,
+   17.95,
+   18.52
+  ],
+  "scrawl": [
+   [
+    15.1,
+    15.5
+   ],
+   [
+    15.5,
+    15.9
+   ],
+   [
+    18.7,
+    19.1
+   ],
+   [
+    19.1,
+    19.5
+   ]
+  ],
+  "tagSlides": [
+   4.4,
+   4.7,
+   24.62
+  ],
+  "bagThumps": [
+   7.9,
+   26.4
+  ],
+  "wheelClacks": [
+   8.0,
+   8.2,
+   8.4,
+   8.6,
+   30.8,
+   31.05,
+   31.3,
+   31.55
+  ],
+  "laughSting": [
+   17.8
+  ],
+  "gulp": [
+   14.0
+  ],
+  "boardFlip": [],
+  "beltStop": [],
+  "beltRewind": [
+   10.95
+  ],
+  "cliffSting": [],
+  "pops": [
+   20.9
+  ],
+  "ding": [
+   6.2
+  ],
+  "phoneBuzz": [
+   29.0,
+   29.25
+  ],
+  "tagTap": [
+   21.0
+  ],
+  "horn": [
+   23.7,
+   24.15,
+   27.7
+  ],
+  "beltWhoosh": [
+   8.4,
+   27.9
+  ],
+  "cardPops": [],
+  "stamps": [
+   0.0,
+   3.05,
+   4.35,
+   5.95,
+   7.0,
+   8.35,
+   9.55,
+   11.0,
+   12.45,
+   13.55,
+   15.05,
+   16.95,
+   18.6,
+   20.55,
+   23.05,
+   24.65,
+   26.5,
+   29.0,
+   30.25
+  ],
+  "endChime": [
+   32.0
+  ]
+ }
+}

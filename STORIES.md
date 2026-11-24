@@ -693,6 +693,17 @@ part 6 (finale) · A or B". Blind check 2 rounds: clarity 6 -> 7, hook a 6 -> 7 
 "now her bag is lost" can read as if he caused it; the cause of belt 5 isn't shown. **Part 6 (Two tags, finale):** A wins
 (planned); B plays first (he waves, she leaves, he stands alone with her tag), rewind, then names: "MILES · ANYA" on two tags.
 
+| 6a | Her ride is here and I don't know her name. Part 6 (50) | `specs/stories/bag-ep6.json` | `Bag6` hook a |
+| 6b | Caught swiping, and I still don't know her name. Part 6 (55) | same | `Bag6` hook b |
+
+**What happened (part 6, FINALE, nightly for 2026-11-24):** 36.0 s, no vote. Frame 1: his phone lit mid-swipe, board RIDE / ARRIVED, her
+teal car in the window; hook a "her ride is here and I still don't know her name." / hook b "she caught me swiping. I don't even know
+her name." Backstory insert (flopped-date flowers, tags "(rough trip?)" / "(it flopped.)"). Take 1 (B): he just waves, she is gone,
+blank "NAME: ____" tag. Reversed belt-flap rewind. Take 2 (A): phone off, "(wait. I'm Miles.)", music out for "(finally. Anya.)", two
+tags MILES / ANYA on one handle; driver honks politely; "(coffee? you're buying.)"; an app buzzes, he doesn't look; "I flew in for a
+bad date. I left with her tag." End card "same bag. / the end". Blind check 2 rounds: clarity 6 -> 7, hook a 7 / b 6, satisfaction 8,
+want_next 6. **Season over.**
+
 ## Season 11 · Pie for Two (silent night-diner romance, napkin crayon notes)
 
 **Logline:** Thanksgiving eve, a nearly empty all-night diner. Two solo strangers at the counter, both swiping. One slice of
@@ -753,3 +764,14 @@ his ear, shared 1 s laugh, she hands him a napkin; close-up: phones flipped face
 covered): clarity 7, hook a 6 -> 7 / b 7, satisfaction 4, want_next 6. Open: the hook frame shows the standoff before the
 "we both ordered" beat (reads as a flash-forward); the napkin is held by him in the face shot though "she asked". **Part 2:** B
 wins (planned), A plays first and fails on him.
+
+| 2a | A diner stranger and I fought for the first bite. Part 2 (56) | `specs/stories/pie-ep2.json` | `Pie2` hook a |
+| 2b | She saw me swiping. Then we dueled over pie. Part 2 (51) | same | `Pie2` hook b |
+
+**What happened (part 2, nightly for 2026-11-24):** 35.6 s, vote up ~25.8 s. Frame 1: both phones lit mid-swipe, last slice, her napkin
+"first bite?"; hook a "the stranger beside me and I are fighting over the first bite of pie." / hook b "she caught me swiping. now we're
+dueling over pie." Take 1 (A): YOU TAKE IT. / I'M FULL., stomach growls, the waitress brings him a fork. Slice wipe reversed. Take 2 (B):
+phones under mugs, ME. / I CALLED IT., fork duel, "fine. go.", he bites, cuts the rest in half, HALF. / FAIR?, "we finished it." Vote
+"she asks why I'm at a diner on Thanksgiving eve." A (I'M A PIE CRITIC.) / B (NOWHERE ELSE TO BE.). Blind check: stills 7, export 6,
+after fixes 7; hook a 5 / b 7, satisfaction 6, want_next 6. Open: hook a opener low action, mugs not explained or paid off in this part,
+vote card near-static. **Part 3 (Nowhere else):** B wins (planned), A plays first and fails on him.
