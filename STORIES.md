@@ -775,3 +775,42 @@ phones under mugs, ME. / I CALLED IT., fork duel, "fine. go.", he bites, cuts th
 "she asks why I'm at a diner on Thanksgiving eve." A (I'M A PIE CRITIC.) / B (NOWHERE ELSE TO BE.). Blind check: stills 7, export 6,
 after fixes 7; hook a 5 / b 7, satisfaction 6, want_next 6. Open: hook a opener low action, mugs not explained or paid off in this part,
 vote card near-static. **Part 3 (Nowhere else):** B wins (planned), A plays first and fails on him.
+
+| 3a | The diner stranger swipes too. She has a question. Part 3 (57) | `specs/stories/pie-ep3.json` | `Pie3` hook a |
+| 3b | She asked why I'm alone on Thanksgiving eve. Part 3 (51) | same | `Pie3` hook b |
+
+**What happened (part 3, nightly for 2026-11-25):** 35.0 s, vote up 24.95 s. Hook a "the diner stranger swipes too. she asks why I'm alone on
+Thanksgiving eve." / b "she caught me swiping. now she asks why I'm alone tonight." Napkin "why are you here tonight?". Take 1: I'M A PIE
+CRITIC., bottle-cap monocle, waitress's REVIEW card (PIE 5, CRITIC 1). Rewind. Take 2: phone under a mug, NOWHERE ELSE TO BE.; her phone under
+hers, "me too. I skipped the drive.", "family always asks about the apps.", "SO, STILL SINGLE?" / "every. year."; coffees clink. Vote: she hands
+him a jukebox coin, A SOMETHING SLOW. / B SOMETHING DUMB. Clock 11:52 PM. Blind check 6 -> 7 (export), hook a 4 -> 6 (line reworded after) / b 7,
+satisfaction 6, want_next 6. Open: end card 5 s, static; mug-as-phone-cover reads as "a cup on a phone". **Part 4 (Last call):** A wins (planned), B first.
+
+## Season 12 · Cabin Six (silent ski-gondola romance, fog writing)
+
+**Logline:** two adult strangers share an 8-minute ski gondola, both swiping. The signal dies; the fogged window becomes their chat and their
+tic-tac-toe board. **Started 2026-11-25** beside Pie for Two. Votes are live board positions where possible, to test comments.
+
+| | Look | Writes |
+|---|---|---|
+| Him (name withheld) | marigold puffer, navy bobble hat, stubble, WHITE SNEAKERS (no skier) | X, finger in fog, CAPS |
+| Her (name withheld) | pine ski suit, goggles on a white band, dark bob, skis beside her | O, finger in fog, lowercase |
+
+**Look and sound:** crisp ski-poster vector, parallax valley. Ice #BCE3F5, snow #F7FBFF, pine #1E4D46, cabin red #E4472B (wall lightened to coral),
+sunrise peach #FFB48A, navy #17283B, marigold X. Strips piste-sign plates (Jost 800), fog Patrick Hand 700, vote/end Anton. **Transition: sleeve wipe**
+(a breath re-fogs for rewinds). Sound: cable whirr, wind, pylon ka-chunk, finger squeaks, 6/8 acoustic waltz 84 bpm + glockenspiel. Code
+`src/stories/cabin/{world,ep1}.tsx`; audio `python3 generate_cabin_audio.py`. Rules: never the word "guaranteed"; max ~18 chars a line.
+
+**Arc (6 parts, loser plays first from part 2):** 1 winner asks 1 question (vote A WIN. ASK HER NAME. / B LOSE. SEE WHAT SHE ASKS.; **B wins**) ·
+2 A: he wins, panics, asks DO YOU LIKE SNOW?; rewind; B: she spots he lost on purpose and asks her real question · 3 the cabin stops mid-air ·
+4 the glass ices over (optional NoSwipe chime, mention 1, gag only) · 5 last ride, she has to go · 6 finale: two names in the fog.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger in my ski gondola swipes too. Part 1 (49) | `specs/stories/cabin-ep1.json` | `Cabin1` hook a |
+| 1b | She caught me swiping on a ski lift. Part 1 (43) | same | `Cabin1` hook b |
+
+**What happened (part 1, nightly for 2026-11-25):** 34.0 s, vote up 23.25 s. Phones lose signal, "no bars. 8 min.", "winner asks 1 question.", game 1
+(she wins the diagonal while he stares at the sunrise, "I hadn't looked up all week."), her question "what are you swiping for?", his "SOMEONE WHO LOOKS UP.",
+her smile. Vote board X X _ / O O _, X to move. Blind checks (exports) 6, 6, 7; hook a 4 -> 7 / b 6, satisfaction 4 -> 6, want_next 7. Open: B's
+winning O strike barely shows in the preview; the answer line holds ~1.4 s; writing arms are stiff detached tubes; A is the obvious move.

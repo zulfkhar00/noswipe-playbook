@@ -94,6 +94,12 @@ def fork_tink():
     return (np.sin(2 * np.pi * 3520 * t) * env(t, 0.0005, 0.22) + 0.5 * np.sin(2 * np.pi * 5300 * t) * env(t, 0.0005, 0.1)) * 0.4
 
 
+def cup_clink():
+    t = tt(0.9)
+    return (np.sin(2 * np.pi * 2650 * t) * env(t, 0.0006, 0.2) + 0.6 * np.sin(2 * np.pi * 3980 * t) * env(t, 0.0006, 0.14)
+            + 0.3 * np.sin(2 * np.pi * 5750 * t) * env(t, 0.0006, 0.08)) * 0.45 + fft_bp(noise(0.9), 1800, 7000) * env(t, 0.0003, 0.012) * 0.4
+
+
 def case_hum(d):
     t = tt(d)
     return (np.sin(2 * np.pi * 110 * t) * 0.12 + np.sin(2 * np.pi * 220 * t) * 0.05 + fft_bp(noise(d), 300, 1200) * 0.05) * np.minimum(1, t / 0.15) * np.minimum(1, (d - t) / 0.2)
@@ -197,6 +203,7 @@ def sfx(st: Stem, a):
     for lo, hi in a.get("growls", []): st.add(lo, growl(hi - lo), 0.9)
     for lo, hi in a.get("mugRattles", []): st.add(lo, mug_rattle(hi - lo), 0.6)
     for t in a.get("forkClinks", []): st.add(t, fork_clink(), 0.8)
+    for t in a.get("cupClinks", []): st.add(t, cup_clink(), 0.9)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)
 
@@ -210,3 +217,6 @@ if __name__ == "__main__":
     mix = r.buf * 1.0 + m.buf * 0.9 + s.buf * 1.0
     (ROOT / "public" / "audio").mkdir(parents=True, exist_ok=True)
     write(ROOT / f"public/audio/{ep}.wav", mix)
+    if "hookSlide" in a:
+        sl = Stem(0.7); sl.add(0.0, slide(0.5), 0.6)
+        write(ROOT / f"public/audio/{ep}-slide.wav", sl.buf)

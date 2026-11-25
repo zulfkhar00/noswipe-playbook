@@ -1,0 +1,327 @@
+{
+ "id": "cabin-ep1",
+ "season": "Cabin Six",
+ "composition": "Cabin1",
+ "episode": 1,
+ "title": "Cabin six. Part 1",
+ "note": "Silent. Two adult strangers share an 8-minute ski gondola (cabin 6), both swiping. Frame 1 fully composed, no fade, ONE strip (hook), him left (marigold puffer, navy bobble hat, stubble, white sneakers) and her right (pine ski suit, goggles up on white headband, dark bob, ski boots, skis beside her), both phones lit mid-swipe (generic glow), between them the big bright fogged window. Signal dies (3.0): bars icons; she finger-writes in the fog, he answers; tic-tac-toe on the glass; a sleeve wipe opens a porthole (12.1) and the sunrise bursts over the valley: hold 13.2-15.2 with both faces lit gold. Gag on him: distracted, he misses the diagonal. Game 2 final position X to move: top row X X _, middle row O O _, bottom empty. Vote: A = top-right (X wins), B = bottom-right (miss, she takes the middle row). Window inserts are whole-frame (~760 px wide, centred y~760), Patrick Hand 700 on fog, clear strokes with navy edge. Text only between y=270 and y=1250. No NoSwipe mention, no real places, no logos. ROUND 3: closer framing (faces 1.35x, crop at thighs, phones high), window fully cleared by his sleeve at 11.9-12.6, full-frame sunrise shot 12.75-15.0 (silent pylon at 13.9), refog 15.0, coloured solid marks, vote ghosts, answer cards WIN. ASK HER NAME. / LOSE. SHE ASKS ME. ROUND 4: stake insert before game 1; question/answer inserts replace game 2; vote board pre-filled.",
+ "duration": 34,
+ "hooks": {
+  "a": "the stranger in my ski gondola swipes too.",
+  "b": "she caught me swiping on a ski lift."
+ },
+ "hookOpening": {
+  "a": [
+   "0.0 both thumb the lit phones in sync",
+   "1.3 they stop; each glances at the other; both glows pulse",
+   "2.0 small smiles, eyes back to the window"
+  ],
+  "b": [
+   "0.4 her eyes drop to his screen",
+   "0.6 '!' burst above her head",
+   "1.1 he flinches, tilts the phone to his chest, sweat drop",
+   "2.2 she lifts a finger to the fogged window (nothing written yet)"
+  ]
+ },
+ "beats": {
+  "noSignal": 3.0,
+  "iconPop": 3.15,
+  "wipe1": 3.65,
+  "hers": 4.1,
+  "refog1": 5.65,
+  "his": 6.0,
+  "gridDraw": 7.85,
+  "wipe2": 8.6,
+  "pocket": 9.1,
+  "x1": 9.8,
+  "o1": 10.35,
+  "x2": 10.9,
+  "o2": 11.45,
+  "portholeStart": 11.9,
+  "sunBurst": 12.5,
+  "holdFrom": 12.75,
+  "holdTo": 15.0,
+  "x3": 15.6,
+  "o3": 16.2,
+  "strike": 16.6,
+  "seeIt": 17.1,
+  "laugh": 17.3,
+  "tally": 17.5,
+  "wipe3": 18.2,
+  "refog2": 18.7,
+  "stake": 19.05,
+  "grid2": 21.3,
+  "g2a": 21.8,
+  "g2b": 22.1,
+  "g2c": 22.4,
+  "g2d": 22.7,
+  "wipe4": 22.8,
+  "vote": 23.25,
+  "cardA": 24.3,
+  "cardB": 24.9,
+  "comment": 26.0,
+  "wipe5": 29.8,
+  "endcard": 30.25,
+  "sunCut": 12.75,
+  "close": 22.4
+ },
+ "strips": [
+  {
+   "text": "the stranger in my ski gondola swipes too.",
+   "from": 0,
+   "to": 3.0,
+   "y": 392,
+   "hook": true,
+   "hookProp": "a",
+   "variant": "red"
+  },
+  {
+   "text": "she caught me swiping on a ski lift.",
+   "from": 0,
+   "to": 3.0,
+   "y": 392,
+   "hook": true,
+   "hookProp": "b",
+   "variant": "red"
+  },
+  {
+   "text": "I hadn't looked up all week.",
+   "from": 12.9,
+   "to": 15.0,
+   "y": 880,
+   "variant": "snow"
+  },
+  {
+   "text": "she won. she asks:",
+   "from": 18.7,
+   "to": 20.7,
+   "y": 350,
+   "variant": "red"
+  },
+  {
+   "text": "I said:",
+   "from": 20.8,
+   "to": 22.4,
+   "y": 350,
+   "variant": "snow"
+  }
+ ],
+ "texts": {
+  "hers": [
+   "no bars.",
+   "8 min."
+  ],
+  "his": [
+   "NOW WHAT?"
+  ],
+  "tally": "her 1 - me 0",
+  "stake": [
+   "winner asks",
+   "1 question."
+  ],
+  "q": [
+   "what are you",
+   "swiping for?"
+  ],
+  "ans": [
+   "SOMEONE WHO",
+   "LOOKS UP."
+  ]
+ },
+ "vote": {
+  "question": [
+   "game 2. my move.",
+   "winner asks 1 question."
+  ],
+  "stake": "winner asks 1 question.",
+  "comment": "comment A or B"
+ },
+ "choices": {
+  "A": {
+   "l1": "WIN. ASK",
+   "l2": "HER NAME."
+  },
+  "B": {
+   "l1": "LOSE. SEE WHAT",
+   "l2": "SHE ASKS."
+  }
+ },
+ "endCard": [
+  "cabin six",
+  "part 2",
+  "A or B"
+ ],
+ "pylons": [
+  1.7,
+  4.4,
+  6.6,
+  8.9,
+  10.3,
+  11.7,
+  16.9,
+  19.4,
+  21.7,
+  24.6,
+  27.1,
+  29.4,
+  31.9
+ ],
+ "swipeTicks": [
+  0.2,
+  0.55,
+  0.9,
+  1.25,
+  0.35,
+  0.7,
+  1.05
+ ],
+ "audio": {
+  "bpm": 84,
+  "meter": "6/8",
+  "groove": [
+   [
+    0.0,
+    11.9
+   ],
+   [
+    15.4,
+    34.0
+   ]
+  ],
+  "windOnly": [
+   [
+    11.9,
+    15.4
+   ]
+  ],
+  "sunSwell": [
+   [
+    11.9,
+    12.9
+   ]
+  ],
+  "glockNote": [
+   12.95
+  ],
+  "pylons": [
+   1.7,
+   4.4,
+   6.6,
+   8.9,
+   10.3,
+   11.7,
+   16.9,
+   19.4,
+   21.7,
+   24.6,
+   27.1,
+   29.4,
+   31.9
+  ],
+  "swipeTicks": [
+   0.02,
+   0.27,
+   0.52,
+   0.1,
+   0.35
+  ],
+  "noSignal": [
+   3.15,
+   3.3
+  ],
+  "squeaks": [
+   [
+    2.25,
+    2.7
+   ],
+   [
+    4.1,
+    4.75
+   ],
+   [
+    6.0,
+    6.7
+   ],
+   [
+    7.6,
+    8.3
+   ],
+   [
+    9.8,
+    10.1
+   ],
+   [
+    10.35,
+    10.65
+   ],
+   [
+    10.9,
+    11.2
+   ],
+   [
+    11.45,
+    11.75
+   ],
+   [
+    15.6,
+    15.9
+   ],
+   [
+    16.2,
+    16.5
+   ],
+   [
+    16.6,
+    17.0
+   ],
+   [
+    17.5,
+    18.0
+   ],
+   [
+    18.75,
+    19.5
+   ],
+   [
+    21.0,
+    21.7
+   ]
+  ],
+  "wipes": [
+   3.65,
+   8.6,
+   18.2,
+   22.8,
+   29.8
+  ],
+  "porthole": [
+   11.9,
+   12.5
+  ],
+  "breaths": [
+   5.6,
+   18.65,
+   20.7
+  ],
+  "laugh": [
+   17.3
+  ],
+  "strike": [
+   16.6
+  ],
+  "cardPops": [
+   24.3,
+   24.9,
+   26.0
+  ],
+  "endChime": [
+   30.25
+  ],
+  "voteHum": [
+   [
+    24.0,
+    29.8
+   ]
+  ]
+ }
+}

@@ -126,7 +126,7 @@ export const Fork: React.FC<{x: number; y: number; rot: number; s?: number}> = (
   <path d="M -12 10 L -10 120" stroke="#fff" strokeWidth={5} opacity={0.8} strokeLinecap="round" />
 </g>;
 
-export const PieCase: React.FC<{open: number; slice: boolean; t: number}> = ({open, slice}) => <g>
+export const PieCase: React.FC<{open: number; slice: boolean; t: number; sign?: string}> = ({open, slice, sign = 'LAST SLICE'}) => <g>
   <ellipse cx={540} cy={560} rx={420} ry={420} fill="url(#haloWarm)" opacity={0.75} />
   <rect x={324} y={560} width={432} height={350} rx={22} fill={C.chrome} stroke={C.ink} strokeWidth={SW} />
   <rect x={346} y={582} width={388} height={304} rx={10} fill="url(#caseGlow)" stroke={C.ink} strokeWidth={6} />
@@ -146,13 +146,13 @@ export const PieCase: React.FC<{open: number; slice: boolean; t: number}> = ({op
   <g transform="translate(540 628)">
     <rect x={-6} y={-70} width={12} height={16} fill={C.chrome} stroke={C.ink} strokeWidth={4} />
     <rect x={-142} y={-56} width={284} height={64} rx={10} fill={C.custard} stroke={C.ink} strokeWidth={6} transform="rotate(-1.5)" />
-    <text x={0} y={-8} textAnchor="middle" fontFamily={ANTON} fontSize={46} fill={C.cran} transform="rotate(-1.5)" letterSpacing={2}>LAST SLICE</text>
+    <text x={0} y={-8} textAnchor="middle" fontFamily={ANTON} fontSize={46} fill={C.cran} transform="rotate(-1.5)" letterSpacing={2}>{sign}</text>
   </g>
 </g>;
 
-export const ClockSign: React.FC<{x: number; y: number}> = ({x, y}) => <g transform={`translate(${x} ${y})`}>
+export const ClockSign: React.FC<{x: number; y: number; text?: string}> = ({x, y, text = '11:41 PM'}) => <g transform={`translate(${x} ${y})`}>
   <rect x={-150} y={-36} width={300} height={66} rx={14} fill="#1A0D08" stroke={C.ink} strokeWidth={6} />
-  <text x={0} y={16} textAnchor="middle" fontFamily={COUR} fontWeight={700} fontSize={50} fill="#FF7A3A" letterSpacing={3}>11:41 PM</text>
+  <text x={0} y={16} textAnchor="middle" fontFamily={COUR} fontWeight={700} fontSize={50} fill="#FF7A3A" letterSpacing={3}>{text}</text>
 </g>;
 
 // ---------------------------------------------------------------------------------------- people

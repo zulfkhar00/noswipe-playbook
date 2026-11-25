@@ -76,6 +76,10 @@ Change one variable at a time within a format.
 | 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook a (14:30) | the stranger beside me and I are fighting over the first bite of pie. | | | | | | | | | planned: who+where (blind hook 5 vs b 7) |
 | 2026-11-24 | IG @tinyloveshows | silent story (Same Bag) | P6 finale hook a (repeat body, 17:00) | her ride is here and I still don't know her name. | | | | | | | | | planned: stakes line |
 | 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook b (repeat body, 20:30) | she caught me swiping. now we're dueling over pie. | | | | | | | | | planned: "caught me swiping", catch shown |
+| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six, new) | P1 hook a (12:00) | the stranger in my ski gondola swipes too. | | | | | | | | | planned: who+where on a new world (blind 7 vs b 6) |
+| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook b (14:30) | she caught me swiping. now she asks why I'm alone tonight. | | | | | | | | | planned: "caught me swiping", catch shown (blind 7 vs a 6) |
+| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six) | P1 hook b (repeat body, 17:00) | she caught me swiping on a ski lift. | | | | | | | | | planned: "caught me swiping" |
+| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook a (repeat body, 20:30) | the diner stranger swipes too. she asks why I'm alone on Thanksgiving eve. | | | | | | | | | planned: who+where |
 
 ## Hook patterns (running record)
 
@@ -171,3 +175,8 @@ P5 + new season Pie for Two P1 (Thanksgiving diner), a vs b on each.
 23.5%, pie-1-b 1761 / 25.6%. Pie for Two is the 4th new world in a row to work with the apps-visible opener. Tonight: the Same Bag
 finale with "caught me swiping" (b) posted first and the stakes line second, to separate hook from publish order, plus Pie P2 (a first).
 Same Bag is over: a new season's part 1 is due next to Pie. judge_vs_stats (n=54): no score predicts views or retention.
+
+**Update 2026-11-25:** 4 of 4 broke out on 11-24 (3-12h reads): bag-6-b 1868 / 22.9%, pie-2-a 1368 / 22.8%, bag-6-a 1512 / 21.4%, pie-2-b
+1274 / 22.5%. Same Bag's finale worked cold; Pie P2 at or below P1's skip. 24h for 11-23: bag-5 1506 / 1940, pie-1 1760 / 1827. a vs b: no winner.
+Shares, comments and follows still ~0, so tonight's Cabin Six P1 tests a vote that is a live puzzle (a tic-tac-toe position, two payoffs) against
+Pie's plain A/B. Read: comments per 1k views at 24h, Cabin vs Pie.

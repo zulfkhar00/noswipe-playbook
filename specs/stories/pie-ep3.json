@@ -1,0 +1,427 @@
+{
+ "id": "pie-ep3",
+ "season": "Pie for Two",
+ "composition": "Pie3",
+ "episode": 3,
+ "title": "Nowhere else. Part 3",
+ "note": "Silent. Part 3. Opener (0-3.2 s) is the ONLY part that differs by hook: ONE strip, two big faces at the counter, both phones lit mid-swipe (generic glow), one big bright napkin 'why are you / here tonight?' on the counter between them (hook a: slides in from her side from 0.15 s, her hand pushes it, his nervous look; hook b: it waits at her side, she catches his swiping at 0.4, '!' at 0.6, his flinch, then she slides it to him 1.55-2.3). Whole-frame napkin insert 3.2-5.2. Take 1 (A, 5.2-11.0): pie critic act, bottle-cap monocle, waitress slides a REVIEW card 'PIE: 5 STARS. CRITIC: 1 STAR.', he sinks behind the mug. Slice wipe counter-clockwise 11.0 'rewind. take 2.'. Take 2 (B, 12.6-24.45): phone face-down + upside-down mug (close-up, glow goes out), NOWHERE ELSE / TO BE., quiet beat (music to fridge hum), her phone under her mug, me too. I skipped / the drive., they always ask / about the apps., SO, STILL / SINGLE?, every. year., coffee clink payoff (contact 23.25, hold 1.2 s, warm light). Cliff: jukebox lights up, she tilts her head at it with a coin; vote cards 24.6/24.75. End card 30.0. Never the word tip. No NoSwipe mention. Napkins whole-frame ~840 px at y=760.",
+ "duration": 35.0,
+ "hooks": {
+  "a": "the diner stranger swipes too. she asks why I'm alone on Thanksgiving eve.",
+  "b": "she caught me swiping. now she asks why I'm alone tonight."
+ },
+ "hookOpening": {
+  "a": [
+   "0.0 both phones lit mid-swipe, big napkin 'why are you / here tonight?' at her side",
+   "0.15-0.9 napkin slides toward him, her hand pushing it",
+   "0.9-2.6 his nervous look: eyes to napkin, sweat, gritted teeth, phones lower"
+  ],
+  "b": [
+   "0.0 both phones lit mid-swipe, the same napkin waits at her side",
+   "0.4 her eyes drop to his lit screen",
+   "0.6 pumpkin '!' burst above her head, his flinch, sweat",
+   "1.55-2.3 she slides the napkin to him",
+   "2.3-3.2 his gulp, phones down"
+  ]
+ },
+ "beats": {
+  "napkin0": 3.2,
+  "take1": 5.2,
+  "napkin1": 5.9,
+  "monocle": 7.5,
+  "waitressUp": 7.6,
+  "cardSlide": 7.85,
+  "review": 8.3,
+  "sink": 10.3,
+  "rewind": 11.0,
+  "flipHis": 11.62,
+  "landHis": 12.2,
+  "napkin2": 12.6,
+  "quiet": 14.2,
+  "cover2": 15.0,
+  "flipHers": 15.15,
+  "landHers": 15.75,
+  "napkin3": 16.0,
+  "napkin4": 17.6,
+  "laugh": 19.2,
+  "napkin5": 19.9,
+  "napkin6": 21.5,
+  "clinkShot": 23.0,
+  "clink": 23.25,
+  "voteWipe": 24.45,
+  "cardA": 24.6,
+  "cardB": 24.75,
+  "jukeOn": 24.8,
+  "voteUp": 24.95,
+  "endcard": 30.0
+ },
+ "choices": {
+  "question": "she hands me a coin for the jukebox. what do I play?",
+  "A": {
+   "l1": "SOMETHING",
+   "l2": "SLOW."
+  },
+  "B": {
+   "l1": "SOMETHING",
+   "l2": "DUMB."
+  },
+  "why": "A slow song is the planned winner (part 4: last call, one slow song, two stools)."
+ },
+ "inserts": [
+  {
+   "id": "n0",
+   "from": 3.2,
+   "to": 5.2,
+   "side": "her cranberry crayon",
+   "lines": [
+    "why are you",
+    "here tonight?"
+   ]
+  },
+  {
+   "id": "n1",
+   "from": 5.9,
+   "to": 7.5,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "I'M A PIE",
+    "CRITIC."
+   ]
+  },
+  {
+   "id": "n2",
+   "from": 12.6,
+   "to": 14.2,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "NOWHERE ELSE",
+    "TO BE."
+   ]
+  },
+  {
+   "id": "n3",
+   "from": 16.0,
+   "to": 17.6,
+   "side": "her cranberry crayon",
+   "lines": [
+    "me too. I skipped",
+    "the drive."
+   ]
+  },
+  {
+   "id": "n4",
+   "from": 17.6,
+   "to": 19.2,
+   "side": "her cranberry crayon",
+   "lines": [
+    "family always asks",
+    "about the apps."
+   ]
+  },
+  {
+   "id": "n5",
+   "from": 19.9,
+   "to": 21.5,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "“SO, STILL",
+    "SINGLE?”"
+   ]
+  },
+  {
+   "id": "n6",
+   "from": 21.5,
+   "to": 23.0,
+   "side": "her cranberry crayon",
+   "lines": [
+    "every. year."
+   ]
+  }
+ ],
+ "strips": [
+  {
+   "text": "the diner stranger swipes too. she asks why I'm alone on Thanksgiving eve.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now she asks why I'm alone tonight.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "should I joke, or tell the truth?",
+   "from": 3.2,
+   "to": 5.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "take 1: I act like a pie critic.",
+   "from": 5.2,
+   "to": 7.5,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "a bottle cap makes a fine monocle.",
+   "from": 7.5,
+   "to": 8.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the waitress reviewed my review.",
+   "from": 8.3,
+   "to": 10.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "I need a moment.",
+   "from": 10.3,
+   "to": 11.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 11.0,
+   "to": 12.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "take 2: phone away. the truth.",
+   "from": 12.6,
+   "to": 14.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she looks at me. properly.",
+   "from": 14.2,
+   "to": 15.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "then she hides her phone too.",
+   "from": 15.0,
+   "to": 16.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she skipped the family drive too.",
+   "from": 16.0,
+   "to": 17.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "her family asks the same question mine does.",
+   "from": 17.6,
+   "to": 19.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "I laugh. then I write back.",
+   "from": 19.2,
+   "to": 19.9,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "I write the question we both dodge.",
+   "from": 19.9,
+   "to": 21.5,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she gets it at every holiday.",
+   "from": 21.5,
+   "to": 23.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "two coffees. no phones.",
+   "from": 23.0,
+   "to": 24.45,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she hands me a coin for the jukebox. what do I play?",
+   "from": 24.45,
+   "to": 30.0,
+   "y": 345,
+   "size": 58,
+   "maxW": 1040
+  },
+  {
+   "text": "comment A or B",
+   "from": 24.45,
+   "to": 30.0,
+   "y": 1215
+  }
+ ],
+ "review": {
+  "title": "REVIEW",
+  "l1": "PIE: 5 STARS.",
+  "l2": "CRITIC: 1 STAR."
+ },
+ "cards": {
+  "sign": "SOLD OUT",
+  "clock": "11:52 PM",
+  "rewind_badge": "TAKE 2",
+  "end_kicker": "a silent diner love story",
+  "end_card": "pie for two",
+  "end_pill": "next: part 4 · A or B"
+ },
+ "audio": {
+  "bpm": 76,
+  "meter": "12/8",
+  "groove": [
+   [
+    0,
+    14.1
+   ],
+   [
+    19.2,
+    35.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    14.1,
+    19.2
+   ]
+  ],
+  "neonBuzz": [
+   [
+    0,
+    3.2
+   ]
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "plateClinks": [],
+  "plateScrapes": [],
+  "napkinPulls": [
+   3.1,
+   5.8,
+   12.5,
+   15.9,
+   17.5,
+   19.8,
+   21.4
+  ],
+  "napkinSlides": [],
+  "scrawl": [
+   [
+    6.05,
+    6.8
+   ],
+   [
+    12.75,
+    13.5
+   ],
+   [
+    16.15,
+    16.95
+   ],
+   [
+    17.75,
+    18.5
+   ],
+   [
+    20.05,
+    20.75
+   ],
+   [
+    21.65,
+    22.1
+   ]
+  ],
+  "crayonDraw": [],
+  "splat": [],
+  "laughSting": [
+   19.3
+  ],
+  "laughHit": [
+   23.25
+  ],
+  "phoneBuzz": [
+   12.5,
+   12.7
+  ],
+  "mugClunks": [
+   12.2,
+   15.75
+  ],
+  "forkTink": [
+   7.62
+  ],
+  "cupClinks": [
+   23.25,
+   23.32
+  ],
+  "celestaNote": [
+   14.6
+  ],
+  "gulp": [
+   10.4
+  ],
+  "sliceWhoosh": [
+   11.0,
+   24.45
+  ],
+  "cardPops": [
+   24.6,
+   24.75
+  ],
+  "stamps": [
+   3.2,
+   5.2,
+   5.9,
+   7.5,
+   8.9,
+   10.3,
+   11.0,
+   12.6,
+   14.2,
+   15.0,
+   16.0,
+   17.6,
+   19.2,
+   19.9,
+   21.5,
+   23.0,
+   24.45,
+   30.0
+  ],
+  "endChime": [
+   30.0
+  ],
+  "instruments": "late-night jukebox doo-wop ballad; ducks to fridge hum + one celesta note for the heart-to-heart (14.1-19.2); returns for the laugh and the coffee clink",
+  "hookSlide": {
+   "a": 0.15,
+   "b": 1.55
+  }
+ }
+}

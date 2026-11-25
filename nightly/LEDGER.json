@@ -1456,6 +1456,86 @@
     "want_next": 6,
     "rounds": 3
    }
+  },
+  {
+   "id": "cabin-1-a",
+   "day": "2026-11-25",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 1,
+   "hook": "a",
+   "caption": "The stranger in my ski gondola swipes too. Part 1. No bars, eight minutes, one foggy window and a game of tic-tac-toe. Winner asks one question. Do I win, A or B? #meetcute #skitrip #strangerstolovers #shortstory #animation",
+   "video": "videos/cabin-1-a.mp4",
+   "composition": "Cabin1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "pie-3-b",
+   "day": "2026-11-25",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 3,
+   "hook": "b",
+   "caption": "She asked why I'm alone on Thanksgiving eve. Part 3. Caught swiping at a diner. Take one, I said I was a pie critic. Take two, I told the truth. Now she hands me a jukebox coin, A or B? #datingapps #thanksgiving #lovestory #shortfilm #animation",
+   "video": "videos/pie-3-b.mp4",
+   "composition": "Pie3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "cabin-1-b",
+   "day": "2026-11-25",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 1,
+   "hook": "b",
+   "caption": "She caught me swiping on a ski lift. Part 1. Then the signal died and she drew a tic-tac-toe grid in the fog. I can win this one. Should I, A or B? #datingapps #skitrip #lovestory #shortfilm #animation",
+   "video": "videos/cabin-1-b.mp4",
+   "composition": "Cabin1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 3
+   }
+  },
+  {
+   "id": "pie-3-a",
+   "day": "2026-11-25",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 3,
+   "hook": "a",
+   "caption": "The diner stranger swipes too. She has a question. Part 3. Two people who skipped the family drive, two phones under two mugs, two coffees. Which song do I play, A or B? #thanksgiving #meetcute #strangerstolovers #shortstory #animation",
+   "video": "videos/pie-3-a.mp4",
+   "composition": "Pie3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 2
+   }
   }
  ]
 }
