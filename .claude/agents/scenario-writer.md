@@ -49,7 +49,7 @@ A cold viewer, half-watching with the sound off, must understand the video insta
 - A new visual beat every 1–3 s.
 - Captions are burned in, so on-screen text must not repeat the voiceover word for word.
 - Ad-safe layout: nothing critical in the top 270 px or the bottom 670 px.
-- The soft CTA ("noswipe.app" pill) appears only once NoSwipe is on screen, plus the end card "Stop swiping. Just show up." with noswipe.app. Never say "link in bio" or "download".
+- The soft CTA ("noswipe.app" pill) appears only once NoSwipe is on screen, plus the end card "Stop swiping. Just show up." with noswipe.app. Never say "download". On the story account (`STORIES.md`), the end card instead carries one small, soft "link in bio" line for NoSwipe (text only, never spoken).
 
 # LOOK (production already has these pieces)
 noswipe.app animated in 2.5D: cream paper background, grape ink and outlines, coral, lime and lilac, Bagel Fat One headlines, Figtree text, chunky rounded cards with hard offset shadows, the site's big lime and lilac circles on far planes, soft ink-tinted shadows between planes, subtle camera. One signature transition: the old shot flicks away like a swiped card. Fast moves get motion blur. Existing assets include the site's date cards, step cards, the lime "date confirmed" banner, the NoSwipe smiley logo, a ticker band, chat bubbles, generic profile cards, the thumb mascot and the guy.

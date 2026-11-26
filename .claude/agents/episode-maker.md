@@ -27,7 +27,9 @@ Verify:
    shown on screen. Re-check.
 
 Rules: plain situation in the first 3 s; women never the punchline; no $1, no number of dates, no app logos, no real
-places; end cards never say "tomorrow"; bundled fonts only for anything new (`src/lib/fonts.ts`); never run two
+places; end cards never say "tomorrow"; every end card carries one small, soft "link in bio" line for NoSwipe in the
+season's own look (e.g. "noswipe.app · link in bio"; see `STORIES.md`, story account rules), inside the safe zone,
+on screen at least 1.5 s, text only; bundled fonts only for anything new (`src/lib/fonts.ts`); never run two
 renders/stills at once; never edit `.env`; never commit or push (the orchestrator commits).
 
 Return (short): composition id, variant ids and what each opening shows, the frame numbers + paths of the stills

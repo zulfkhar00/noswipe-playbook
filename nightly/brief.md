@@ -54,6 +54,9 @@ The run variables are in the prompt that started you: `DAY` (the posting day, YY
   which hook patterns win in `FORMAT_LAB.md`.
 - Ready but unposted episodes count (check `LEDGER.json`/`engine.db`: e.g. a finished part that was never planned).
 - Story continuity: parts of a season go out in order; never post part N+1 before part N is out.
+- End card (from 2026-11-27, the user's call; overrides the handoff's "link in the bio only"): every part's end card
+  carries one small, soft "link in bio" line for NoSwipe in the season's own look, e.g. "noswipe.app · link in bio".
+  Text only, never spoken, no pitch. Rules in `STORIES.md`; check it is readable on the end-card still.
 - Every part stands on its own: most viewers never saw the earlier parts. A cold viewer gets the situation from
   the first frame, and the part has its own payoff (a teaser for the next part is fine on top, never instead).
 - Keep learning: when capacity allows, consider giving one slot a day to a different format or idea rather than
