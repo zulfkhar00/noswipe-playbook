@@ -336,7 +336,7 @@ export const Steam: React.FC<{x: number; y: number; t: number}> = ({x, y, t}) =>
 </g>;
 
 /** Mint formica counter (top surface y 1010-1230, chrome edge, front panel). */
-export const Counter: React.FC = () => <g>
+export const Counter: React.FC<{stools?: {x: number; sw?: number}[]}> = ({stools = [{x: 150}, {x: 540}, {x: 930}]}) => <g>
   <rect x={-200} y={1010} width={1480} height={222} fill="url(#counterTop)" stroke={C.ink} strokeWidth={SW} />
   {Array.from({length: 24}, (_, i) => <g key={i} transform={`translate(${(i * 83) % 1160 - 40} ${1040 + ((i * 47) % 150)}) rotate(${(i * 37) % 80})`} opacity={0.5}>
     <path d="M 0 0 L 22 6 L 6 18 Z" fill="#E8FFF6" stroke="none" /><circle cx={30} cy={4} r={3} fill={C.mintDeep} />
@@ -346,7 +346,7 @@ export const Counter: React.FC = () => <g>
   {Array.from({length: 14}, (_, i) => <rect key={i} x={i * 100 - 60} y={1280} width={44} height={620} fill="#14504C" opacity={0.7} />)}
   <Gloss x={-200} y={1232} w={1480} h={34} a={0.5} id="edge" />
   <rect x={-200} y={1500} width={1480} height={26} fill="url(#chromeG)" stroke={C.ink} strokeWidth={SW} />
-  {[150, 540, 930].map((x, i) => <g key={i}><rect x={x - 14} y={1526} width={28} height={300} fill="url(#chromeG)" stroke={C.ink} strokeWidth={SW} /><ellipse cx={x} cy={1640} rx={120} ry={34} fill={C.cran} stroke={C.ink} strokeWidth={SW} /><rect x={x - 120} y={1640} width={240} height={50} fill={C.cran} stroke={C.ink} strokeWidth={SW} /><ellipse cx={x} cy={1690} rx={120} ry={34} fill="#8B1830" stroke={C.ink} strokeWidth={SW} /><rect x={x - 118} y={1640} width={236} height={50} fill={C.cran} /></g>)}
+  {stools.map(({x, sw = 1}, i) => <g key={i}><rect x={x - 14} y={1526} width={28} height={300} fill="url(#chromeG)" stroke={C.ink} strokeWidth={SW} /><ellipse cx={x} cy={1640} rx={120 * sw} ry={34} fill={C.cran} stroke={C.ink} strokeWidth={SW} /><rect x={x - 120 * sw} y={1640} width={240 * sw} height={50} fill={C.cran} stroke={C.ink} strokeWidth={SW} /><ellipse cx={x} cy={1690} rx={120 * sw} ry={34} fill="#8B1830" stroke={C.ink} strokeWidth={SW} /><rect x={x - 118 * sw} y={1640} width={236 * sw} height={50} fill={C.cran} /></g>)}
 </g>;
 
 // ---------------------------------------------------------------------------------------- napkins + crayon
@@ -450,8 +450,8 @@ export const VoteCard: React.FC<{letter: string; l1: string; l2: string; y: numb
   const n = Math.min(1, (age - 0.15) / 0.5);
   return <g>
     <NapkinPaper w={840} h={230} x={x} y={y} rot={rot} scale={sp} id={id} glowA={0.0}>
-      <CrayonLine txt={l1} x={30} y={-6} size={92} color={C.pumpkin} p={(age - 0.05) / 0.2} />
-      <CrayonLine txt={l2} x={30} y={84} size={92} color={C.pumpkin} p={(age - 0.15) / 0.2} />
+      <CrayonLine txt={l1} x={30} y={l2 ? -6 : 40} size={92} color={C.pumpkin} p={(age - 0.05) / 0.2} />
+      {l2 && <CrayonLine txt={l2} x={30} y={84} size={92} color={C.pumpkin} p={(age - 0.15) / 0.2} />}
     </NapkinPaper>
     <g transform={`translate(${x - 452 * sp} ${y - 10}) scale(${sp})`}>
       <circle r={72} fill={C.ink} transform="translate(7 9)" /><circle r={72} fill={C.pumpkin} stroke={C.ink} strokeWidth={8} />

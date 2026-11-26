@@ -134,12 +134,61 @@ def fork_clink():
             + 0.3 * np.sin(2 * np.pi * 7900 * t) * env(t, 0.0004, 0.04)) * 0.4 + fft_bp(noise(0.5), 3500, 9000) * env(t, 0.0003, 0.01) * 0.4
 
 
+def kazoo(m, d=0.3):
+    t, f = tt(d), midi(m)
+    ph = np.cumsum(f * (1 + 0.014 * np.sin(2 * np.pi * 6.2 * t))) / RATE
+    saw = sum(np.sin(2 * np.pi * k * ph) / k for k in range(1, 9))
+    return (fft_bp(saw, 500, 3200) * 0.9 + fft_bp(noise(d), 1500, 4200) * 0.12) * np.minimum(1, t / 0.01) * np.exp(-t / (d * 0.9)) * np.minimum(1, (d - t) / 0.02)
+
+
+def tuba(m, d=0.3):
+    t, f = tt(d), midi(m)
+    return (np.sin(2 * np.pi * f * t) + 0.55 * np.sin(2 * np.pi * 2 * f * t) + 0.3 * np.sin(2 * np.pi * 3 * f * t)) * np.minimum(1, t / 0.015) * np.exp(-t / (d * 0.8)) + fft_lp(noise(d), 500) * 0.12 * np.exp(-t / 0.05)
+
+
+def pah(chord, d=0.16):
+    t = tt(d)
+    return sum(np.sin(2 * np.pi * midi(m) * t) for m in chord) * 0.25 * env(t, 0.003, 0.05) + fft_bp(noise(d), 1500, 6000) * env(t, 0.001, 0.02) * 0.25
+
+
+def coin_drop():
+    t = tt(0.9)
+    ting = (np.sin(2 * np.pi * 3100 * t) * env(t, 0.0005, 0.12) + 0.6 * np.sin(2 * np.pi * 4700 * t) * env(t, 0.0005, 0.08)) * 0.35
+    slot = fft_lp(noise(0.9), 900) * env(t, 0.001, 0.03) * 0.5 * (t > 0.28)
+    u = np.maximum(t - 0.3, 0)
+    clunk = np.sin(2 * np.pi * 120 * u) * env(u, 0.002, 0.08) * 0.5 * (t > 0.3)
+    return ting + slot + clunk
+
+
+def splash():
+    t = tt(0.5)
+    return fft_bp(noise(0.5), 400, 3500) * env(t, 0.004, 0.09) * 0.9 + np.sin(2 * np.pi * (320 + 500 * t) * t) * env(t, 0.002, 0.06) * 0.4
+
+
+def slap():
+    t = tt(0.4)
+    return fft_bp(noise(0.4), 200, 4500) * env(t, 0.0006, 0.04) * 1.2 + np.sin(2 * np.pi * 85 * t) * env(t, 0.001, 0.09) * 0.7
+
+
+def scratch():
+    t = tt(0.55)
+    k = np.clip(t / 0.55, 0, 1)
+    return fft_bp(noise(0.55), 800, 6000) * (0.5 + 0.5 * np.sin(2 * np.pi * (14 - 10 * k) * t)) * np.sin(np.pi * k) ** 0.6 * 0.9
+
+
+def tuba_blat():
+    t = tt(0.4)
+    return np.sign(np.sin(2 * np.pi * 70 * t)) * 0.4 * env(t, 0.01, 0.18) + fft_lp(noise(0.4), 300) * 0.4 * env(t, 0.01, 0.1)
+
+
 def room(st: Stem, a):
     n = len(st.buf); tm = np.arange(n) / RATE
     fridge = (np.sin(2 * np.pi * 60 * tm) * 0.5 + np.sin(2 * np.pi * 120 * tm) * 0.3 + np.sin(2 * np.pi * 180 * tm) * 0.08) * 0.014
     sizzle = fft_bp(rng.uniform(-1, 1, n), 2500, 9000) * 0.02 * (0.6 + 0.4 * np.abs(np.sin(2 * np.pi * 0.37 * tm)))
     air = fft_bp(rng.uniform(-1, 1, n), 120, 700) * 0.02
     st.buf += fridge + sizzle + air
+    for z in a.get("neonZaps", []):
+        st.add(z, fft_bp(noise(0.08), 3000, 9000) * env(tt(0.08), 0.0005, 0.02) * 0.5, 1.0)
     for lo, hi in a.get("neonBuzz", []):
         st.add(lo, np.sin(2 * np.pi * 120 * tt(hi - lo)) * 0.02 * np.minimum(1, tt(hi - lo) / 0.1) + fft_bp(noise(hi - lo), 2000, 6000) * 0.012, 1.0)
 
@@ -150,25 +199,38 @@ def music(st: Stem, a):
     bar = beat * 4
     prog = [(36, [60, 64, 67]), (33, [57, 60, 64]), (41, [65, 69, 72]), (43, [62, 67, 71])]   # C  Am  F  G
     pad = [[64, 67, 72], [64, 69, 72], [65, 69, 72], [62, 67, 71]]
+    gg = a.get("grooveGain", 1.0)
+    pb = 60.0 / a.get("polkaBpm", 132)
+    mel = [72, 72, 76, 72, 79, 77, 74, 71, 72, 76, 79, 84, 83, 81, 79, 77]
+    for lo, hi in a.get("polka", []):
+        n = 0
+        while lo + n * pb * 0.5 < hi - 0.05:
+            tn = lo + n * pb * 0.5
+            st.add(tn, kazoo(mel[n % len(mel)] + (1 if n % 7 == 6 else 0), pb * 0.45), 0.5)
+            if n % 2 == 0:
+                st.add(tn, tuba([36, 43][(n // 2) % 2], pb * 0.45), 0.55)
+            else:
+                st.add(tn, pah([60, 64, 67]), 0.5)
+            n += 1
     for lo, hi in a["groove"]:
         k = int(np.ceil(lo / bar))
         while k * bar < hi - 0.01:
             t0 = k * bar
             root, chord = prog[k % 4]
             for off in (0, 2):
-                st.add(t0 + off * beat, upright(root + 12), 0.55)
-            st.add(t0 + 3.0 * beat, upright(root + 12 + (7 if k % 2 else 0)), 0.4)
+                st.add(t0 + off * beat, upright(root + 12), 0.55 * gg)
+            st.add(t0 + 3.0 * beat, upright(root + 12 + (7 if k % 2 else 0)), 0.4 * gg)
             for j in range(12):
                 m = chord[[0, 1, 2][j % 3]] + 12
-                st.add(t0 + j * e8 + rng.uniform(0, 0.006), tremolo_gtr(m, 0.45), 0.09)
+                st.add(t0 + j * e8 + rng.uniform(0, 0.006), tremolo_gtr(m, 0.45), 0.09 * gg)
             for off in (1, 3):
-                st.add(t0 + off * beat, brush(), 0.5)
-                st.add(t0 + off * beat, snap(), 0.22)
+                st.add(t0 + off * beat, brush(), 0.5 * gg)
+                st.add(t0 + off * beat, snap(), 0.22 * gg)
             for j in range(4):
-                st.add(t0 + j * beat, brush(0.1), 0.13)
+                st.add(t0 + j * beat, brush(0.1), 0.13 * gg)
             if k % 2 == 0:
                 for m in pad[k % 4]:
-                    st.add(t0, ooh(m, bar * 2 + 0.2), 0.045)
+                    st.add(t0, ooh(m, bar * 2 + 0.2), 0.045 * gg)
             k += 1
     for lo, hi in a["musicDuck"]:
         i0, i1 = int(lo * RATE), int(hi * RATE)
@@ -187,7 +249,7 @@ def sfx(st: Stem, a):
     for t in a["napkinSlides"]: st.add(t, slide(0.5), 0.55)
     for lo, hi in a["scrawl"]: st.add(lo, crayon(hi - lo), 0.55)
     for lo, hi in a["crayonDraw"]: st.add(lo, crayon(hi - lo), 0.6)
-    for t in a["splat"]: st.add(t, splat(), 0.9)
+    for t in a["splat"]: st.add(t, splat(), 0.9); st.add(t - 0.1, splash(), 0.7)
     for t in a["laughSting"]: st.add(t, laugh_sting(), 0.45)
     for t in a.get("laughHit", []):
         for m in (60, 64, 67, 72): st.add(t, bell(m, 1.2), 0.3)
@@ -197,6 +259,10 @@ def sfx(st: Stem, a):
     for t in a["forkTink"]: st.add(t, fork_tink(), 0.7)
     for t in a["celestaNote"]: st.add(t, celesta(84), 0.35)
     for t in a["gulp"]: st.add(t, gulp(), 0.8)
+    for t in a.get("coinDrops", []): st.add(t, coin_drop(), 0.8)
+    for t in a.get("slaps", []): st.add(t, slap(), 0.9)
+    for t in a.get("scratch", []): st.add(t - 0.1, scratch(), 0.8)
+    for t in a.get("tubaBlats", []): st.add(t - 0.1, tuba_blat(), 0.5)
     for t in a["sliceWhoosh"]: st.add(t - 0.05, slice_whoosh(), 0.9)
     for i, t in enumerate(a["cardPops"]): st.add(t, pop(600 + 200 * i), 0.8)
     for t in a["stamps"]: st.add(t, stamp(), 0.45)

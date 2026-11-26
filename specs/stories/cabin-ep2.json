@@ -1,0 +1,336 @@
+{
+ "id": "cabin-ep2",
+ "season": "Cabin Six",
+ "composition": "Cabin2",
+ "episode": 2,
+ "title": "Let her win. Cabin six, part 2",
+ "note": "Silent. Board X X _ / O O _, X (him) to move; viewers voted B (lose on purpose). Take 1 = option A: he wins (thick marigold strike), freezes, writes DO YOU LIKE SNOW?, she looks out at the snow and writes ...yes.; he sinks into his collar. Breath re-fogs the glass, rewind. take 2. Take 2 = option B: his X in the bottom-right corner (he hovers over the winning top-right square, glances at her, swerves), she completes O O O (thick pine strike), squints, writes you let me win., he shrugs, she asks why?, he answers WANTED YOUR / QUESTION., she laughs (goggles bounce). Quiet beat (wind + one glock note), then a hard pylon jolt: the gondola stops dead, sways, whirr cuts out, he grips the rail white-knuckled, eyes on the drop; she writes stuck. / you ok? Vote A ADMIT: SCARED / OF HEIGHTS. / B PLAY IT COOL. / ANOTHER GAME. End card cabin six / part 2 / A or B. Whole story in the wide shot (both people + window), arms with elbows attached at the shoulder. Hold: short lines >= 1.8 s, two-line >= 2.4 s.",
+ "duration": 39.6,
+ "hooks": {
+  "a": "the girl I like in this gondola caught me losing on purpose.",
+  "b": "she caught me swiping. so I let her win at tic-tac-toe."
+ },
+ "hookOpening": {
+  "a": [
+   "0.0 both thumb lit phones, board X X _ / O O _ big on the glass",
+   "1.0 he stops, glances at her, sweat drop",
+   "1.5 both lower the phones, eyes on the board"
+  ],
+  "b": [
+   "0.0 both thumb lit phones",
+   "0.45 her eyes slide to his lit screen",
+   "0.6 '!' pops above her head",
+   "0.75 he flinches and pockets the phone",
+   "1.9 he turns to the fog board"
+  ]
+ },
+ "beats": {
+  "ext1a": 3.0,
+  "ext1b": 3.8,
+  "ctx": 3.95,
+  "ctxOut": 7.05,
+  "hover0": 5.4,
+  "x1": 6.9,
+  "strike1": 7.4,
+  "q": 8.9,
+  "qOut": 12.0,
+  "lookOut": 9.9,
+  "lookBack": 11.3,
+  "yes": 12.0,
+  "yesOut": 14.3,
+  "sink": 12.4,
+  "rewind": 14.3,
+  "erase": 14.6,
+  "rw": 14.9,
+  "rwOut": 17.2,
+  "swerve0": 15.2,
+  "x2": 15.8,
+  "o2": 16.75,
+  "strike2": 17.25,
+  "squint": 17.9,
+  "yl": 18.0,
+  "ylOut": 20.4,
+  "shrug": 18.4,
+  "why": 18.7,
+  "whyOut": 21.0,
+  "ans": 21.05,
+  "ansOut": 24.15,
+  "laugh": 21.9,
+  "quiet": 22.9,
+  "jolt": 24.2,
+  "ext2a": 24.5,
+  "ext2b": 25.7,
+  "rub0": 25.5,
+  "rub1": 26.4,
+  "pov0": 26.4,
+  "pov1": 27.5,
+  "face0": 27.5,
+  "face1": 28.8,
+  "notice": 28.9,
+  "stuck": 29.0,
+  "stuckOut": 32.1,
+  "wipeVote": 32.1,
+  "vote": 32.55,
+  "cardA": 32.9,
+  "cardB": 33.5,
+  "comment": 34.5,
+  "wipeEnd": 36.4,
+  "endcard": 36.85
+ },
+ "strips": [
+  {
+   "text": "the girl I like in this gondola caught me losing on purpose.",
+   "from": 0,
+   "to": 3.0,
+   "y": 392,
+   "hook": true,
+   "hookProp": "a",
+   "variant": "red"
+  },
+  {
+   "text": "she caught me swiping. so I let her win at tic-tac-toe.",
+   "from": 0,
+   "to": 3.0,
+   "y": 392,
+   "hook": true,
+   "hookProp": "b",
+   "variant": "red"
+  },
+  {
+   "text": "take 1: win.",
+   "from": 7.4,
+   "to": 9.3,
+   "y": 1130,
+   "variant": "snow"
+  },
+  {
+   "text": "I wasted my one question.",
+   "from": 12.7,
+   "to": 14.5,
+   "y": 1130,
+   "variant": "snow"
+  },
+  {
+   "text": "take 2: lose.",
+   "from": 15.1,
+   "to": 17.4,
+   "y": 1130,
+   "variant": "red"
+  },
+  {
+   "text": "the gondola stops. mid-air.",
+   "from": 24.5,
+   "to": 26.4,
+   "y": 340,
+   "variant": "red"
+  },
+  {
+   "text": "she doesn't know I'm scared of heights.",
+   "from": 26.5,
+   "to": 28.9,
+   "y": 340,
+   "variant": "snow"
+  }
+ ],
+ "texts": {
+  "ctx": [
+   "winner asks",
+   "1 question."
+  ],
+  "q": [
+   "DO YOU LIKE",
+   "SNOW?"
+  ],
+  "yes": "...yes.",
+  "rw": "rewind. take 2.",
+  "yl": "you let me win.",
+  "why": "why?",
+  "ans": [
+   "WANTED YOUR",
+   "QUESTION."
+  ],
+  "stuck": [
+   "stuck.",
+   "you ok?"
+  ]
+ },
+ "vote": {
+  "question": [
+   "stuck mid-air.",
+   "what does he do?"
+  ],
+  "comment": "comment A or B"
+ },
+ "choices": {
+  "A": {
+   "l1": "ADMIT: SCARED",
+   "l2": "OF HEIGHTS."
+  },
+  "B": {
+   "l1": "PLAY IT COOL.",
+   "l2": "ANOTHER GAME."
+  }
+ },
+ "endCard": [
+  "cabin six",
+  "part 2",
+  "A or B"
+ ],
+ "pylons": [
+  1.7,
+  4.4,
+  6.6,
+  8.9,
+  11.2,
+  13.6,
+  16.0,
+  18.3,
+  20.6,
+  22.5,
+  24.2
+ ],
+ "audio": {
+  "bpm": 84,
+  "meter": "6/8",
+  "groove": [
+   [
+    0.0,
+    22.9
+   ]
+  ],
+  "windOnly": [
+   [
+    22.9,
+    39.6
+   ]
+  ],
+  "sunSwell": [],
+  "glockNote": [
+   23.1
+  ],
+  "pylons": [
+   1.7,
+   4.4,
+   6.6,
+   8.9,
+   11.2,
+   13.6,
+   16.0,
+   18.3,
+   20.6,
+   22.5,
+   24.2
+  ],
+  "swipeTicks": [
+   0.02,
+   0.27,
+   0.52,
+   0.1,
+   0.35
+  ],
+  "noSignal": [],
+  "cableStop": 24.2,
+  "creaks": [
+   24.5,
+   25.6,
+   26.6,
+   27.6,
+   28.9
+  ],
+  "bangs": [
+   0.6
+  ],
+  "rewinds": [
+   14.3
+  ],
+  "squeaks": [
+   [
+    3.95,
+    4.65
+   ],
+   [
+    6.9,
+    7.25
+   ],
+   [
+    7.4,
+    8.05
+   ],
+   [
+    8.9,
+    9.6
+   ],
+   [
+    12.0,
+    12.5
+   ],
+   [
+    14.9,
+    15.4
+   ],
+   [
+    15.8,
+    16.15
+   ],
+   [
+    16.75,
+    17.1
+   ],
+   [
+    17.25,
+    17.9
+   ],
+   [
+    18.0,
+    18.6
+   ],
+   [
+    18.7,
+    19.2
+   ],
+   [
+    21.05,
+    21.75
+   ],
+   [
+    29.0,
+    29.7
+   ]
+  ],
+  "wipes": [
+   32.1,
+   36.4
+  ],
+  "porthole": [
+   25.5,
+   26.3
+  ],
+  "breaths": [
+   14.3
+  ],
+  "laugh": [
+   21.9
+  ],
+  "strike": [
+   7.4,
+   17.25
+  ],
+  "cardPops": [
+   32.9,
+   33.5,
+   34.5
+  ],
+  "endChime": [
+   36.85
+  ],
+  "voteHum": [
+   [
+    24.3,
+    39.6
+   ]
+  ],
+  "gulps": [
+   28.0
+  ]
+ }
+}

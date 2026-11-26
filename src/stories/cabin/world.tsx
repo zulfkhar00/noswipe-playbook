@@ -160,7 +160,7 @@ export const InkMark: React.FC<{k: 'X' | 'O' | 'line'; cx?: number; cy?: number;
   }
   return <g opacity={op}>{body}</g>;
 };
-export const ItemView: React.FC<{it: Item; t: number; mode: 'core' | 'edge' | 'ink'}> = ({it, t, mode}) => {
+export const ItemView: React.FC<{it: Item; t: number; mode: 'core' | 'edge' | 'ink'; edgeW?: number; coreW?: number}> = ({it, t, mode, edgeW = 11, coreW = 4}) => {
   const p = wp(t, it.a, it.b);
   if (mode === 'ink') {
     const al = it.out ? 1 - smooth(t, it.out[0], it.out[1]) : 1;
@@ -184,7 +184,7 @@ export const ItemView: React.FC<{it: Item; t: number; mode: 'core' | 'edge' | 'i
       return <g key={i}>
         <clipPath id={id}><rect x={left - 20} y={l.y - l.size} width={(w + 40) * lp} height={l.size * 1.4} /></clipPath>
         <text x={l.x} y={l.y} textAnchor="middle" clipPath={`url(#${id})`} fontFamily={FONT_FOG} fontSize={l.size} fill={mode === 'core' ? '#000' : '#fff'}
-          stroke={mode === 'core' ? '#000' : '#fff'} strokeWidth={mode === 'core' ? 4 : 4 + 11} strokeLinejoin="round">{l.s}</text>
+          stroke={mode === 'core' ? '#000' : '#fff'} strokeWidth={mode === 'core' ? coreW : coreW + edgeW} strokeLinejoin="round">{l.s}</text>
       </g>;
     });
   } else if (it.k === 'grid') {
@@ -231,7 +231,7 @@ export const tipOf = (it: Item, t: number): {x: number; y: number} => {
 
 // ---------------------------------------------------------------------------------------------------- people
 export type Mouth = 'flat' | 'smile' | 'smirk' | 'o' | 'laugh' | 'grit' | 'soft';
-export type Pose = {look: [number, number]; brow: number; mouth: Mouth; blink: number; flush: number; sweat: number; tilt: number; bob: number; sq: number; gold: number; glow: number};
+export type Pose = {look: [number, number]; brow: number; mouth: Mouth; blink: number; flush: number; sweat: number; tilt: number; bob: number; sq: number; gold: number; glow: number; gb?: number};
 export const calm: Pose = {look: [0, 0], brow: 0, mouth: 'flat', blink: 0, flush: 0, sweat: 0, tilt: 0, bob: 0, sq: 1, gold: 0, glow: 0};
 
 const FaceBits: React.FC<{who: 'him' | 'her'; pose: Pose; d: number}> = ({who, pose, d}) => {
@@ -341,7 +341,7 @@ export const Person: React.FC<{who: 'him' | 'her'; x: number; y: number; pose: P
       <path d="M -150 -78 Q -140 -196 0 -198 Q 140 -196 150 -78 Q 100 -128 0 -126 Q -100 -128 -150 -78 Z" fill={C.hair} />
       {[-1, 1].map((s) => <path key={s} d={`M ${s * 150} -88 Q ${s * 172} 40 ${s * 140} 158 Q ${s * 110} 130 ${s * 114} -30 Z`} fill={C.hair} />)}
       <path d="M -154 -86 Q 0 -156 154 -86" fill="none" stroke={C.snow} strokeWidth={42} strokeLinecap="round" />
-      <g transform="translate(0 -164) rotate(-3)">
+      <g transform={`translate(0 ${-164 + (pose.gb ?? 0)}) rotate(-3)`}>
         <path d="M -128 8 Q -168 20 -158 62" fill="none" stroke={C.ink} strokeWidth={20} strokeLinecap="round" />
         <path d="M 128 8 Q 168 20 158 62" fill="none" stroke={C.ink} strokeWidth={20} strokeLinecap="round" />
         <rect x={-130} y={-44} width={260} height={86} rx={40} fill={C.ink} />
@@ -447,7 +447,7 @@ export const VoteCard: React.FC<{letter: 'A' | 'B'; l1: string; l2: string; x: n
     <circle cx={-168} cy={2} r={54} fill={red ? C.snow : C.ink} />
     <text x={-168} y={36} textAnchor="middle" fontFamily={FONT_POSTER} fontSize={92} fill={red ? C.red : C.snow}>{letter}</text>
     <text x={58} y={-10} textAnchor="middle" fontFamily={FONT_POSTER} fontSize={l1.length > 11 ? 50 : 60} fill={red ? C.snow : C.ink}>{l1}</text>
-    <text x={58} y={54} textAnchor="middle" fontFamily={FONT_POSTER} fontSize={60} fill={red ? C.snow : C.ink}>{l2}</text>
+    <text x={58} y={54} textAnchor="middle" fontFamily={FONT_POSTER} fontSize={l2.length > 11 ? 50 : 60} fill={red ? C.snow : C.ink}>{l2}</text>
   </g>;
 };
 

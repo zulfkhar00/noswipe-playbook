@@ -1,0 +1,396 @@
+{
+ "id": "pie-ep4",
+ "season": "Pie for Two",
+ "composition": "Pie4",
+ "episode": 4,
+ "title": "Last call. Part 4",
+ "note": "Silent. Part 4. Opener (0-3.2 s) is the ONLY part that differs by hook: ONE strip, two big faces at the counter, both phones lit mid-swipe (generic glow), the jukebox lit behind them, the coin in his hand. Hook b shows the catch in 0-2 s (her eyes to his lit screen 0.4, '!' 0.6, he flips the phone face down 0.65-0.9), then the jukebox flares 1.6 and he lifts the coin. Napkin 'pick a song.' 3.2-5.0. Take 1 (B, 5.0-10.2): coin in the jukebox, kazoo/tuba polka, neon flicker, waitress stare, coffee jumps onto his jacket, she covers her face. Slice wipe counter-clockwise 10.2 'rewind. take 2.'. Take 2 (A, 11.6-18.5): slow ballad, stools turn to face each other, sway, her chin on her hand, napkins 'ok. good pick.' / 'FIRST GOOD CALL / ALL YEAR.'; quiet beat. Phone gag 20.0-22.6: both phones buzz face-up (glow, rattle), she calmly drops an upside-down mug on hers, glow dies, then he does his. Cliff 22.6: waitress slaps the check '1 PIE · 2 FORKS', both reach; vote 26.4; end card 32.0-35.0 (3 s). Clock 11:56 -> 11:59. No NoSwipe, no link on screen.",
+ "duration": 35.0,
+ "hooks": {
+  "a": "the girl I like at this diner gave me one song to pick.",
+  "b": "she caught me swiping. now I'm picking our song."
+ },
+ "beats": {
+  "napkin0": 3.2,
+  "take1": 5.0,
+  "coinIn1": 5.55,
+  "chaos": 6.3,
+  "waitressUp": 6.9,
+  "neon": 7.2,
+  "splash": 8.1,
+  "faceCover": 8.6,
+  "rewind": 10.2,
+  "calm": 10.7,
+  "take2": 11.6,
+  "coinIn2": 12.0,
+  "slow": 12.7,
+  "turn": 12.95,
+  "chin": 14.2,
+  "napkin1": 15.2,
+  "napkin2": 16.8,
+  "quiet": 18.5,
+  "celesta": 18.9,
+  "gag": 20.0,
+  "buzz1": 20.2,
+  "landHers": 21.15,
+  "landHis": 21.75,
+  "check": 22.6,
+  "slap": 23.1,
+  "checkIns": 23.6,
+  "reach": 25.0,
+  "voteWipe": 25.9,
+  "cardA": 26.05,
+  "cardB": 26.2,
+  "voteUp": 26.4,
+  "endcard": 32.0
+ },
+ "choices": {
+  "question": "we both reach for the check. who pays?",
+  "A": {
+   "l1": "I'LL GET IT.",
+   "l2": ""
+  },
+  "B": {
+   "l1": "SPLIT IT.",
+   "l2": "WE'RE EVEN."
+  },
+  "why": "B (split it) is the planned winner (part 5: closing time, split, crust bagged as leftovers)."
+ },
+ "inserts": [
+  {
+   "id": "n0",
+   "from": 3.2,
+   "to": 5.0,
+   "side": "her cranberry crayon",
+   "lines": [
+    "pick a song."
+   ]
+  },
+  {
+   "id": "n1",
+   "from": 15.2,
+   "to": 16.8,
+   "side": "her cranberry crayon",
+   "lines": [
+    "ok. good pick."
+   ]
+  },
+  {
+   "id": "n2",
+   "from": 16.8,
+   "to": 18.5,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "FIRST GOOD CALL",
+    "ALL YEAR."
+   ]
+  }
+ ],
+ "strips": [
+  {
+   "text": "the girl I like at this diner gave me one song to pick.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now I'm picking our song.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "she hands me the jukebox coin.",
+   "from": 3.2,
+   "to": 5.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "take 1: something dumb.",
+   "from": 5.0,
+   "to": 6.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the jukebox plays a polka. loudly.",
+   "from": 6.3,
+   "to": 7.4,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the waitress stares. the neon flickers.",
+   "from": 7.4,
+   "to": 8.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "my coffee jumps onto my jacket.",
+   "from": 8.3,
+   "to": 9.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she covers her face.",
+   "from": 9.3,
+   "to": 10.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 10.2,
+   "to": 11.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "take 2: something slow.",
+   "from": 11.6,
+   "to": 12.7,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "we turn our stools.",
+   "from": 12.7,
+   "to": 14.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she rests her chin on her hand.",
+   "from": 14.2,
+   "to": 15.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she writes back.",
+   "from": 15.2,
+   "to": 16.8,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "I answer.",
+   "from": 16.8,
+   "to": 18.5,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "nobody says anything.",
+   "from": 18.5,
+   "to": 20.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the phones buzz. mugs go on top.",
+   "from": 20.0,
+   "to": 22.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "11:59. the waitress brings the check.",
+   "from": 22.6,
+   "to": 23.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "one pie. two forks.",
+   "from": 23.6,
+   "to": 25.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "we both reach.",
+   "from": 25.0,
+   "to": 25.9,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "we both reach for the check. who pays?",
+   "from": 25.9,
+   "to": 32.0,
+   "y": 345,
+   "size": 58,
+   "maxW": 1040
+  },
+  {
+   "text": "comment A or B",
+   "from": 25.9,
+   "to": 32.0,
+   "y": 1215
+  }
+ ],
+ "check": {
+  "title": "GUEST CHECK",
+  "line": "1 PIE · 2 FORKS",
+  "tbl": "TBL 6",
+  "time": "11:59 PM"
+ },
+ "cards": {
+  "clock1": "11:56 PM",
+  "clock2": "11:59 PM",
+  "rewind_badge": "TAKE 2",
+  "end_kicker": "a silent diner love story",
+  "end_card": "pie for two",
+  "end_pill": "part 4 · A or B"
+ },
+ "audio": {
+  "bpm": 76,
+  "meter": "12/8",
+  "grooveGain": 0.62,
+  "groove": [
+   [
+    12.0,
+    35.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    18.5,
+    22.6
+   ]
+  ],
+  "polka": [
+   [
+    6.3,
+    10.1
+   ]
+  ],
+  "polkaBpm": 132,
+  "neonBuzz": [
+   [
+    0,
+    3.2
+   ],
+   [
+    6.9,
+    8.4
+   ]
+  ],
+  "neonZaps": [
+   7.2,
+   7.45,
+   7.62,
+   7.95
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8,
+   1.1,
+   1.4
+  ],
+  "plateClinks": [],
+  "plateScrapes": [],
+  "napkinPulls": [
+   3.1,
+   15.1,
+   16.7
+  ],
+  "napkinSlides": [],
+  "scrawl": [
+   [
+    15.35,
+    16.1
+   ],
+   [
+    16.95,
+    17.5
+   ],
+   [
+    17.55,
+    18.0
+   ]
+  ],
+  "crayonDraw": [],
+  "splat": [
+   8.15
+  ],
+  "laughSting": [],
+  "phoneBuzz": [
+   20.2,
+   20.4,
+   20.6,
+   20.8
+  ],
+  "mugClunks": [
+   21.15,
+   21.75
+  ],
+  "forkTink": [],
+  "cupClinks": [],
+  "celestaNote": [
+   18.9
+  ],
+  "gulp": [
+   8.9
+  ],
+  "sliceWhoosh": [
+   10.2,
+   25.9
+  ],
+  "cardPops": [
+   26.05,
+   26.2
+  ],
+  "slaps": [
+   23.1
+  ],
+  "coinDrops": [
+   5.55,
+   12.0
+  ],
+  "scratch": [
+   10.2
+  ],
+  "tubaBlats": [
+   6.3
+  ],
+  "stamps": [
+   3.2,
+   5.0,
+   6.3,
+   7.4,
+   8.3,
+   9.3,
+   10.2,
+   11.6,
+   12.7,
+   14.2,
+   15.2,
+   16.8,
+   18.5,
+   20.0,
+   22.6,
+   23.6,
+   25.0,
+   25.9,
+   32.0
+  ],
+  "endChime": [
+   32.0
+  ],
+  "instruments": "polka: kazoo melody + tuba oom-pah (6.3-10.1) for take 1; rewind scratch; then the late-night jukebox doo-wop ballad (12/8, softer) from 12.0; ducks to fridge hum + one celesta note for the shared moment (18.5-22.6)",
+  "hookSlide": {
+   "a": 0.15,
+   "b": 1.55
+  }
+ }
+}

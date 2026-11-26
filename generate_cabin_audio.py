@@ -69,6 +69,12 @@ def squeak(d):
     return (np.sin(2 * np.pi * np.cumsum(f) / RATE) * 0.5 + fft_bp(noise(d), 1500, 4500) * 0.35) * stick * np.minimum(1, t / 0.03) * np.minimum(1, (d - t) / 0.05) * 0.6
 
 
+def creak(d=0.9):
+    t = tt(d)
+    f = 95 + 25 * np.sin(2 * np.pi * 3.3 * t)
+    return (np.sin(2 * np.pi * np.cumsum(f) / RATE) * 0.5 + fft_bp(noise(d), 150, 700) * 0.5) * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 1.5 * 0.6
+
+
 def breath(d=0.7):
     t = tt(d)
     k = np.clip(t / d, 0, 1)
@@ -100,7 +106,11 @@ def room(st: Stem, a):
     for lo, hi in a.get("windOnly", []):
         i0, i1 = int(lo * RATE), int(hi * RATE); fade = int(0.35 * RATE)
         only[i0:i1] = 1
-        only[i0 - fade:i0] = np.linspace(0, 1, fade); only[i1:i1 + fade] = np.linspace(1, 0, fade)
+        only[i0 - fade:i0] = np.linspace(0, 1, fade); m = len(only[i1:i1 + fade]); only[i1:i1 + fade] = np.linspace(1, 0, fade)[:m]
+    cs = a.get("cableStop")
+    if cs:   # the whirr cuts out dead at the jolt
+        g = np.ones(n); i0 = int(cs * RATE); g[i0:] = 0; g[i0 - 400:i0] = np.linspace(1, 0, 400)
+        cable, whirr = cable * g, whirr * g
     st.buf += cable * (1 - 0.6 * only) + whirr * (1 - 0.7 * only) + wind * (1 + 1.6 * only)
 
 
@@ -136,15 +146,19 @@ def music(st: Stem, a):
 
 def sfx(st: Stem, a):
     for t in a["swipeTicks"]: st.add(t, tick(), 0.6)
-    for t in a["noSignal"]: st.add(t, beep(900, 520), 0.8)
+    for t in a.get("noSignal", []): st.add(t, beep(900, 520), 0.8)
+    for t in a.get("gulps", []): st.add(t, pop(240), 0.9)
+    for t in a.get("bangs", []): st.add(t, pop(900), 0.9)
+    for t in a.get("rewinds", []): st.add(t, swish(0.9)[::-1], 0.8)
+    for t in a.get("creaks", []): st.add(t, creak(0.9), 0.7)
     for t in a["pylons"]: st.add(t, kachunk(), 0.85)
     for lo, hi in a["squeaks"]: st.add(lo, squeak(hi - lo), 0.6)
     for t in a["wipes"]: st.add(t, swish(0.45), 0.9); st.add(t + 0.1, squeak(0.25), 0.4)
-    for lo, hi in [a["porthole"]]: st.add(lo, rub(hi - lo + 0.3), 0.9)
+    if a.get("porthole"): st.add(a["porthole"][0], rub(a["porthole"][1] - a["porthole"][0] + 0.3), 0.9)
     for t in a["breaths"]: st.add(t, breath(0.75), 0.9)
     for t in a["laugh"]: st.add(t, laugh_sting(), 0.45)
     for t in a["strike"]: st.add(t, swish(0.4), 0.5)
-    for lo, hi in a["sunSwell"]:
+    for lo, hi in a.get("sunSwell", []):
         for m in (62, 69, 74, 78, 81): st.add(lo, pad(m, hi - lo), 0.1)
         st.add(hi - 0.1, fft_bp(noise(0.8), 800, 6000) * np.exp(-tt(0.8) / 0.3) * 0.5, 0.3)
     for t in a["glockNote"]: st.add(t, glock(90, 2.5), 0.5)

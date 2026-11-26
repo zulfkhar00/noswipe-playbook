@@ -1536,6 +1536,86 @@
     "want_next": 6,
     "rounds": 2
    }
+  },
+  {
+   "id": "pie-4-b",
+   "day": "2026-11-26",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 4,
+   "hook": "b",
+   "caption": "She caught me swiping. Now I pick our song. Part 4. Thanksgiving night, one diner, one jukebox coin. Take one went very wrong. Take two, something slow. Now one check, two forks. Who pays, A or B? #thanksgiving #datingapps #lovestory #shortfilm #animation",
+   "video": "videos/pie-4-b.mp4",
+   "composition": "Pie4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "cabin-2-a",
+   "day": "2026-11-26",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 2,
+   "hook": "a",
+   "caption": "The girl I like in this gondola caught me losing. Part 2. Tic-tac-toe in the fog, winner asks one question. I lost on purpose and she noticed. Then the lift stopped mid-air. A or B? #meetcute #skitrip #strangerstolovers #shortstory #animation",
+   "video": "videos/cabin-2-a.mp4",
+   "composition": "Cabin2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
+  },
+  {
+   "id": "pie-4-a",
+   "day": "2026-11-26",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 4,
+   "hook": "a",
+   "caption": "The girl I like at this diner gave me one song. Part 4. Take one, a polka and coffee on my jacket. Take two, a slow song and two stools. Now the check says 1 pie, 2 forks. Who pays, A or B? #meetcute #strangerstolovers #thanksgiving #shortstory #animation",
+   "video": "videos/pie-4-a.mp4",
+   "composition": "Pie4",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "cabin-2-b",
+   "day": "2026-11-26",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 2,
+   "hook": "b",
+   "caption": "She caught me swiping. So I let her win. Part 2. No signal, one foggy window, a game of tic-tac-toe. She asked why I lost. Then the gondola stopped mid-air. A or B? #datingapps #skitrip #lovestory #shortfilm #animation",
+   "video": "videos/cabin-2-b.mp4",
+   "composition": "Cabin2",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 5,
+    "want_next": 7,
+    "rounds": 2
+   }
   }
  ]
 }

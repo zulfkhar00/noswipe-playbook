@@ -76,10 +76,14 @@ Change one variable at a time within a format.
 | 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook a (14:30) | the stranger beside me and I are fighting over the first bite of pie. | 1368 (6h) | | 15 | ~42% | 0.0% | 0.0% | | 0.0% | 22.8% skip; was planned: who+where (blind hook 5 vs b 7) |
 | 2026-11-24 | IG @tinyloveshows | silent story (Same Bag) | P6 finale hook a (repeat body, 17:00) | her ride is here and I still don't know her name. | 1512 (6h) | | 16 | ~44% | 0.0% | 0.0% | | 0.0% | 21.4% skip; was planned: stakes line |
 | 2026-11-24 | IG @tinyloveshows | silent story (Pie for Two) | P2 hook b (repeat body, 20:30) | she caught me swiping. now we're dueling over pie. | 1274 (3h) | | 16 | ~45% | 0.0% | 0.1% | | 0.0% | 22.5% skip; was planned: "caught me swiping", catch shown |
-| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six, new) | P1 hook a (12:00) | the stranger in my ski gondola swipes too. | | | | | | | | | planned: who+where on a new world (blind 7 vs b 6) |
-| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook b (14:30) | she caught me swiping. now she asks why I'm alone tonight. | | | | | | | | | planned: "caught me swiping", catch shown (blind 7 vs a 6) |
-| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six) | P1 hook b (repeat body, 17:00) | she caught me swiping on a ski lift. | | | | | | | | | planned: "caught me swiping" |
-| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook a (repeat body, 20:30) | the diner stranger swipes too. she asks why I'm alone on Thanksgiving eve. | | | | | | | | | planned: who+where |
+| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six, new) | P1 hook a (12:00) | the stranger in my ski gondola swipes too. | 422 (12h) | | 15 | ~44% | 0.0% | 0.0% | | 0.3% | **stalled** (first since 11-12), 27.6% skip, Explore 6.5%; was planned: who+where on a new world |
+| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook b (14:30) | she caught me swiping. now she asks why I'm alone tonight. | 457 (6h) | | 11 | ~31% | 0.0% | 0.0% | | 0.5% | stalled, 27.7% skip, avg watch down from 15-16 s; was planned: "caught me swiping" |
+| 2026-11-25 | IG @tinyloveshows | silent story (Cabin Six) | P1 hook b (repeat body, 17:00) | she caught me swiping on a ski lift. | 385 (6h) | | 15 | ~44% | 0.0% | 0.3% | | 0.0% | stalled, 27.3% skip; was planned: "caught me swiping" |
+| 2026-11-25 | IG @tinyloveshows | silent story (Pie for Two) | P3 hook a (repeat body, 20:30) | the diner stranger swipes too. she asks why I'm alone on Thanksgiving eve. | 770 (3h) | | 12 | ~34% | 0.0% | 0.0% | | 0.0% | below the 11-23/24 3h reads (1.1-1.8k), 24.4% skip; was planned: who+where |
+| 2026-11-26 | IG @tinyloveshows | silent story (Pie for Two) | P4 hook b (12:00) | she caught me swiping. now I'm picking our song. | | | | | | | | | planned: "caught me swiping", catch shown; opens on action (blind hook 6 vs a 7) |
+| 2026-11-26 | IG @tinyloveshows | silent story (Cabin Six) | P2 hook a (14:30) | the girl I like in this gondola caught me losing on purpose. | | | | | | | | | planned: stakes line (blind hook 5 vs b 7; 39.6 s) |
+| 2026-11-26 | IG @tinyloveshows | silent story (Pie for Two) | P4 hook a (repeat body, 17:00) | the girl I like at this diner gave me one song to pick. | | | | | | | | | planned: stakes line |
+| 2026-11-26 | IG @tinyloveshows | silent story (Cabin Six) | P2 hook b (repeat body, 20:30) | she caught me swiping. so I let her win at tic-tac-toe. | | | | | | | | | planned: "caught me swiping", catch shown |
 
 ## Hook patterns (running record)
 
@@ -180,3 +184,10 @@ Same Bag is over: a new season's part 1 is due next to Pie. judge_vs_stats (n=54
 1274 / 22.5%. Same Bag's finale worked cold; Pie P2 at or below P1's skip. 24h for 11-23: bag-5 1506 / 1940, pie-1 1760 / 1827. a vs b: no winner.
 Shares, comments and follows still ~0, so tonight's Cabin Six P1 tests a vote that is a live puzzle (a tic-tac-toe position, two payoffs) against
 Pie's plain A/B. Read: comments per 1k views at 24h, Cabin vs Pie.
+
+**Update 2026-11-26:** 11-25 is the first night since 11-12 without a breakout: all 4 posts stalled at 385-770 (cabin-1-a 422 at 12h, pie-3-b 457
+and cabin-1-b 385 at 6h, pie-3-a 770 at 3h). It hit both seasons at once (Pie was working, Cabin was brand new), so it reads as a day-level dip
+(Thanksgiving eve) more than a failed body; skip only slightly worse (24-28% vs 21-24%), Pie 3 average watch down to 11-12 s (it opened on a
+question rather than visible action). The tic-tac-toe/jukebox votes drew the first comments in weeks (0.3-0.5%). 11-24 at 24h: bag-6 1967 / 1879,
+pie-2 1686 / 1480. Tonight continues both (Pie P4 on Thanksgiving Day, Cabin P2), both openers on visible action, stakes (a) vs caught-swiping (b).
+If both stall again at 3h, it is the content and the next night starts a new world.
