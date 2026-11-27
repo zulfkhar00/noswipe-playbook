@@ -181,6 +181,58 @@ def tuba_blat():
     return np.sign(np.sin(2 * np.pi * 70 * t)) * 0.4 * env(t, 0.01, 0.18) + fft_lp(noise(0.4), 300) * 0.4 * env(t, 0.01, 0.1)
 
 
+def honk(d=0.22):
+    t = tt(d)
+    sq = np.sign(np.sin(2 * np.pi * 420 * t)) * 0.5 + np.sign(np.sin(2 * np.pi * 532 * t)) * 0.4
+    return fft_lp(sq, 2600) * np.minimum(1, t / 0.008) * np.minimum(1, (d - t) / 0.02) * 0.8
+
+
+def car_pass(d=1.6):
+    t = tt(d)
+    k = np.clip(t / d, 0, 1)
+    return fft_bp(noise(d), 120, 900) * np.sin(np.pi * k) ** 1.5 * 0.9 + np.sin(2 * np.pi * np.cumsum(70 + 40 * np.sin(np.pi * k)) / RATE) * 0.25 * np.sin(np.pi * k)
+
+
+def foil_crinkle(d=0.22):
+    t = tt(d)
+    return fft_bp(noise(d), 2500, 9000) * (np.abs(np.sin(2 * np.pi * 38 * t)) ** 2) * np.exp(-t / 0.1) * 0.8
+
+
+def wallet_open():
+    t = tt(0.25)
+    return fft_bp(noise(0.25), 400, 3000) * env(t, 0.002, 0.05) * 0.8 + np.sin(2 * np.pi * 900 * t) * env(t, 0.001, 0.02) * 0.15
+
+
+def flutter(d):
+    t = tt(d)
+    return fft_bp(noise(d), 250, 1400) * (0.5 + 0.5 * np.sin(2 * np.pi * 28 * t)) ** 2 * np.minimum(1, t / 0.1) * np.minimum(1, (d - t) / 0.2) * 0.5
+
+
+def bill_slap():
+    t = tt(0.25)
+    return fft_bp(noise(0.25), 500, 5000) * env(t, 0.001, 0.03) * 0.9 + np.sin(2 * np.pi * 110 * t) * env(t, 0.001, 0.05) * 0.4
+
+
+def box_fold():
+    t = tt(0.3)
+    return fft_bp(noise(0.3), 1000, 6000) * env(t, 0.002, 0.04) * 0.8 + np.sin(2 * np.pi * 240 * t) * env(t, 0.001, 0.05) * 0.3
+
+
+def neon_flip():
+    t = tt(0.3)
+    return fft_bp(noise(0.3), 2000, 8000) * env(t, 0.0005, 0.02) * 0.6 + np.sin(2 * np.pi * 120 * t) * env(t, 0.002, 0.18) * 0.4
+
+
+def palm_tap():
+    t = tt(0.2)
+    return fft_bp(noise(0.2), 300, 2500) * env(t, 0.001, 0.03) * 0.7 + np.sin(2 * np.pi * 140 * t) * env(t, 0.001, 0.05) * 0.4
+
+
+def wind(d):
+    t = tt(d)
+    return fft_bp(noise(d), 150, 900) * (0.45 + 0.55 * np.sin(2 * np.pi * 0.23 * t) ** 2) * np.minimum(1, t / 0.6) * np.minimum(1, (d - t) / 0.6) * 0.07
+
+
 def room(st: Stem, a):
     n = len(st.buf); tm = np.arange(n) / RATE
     fridge = (np.sin(2 * np.pi * 60 * tm) * 0.5 + np.sin(2 * np.pi * 120 * tm) * 0.3 + np.sin(2 * np.pi * 180 * tm) * 0.08) * 0.014
@@ -270,6 +322,17 @@ def sfx(st: Stem, a):
     for lo, hi in a.get("mugRattles", []): st.add(lo, mug_rattle(hi - lo), 0.6)
     for t in a.get("forkClinks", []): st.add(t, fork_clink(), 0.8)
     for t in a.get("cupClinks", []): st.add(t, cup_clink(), 0.9)
+    for t in a.get("honks", []): st.add(t, honk(), 0.6)
+    for t in a.get("carPass", []): st.add(t, car_pass(), 0.7)
+    for t in a.get("foil", []): st.add(t, foil_crinkle(), 0.8)
+    for t in a.get("walletOpen", []): st.add(t, wallet_open(), 0.8)
+    for lo, hi in a.get("flutter", []): st.add(lo, flutter(hi - lo), 0.8)
+    for t in a.get("billSlaps", []): st.add(t, bill_slap(), 0.8)
+    for t in a.get("boxFold", []): st.add(t, box_fold(), 0.8)
+    for t in a.get("boxScoot", []): st.add(t, slide(0.3), 0.5)
+    for t in a.get("neonFlip", []): st.add(t, neon_flip(), 0.7)
+    for t in a.get("palmTaps", []): st.add(t, palm_tap(), 0.6)
+    for lo, hi in a.get("wind", []): st.add(lo, wind(hi - lo), 1.0)
     for t in a["endChime"]:
         for k, m in enumerate([72, 76, 79, 84]): st.add(t + k * 0.1, bell(m), 0.3)
 
@@ -286,3 +349,6 @@ if __name__ == "__main__":
     if "hookSlide" in a:
         sl = Stem(0.7); sl.add(0.0, slide(0.5), 0.6)
         write(ROOT / f"public/audio/{ep}-slide.wav", sl.buf)
+    if "hookSlap" in a:
+        sp = Stem(0.7); sp.add(0.0, slap(), 0.9); sp.add(0.02, slide(0.3), 0.4)
+        write(ROOT / f"public/audio/{ep}-slap.wav", sp.buf)

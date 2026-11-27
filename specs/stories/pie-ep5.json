@@ -1,0 +1,404 @@
+{
+ "id": "pie-ep5",
+ "season": "Pie for Two",
+ "composition": "Pie5",
+ "episode": 5,
+ "title": "Closing time. Part 5",
+ "note": "Silent. Part 5. Opener (0-3.2 s) is the ONLY part that differs by hook: both at the counter, both phones lit mid-swipe (generic glow), the waitress slaps the guest check '1 PIE . 2 FORKS' between them (a: ~0.95 s, b: 2.05 s after the catch: her eyes to his lit screen 0.4, '!' 0.6, he flips his phone 0.65-0.95). Phones face down under mugs 3.2-5.0. Take 1 (A, I'LL GET IT.): he grabs the check, napkin, wallet with only a GUM wrapper + a moth, the waitress holds out her palm, he shrinks. Slice wipe counter-clockwise 12.2 'rewind. take 2.'. Take 2 (B, SPLIT IT. WE'RE EVEN.): napkin, two hands put money side by side, crust boxed in a tiny to-go box, both reach, she lets him have it. Sidewalk 20.9-25.5: neon OPEN->CLOSED, 12:00 AM, cold breath, headlights + honk (her brother), she slides him the last napkin; napkin 'your turn.'. Vote 28.1 (up), end card 33-36 with the soft link-in-bio line. No NoSwipe in the story.",
+ "duration": 36.0,
+ "hooks": {
+  "a": "the girl I like at this diner and I just got the check.",
+  "b": "she caught me swiping. now we're fighting over the check."
+ },
+ "hookSlap": {
+  "a": 0.95,
+  "b": 2.05
+ },
+ "beats": {
+  "hookEnd": 3.2,
+  "gag": 3.2,
+  "landHers": 4.0,
+  "landHis": 4.4,
+  "take1": 5.0,
+  "grab": 5.25,
+  "n1": 6.8,
+  "wallet": 8.6,
+  "walletOpen": 8.75,
+  "foil": 9.2,
+  "moth": 9.5,
+  "deadpan": 10.4,
+  "rewind": 12.2,
+  "take2": 12.7,
+  "n2": 13.0,
+  "money": 15.4,
+  "billHis": 15.85,
+  "billHer": 15.95,
+  "box": 17.2,
+  "crustUp": 17.5,
+  "crustIn": 18.0,
+  "lid": 18.3,
+  "boxSlide": 18.6,
+  "reachBox": 19.0,
+  "letGo": 19.7,
+  "takeBox": 20.0,
+  "side": 20.9,
+  "neonFlip": 21.5,
+  "lights": 22.8,
+  "honk1": 23.3,
+  "honk2": 23.6,
+  "slide": 24.5,
+  "n3": 25.5,
+  "voteWipe": 27.6,
+  "voteUp": 28.1,
+  "cardA": 28.25,
+  "cardB": 28.4,
+  "endcard": 33.0
+ },
+ "choices": {
+  "question": "what do I write on the last napkin?",
+  "A": {
+   "l1": "WES.",
+   "l2": "YOURS?"
+  },
+  "B": {
+   "l1": "I'LL SAVE",
+   "l2": "YOU A SLICE."
+  },
+  "why": "A (names) is the planned winner; part 6 plays B first (case empty, she waves from the car), rewinds, then A: one napkin signed WES · ROSA."
+ },
+ "inserts": [
+  {
+   "id": "n1",
+   "from": 6.8,
+   "to": 8.6,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "I'LL GET IT."
+   ]
+  },
+  {
+   "id": "n2",
+   "from": 13.0,
+   "to": 15.4,
+   "side": "his pumpkin crayon",
+   "lines": [
+    "SPLIT IT.",
+    "WE'RE EVEN."
+   ]
+  },
+  {
+   "id": "n3",
+   "from": 25.5,
+   "to": 27.6,
+   "side": "her cranberry crayon",
+   "lines": [
+    "your turn."
+   ]
+  }
+ ],
+ "strips": [
+  {
+   "text": "the girl I like at this diner and I just got the check.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "a"
+  },
+  {
+   "text": "she caught me swiping. now we're fighting over the check.",
+   "from": 0,
+   "to": 3.2,
+   "y": 345,
+   "hook": true,
+   "hookProp": "b"
+  },
+  {
+   "text": "phones face down. mugs on top.",
+   "from": 3.2,
+   "to": 5.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "take 1: I grab the check.",
+   "from": 5.0,
+   "to": 6.8,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "my big move.",
+   "from": 6.8,
+   "to": 8.6,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "my wallet: one gum wrapper.",
+   "from": 8.6,
+   "to": 10.4,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the waitress waits.",
+   "from": 10.4,
+   "to": 12.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "rewind. take 2.",
+   "from": 12.2,
+   "to": 14.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "we split it.",
+   "from": 15.4,
+   "to": 17.2,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "the crust goes in a tiny box.",
+   "from": 17.2,
+   "to": 19.0,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "we both reach. she lets me have it.",
+   "from": 19.0,
+   "to": 20.9,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "closing time. 12:00 AM.",
+   "from": 20.9,
+   "to": 22.7,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "her ride home is here.",
+   "from": 22.7,
+   "to": 24.5,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "she leaves me the last napkin.",
+   "from": 24.5,
+   "to": 26.3,
+   "y": 345,
+   "size": 46
+  },
+  {
+   "text": "what do I write on the last napkin?",
+   "from": 28.1,
+   "to": 33.0,
+   "y": 345,
+   "size": 58,
+   "maxW": 1040
+  },
+  {
+   "text": "comment A or B",
+   "from": 28.1,
+   "to": 33.0,
+   "y": 1215
+  }
+ ],
+ "check": {
+  "title": "GUEST CHECK",
+  "line": "1 PIE · 2 FORKS",
+  "tbl": "TBL 6",
+  "time": "11:59 PM"
+ },
+ "cards": {
+  "clock1": "11:59 PM",
+  "clock2": "12:00 AM",
+  "rewind_badge": "TAKE 2",
+  "end_kicker": "a silent diner love story",
+  "end_card": "pie for two",
+  "end_pill": "finale next · A or B",
+  "end_link": "tired of swiping? noswipe.app · link in bio",
+  "link_from": 33.5
+ },
+ "audio": {
+  "bpm": 76,
+  "meter": "12/8",
+  "grooveGain": 0.62,
+  "groove": [
+   [
+    1.0,
+    36.0
+   ]
+  ],
+  "musicDuck": [
+   [
+    18.9,
+    21.2
+   ]
+  ],
+  "polka": [],
+  "polkaBpm": 132,
+  "neonBuzz": [
+   [
+    0,
+    3.2
+   ],
+   [
+    20.9,
+    27.6
+   ]
+  ],
+  "neonZaps": [
+   21.5,
+   21.62,
+   21.75
+  ],
+  "swipeTicks": [
+   0.2,
+   0.5,
+   0.8
+  ],
+  "plateClinks": [],
+  "plateScrapes": [],
+  "napkinPulls": [
+   6.7,
+   12.9,
+   25.4
+  ],
+  "napkinSlides": [
+   24.6
+  ],
+  "scrawl": [
+   [
+    7.0,
+    7.8
+   ],
+   [
+    13.25,
+    13.8
+   ],
+   [
+    13.9,
+    14.6
+   ],
+   [
+    25.75,
+    26.55
+   ]
+  ],
+  "crayonDraw": [],
+  "splat": [],
+  "laughSting": [],
+  "phoneBuzz": [
+   3.3,
+   3.5,
+   3.7
+  ],
+  "mugClunks": [
+   4.0,
+   4.4
+  ],
+  "forkTink": [],
+  "cupClinks": [],
+  "celestaNote": [
+   19.7
+  ],
+  "gulp": [
+   11.0
+  ],
+  "sliceWhoosh": [
+   12.2,
+   27.6
+  ],
+  "cardPops": [
+   28.25,
+   28.4
+  ],
+  "slaps": [
+   5.25
+  ],
+  "coinDrops": [],
+  "scratch": [
+   12.2
+  ],
+  "tubaBlats": [],
+  "stamps": [
+   3.2,
+   5.0,
+   6.8,
+   8.6,
+   10.4,
+   12.2,
+   15.4,
+   17.2,
+   19.0,
+   20.9,
+   22.7,
+   24.5,
+   28.1,
+   33.0
+  ],
+  "endChime": [
+   33.0
+  ],
+  "walletOpen": [
+   8.75
+  ],
+  "foil": [
+   9.2,
+   9.45,
+   9.7
+  ],
+  "flutter": [
+   [
+    9.5,
+    10.4
+   ]
+  ],
+  "billSlaps": [
+   15.9,
+   16.0
+  ],
+  "boxFold": [
+   18.3
+  ],
+  "boxScoot": [
+   18.65,
+   20.0
+  ],
+  "honks": [
+   23.3,
+   23.6
+  ],
+  "carPass": [
+   22.8
+  ],
+  "wind": [
+   [
+    20.9,
+    28.5
+   ]
+  ],
+  "neonFlip": [
+   21.5
+  ],
+  "palmTaps": [
+   11.0,
+   11.4,
+   11.8
+  ],
+  "hookSlap": {
+   "a": 0.95,
+   "b": 2.05
+  },
+  "instruments": "late-night jukebox doo-wop ballad (12/8) from 1.0 continuing from part 4; ducks to fridge hum + one celesta note when she lets him have the box (18.9-21.2); sidewalk: wind, neon zap, car whoosh, two honks"
+ }
+}

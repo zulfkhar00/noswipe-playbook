@@ -106,10 +106,14 @@ def room(st: Stem, a):
     for lo, hi in a.get("windOnly", []):
         i0, i1 = int(lo * RATE), int(hi * RATE); fade = int(0.35 * RATE)
         only[i0:i1] = 1
-        only[i0 - fade:i0] = np.linspace(0, 1, fade); m = len(only[i1:i1 + fade]); only[i1:i1 + fade] = np.linspace(1, 0, fade)[:m]
+        if i0 >= fade: only[i0 - fade:i0] = np.linspace(0, 1, fade)
+        m = len(only[i1:i1 + fade]); only[i1:i1 + fade] = np.linspace(1, 0, fade)[:m]
     cs = a.get("cableStop")
     if cs:   # the whirr cuts out dead at the jolt
         g = np.ones(n); i0 = int(cs * RATE); g[i0:] = 0; g[i0 - 400:i0] = np.linspace(1, 0, 400)
+        cst = a.get("cableStart")   # the cable restarts (whirr ramps back in)
+        if cst:
+            j = int(cst * RATE); ramp = int(0.6 * RATE); g[j:] = 1; g[j:j + ramp] = np.linspace(0, 1, ramp) ** 2
         cable, whirr = cable * g, whirr * g
     st.buf += cable * (1 - 0.6 * only) + whirr * (1 - 0.7 * only) + wind * (1 + 1.6 * only)
 

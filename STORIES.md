@@ -218,6 +218,627 @@ mid-track, the phone slides off the table and he dives for it while she is alrea
 B: both look out at the fields, the train stopped. NoSwipe mention 1 is a bystander's phone notification later in part 4,
 never the leads.
 
+**What happened (part 2, nightly for 2026-11-06):** part 1 hook a won, and 0 comments with 20 s average watch said the vote comes too late, so part 2 runs 36.5 s with the vote up at 23.6 s. It stands alone with no recap card. It plays both branches, tagged "take 1: RELAXED" (the cup shakes, "he was not relaxed.", coffee over the sheet, she offers a napkin; the opposite train runs backwards) and "take 2: NERVOUS" (she writes SAME). Blind check round 1 was clarity 6: A/B meant two things (so the tags became takes; only the vote says A and B), the spill had no cause, and her gasp read as judging. Round 2: clarity 7, hook a 7, hook b 8.
+**Part 3 is decided:** vote A DAVE (his real name) vs B DUKE (the name he wishes he had). A wins: the wrong B plays first (mid-DUKE his phone lights up "Mum: Dave, call me back"), rewind, then A carries on. Note the honest answer is A this time so voters can't guess by habit.
+
+## Season 6 · Ten Swipes Left (narrated second-person choice story)
+
+**Logline:** Imagine the apps only gave you ten swipes a day. You burn nine and reach the last one in a coffee queue, where the card says "Also on my last one. Same. Coffee?" and the person ahead turns round, her screen on 1 too.
+
+**Why this format:** a one-slot test of the mechanics in the two reference accounts (CONTENT_PLAYBOOK.md) we'd never tried: second person, one narrator, 2-3 word centre captions, a HUD counter, a two-way choice that the next part plays both ways. It stays on the apps, where our best hook came from. Picked from 5 pitches on 2026-11-05. Takes the mechanics only: no horror, and she's a warm equal who shows her own screen by her own choice.
+
+**Cast:** you are only a POV thumb and cuff. She has a bun and a coral top; the last card shows the same bun, top and cup. Card people are bean figures with one prop and a kind bio. Voice: Witty McGee, calm.
+
+**Look and sound:** arcade tokens. Ink #101218, token gold #FFC21A, cyan #2FD9F5, signal red #FF3B3B (the counter at 1 only), off-white #F2F2EC. Anton (counter, captions), Barlow Condensed (strips), Inter (bios), Courier Prime (the RULE 1 stamp). HUD chip with 10 pips top-left, y >= 290. **Signature transition:** a gold coin falling through a slot, then a gold iris. Chiptune at 100 bpm, swipe whoosh, coin clink, counter tick. Code: `src/stories/swipes/`; audio: `python3 generate_swipes_audio.py swipes-ep1`.
+
+**Arc:**
+1. **Last swipe.** Vote: A use the last swipe · B put the phone away and say hi.
+2. B wins. A first: you swipe, a generic match burst, counter 0, you draft "hey" and delete it while she takes her coffee and the barista says "Next"; coins fly back up (rewind). B: you pocket the phone, "Hi. Also on my last one." She says "I'm getting coffee first. Then maybe." She nods at the empty chair; vote: sit there, or give her space. This pays off RULE 1 "no going back" (the swipe branch can't be undone).
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "ten swipes left · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The apps only gave me ten swipes today. Part 1 (46) | `specs/stories/swipes-ep1.json` | `Swipes1` hook a |
+| 1b | One swipe left and a stranger in my coffee queue. Part 1 (56) | same | `Swipes1` hook b |
+| 2a | A stranger in my queue has one swipe left too. Part 2 (53) | `specs/stories/swipes-ep2.json` | `Swipes2` hook a |
+| 2b | Last swipe, and she's right in front of me. Part 2 (50) | same | `Swipes2` hook b |
+
+**What happened (part 2, nightly for 2026-11-07):** 29.4 s. Plays both branches, tagged YOU SWIPED / YOU SAID HI. Swipe:
+"hey" typed and deleted, she takes her coffee and leaves, barista NEXT, RULE 1 / NO GOING BACK, REWIND disc. Hi: "coffee
+first. Then maybe.", she clears her bag off the chair ("Sit, if you like."), your phone: LAST SWIPE EXPIRES AT 6:00; she turns
+her phone face down: "I'm not a swipe. Neither are you." Vote A SWIPE BEFORE 6:00 / B LET IT EXPIRE (planned winner B; part 3
+plays A first: you swipe at 5:59, she nods, takes her cup to the window table, NO GOING BACK, rewind; then B: phones face
+down, both counters pop to 0 at 6:00, you sit; next vote: say something rehearsed or something true). Board at 20.8 s (the
+18 s target was given up to make the swipe branch readable). 501 ElevenLabs characters.
+**Kill check:** P1 sat on the 150-180 floor. If P2's fresh body also stays on the floor at 24h with a clean slot, kill the format.
+**Killed 2026-11-08:** P2 stayed on the floor too (158 / 150 views, 41-48% skip, 9-11 s watch). Its slot went to Season 7 Lane 8.
+
+## Season 7 · Lane 8 (silent bowling-alley romance, scoreboard name boxes)
+
+**Logline:** Two strangers bowl alone on neighbouring lanes 7 and 8. The only chat is the 9-cell player-name box on the
+overhead scoreboards. He keeps skipping his own turn to swipe; she renames herself to talk to him.
+
+**Why this season:** replaces Ten Swipes Left (killed). Keeps what works (silent, two strangers, a written device, a plain
+first-person hook, an early vote ~19 s) and makes the device huge and readable in under a second; the phone costing him his
+turn ties it to swipe fatigue. Picked pitch 1 of 5 on 2026-11-08 (others: Table Nine wedding place cards, Fifty Whites
+paint swatches, Red Light chalk wall, Plot 14 garden labels; keep them for later seasons).
+
+| | Look | How they write |
+|---|---|---|
+| Him (lane 7) | tangerine hoodie, ink cap, lemon ball, phone | types on the NAME keypad: SORRY |
+| Her (lane 8) | violet jacket, high ponytail + lemon scrunchie, violet ball | flips her name box: YOUR TURN, AGAIN, NICE!, BEAT ME? |
+
+**Look and sound:** 80s Memphis carpet pop. Ink #1D1A2F, cream #FFF7E6, teal #12A8A0, tangerine #FF6B2C, lemon #FFD93D,
+violet #7C4DFF. Jost 800 strips, Nunito 900 cards and end card, Barlow Condensed 800 scoreboard letters. Bean figures with dot
+eyes. **Signature transition:** the ball wipe (a violet ball rolls across the foreground, an iris opens behind it). Gated drum
+machine, square bass, glass marimba at 108 bpm; keypad beeps, flap ticks, ball rumble, pin clacks. Code: `src/stories/lane/
+{world,ep1}.tsx`; audio: `python3 generate_lane_audio.py lane-ep1`.
+
+**Arc (6 parts):** 1 Beat me · 2 The game (A ONE SEC plays first and fails: frame timer runs out, his box blinks ONE SEC
+beside a lonely 1; the ball rolls back up the lane as the rewind; B GAME ON carries on) · 3 Loser buys fries (he has to name
+his own row) · 4 the alley owner's phone chimes NoSwipe (bystander, mention 1; note Across's bystander mention was cut as a
+plug, so make it part of the gag or skip it) · 5 last frame, she is called away · 6 final frame: real first names, no phone.
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "lane 8 · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | My lane neighbour texts me through the scoreboard. Part 1 (57) | `specs/stories/lane-ep1.json` | `Lane1` hook a |
+| 1b | I skipped my turn to swipe. She wrote YOUR TURN. Part 1 (55) | same | `Lane1` hook b |
+| 2a | My lane neighbour texts me. I finally answered. Part 2 (54) | `specs/stories/lane-ep2.json` | `Lane2` hook a |
+| 2b | She dared me on the scoreboard. My phone buzzed. Part 2 (55) | same | `Lane2` hook b |
+| 3a | A stranger on the next lane bet me fries. Part 3 | `specs/stories/lane-ep3.json` | `Lane3` hook a |
+| 3b | Loser buys fries, she typed. So I tried to lose. Part 3 | same | `Lane3` hook b |
+
+**What happened (part 1, nightly for 2026-11-08):** 32 s, vote up at 19.9 s. He swipes at the foul line, TURN SKIPPED; her box
+YOUR TURN; he types SORRY, pockets the phone; gutter; one pin (her box NICE!); her strike; BEAT ME?; his pocket buzzes; vote
+"what should I put in my name box?" A ONE SEC / B GAME ON (B wins). Blind check round 1 clarity 6 (swiping not visible,
+strips over the boards, keypad unreadable, vote ambiguous), round 2 clarity 7, hook a 6 / b 7, satisfaction 5 (the part's own
+payoff is thin: give part 2 a bigger one).
+
+**What happened (part 2, nightly for 2026-11-09):** lane-1-a never posted (the phone keyboard auto-capitalised "and" after
+"BEAT ME?", failing the caption check), so P1 = lane-1-b only: 143 at 3h, 53% skip. P2 opening rebuilt brighter with ONE
+strip, big boards (his box blinking cursor, hers BEAT ME?), his phone buzzing. 32 s. Take 1 ONE SEC: timer ring runs out
+(TIME!), her box OK, she turns back; rewind icon, pins fly back up. Take 2 GAME ON: phone off, spare (NICE!), her strike
+(YOUR MOVE), his first strike, air high-five over the ball return (OK. WOW., tied); her box LOSER / BUYS / FRIES?; vote
+"loser buys fries. what should I type?" A LET YOU WIN / B DEAL (fully up ~20.7 s); end card "lane 8 · part 3 · A or B".
+Blind check round 1: clarity 7, hook a 6 / b 7, satisfaction 6, want_next 7.
+**Part 3 is decided:** B DEAL wins (letting her win is patronising). A plays first: he types LET YOU WIN, rolls a deliberate
+gutter, her box flips to REALLY? and she bowls her own last ball with her back to him; rewind. B: DEAL, both bowl the last
+frame for real. **Kill check:** if P2's first publish (lane-2-a) is also on the floor at 24h, kill Lane 8.
+
+**What happened (part 3, nightly for 2026-11-10):** lane-2-a 283 at 6h, 37% skip (best since Across P2) -> continue. 32.4 s.
+Take A LET U WIN: deliberate gutter, her box REALLY?, she bowls alone; ball rewinds. Take B DEAL / FINE.: her SPARE! (141-133),
+his wobbling-pin STRIKE! wins 143-141, her box I BUY., fries slide along the ball return and he slides half back. Cliff: her
+box types NAME?; vote (up ~25.1 s) "she wants my real name. what should I type?" A PLAYER 7 (stay a mystery) / B DAN.
+Blind check 2 rounds: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 6 (flags: take A's failure hard to read in stills,
+fries small). **Part 4 lean:** B DAN (the series is about trading the screen name for a real one); if lane-3-a sits on the
+floor at 24h (<270, >45% skip), make part 4 the finale.
+
+| 4a FINALE | She asked my real name on the bowling scoreboard. Finale (56) | `specs/stories/lane-ep4.json` | `Lane4` hook a |
+
+**What happened (part 4 FINALE, nightly for 2026-11-11):** lane-3-a floored (248 at 6h, 45% skip) -> finale. 30 s, no vote.
+Frame 1: his phone lit mid-swipe, boards NAME? / PLAYER 7. He pockets it, deletes PLAYER 7, types DAN; her board JUNE; LAST
+GAME, house lights dim; her strike, his gutter (NICE TRY / NICE, DAN); both leave their phones in the shoe cubbies; fries on
+one bench; boards merge DAN · JUNE; "send this to someone you'd bowl badly with"; end card "lane 8 · the end". No NoSwipe
+mention (no gag-shaped place for it). Blind check 1 round: clarity 7, hook 7, satisfaction 7, want_next 6. **Season over.**
+
+
+## Season 8 · Table Nine (silent wedding-reception romance, place-card tents)
+
+**Logline:** Two strangers are seated side by side at a wedding's singles table, both swiping alone under the cloth. The folded
+place-card tent between them becomes their only conversation: she edits his card, he writes back, and the card passes across
+the table.
+
+**Why this season:** replaces Seven Across (ended 2026-11-09). Keeps what works: silent, two strangers, a written device, a
+plain first-person hook, and the apps as the visible situation in frame 1 (as in the 12.5k Alley P1). Frame 1 follows the
+one-strip hypothesis: ONE strip, one big bright device (the tent card), two large faces, both phones visibly swiping (generic
+card glow only). Picked pitch 1 of 5 on 2026-11-10 (others: Red Light chalk crossing, Fifty Whites paint chips, Plot 14
+garden stakes, Highlights library book; keep them for later seasons). No named couple, no real venue, no app UI; she writes
+her own lines and is never the punchline.
+
+| | Look | How they write |
+|---|---|---|
+| Him (Ollie, shown only on his card) | aubergine suit, terracotta tie, messy dark hair, flushed ears | marker on the tent, lowercase in parentheses |
+| Her (name withheld until part 6) | sage-green dress, marigold earrings, low bun | marker on the tent, lowercase in parentheses, dry asides |
+
+**Device:** one folded double-sided place-card tent (printed name and table, Gelasio) and one marker slid across the cloth.
+Max ~18 characters per line. Votes offer two answers about him; the wrong one embarrasses him, never her.
+
+**Look and sound:** ivory reception in flat paper cut-outs. Ivory #FBF5E9, eucalyptus #86A38C, terracotta #D9785B,
+marigold #F2B632, aubergine ink #2B1630, champagne #E9D9B0. Nunito Sans 800 strips and end card, Gelasio for the printed
+card, Permanent Marker for handwriting. Big-headed half-figures. Far plane string-light bokeh and an arch window, mid plane
+table and lazy Susan, near plane blurred sprigs. **Signature transition:** the lazy Susan spin (backwards for a rewind).
+Pizzicato-strings waltz in 3/4 at 96 bpm that drops out for the shared moment, fork-on-glass tinks, room tone, marker
+squeaks, phone taps. Code: `src/stories/table/{world,ep1}.tsx`; audio: `python3 generate_table_audio.py table-ep1`.
+
+**Arc (6 parts):**
+1. **Still swiping?** She edits his card; he writes back; she out-swipes him ("since the bread"); both phones go face down on
+   the same beat. Vote "why table nine? what should I write?" A I'M GREAT AT WEDDINGS / B I'M NOT. HENCE TABLE 9 (B wins).
+2. **Why table 9.** A plays first and fails on him (the DJ calls the floor, he loses to it); lazy Susan spins backwards;
+   B carries on, she laughs. Next vote again about him.
+3. **The speech.** The best man's endless toast; cards trade under it. Make the honest answer A this time.
+4. **The seating chart.** Table 9 gets moved to the back; a guest's phone may chime NoSwipe (mention 1, only if it is part
+   of the gag: Across' bystander mention was cut as a plug).
+5. **Last song.** The floor lights up; phones in his jacket; she is called to the family photo.
+6. **One card.** Finale, no phones: names for the first time, one tent reads "OLLIE · NOOR".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "table nine · part 2 · A or B", never "tomorrow".
+Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger beside me at this wedding swipes too. Part 1 | `specs/stories/table-ep1.json` | `Table1` hook a |
+| 1b | A singles table stranger rewrote my place card. Part 1 | same | `Table1` hook b |
+| 2a | Wedding stranger asked why I'm single. Part 2 (45) | `specs/stories/table-ep2.json` | `Table2` hook a |
+| 2b | Singles table. She asked why I'm on it. I lied first (52) | same | `Table2` hook b |
+| 2c | A wedding stranger caught me swiping. Then she wrote this (57) | same | `Table2` hook c |
+
+**What happened (part 1, posted 2026-11-10):** breakout on both hooks: table-1-a 1451 at 6h (32% skip), table-1-b (repeat)
+858 at 6h (29% skip). Vote B (I'M NOT. HENCE TABLE 9) carried as planned.
+
+**What happened (part 2, nightly for 2026-11-11):** 32 s. Frame 1: his phone lit mid-swipe, tent card "(why table 9?)"; he
+flips the phone face down. Take 1 "(i'm great at weddings.)": spotlight, DJ sign SINGLES TO THE FLOOR!, conga line carries him
+off while she eats cake ("I lost to the dance floor."). Lazy Susan spins back. Take 2 "(i'm not. hence table 9.)": she laughs,
+"(same. good table.)", ignores her buzzing phone, stands her card next to his. Best man taps his glass; her card "(cake? sneak
+out?)". Vote (up 21.8 s) "she wants to sneak out mid-speech. what do I write?" A (YES. NOW.) / B (AFTER THE SPEECH.).
+Blind check 1 round: clarity 7, hook a 5 / b 6 / c 5, satisfaction 7, want_next 7 (fixed after: "two tents" strip, cake vs
+sneak-out mismatch). **Part 3 (The speech):** A is the planned winner (honest, bold); B plays first and fails on him: the
+speech never ends, he falls asleep on the cake.
+
+| 3a | The stranger at this wedding wants to sneak out. Part 3 (55) | `specs/stories/table-ep3.json` | `Table3` hook a |
+| 3b | Mid-speech, a wedding stranger caught me swiping. Part 3 (56) | same | `Table3` hook b |
+
+**What happened (part 3, nightly for 2026-11-12):** Table P2 broke out on all three hooks (2092 / 1538 / 1156). 33 s. Frame 1:
+his phone lit mid-swipe, card "(cake? now?)", best man at the mic behind. Take 1 "(after the speech.)": the speech never ends
+(cue-card stack, baby slideshow, spinning clock), "the cake rolled past.", empty stand, "I waited. the cake left." Lazy Susan
+rewind, "rewind. take 2." "(yes. now.)": they crouch-walk out, two forks, terrace, one slice, napkin "(best speech ever.)", his
+pocket buzzes and he ignores it. Cliff: the aunt's new card "TABLE 2 · moved for family photos". Vote (up 23.7 s) "they're moving
+her to table 2. what do I write?" A (TAKE ME WITH YOU.) / B (I'LL SWAP OUR CARDS.). Blind check 2 rounds: clarity 8, hook a 8 /
+b 7, satisfaction 7, want_next 8 (I rewrote hook b and added the cart and rewind strips). Open: the forks shot has no strip; his
+buzzing pocket glow reads as a ring box. **Part 4 (seating chart):** pick the winner from comments; if none, B (swapping the
+cards is the bolder gag), A plays first and fails on him.
+
+| 4a | They moved the stranger beside me at this wedding. Part 4 (57) | `specs/stories/table-ep4.json` | `Table4` hook a |
+| 4b | Wedding stranger got moved to table 2. I had a plan. Part 4 (59) | same | `Table4` hook b |
+
+**What happened (part 3, posted 2026-11-12):** table-3-a 1525 at 12h (33.5% skip); table-3-b floored (345 at 6h, 42% skip) on
+the same body: its "mid-speech, ..." line was the problem. No usable vote counts; B (swap the cards) carried as planned.
+
+**What happened (part 4, nightly for 2026-11-13):** 33.6 s. Frame 1: his phone lit mid-swipe, the TABLE 2 / "moved for family
+photos" card at her seat, the aunt with a clipboard. Take 1 "(take me with you.)": he drags his chair to table 2 and ends up in
+the family photo ("wrong move. I'm in their family photo now."). Lazy Susan rewind (big "rewind. take 2." held 1.5 s). Take 2
+"(i'll swap our cards.)": he swaps his OLLIE card for COUSIN RAJ's at table 2 ("her cousin got my seat at table 9."), the aunt
+double-takes and shrugs ("her aunt saw. said nothing."), she writes "(smooth.)". Cliff: LAST SONG, her card "(dance?)", he
+freezes. Vote (up 24.3 s) "she asked me to dance. I can't dance. what do I write?" A (I CAN'T. TEACH ME?) / B (I'LL WATCH YOUR
+BAG.). Blind check 3 rounds: clarity 6 -> 6 -> 7 (I rewrote four strips and hook b myself), hook a 5 / b 8, satisfaction 7,
+want_next 8. Open: the swap with three cards is still busy. **Part 5 (Last song):** A is the planned winner (honest); B plays
+first and fails on him (he guards her bag alone while the whole room dances, maybe the bag owner is the aunt). Phones in his
+jacket; she is called to the family photo as the cliff. Wind-down: if table-4-a floors at 6h, make part 5 the finale.
+
+| 5a | Wedding stranger asked me to dance. I can't dance. Part 5 (49) | `specs/stories/table-ep5.json` | `Table5` hook a |
+| 5b | The girl I like asked me to dance. I really can't. Part 5 (49) | same | `Table5` hook b |
+
+**What happened (part 4, posted 2026-11-13):** table-4-a 1848 at 12h (35.6% skip), table-4-b 2017 at 6h (30.4%): the stakes
+line beat who+where. No usable comment votes; A (TEACH ME) carried as planned.
+
+**What happened (part 5, nightly for 2026-11-14):** 33.6 s, vote up 24.3 s. Frame 1: his phone lit mid-swipe, her card
+"(dance?)", LAST SONG sign, the aunt behind. Take 1 "(i'll watch your bag.)": the room dances, the aunt in the conga, he hugs her
+sequined bag in a spotlight ("I became the bag guy."). Lazy Susan rewind. Take 2 "(i can't. teach me?)": she laughs, draws two
+footprints, "(stand here.)"; he steps on her toe; his pocket buzzes, ignored; music drops out; "I can't dance. we danced
+anyway." Cliff: house lights up, the aunt with keys "car's here!", the last blank card slides over. Vote "she's leaving. one card
+left. what do I write?" A (MY NAME. YOURS?) / B (SAME TABLE NEXT WEDDING?). Blind check 1 round: clarity 7, hook a 5 / b 7,
+satisfaction 6, want_next 7. Open: the dance shots fade the torsos into dark blocks; the slow-sway reads as a pose.
+**Part 6 (finale, One card):** A wins (names: OLLIE · NOOR), B plays first and fails on him; no phones; season over.
+
+| 6a | The girl I like at this wedding is leaving. Part 6 (42) | `specs/stories/table-ep6.json` | `Table6` hook a |
+| 6b | A stranger caught me swiping at this wedding. Part 6 (44) | same | `Table6` hook b |
+
+**What happened (part 6 finale, nightly for 2026-11-15):** 34 s, no vote. Frame 1: his phone lit mid-swipe (flipped face down
+at 1.5 s, the last phone we see), the blank tent, the aunt with car keys; "we never spoke. we only wrote on this card." Take 1
+"(same table next wedding?)": the aunt grabs the card, writes "(it's a date! -auntie)" and pinches his cheek ("her aunt said
+yes.", "it wasn't for her."). Lazy Susan rewind. Take 2 "(ollie. yours?)" -> "(noor.)", the tent turns to OLLIE · NOOR, "she
+waved. I kept the card."; payoff on the empty table: "(same table / next wedding.)" in her hand, "she wrote back." End card
+"table nine · the end · follow for the next story". Blind check 2 rounds: clarity 6 -> 7, hook a 6 / b 5, satisfaction 8,
+want_next 6 (round 2 added the aunt-grab strips, bigger ink, warm reveal). Posted while the phone was offline: it queues behind
+P5. Season over.
+
+## Season 9 · Fifty Whites (silent paint-aisle romance, paint-chip handoffs)
+
+**Logline:** Two strangers each need a white for their own flat and both keep swiping between the chips. She starts
+answering him with paint-chip names and a pencil on a chain.
+
+**Why this season:** the apps-visible opener won 7 of 7 posts (Table Nine P1-P2, the Lane 8 finale), so frame 1 keeps ONE
+strip, two big faces, a phone lit mid-swipe and one big bright device. Here the device is also the swipe-fatigue metaphor:
+fifty near-identical whites. Runs in parallel with Table Nine in a different setting, palette, type, cast, transition and
+sound. Picked pitch 1 of 5 on 2026-11-12 (others: Pie for Two, a holiday-night diner, kept for Thanksgiving week; Red Light
+chalk wall; Highlights library book; Plot 14 garden stakes).
+
+| | Look | How they talk |
+|---|---|---|
+| Me (him, unnamed) | charcoal hoodie, tidy dark hair, flushed ears, phone | hands chips across; his reflex is to swipe chips off the fan like cards |
+| Her (name withheld until part 6) | oatmeal knit, claw clip, paint-flecked cuffs | hands chips; writes on the back of a chip with the pencil on the chain, lowercase, dry |
+
+**Device:** a fan-deck of paint chips with invented generic names (FOG, OAT MILK, SAME, EGGSHELL, POPPY, ALMOST TUESDAY).
+A chip handed across is the line; the back of a chip takes two short pencil lines (max ~18 characters each). Votes offer
+two chips about him; the wrong one embarrasses him, never her.
+
+**Look and sound:** flat paper cut-outs in a bright hardware aisle. Navy #1B2A4A (pegboard, ink), cobalt #2F5BFF, poppy
+#FF4F8B, sunflower #FFC400, mint #5EE0B5; the whites #FAFAF7, #F3EBDD, #EADFC8, #E4E8EA; his hoodie #3A3D45, her knit
+#CDBB9C (neutral clothes so the chips are the only colour). Big-headed half-figures with a white die-cut paper edge. Far
+plane pegboard and chip racks, mid the fan and chip tray, near the rack edge, pencil on a chain, a blurred paint can. Fonts:
+Inter 800 (chip names, vote cards, strips), Anton (end card), Courier Prime (stamp). **Signature transition:** the
+fan-deck (chips fan out from a corner pivot to reveal the next shot; a rewind snaps the fan shut). Sound: fluorescent hum,
+chip riffle on every handoff, intercom ding, paint-shaker rattle; easy bossa at 100 bpm (nylon pluck, shaker, soft bass)
+that drops out for the shared moment. Code: `src/stories/whites/{world,ep1}.tsx`; audio: `python3 generate_whites_audio.py
+whites-ep1`.
+
+**Arc (6 parts):**
+1. **Which white.** Both swipe in the aisle; she hands him SAME; shared laugh; phones down; she asks which white he is.
+   Vote A EGGSHELL / B POPPY (B planned to win).
+2. **Poppy.** A plays first and fails on him (he hands EGGSHELL and blends into the beige test wall while she walks past;
+   the fan snaps shut as the rewind); B: POPPY, she laughs. Next vote about him.
+3. **Mixing.** Ten minutes at the paint shaker pins them together. Make the honest answer A this time.
+4. **Test patch.** They paint a test square each. A bystander's phone may chime NoSwipe (mention 1, only as part of the gag).
+5. **Closing time.** The intercom calls her; she leaves her chip on the shelf.
+6. **One chip.** Finale, no phones: names for the first time, two chips taped together read "POPPY + SAME".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "fifty whites · part 2 · A or B", never
+"tomorrow". Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger in the paint aisle swipes too. Part 1 (51) | `specs/stories/whites-ep1.json` | `Whites1` hook a |
+| 1b | A stranger caught me swiping in the paint aisle. Part 1 (56) | same | `Whites1` hook b |
+
+**What happened (part 1, nightly for 2026-11-12):** 32 s, vote up 21.8 s. Frame 1: both phones lit mid-swipe with a profile
+card (generic portrait), the fan of whites between them, his guilty side-eye, her smirk. He flicks three chips off the fan like
+swipes ("I swipe left on paint now."); she hands him SAME ("she handed me this."), tilts her own phone ("she swipes too."),
+shared laugh, "phones down. both of us."; she writes "which white / are you?" on the back; EGGSHELL vs POPPY ("one of these
+isn't white.", "she's waiting."); fan-deck wipe to the vote A EGGSHELL (the safe one) / B POPPY (not a white). Blind check 2
+rounds: clarity 6 -> 7 (fixed: phones didn't read as dating, SAME unexplained, blur block, icon), hook a 5 / b 7, satisfaction
+5, want_next 7. **Part 2 lean:** B POPPY wins; A plays first (he hands EGGSHELL and blends into the beige test wall). Give part
+2 a bigger payoff of its own (satisfaction 5 here). If whites-1-a sits on the floor at 6h (<300, >40% skip), revisit.
+
+| 2a | Paint aisle stranger asked which white I am. Part 2 (51) | `specs/stories/whites-ep2.json` | `Whites2` hook a |
+| 2b | She caught me swiping, then asked which white I am. Part 2 (58) | same | `Whites2` hook b |
+
+**What happened (part 1, posted 2026-11-12):** breakout on both hooks: whites-1-a 2195 at 6h (23.4% skip, best ever),
+whites-1-b 1613 at 3h (25.5%). B POPPY carried as planned.
+
+**What happened (part 2, nightly for 2026-11-13):** 33.1 s, vote up 23.1 s. Frame 1: his phone lit mid-swipe (1.5x, profile card
+with a heart badge), her chip "which white / are you?". Take 1 EGGSHELL: he fades into the beige test wall, she looks for him
+("the safe answer. I became the wall."). Fan-deck snaps shut (rewind). Take 2 POPPY ("not a white. she laughed."), then the
+payoff close-up: her can with POPPY taped on the lid beside his chip, labelled HER CAN / MY CHIP, "same pink." ("she'd picked it
+too."). Mixing counter "MIXING / 10 MIN WAIT", one bench, his phone buzzes big in his pocket. Vote "ten minutes on one bench.
+what do I do?" A PHONE AWAY. ASK HER. / B SHOW HER MY MATCHES. End card "fifty whites · part 3 · A or B". Blind check 3 rounds:
+clarity 7 -> 6 -> 7 (I added the close-up labels after round 2), hook a 7 / b 6, satisfaction 5 -> 6, want_next 8. Open: her
+can is not planted before the reveal; her pat arm is stiff. **Part 3 (Mixing):** A wins (honest); B plays first and fails on
+him (he scrolls her through his matches, all "seen 3 weeks ago"; she winces for him). Then A: his phone goes in the basket,
+they talk while the shaker rattles.
+
+| 3a | Ten minutes on a bench with the paint aisle stranger. Part 3 (52) | `specs/stories/whites-ep3.json` | `Whites3` hook a |
+| 3b | Caught swiping again, now stuck on one bench with her. Part 3 (53) | same | `Whites3` hook b |
+
+**What happened (part 2, posted 2026-11-13):** whites-2-a 2211 at 6h (21.1% skip, best ever), whites-2-b 2942 at 3h (23.2%, best
+3h ever). A (PHONE AWAY) carried as planned.
+
+**What happened (part 3, nightly for 2026-11-14):** 34.0 s, vote up 24.1 s. Frame 1: both on the bench, his phone lit mid-swipe,
+"MIXING · 10 MIN WAIT", her POPPY can in the shaker. Take 1 SHOW HER MY MATCHES: every match stamped "seen 3 wks ago", she
+winces and pats him. Fan snaps shut. Take 2 PHONE AWAY. ASK HER.: phone into the basket, chips "what's the room for?" / "my first
+own place." / "mine too."; the shaker stops, the music drops out; the clerk slides two POPPY cans ("two cans. same pink.").
+Cliff: she paints a test square and holds out the brush, "your turn." Vote "she handed me the brush. what do I paint?" A (A TINY
+HEART.) / B (A WINDOW. FOR YOUR ROOM.). Blind check 1 round: clarity 8, hook a 6 / b 8, satisfaction 6, want_next 8. Open: her
+pat can read as a shove; "seen" stamps are small; nothing says the paint is for a new flat before the chip question.
+**Part 4 (Test patch):** B (the window) is the planned winner (sweet, about her room); A plays first and fails on him (the heart
+drips into a blob). A bystander's phone may chime NoSwipe only if it is the gag.
+
+
+| 4a | The paint aisle stranger handed me her brush. Part 4 (52) | `specs/stories/whites-ep4.json` | `Whites4` hook a |
+| 4b | She caught me swiping and handed me her brush. Part 4 (53) | same | `Whites4` hook b |
+
+**What happened (part 4, nightly for 2026-11-16):** 34.0 s, vote up 23.9 s. Frame 1: his phone lit mid-swipe, her arm holding
+the brush out, her wet POPPY square on the TEST PATCH board. Take 1 A TINY HEART.: the heart drips into a tomato ("I painted a
+heart. it's a tomato."), she holds in a kind smile and gives a thumbs-up. Fan snaps shut ("rewind. take 2."). Take 2 A WINDOW.
+FOR YOUR ROOM.: a POPPY window; she writes "it needs / a view." and paints a sunflower sun in it; shared laugh; she holds the
+board up and keeps it. Cliff: intercom, STORE CLOSES / IN 10 MIN, "we never even swapped names." Vote "they're closing. what do
+I do?" A (ASK HER / FOR COFFEE.) / B (BUY MORE / PAINT. STALL.). End card "fifty whites · part 5 · A or B". No NoSwipe mention
+(both season slots still free; best fit a cashier's phone in part 5's STALL branch). Blind check 1 round + polish: clarity 7,
+hook a 6 / b 7, satisfaction 7, want_next 8. Open: the thumbs-up hand reads as a raised finger; her arms are long diagonals.
+**Part 5 (Closing time):** A wins (honest, planned); B plays first and fails on him (he buys a cart of rollers, tape and a
+ladder at the register while the intercom calls her; she leaves her chip on the shelf), then rewind and A.
+
+| 5a | The girl I like leaves the paint aisle in 10 min. Part 5 (56) | `specs/stories/whites-ep5.json` | `Whites5` hook a |
+| 5b | She caught me swiping. Now the store is closing. Part 5 (55) | same | `Whites5` hook b |
+
+**What happened (part 5, nightly for 2026-11-17):** 34.2 s, vote up 24.3 s. Frame 1: his phone lit mid-swipe, a hanging sign
+STORE / CLOSES / IN 10 MIN between the two faces, her holding the TEST PATCH board (POPPY window + sunflower sun), a register
+with a bored cashier, an empty chip stand. Hook a "the girl I like from the paint aisle leaves in 10 min." / hook b "she caught me
+swiping. now the store closes in 10 min."; stakes strip "we never even swapped names." at 3.1 s. Take 1 BUY MORE PAINT. STALL.:
+basket of rollers, tape and a ladder, ITEMS counter to 48, intercom ding (sign flips to NOW), she places her POPPY chip on the
+stand (bigger, where she stood), waves and leaves by 7.3 s (her spot is empty), the ladder tips onto him ("I bought a ladder. she left."). Fan snaps shut ("rewind. take 2."). Take 2
+ASK HER FOR COFFEE.: his pocket phone buzzes (a heart pops out of his hoodie pocket) and he ignores it; he writes "coffee? / across the / street?" and
+slides it over; she reads, laughs (music drops out), flips the chip and writes "only if you / pick the cup." with a cup doodle,
+whole-frame close-up ("yes. with conditions."). Cliff outside: shutter down, a CAFE across the street, she holds a chip "so,
+what's / your name?". Vote "what do I write on my chip?" A (MY REAL NAME. / NO JOKE.) / B (JUST SIGN IT / 'LADDER GUY'.). End card "fifty
+whites · part 6 · A or B". No NoSwipe mention (both season slots still free; part 6 finale is no-phones, so a mention would need
+to land in the finale's last beat or be skipped). Hands redrawn locally (`Hand5`: short near-vertical arms, short side thumb, no
+thumbs-up). Blind check: clarity 7, hook a 5 / b 7, satisfaction 6, want_next 7; polish round done (phone lit through 3 s on both hooks, earlier exit, pocket phone, smaller close-up chip, register enlarged, B = callback to the ladder). **Part 6 (finale):** A (real name) is the planned winner; B plays first and fails on
+him (he signs as LADDER GUY, she reads it deadpan), rewind, A, names exchanged, two chips taped together read "POPPY + SAME".
+
+| 6a | The girl from the paint aisle asked my name. Part 6 (44) | `specs/stories/whites-ep6.json` | `Whites6` hook a |
+| 6b | She caught me swiping, now she wants my name. Part 6 (45) | same | `Whites6` hook b |
+
+**What happened (part 6 finale, nightly for 2026-11-18):** 34.0 s, no vote. Frame 1: outside the closed store at dusk (shutter
+down, PAINT sign, CAFE across the street), his phone lit mid-swipe, her chip "so, what's / your name?". Hook b adds the catch
+(her eyes drop to his screen, raised brow, pink "!" at 0.8 s, he flinches with sweat). Context strip "we met in a paint aisle. we
+only talked on paint chips." at 3 s, phone off. Take 1 LADDER GUY: she writes "i'll wait / for the / real one." and turns to the
+cafe. Fan snaps shut (rewind). Take 2 THEO; she writes "june. / hi, theo.", shared laugh, music drops out; she tapes POPPY to
+SAME ("fifty whites. we picked the same one."); they cross to the cafe, two silhouettes and two cups ("real names. first
+coffee."). End card "fifty whites · the end · follow for the next story". Blind check 1 round: clarity 8, hook a 6 / b 8,
+satisfaction 7, want_next 6. Open flags (not fixed): the chip conceit is told, not shown, at 5 s; POPPY/SAME callback is opaque
+cold (POPPY is pink, not a white); "june." could read as the month; walkers small and faint at 26 s. No NoSwipe mention this
+season. Season over; only P6 was made tonight (phone off since 11-14, 16 posts queued).
+
+## Season 10 · Same Bag (silent baggage-claim romance, luggage-tag handoffs)
+
+**Logline:** Two strangers wait at the same carousel, both swiping. Two identical grey suitcases, one wrong grab, and she
+answers him on the back of luggage tags.
+
+**Why this season:** replaces Table Nine (finale 2026-11-15) and runs in parallel with Fifty Whites. Keeps the apps-visible
+opener (ONE strip, two big faces, a phone lit mid-swipe, one big bright device); the kraft tag is shown whole-frame whenever it
+carries a line. Picked pitch 3 of 5 on 2026-11-15 (others: Cabin Six gondola fog-writing, Highlights library book, Red Light
+chalk wall, Four Frames photo booth; Pie for Two still reserved for Thanksgiving week). Picked for the most everyday, instantly
+readable setting and a plain mix-up hook, ahead of holiday travel.
+
+| | Look | How they write |
+|---|---|---|
+| Him (unnamed) | olive bomber, rumpled hair, flushed ears; grey suitcase, no loop | pen on a kraft tag, lowercase in parentheses |
+| Her (name withheld until part 6) | camel coat, round glasses, curly bob; grey suitcase with a chartreuse tag loop | pen on a kraft tag, dry and kind |
+
+**Device:** a double-sided kraft luggage tag and one pen, max ~18 characters per line. Votes are about him; the wrong one
+embarrasses him, never her.
+
+**Look and sound:** flat paper cut-out arrivals hall: concrete #E6E3DC, hi-vis chartreuse #C6F135, amber #FFB000, carbon
+#1C1C1F, sky #8EC9FF, kraft #D8B589, slate suitcases #5B6B7A. Jost 800 (strips, vote cards, end card), Barlow Condensed 700
+(the generic ARRIVALS / BELT 4 board), Caveat 700 (tags). **Signature transition:** the belt-flap wipe (reversed belt for a
+rewind). Sound: belt rumble, wheel clacks, soft house at 110 bpm with electric piano that drops out for the shared moment,
+tag slides, pen scratches, a board flip, a muted match buzz. Code: `src/stories/bag/{world,ep1}.tsx`; audio:
+`python3 generate_bag_audio.py bag-ep1`.
+
+**Arc (6 parts):**
+1. **Same bag.** He grabs her identical bag; sorry on her tag; she points to his; swap, laugh, phones into the bags. She
+   writes "(rough trip?)" on his tag. Vote A (WORK. VERY BUSY.) / B (A DATE THAT DIED.) (B planned).
+2. **Rough trip.** A plays first and fails on him (pompous, then trails his bag round the belt); belt reverses; B carries on.
+3. **Stuck zip.** Her zip jams, he fixes it his own way. Honest answer is A this time.
+4. **Long wait.** Her ride is delayed, one bench. A bystander's phone may chime NoSwipe (mention 1, gag only).
+5. **Lost bag.** Her second bag never arrives; she is called to the desk.
+6. **Two tags.** Finale, no phones: names, two tags clipped to one handle read "MILES · ANYA".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "same bag · part 2 · A or B", never "tomorrow".
+Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger at baggage claim swipes too. Part 1 (40) | `specs/stories/bag-ep1.json` | `Bag1` hook a |
+| 1b | She caught me swiping at baggage claim, then wrote this (55) | same | `Bag1` hook b |
+
+**What happened (part 1, nightly for 2026-11-15):** 32.6 s, vote up 23.5 s. Frame 1: his phone lit mid-swipe, her huge kraft
+tag "(that one's mine.)", ARRIVALS / BELT 4, his hand on her bag (chartreuse loop); "I grabbed her bag. it looks like mine."
+"hers" / "mine" labels; sorry on her tag, "(yours: behind you.)", swap; she ties a chartreuse bow on his handle ("she marked
+mine. so I'd stop taking hers."); phones away; she writes "(rough trip?)" on his tag; his pocket buzzes, he doesn't look;
+belt empty, she waits. Vote "she asked if it was a rough trip. I flew in for a date. it flopped." A (WORK. VERY BUSY.) / B (A
+DATE THAT DIED.). Blind check 2 rounds: clarity 6 -> 7, hook a 5 / b 7, satisfaction 4 -> 5, want_next 7. Open for part 2: the
+date backstory lands only at the vote (plant it earlier), the bow makes both bags chartreuse, the second strip covers the
+board. **Part 2 (Rough trip):** B wins unless comments say otherwise; A plays first and fails on him.
+
+| 2a | A baggage claim stranger asked about my trip. Part 2 (52) | `specs/stories/bag-ep2.json` | `Bag2` hook a |
+| 2b | Baggage claim stranger caught me swiping. Again. Part 2 (55) | same | `Bag2` hook b |
+
+**What happened (part 2, nightly for 2026-11-16):** 33.4 s, vote up 23.8 s. Frame 1: his phone lit mid-swipe, her big tag
+"(rough trip?)". Backstory planted at 3-5.7 s: limp flowers droop, "I flew in for a date." / "it flopped." Take 1 (work. / very
+busy.): he poses, sets his bag on the belt, it rides away, he chases it. Belt-flap wipe reversed (rewind). Take 2 (a date / that
+died.): they laugh together, she writes "(their loss.)", then her own tag "(same. layover.)"; tags tap. His ribbon is now AMBER
+(only her bag is chartreuse). Cliff: her zip jams with her phone half in. Vote "her zip's stuck. what do I do?" A (ASK FIRST.
+THEN HELP.) / B (YANK IT. LOOK STRONG.). End card "same bag · part 3 · A or B". Blind check 1 round + fixes (bag exit, shared
+laugh, full "(their loss.)", bigger payoff tags, zip close-up, bigger phone): clarity 7, hook a 5 / b 6, satisfaction 7,
+want_next 7. Open: the swiping thread drops after frame 1. **Part 3 (Stuck zip):** A wins (planned); B plays first and fails
+on him (he yanks, the tab pops off, he topples over his own bag), belt reverses, then A.
+
+| 3a | Her phone got stuck in her zip at baggage claim. Part 3 (55) | `specs/stories/bag-ep3.json` | `Bag3` hook a |
+| 3b | She caught me swiping. Now her zip's stuck. Part 3 (50) | same | `Bag3` hook b |
+
+**What happened (part 3, nightly for 2026-11-17):** 34.0 s, vote up 23.95 s. Frame 1: his phone lit mid-swipe, her grey suitcase
+(chartreuse loop) held up with the front zip jammed and HER phone (pink case, labelled "her phone" with an arrow) wedged in it,
+ARRIVALS / BELT 4; hook a "the stranger at baggage claim got her phone stuck in her zip." / hook b "she caught me swiping. now her
+zip's stuck." Take 1 (B, fails on him): he flexes, yanks, the amber zip tab pops off and flies, he trips over his own bag (it tips
+over) and rides the belt on his back, legs in the air, while she smiles behind her hand (amused with him). Belt-flap wipe reversed
+(rewind). Take 2 (A): his tag "(can I try?)" handed to her, she nods, his pocket phone buzzes and he lets it (glances once, grits
+his teeth), he works the tab slowly, her pink-case phone pops free; music drops out for her tag "(my hero. / mildly.)"; payoff of
+the swiping thread: his pocket buzzes again, he takes the phone out and switches it OFF (dark screen, power symbol) for her.
+Cliff: both look up, the board flips to RIDE / DELAYED 40 MIN. Vote "her ride's late. what do I do?" A (WAIT WITH HER. NO PHONE.)
+/ B (FLEX AGAIN. CARRY BOTH BAGS., callback to take 1). End card "same bag. / next: part 4 · A or B". No NoSwipe mention. Blind
+check round 1 (clarity 6, hook a 5 / b 7, satisfaction 6) fixed in round 2 (her phone case + label, bent arms, tumble framing, vote
+B, end card). Added `noTab`/`caseColor` props to `Bag`/`Phone`, `prefix` to `EndCard`, and a `pops` list to
+`generate_bag_audio.py`. **Part 4 (Long wait):** A wins (planned, honest again); B plays first and fails on him, rewind, then A.
+
+| 4a | The girl I like at baggage claim is stuck here 40 min (53) | `specs/stories/bag-ep4.json` | `Bag4` hook a |
+| 4b | She caught me swiping, so I switched my phone off (49) | same | `Bag4` hook b |
+
+**What happened (part 4, nightly for 2026-11-19):** 35.4 s, vote up ~26 s. Frame 1: his phone lit mid-swipe on ONE bench beside
+her, both grey suitcases; hook a "the girl I like at baggage claim is stuck here for 40 min." / hook b "she caught me swiping. so I
+switched my phone off." with her head turn + "!" at 0.6-0.95 s. Both: power press 1.8 s, dark screen, pocketed. Board flips to
+RIDE / DELAYED 40 MIN with the P3 vote recap. Take 1 (B, fails on him): he hoists both bags, marches to the EXIT, empty kerb ("no
+car. her ride's late."), arms shaking; her tag "(my ride's not here yet.)". Reversed belt-flap rewind. Take 2 (A): phone face down,
+her "(rate that bag.)" game, his "(7. strong wheels.)", a lone ski boot "(2. lonely.)", board 40 -> 25 -> 10 MIN; music out for
+her "(best part of my whole trip.)", strip "I didn't miss my phone once." Cliff: belt stops, BELT 4 / COMPLETE, BAGGAGE DESK lights,
+dashed ghost bag. Vote "her other bag never came. what do I do?" A (GO TO THE DESK WITH HER.) / B (TELL HER IT'LL TURN UP.
+LEAVE.). Blind check 1 round: clarity 7, hook a 5 / b 7, satisfaction 7, want_next 6. Unfixed flags: her second bag is never
+shown before the cliff (plant it in P5's recap), the vote's B is lopsided, end card "same bag." opaque cold, hook a opener static.
+**Part 5 (Lost bag):** A wins (planned); B plays first and fails on him, rewind, then A at the desk.
+
+| 5a | My baggage claim crush just lost her bag. Part 5 (48) | `specs/stories/bag-ep5.json` | `Bag5` hook a |
+| 5b | Caught swiping at baggage claim. Now her bag's lost. Part 5 (59) | same | `Bag5` hook b |
+
+**What happened (part 5, nightly for 2026-11-23):** 35.2 s, vote up 27.1 s (tag holds and a new car shot pushed it). Frame 1: his
+phone lit mid-swipe, BELT 4 / COMPLETE, her one bag + a dashed "?" ghost of the missing one; hook a "the girl I like at baggage
+claim just lost her bag." (her look to the ghost, pulse, his glance by 0.8 s) / hook b "she caught me swiping. now her bag is
+lost." (head turn + "!", he pockets the phone). Insert "she had two bags. same chartreuse loop." with labelled bags. Take 1 (B):
+"(it'll turn up!)", he strides to the EXIT, the auto doors don't open for him (bonk), they open for a stranger; she is alone at
+the desk. Reversed belt-flap rewind. Take 2 (A): DESCRIBE THE BAG form, her "(grey. like everyone's.)", his "(chartreuse loop. I
+noticed.)", BELT 5 / COMING OUT, "her 2nd bag" rides out; music out for "(you noticed that?)" / "(hard not to.)"; payoff strip
+"found it. because I was looking at her, not my phone." Cliff: a car pulls up at PICK-UP, RIDE / ARRIVED. Vote "her ride's here.
+what do I do?" A (ASK FOR HER NAME.) / B (SAY NOTHING. JUST WAVE.). End card "a silent baggage-claim love story / same bag. / next:
+part 6 (finale) · A or B". Blind check 2 rounds: clarity 6 -> 7, hook a 6 -> 7 / b 7 -> 6, satisfaction 7, want_next 7. Open: b's
+"now her bag is lost" can read as if he caused it; the cause of belt 5 isn't shown. **Part 6 (Two tags, finale):** A wins
+(planned); B plays first (he waves, she leaves, he stands alone with her tag), rewind, then names: "MILES · ANYA" on two tags.
+
+| 6a | Her ride is here and I don't know her name. Part 6 (50) | `specs/stories/bag-ep6.json` | `Bag6` hook a |
+| 6b | Caught swiping, and I still don't know her name. Part 6 (55) | same | `Bag6` hook b |
+
+**What happened (part 6, FINALE, nightly for 2026-11-24):** 36.0 s, no vote. Frame 1: his phone lit mid-swipe, board RIDE / ARRIVED, her
+teal car in the window; hook a "her ride is here and I still don't know her name." / hook b "she caught me swiping. I don't even know
+her name." Backstory insert (flopped-date flowers, tags "(rough trip?)" / "(it flopped.)"). Take 1 (B): he just waves, she is gone,
+blank "NAME: ____" tag. Reversed belt-flap rewind. Take 2 (A): phone off, "(wait. I'm Miles.)", music out for "(finally. Anya.)", two
+tags MILES / ANYA on one handle; driver honks politely; "(coffee? you're buying.)"; an app buzzes, he doesn't look; "I flew in for a
+bad date. I left with her tag." End card "same bag. / the end". Blind check 2 rounds: clarity 6 -> 7, hook a 7 / b 6, satisfaction 8,
+want_next 6. **Season over.**
+
+## Season 11 · Pie for Two (silent night-diner romance, napkin crayon notes)
+
+**Logline:** Thanksgiving eve, a nearly empty all-night diner. Two solo strangers at the counter, both swiping. One slice of
+pumpkin pie is left in the case, and they both order it. They talk on napkins, in crayon.
+
+**Why this season:** started 2026-11-23 for Thanksgiving week (Thu 11-26); reserved since the 2026-11-12 pitch. Runs beside Same
+Bag (finale P6 due 11-24). Keeps the apps-visible opener (ONE strip, two big faces, both phones lit mid-swipe, generic glow, the
+napkin as the one big bright device). New gag: phones go under upside-down coffee mugs. No real diner or place names.
+
+| | Look | How they write |
+|---|---|---|
+| Him (name withheld until part 6: WES) | rust work jacket, custard cord collar, hair flat on one side from a long drive, flushed ears | pumpkin crayon, ALL CAPS, short and nervy |
+| Her (name withheld until part 6: ROSA) | chunky cranberry knit, gold hoops, curly half-up hair, cream pompom beanie, pink-case phone | cranberry crayon, lowercase, dry and kind |
+| The waitress | mint uniform, cream apron, order pad, deadpan, never writes | nothing: the straight man |
+
+**Device:** napkins from the chrome dispenser and a cup of crayon stubs; max ~18 characters per line, two lines per napkin, no
+parentheses. A napkin with a line is always a whole-frame insert (~800 px wide, centred near y=760). Never the word "tip" (reads
+as gratuity); the stake in P1-P2 is "first bite".
+
+**Look and sound:** flat vector night diner, thick espresso outlines, diagonal gloss on chrome and glass. Espresso ink #2A1810,
+night teal #0F3B3A, mint formica #A9DCCB, pumpkin #F2861E, cranberry #B5233F, custard #FFE7A8, chrome #DDE6E9, napkin #FFFDF6.
+Strips are printed guest-check slips (custard, torn edges, Courier Prime 700). Napkins Patrick Hand 700; neon, vote letters,
+end card Anton; chalkboard Permanent Marker. **Signature transition: the slice wipe** (a crimped pie wedge sweeps clockwise like
+a clock hand; counter-clockwise for a rewind). Sound: jukebox doo-wop ballad, 12/8 at 76 bpm (tremolo guitar, upright bass,
+brushes, ooh pad, snaps), dropping to fridge hum + one celesta note for the shared moment; plate scrapes, crayon scrawl,
+mug-flip clunks, muted buzz under a mug. Code `src/stories/pie/{world,ep1}.tsx`; audio `python3 generate_pie_audio.py pie-ep1`.
+
+**Arc (6 parts; from part 2 the losing option plays first, fails on him, slice wipe reverses "rewind. take 2.", then the winner):**
+1. **Last slice.** One plate between them, pushed back and forth ("you first." / "NO. YOU."), cream on his ear, phones under
+   mugs, she writes "split it? / who gets first bite?". Vote A YOU TAKE IT. I'M FULL. / B ME. I CALLED IT. **B wins.**
+2. **I called it.** A: his stomach growls so loud the mugs rattle, the waitress deadpans a second fork; rewind. B: fork duel for
+   the first bite, she lets him, he gives half back. Cliff "why are you at a diner at midnight?" A I'M A PIE CRITIC. / B
+   NOWHERE ELSE TO BE. **B wins.**
+3. **Nowhere else.** A: pie-critic act, the waitress hands him a one-star REVIEW card; rewind. B: she skipped the family drive too
+   (and the questions about the apps); mugs clink. Cliff: the jukebox lights up. A SOMETHING SLOW. / B SOMETHING DUMB. **A wins.**
+4. **Last call.** B: a novelty song fills the empty diner; rewind. A: one slow song, two stools. Check "1 PIE · 2 FORKS".
+   Optional NoSwipe mention 1 (gag only: the waitress's phone chimes it, she silences it). A I'LL GET IT. / B SPLIT IT. WE'RE
+   EVEN. **B wins.**
+5. **Closing time.** A: his wallet holds a gum wrapper; rewind. B: split, crust bagged as leftovers, sidewalk at 12:00, her
+   brother's car honks; last napkin slides to him. A WES. YOURS? / B I'LL SAVE YOU A SLICE. **A wins.**
+6. **One napkin.** Finale, no vote: B first (case empty, she waves from the car), rewind, A: names, one napkin signed in both
+   crayons "WES · ROSA". End card "pie for two · the end".
+
+**Posting:** noswipe.app in the bio only, no mention in part 1. End card "pie for two · part 2 · A or B", never "tomorrow".
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger on the next stool wants my last pie. Part 1 | `specs/stories/pie-ep1.json` | `Pie1` hook a |
+| 1b | Caught swiping at a diner. We want the last pie. Part 1 | same | `Pie1` hook b |
+
+**What happened (part 1, nightly for 2026-11-23):** 34.7 s, vote board up 23.7 s, end card 30.1 s. Frame 1: both phones lit
+mid-swipe at the counter, her napkin "that's my slice.", LAST SLICE case, 11:41 PM, neon OPEN; hook a "the stranger on the next
+stool wants my last slice of pie." / hook b "she caught me swiping. now we both want the last slice." (her eyes to his screen,
+"!", his flinch). Adult waitress serves one plate; push-back standoff; napkins "you first." / "NO. YOU."; plate montage, cream on
+his ear, shared 1 s laugh, she hands him a napkin; close-up: phones flipped face-down and mugs dropped over them (glow pools);
+"best bite" macro; napkin "split it? / who gets first bite?"; his mug buzzes, he looks away. Vote A (YOU TAKE IT. I'M FULL.) / B
+(ME. I CALLED IT.). Blind check 2 rounds (round 1: waitress read as a child, mugs/phones unclear, "best bite" missing, napkin
+covered): clarity 7, hook a 6 -> 7 / b 7, satisfaction 4, want_next 6. Open: the hook frame shows the standoff before the
+"we both ordered" beat (reads as a flash-forward); the napkin is held by him in the face shot though "she asked". **Part 2:** B
+wins (planned), A plays first and fails on him.
+
+| 2a | A diner stranger and I fought for the first bite. Part 2 (56) | `specs/stories/pie-ep2.json` | `Pie2` hook a |
+| 2b | She saw me swiping. Then we dueled over pie. Part 2 (51) | same | `Pie2` hook b |
+
+**What happened (part 2, nightly for 2026-11-24):** 35.6 s, vote up ~25.8 s. Frame 1: both phones lit mid-swipe, last slice, her napkin
+"first bite?"; hook a "the stranger beside me and I are fighting over the first bite of pie." / hook b "she caught me swiping. now we're
+dueling over pie." Take 1 (A): YOU TAKE IT. / I'M FULL., stomach growls, the waitress brings him a fork. Slice wipe reversed. Take 2 (B):
+phones under mugs, ME. / I CALLED IT., fork duel, "fine. go.", he bites, cuts the rest in half, HALF. / FAIR?, "we finished it." Vote
+"she asks why I'm at a diner on Thanksgiving eve." A (I'M A PIE CRITIC.) / B (NOWHERE ELSE TO BE.). Blind check: stills 7, export 6,
+after fixes 7; hook a 5 / b 7, satisfaction 6, want_next 6. Open: hook a opener low action, mugs not explained or paid off in this part,
+vote card near-static. **Part 3 (Nowhere else):** B wins (planned), A plays first and fails on him.
+
+| 3a | The diner stranger swipes too. She has a question. Part 3 (57) | `specs/stories/pie-ep3.json` | `Pie3` hook a |
+| 3b | She asked why I'm alone on Thanksgiving eve. Part 3 (51) | same | `Pie3` hook b |
+
+**What happened (part 3, nightly for 2026-11-25):** 35.0 s, vote up 24.95 s. Hook a "the diner stranger swipes too. she asks why I'm alone on
+Thanksgiving eve." / b "she caught me swiping. now she asks why I'm alone tonight." Napkin "why are you here tonight?". Take 1: I'M A PIE
+CRITIC., bottle-cap monocle, waitress's REVIEW card (PIE 5, CRITIC 1). Rewind. Take 2: phone under a mug, NOWHERE ELSE TO BE.; her phone under
+hers, "me too. I skipped the drive.", "family always asks about the apps.", "SO, STILL SINGLE?" / "every. year."; coffees clink. Vote: she hands
+him a jukebox coin, A SOMETHING SLOW. / B SOMETHING DUMB. Clock 11:52 PM. Blind check 6 -> 7 (export), hook a 4 -> 6 (line reworded after) / b 7,
+satisfaction 6, want_next 6. Open: end card 5 s, static; mug-as-phone-cover reads as "a cup on a phone". **Part 4 (Last call):** A wins (planned), B first.
+
+| 4a | The girl I like at this diner gave me one song. Part 4 | `specs/stories/pie-ep4.json` | `Pie4` hook a |
+| 4b | She caught me swiping. Now I pick our song. Part 4 | same | `Pie4` hook b |
+
+**What happened (part 4, nightly for 2026-11-26):** 35.0 s, vote up 26.4 s, end card 32.0 s. Hook a "the girl I like at this diner gave me one
+song to pick." / b "she caught me swiping. now I'm picking our song." Take 1 (B): a polka, chaos, coffee on his jacket; slice wipe reversed. Take 2
+(A): one slow song, two stools turn, napkins, celesta; check "1 PIE · 2 FORKS" slapped down; vote A I'LL GET IT. / B SPLIT IT. WE'RE EVEN.
+Blind check 1 round: clarity 7, hook a 7 / b 6, satisfaction 6, want_next 6. **Part 5 (Closing time):** B wins (planned), A first.
+
+| 5a | The check came and the girl I like saw my wallet. Part 5 (56) | `specs/stories/pie-ep5.json` | `Pie5` hook a |
+| 5b | She caught me swiping. Then the check came. Part 5 (50) | same | `Pie5` hook b |
+
+**What happened (part 5, nightly for 2026-11-27):** 36.0 s, vote up 28.1 s, end card 33.0 s. Frame 1: both phones lit mid-swipe, the waitress slaps
+the check "1 PIE · 2 FORKS"; hook a "the girl I like at this diner and I just got the check." / b "she caught me swiping. now we're fighting over the
+check." (catch shown). Take 1 (A): "I'LL GET IT.", wallet holds one GUM wrapper and a moth, the waitress waits. Slice wipe reversed. Take 2 (B, viewers'
+pick): "SPLIT IT. / WE'RE EVEN.", money side by side, crust in a tiny to-go box, she lets him have it; sidewalk, neon OPEN -> CLOSED, 12:00 AM,
+headlights + honk "her ride home is here."; she leaves him the last napkin "your turn.". Vote "what do I write on the last napkin?" A WES. / YOURS? /
+B I'LL SAVE / YOU A SLICE. End card "pie for two · finale next · A or B" + "tired of swiping? noswipe.app · link in bio". Blind check 1 round:
+clarity 7, hook a 5 / b 8, satisfaction 6, want_next 6 (then small fixes: end-card overlap, readable car). **Part 6 (finale, One napkin):** A wins
+(planned), B first.
+
+## Season 12 · Cabin Six (silent ski-gondola romance, fog writing)
+
+**Logline:** two adult strangers share an 8-minute ski gondola, both swiping. The signal dies; the fogged window becomes their chat and their
+tic-tac-toe board. **Started 2026-11-25** beside Pie for Two. Votes are live board positions where possible, to test comments.
+
+| | Look | Writes |
+|---|---|---|
+| Him (name withheld) | marigold puffer, navy bobble hat, stubble, WHITE SNEAKERS (no skier) | X, finger in fog, CAPS |
+| Her (name withheld) | pine ski suit, goggles on a white band, dark bob, skis beside her | O, finger in fog, lowercase |
+
+**Look and sound:** crisp ski-poster vector, parallax valley. Ice #BCE3F5, snow #F7FBFF, pine #1E4D46, cabin red #E4472B (wall lightened to coral),
+sunrise peach #FFB48A, navy #17283B, marigold X. Strips piste-sign plates (Jost 800), fog Patrick Hand 700, vote/end Anton. **Transition: sleeve wipe**
+(a breath re-fogs for rewinds). Sound: cable whirr, wind, pylon ka-chunk, finger squeaks, 6/8 acoustic waltz 84 bpm + glockenspiel. Code
+`src/stories/cabin/{world,ep1}.tsx`; audio `python3 generate_cabin_audio.py`. Rules: never the word "guaranteed"; max ~18 chars a line.
+
+**Arc (6 parts, loser plays first from part 2):** 1 winner asks 1 question (vote A WIN. ASK HER NAME. / B LOSE. SEE WHAT SHE ASKS.; **B wins**) ·
+2 A: he wins, panics, asks DO YOU LIKE SNOW?; rewind; B: she spots he lost on purpose and asks her real question · 3 the cabin stops mid-air ·
+4 the glass ices over (optional NoSwipe chime, mention 1, gag only) · 5 last ride, she has to go · 6 finale: two names in the fog.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger in my ski gondola swipes too. Part 1 (49) | `specs/stories/cabin-ep1.json` | `Cabin1` hook a |
+| 1b | She caught me swiping on a ski lift. Part 1 (43) | same | `Cabin1` hook b |
+
+**What happened (part 1, nightly for 2026-11-25):** 34.0 s, vote up 23.25 s. Phones lose signal, "no bars. 8 min.", "winner asks 1 question.", game 1
+(she wins the diagonal while he stares at the sunrise, "I hadn't looked up all week."), her question "what are you swiping for?", his "SOMEONE WHO LOOKS UP.",
+her smile. Vote board X X _ / O O _, X to move. Blind checks (exports) 6, 6, 7; hook a 4 -> 7 / b 6, satisfaction 4 -> 6, want_next 7. Open: B's
+winning O strike barely shows in the preview; the answer line holds ~1.4 s; writing arms are stiff detached tubes; A is the obvious move.
+
+| 2a | The girl I like in this gondola caught me losing. Part 2 | `specs/stories/cabin-ep2.json` | `Cabin2` hook a |
+| 2b | She caught me swiping. So I let her win. Part 2 | same | `Cabin2` hook b |
+
 **What happened (part 2, nightly for 2026-11-26, round 2):** 39.6 s, vote board up 32.55 s, end card 36.85 s. Frame 1 has a clear strip of glass showing the valley far
 below; a 0.8 s exterior insert (3.0-3.8) shows the red cabin "6" hanging on the cable. Viewers' B (lose on purpose) is played second (loser-first rewind). Board
 X X _ / O O _, "winner asks / 1 question.", take 1 = A: his X top-right, thick red strike, he freezes and writes DO YOU LIKE SNOW?, she looks out and writes "...yes.",
@@ -227,3 +848,17 @@ camera shake, cut to the exterior (cabin stops dead and swings, KA-CHUNK burst, 
 tiny pines far below, his face goes pale with sweat and a gulp (strip "she doesn't know I'm scared of heights."), her "stuck. / you ok?", then the vote A ADMIT: SCARED /
 OF HEIGHTS. / B PLAY IT COOL. / ANOTHER GAME. Writing arms now drop away right after each line, fog text sits in clear fog above the board with a dark thick outline.
 Blind checks for the exports still to do.
+
+| 3a | The girl I like and I are stuck in a gondola. Finale (52) | `specs/stories/cabin-ep3.json` | `Cabin3` hook a |
+| 3b | Caught swiping, now stuck mid-air with her. Finale (50) | same | `Cabin3` hook b |
+
+**What happened (part 3 = FINALE, nightly for 2026-11-27):** Cabin Six was killed by the format-lab rule (P1 583/818 at 24h, P2 38% skip; its openers
+had no lit phones), so parts 3-6 merged into one standalone finale, 42.1 s. Frame 1: stopped cabin swaying, both phones lit mid-swipe (generic card
+silhouette with X/heart, "no bars" icons), him pale on the rail; hook a "the girl I like and I are stuck in a gondola, mid-air." / b "she caught me
+swiping. now we're stuck mid-air." (catch shown). Exterior insert "and I'm scared of heights."; "stuck. / you ok?". Take 1 (B, play it cool): "TOTALLY /
+FINE.", wobbly X, sway, yelp, "you're shaking.", "she didn't buy it."; breath re-fog "rewind. take 2.". Take 2 (A, viewers' pick): "SCARED / OF
+HEIGHTS.", "don't look down. / look at me.", big grid; she starts her winning O, glances at him and plays elsewhere; he wins (plain marigold line),
+"she let me win. now we're even."; "YOUR NAME?" "june." "OWEN."; cable restarts at 29.5 s, sunrise; top station, his sneakers sink in snow, she offers a
+hand; empty cabin 6 leaves with OWEN / june in the fog. End card "cabin six · the end" + "tired of swiping? noswipe.app · link in bio". No NoSwipe
+mention this season. Blind check (1 round + my fixes: lit phone screens, sword-like strike, shown let-win): clarity 8, hook a 6 / b 8, satisfaction 7,
+want_next 7. **Season over.**

@@ -1616,6 +1616,86 @@
     "want_next": 7,
     "rounds": 2
    }
+  },
+  {
+   "id": "pie-5-b",
+   "day": "2026-11-27",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 5,
+   "hook": "b",
+   "caption": "She caught me swiping. Then the check came. Part 5. Take one, I said I would pay and found a gum wrapper. Take two, we split it. Then she left me one last napkin. What do I write, A or B? #thanksgiving #datingapps #lovestory #shortfilm #animation",
+   "video": "videos/pie-5-b.mp4",
+   "composition": "Pie5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 8,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "cabin-3-a",
+   "day": "2026-11-27",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 3,
+   "hook": "a",
+   "caption": "The girl I like and I are stuck in a gondola. Finale. No signal, one foggy window, and I am scared of heights. Take one, I played it cool. Take two, I told her the truth. #meetcute #skitrip #strangerstolovers #shortstory #animation",
+   "video": "videos/cabin-3-a.mp4",
+   "composition": "Cabin3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "pie-5-a",
+   "day": "2026-11-27",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 5,
+   "hook": "a",
+   "caption": "The check came and the girl I like saw my wallet. Part 5. Take one, my wallet had a gum wrapper in it. Take two, we split it and walked out at midnight. One last napkin. A or B? #meetcute #strangerstolovers #thanksgiving #shortstory #animation",
+   "video": "videos/pie-5-a.mp4",
+   "composition": "Pie5",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 5,
+    "satisfaction": 6,
+    "want_next": 6,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "cabin-3-b",
+   "day": "2026-11-27",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Cabin Six",
+   "episode": 3,
+   "hook": "b",
+   "caption": "Caught swiping, now stuck mid-air with her. Finale. The gondola stopped, the phones died, and I am scared of heights. Take one, I played it cool. Take two, the truth. Then we finally said our names. #datingapps #skitrip #lovestory #shortfilm #animation",
+   "video": "videos/cabin-3-b.mp4",
+   "composition": "Cabin3",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 8,
+    "hook": 8,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
   }
  ]
 }
