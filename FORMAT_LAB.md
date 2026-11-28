@@ -84,10 +84,14 @@ Change one variable at a time within a format.
 | 2026-11-26 | IG @tinyloveshows | silent story (Cabin Six) | P2 hook a (14:30) | the girl I like in this gondola caught me losing on purpose. | 810 (6h) | | 14 | ~35% | 0.0% | 0.0% | | 0.1% | **kill Cabin Six**: 37.8% skip, worst since Lane P1; wound down in a P3 finale |
 | 2026-11-26 | IG @tinyloveshows | silent story (Pie for Two) | P4 hook a (repeat body, 17:00) | the girl I like at this diner gave me one song to pick. | 689 (6h) | | 14 | ~40% | 0.0% | 0.0% | | 0.2% | 27.7% skip (early read) |
 | 2026-11-26 | IG @tinyloveshows | silent story (Cabin Six) | P2 hook b (repeat body, 20:30) | she caught me swiping. so I let her win at tic-tac-toe. | 537 (3h) | | 13 | ~33% | 0.0% | 0.2% | | 0.0% | 38.0% skip; Cabin killed |
-| 2026-11-27 | IG @tinyloveshows | silent story (Pie for Two) | P5 hook b (12:00) | she caught me swiping. now we're fighting over the check. | | | | | | | | | planned: "caught me swiping", catch shown, opens on the check slap + lit phones |
-| 2026-11-27 | IG @tinyloveshows | silent story (Cabin Six) | P3 finale hook a (14:30) | the girl I like and I are stuck in a gondola, mid-air. | | | | | | | | | planned: stakes line; finale opens on lit phones (season killed, wound down) |
-| 2026-11-27 | IG @tinyloveshows | silent story (Pie for Two) | P5 hook a (repeat body, 17:00) | the girl I like at this diner and I just got the check. | | | | | | | | | planned: stakes line |
-| 2026-11-27 | IG @tinyloveshows | silent story (Cabin Six) | P3 finale hook b (repeat body, 20:30) | she caught me swiping. now we're stuck mid-air. | | | | | | | | | planned: "caught me swiping", catch shown |
+| 2026-11-27 | IG @tinyloveshows | silent story (Pie for Two) | P5 hook b (12:00) | she caught me swiping. now we're fighting over the check. | 2004 (12h) | | 20 | ~56% | 0.0% | 0.1% | | 0.0% | 23.2% skip, best watch of the season; was planned: "caught me swiping", catch shown, opens on the check slap + lit phones |
+| 2026-11-27 | IG @tinyloveshows | silent story (Cabin Six) | P3 finale hook a (14:30) | the girl I like and I are stuck in a gondola, mid-air. | 1948 (6h) | | 19 | ~45% | 0.1% | 0.0% | | 0.0% | **broke out** on the lit-phones opener after P1-P2 stalled; 27.9% skip; was planned: stakes line; finale opens on lit phones (season killed, wound down) |
+| 2026-11-27 | IG @tinyloveshows | silent story (Pie for Two) | P5 hook a (repeat body, 17:00) | the girl I like at this diner and I just got the check. | 1994 (6h) | | 19 | ~53% | 0.0% | 0.1% | | 0.0% | 23.7% skip; was planned: stakes line |
+| 2026-11-27 | IG @tinyloveshows | silent story (Cabin Six) | P3 finale hook b (repeat body, 20:30) | she caught me swiping. now we're stuck mid-air. | 2152 (3h) | | 18 | ~43% | 0.0% | 0.0% | | 0.0% | broke out; 28.4% skip; was planned: "caught me swiping", catch shown |
+| 2026-11-28 | IG @tinyloveshows | silent story (Pie for Two) | P6 FINALE hook a (12:00) | the girl I like is leaving and I don't know her name. | | | | | | | | | planned: stakes line, lit phones on the sidewalk |
+| 2026-11-28 | IG @tinyloveshows | silent story (Reason for Return, new) | P1 hook b (14:30) | she caught me swiping. now she's reading my return slip. | | | | | | | | | planned: caught-swiping first on a new world (blind hook 8 vs a 6) |
+| 2026-11-28 | IG @tinyloveshows | silent story (Pie for Two) | P6 FINALE hook b (repeat body, 17:00) | she caught me swiping. now her ride is here. | | | | | | | | | planned: catch shown |
+| 2026-11-28 | IG @tinyloveshows | silent story (Reason for Return) | P1 hook a (repeat body, 20:30) | the stranger in the returns line swipes too. | | | | | | | | | planned: who+where |
 
 ## Hook patterns (running record)
 
@@ -201,3 +205,11 @@ Six did not recover: P1 583 / 818 at 24h, P2 37.8-38.0% skip (worst since Lane P
 lit phones: the 2nd season (after Seven Across) to show that a new world without the apps-visible frame 1 stalls. Killed; tonight's P3 is a
 standalone finale that opens on both phones lit, no bars, stuck mid-air (Lane precedent: a floored season's finale broke out with that opener).
 Votes keep drawing a trickle of comments (0.1-0.2%), shares ~0. judge_vs_stats (n=65): no score predicts views or retention.
+
+**Update 2026-11-28:** 4 of 4 broke out on 11-27 (3-12h reads): pie-5-b 2004 / 23.2% (20 s watch, the season's best), pie-5-a 1994 / 23.7%,
+cabin-3-a 1948 / 27.9%, cabin-3-b 2152 / 28.4%. **The Cabin Six finale, opened on both phones lit, broke out after P1-P2 stalled (583-1502)
+without them:** with the Lane finale, the second floored season rescued by the apps-visible frame 1. The opener is the lever; it is mandatory
+for every new world. 24h: pie-4-b 1770 / 23.1% beat pie-4-a 1200 / 29.2%; cabin-2-b 1502 beat cabin-2-a 884. Hook b ("caught me swiping",
+catch shown) now leads a narrowly. Tonight: Pie finale P6 (a first) and new season Reason for Return P1 (b first; a returns line, the day
+after Thanksgiving). Read returns-1-b at 3h against Pie P1 (1.7k) to see if a 6th new world breaks out with the opener. judge_vs_stats (n=69):
+no score predicts views or retention.

@@ -38,11 +38,13 @@ import {BAG6_FPS, BAG6_FRAMES, Bag6} from './stories/bag/ep6';
 import {CABIN1_FPS, CABIN1_FRAMES, Cabin1} from './stories/cabin/ep1';
 import {CABIN2_FPS, CABIN2_FRAMES, Cabin2} from './stories/cabin/ep2';
 import {CABIN3_FPS, CABIN3_FRAMES, Cabin3} from './stories/cabin/ep3';
+import {RETURNS1_FPS, RETURNS1_FRAMES, Returns1} from './stories/returns/ep1';
 import {PIE1_FPS, PIE1_FRAMES, Pie1} from './stories/pie/ep1';
 import {PIE2_FPS, PIE2_FRAMES, Pie2} from './stories/pie/ep2';
 import {PIE3_FPS, PIE3_FRAMES, Pie3} from './stories/pie/ep3';
 import {PIE4_FPS, PIE4_FRAMES, Pie4} from './stories/pie/ep4';
 import {PIE5_FPS, PIE5_FRAMES, Pie5} from './stories/pie/ep5';
+import {PIE6_FPS, PIE6_FRAMES, Pie6} from './stories/pie/ep6';
 import {ACROSS1_FPS, ACROSS1_FRAMES, Across1} from './stories/across/ep1';
 import {ACROSS2_FPS, ACROSS2_FRAMES, Across2} from './stories/across/ep2';
 import {ACROSS3_FPS, ACROSS3_FRAMES, Across3} from './stories/across/ep3';
@@ -92,11 +94,13 @@ export const Root: React.FC = () => (
     <Composition id="Cabin1" component={Cabin1} durationInFrames={CABIN1_FRAMES} fps={CABIN1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Cabin2" component={Cabin2} durationInFrames={CABIN2_FRAMES} fps={CABIN2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Cabin3" component={Cabin3} durationInFrames={CABIN3_FRAMES} fps={CABIN3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Returns1" component={Returns1} durationInFrames={RETURNS1_FRAMES} fps={RETURNS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Pie1" component={Pie1} durationInFrames={PIE1_FRAMES} fps={PIE1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Pie2" component={Pie2} durationInFrames={PIE2_FRAMES} fps={PIE2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Pie3" component={Pie3} durationInFrames={PIE3_FRAMES} fps={PIE3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Pie4" component={Pie4} durationInFrames={PIE4_FRAMES} fps={PIE4_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Pie5" component={Pie5} durationInFrames={PIE5_FRAMES} fps={PIE5_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
+    <Composition id="Pie6" component={Pie6} durationInFrames={PIE6_FRAMES} fps={PIE6_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across1" component={Across1} durationInFrames={ACROSS1_FRAMES} fps={ACROSS1_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across2" component={Across2} durationInFrames={ACROSS2_FRAMES} fps={ACROSS2_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />
     <Composition id="Across3" component={Across3} durationInFrames={ACROSS3_FRAMES} fps={ACROSS3_FPS} width={1080} height={1920} defaultProps={{hook: 'a' as const}} />

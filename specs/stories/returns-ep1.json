@@ -1,0 +1,130 @@
+{
+ "id": "returns-ep1",
+ "season": "Reason for Return",
+ "composition": "Returns1",
+ "episode": 1,
+ "title": "Reason. Part 1",
+ "note": "Silent. Frame 1 fully composed, no fade, ONE strip (hook, 0-3.0, y=345, white price-gun sticker with red border). Department-store returns line under a RETURNS sign, bright. Two large faces: his phone lit mid-swipe (generic profile-card glow, no UI; thumb flicks 0.2-1.4), her phone lit too (coral case). The biggest, brightest object: the yellow return slip on a clipboard on the line rail between them, 'REASON FOR RETURN: ____', his navy pen on a chain hovering over the box. Season opener: no take 1, no rewind. Own payoff before the cliff: she reads his lie, spots the tags, he is caught, her own confession 'i cancelled twice.' and one shared laugh (15.1), then both phones go in their bags (16.4, 16.9). Cliff: his turn at the counter, ONE LINE ONLY sign, the clerk slides a fresh slip, he gulps, she raises a brow; scanner-beam wipe to the vote board by 24.8 s. Whenever the slip carries a line it is a WHOLE-FRAME insert (slip ~800 px wide, centred around y=760, Caveat 700 pen drawn in; his navy ALL CAPS, hers teal lowercase; no parentheses; 18 characters per line max). Text only between y=270 and y=1250. No NoSwipe mention. No real store or place names. Joke is on him (a first date he cancelled himself); she is warm and equal with her own honest line; never 'she ghosted me'. Clerk is an adult, silent, deadpan. Strips are first person. Part 1 only: no rewind, no VOID stamp.",
+ "duration": 35.5,
+ "hooks": {
+  "a": "the stranger in the returns line swipes too.",
+  "b": "she caught me swiping. now she's reading my return slip."
+ },
+ "hookOpening": {
+  "a": [
+   "0.9 she sneaks a sideways glance at his slip; her lit phone tilts toward her chest",
+   "1.7 he stops swiping and looks at the slip",
+   "2.1 his pen drops to the box"
+  ],
+  "b": [
+   "0.5 her eyes drop to his lit screen",
+   "0.8 coral '!' burst above her head (y>=400)",
+   "1.1 he flinches, sweat drop, tilts the phone to his chest",
+   "1.5 she smirks, her own phone still lit (they caught each other)",
+   "1.7 he looks at the slip",
+   "2.1 his pen drops to the box"
+  ]
+ },
+ "beats": {
+  "swipeStart": 0.2, "glanceA": 0.9, "catchB": 0.8, "flinchB": 1.1, "freeze": 1.7, "penDown": 2.1,
+  "bagUp": 3.3, "tagClose": 4.2, "slipIn": 5.4, "write1": 5.6, "chainRattle": 5.6, "herLean": 8.0,
+  "write2": 8.5, "nod": 10.3, "sweat": 10.4, "calendar": 11.0, "xMark": 11.6, "write3": 13.1,
+  "read3": 14.6, "laugh": 15.1, "phoneHers": 16.4, "phoneHis": 16.9, "lineMove1": 18.6,
+  "lineMove2": 19.4, "lineMove3": 20.2, "next": 20.8, "printer": 21.5, "gulp": 22.2, "brow": 22.8,
+  "beamWipe": 24.6, "cardA": 24.8, "cardB": 24.95, "voteUp": 25.2, "comment": 24.8,
+  "endcard": 32.0, "endSoft": 32.6
+ },
+ "choices": {
+  "question": "the clerk wants one line. what do I write?",
+  "A": {"l1": "NOT MY SIZE.", "l2": "KEEP IT SIMPLE."},
+  "B": {"l1": "I WASN'T READY.", "l2": "YET."},
+  "why": "Both about him. A is the safe line he already tried, B the honest one. B is the planned winner. Part 2 plays A first and fails on him (the clerk stamps NOT MY SIZE and hands him the same shirt a size up), VOID stamp and reversed beam as the rewind, then B carries on."
+ },
+ "inserts": [
+  {"id": "slip_front", "from": 0.0, "to": 5.3, "side": "yellow slip on the clipboard, held large between them (not whole-frame)", "lines": ["REASON FOR RETURN: ____"], "note": "frame 1: printed Courier Prime 700, the biggest and brightest object; box stays blank"},
+  {"id": "slip_his", "from": 5.4, "to": 7.9, "side": "whole-frame slip, his navy pen", "lines": ["WRONG SIZE."], "note": "writes in 5.6-7.4"},
+  {"id": "slip_hers_1", "from": 8.0, "to": 10.9, "side": "whole-frame slip, her teal pen in the margin", "lines": ["tags still on?"], "note": "writes in 8.5-9.9; his sweat and nod cut in at 10.3"},
+  {"id": "calendar", "from": 11.0, "to": 13.0, "side": "sticker on a generic calendar square", "lines": ["FRI 7 PM"], "note": "his pen crosses it out with a big X at 11.6; generic, no app UI"},
+  {"id": "slip_hers_2", "from": 13.0, "to": 15.0, "side": "whole-frame slip, her teal pen", "lines": ["i cancelled", "twice."], "note": "writes in 13.1-14.5; held until 15.0"}
+ ],
+ "shots": [
+  {"from": 0.0, "to": 3.1, "shot": "Frame 1 two-shot at the line rail: big faces, both phones lit and swiping, the big yellow slip between them, RETURNS sign above; per-hook opening beats; he looks at the slip at 1.7"},
+  {"from": 3.1, "to": 5.3, "shot": "Medium: he lifts the clear garment bag with the mint shirt, tags dangling; close-up on the tags"},
+  {"from": 5.3, "to": 8.0, "shot": "Whole-frame slip: WRONG SIZE. writes in, pen chain rattles"},
+  {"from": 8.0, "to": 11.0, "shot": "Whole-frame slip: her teal line in the margin 'tags still on?'; cut to his sweat and nod"},
+  {"from": 11.0, "to": 13.0, "shot": "Calendar sticker FRI 7 PM, his pen crosses it out"},
+  {"from": 13.0, "to": 15.1, "shot": "Whole-frame slip: i cancelled / twice. writes in"},
+  {"from": 15.1, "to": 16.2, "shot": "Close two-shot: she laughs behind her hand, he laughs and drops his shoulders (payoff)"},
+  {"from": 16.2, "to": 18.5, "shot": "Close: her phone into her tote, his phone into the shirt bag; glow dies; music ducked"},
+  {"from": 18.5, "to": 20.8, "shot": "Line shuffle montage with motion blur, three steps toward the counter"},
+  {"from": 20.8, "to": 24.6, "shot": "Counter: NEXT paddle, ONE LINE ONLY sign, a fresh slip slides out of the printer; his gulp; her encouraging brow"},
+  {"from": 24.6, "to": 35.5, "shot": "Scanner-beam wipe to the vote board (two slip cards), then the end card with the soft line"}
+ ],
+ "strips": [
+  {"text": "the stranger in the returns line swipes too.", "from": 0.0, "to": 3.0, "y": 345, "hook": true, "hookProp": "a"},
+  {"text": "she caught me swiping. now she's reading my return slip.", "from": 0.0, "to": 3.0, "y": 345, "hook": true, "hookProp": "b"},
+  {"text": "I'm returning a shirt. tags still on.", "from": 3.1, "to": 5.2, "y": 345},
+  {"text": "the box asked why. I played it safe.", "from": 5.3, "to": 7.9, "y": 345},
+  {"text": "she read it. then she saw the tags.", "from": 8.0, "to": 10.9, "y": 345},
+  {"text": "I bought it for a first date. then I bailed.", "from": 11.0, "to": 13.0, "y": 345},
+  {"text": "her turn to be honest.", "from": 13.1, "to": 15.0, "y": 345},
+  {"text": "phones went in the bag. both of us.", "from": 16.2, "to": 18.4, "y": 345},
+  {"text": "the line moved. we didn't mind.", "from": 18.6, "to": 20.7, "y": 345},
+  {"text": "my turn at the counter.", "from": 20.8, "to": 24.5, "y": 345},
+  {"text": "the clerk wants one line. what do I write?", "from": 24.8, "to": 32.0, "y": 345},
+  {"text": "comment A or B", "from": 24.8, "to": 32.0, "y": 1170}
+ ],
+ "cards": {
+  "slip_front": "REASON FOR RETURN: ____",
+  "his_1": "WRONG SIZE.",
+  "hers_1": "tags still on?",
+  "calendar": "FRI 7 PM (crossed out)",
+  "hers_2_l1": "i cancelled",
+  "hers_2_l2": "twice.",
+  "sign_top": "RETURNS",
+  "counter_sign": "ONE LINE ONLY",
+  "clerk_paddle": "NEXT",
+  "vote_header": "what do I write?",
+  "end_card": "reason for return · part 2 · A or B",
+  "end_soft": "tired of swiping? noswipe.app · link in bio"
+ },
+ "look": {
+  "palette": {"slipYellow": "#FFE45C", "storeTeal": "#0E8A8F", "tagRed": "#E8333C", "navyInk": "#14213D", "cream": "#FFF8E7", "mintShirt": "#8FE3C0", "lavender": "#B9A7FF"},
+  "fonts": {
+   "strips": "Nunito Sans 900 (white price-gun sticker, red border, ~56 px)",
+   "slip_print": "Courier Prime 700",
+   "pen": "Caveat 700",
+   "vote_letters_endcard": "Anton",
+   "end_soft": "Nunito Sans 800 (~34 px, under the end card text, y 860-930)"
+  },
+  "cast": {
+   "him": "forest-green parka, bed hair, flushed ears, clear garment bag with a mint shirt and tags, navy ballpoint (ALL CAPS)",
+   "her": "charcoal coat, lavender scarf, high bun, boxed gift under one arm, coral-case phone, teal ballpoint (lowercase)",
+   "clerk": "navy vest, red lanyard, adult, silent and deadpan"
+  },
+  "transition": "scanner beam: a red laser line sweeps across and reveals the next shot with a beep; a VOID stamp plus the beam running back is the rewind (part 2+)"
+ },
+ "audio": {
+  "bpm": 92, "meter": "4/4",
+  "groove": [[0, 14.9], [18.4, 35.5]],
+  "musicDuck": [[14.9, 18.4]],
+  "roomTone": [[0, 35.5]],
+  "swipeTicks": [0.2, 0.5, 0.8, 1.1, 1.4],
+  "chainRattle": [5.6, 8.5, 13.1],
+  "scrawl": [[5.6, 7.4], [8.5, 9.9], [13.1, 14.5]],
+  "paperSlides": [5.4, 8.0, 21.5],
+  "penTap": [11.6],
+  "laughSting": [15.1],
+  "phoneDrops": [16.4, 16.9],
+  "shuffles": [18.6, 19.4, 20.2],
+  "paDing": [20.8],
+  "printer": [21.5],
+  "gulp": [22.2],
+  "beamWhoosh": [24.6],
+  "scannerBeeps": [24.6, 24.8, 24.95],
+  "cardPops": [24.8, 24.95],
+  "stamps": [3.1, 5.3, 8.0, 11.0, 13.1, 16.2, 18.6, 20.8, 24.8, 32.0],
+  "endChime": [32.0],
+  "instruments": "store-muzak electric piano at 92 bpm: Rhodes chords, fretless bass, brushed shaker, soft vibes; ducks to room tone plus one vibes note for the shared moment; store hum room tone; PA ding-dong at the counter"
+ }
+}

@@ -1696,6 +1696,86 @@
     "want_next": 7,
     "rounds": 1
    }
+  },
+  {
+   "id": "pie-6-a",
+   "day": "2026-11-28",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 6,
+   "hook": "a",
+   "caption": "The girl I like is leaving and I do not know her name. Finale. Take one, I promised her a slice and she drove off. Take two, I wrote my name first. Pie for Two, the end. #lovestory #meetcute #silentstory #diner #shortstory",
+   "video": "videos/pie-6-a.mp4",
+   "composition": "Pie6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "returns-1-b",
+   "day": "2026-11-28",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Reason for Return",
+   "episode": 1,
+   "hook": "b",
+   "caption": "She caught me swiping in the returns line. Part 1. I wrote wrong size on the slip. She saw the tags. Now the clerk wants one honest line. What do I write, A or B? #lovestory #meetcute #silentstory #blackfriday #shortstory",
+   "video": "videos/returns-1-b.mp4",
+   "composition": "Returns1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 8,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "pie-6-b",
+   "day": "2026-11-28",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Pie for Two",
+   "episode": 6,
+   "hook": "b",
+   "caption": "Her ride is here and she caught me swiping. Finale. One last napkin before she leaves. Take one, I played it safe. Take two, I asked her name. Pie for Two, the end. #lovestory #meetcute #silentstory #diner #shortstory",
+   "video": "videos/pie-6-b.mp4",
+   "composition": "Pie6",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 7,
+    "satisfaction": 7,
+    "want_next": 7,
+    "rounds": 1
+   }
+  },
+  {
+   "id": "returns-1-a",
+   "day": "2026-11-28",
+   "account": "tinyloveshows",
+   "format": "silent story",
+   "season": "Reason for Return",
+   "episode": 1,
+   "hook": "a",
+   "caption": "The stranger in the returns line swipes too. Part 1. My return slip asks why. I wrote wrong size and she saw the tags. What do I write, A or B? #lovestory #meetcute #silentstory #blackfriday #shortstory",
+   "video": "videos/returns-1-a.mp4",
+   "composition": "Returns1",
+   "posted_by": "engine (planned)",
+   "checker": {
+    "clarity": 7,
+    "hook": 6,
+    "satisfaction": 6,
+    "want_next": 7,
+    "rounds": 1
+   }
   }
  ]
 }

@@ -807,6 +807,17 @@ B I'LL SAVE / YOU A SLICE. End card "pie for two · finale next · A or B" + "ti
 clarity 7, hook a 5 / b 8, satisfaction 6, want_next 6 (then small fixes: end-card overlap, readable car). **Part 6 (finale, One napkin):** A wins
 (planned), B first.
 
+| 6a | The girl I like is leaving and I do not know her name. Finale (53) | `specs/stories/pie-ep6.json` | `Pie6` hook a |
+| 6b | Her ride is here and she caught me swiping. Finale (42) | same | `Pie6` hook b |
+
+**What happened (part 6 = FINALE, nightly for 2026-11-28):** 36.0 s, no vote, end card 32.6 s. Frame 1: sidewalk at the diner window, 12:00 AM,
+neon OPEN -> CLOSED, both phones lit mid-swipe, napkin "your turn." in his hand, her ride's headlights; hook a "the girl I like is leaving and
+I don't know her name." / b "she caught me swiping. now her ride is here." (catch shown, "!"). "we shared one slice of pie tonight." Take 1 (B):
+"I'LL SAVE / YOU A SLICE.", polite smile, she's gone; "the next day. the case is empty." (SOLD OUT), "no name. no number. no pie." Slice wipe
+reversed. Take 2 (A, viewers' pick): "WES. / YOURS?" -> "rosa." + "same stool / next year?"; she waves from the car; "I got her name.";
+the waitress's deadpan thumbs-up. End card "pie for two · the end" + "tired of swiping? noswipe.app · link in bio". Blind check 1 round:
+clarity 7, hook a 6 / b 7, satisfaction 7, want_next 7. Open: take 1's failure is soft (polite smile), the waitress appears late. **Season over.**
+
 ## Season 12 · Cabin Six (silent ski-gondola romance, fog writing)
 
 **Logline:** two adult strangers share an 8-minute ski gondola, both swiping. The signal dies; the fogged window becomes their chat and their
@@ -862,3 +873,56 @@ HEIGHTS.", "don't look down. / look at me.", big grid; she starts her winning O,
 hand; empty cabin 6 leaves with OWEN / june in the fog. End card "cabin six · the end" + "tired of swiping? noswipe.app · link in bio". No NoSwipe
 mention this season. Blind check (1 round + my fixes: lit phone screens, sword-like strike, shown let-win): clarity 8, hook a 6 / b 8, satisfaction 7,
 want_next 7. **Season over.**
+
+## Season 13 · Reason for Return (silent returns-counter romance, return-slip lines)
+
+**Logline:** The day after Thanksgiving, two strangers wait in a department-store returns line, both swiping. They share one
+yellow return slip and answer its blank "reason for return" box, one short line at a time.
+
+**Why this season:** replaces Cabin Six (killed 2026-11-26) beside the Pie for Two finale. Keeps the apps-visible opener (ONE strip,
+two big faces, both phones lit mid-swipe with generic glow, one big bright device) in a setting everyone has stood in. The device is
+the hook: a huge blank "REASON FOR RETURN" box. Picked pitch 1 of 5 on 2026-11-28 (others, kept for later: Four Frames photo booth,
+Shelf Four office fridge, Inside Is Blank card aisle, Wrong Name coffee cup). No real store names, no app UI.
+
+| | Look | How they write |
+|---|---|---|
+| Him (name withheld until part 6: ELI) | forest-green parka, bed hair, flushed ears, clear garment bag with a mint shirt, tags still on | navy ballpoint, ALL CAPS, short and nervy |
+| Her (name withheld until part 6: TESS) | charcoal coat, lavender scarf, high bun, boxed gift under one arm, coral-case phone | teal ballpoint in the margin, lowercase, dry and kind |
+| The clerk | navy vest, red lanyard, adult, deadpan, never writes | nothing: the straight man (PA ding-dong, "NEXT" paddle) |
+
+**Device:** one yellow return slip on a clipboard, pen on a chain. Header "REASON FOR RETURN: ____"; lines ≤ 18 characters, two
+per answer, no parentheses. A slip with a line is always a whole-frame insert (~800 px wide, centred near y=760). The joke is his
+(a shirt bought for a first date he cancelled himself), never hers; never "she ghosted me".
+
+**Look and sound:** flat vector department store, thick navy outlines, hard offset shadow under each card. Slip yellow #FFE45C,
+store teal #0E8A8F, tag red #E8333C, navy ink #14213D, cream #FFF8E7, mint shirt #8FE3C0, lavender #B9A7FF. Strips are white
+price-gun stickers with a red border (Nunito Sans 900); slip print Courier Prime 700, pen Caveat 700, vote letters and end card
+Anton. **Signature transition: the scanner beam** (a red laser line sweeps and reveals the next shot with a beep; from part 2 a VOID
+stamp slams and the beam runs back as the rewind). Sound: store-muzak electric piano 92 bpm (Rhodes, fretless bass, brushes, vibes),
+ducking to room tone + one vibes note for the shared moment; PA ding-dong, scanner beeps, receipt printer, pen-chain rattle.
+Code `src/stories/returns/{world,ep1}.tsx`; audio `python3 generate_returns_audio.py returns-ep1`.
+
+**Arc (6 parts; from part 2 the losing option plays first, fails on him, VOID + reversed beam "rewind. take 2.", then the winner):**
+1. **Reason.** He writes WRONG SIZE.; she spots the tags; FRI 7 PM crossed out by his own pen; "i cancelled / twice."; shared laugh;
+   phones into bags. Vote A NOT MY SIZE. / KEEP IT SIMPLE. vs B I WASN'T READY. / YET. **B planned to win.**
+2. **One line.** A: the clerk hands him the same shirt a size up; rewind. B: the clerk reads it, nods, stamps. Cliff: EXCHANGE or STORE CREDIT.
+3. **Jam.** The register freezes; no phones, they play a slip game.
+4. **Gift line.** Optional NoSwipe mention 1 (gag only: the man behind them, his phone chimes it; skip if it reads as a plug).
+5. **Her turn.** Her gift has no receipt; she is called to the back.
+6. **One name.** Finale: the NAME line, two names, "EXCHANGE: ONE COFFEE".
+
+**Posting:** end card "reason for return · part 2 · A or B" (never "tomorrow") + soft "tired of swiping? noswipe.app · link in bio".
+Wind-down rule: two parts in a row on the floor -> finale, not a fade.
+
+| Ep | Title | Spec | Composition |
+|---|---|---|---|
+| 1a | The stranger in the returns line swipes too. Part 1 | `specs/stories/returns-ep1.json` | `Returns1` hook a |
+| 1b | She caught me swiping in the returns line. Part 1 | same | `Returns1` hook b |
+
+**What happened (part 1, nightly for 2026-11-28):** 35.5 s, vote up ~25 s, end card 32.0 s. Frame 1: RETURNS sign, both phones lit mid-swipe
+at the screen edges, the big yellow slip "REASON FOR RETURN: ____" centre; hook a "the stranger in the returns line swipes too." / b "she caught
+me swiping. now she's reading my return slip." ("!", flinch, smirk). WRONG SIZE. -> "tags still on?" -> FRI 7 PM crossed out ("I bought it
+for a first date. then I bailed.") -> "i cancelled / twice." -> shared laugh -> phones into bags -> NEXT / ONE LINE ONLY. Vote A NOT MY SIZE. /
+KEEP IT SIMPLE. vs B I WASN'T READY. / YET. Blind check 1 round: clarity 7, hook a 6 / b 8, satisfaction 6, want_next 7. Open (polish for P2):
+phones at frame edges are blurred, teal pen on yellow is low contrast, her gift box and white tote read oddly, A's second line reads as an
+instruction, soft end line sits at y~1075 (safe, small). **Part 2 (One line):** B wins (planned), A plays first and fails.
